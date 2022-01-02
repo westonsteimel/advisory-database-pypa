@@ -1,6 +1,6 @@
 id: PYSEC-2021-857
 details: Buffer overflow in the array_from_pyobj function of fortranobject.c in NumPy
-  < 1.19, which allows attackers to conduct a Denial of Service attacks by carefully
+  < 1.22, which allows attackers to conduct a Denial of Service attacks by carefully
   constructing an array with negative values.
 affected:
 - package:
@@ -8,10 +8,15 @@ affected:
     ecosystem: PyPI
     purl: pkg:pypi:numpy
   ranges:
+  - type: GIT
+    repo: https://github.com/numpy/numpy
+    events:
+    - introduced: "0"
+    - fixed: 271010f1037150e95017f803f4214b8861e528f2
   - type: ECOSYSTEM
     events:
     - introduced: "0"
-    - fixed: 1.19.0
+    - fixed: 1.22.0
   versions:
   - 0.9.6
   - 0.9.8
@@ -105,6 +110,8 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/numpy/numpy/issues/19000
+- type: FIX
+  url: https://github.com/numpy/numpy/commit/271010f1037150e95017f803f4214b8861e528f2
 aliases:
 - CVE-2021-41496
 modified: "2021-12-27T21:27:46.586839Z"

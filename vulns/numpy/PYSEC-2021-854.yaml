@@ -1,5 +1,5 @@
 id: PYSEC-2021-854
-details: A Buffer Overflow vulnerability exists in NumPy 1.9.x in the PyArray_NewFromDescr_int
+details: A Buffer Overflow vulnerability exists in NumPy before 1.21.0rc1 in the PyArray_NewFromDescr_int
   function of ctors.c when specifying arrays of large dimensions (over 32) from Python
   code, which could let a malicious user cause a Denial of Service.
 affected:
@@ -8,10 +8,15 @@ affected:
     ecosystem: PyPI
     purl: pkg:pypi:numpy
   ranges:
+  - type: GIT
+    repo: https://github.com/numpy/numpy
+    events:
+    - introduced: "0"
+    - fixed: ae317fd9ff3e79c0eac357d723bfc29cbd625f2e
   - type: ECOSYSTEM
     events:
-    - introduced: 1.9.0
-    - fixed: 1.10.0
+    - introduced: "0"
+    - fixed: "1.21.0rc1"
   versions:
   - 1.9.0
   - 1.9.1
@@ -20,6 +25,8 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/numpy/numpy/issues/18939
+- type: FIX
+  url: https://github.com/numpy/numpy/commit/ae317fd9ff3e79c0eac357d723bfc29cbd625f2e
 aliases:
 - CVE-2021-33430
 modified: "2021-12-22T21:28:25.850575Z"
