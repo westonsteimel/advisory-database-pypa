@@ -1,4 +1,9 @@
-id: PYSEC-0000-CVE-2024-24826
+id: PYSEC-2024-106
+modified: 2024-10-16T21:22:52.163301Z
+published: 2024-02-12T23:15:00Z
+aliases:
+- CVE-2024-24826
+- GHSA-g9xm-7538-mq8w
 details: Exiv2 is a command-line utility and C++ library for reading, writing, deleting,
   and modifying the metadata of image files. An out-of-bounds read was found in Exiv2
   version v0.28.1. The vulnerable function, `QuickTimeVideo::NikonTagsDecoder`, was
@@ -7,27 +12,17 @@ details: Exiv2 is a command-line utility and C++ library for reading, writing, d
   In most cases this out of bounds read will result in a crash. This bug is fixed
   in version v0.28.2. Users are advised to upgrade. There are no known workarounds
   for this vulnerability.
-aliases:
-- CVE-2024-24826
-- GHSA-g9xm-7538-mq8w
-modified: '2024-10-16T21:22:52.163301Z'
-published: '2024-02-12T23:15:00Z'
-references:
-- type: ADVISORY
-  url: https://github.com/Exiv2/exiv2/security/advisories/GHSA-g9xm-7538-mq8w
-- type: FIX
-  url: https://github.com/Exiv2/exiv2/pull/2337
 affected:
 - package:
-    name: exiv2
     ecosystem: PyPI
+    name: exiv2
     purl: pkg:pypi/exiv2
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
   versions:
-  - '0.1'
+  - "0.1"
   - 0.11.0
   - 0.11.1
   - 0.11.2
@@ -48,9 +43,14 @@ affected:
   - 0.16.3.post1
   - 0.17.0
   - 0.17.1
-  - '0.2'
-  - '0.3'
+  - "0.2"
+  - "0.3"
   - 0.3.1
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:H
+references:
+- type: ADVISORY
+  url: https://github.com/Exiv2/exiv2/security/advisories/GHSA-g9xm-7538-mq8w
+- type: FIX
+  url: https://github.com/Exiv2/exiv2/pull/2337
