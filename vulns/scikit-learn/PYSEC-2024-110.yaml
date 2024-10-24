@@ -1,4 +1,8 @@
-id: PYSEC-0000-CVE-2024-5206
+id: PYSEC-2024-110
+modified: 2024-10-24T21:22:05.950602Z
+published: 2024-06-06T19:16:00Z
+aliases:
+- CVE-2024-5206
 details: A sensitive data leakage vulnerability was identified in scikit-learn's TfidfVectorizer,
   specifically in versions up to and including 1.4.1.post1, which was fixed in version
   1.5.0. The vulnerability arises from the unexpected storage of all tokens present
@@ -8,47 +12,38 @@ details: A sensitive data leakage vulnerability was identified in scikit-learn's
   could contain tokens that were meant to be discarded and not stored, such as passwords
   or keys. The impact of this vulnerability varies based on the nature of the data
   being processed by the vectorizer.
-aliases:
-- CVE-2024-5206
-modified: '2024-10-24T21:22:05.950602Z'
-published: '2024-06-06T19:16:00Z'
-references:
-- type: WEB
-  url: https://huntr.com/bounties/14bc0917-a85b-4106-a170-d09d5191517c
-- type: FIX
-  url: https://github.com/scikit-learn/scikit-learn/commit/70ca21f106b603b611da73012c9ade7cd8e438b8
 affected:
 - package:
-    name: scikit-learn
     ecosystem: PyPI
+    name: scikit-learn
     purl: pkg:pypi/scikit-learn
   ranges:
   - type: GIT
-    repo: https://github.com/scikit-learn/scikit-learn
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 70ca21f106b603b611da73012c9ade7cd8e438b8
+    repo: https://github.com/scikit-learn/scikit-learn
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 1.5.0
   versions:
-  - '0.10'
-  - '0.11'
-  - '0.12'
+  - "0.10"
+  - "0.11"
+  - "0.12"
   - 0.12.1
-  - '0.13'
+  - "0.13"
   - 0.13.1
-  - '0.14'
+  - "0.14"
   - 0.14.1
   - 0.15.0
   - 0.15.1
   - 0.15.2
   - 0.16.0
   - 0.16.1
-  - '0.17'
+  - "0.17"
   - 0.17.1
-  - '0.18'
+  - "0.18"
   - 0.18.1
   - 0.18.2
   - 0.19.0
@@ -63,7 +58,7 @@ affected:
   - 0.21.1
   - 0.21.2
   - 0.21.3
-  - '0.22'
+  - "0.22"
   - 0.22.1
   - 0.22.2
   - 0.22.2.post1
@@ -73,8 +68,8 @@ affected:
   - 0.24.0
   - 0.24.1
   - 0.24.2
-  - '0.9'
-  - '1.0'
+  - "0.9"
+  - "1.0"
   - 1.0.1
   - 1.0.2
   - 1.1.0
@@ -97,3 +92,8 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+references:
+- type: WEB
+  url: https://huntr.com/bounties/14bc0917-a85b-4106-a170-d09d5191517c
+- type: FIX
+  url: https://github.com/scikit-learn/scikit-learn/commit/70ca21f106b603b611da73012c9ade7cd8e438b8
