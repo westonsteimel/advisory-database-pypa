@@ -1,4 +1,8 @@
-id: PYSEC-0000-CVE-2024-6581
+id: PYSEC-2024-116
+modified: 2024-11-01T21:22:09.060172Z
+published: 2024-10-29T13:15:00Z
+aliases:
+- CVE-2024-6581
 details: A vulnerability in the discussion image upload function of the Lollms application,
   version v9.9, allows for the uploading of SVG files. Due to incomplete filtering
   in the sanitize_svg function, this can lead to cross-site scripting (XSS) vulnerabilities,
@@ -6,31 +10,20 @@ details: A vulnerability in the discussion image upload function of the Lollms a
   removes script elements and 'on*' event attributes, but does not account for other
   potential vectors for XSS within SVG files. This vulnerability can be exploited
   when authorized users access a malicious URL containing the crafted SVG file.
-aliases:
-- CVE-2024-6581
-modified: '2024-11-01T21:22:09.060172Z'
-published: '2024-10-29T13:15:00Z'
-references:
-- type: EVIDENCE
-  url: https://huntr.com/bounties/ad68ecd6-44e2-449b-8e7e-f2b71b1b43c7
-- type: WEB
-  url: https://huntr.com/bounties/ad68ecd6-44e2-449b-8e7e-f2b71b1b43c7
-- type: FIX
-  url: https://github.com/parisneo/lollms/commit/328b960a0de2097e13654ac752253e9541521ddd
 affected:
 - package:
-    name: lollms
     ecosystem: PyPI
+    name: lollms
     purl: pkg:pypi/lollms
   ranges:
   - type: GIT
-    repo: https://github.com/parisneo/lollms
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 328b960a0de2097e13654ac752253e9541521ddd
+    repo: https://github.com/parisneo/lollms
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
   versions:
   - 1.1.10
   - 1.1.11
@@ -300,3 +293,10 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+references:
+- type: EVIDENCE
+  url: https://huntr.com/bounties/ad68ecd6-44e2-449b-8e7e-f2b71b1b43c7
+- type: WEB
+  url: https://huntr.com/bounties/ad68ecd6-44e2-449b-8e7e-f2b71b1b43c7
+- type: FIX
+  url: https://github.com/parisneo/lollms/commit/328b960a0de2097e13654ac752253e9541521ddd
