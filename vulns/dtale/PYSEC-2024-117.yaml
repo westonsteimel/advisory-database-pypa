@@ -1,4 +1,8 @@
-id: PYSEC-0000-CVE-2024-3408
+id: PYSEC-2024-117
+modified: 2024-11-03T20:22:34.425699Z
+published: 2024-06-06T19:16:00Z
+aliases:
+- CVE-2024-3408
 details: man-group/dtale version 3.10.0 is vulnerable to an authentication bypass
   and remote code execution (RCE) due to improper input validation. The vulnerability
   arises from a hardcoded `SECRET_KEY` in the flask configuration, allowing attackers
@@ -7,31 +11,20 @@ details: man-group/dtale version 3.10.0 is vulnerable to an authentication bypas
   arbitrary code on the server by bypassing the restriction on the `/update-settings`
   endpoint, even when `enable_custom_filters` is not enabled. This vulnerability allows
   attackers to bypass authentication mechanisms and execute remote code on the server.
-aliases:
-- CVE-2024-3408
-modified: '2024-11-03T20:22:34.425699Z'
-published: '2024-06-06T19:16:00Z'
-references:
-- type: EVIDENCE
-  url: https://huntr.com/bounties/57a06666-ff85-4577-af19-f3dfb7b02f91
-- type: WEB
-  url: https://huntr.com/bounties/57a06666-ff85-4577-af19-f3dfb7b02f91
-- type: FIX
-  url: https://github.com/man-group/dtale/commit/32bd6fb4a63de779ff1e51823a456865ea3cbd13
 affected:
 - package:
-    name: dtale
     ecosystem: PyPI
+    name: dtale
     purl: pkg:pypi/dtale
   ranges:
   - type: GIT
-    repo: https://github.com/man-group/dtale
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 32bd6fb4a63de779ff1e51823a456865ea3cbd13
+    repo: https://github.com/man-group/dtale
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
   versions:
   - 1.0.0
   - 1.1.1
@@ -206,3 +199,10 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+references:
+- type: EVIDENCE
+  url: https://huntr.com/bounties/57a06666-ff85-4577-af19-f3dfb7b02f91
+- type: WEB
+  url: https://huntr.com/bounties/57a06666-ff85-4577-af19-f3dfb7b02f91
+- type: FIX
+  url: https://github.com/man-group/dtale/commit/32bd6fb4a63de779ff1e51823a456865ea3cbd13
