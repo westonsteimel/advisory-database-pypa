@@ -6,7 +6,7 @@ details: A flaw was found in Ansible where the secret information present in asy
   1.2.
 aliases:
 - CVE-2021-3532
-modified: '2024-11-05T18:37:35.117477Z'
+modified: '2024-11-06T20:04:10.556865Z'
 published: '2021-06-09T12:15:00Z'
 withdrawn: '2024-08-02T20:32:38Z'
 references:
@@ -396,3 +396,4 @@ affected:
   - 9.12.0
   - 10.6.0
   - 11.0.0b1
+  - 11.0.0b2
