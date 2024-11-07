@@ -8,7 +8,7 @@ details: A vulnerability in the GraphCypherQAChain class of langchain-ai/langcha
   across different tenants, and compromise the integrity of the database.
 aliases:
 - CVE-2024-8309
-modified: '2024-11-04T19:21:45.015489Z'
+modified: '2024-11-07T16:26:50.338318Z'
 published: '2024-11-05T16:04:14Z'
 references:
 - type: EVIDENCE
@@ -31,7 +31,7 @@ affected:
   - type: ECOSYSTEM
     events:
     - introduced: '0'
-    - fixed: '0.2.0'
+    - fixed: 0.2.0
   versions:
   - 0.0.1
   - 0.0.10
@@ -419,6 +419,8 @@ affected:
   - 0.1.7
   - 0.1.8
   - 0.1.9
+  - 0.2.0rc1
+  - 0.2.0rc2
 - package:
     name: langchain-community
     ecosystem: PyPI
@@ -426,8 +428,8 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0.2.0'
-    - fixed: '0.3.0'
+    - introduced: 0.2.0
+    - fixed: 0.3.0
   versions:
   - 0.2.0
   - 0.2.1
@@ -446,7 +448,9 @@ affected:
   - 0.2.16
   - 0.2.17
   - 0.2.18
-
+  - 0.2.14
+  - 0.3.0.dev1
+  - 0.3.0.dev2
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
