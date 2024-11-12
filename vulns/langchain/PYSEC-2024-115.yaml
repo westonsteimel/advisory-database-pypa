@@ -8,7 +8,7 @@ details: A vulnerability in the GraphCypherQAChain class of langchain-ai/langcha
   across different tenants, and compromise the integrity of the database.
 aliases:
 - CVE-2024-8309
-modified: '2024-11-07T16:26:50.338318Z'
+modified: '2024-11-12T19:19:57.535206Z'
 published: '2024-11-05T16:04:14Z'
 references:
 - type: EVIDENCE
@@ -451,6 +451,7 @@ affected:
   - 0.2.14
   - 0.3.0.dev1
   - 0.3.0.dev2
+  - 0.2.19
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
