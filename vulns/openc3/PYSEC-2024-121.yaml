@@ -1,38 +1,29 @@
-id: PYSEC-0000-CVE-2024-47529
+id: PYSEC-2024-121
+modified: 2024-11-13T20:22:56.434107Z
+published: 2024-10-02T20:15:00Z
+aliases:
+- CVE-2024-47529
+- GHSA-4xqv-47rm-37mm
 details: OpenC3 COSMOS provides the functionality needed to send commands to and receive
   data from one or more embedded systems. OpenC3 COSMOS stores the password of a user
   unencrypted in the LocalStorage of a web browser. This makes the user password susceptible
   to exfiltration via Cross-site scripting (see GHSL-2024-128). This vulnerability
   is fixed in 5.19.0. This only affects Open Source edition, and not OpenC3 COSMOS
   Enterprise Edition.
-aliases:
-- CVE-2024-47529
-- GHSA-4xqv-47rm-37mm
-modified: '2024-11-13T20:22:56.434107Z'
-published: '2024-10-02T20:15:00Z'
-references:
-- type: ADVISORY
-  url: https://github.com/OpenC3/cosmos/security/advisories/GHSA-4xqv-47rm-37mm
-- type: FIX
-  url: https://github.com/OpenC3/cosmos/commit/b5ab34fe7fa54c0c8171c4aa3caf4e03d6f63bd7
-- type: EVIDENCE
-  url: https://securitylab.github.com/advisories/GHSL-2024-127_GHSL-2024-129_OpenC3_COSMOS
-- type: ADVISORY
-  url: https://securitylab.github.com/advisories/GHSL-2024-127_GHSL-2024-129_OpenC3_COSMOS
 affected:
 - package:
-    name: openc3
     ecosystem: PyPI
+    name: openc3
     purl: pkg:pypi/openc3
   ranges:
   - type: GIT
-    repo: https://github.com/OpenC3/cosmos
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: b5ab34fe7fa54c0c8171c4aa3caf4e03d6f63bd7
+    repo: https://github.com/OpenC3/cosmos
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 5.19.0
   versions:
   - 0.1.0
@@ -60,3 +51,12 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N
+references:
+- type: ADVISORY
+  url: https://github.com/OpenC3/cosmos/security/advisories/GHSA-4xqv-47rm-37mm
+- type: FIX
+  url: https://github.com/OpenC3/cosmos/commit/b5ab34fe7fa54c0c8171c4aa3caf4e03d6f63bd7
+- type: EVIDENCE
+  url: https://securitylab.github.com/advisories/GHSL-2024-127_GHSL-2024-129_OpenC3_COSMOS
+- type: ADVISORY
+  url: https://securitylab.github.com/advisories/GHSL-2024-127_GHSL-2024-129_OpenC3_COSMOS
