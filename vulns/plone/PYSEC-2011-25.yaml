@@ -1,21 +1,12 @@
-affected:
-- package:
-    ecosystem: PyPI
-    name: Plone
-  ranges:
-  - events:
-    - introduced: 3.3.2
-    - fixed: 3.3.6
-    type: ECOSYSTEM
-aliases:
-- CVE-2011-2528
+id: PYSEC-2011-25
 details: 'Unspecified vulnerability in (1) Zope 2.12.x before 2.12.19 and 2.13.x before
   2.13.8, as used in Plone 4.x and other products, and (2) PloneHotfix20110720 for
   Plone 3.x allows attackers to gain privileges via unspecified vectors, related to
   a "highly serious vulnerability." NOTE: this vulnerability exists because of an
   incorrect fix for CVE-2011-0720.'
-id: PYSEC-2011-25
-modified: '2024-11-25T18:35:18.357593Z'
+aliases:
+- CVE-2011-2528
+modified: '2024-11-25T22:26:05.519360Z'
 published: '2011-07-19T20:55:00Z'
 references:
 - type: FIX
@@ -38,3 +29,17 @@ references:
   url: http://secunia.com/advisories/45111
 - type: FIX
   url: http://www.openwall.com/lists/oss-security/2011/07/04/6
+affected:
+- package:
+    name: Plone
+    ecosystem: PyPI
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 3.3.2
+    - fixed: 3.3.6
+  versions:
+  - 3.3.2
+  - 3.3.3
+  - 3.3.4
+  - 3.3.5
