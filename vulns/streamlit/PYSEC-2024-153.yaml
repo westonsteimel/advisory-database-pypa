@@ -1,4 +1,9 @@
-id: PYSEC-0000-CVE-2024-42474
+id: PYSEC-2024-153
+modified: 2024-11-25T21:22:50.933853Z
+published: 2024-08-12T17:15:17Z
+aliases:
+- CVE-2024-42474
+- GHSA-rxff-vr5r-8cj5
 details: Streamlit is a data oriented application development framework for python.
   Snowflake Streamlit open source addressed a security vulnerability via the static
   file sharing feature. Users of hosted Streamlit app(s) on Windows were vulnerable
@@ -6,33 +11,23 @@ details: Streamlit is a data oriented application development framework for pyth
   An attacker could utilize the vulnerability to leak the password hash of the Windows
   user running Streamlit. The vulnerability was patched on Jul 25, 2024, as part of
   Streamlit open source version 1.37.0. The vulnerability only affects Windows.
-aliases:
-- CVE-2024-42474
-- GHSA-rxff-vr5r-8cj5
-modified: '2024-11-25T21:22:50.933853Z'
-published: '2024-08-12T17:15:17Z'
-references:
-- type: ADVISORY
-  url: https://github.com/streamlit/streamlit/security/advisories/GHSA-rxff-vr5r-8cj5
-- type: FIX
-  url: https://github.com/streamlit/streamlit/commit/3a639859cfdfba2187c81897d44a3e33825eb0a3
 affected:
 - package:
-    name: streamlit
     ecosystem: PyPI
+    name: streamlit
     purl: pkg:pypi/streamlit
   ranges:
   - type: GIT
-    repo: https://github.com/streamlit/streamlit
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 3a639859cfdfba2187c81897d44a3e33825eb0a3
+    repo: https://github.com/streamlit/streamlit
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 1.37.0
   versions:
-  - '0.1'
+  - "0.1"
   - 0.11.0
   - 0.12.2
   - 0.12.3
@@ -60,7 +55,7 @@ affected:
   - 0.18.1
   - 0.19.0
   - 0.19.1
-  - '0.2'
+  - "0.2"
   - 0.20.0
   - 0.21.0
   - 0.22.0
@@ -77,7 +72,7 @@ affected:
   - 0.27.0
   - 0.28.0
   - 0.29.0
-  - '0.3'
+  - "0.3"
   - 0.30.0
   - 0.31.0
   - 0.32.0
@@ -86,7 +81,7 @@ affected:
   - 0.35.0
   - 0.36.0
   - 0.37.0
-  - '0.4'
+  - "0.4"
   - 0.40.0
   - 0.40.1
   - 0.41.0
@@ -105,7 +100,7 @@ affected:
   - 0.48.0
   - 0.48.1
   - 0.49.0
-  - '0.5'
+  - "0.5"
   - 0.50.0
   - 0.50.1
   - 0.50.2
@@ -124,7 +119,7 @@ affected:
   - 0.57.3
   - 0.58.0
   - 0.59.0
-  - '0.6'
+  - "0.6"
   - 0.60.0
   - 0.61.0
   - 0.62.0
@@ -143,7 +138,7 @@ affected:
   - 0.69.0
   - 0.69.1
   - 0.69.2
-  - '0.7'
+  - "0.7"
   - 0.70.0
   - 0.71.0
   - 0.72.0
@@ -156,7 +151,7 @@ affected:
   - 0.77.0
   - 0.78.0
   - 0.79.0
-  - '0.8'
+  - "0.8"
   - 0.8.2
   - 0.80.0
   - 0.81.0
@@ -259,3 +254,8 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
+references:
+- type: ADVISORY
+  url: https://github.com/streamlit/streamlit/security/advisories/GHSA-rxff-vr5r-8cj5
+- type: FIX
+  url: https://github.com/streamlit/streamlit/commit/3a639859cfdfba2187c81897d44a3e33825eb0a3
