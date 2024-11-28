@@ -1,17 +1,32 @@
+id: PYSEC-2020-343
+details: blosc2.c in Blosc C-Blosc2 through 2.0.0.beta.5 has a heap-based buffer overflow
+  when there is a lack of space to write compressed data.
+aliases:
+- CVE-2020-29367
+modified: '2024-11-28T17:34:40.620368Z'
+published: '2020-11-27T20:15:00Z'
+withdrawn: '2024-11-22T04:37:03Z'
+references:
+- type: FIX
+  url: https://github.com/Blosc/c-blosc2/commit/c4c6470e88210afc95262c8b9fcc27e30ca043ee
+- type: ARTICLE
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26442
+- type: WEB
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26442
 affected:
 - package:
-    ecosystem: PyPI
     name: blosc2
+    ecosystem: PyPI
     purl: pkg:pypi/blosc2
   ranges:
-  - events:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2
+    events:
     - introduced: '0'
     - fixed: c4c6470e88210afc95262c8b9fcc27e30ca043ee
-    repo: https://github.com/Blosc/c-blosc2
-    type: GIT
-  - events:
+  - type: ECOSYSTEM
+    events:
     - introduced: '0'
-    type: ECOSYSTEM
   versions:
   - 0.1.1
   - 0.1.10
@@ -64,21 +79,7 @@ affected:
   - 3.0.0b1
   - 3.0.0b3
   - 3.0.0b4
-aliases:
-- CVE-2020-29367
-details: blosc2.c in Blosc C-Blosc2 through 2.0.0.beta.5 has a heap-based buffer overflow
-  when there is a lack of space to write compressed data.
-id: PYSEC-2020-343
-modified: '2024-11-21T14:22:41.397462Z'
-published: '2020-11-27T20:15:00Z'
-references:
-- type: FIX
-  url: https://github.com/Blosc/c-blosc2/commit/c4c6470e88210afc95262c8b9fcc27e30ca043ee
-- type: ARTICLE
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26442
-- type: WEB
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26442
+  - 3.0.0rc1
 severity:
-- score: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
-  type: CVSS_V3
-withdrawn: '2024-11-22T04:37:03Z'
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
