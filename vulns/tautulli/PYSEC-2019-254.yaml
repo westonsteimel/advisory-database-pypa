@@ -4,7 +4,7 @@ details: In Tautulli 2.1.9, CSRF in the /shutdown URI allows an attacker to shut
   that do not have a user login area).
 aliases:
 - CVE-2019-19833
-modified: '2024-11-25T20:23:39.011035Z'
+modified: '2024-11-29T05:22:45.770837Z'
 published: '2019-12-18T18:15:00Z'
 withdrawn: '2024-11-22T04:37:05Z'
 references:
@@ -75,6 +75,8 @@ affected:
   - 4.3.3.2140
   - 4.3.4.2140
   - 4.4.0.2142
+  - 4.5.0.2142
+  - 4.5.1.2142
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
