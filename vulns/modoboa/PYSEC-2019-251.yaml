@@ -6,7 +6,7 @@ details: The modoboa-dmarc plugin 1.1.0 for Modoboa is vulnerable to an XML Exte
   to the address in the rua field of the DMARC records of a domain.
 aliases:
 - CVE-2019-19702
-modified: '2024-12-02T08:38:39.759175Z'
+modified: '2024-12-02T10:49:36.349040Z'
 published: '2019-12-10T20:15:00Z'
 withdrawn: '2024-11-22T04:37:04Z'
 references:
@@ -106,6 +106,7 @@ affected:
   - 2.3.1
   - 2.3.2
   - 2.3.3
+  - 2.3.4
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
