@@ -3,7 +3,7 @@ details: blosc2.c in Blosc C-Blosc2 through 2.0.0.beta.5 has a heap-based buffer
   when there is a lack of space to write compressed data.
 aliases:
 - CVE-2020-29367
-modified: '2024-12-10T13:38:44.769995Z'
+modified: '2024-12-12T14:22:45.450508Z'
 published: '2020-11-27T20:15:00Z'
 withdrawn: '2024-11-22T04:37:03Z'
 references:
@@ -82,6 +82,7 @@ affected:
   - 3.0.0rc1
   - 3.0.0rc2
   - 3.0.0rc3
+  - 3.0.0
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
