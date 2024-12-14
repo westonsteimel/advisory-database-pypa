@@ -6,7 +6,7 @@ details: A path traversal vulnerability exists in the `getFullPath` method of la
   `mdelete` methods, which do not properly sanitize user input.
 aliases:
 - CVE-2024-7774
-modified: '2024-12-10T20:48:03.439432Z'
+modified: '2024-12-14T20:23:12.908655Z'
 published: '2024-10-29T13:15:00Z'
 withdrawn: '2024-11-04T21:54:00Z'
 references:
@@ -451,6 +451,7 @@ affected:
   - 0.3.9
   - 0.3.10
   - 0.3.11
+  - 0.3.12
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
