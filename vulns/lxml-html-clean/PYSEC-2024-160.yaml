@@ -1,4 +1,9 @@
-id: PYSEC-0000-CVE-2024-52595
+id: PYSEC-2024-160
+modified: 2025-01-14T05:22:17.244267Z
+published: 2024-11-19T22:15:21Z
+aliases:
+- CVE-2024-52595
+- GHSA-5jfw-gq64-q45f
 details: lxml_html_clean is a project for HTML cleaning functionalities copied from
   `lxml.html.clean`. Prior to version 0.4.0, the HTML Parser in lxml does not properly
   handle context-switching for special HTML tags such as `<svg>`, `<math>` and `<noscript>`.
@@ -15,32 +20,20 @@ details: lxml_html_clean is a project for HTML cleaning functionalities copied f
   may specify tags to be removed completely. Via `allow_tags`, one may restrict the
   set of permissible tags, excluding context-switching tags like `<svg>`, `<math>`
   and `<noscript>`.
-aliases:
-- CVE-2024-52595
-- GHSA-5jfw-gq64-q45f
-modified: '2025-01-14T05:22:17.244267Z'
-published: '2024-11-19T22:15:21Z'
-references:
-- type: ADVISORY
-  url: https://github.com/fedora-python/lxml_html_clean/security/advisories/GHSA-5jfw-gq64-q45f
-- type: FIX
-  url: https://github.com/fedora-python/lxml_html_clean/commit/c5d816f86eb3707d72a8ecf5f3823e0daa1b3808
-- type: FIX
-  url: https://github.com/fedora-python/lxml_html_clean/pull/19
 affected:
 - package:
-    name: lxml-html-clean
     ecosystem: PyPI
+    name: lxml-html-clean
     purl: pkg:pypi/lxml-html-clean
   ranges:
   - type: GIT
-    repo: https://github.com/fedora-python/lxml_html_clean
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: c5d816f86eb3707d72a8ecf5f3823e0daa1b3808
+    repo: https://github.com/fedora-python/lxml_html_clean
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 0.4.0
   versions:
   - 0.1.0
@@ -53,3 +46,10 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+references:
+- type: ADVISORY
+  url: https://github.com/fedora-python/lxml_html_clean/security/advisories/GHSA-5jfw-gq64-q45f
+- type: FIX
+  url: https://github.com/fedora-python/lxml_html_clean/commit/c5d816f86eb3707d72a8ecf5f3823e0daa1b3808
+- type: FIX
+  url: https://github.com/fedora-python/lxml_html_clean/pull/19

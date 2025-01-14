@@ -1,4 +1,8 @@
-id: PYSEC-0000-CVE-2024-1892
+id: PYSEC-2024-162
+modified: 2025-01-14T05:22:21.870348Z
+published: 2024-02-28T00:15:53Z
+aliases:
+- CVE-2024-1892
 details: A Regular Expression Denial of Service (ReDoS) vulnerability exists in the
   XMLFeedSpider class of the scrapy/scrapy project, specifically in the parsing of
   XML content. By crafting malicious XML content that exploits inefficient regular
@@ -6,36 +10,21 @@ details: A Regular Expression Denial of Service (ReDoS) vulnerability exists in 
   (DoS) condition. This vulnerability allows for the system to hang and consume significant
   resources, potentially rendering services that utilize Scrapy for XML processing
   unresponsive.
-aliases:
-- CVE-2024-1892
-modified: '2025-01-14T05:22:21.870348Z'
-published: '2024-02-28T00:15:53Z'
-references:
-- type: EVIDENCE
-  url: https://huntr.com/bounties/271f94f2-1e05-4616-ac43-41752389e26b
-- type: FIX
-  url: https://github.com/scrapy/scrapy/commit/479619b340f197a8f24c5db45bc068fb8755f2c5
-- type: FIX
-  url: https://huntr.com/bounties/271f94f2-1e05-4616-ac43-41752389e26b
-- type: REPORT
-  url: https://huntr.com/bounties/271f94f2-1e05-4616-ac43-41752389e26b
-- type: WEB
-  url: https://huntr.com/bounties/271f94f2-1e05-4616-ac43-41752389e26b
 affected:
 - package:
-    name: scrapy
     ecosystem: PyPI
+    name: scrapy
     purl: pkg:pypi/scrapy
   ranges:
   - type: GIT
-    repo: https://github.com/scrapy/scrapy
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 479619b340f197a8f24c5db45bc068fb8755f2c5
     - fixed: 479619b340f197a8f24c5db45bc068fb8755f2c5
+    repo: https://github.com/scrapy/scrapy
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 2.11.1
   versions:
   - 0.10.4.2364
@@ -68,9 +57,9 @@ affected:
   - 0.24.4
   - 0.24.5
   - 0.24.6
-  - '0.7'
-  - '0.8'
-  - '0.9'
+  - "0.7"
+  - "0.8"
+  - "0.9"
   - 1.0.0
   - 1.0.0rc1
   - 1.0.0rc2
@@ -138,3 +127,14 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+references:
+- type: EVIDENCE
+  url: https://huntr.com/bounties/271f94f2-1e05-4616-ac43-41752389e26b
+- type: FIX
+  url: https://github.com/scrapy/scrapy/commit/479619b340f197a8f24c5db45bc068fb8755f2c5
+- type: FIX
+  url: https://huntr.com/bounties/271f94f2-1e05-4616-ac43-41752389e26b
+- type: REPORT
+  url: https://huntr.com/bounties/271f94f2-1e05-4616-ac43-41752389e26b
+- type: WEB
+  url: https://huntr.com/bounties/271f94f2-1e05-4616-ac43-41752389e26b
