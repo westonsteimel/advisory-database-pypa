@@ -1,28 +1,19 @@
-id: PYSEC-0000-CVE-2024-39863
-details: |
-  Apache Airflow versions before 2.9.3 have a vulnerability that allows an authenticated attacker to inject a malicious link when installing a provider. Users are recommended to upgrade to version 2.9.3, which fixes this issue.
+id: PYSEC-2024-189
+modified: 2025-01-19T07:21:16.796301Z
+published: 2024-07-17T08:15:01Z
 aliases:
 - CVE-2024-39863
-modified: '2025-01-19T07:21:16.796301Z'
-published: '2024-07-17T08:15:01Z'
-references:
-- type: ARTICLE
-  url: https://lists.apache.org/thread/gxkvs279f1mbvckv5q65worr6how20o3
-- type: FIX
-  url: https://github.com/apache/airflow/pull/40475
-- type: REPORT
-  url: https://github.com/apache/airflow/pull/40475
-- type: WEB
-  url: http://www.openwall.com/lists/oss-security/2024/07/16/6
+details: |
+  Apache Airflow versions before 2.9.3 have a vulnerability that allows an authenticated attacker to inject a malicious link when installing a provider. Users are recommended to upgrade to version 2.9.3, which fixes this issue.
 affected:
 - package:
-    name: apache-airflow
     ecosystem: PyPI
+    name: apache-airflow
     purl: pkg:pypi/apache-airflow
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 2.9.3
   versions:
   - 1.10.0
@@ -224,3 +215,12 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N
+references:
+- type: ARTICLE
+  url: https://lists.apache.org/thread/gxkvs279f1mbvckv5q65worr6how20o3
+- type: FIX
+  url: https://github.com/apache/airflow/pull/40475
+- type: REPORT
+  url: https://github.com/apache/airflow/pull/40475
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2024/07/16/6
