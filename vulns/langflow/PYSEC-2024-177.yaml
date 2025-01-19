@@ -1,25 +1,20 @@
-id: PYSEC-0000-CVE-2024-37014
+id: PYSEC-2024-177
+modified: 2025-01-19T01:52:23.722576Z
+published: 2024-06-10T20:15:15Z
+aliases:
+- CVE-2024-37014
 details: Langflow through 0.6.19 allows remote code execution if untrusted users are
   able to reach the "POST /api/v1/custom_component" endpoint and provide a Python
   script.
-aliases:
-- CVE-2024-37014
-modified: '2025-01-19T01:52:23.722576Z'
-published: '2024-06-10T20:15:15Z'
-references:
-- type: EVIDENCE
-  url: https://github.com/langflow-ai/langflow/issues/1973
-- type: REPORT
-  url: https://github.com/langflow-ai/langflow/issues/1973
 affected:
 - package:
-    name: langflow
     ecosystem: PyPI
+    name: langflow
     purl: pkg:pypi/langflow
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 1.0.0a3
   versions:
   - 0.0.31
@@ -190,3 +185,8 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+references:
+- type: EVIDENCE
+  url: https://github.com/langflow-ai/langflow/issues/1973
+- type: REPORT
+  url: https://github.com/langflow-ai/langflow/issues/1973
