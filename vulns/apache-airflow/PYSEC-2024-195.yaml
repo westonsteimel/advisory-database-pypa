@@ -1,34 +1,26 @@
-id: PYSEC-0000-CVE-2024-25142
-details: "Use of Web Browser Cache Containing Sensitive Information vulnerability\
-  \ in Apache Airflow.\_\n\nAirflow did not return \"Cache-Control\" header for dynamic\
-  \ content, which in case of some browsers could result in potentially storing sensitive\
-  \ data in local cache of the browser.\n\nThis issue affects Apache Airflow: before\
-  \ 2.9.2.\n\nUsers are recommended to upgrade to version 2.9.2, which fixes the issue.\n\
-  \n"
+id: PYSEC-2024-195
+modified: 2025-01-19T16:22:56.419822Z
+published: 2024-06-14T09:15:09Z
 aliases:
 - CVE-2024-25142
-modified: '2025-01-19T16:22:56.419822Z'
-published: '2024-06-14T09:15:09Z'
-references:
-- type: ADVISORY
-  url: https://lists.apache.org/thread/cg1j28lk0fhzthk0of1g7vy7p2n1j7nr
-- type: ARTICLE
-  url: https://lists.apache.org/thread/cg1j28lk0fhzthk0of1g7vy7p2n1j7nr
-- type: ARTICLE
-  url: http://www.openwall.com/lists/oss-security/2024/06/13/1
-- type: FIX
-  url: https://github.com/apache/airflow/pull/39550
-- type: WEB
-  url: http://www.openwall.com/lists/oss-security/2024/06/13/1
+details: |+
+  Use of Web Browser Cache Containing Sensitive Information vulnerability in Apache Airflow. 
+
+  Airflow did not return "Cache-Control" header for dynamic content, which in case of some browsers could result in potentially storing sensitive data in local cache of the browser.
+
+  This issue affects Apache Airflow: before 2.9.2.
+
+  Users are recommended to upgrade to version 2.9.2, which fixes the issue.
+
 affected:
 - package:
-    name: apache-airflow
     ecosystem: PyPI
+    name: apache-airflow
     purl: pkg:pypi/apache-airflow
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 2.9.2
   versions:
   - 1.10.0
@@ -228,3 +220,14 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
+references:
+- type: ADVISORY
+  url: https://lists.apache.org/thread/cg1j28lk0fhzthk0of1g7vy7p2n1j7nr
+- type: ARTICLE
+  url: https://lists.apache.org/thread/cg1j28lk0fhzthk0of1g7vy7p2n1j7nr
+- type: ARTICLE
+  url: http://www.openwall.com/lists/oss-security/2024/06/13/1
+- type: FIX
+  url: https://github.com/apache/airflow/pull/39550
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2024/06/13/1

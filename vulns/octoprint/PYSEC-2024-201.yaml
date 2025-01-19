@@ -1,4 +1,9 @@
-id: PYSEC-0000-CVE-2024-49377
+id: PYSEC-2024-201
+modified: 2025-01-19T16:22:59.154645Z
+published: 2024-11-05T19:15:05Z
+aliases:
+- CVE-2024-49377
+- GHSA-xvxq-g8hw-fx4g
 details: OctoPrint provides a web interface for controlling consumer 3D printers.
   OctoPrint versions up until and including 1.10.2 contain reflected XSS vulnerabilities
   in the login dialog and the standalone application key confirmation dialog.  An
@@ -17,23 +22,15 @@ details: OctoPrint provides a web interface for controlling consumer 3D printers
   party plugins will be able to opt into the automatic escaping. With OctoPrint 1.13.0,
   automatic escaping will be switched over to be enforced even for third party plugins,
   unless they explicitly opt-out.
-aliases:
-- CVE-2024-49377
-- GHSA-xvxq-g8hw-fx4g
-modified: '2025-01-19T16:22:59.154645Z'
-published: '2024-11-05T19:15:05Z'
-references:
-- type: ADVISORY
-  url: https://github.com/OctoPrint/OctoPrint/security/advisories/GHSA-xvxq-g8hw-fx4g
 affected:
 - package:
-    name: octoprint
     ecosystem: PyPI
+    name: octoprint
     purl: pkg:pypi/octoprint
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 1.10.3
   versions:
   - 1.10.0
@@ -105,3 +102,6 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+references:
+- type: ADVISORY
+  url: https://github.com/OctoPrint/OctoPrint/security/advisories/GHSA-xvxq-g8hw-fx4g
