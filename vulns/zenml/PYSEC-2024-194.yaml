@@ -1,40 +1,29 @@
-id: PYSEC-0000-CVE-2024-2383
+id: PYSEC-2024-194
+modified: 2025-01-19T13:22:31.835293Z
+published: 2024-06-06T19:15:54Z
+aliases:
+- CVE-2024-2383
 details: A clickjacking vulnerability exists in zenml-io/zenml versions up to and
   including 0.55.5 due to the application's failure to set appropriate X-Frame-Options
   or Content-Security-Policy HTTP headers. This vulnerability allows an attacker to
   embed the application UI within an iframe on a malicious page, potentially leading
   to unauthorized actions by tricking users into interacting with the interface under
   the attacker's control. The issue was addressed in version 0.56.3.
-aliases:
-- CVE-2024-2383
-modified: '2025-01-19T13:22:31.835293Z'
-published: '2024-06-06T19:15:54Z'
-references:
-- type: EVIDENCE
-  url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963
-- type: FIX
-  url: https://github.com/zenml-io/zenml/commit/f863fde1269bc355951f8cfc826c0244d88ad5e9
-- type: FIX
-  url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963
-- type: REPORT
-  url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963
-- type: WEB
-  url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963
 affected:
 - package:
-    name: zenml
     ecosystem: PyPI
+    name: zenml
     purl: pkg:pypi/zenml
   ranges:
   - type: GIT
-    repo: https://github.com/zenml-io/zenml
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: f863fde1269bc355951f8cfc826c0244d88ad5e9
     - fixed: f863fde1269bc355951f8cfc826c0244d88ad5e9
+    repo: https://github.com/zenml-io/zenml
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 0.56.3
   versions:
   - 0.0.1rc1
@@ -172,3 +161,14 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+references:
+- type: EVIDENCE
+  url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963
+- type: FIX
+  url: https://github.com/zenml-io/zenml/commit/f863fde1269bc355951f8cfc826c0244d88ad5e9
+- type: FIX
+  url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963
+- type: REPORT
+  url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963
+- type: WEB
+  url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963

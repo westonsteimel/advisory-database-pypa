@@ -1,24 +1,19 @@
-id: PYSEC-0000-CVE-2024-45201
-details: An issue was discovered in llama_index before 0.10.38. download/integration.py
-  includes an exec call for import {cls_name}.
+id: PYSEC-2024-192
+modified: 2025-01-19T13:22:29.175614Z
+published: 2024-08-22T20:15:10Z
 aliases:
 - CVE-2024-45201
-modified: '2025-01-19T13:22:29.175614Z'
-published: '2024-08-22T20:15:10Z'
-references:
-- type: WEB
-  url: https://github.com/run-llama/llama_index/compare/v0.10.37...v0.10.38
-- type: WEB
-  url: https://github.com/run-llama/llama_index/pull/13523
+details: An issue was discovered in llama_index before 0.10.38. download/integration.py
+  includes an exec call for import {cls_name}.
 affected:
 - package:
-    name: llama-index
     ecosystem: PyPI
+    name: llama-index
     purl: pkg:pypi/llama-index
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 0.10.38
   versions:
   - 0.10.0
@@ -386,3 +381,8 @@ affected:
   - 0.9.8
   - 0.9.8.post1
   - 0.9.9
+references:
+- type: WEB
+  url: https://github.com/run-llama/llama_index/compare/v0.10.37...v0.10.38
+- type: WEB
+  url: https://github.com/run-llama/llama_index/pull/13523
