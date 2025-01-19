@@ -1,37 +1,30 @@
-id: PYSEC-0000-CVE-2024-24564
+id: PYSEC-2024-205
+modified: 2025-01-19T19:19:01.519824Z
+published: 2024-02-26T20:19:05Z
+aliases:
+- CVE-2024-24564
+related:
+- GHSA-4hwq-4cpm-8vmx
+- GHSA-4hwq-4cpm-8vmx
 details: Vyper is a pythonic Smart Contract Language for the ethereum virtual machine.
   When using the built-in `extract32(b, start)`, if the `start` index provided has
   for side effect to update `b`, the byte array to extract `32` bytes from, it could
   be that some dirty memory is read and returned by `extract32`. This vulnerability
   is fixed in 0.4.0.
-aliases:
-- CVE-2024-24564
-modified: '2025-01-19T19:19:01.519824Z'
-published: '2024-02-26T20:19:05Z'
-related:
-- GHSA-4hwq-4cpm-8vmx
-- GHSA-4hwq-4cpm-8vmx
-references:
-- type: ADVISORY
-  url: https://github.com/vyperlang/vyper/security/advisories/GHSA-4hwq-4cpm-8vmx
-- type: EVIDENCE
-  url: https://github.com/vyperlang/vyper/security/advisories/GHSA-4hwq-4cpm-8vmx
-- type: FIX
-  url: https://github.com/vyperlang/vyper/commit/3d9c537142fb99b2672f21e2057f5f202cde194f
 affected:
 - package:
-    name: vyper
     ecosystem: PyPI
+    name: vyper
     purl: pkg:pypi/vyper
   ranges:
   - type: GIT
-    repo: https://github.com/vyperlang/vyper
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 3d9c537142fb99b2672f21e2057f5f202cde194f
+    repo: https://github.com/vyperlang/vyper
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 0.4.0
   versions:
   - 0.1.0b1
@@ -98,3 +91,10 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+references:
+- type: ADVISORY
+  url: https://github.com/vyperlang/vyper/security/advisories/GHSA-4hwq-4cpm-8vmx
+- type: EVIDENCE
+  url: https://github.com/vyperlang/vyper/security/advisories/GHSA-4hwq-4cpm-8vmx
+- type: FIX
+  url: https://github.com/vyperlang/vyper/commit/3d9c537142fb99b2672f21e2057f5f202cde194f
