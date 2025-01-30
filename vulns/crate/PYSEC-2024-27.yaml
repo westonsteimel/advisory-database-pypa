@@ -6,7 +6,7 @@ details: CrateDB 5.5.1 is contains an authentication bypass vulnerability in the
   default user identity.(https://github.com/crate/crate/issues/15231)
 aliases:
 - CVE-2023-51982
-modified: '2025-01-17T19:47:56.005804Z'
+modified: '2025-01-30T22:47:57.847403Z'
 published: '2024-01-30T01:15:00Z'
 withdrawn: '2024-11-20T09:19:00Z'
 references:
@@ -127,6 +127,7 @@ affected:
   - 2.0.0.dev4
   - 2.0.0.dev5
   - 2.0.0.dev6
+  - 2.0.0
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
