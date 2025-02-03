@@ -1,26 +1,21 @@
-id: PYSEC-0000-CVE-2024-27134
+id: PYSEC-2024-224
+modified: 2025-02-03T16:23:40.409646Z
+published: 2024-11-25T14:15:06Z
+aliases:
+- CVE-2024-27134
 details: Excessive directory permissions in MLflow leads to local privilege escalation
   when using spark_udf. This behavior can be exploited by a local attacker to gain
   elevated permissions by using a ToCToU attack. The issue is only relevant when the
   spark_udf() MLflow API is called.
-aliases:
-- CVE-2024-27134
-modified: '2025-02-03T16:23:40.409646Z'
-published: '2024-11-25T14:15:06Z'
-references:
-- type: FIX
-  url: https://github.com/mlflow/mlflow/pull/10874
-- type: REPORT
-  url: https://github.com/mlflow/mlflow/pull/10874
 affected:
 - package:
-    name: mlflow
     ecosystem: PyPI
+    name: mlflow
     purl: pkg:pypi/mlflow
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 2.16.0
   versions:
   - 0.0.1
@@ -49,7 +44,7 @@ affected:
   - 1.11.0
   - 1.12.0
   - 1.12.1
-  - '1.13'
+  - "1.13"
   - 1.13.1
   - 1.14.0
   - 1.14.1
@@ -135,3 +130,8 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H
+references:
+- type: FIX
+  url: https://github.com/mlflow/mlflow/pull/10874
+- type: REPORT
+  url: https://github.com/mlflow/mlflow/pull/10874
