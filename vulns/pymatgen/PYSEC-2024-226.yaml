@@ -1,44 +1,31 @@
-id: PYSEC-0000-CVE-2024-23346
+id: PYSEC-2024-226
+modified: 2025-02-06T00:34:28.73473Z
+published: 2024-02-21T17:15:09Z
+aliases:
+- CVE-2024-23346
+related:
+- GHSA-vgv8-5cpj-qj2f
+- GHSA-vgv8-5cpj-qj2f
 details: Pymatgen (Python Materials Genomics) is an open-source Python library for
   materials analysis. A critical security vulnerability exists in the `JonesFaithfulTransformation.from_transformation_str()`
   method within the `pymatgen` library prior to version 2024.2.20. This method insecurely
   utilizes `eval()` for processing input, enabling execution of arbitrary code when
   parsing untrusted input. Version 2024.2.20 fixes this issue.
-aliases:
-- CVE-2024-23346
-modified: '2025-02-06T00:34:28.734730Z'
-published: '2024-02-21T17:15:09Z'
-related:
-- GHSA-vgv8-5cpj-qj2f
-- GHSA-vgv8-5cpj-qj2f
-references:
-- type: ADVISORY
-  url: https://github.com/materialsproject/pymatgen/security/advisories/GHSA-vgv8-5cpj-qj2f
-- type: EVIDENCE
-  url: https://github.com/materialsproject/pymatgen/security/advisories/GHSA-vgv8-5cpj-qj2f
-- type: EVIDENCE
-  url: https://www.vicarius.io/vsociety/posts/critical-security-flaw-in-pymatgen-library-cve-2024-23346
-- type: FIX
-  url: https://github.com/materialsproject/pymatgen/commit/c231cbd3d5147ee920a37b6ee9dd236b376bcf5a
-- type: WEB
-  url: https://github.com/materialsproject/pymatgen/blob/master/pymatgen/symmetry/settings.py#L97C1-L111C108
-- type: WEB
-  url: https://www.vicarius.io/vsociety/posts/critical-security-flaw-in-pymatgen-library-cve-2024-23346
 affected:
 - package:
-    name: pymatgen
     ecosystem: PyPI
+    name: pymatgen
     purl: pkg:pypi/pymatgen
   ranges:
   - type: GIT
-    repo: https://github.com/materialsproject/pymatgen
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: c231cbd3d5147ee920a37b6ee9dd236b376bcf5a
     - fixed: c231cbd3d5147ee920a37b6ee9dd236b376bcf5a
+    repo: https://github.com/materialsproject/pymatgen
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 2024.2.20
   versions:
   - 1.0.4
@@ -417,3 +404,16 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+references:
+- type: ADVISORY
+  url: https://github.com/materialsproject/pymatgen/security/advisories/GHSA-vgv8-5cpj-qj2f
+- type: EVIDENCE
+  url: https://github.com/materialsproject/pymatgen/security/advisories/GHSA-vgv8-5cpj-qj2f
+- type: EVIDENCE
+  url: https://www.vicarius.io/vsociety/posts/critical-security-flaw-in-pymatgen-library-cve-2024-23346
+- type: FIX
+  url: https://github.com/materialsproject/pymatgen/commit/c231cbd3d5147ee920a37b6ee9dd236b376bcf5a
+- type: WEB
+  url: https://github.com/materialsproject/pymatgen/blob/master/pymatgen/symmetry/settings.py#L97C1-L111C108
+- type: WEB
+  url: https://www.vicarius.io/vsociety/posts/critical-security-flaw-in-pymatgen-library-cve-2024-23346
