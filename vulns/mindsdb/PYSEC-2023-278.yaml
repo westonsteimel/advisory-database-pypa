@@ -6,7 +6,7 @@ details: MindsDB connects artificial intelligence models to real time data. Vers
 aliases:
 - CVE-2023-49796
 - GHSA-crhp-7c74-cg4c
-modified: '2025-02-04T19:03:48.084421Z'
+modified: '2025-02-11T16:04:45.361866Z'
 published: '2023-12-11T21:15:00Z'
 withdrawn: '2024-11-22T04:37:04Z'
 references:
@@ -548,6 +548,7 @@ affected:
   - 25.1.5.3
   - 25.2.1.0
   - 25.2.1.2
+  - 25.2.2.0
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
