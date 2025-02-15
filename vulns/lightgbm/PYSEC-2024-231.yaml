@@ -1,23 +1,18 @@
-id: PYSEC-0000-CVE-2024-43598
-details: LightGBM Remote Code Execution Vulnerability
+id: PYSEC-2024-231
+modified: 2025-02-15T07:20:34.246161Z
+published: 2024-11-12T18:15:28Z
 aliases:
 - CVE-2024-43598
-modified: '2025-02-15T07:20:34.246161Z'
-published: '2024-11-12T18:15:28Z'
-references:
-- type: ADVISORY
-  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43598
-- type: FIX
-  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43598
+details: LightGBM Remote Code Execution Vulnerability
 affected:
 - package:
-    name: lightgbm
     ecosystem: PyPI
+    name: lightgbm
     purl: pkg:pypi/lightgbm
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 4.6.0
   versions:
   - 2.0.10
@@ -59,3 +54,8 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+references:
+- type: ADVISORY
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43598
+- type: FIX
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43598
