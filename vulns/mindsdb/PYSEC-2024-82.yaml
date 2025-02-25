@@ -4,7 +4,7 @@ details: Deserialization of untrusted data can occur in versions 23.3.2.0 and ne
   code on the server when interacted with.
 aliases:
 - CVE-2024-45852
-modified: '2025-02-18T14:47:48.935188Z'
+modified: '2025-02-25T12:45:16.654892Z'
 published: '2024-09-12T13:15:00Z'
 references:
 - type: EVIDENCE
@@ -142,6 +142,7 @@ affected:
   - 25.2.2.1
   - 25.2.2.2
   - 25.2.3.0
+  - 25.2.4.0
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
