@@ -1,6 +1,7 @@
-id: PYSEC-0000-automslc.yaml
+id: PYSEC-2025-4
 modified: 2025-02-26T19:26:49Z
-summary: When using the project to bypass Deezer API restrictions, project exfiltrates user data to a hardcoded server.
+summary: When using the project to bypass Deezer API restrictions, project exfiltrates
+  user data to a hardcoded server.
 details: |
   Published in 2019, the automslc package is a Python library
   that bypasses Deezer API restrictions to download music.
@@ -21,7 +22,7 @@ references:
 - type: WEB
   url: https://socket.dev/blog/malicious-pypi-package-exploits-deezer-api-for-coordinated-music-piracy
 credits:
-- type: COORDINATOR
-  name: Mike Fiedler
-- type: REPORTER
-  name: Socket.dev
+- name: Mike Fiedler
+  type: COORDINATOR
+- name: Socket.dev
+  type: REPORTER
