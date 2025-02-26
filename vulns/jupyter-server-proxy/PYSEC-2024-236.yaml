@@ -1,4 +1,11 @@
-id: PYSEC-0000-CVE-2024-35225
+id: PYSEC-2024-236
+modified: 2025-02-26T23:22:41.524251Z
+published: 2024-06-11T22:15:09Z
+aliases:
+- CVE-2024-35225
+related:
+- GHSA-fvcq-4x64-hqxr
+- GHSA-fvcq-4x64-hqxr
 details: Jupyter Server Proxy allows users to run arbitrary external processes alongside
   their notebook server and provide authenticated web access to them. Versions of
   3.x prior to 3.2.4 and 4.x prior to 4.2.0 have a reflected cross-site scripting
@@ -13,36 +20,20 @@ details: Jupyter Server Proxy allows users to run arbitrary external processes a
   to the user's JupyterLab instance for an actor. Patches are included in versions
   4.2.0 and 3.2.4. As a workaround, server operators who are unable to upgrade can
   disable the `jupyter-server-proxy` extension.
-aliases:
-- CVE-2024-35225
-modified: '2025-02-26T23:22:41.524251Z'
-published: '2024-06-11T22:15:09Z'
-related:
-- GHSA-fvcq-4x64-hqxr
-- GHSA-fvcq-4x64-hqxr
-references:
-- type: ADVISORY
-  url: https://github.com/jupyterhub/jupyter-server-proxy/security/advisories/GHSA-fvcq-4x64-hqxr
-- type: FIX
-  url: https://github.com/jupyterhub/jupyter-server-proxy/commit/7abc9dc5bbb0b4b440548a5375261b8b8192fc22
-- type: FIX
-  url: https://github.com/jupyterhub/jupyter-server-proxy/commit/ff78128087e73fb9d0909e1366f8bf051e8ea878
-- type: WEB
-  url: https://github.com/jupyterhub/jupyter-server-proxy/blob/62a290f08750f7ae55a0c29ca339c9a39a7b2a7b/jupyter_server_proxy/handlers.py#L328
 affected:
 - package:
-    name: jupyter-server-proxy
     ecosystem: PyPI
+    name: jupyter-server-proxy
     purl: pkg:pypi/jupyter-server-proxy
   ranges:
   - type: GIT
-    repo: https://github.com/jupyterhub/jupyter-server-proxy
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 7abc9dc5bbb0b4b440548a5375261b8b8192fc22
     - fixed: ff78128087e73fb9d0909e1366f8bf051e8ea878
     - fixed: 7abc9dc5bbb0b4b440548a5375261b8b8192fc22
     - fixed: ff78128087e73fb9d0909e1366f8bf051e8ea878
+    repo: https://github.com/jupyterhub/jupyter-server-proxy
   - type: ECOSYSTEM
     events:
     - introduced: 3.0.0
@@ -62,3 +53,12 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+references:
+- type: ADVISORY
+  url: https://github.com/jupyterhub/jupyter-server-proxy/security/advisories/GHSA-fvcq-4x64-hqxr
+- type: FIX
+  url: https://github.com/jupyterhub/jupyter-server-proxy/commit/7abc9dc5bbb0b4b440548a5375261b8b8192fc22
+- type: FIX
+  url: https://github.com/jupyterhub/jupyter-server-proxy/commit/ff78128087e73fb9d0909e1366f8bf051e8ea878
+- type: WEB
+  url: https://github.com/jupyterhub/jupyter-server-proxy/blob/62a290f08750f7ae55a0c29ca339c9a39a7b2a7b/jupyter_server_proxy/handlers.py#L328
