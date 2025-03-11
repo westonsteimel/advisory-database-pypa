@@ -5,7 +5,7 @@ details: "Deserialization of untrusted data can occur in versions 23.10.3.0 and 
   \ it."
 aliases:
 - CVE-2024-45854
-modified: '2025-03-04T23:22:36.487501Z'
+modified: '2025-03-11T15:48:16.509357Z'
 published: '2024-09-12T13:15:00Z'
 references:
 - type: EVIDENCE
@@ -104,6 +104,7 @@ affected:
   - 25.2.3.0
   - 25.2.4.0
   - 25.3.1.0
+  - 25.3.2.0
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H
