@@ -4,7 +4,7 @@ details: "Deserialization of untrusted data can occur in versions 23.10.2.0 and 
   \ to run arbitrary code on the server when using \u2018finetune\u2019 on it."
 aliases:
 - CVE-2024-45855
-modified: '2025-04-01T14:23:06.655315Z'
+modified: '2025-04-08T11:48:14.461367Z'
 published: '2024-09-12T13:15:00Z'
 references:
 - type: EVIDENCE
@@ -110,6 +110,7 @@ affected:
   - 25.3.4.1
   - 25.3.4.2
   - 25.4.1.0
+  - 25.4.2.0
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H
