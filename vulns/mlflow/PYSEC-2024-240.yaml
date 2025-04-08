@@ -1,4 +1,8 @@
-id: PYSEC-0000-CVE-2024-27132
+id: PYSEC-2024-240
+modified: 2025-04-08T10:23:24.900947Z
+published: 2024-02-23T22:15:55Z
+aliases:
+- CVE-2024-27132
 details: |+
   Insufficient sanitization in MLflow leads to XSS when running an untrusted recipe.
 
@@ -6,28 +10,15 @@ details: |+
 
   The vulnerability stems from lack of sanitization over template variables.
 
-aliases:
-- CVE-2024-27132
-modified: '2025-04-08T10:23:24.900947Z'
-published: '2024-02-23T22:15:55Z'
-references:
-- type: EVIDENCE
-  url: https://research.jfrog.com/vulnerabilities/mlflow-untrusted-recipe-xss-jfsa-2024-000631930/
-- type: FIX
-  url: https://github.com/mlflow/mlflow/pull/10873
-- type: REPORT
-  url: https://github.com/mlflow/mlflow/pull/10873
-- type: WEB
-  url: https://research.jfrog.com/vulnerabilities/mlflow-untrusted-recipe-xss-jfsa-2024-000631930/
 affected:
 - package:
-    name: mlflow
     ecosystem: PyPI
+    name: mlflow
     purl: pkg:pypi/mlflow
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 2.10.0
   versions:
   - 0.0.1
@@ -56,7 +47,7 @@ affected:
   - 1.11.0
   - 1.12.0
   - 1.12.1
-  - '1.13'
+  - "1.13"
   - 1.13.1
   - 1.14.0
   - 1.14.1
@@ -119,3 +110,12 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
+references:
+- type: EVIDENCE
+  url: https://research.jfrog.com/vulnerabilities/mlflow-untrusted-recipe-xss-jfsa-2024-000631930/
+- type: FIX
+  url: https://github.com/mlflow/mlflow/pull/10873
+- type: REPORT
+  url: https://github.com/mlflow/mlflow/pull/10873
+- type: WEB
+  url: https://research.jfrog.com/vulnerabilities/mlflow-untrusted-recipe-xss-jfsa-2024-000631930/

@@ -1,4 +1,8 @@
-id: PYSEC-0000-CVE-2024-2928
+id: PYSEC-2024-242
+modified: 2025-04-08T10:23:24.995743Z
+published: 2024-06-06T19:15:55Z
+aliases:
+- CVE-2024-2928
 details: A Local File Inclusion (LFI) vulnerability was identified in mlflow/mlflow,
   specifically in version 2.9.2, which was fixed in version 2.11.3. This vulnerability
   arises from the application's failure to properly validate URI fragments for directory
@@ -7,36 +11,21 @@ details: A Local File Inclusion (LFI) vulnerability was identified in mlflow/mlf
   sensitive files like '/etc/passwd'. The vulnerability is a bypass to a previous
   patch that only addressed similar manipulation within the URI's query string, highlighting
   the need for comprehensive validation of all parts of a URI to prevent LFI attacks.
-aliases:
-- CVE-2024-2928
-modified: '2025-04-08T10:23:24.995743Z'
-published: '2024-06-06T19:15:55Z'
-references:
-- type: EVIDENCE
-  url: https://huntr.com/bounties/19bf02d7-6393-4a95-b9d0-d6d4d2d8c298
-- type: FIX
-  url: https://github.com/mlflow/mlflow/commit/96f0b573a73d8eedd6735a2ce26e08859527be07
-- type: FIX
-  url: https://huntr.com/bounties/19bf02d7-6393-4a95-b9d0-d6d4d2d8c298
-- type: REPORT
-  url: https://huntr.com/bounties/19bf02d7-6393-4a95-b9d0-d6d4d2d8c298
-- type: WEB
-  url: https://huntr.com/bounties/19bf02d7-6393-4a95-b9d0-d6d4d2d8c298
 affected:
 - package:
-    name: mlflow
     ecosystem: PyPI
+    name: mlflow
     purl: pkg:pypi/mlflow
   ranges:
   - type: GIT
-    repo: https://github.com/mlflow/mlflow
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 96f0b573a73d8eedd6735a2ce26e08859527be07
     - fixed: 96f0b573a73d8eedd6735a2ce26e08859527be07
+    repo: https://github.com/mlflow/mlflow
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 2.11.3
   versions:
   - 0.0.1
@@ -65,7 +54,7 @@ affected:
   - 1.11.0
   - 1.12.0
   - 1.12.1
-  - '1.13'
+  - "1.13"
   - 1.13.1
   - 1.14.0
   - 1.14.1
@@ -134,3 +123,14 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+references:
+- type: EVIDENCE
+  url: https://huntr.com/bounties/19bf02d7-6393-4a95-b9d0-d6d4d2d8c298
+- type: FIX
+  url: https://github.com/mlflow/mlflow/commit/96f0b573a73d8eedd6735a2ce26e08859527be07
+- type: FIX
+  url: https://huntr.com/bounties/19bf02d7-6393-4a95-b9d0-d6d4d2d8c298
+- type: REPORT
+  url: https://huntr.com/bounties/19bf02d7-6393-4a95-b9d0-d6d4d2d8c298
+- type: WEB
+  url: https://huntr.com/bounties/19bf02d7-6393-4a95-b9d0-d6d4d2d8c298
