@@ -14,19 +14,23 @@ jobs:
       with:
         go-version: '^1.16.4'
     - run: |
-        wget http://pypa-advisory-db.storage.googleapis.com/triage/pypi_links.json
-        wget http://pypa-advisory-db.storage.googleapis.com/triage/pypi_versions.json
+        wget https://pypa-advisory-db.storage.googleapis.com/triage/pypi_links.json
+        wget https://pypa-advisory-db.storage.googleapis.com/triage/pypi_versions.json
     - run: |
-        wget https://storage.googleapis.com/cve-osv-conversion/nvd/nvdcve-2.0-2024.json
+        for year in $(seq 2002 $(date +%Y)); do
+          wget https://storage.googleapis.com/cve-osv-conversion/nvd/nvdcve-2.0-$year.json;
+        done
     - run: |
         go install github.com/google/osv/vulnfeeds/cmd/pypi@master
-        pypi -false_positives triage/false_positives.yaml \
-            -nvd_json nvdcve-2.0-2024.json \
-            -pypi_links pypi_links.json \
-            -pypi_versions pypi_versions.json \
-            -out_dir vulns \
-            -without_notes \
-            -exclude_unbounded
+        for nvdfile in nvdcve-2.0-*.json; do
+          pypi -false_positives triage/false_positives.yaml \
+               -nvd_json $nvdfile \
+               -pypi_links pypi_links.json \
+               -pypi_versions pypi_versions.json \
+               -out_dir vulns \
+               -without_notes \
+               -exclude_unbounded;
+        done
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add vulns
