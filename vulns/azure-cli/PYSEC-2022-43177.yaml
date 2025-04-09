@@ -1,4 +1,11 @@
-id: PYSEC-0000-CVE-2022-39327
+id: PYSEC-2022-43177
+modified: 2025-04-09T17:27:24.642962Z
+published: 2022-10-25T17:15:56Z
+aliases:
+- CVE-2022-39327
+related:
+- GHSA-47xc-9rr2-q7p4
+- GHSA-47xc-9rr2-q7p4
 details: Azure CLI is the command-line interface for Microsoft Azure. In versions
   previous to 2.40.0, Azure CLI contains a vulnerability for potential code injection.
   Critical scenarios are where a hosting machine runs an Azure CLI command where parameter
@@ -7,37 +14,15 @@ details: Azure CLI is the command-line interface for Microsoft Azure. In version
   and when the parameter value contains the `&` or `|` symbols. If any of these prerequisites
   are not met, this vulnerability is not applicable. Users should upgrade to version
   2.40.0 or greater to receive a a mitigation for the vulnerability.
-aliases:
-- CVE-2022-39327
-modified: '2025-04-09T17:27:24.642962Z'
-published: '2022-10-25T17:15:56Z'
-related:
-- GHSA-47xc-9rr2-q7p4
-- GHSA-47xc-9rr2-q7p4
-references:
-- type: ADVISORY
-  url: https://github.com/Azure/azure-cli/security/advisories/GHSA-47xc-9rr2-q7p4
-- type: EVIDENCE
-  url: https://github.com/Azure/azure-cli/pull/23514
-- type: EVIDENCE
-  url: https://github.com/Azure/azure-cli/security/advisories/GHSA-47xc-9rr2-q7p4
-- type: FIX
-  url: https://github.com/Azure/azure-cli/pull/23514
-- type: FIX
-  url: https://github.com/Azure/azure-cli/pull/24015
-- type: WEB
-  url: https://github.com/Azure/azure-cli/pull/23514
-- type: WEB
-  url: https://github.com/Azure/azure-cli/pull/24015
 affected:
 - package:
-    name: azure-cli
     ecosystem: PyPI
+    name: azure-cli
     purl: pkg:pypi/azure-cli
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 2.40.0
   versions:
   - 0.1.0b10
@@ -194,3 +179,18 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+references:
+- type: ADVISORY
+  url: https://github.com/Azure/azure-cli/security/advisories/GHSA-47xc-9rr2-q7p4
+- type: EVIDENCE
+  url: https://github.com/Azure/azure-cli/pull/23514
+- type: EVIDENCE
+  url: https://github.com/Azure/azure-cli/security/advisories/GHSA-47xc-9rr2-q7p4
+- type: FIX
+  url: https://github.com/Azure/azure-cli/pull/23514
+- type: FIX
+  url: https://github.com/Azure/azure-cli/pull/24015
+- type: WEB
+  url: https://github.com/Azure/azure-cli/pull/23514
+- type: WEB
+  url: https://github.com/Azure/azure-cli/pull/24015

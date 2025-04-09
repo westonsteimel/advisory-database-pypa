@@ -1,4 +1,8 @@
-id: PYSEC-0000-CVE-2021-25315
+id: PYSEC-2021-891
+modified: 2025-04-09T17:27:27.582884Z
+published: 2021-03-03T10:15:13Z
+aliases:
+- CVE-2021-25315
 details: 'CWE - CWE-287: Improper Authentication vulnerability in SUSE Linux Enterprise
   Server 15 SP 3; openSUSE Tumbleweed allows local attackers to execute arbitrary
   code via salt without the need to specify valid credentials. This issue affects:
@@ -6,25 +10,16 @@ details: 'CWE - CWE-287: Improper Authentication vulnerability in SUSE Linux Ent
   salt version 3002.2-2.1 and prior versions. This issue affects: SUSE Linux Enterprise
   Server 15 SP 3 salt versions prior to 3002.2-3. openSUSE Tumbleweed salt version
   3002.2-2.1 and prior versions.'
-aliases:
-- CVE-2021-25315
-modified: '2025-04-09T17:27:27.582884Z'
-published: '2021-03-03T10:15:13Z'
-references:
-- type: ADVISORY
-  url: https://bugzilla.suse.com/show_bug.cgi?id=1182382
-- type: REPORT
-  url: https://bugzilla.suse.com/show_bug.cgi?id=1182382
 affected:
 - package:
-    name: salt
     ecosystem: PyPI
+    name: salt
     purl: pkg:pypi/salt
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
-    - fixed: '3002.2'
+    - introduced: "0"
+    - fixed: "3002.2"
   versions:
   - 0.10.0
   - 0.10.1
@@ -189,31 +184,36 @@ affected:
   - 2019.2.6
   - 2019.2.7
   - 2019.2.8
-  - '3000'
+  - "3000"
   - 3000.0.0rc1
   - 3000.0.0rc2
-  - '3000.1'
-  - '3000.2'
-  - '3000.3'
-  - '3000.4'
-  - '3000.5'
-  - '3000.6'
-  - '3000.7'
-  - '3000.8'
-  - '3000.9'
-  - '3001'
-  - '3001.1'
-  - '3001.2'
-  - '3001.3'
-  - '3001.4'
-  - '3001.5'
-  - '3001.6'
-  - '3001.7'
-  - '3001.8'
+  - "3000.1"
+  - "3000.2"
+  - "3000.3"
+  - "3000.4"
+  - "3000.5"
+  - "3000.6"
+  - "3000.7"
+  - "3000.8"
+  - "3000.9"
+  - "3001"
+  - "3001.1"
+  - "3001.2"
+  - "3001.3"
+  - "3001.4"
+  - "3001.5"
+  - "3001.6"
+  - "3001.7"
+  - "3001.8"
   - 3001rc1
-  - '3002'
-  - '3002.1'
+  - "3002"
+  - "3002.1"
   - 3002rc1
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+references:
+- type: ADVISORY
+  url: https://bugzilla.suse.com/show_bug.cgi?id=1182382
+- type: REPORT
+  url: https://bugzilla.suse.com/show_bug.cgi?id=1182382

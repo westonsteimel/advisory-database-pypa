@@ -1,27 +1,22 @@
-id: PYSEC-0000-CVE-2025-25301
+id: PYSEC-2025-24
+modified: 2025-04-09T17:27:27.486485Z
+published: 2025-03-03T17:15:14Z
+aliases:
+- CVE-2025-25301
 details: Rembg is a tool to remove images background. In Rembg 2.0.57 and earlier,
   the /api/remove endpoint takes a URL query parameter that allows an image to be
   fetched, processed and returned. An attacker may be able to query this endpoint
   to view pictures hosted on the internal network of the rembg server. This issue
   may lead to Information Disclosure.
-aliases:
-- CVE-2025-25301
-modified: '2025-04-09T17:27:27.486485Z'
-published: '2025-03-03T17:15:14Z'
-references:
-- type: ADVISORY
-  url: https://securitylab.github.com/advisories/GHSL-2024-161_GHSL-2024-162_rembg/
-- type: EVIDENCE
-  url: https://securitylab.github.com/advisories/GHSL-2024-161_GHSL-2024-162_rembg/
 affected:
 - package:
-    name: rembg
     ecosystem: PyPI
+    name: rembg
     purl: pkg:pypi/rembg
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 2.0.58
   versions:
   - 2.0.28
@@ -56,3 +51,8 @@ affected:
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+references:
+- type: ADVISORY
+  url: https://securitylab.github.com/advisories/GHSL-2024-161_GHSL-2024-162_rembg/
+- type: EVIDENCE
+  url: https://securitylab.github.com/advisories/GHSL-2024-161_GHSL-2024-162_rembg/
