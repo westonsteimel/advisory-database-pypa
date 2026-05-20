@@ -234,6 +234,7 @@ affected:
   - 5.7.0
   - 5.8.0
   - 5.8.1
+  - 5.9.0
 aliases:
 - CVE-2025-14927
 details: |-
@@ -243,7 +244,7 @@ details: |-
 
   . Was ZDI-CAN-28252.
 id: PYSEC-2025-215
-modified: '2026-05-20T09:19:20.629353Z'
+modified: '2026-05-20T15:59:27.106790Z'
 published: '2025-12-23T21:15:47.987Z'
 references:
 - type: ADVISORY

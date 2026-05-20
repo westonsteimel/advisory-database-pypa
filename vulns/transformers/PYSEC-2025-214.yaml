@@ -234,6 +234,7 @@ affected:
   - 5.7.0
   - 5.8.0
   - 5.8.1
+  - 5.9.0
 aliases:
 - CVE-2025-14926
 details: |-
@@ -241,7 +242,7 @@ details: |-
 
   The specific flaw exists within the convert_config function. The issue results from the lack of proper validation of a user-supplied string before using it to execute Python code. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-28251.
 id: PYSEC-2025-214
-modified: '2026-05-20T09:19:20.566254Z'
+modified: '2026-05-20T15:59:27.032530Z'
 published: '2025-12-23T21:15:47.857Z'
 references:
 - type: ADVISORY
