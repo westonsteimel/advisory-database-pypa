@@ -425,6 +425,7 @@ affected:
   - 7.260512.0
   - 7.260513.0
   - 7.260515.0
+  - 7.260520.0
 aliases:
 - CVE-2020-37041
 details: OpenCTI 3.3.1 is vulnerable to a directory traversal attack via the static/css
@@ -434,7 +435,7 @@ details: OpenCTI 3.3.1 is vulnerable to a directory traversal attack via the sta
   the contents of /etc/passwd. This vulnerability was discovered by Raif Berkay Dincel
   and confirmed on Linux Mint and Windows 10.
 id: PYSEC-2026-114
-modified: '2026-05-20T09:19:14.434489Z'
+modified: '2026-05-20T14:41:05.469103Z'
 published: '2026-01-30T23:16:09.750Z'
 references:
 - type: WEB
