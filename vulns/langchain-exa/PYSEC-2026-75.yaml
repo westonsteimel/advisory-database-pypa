@@ -1,19 +1,33 @@
-id: PYSEC-2026-75
-published: "2026-01-12T23:15:51.780Z"
-modified: "2026-01-21T17:57:56.537Z"
-aliases:
-- CVE-2024-58340
-details: LangChain versions up to and including 0.3.1 contain a regular expression denial-of-service (ReDoS) vulnerability in the MRKLOutputParser.parse() method (libs/langchain/langchain/agents/mrkl/output_parser.py). The parser applies a backtracking-prone regular expression when extracting tool actions from model output. An attacker who can supply or influence the parsed text (for example via prompt injection in downstream applications that pass LLM output directly into MRKLOutputParser.parse()) can trigger excessive CPU consumption by providing a crafted payload, causing significant parsing delays and a denial-of-service condition.
 affected:
 - package:
-    name: langchain-exa
     ecosystem: PyPI
+    name: langchain-exa
     purl: pkg:pypi/langchain-exa
   ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: "0"
+  - events:
+    - introduced: '0'
     - fixed: 1.0.0a1
+    type: ECOSYSTEM
+  versions:
+  - 0.0.1
+  - 0.1.0
+  - 0.2.0
+  - 0.2.1
+  - 0.3.0
+  - 0.3.1
+aliases:
+- CVE-2024-58340
+details: LangChain versions up to and including 0.3.1 contain a regular expression
+  denial-of-service (ReDoS) vulnerability in the MRKLOutputParser.parse() method (libs/langchain/langchain/agents/mrkl/output_parser.py).
+  The parser applies a backtracking-prone regular expression when extracting tool
+  actions from model output. An attacker who can supply or influence the parsed text
+  (for example via prompt injection in downstream applications that pass LLM output
+  directly into MRKLOutputParser.parse()) can trigger excessive CPU consumption by
+  providing a crafted payload, causing significant parsing delays and a denial-of-service
+  condition.
+id: PYSEC-2026-75
+modified: '2026-05-20T09:19:04.132922Z'
+published: '2026-01-12T23:15:51.780Z'
 references:
 - type: WEB
   url: https://www.langchain.com/
@@ -24,5 +38,5 @@ references:
 - type: PACKAGE
   url: https://github.com/langchain-ai/langchain
 severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+  type: CVSS_V3

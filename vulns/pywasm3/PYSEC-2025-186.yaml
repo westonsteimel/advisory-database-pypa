@@ -1,19 +1,28 @@
-id: PYSEC-2025-186
-published: "2025-06-19T18:15:22Z"
-modified: "2026-04-29T01:00:01.613Z"
-aliases:
-- CVE-2025-6272
-details: A vulnerability has been found in wasm3 0.5.0 and classified as problematic. This vulnerability affects the function MarkSlotAllocated of the file source/m3_compile.c. The manipulation leads to out-of-bounds write. An attack has to be approached locally. The exploit has been disclosed to the public and may be used.
 affected:
 - package:
-    name: pywasm3
     ecosystem: PyPI
+    name: pywasm3
     purl: pkg:pypi/pywasm3
   ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: "0"
+  - events:
+    - introduced: '0'
     - {}
+    type: ECOSYSTEM
+  versions:
+  - 0.0.1
+  - 0.0.2
+  - 0.4.8
+  - 0.4.9
+  - 0.5.0
+aliases:
+- CVE-2025-6272
+details: A vulnerability has been found in wasm3 0.5.0 and classified as problematic.
+  This vulnerability affects the function MarkSlotAllocated of the file source/m3_compile.c.
+  The manipulation leads to out-of-bounds write. An attack has to be approached locally.
+  The exploit has been disclosed to the public and may be used.
+id: PYSEC-2025-186
+modified: '2026-05-20T09:19:16.771037Z'
+published: '2025-06-19T18:15:22Z'
 references:
 - type: ADVISORY
   url: https://vuldb.com/?id.313276
@@ -26,5 +35,5 @@ references:
 - type: EVIDENCE
   url: https://github.com/user-attachments/files/19516600/wasm3_crash.txt
 severity:
-- type: CVSS_V4
-  score: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+- score: CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  type: CVSS_V4
