@@ -1,0 +1,23 @@
+id: PYSEC-2026-65
+published: "2026-02-27T22:16:24.497Z"
+modified: "2026-03-05T13:06:31.743Z"
+aliases:
+- CVE-2026-28415
+- GHSA-pfjf-5gxr-995x
+details: Gradio is an open-source Python package designed for quick prototyping. Prior to version 6.6.0, the _redirect_to_target() function in Gradio's OAuth flow accepts an unvalidated _target_url query parameter, allowing redirection to arbitrary external URLs. This affects the /logout and /login/callback endpoints on Gradio apps with OAuth enabled (i.e. apps running on Hugging Face Spaces with gr.LoginButton). Starting in version 6.6.0, the _target_url parameter is sanitized to only use the path, query, and fragment, stripping any scheme or host.
+affected:
+- package:
+    name: gradio
+    ecosystem: PyPI
+    purl: pkg:pypi/gradio
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 6.6.0
+references:
+- type: ADVISORY
+  url: https://github.com/gradio-app/gradio/security/advisories/GHSA-pfjf-5gxr-995x
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N

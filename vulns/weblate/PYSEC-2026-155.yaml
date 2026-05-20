@@ -1,0 +1,25 @@
+id: PYSEC-2026-155
+published: "2026-04-15T19:16:36.070Z"
+modified: "2026-04-21T14:05:57.380Z"
+aliases:
+- CVE-2026-34393
+- GHSA-3382-gw9x-477v
+details: Weblate is a web based localization tool. In versions prior to 5.17, the user patching API endpoint didn't properly limit the scope of edits. This issue has been fixed in version 5.17.
+affected:
+- package:
+    name: weblate
+    ecosystem: PyPI
+    purl: pkg:pypi/weblate
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: "5.17"
+references:
+- type: ADVISORY
+  url: https://github.com/WeblateOrg/weblate/security/advisories/GHSA-3382-gw9x-477v
+- type: FIX
+  url: https://github.com/WeblateOrg/weblate/pull/18687
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H

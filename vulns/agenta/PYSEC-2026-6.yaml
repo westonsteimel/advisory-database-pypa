@@ -1,0 +1,23 @@
+id: PYSEC-2026-6
+published: "2026-02-26T02:16:22.940Z"
+modified: "2026-03-02T18:43:36.277Z"
+aliases:
+- CVE-2026-27952
+- GHSA-pmgp-2m3v-34mq
+details: Agenta is an open-source LLMOps platform. In Agenta-API prior to version 0.48.1, a Python sandbox escape vulnerability existed in Agenta's custom code evaluator. Agenta used RestrictedPython as a sandboxing mechanism for user-supplied evaluator code, but incorrectly whitelisted the `numpy` package as safe within the sandbox. This allowed authenticated users to bypass the sandbox and achieve arbitrary code execution on the API server. The escape path was through `numpy.ma.core.inspect`, which exposes Python's introspection utilities — including `sys.modules` — thereby providing access to unfiltered system-level functionality like `os.system`. This vulnerability affects the Agenta self-hosted platform (API server), not the SDK when used as a standalone Python library. The custom code evaluator runs server-side within the API process. The issue is fixed in v0.48.1 by removing `numpy` from the sandbox allowlist. In later versions (v0.60+), the RestrictedPython sandbox was removed entirely and replaced with a different execution model.
+affected:
+- package:
+    name: agenta
+    ecosystem: PyPI
+    purl: pkg:pypi/agenta
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 0.48.1
+references:
+- type: EVIDENCE
+  url: https://github.com/Agenta-AI/agenta/security/advisories/GHSA-pmgp-2m3v-34mq
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H

@@ -1,0 +1,23 @@
+id: PYSEC-2026-129
+published: "2026-05-11T18:16:35.260Z"
+modified: "2026-05-15T14:29:53.680Z"
+aliases:
+- CVE-2026-42315
+- GHSA-838g-gr43-qqg9
+details: pyLoad is a free and open-source download manager written in Python. Prior to 0.5.0b3.dev100, when passing a folder name in the set_package_data() API function call inside the data object with key "_folder", there is no sanitization at all, allowing a user with Perms.MODIFY to specify arbitrary directories as download locations for a package. This vulnerability is fixed in 0.5.0b3.dev100.
+affected:
+- package:
+    name: pyload-ng
+    ecosystem: PyPI
+    purl: pkg:pypi/pyload-ng
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 0.5.0b3.dev100
+references:
+- type: EVIDENCE
+  url: https://github.com/pyload/pyload/security/advisories/GHSA-838g-gr43-qqg9
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N

@@ -1,0 +1,25 @@
+id: PYSEC-2026-90
+published: "2026-01-12T17:15:52.887Z"
+modified: "2026-02-20T17:25:50.507Z"
+aliases:
+- CVE-2025-68472
+- GHSA-qqhf-pm3j-96g7
+details: MindsDB is a platform for building artificial intelligence from enterprise data. Prior to version 25.11.1, an unauthenticated path traversal in the file upload API lets any caller read arbitrary files from the server filesystem and move them into MindsDB’s storage, exposing sensitive data. The PUT handler in file.py directly joins user-controlled data into a filesystem path when the request body is JSON and source_type is not "url". Only multipart uploads and URL-sourced uploads receive sanitization; JSON uploads lack any call to clear_filename or equivalent checks. This vulnerability is fixed in 25.11.1.
+affected:
+- package:
+    name: mindsdb
+    ecosystem: PyPI
+    purl: pkg:pypi/mindsdb
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 25.11.1
+references:
+- type: WEB
+  url: https://www.bluerock.io/post/cve-2025-68472-mindsdb-file-upload-path-traversal
+- type: EVIDENCE
+  url: https://github.com/mindsdb/mindsdb/security/advisories/GHSA-qqhf-pm3j-96g7
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H

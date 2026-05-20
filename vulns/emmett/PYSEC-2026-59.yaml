@@ -1,0 +1,23 @@
+id: PYSEC-2026-59
+published: "2026-04-07T22:16:23.793Z"
+modified: "2026-04-16T04:31:28.903Z"
+aliases:
+- CVE-2026-39847
+- GHSA-pr46-2v3c-5356
+details: Emmett is a full-stack Python web framework designed with simplicity. From 2.5.0 to before 2.8.1, the RSGI static handler for Emmett's internal assets (/__emmett__ paths) is vulnerable to path traversal attacks. An attacker can use ../ sequences (eg /__emmett__/../rsgi/handlers.py) to read arbitrary files outside the assets directory. This vulnerability is fixed in 2.8.1.
+affected:
+- package:
+    name: emmett
+    ecosystem: PyPI
+    purl: pkg:pypi/emmett
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 2.5.0
+    - fixed: 2.8.1
+references:
+- type: ADVISORY
+  url: https://github.com/emmett-framework/emmett/security/advisories/GHSA-pr46-2v3c-5356
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N

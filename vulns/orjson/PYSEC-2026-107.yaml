@@ -1,0 +1,24 @@
+id: PYSEC-2026-107
+published: "2026-01-22T17:16:01.433Z"
+modified: "2026-02-12T15:03:09.790Z"
+aliases:
+- CVE-2025-67221
+details: The orjson.dumps function in orjson thru 3.11.4 does not limit recursion for deeply nested JSON documents.
+affected:
+- package:
+    name: orjson
+    ecosystem: PyPI
+    purl: pkg:pypi/orjson
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 3.11.5
+references:
+- type: PACKAGE
+  url: https://github.com/ijl/orjson
+- type: EVIDENCE
+  url: https://github.com/kpatsakis/orjson_vulnerability
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

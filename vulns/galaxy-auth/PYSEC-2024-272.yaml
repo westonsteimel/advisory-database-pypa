@@ -1,0 +1,23 @@
+id: PYSEC-2024-272
+published: "2024-09-20T19:15:15.547Z"
+modified: "2025-08-15T14:19:48.833Z"
+aliases:
+- CVE-2024-42346
+- GHSA-x6w7-3gwf-qr9r
+details: Galaxy is a free, open-source system for analyzing data, authoring workflows, training and education, publishing tools, managing infrastructure, and more. The editor visualization, /visualizations endpoint, can be used to store HTML tags and trigger javascript execution upon edit operation. All supported branches of Galaxy (and more back to release_20.05) were amended with the supplied patches. Users are advised to upgrade. There are no known workarounds for this vulnerability.
+affected:
+- package:
+    name: galaxy-auth
+    ecosystem: PyPI
+    purl: pkg:pypi/galaxy-auth
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 24.1.1
+references:
+- type: FIX
+  url: https://github.com/galaxyproject/galaxy/security/advisories/GHSA-x6w7-3gwf-qr9r
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N

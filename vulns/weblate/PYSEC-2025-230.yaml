@@ -1,0 +1,25 @@
+id: PYSEC-2025-230
+published: "2025-11-06T21:15:43.957Z"
+modified: "2025-12-04T21:35:38.507Z"
+aliases:
+- CVE-2025-64326
+- GHSA-gr35-vpx2-qxhc
+details: Weblate is a web based localization tool. In versions 5.14 and below,  Weblate leaks the IP address of the project member inviting the user to the project in the audit log. The audit log includes IP addresses from admin-triggered actions, which can be viewed by invited users. This issue is fixed in version 5.14.1.
+affected:
+- package:
+    name: weblate
+    ecosystem: PyPI
+    purl: pkg:pypi/weblate
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 5.14.1
+references:
+- type: REPORT
+  url: https://github.com/WeblateOrg/weblate/pull/16781
+- type: FIX
+  url: https://github.com/WeblateOrg/weblate/security/advisories/GHSA-gr35-vpx2-qxhc
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:N/A:N

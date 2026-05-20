@@ -1,0 +1,24 @@
+id: PYSEC-2024-300
+published: "2024-12-04T11:15:05Z"
+modified: "2025-08-05T17:42:59.487Z"
+aliases:
+- CVE-2024-12107
+details: Double-Free Vulnerability in uD3TN BPv7 Caused by Malformed Endpoint Identifier allows remote attacker to reliably cause DoS
+affected:
+- package:
+    name: pyd3tn
+    ecosystem: PyPI
+    purl: pkg:pypi/pyd3tn
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - {}
+    - {}
+    - {}
+references:
+- type: REPORT
+  url: https://gitlab.com/d3tn/ud3tn/-/issues/233
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

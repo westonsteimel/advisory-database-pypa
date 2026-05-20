@@ -1,0 +1,34 @@
+id: PYSEC-2025-109
+published: "2025-12-02T16:15:56.013Z"
+modified: "2025-12-10T21:47:14.340Z"
+aliases:
+- CVE-2025-64460
+details: |-
+  An issue was discovered in 5.2 before 5.2.9, 5.1 before 5.1.15, and 4.2 before 4.2.27.
+  Algorithmic complexity in `django.core.serializers.xml_serializer.getInnerText()` allows a remote attacker to cause a potential denial-of-service attack triggering CPU and memory exhaustion via specially crafted XML input processed by the XML `Deserializer`.
+  Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
+  Django would like to thank Seokchan Yoon for reporting this issue.
+affected:
+- package:
+    name: django
+    ecosystem: PyPI
+    purl: pkg:pypi/django
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "4.2"
+    - fixed: 4.2.27
+    - introduced: "5.1"
+    - fixed: 5.1.15
+    - introduced: "5.2"
+    - fixed: 5.2.9
+references:
+- type: ADVISORY
+  url: https://groups.google.com/g/django-announce
+- type: FIX
+  url: https://docs.djangoproject.com/en/dev/releases/security/
+- type: FIX
+  url: https://www.djangoproject.com/weblog/2025/dec/02/security-releases/
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

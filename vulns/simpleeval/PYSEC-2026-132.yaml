@@ -1,0 +1,25 @@
+id: PYSEC-2026-132
+published: "2026-03-16T14:19:40.930Z"
+modified: "2026-04-21T16:16:19.963Z"
+aliases:
+- CVE-2026-32640
+- GHSA-44vg-5wv2-h2hg
+details: SimpleEval is a library for adding evaluatable expressions into python projects. Prior to 1.0.5, objects (including modules) can leak dangerous modules through to direct access inside the sandbox. If the objects you've passed in as names to SimpleEval have modules or other disallowed / dangerous objects available as attrs. Additionally, dangerous functions or modules could be accessed by passing them as callbacks to other safe functions to call. The latest version 1.0.5 has this issue fixed. This vulnerability is fixed in 1.0.5.
+affected:
+- package:
+    name: simpleeval
+    ecosystem: PyPI
+    purl: pkg:pypi/simpleeval
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.0.5
+references:
+- type: WEB
+  url: https://lists.debian.org/debian-lts-announce/2026/04/msg00023.html
+- type: ADVISORY
+  url: https://github.com/danthedeckie/simpleeval/security/advisories/GHSA-44vg-5wv2-h2hg
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H

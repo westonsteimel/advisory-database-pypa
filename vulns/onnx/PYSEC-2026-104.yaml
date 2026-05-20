@@ -1,0 +1,23 @@
+id: PYSEC-2026-104
+published: "2026-04-01T18:16:30.810Z"
+modified: "2026-04-15T14:45:48.833Z"
+aliases:
+- CVE-2026-34447
+- GHSA-p433-9wv8-28xj
+details: Open Neural Network Exchange (ONNX) is an open standard for machine learning interoperability. Prior to version 1.21.0, there is a symlink traversal vulnerability in external data loading allows reading files outside the model directory. This issue has been patched in version 1.21.0.
+affected:
+- package:
+    name: onnx
+    ecosystem: PyPI
+    purl: pkg:pypi/onnx
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.21.0
+references:
+- type: EVIDENCE
+  url: https://github.com/onnx/onnx/security/advisories/GHSA-p433-9wv8-28xj
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N

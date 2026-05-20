@@ -1,0 +1,28 @@
+id: PYSEC-2026-89
+published: "2026-03-05T15:16:11.243Z"
+modified: "2026-03-13T01:25:22.277Z"
+aliases:
+- CVE-2025-69534
+details: Python-Markdown version 3.8 contain a vulnerability where malformed HTML-like sequences can cause html.parser.HTMLParser to raise an unhandled AssertionError during Markdown parsing. Because Python-Markdown does not catch this exception, any application that processes attacker-controlled Markdown may crash. This enables remote, unauthenticated Denial of Service in web applications, documentation systems, CI/CD pipelines, and any service that renders untrusted Markdown. The issue was acknowledged by the vendor and fixed in version 3.8.1. This issue causes a remote Denial of Service in any application parsing untrusted Markdown, and can lead to Information Disclosure through uncaught exceptions.
+affected:
+- package:
+    name: markdown
+    ecosystem: PyPI
+    purl: pkg:pypi/markdown
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - {}
+references:
+- type: WEB
+  url: https://github.com/Python-Markdown/markdown/actions/runs/15736122892
+- type: ADVISORY
+  url: http://www.openwall.com/lists/oss-security/2026/03/06/4
+- type: REPORT
+  url: https://github.com/Python-Markdown/markdown/issues/1534
+- type: PACKAGE
+  url: https://github.com/Python-Markdown/markdown
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

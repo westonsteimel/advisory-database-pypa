@@ -1,0 +1,25 @@
+id: PYSEC-2025-90
+published: "2025-12-31T02:15:42.527Z"
+modified: "2026-01-02T16:40:40.337Z"
+aliases:
+- CVE-2025-68131
+- GHSA-wcj4-jw5j-44wh
+details: cbor2 provides encoding and decoding for the Concise Binary Object Representation (CBOR) serialization format. Starting in version 3.0.0 and prior to version 5.8.0, whhen a CBORDecoder instance is reused across multiple decode operations, values marked with the shareable tag (28) persist in memory and can be accessed by subsequent CBOR messages using the sharedref tag (29). This allows an attacker-controlled message to read data from previously decoded messages if the decoder is reused across trust boundaries. Version 5.8.0 patches the issue.
+affected:
+- package:
+    name: cbor2
+    ecosystem: PyPI
+    purl: pkg:pypi/cbor2
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 3.0.0
+    - fixed: 5.8.0
+references:
+- type: FIX
+  url: https://github.com/agronholm/cbor2/pull/268
+- type: EVIDENCE
+  url: https://github.com/agronholm/cbor2/security/advisories/GHSA-wcj4-jw5j-44wh
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N

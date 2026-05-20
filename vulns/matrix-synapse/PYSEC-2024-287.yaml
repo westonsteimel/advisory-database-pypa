@@ -1,0 +1,25 @@
+id: PYSEC-2024-287
+published: "2024-12-03T17:15:10.890Z"
+modified: "2025-08-26T15:09:47.387Z"
+aliases:
+- CVE-2024-37303
+- GHSA-gjgr-7834-rhxr
+details: Synapse is an open-source Matrix homeserver. Synapse before version 1.106 allows, by design, unauthenticated remote participants to trigger a download and caching of remote media from a remote homeserver to the local media repository. Such content then also becomes available for download from the local homeserver in an unauthenticated way. The implication is that unauthenticated remote adversaries can use this functionality to plant problematic content into the media repository. Synapse 1.106 introduces a partial mitigation in the form of new endpoints which require authentication for media downloads. The unauthenticated endpoints will be frozen in a future release, closing the attack vector.
+affected:
+- package:
+    name: matrix-synapse
+    ecosystem: PyPI
+    purl: pkg:pypi/matrix-synapse
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.106.0
+references:
+- type: ADVISORY
+  url: https://github.com/element-hq/synapse/security/advisories/GHSA-gjgr-7834-rhxr
+- type: FIX
+  url: https://github.com/matrix-org/matrix-spec-proposals/pull/3916
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N

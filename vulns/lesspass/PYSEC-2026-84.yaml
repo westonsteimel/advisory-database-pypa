@@ -1,0 +1,26 @@
+id: PYSEC-2026-84
+published: "2026-03-09T16:16:15.977Z"
+modified: "2026-03-13T19:42:37.200Z"
+aliases:
+- CVE-2025-70050
+details: "An issue pertaining to CWE-312: Cleartext Storage of Sensitive Information was discovered in lesspass lesspass v9.6.9 which allows attackers to obtain sensitive information."
+affected:
+- package:
+    name: lesspass
+    ecosystem: PyPI
+    purl: pkg:pypi/lesspass
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - {}
+references:
+- type: WEB
+  url: https://github.com/lesspass
+- type: ADVISORY
+  url: https://gist.github.com/zcxlighthouse/12809648370f0e08d71434ff419df28e
+- type: PACKAGE
+  url: https://github.com/lesspass/lesspass
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H

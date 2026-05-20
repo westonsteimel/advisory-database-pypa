@@ -1,0 +1,22 @@
+id: PYSEC-2024-294
+published: "2024-10-24T21:15:14.387Z"
+modified: "2025-05-28T21:06:42.670Z"
+aliases:
+- CVE-2024-48426
+details: A segmentation fault (SEGV) was detected in the SortByPTypeProcess::Execute function in the Assimp library during fuzz testing with AddressSanitizer. The crash occurred due to a read access to an invalid memory address (0x1000c9714971).
+affected:
+- package:
+    name: pyassimp
+    ecosystem: PyPI
+    purl: pkg:pypi/pyassimp
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - {}
+references:
+- type: REPORT
+  url: https://github.com/assimp/assimp/issues/5789
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

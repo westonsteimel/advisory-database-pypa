@@ -1,0 +1,25 @@
+id: PYSEC-2025-232
+published: "2025-12-16T01:15:51.907Z"
+modified: "2025-12-17T16:03:45.927Z"
+aliases:
+- CVE-2025-67492
+- GHSA-pj86-258h-qrvf
+details: Weblate is a web based localization tool. In versions prior to 5.15, it was possible to trigger repository updates for many repositories via a crafted webhook payload. Version 5.15 fixes the issue. As a workaround, disabling webhooks completely using ENABLE_HOOKS avoids this vulnerability.
+affected:
+- package:
+    name: weblate
+    ecosystem: PyPI
+    purl: pkg:pypi/weblate
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: "5.15"
+references:
+- type: FIX
+  url: https://github.com/WeblateOrg/weblate/pull/17221
+- type: FIX
+  url: https://github.com/WeblateOrg/weblate/security/advisories/GHSA-pj86-258h-qrvf
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N

@@ -1,0 +1,26 @@
+id: PYSEC-2025-183
+published: "2025-07-31T21:15:27.320Z"
+modified: "2025-09-12T16:45:51.510Z"
+aliases:
+- CVE-2025-45768
+details: "pyjwt v2.10.1 was discovered to contain weak encryption. NOTE: this is disputed by the Supplier because the key length is chosen by the application that uses the library (admittedly, library users may benefit from a minimum value and a mechanism for opting in to strict enforcement)."
+affected:
+- package:
+    name: pyjwt
+    ecosystem: PyPI
+    purl: pkg:pypi/pyjwt
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - {}
+references:
+- type: WEB
+  url: https://github.com/jpadilla
+- type: REPORT
+  url: https://gist.github.com/ZupeiNie/6f65e564f2067b876321d3dfdbb76569
+- type: PACKAGE
+  url: https://github.com/jpadilla/pyjwt
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H

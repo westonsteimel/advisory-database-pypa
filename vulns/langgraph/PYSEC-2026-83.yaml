@@ -1,0 +1,23 @@
+id: PYSEC-2026-83
+published: "2026-03-05T20:16:15.677Z"
+modified: "2026-04-21T15:14:55.870Z"
+aliases:
+- CVE-2026-28277
+- GHSA-g48c-2wqr-h844
+details: LangGraph SQLite Checkpoint is an implementation of LangGraph CheckpointSaver that uses SQLite DB (both sync and async, via aiosqlite). In version 1.0.9 and prior, LangGraph checkpointers can load msgpack-encoded checkpoints that reconstruct Python objects during deserialization. If an attacker can modify checkpoint data in the backing store (for example, after a database compromise or other privileged write access to the persistence layer), they can potentially supply a crafted payload that triggers unsafe object reconstruction when the checkpoint is loaded. No known patch is public.
+affected:
+- package:
+    name: langgraph
+    ecosystem: PyPI
+    purl: pkg:pypi/langgraph
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.0.10rc1
+references:
+- type: ADVISORY
+  url: https://github.com/langchain-ai/langgraph/security/advisories/GHSA-g48c-2wqr-h844
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H

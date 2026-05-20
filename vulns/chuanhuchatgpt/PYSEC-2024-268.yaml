@@ -1,0 +1,22 @@
+id: PYSEC-2024-268
+published: "2024-06-27T19:15:16.880Z"
+modified: "2025-07-15T15:34:23.277Z"
+aliases:
+- CVE-2024-5822
+details: A Server-Side Request Forgery (SSRF) vulnerability exists in the upload processing interface of gaizhenbiao/ChuanhuChatGPT versions <= ChuanhuChatGPT-20240410-git.zip. This vulnerability allows attackers to send crafted requests from the vulnerable server to internal or external resources, potentially bypassing security controls and accessing sensitive data.
+affected:
+- package:
+    name: chuanhuchatgpt
+    ecosystem: PyPI
+    purl: pkg:pypi/chuanhuchatgpt
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - {}
+references:
+- type: EVIDENCE
+  url: https://huntr.com/bounties/b24f1b5f-a529-435b-ac4d-5ca71d5d1fb5
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H

@@ -1,0 +1,23 @@
+id: PYSEC-2026-134
+published: "2026-04-07T16:16:28.843Z"
+modified: "2026-04-17T20:37:10.447Z"
+aliases:
+- CVE-2026-35526
+- GHSA-hv3w-m4g2-5x77
+details: Strawberry GraphQL is a library for creating GraphQL APIs. Prior to 0.312.3, Strawberry GraphQL's WebSocket subscription handlers for both the graphql-transport-ws and legacy graphql-ws protocols allocate an asyncio.Task and associated Operation object for every incoming subscribe message without enforcing any limit on the number of active subscriptions per connection. An unauthenticated attacker can open a single WebSocket connection, send connection_init, and then flood subscribe messages with unique IDs. Each message unconditionally spawns a new asyncio.Task and async generator, causing linear memory growth and event loop saturation. This leads to server degradation or an OOM crash. This vulnerability is fixed in 0.312.3.
+affected:
+- package:
+    name: strawberry-graphql
+    ecosystem: PyPI
+    purl: pkg:pypi/strawberry-graphql
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 0.312.3
+references:
+- type: ADVISORY
+  url: https://github.com/strawberry-graphql/strawberry/security/advisories/GHSA-hv3w-m4g2-5x77
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

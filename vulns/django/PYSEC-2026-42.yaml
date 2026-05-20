@@ -1,0 +1,34 @@
+id: PYSEC-2026-42
+published: "2026-02-03T15:16:11.593Z"
+modified: "2026-02-04T17:10:36.833Z"
+aliases:
+- CVE-2025-13473
+details: |-
+  An issue was discovered in 6.0 before 6.0.2, 5.2 before 5.2.11, and 4.2 before 4.2.28.
+  The `django.contrib.auth.handlers.modwsgi.check_password()` function for authentication via `mod_wsgi` allows remote attackers to enumerate users via a timing attack.
+  Earlier, unsupported Django series (such as 5.0.x, 4.1.x, and 3.2.x) were not evaluated and may also be affected.
+  Django would like to thank Stackered for reporting this issue.
+affected:
+- package:
+    name: django
+    ecosystem: PyPI
+    purl: pkg:pypi/django
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "4.2"
+    - fixed: 4.2.28
+    - introduced: "5.2"
+    - fixed: 5.2.11
+    - introduced: "6.0"
+    - fixed: 6.0.2
+references:
+- type: ADVISORY
+  url: https://groups.google.com/g/django-announce
+- type: FIX
+  url: https://docs.djangoproject.com/en/dev/releases/security/
+- type: FIX
+  url: https://www.djangoproject.com/weblog/2026/feb/03/security-releases/
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N

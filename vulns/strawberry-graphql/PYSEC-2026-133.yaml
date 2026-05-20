@@ -1,0 +1,23 @@
+id: PYSEC-2026-133
+published: "2026-04-07T17:16:31.583Z"
+modified: "2026-04-17T20:37:20.757Z"
+aliases:
+- CVE-2026-35523
+- GHSA-vpwc-v33q-mq89
+details: Strawberry GraphQL is a library for creating GraphQL APIs. Strawberry up until version 0.312.3 is vulnerable to an authentication bypass on WebSocket subscription endpoints. The legacy graphql-ws subprotocol handler does not verify that a connection_init handshake has been completed before processing start (subscription) messages. This allows a remote attacker to skip the on_ws_connect authentication hook entirely by connecting with the graphql-ws subprotocol and sending a start message directly, without ever sending connection_init.  This vulnerability is fixed in 0.312.3.
+affected:
+- package:
+    name: strawberry-graphql
+    ecosystem: PyPI
+    purl: pkg:pypi/strawberry-graphql
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 0.312.3
+references:
+- type: ADVISORY
+  url: https://github.com/strawberry-graphql/strawberry/security/advisories/GHSA-vpwc-v33q-mq89
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N

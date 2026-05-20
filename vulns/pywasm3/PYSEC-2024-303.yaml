@@ -1,0 +1,24 @@
+id: PYSEC-2024-303
+published: "2024-11-08T22:15:15.253Z"
+modified: "2025-06-24T15:51:44.183Z"
+aliases:
+- CVE-2024-27527
+details: wasm3 139076a is vulnerable to Denial of Service (DoS).
+affected:
+- package:
+    name: pywasm3
+    ecosystem: PyPI
+    purl: pkg:pypi/pywasm3
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - {}
+references:
+- type: ADVISORY
+  url: https://gist.github.com/haruki3hhh/5d2f3a216457aeef9f40331aca33be6e
+- type: REPORT
+  url: https://github.com/wasm3/wasm3/issues/464
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

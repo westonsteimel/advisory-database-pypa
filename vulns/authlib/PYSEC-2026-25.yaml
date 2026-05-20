@@ -1,0 +1,23 @@
+id: PYSEC-2026-25
+published: "2026-04-24T20:16:27.107Z"
+modified: "2026-04-28T18:18:26.783Z"
+aliases:
+- CVE-2026-41425
+- GHSA-jj8c-mmj3-mmgv
+details: Authlib is a Python library which builds OAuth and OpenID Connect servers. Prior to 1.6.11, there is no CSRF protection on the cache feature in authlib.integrations.starlette_client.OAuth.  This vulnerability is fixed in 1.6.11.
+affected:
+- package:
+    name: authlib
+    ecosystem: PyPI
+    purl: pkg:pypi/authlib
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.6.11
+references:
+- type: EVIDENCE
+  url: https://github.com/authlib/authlib/security/advisories/GHSA-jj8c-mmj3-mmgv
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N

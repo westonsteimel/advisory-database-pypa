@@ -1,0 +1,22 @@
+id: PYSEC-2025-115
+published: "2025-03-25T21:15:41.573Z"
+modified: "2025-04-03T17:33:00.567Z"
+aliases:
+- CVE-2024-55029
+details: NASA Fprime v3.4.3 was discovered to contain multiple cross-site scripting (XSS) vulnerabilities.
+affected:
+- package:
+    name: fprime
+    ecosystem: PyPI
+    purl: pkg:pypi/fprime
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - {}
+references:
+- type: EVIDENCE
+  url: https://visionspace.com/remote-code-execution-and-critical-vulnerabilities-in-nasa-fprime-v3-4-3/
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N

@@ -1,0 +1,29 @@
+id: PYSEC-2025-86
+published: "2025-12-15T12:15:40.573Z"
+modified: "2025-12-16T22:15:50.113Z"
+aliases:
+- CVE-2025-66388
+details: |-
+  A vulnerability in Apache Airflow allowed authenticated UI users to view secret values in rendered templates due to secrets not being properly redacted, potentially exposing secrets to users without the appropriate authorization.
+  
+  Users are recommended to upgrade to version 3.1.4, which fixes this issue.
+affected:
+- package:
+    name: apache-airflow
+    ecosystem: PyPI
+    purl: pkg:pypi/apache-airflow
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 3.1.0
+    - fixed: 3.1.4
+references:
+- type: ADVISORY
+  url: http://www.openwall.com/lists/oss-security/2025/12/12/1
+- type: ADVISORY
+  url: https://lists.apache.org/thread/mv9hzsx8grjf7gdlkxwppnpbtogtls2g
+- type: REPORT
+  url: https://github.com/apache/airflow/pull/58772
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N

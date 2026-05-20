@@ -1,0 +1,22 @@
+id: PYSEC-2024-288
+published: "2024-04-16T00:15:12.930Z"
+modified: "2025-10-29T14:06:08.257Z"
+aliases:
+- CVE-2024-3575
+details: "Cross-site Scripting (XSS) - Stored in mindsdb/mindsdb"
+affected:
+- package:
+    name: mindsdb
+    ecosystem: PyPI
+    purl: pkg:pypi/mindsdb
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - {}
+references:
+- type: EVIDENCE
+  url: https://huntr.com/bounties/5f720b48-ddeb-4f2a-830f-a3dd15d5daa2
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N

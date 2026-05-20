@@ -1,0 +1,28 @@
+id: PYSEC-2026-86
+published: "2026-01-12T23:15:51.630Z"
+modified: "2026-01-21T18:30:26.690Z"
+aliases:
+- CVE-2024-58339
+details: LlamaIndex (run-llama/llama_index) versions up to and including 0.12.2 contain an uncontrolled resource consumption vulnerability in the VannaPack VannaQueryEngine implementation. The custom_query() logic generates SQL statements from a user-supplied prompt and executes them via vn.run_sql() without enforcing query execution limits In downstream deployments where untrusted users can supply prompts, an attacker can trigger expensive or unbounded SQL operations that exhaust CPU or memory resources, resulting in a denial-of-service condition. The vulnerable execution path occurs in llama_index/packs/vanna/base.py within custom_query().
+affected:
+- package:
+    name: llama-index
+    ecosystem: PyPI
+    purl: pkg:pypi/llama-index
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 0.12.3
+references:
+- type: WEB
+  url: https://www.llamaindex.ai/
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/llamaindex-vannaqueryengine-sql-execution-allows-resource-exhaustion
+- type: PACKAGE
+  url: https://github.com/run-llama/llama_index
+- type: EVIDENCE
+  url: https://huntr.com/bounties/a1d6c30d-fce0-412a-bd22-14e0d4c1fa1f
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

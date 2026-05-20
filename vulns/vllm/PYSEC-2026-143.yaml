@@ -1,0 +1,23 @@
+id: PYSEC-2026-143
+published: "2026-01-10T07:16:03.527Z"
+modified: "2026-01-27T21:03:47.017Z"
+aliases:
+- CVE-2026-22773
+- GHSA-grg2-63fw-f2qr
+details: vLLM is an inference and serving engine for large language models (LLMs). In versions from 0.6.4 to before 0.12.0, users can crash the vLLM engine serving multimodal models that use the Idefics3 vision model implementation by sending a specially crafted 1x1 pixel image. This causes a tensor dimension mismatch that results in an unhandled runtime error, leading to complete server termination. This issue has been patched in version 0.12.0.
+affected:
+- package:
+    name: vllm
+    ecosystem: PyPI
+    purl: pkg:pypi/vllm
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 0.6.4
+    - fixed: 0.12.0
+references:
+- type: EVIDENCE
+  url: https://github.com/vllm-project/vllm/security/advisories/GHSA-grg2-63fw-f2qr
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

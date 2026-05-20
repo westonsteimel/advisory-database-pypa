@@ -1,0 +1,23 @@
+id: PYSEC-2026-124
+published: "2026-04-07T17:16:34.280Z"
+modified: "2026-04-16T21:11:52.380Z"
+aliases:
+- CVE-2026-35592
+- GHSA-mvwx-582f-56r7
+details: pyLoad is a free and open-source download manager written in Python. Prior to 0.5.0b3.dev97, the _safe_extractall() function in src/pyload/plugins/extractors/UnTar.py uses os.path.commonprefix() for its path traversal check, which performs character-level string comparison rather than path-level comparison. This allows a specially crafted tar archive to write files outside the intended extraction directory. The correct function os.path.commonpath() was added to the codebase in the CVE-2026-32808 fix (commit 5f4f0fa) but was never applied to _safe_extractall(), making this an incomplete fix. This vulnerability is fixed in 0.5.0b3.dev97.
+affected:
+- package:
+    name: pyload-ng
+    ecosystem: PyPI
+    purl: pkg:pypi/pyload-ng
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 0.5.0b3.dev97
+references:
+- type: EVIDENCE
+  url: https://github.com/pyload/pyload/security/advisories/GHSA-mvwx-582f-56r7
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N

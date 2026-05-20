@@ -1,0 +1,25 @@
+id: PYSEC-2026-152
+published: "2026-04-15T18:17:20.053Z"
+modified: "2026-04-21T14:11:09.503Z"
+aliases:
+- CVE-2026-33214
+- GHSA-mpf5-3vph-q75r
+details: Weblate is a web based localization tool. In versions prior to 5.17, the translation memory API exposed unintended endpoints, which in turn didn't enforce proper access control. This issue has been fixed in version 5.17. If users are unable to update immediately, they can work around this issue by blocking access to /api/memory/ in the HTTP server, which removes access to this feature.
+affected:
+- package:
+    name: weblate
+    ecosystem: PyPI
+    purl: pkg:pypi/weblate
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: "5.17"
+references:
+- type: FIX
+  url: https://github.com/WeblateOrg/weblate/pull/18513
+- type: FIX
+  url: https://github.com/WeblateOrg/weblate/security/advisories/GHSA-mpf5-3vph-q75r
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N

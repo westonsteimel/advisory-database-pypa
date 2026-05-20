@@ -1,0 +1,25 @@
+id: PYSEC-2026-156
+published: "2026-04-15T19:16:36.373Z"
+modified: "2026-04-21T14:05:02.593Z"
+aliases:
+- CVE-2026-39845
+- GHSA-f8hv-g549-hwg2
+details: Weblate is a web based localization tool. In versions prior to 5.17, the webhook add-on did not utilize existing SSRF protections. This issue has been fixed in version 5.17. If developers are unable to update immediately, they can disable the webhook add-on as a workaround.
+affected:
+- package:
+    name: weblate
+    ecosystem: PyPI
+    purl: pkg:pypi/weblate
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: "5.17"
+references:
+- type: ADVISORY
+  url: https://github.com/WeblateOrg/weblate/security/advisories/GHSA-f8hv-g549-hwg2
+- type: FIX
+  url: https://github.com/WeblateOrg/weblate/pull/18815
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:N/A:N

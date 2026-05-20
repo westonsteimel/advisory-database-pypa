@@ -1,0 +1,29 @@
+id: PYSEC-2026-13
+published: "2026-04-18T07:16:09.347Z"
+modified: "2026-04-22T14:16:36.140Z"
+aliases:
+- CVE-2026-25917
+details: |-
+  Dag Authors, who normally should not be able to execute code in the webserver context could craft XCom payload causing the webserver to execute arbitrary code. Since Dag Authors are already highly trusted, severity of this issue is Low.
+  
+  Users are recommended to upgrade to Apache Airflow 3.2.0, which fixes the issue.
+affected:
+- package:
+    name: apache-airflow
+    ecosystem: PyPI
+    purl: pkg:pypi/apache-airflow
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 3.2.0
+references:
+- type: ADVISORY
+  url: http://www.openwall.com/lists/oss-security/2026/04/17/9
+- type: ADVISORY
+  url: https://lists.apache.org/thread/6whgpkqbh12rvpfmvcg8b0vwlv4hq3po
+- type: REPORT
+  url: https://github.com/apache/airflow/pull/61641
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H

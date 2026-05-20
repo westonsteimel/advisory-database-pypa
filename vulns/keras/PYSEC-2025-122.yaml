@@ -1,0 +1,24 @@
+id: PYSEC-2025-122
+published: "2025-03-11T09:15:25.217Z"
+modified: "2025-07-31T16:55:39.920Z"
+aliases:
+- CVE-2025-1550
+details: The Keras Model.load_model function permits arbitrary code execution, even with safe_mode=True, through a manually constructed, malicious .keras archive. By altering the config.json file within the archive, an attacker can specify arbitrary Python modules and functions, along with their arguments, to be loaded and executed during model loading.
+affected:
+- package:
+    name: keras
+    ecosystem: PyPI
+    purl: pkg:pypi/keras
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 3.0.0
+    - fixed: 3.8.0
+references:
+- type: FIX
+  url: https://github.com/keras-team/keras/pull/20751
+- type: EVIDENCE
+  url: https://towerofhanoi.it/writeups/cve-2025-1550/
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H

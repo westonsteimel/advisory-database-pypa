@@ -1,0 +1,31 @@
+id: PYSEC-2026-106
+published: "2026-03-27T01:16:19.483Z"
+modified: "2026-04-10T15:23:47.010Z"
+aliases:
+- CVE-2026-33718
+- GHSA-7h8w-hj9j-8rjw
+details: OpenHands is software for AI-driven development. Starting in version 1.5.0, a Command Injection vulnerability exists in the `get_git_diff()` method at `openhands/runtime/utils/git_handler.py:134`. The `path` parameter from the `/api/conversations/{conversation_id}/git/diff` API endpoint is passed unsanitized to a shell command, allowing authenticated attackers to execute arbitrary commands in the agent sandbox. The user is already allowed to instruct the agent to execute commands, but this bypasses the normal channels. Version 1.5.0 fixes the issue.
+affected:
+- package:
+    name: openhands-ai
+    ecosystem: PyPI
+    purl: pkg:pypi/openhands-ai
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.5.0
+references:
+- type: FIX
+  url: https://github.com/OpenHands/OpenHands/pull/13051
+- type: ARTICLE
+  url: "https://docs.python.org/3/library/shlex.html#shlex.quote"
+- type: ARTICLE
+  url: "https://docs.python.org/3/library/subprocess.html#security-considerations"
+- type: ARTICLE
+  url: https://owasp.org/www-community/attacks/Command_Injection
+- type: EVIDENCE
+  url: https://github.com/OpenHands/OpenHands/security/advisories/GHSA-7h8w-hj9j-8rjw
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H

@@ -1,0 +1,22 @@
+id: PYSEC-2026-73
+published: "2026-01-15T14:16:26.890Z"
+modified: "2026-01-23T18:35:49.733Z"
+aliases:
+- CVE-2026-0897
+details: Allocation of Resources Without Limits or Throttling in the HDF5 weight loading component in Google Keras 3.0.0 through 3.13.0 on all platforms allows a remote attacker to cause a Denial of Service (DoS) through memory exhaustion and a crash of the Python interpreter via a crafted .keras archive containing a valid model.weights.h5 file whose dataset declares an extremely large shape.
+affected:
+- package:
+    name: keras
+    ecosystem: PyPI
+    purl: pkg:pypi/keras
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 3.0.0
+    - fixed: 3.13.1
+references:
+- type: FIX
+  url: https://github.com/keras-team/keras/pull/21880
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

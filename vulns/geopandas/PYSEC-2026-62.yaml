@@ -1,0 +1,26 @@
+id: PYSEC-2026-62
+published: "2026-01-30T19:16:11.967Z"
+modified: "2026-04-21T19:16:16.373Z"
+aliases:
+- CVE-2025-69662
+details: SQL injection vulnerability in geopandas before v.1.1.2 allows an attacker to obtain sensitive information via the to_postgis()` function being used to write GeoDataFrames to a PostgreSQL database.
+affected:
+- package:
+    name: geopandas
+    ecosystem: PyPI
+    purl: pkg:pypi/geopandas
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.1.2
+references:
+- type: WEB
+  url: https://lists.debian.org/debian-lts-announce/2026/04/msg00025.html
+- type: FIX
+  url: https://github.com/geopandas/geopandas/pull/3681
+- type: EVIDENCE
+  url: https://aydinnyunus.github.io/2025/12/27/sql-injection-geopandas/
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N

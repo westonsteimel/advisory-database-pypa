@@ -1,0 +1,23 @@
+id: PYSEC-2026-7
+published: "2026-02-26T02:16:23.483Z"
+modified: "2026-03-02T18:40:39.127Z"
+aliases:
+- CVE-2026-27961
+- GHSA-cfr2-mp74-3763
+details: Agenta is an open-source LLMOps platform. A Server-Side Template Injection (SSTI) vulnerability exists in versions prior to 0.86.8 in Agenta's API server evaluator template rendering. Although the vulnerable code lives in the SDK package, it is executed server-side within the API process when running evaluators. This does not affect standalone SDK usage — it only impacts self-hosted or managed Agenta platform deployments. Version 0.86.8 contains a fix for the issue.
+affected:
+- package:
+    name: agenta
+    ecosystem: PyPI
+    purl: pkg:pypi/agenta
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 0.86.8
+references:
+- type: ADVISORY
+  url: https://github.com/Agenta-AI/agenta/security/advisories/GHSA-cfr2-mp74-3763
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H

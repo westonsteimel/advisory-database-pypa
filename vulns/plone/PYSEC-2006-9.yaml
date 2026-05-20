@@ -1,0 +1,20 @@
+id: PYSEC-2006-9
+published: "2006-09-29T19:07:00Z"
+modified: "2026-04-23T00:35:47.467Z"
+aliases:
+- CVE-2006-4247
+details: Unspecified vulnerability in the Password Reset Tool before 0.4.1 on Plone 2.5 and 2.5.1 Release Candidate allows attackers to reset the passwords of other users, related to "an erroneous security declaration."
+affected:
+- package:
+    name: plone
+    ecosystem: PyPI
+    purl: pkg:pypi/plone
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - {}
+    - {}
+references:
+- type: FIX
+  url: http://plone.org/about/security/advisories/cve-2006-4247
