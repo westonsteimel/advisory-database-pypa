@@ -9,6 +9,12 @@ affected:
     name: protobuf
     ecosystem: PyPI
     purl: pkg:pypi/protobuf
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 3.1.0.post1
+  ecosystem_specific: {}
 references:
 - type: WEB
   url: https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E

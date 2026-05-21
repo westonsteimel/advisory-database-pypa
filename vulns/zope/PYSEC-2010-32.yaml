@@ -6,12 +6,6 @@ affected:
   - events:
     - introduced: 2.10.0
     - fixed: 2.10.12
-    type: ECOSYSTEM
-- package:
-    ecosystem: PyPI
-    name: Zope
-  ranges:
-  - events:
     - introduced: 2.11.0
     - fixed: 2.11.7
     type: ECOSYSTEM

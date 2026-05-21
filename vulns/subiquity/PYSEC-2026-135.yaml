@@ -13,7 +13,8 @@ affected:
   - type: ECOSYSTEM
     events:
     - introduced: "0"
-    - {}
+    - last_affected: 24.04.4
+  ecosystem_specific: {}
 references:
 - type: FIX
   url: https://github.com/canonical/subiquity/pull/2357

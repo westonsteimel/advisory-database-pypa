@@ -9,6 +9,12 @@ affected:
     name: flask-cors
     ecosystem: PyPI
     purl: pkg:pypi/flask-cors
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - last_affected: 4.0.1
+  ecosystem_specific: {}
 references:
 - type: FIX
   url: https://github.com/corydolphin/flask-cors/commit/03aa3f8e2256437f7bad96422a747b98ab5e31bf

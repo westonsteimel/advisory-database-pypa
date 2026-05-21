@@ -1,38 +1,20 @@
-affected:
-- package:
-    ecosystem: PyPI
-    name: dokuwiki
-    purl: pkg:pypi/dokuwiki
-  ranges:
-  - events:
-    - introduced: '0'
-    - {}
-    type: ECOSYSTEM
-  versions:
-  - '0.1'
-  - '0.2'
-  - 0.2.1
-  - 0.3.0
-  - 0.4.0
-  - 0.5.0
-  - 1.0.0
-  - 1.0.1
-  - 1.1.0
-  - 1.2.0
-  - 1.2.1
-  - 1.3.1
-  - 1.3.2
-  - 1.3.3
+id: PYSEC-2026-57
+published: "2026-02-12T23:16:07.670Z"
+modified: "2026-03-02T15:16:22.633Z"
 aliases:
 - CVE-2019-25338
-details: DokuWiki 2018-04-22b contains a username enumeration vulnerability in its
-  password reset functionality that allows attackers to identify valid user accounts.
-  Attackers can submit different usernames to the password reset endpoint and distinguish
-  between existing and non-existing accounts by analyzing the server's error response
-  messages.
-id: PYSEC-2026-57
-modified: '2026-05-20T09:18:59.467077Z'
-published: '2026-02-12T23:16:07.670Z'
+details: DokuWiki 2018-04-22b contains a username enumeration vulnerability in its password reset functionality that allows attackers to identify valid user accounts. Attackers can submit different usernames to the password reset endpoint and distinguish between existing and non-existing accounts by analyzing the server's error response messages.
+affected:
+- package:
+    name: dokuwiki
+    ecosystem: PyPI
+    purl: pkg:pypi/dokuwiki
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - last_affected: 2018-04-22b
+  ecosystem_specific: {}
 references:
 - type: WEB
   url: https://download.dokuwiki.org/
@@ -43,5 +25,5 @@ references:
 - type: EVIDENCE
   url: https://www.exploit-db.com/exploits/47731
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N

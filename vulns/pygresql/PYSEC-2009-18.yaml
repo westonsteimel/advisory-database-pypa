@@ -5,42 +5,13 @@ affected:
     purl: pkg:pypi/pygresql
   ranges:
   - events:
-    - introduced: '0'
-    - {}
-    - {}
+    - introduced: 3.8.1
+    - last_affected: "4.0"
     type: ECOSYSTEM
   versions:
   - 3.8.1
   - '4.0'
-  - '4.1'
-  - 4.1.1
-  - '4.2'
-  - 4.2.1
-  - 4.2.2
-  - '5.0'
-  - 5.0.1
-  - 5.0.2
-  - 5.0.3
-  - 5.0.4
-  - 5.0.6
-  - 5.0.7
-  - '5.1'
-  - 5.1.1
-  - 5.1.2
-  - '5.2'
-  - 5.2.1
-  - 5.2.2
-  - 5.2.3
-  - 5.2.4
-  - 5.2.5
-  - '6.0'
-  - 6.0.1
-  - 6.0b1
-  - 6.1.0
-  - 6.2.0
-  - 6.2.1
-  - 6.2.2
-  - 6.2.3
+  ecosystem_specific: {}
 aliases:
 - CVE-2009-2940
 details: The pygresql module 3.8.1 and 4.0 for Python does not properly support the

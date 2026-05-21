@@ -11,6 +11,12 @@ affected:
     name: vantage6
     ecosystem: PyPI
     purl: pkg:pypi/vantage6
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 3.3.3
+    - fixed: 3.8.0
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: https://github.com/vantage6/vantage6/security/advisories/GHSA-36gx-9q6h-g429

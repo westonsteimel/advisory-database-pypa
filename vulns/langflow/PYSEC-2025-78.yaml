@@ -9,6 +9,12 @@ affected:
     name: langflow
     ecosystem: PyPI
     purl: pkg:pypi/langflow
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.7.0
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: https://www.vulncheck.com/advisories/langflow-cors-misconfiguration-to-token-hijack-and-rce

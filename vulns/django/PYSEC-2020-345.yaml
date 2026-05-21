@@ -9,6 +9,16 @@ affected:
     name: django
     ecosystem: PyPI
     purl: pkg:pypi/django
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "1.11"
+    - fixed: 1.11.29
+    - introduced: "2.2"
+    - fixed: 2.2.11
+    - introduced: "3.0"
+    - fixed: 3.0.4
+  ecosystem_specific: {}
 references:
 - type: WEB
   url: "https://groups.google.com/forum/#%21topic/django-announce/fLUh_pOaKrY"

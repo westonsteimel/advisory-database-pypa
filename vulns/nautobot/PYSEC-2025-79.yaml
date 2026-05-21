@@ -10,6 +10,14 @@ affected:
     name: nautobot
     ecosystem: PyPI
     purl: pkg:pypi/nautobot
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.6.32
+    - introduced: 2.0.0
+    - fixed: 2.4.10
+  ecosystem_specific: {}
 references:
 - type: WEB
   url: "https://docs.djangoproject.com/en/4.2/ref/templates/api/#alters-data-description"

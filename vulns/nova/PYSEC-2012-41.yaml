@@ -153,8 +153,6 @@ references:
 - type: WEB
   url: http://osvdb.org/88419
 - type: WEB
-  url: http://www.securityfocus.com/bid/56904
-- type: WEB
   url: http://www.openwall.com/lists/oss-security/2012/12/11/5
 - type: WEB
   url: https://bugs.launchpad.net/nova/+bug/1070539
