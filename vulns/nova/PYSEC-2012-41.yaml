@@ -132,6 +132,28 @@ affected:
   - 29.2.0
   - 30.0.0
   - 30.0.0.0rc1
+  - 28.3.1
+  - 29.2.1
+  - 29.2.2
+  - 29.3.0
+  - 29.4.0
+  - 30.1.0
+  - 30.2.0
+  - 30.2.1
+  - 30.3.0
+  - 31.0.0
+  - 31.0.0.0rc1
+  - 31.0.1
+  - 31.1.0
+  - 31.2.0
+  - 31.3.0
+  - 32.0.0
+  - 32.0.0.0rc1
+  - 32.1.0
+  - 32.2.0
+  - 33.0.0
+  - 33.0.0.0rc1
+  - 33.0.1
 aliases:
 - CVE-2012-5625
 details: OpenStack Compute (Nova) Folsom before 2012.2.2 and Grizzly, when using libvirt
@@ -139,7 +161,7 @@ details: OpenStack Compute (Nova) Folsom before 2012.2.2 and Grizzly, when using
   reallocating for instances, which allows attackers to obtain sensitive information
   by reading the memory of the previous logical volume (LV).
 id: PYSEC-2012-41
-modified: '2024-11-21T14:22:56.616552Z'
+modified: '2026-05-21T14:54:36.200646Z'
 published: '2012-12-26T22:55:00Z'
 references:
 - type: FIX

@@ -1,14 +1,30 @@
 affected:
-- package:
+- ecosystem_specific: {}
+  package:
     ecosystem: PyPI
     name: wireguard
     purl: pkg:pypi/wireguard
   ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: "0"
+  - events:
+    - introduced: '0'
     - last_affected: 0.5.3
-  ecosystem_specific: {}
+    type: ECOSYSTEM
+  versions:
+  - 0.1.0
+  - 0.1.1
+  - 0.1.2
+  - 0.1.3
+  - 0.1.4
+  - 0.1.5
+  - 0.1.6
+  - 0.2.0
+  - 0.2.1
+  - 0.2.2
+  - 0.2.3
+  - 0.2.4
+  - 0.2.5
+  - 0.3.0
+  - 0.4.0
 aliases:
 - CVE-2023-35838
 details: 'The WireGuard client 0.5.3 on Windows insecurely configures the operating
@@ -18,7 +34,7 @@ details: 'The WireGuard client 0.5.3 on Windows insecurely configures the operat
   NOTE: the tunnelcrack.mathyvanhoef.com website uses this CVE ID to refer more generally
   to "LocalNet attack resulting in the blocking of traffic" rather than to only WireGuard.'
 id: PYSEC-2023-321
-modified: '2026-05-20T09:19:24.310411Z'
+modified: '2026-05-21T14:54:48.729605Z'
 published: '2023-08-09T23:15:10.007Z'
 references:
 - type: WEB
