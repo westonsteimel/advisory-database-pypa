@@ -295,6 +295,7 @@ affected:
   - 3.2.1rc1
   - 3.2.1rc2
   - 3.2.1rc3
+  - 3.2.2rc1
 aliases:
 - CVE-2025-54831
 details: |-
@@ -313,7 +314,7 @@ details: |-
 
   Users of Airflow 3.0.3 are advised to upgrade Airflow to >=3.0.4.
 id: PYSEC-2025-85
-modified: '2026-05-20T09:18:52.483666Z'
+modified: '2026-05-21T09:24:57.115664Z'
 published: '2025-09-26T08:15:38.303Z'
 references:
 - type: WEB

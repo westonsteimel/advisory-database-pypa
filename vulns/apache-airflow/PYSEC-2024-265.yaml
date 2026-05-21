@@ -296,6 +296,7 @@ affected:
   - 3.2.1rc1
   - 3.2.1rc2
   - 3.2.1rc3
+  - 3.2.2rc1
 aliases:
 - CVE-2024-42447
 details: "Insufficient Session Expiration vulnerability in Apache Airflow Providers\
@@ -314,7 +315,7 @@ details: "Insufficient Session Expiration vulnerability in Apache Airflow Provid
   \ pull the latest Airflow images or reinstall FAB provider according to the current\
   \ constraints."
 id: PYSEC-2024-265
-modified: '2026-05-20T09:18:52.349141Z'
+modified: '2026-05-21T09:24:56.897160Z'
 published: '2024-08-05T08:15:56.397Z'
 references:
 - type: WEB
