@@ -1,17 +1,13 @@
-id: PYSEC-0000-starlette.yaml
-modified: 2026-05-22T12:00:00Z
-summary: Missing Host header validation poisons request.url.path, bypassing path-based security checks
-details: Starlette reconstructs the requested URL based on the HTTP Host request header and requested path, but does not perform any validation of the Host header value. This allows attackers to inject paths into the host part, prepending the actual path. However, routing in Starlette is based on the actual request path. This inconsistent interpretation of HTTP requests may lead to issues such as authentication bypass when the authentication depends on the reconstructed URL’s path.
 affected:
 - package:
     ecosystem: PyPI
     name: starlette
     purl: pkg:pypi/starlette
   ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: "0"
+  - events:
+    - introduced: '0'
     - fixed: 1.0.1
+    type: ECOSYSTEM
   versions:
   - 0.1.0
   - 0.1.1
@@ -203,6 +199,17 @@ affected:
   - 0.9.8
   - 0.9.9
   - 1.0.0
+  - 1.0.0rc1
+aliases:
+- GHSA-86qp-5c8j-p5mr
+details: "Starlette reconstructs the requested URL based on the HTTP Host request\
+  \ header and requested path, but does not perform any validation of the Host header\
+  \ value. This allows attackers to inject paths into the host part, prepending the\
+  \ actual path. However, routing in Starlette is based on the actual request path.\
+  \ This inconsistent interpretation of HTTP requests may lead to issues such as authentication\
+  \ bypass when the authentication depends on the reconstructed URL\u2019s path."
+id: PYSEC-0000-starlette.yaml
+modified: '2026-05-22T13:11:38.659740Z'
 references:
 - type: EVIDENCE
   url: https://github.com/Kludex/starlette/security/advisories/GHSA-86qp-5c8j-p5mr
@@ -212,5 +219,5 @@ references:
   url: https://www.x41-dsec.de/lab/advisories/x41-2026-002-starlette/
 - type: FIX
   url: https://github.com/Kludex/starlette/commit/764dab0dcfb9033d75442d7a359645c9f94648c6
-aliases:
-- GHSA-86qp-5c8j-p5mr
+summary: Missing Host header validation poisons request.url.path, bypassing path-based
+  security checks
