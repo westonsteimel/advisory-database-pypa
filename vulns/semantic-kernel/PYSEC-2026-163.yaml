@@ -1,14 +1,20 @@
+id: PYSEC-2026-163
+published: "2026-02-19T17:24:50.487Z"
+modified: "2026-05-24T16:09:56.119731Z"
+aliases:
+- CVE-2026-26030
+- GHSA-xjw9-4gw8-4rqx
+details: Semantic Kernel, Microsoft's semantic kernel Python SDK, has a remote code execution vulnerability in versions prior to 1.39.4, specifically within the `InMemoryVectorStore` filter functionality. The problem has been fixed in version `python-1.39.4`. Users should upgrade this version or higher. As a workaround, avoid using `InMemoryVectorStore` for production scenarios.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: semantic-kernel
+    ecosystem: PyPI
     purl: pkg:pypi/semantic-kernel
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 1.39.4
-    type: ECOSYSTEM
   versions:
   - 0.0.1.dev0
   - 0.1.0.dev0
@@ -136,17 +142,7 @@ affected:
   - 1.8.2
   - 1.8.3
   - 1.9.0
-aliases:
-- CVE-2026-26030
-- GHSA-xjw9-4gw8-4rqx
-details: Semantic Kernel, Microsoft's semantic kernel Python SDK, has a remote code
-  execution vulnerability in versions prior to 1.39.4, specifically within the `InMemoryVectorStore`
-  filter functionality. The problem has been fixed in version `python-1.39.4`. Users
-  should upgrade this version or higher. As a workaround, avoid using `InMemoryVectorStore`
-  for production scenarios.
-id: PYSEC-0000-CVE-2026-26030
-modified: '2026-05-24T16:09:56.119731Z'
-published: '2026-02-19T17:24:50.487Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: https://github.com/microsoft/semantic-kernel/releases/tag/python-1.39.4
@@ -155,5 +151,5 @@ references:
 - type: FIX
   url: https://github.com/microsoft/semantic-kernel/security/advisories/GHSA-xjw9-4gw8-4rqx
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
