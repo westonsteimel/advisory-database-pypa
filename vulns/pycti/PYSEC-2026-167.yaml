@@ -1,14 +1,20 @@
+id: PYSEC-2026-167
+published: "2026-05-26T18:16:51.023Z"
+modified: "2026-05-28T10:28:40.168078Z"
+aliases:
+- CVE-2026-44730
+- GHSA-q537-qhj4-wcjx
+details: OpenCTI is an open source platform for managing cyber threat intelligence knowledge and observables. Prior to 6.9.7, an organization admin can escalate their privileges by adding a user from a different organization with higher privileges, to their own organization. This is due to incorrect ACL on userEdit relationAdd. This vulnerability is fixed in 6.9.7.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: pycti
+    ecosystem: PyPI
     purl: pkg:pypi/pycti
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 6.9.7
-    type: ECOSYSTEM
   versions:
   - 1.2.1
   - 1.2.11
@@ -376,20 +382,10 @@ affected:
   - 6.9.4
   - 6.9.5
   - 6.9.6
-aliases:
-- CVE-2026-44730
-- GHSA-q537-qhj4-wcjx
-details: OpenCTI is an open source platform for managing cyber threat intelligence
-  knowledge and observables. Prior to 6.9.7, an organization admin can escalate their
-  privileges by adding a user from a different organization with higher privileges,
-  to their own organization. This is due to incorrect ACL on userEdit relationAdd.
-  This vulnerability is fixed in 6.9.7.
-id: PYSEC-0000-CVE-2026-44730
-modified: '2026-05-28T10:28:40.168078Z'
-published: '2026-05-26T18:16:51.023Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: https://github.com/OpenCTI-Platform/opencti/security/advisories/GHSA-q537-qhj4-wcjx
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H

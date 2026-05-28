@@ -1,14 +1,19 @@
+id: PYSEC-2026-166
+published: "2026-05-25T10:16:15.087Z"
+modified: "2026-05-28T10:28:11.000211Z"
+aliases:
+- CVE-2026-45361
+details: Apache Airflow providers-google's `ComputeEngineSSHHook` disables SSH host-key verification by default, exposing SSH traffic between an Airflow worker and a Compute Engine VM to in-path network attackers who can intercept or modify the session. Users are advised to upgrade to `apache-airflow-providers-google` 22.0.0 or later.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: apache-airflow-providers-google
+    ecosystem: PyPI
     purl: pkg:pypi/apache-airflow-providers-google
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 22.0.0
-    type: ECOSYSTEM
   versions:
   - 1.0.0
   - 1.0.0b1
@@ -217,15 +222,7 @@ affected:
   - 9.0.0
   - 9.0.0rc1
   - 9.0.0rc2
-aliases:
-- CVE-2026-45361
-details: Apache Airflow providers-google's `ComputeEngineSSHHook` disables SSH host-key
-  verification by default, exposing SSH traffic between an Airflow worker and a Compute
-  Engine VM to in-path network attackers who can intercept or modify the session.
-  Users are advised to upgrade to `apache-airflow-providers-google` 22.0.0 or later.
-id: PYSEC-0000-CVE-2026-45361
-modified: '2026-05-28T10:28:11.000211Z'
-published: '2026-05-25T10:16:15.087Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: http://www.openwall.com/lists/oss-security/2026/05/24/9
@@ -234,5 +231,5 @@ references:
 - type: FIX
   url: https://github.com/apache/airflow/pull/66746
 severity:
-- score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
