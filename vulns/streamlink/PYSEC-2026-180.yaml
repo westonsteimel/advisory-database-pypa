@@ -1,14 +1,20 @@
+id: PYSEC-2026-180
+published: "2026-05-27T17:16:38.927Z"
+modified: "2026-06-02T10:34:25.539071Z"
+aliases:
+- CVE-2026-44353
+- GHSA-hgqw-6m45-hw5f
+details: Streamlink is a CLI utility which pipes video streams from various services into a video player. Prior to 8.4.0, Streamlink's HLS and DASH parsers do not validate the URI scheme of segment entries and other resources. A remote .m3u8 HLS playlist or .mpd DASH manifest can list file:///path/to/file as a segment, and streamlink will read that local file and write its contents to the output stream. This vulnerability is fixed in 8.4.0.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: streamlink
+    ecosystem: PyPI
     purl: pkg:pypi/streamlink
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 8.4.0
-    type: ECOSYSTEM
   versions:
   - 0.0.1
   - 0.0.2
@@ -115,21 +121,10 @@ affected:
   - 8.2.0
   - 8.2.1
   - 8.3.0
-aliases:
-- CVE-2026-44353
-- GHSA-hgqw-6m45-hw5f
-details: Streamlink is a CLI utility which pipes video streams from various services
-  into a video player. Prior to 8.4.0, Streamlink's HLS and DASH parsers do not validate
-  the URI scheme of segment entries and other resources. A remote .m3u8 HLS playlist
-  or .mpd DASH manifest can list file:///path/to/file as a segment, and streamlink
-  will read that local file and write its contents to the output stream. This vulnerability
-  is fixed in 8.4.0.
-id: PYSEC-0000-CVE-2026-44353
-modified: '2026-06-02T10:34:25.539071Z'
-published: '2026-05-27T17:16:38.927Z'
+  ecosystem_specific: {}
 references:
 - type: EVIDENCE
   url: https://github.com/streamlink/streamlink/security/advisories/GHSA-hgqw-6m45-hw5f
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N

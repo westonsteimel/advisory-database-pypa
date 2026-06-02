@@ -1,14 +1,19 @@
+id: PYSEC-2026-173
+published: "2026-06-01T08:16:20.567Z"
+modified: "2026-06-02T10:33:39.129557Z"
+aliases:
+- CVE-2026-45192
+details: A bug in the GET `/api/v2/connections/{connection_id}` REST API endpoint in Apache Airflow allowed an authenticated UI/API user with Connection-read permission to retrieve secrets stored in a Connection's `extra` JSON blob under field names not present in the redaction allowlist (`DEFAULT_SENSITIVE_FIELDS`) — for example, official Slack-provider credential field names were returned in plaintext. Affects deployments that store credentials in Connection `extra` blobs and grant Connection-read access to multiple users. Users are advised to upgrade to `apache-airflow` 3.2.2 or later. As a defense-in-depth mitigation, deployment operators can store sensitive credential values in a secret-backend rather than inlined into the Connection's `extra` field.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: apache-airflow
+    ecosystem: PyPI
     purl: pkg:pypi/apache-airflow
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 3.2.2
-    type: ECOSYSTEM
   versions:
   - 1.10.0
   - 1.10.1
@@ -299,28 +304,14 @@ affected:
   - 3.2.2rc1
   - 3.2.2rc2
   - 3.2.2rc3
-aliases:
-- CVE-2026-42360
-details: 'A bug in Apache Airflow''s rendered-template field handling caused nested
-  sensitive-key masking (e.g. nested `password` / `token` / `secret` / `api_key` keys
-  inside a JSON template structure) to be bypassed when the rendered field exceeded
-  `[core] max_templated_field_length`: Airflow stringified the structure before redaction,
-  losing the nested key context, and persisted the plaintext value into `rendered_fields`.
-  An authenticated UI/API user with permission to read rendered template fields could
-  harvest secret values intended to be masked. Affects deployments where Dag authors
-  pass structured JSON to operators with nested sensitive keys. This is a variant
-  of `CWE-200` previously addressed for the user-registered `mask_secret()` patterns
-  in CVE-2025-68438; that fix did not cover the nested sensitive-keyword allowlist.
-  Users who already upgraded for CVE-2025-68438 should additionally upgrade to `apache-airflow`
-  3.2.2 or later to cover the nested-key path.'
-id: PYSEC-0000-CVE-2026-42360
-modified: '2026-06-02T10:33:38.991817Z'
-published: '2026-06-01T09:16:19.033Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
-  url: https://lists.apache.org/thread/obj79bpxnl7r5olz1gsn0g94y88glnl4
+  url: http://www.openwall.com/lists/oss-security/2026/06/01/3
+- type: ADVISORY
+  url: https://lists.apache.org/thread/r2q93dg2wp5h9sd9vh6y4y5ljqd9crdd
 - type: FIX
-  url: https://github.com/apache/airflow/pull/65906
+  url: https://github.com/apache/airflow/pull/66673
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
