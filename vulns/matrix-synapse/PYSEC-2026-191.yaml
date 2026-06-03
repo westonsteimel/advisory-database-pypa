@@ -1,14 +1,20 @@
+id: PYSEC-2026-191
+published: "2026-05-28T17:16:31.750Z"
+modified: "2026-06-03T10:54:47.970200Z"
+aliases:
+- CVE-2026-45078
+- GHSA-8q93-326v-3m7g
+details: Synapse is an open source Matrix homeserver implementation. Prior to 1.152.1, local authenticated users can cause Synapse to starve other requests of CPU and lead to other requests failing, causing other users to be denied service. This vulnerability is fixed in 1.152.1.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: matrix-synapse
+    ecosystem: PyPI
     purl: pkg:pypi/matrix-synapse
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 1.152.1
-    type: ECOSYSTEM
   versions:
   - 0.33.5
   - 0.33.5.1
@@ -512,19 +518,10 @@ affected:
   - 1.98.0rc1
   - 1.99.0
   - 1.99.0rc1
-aliases:
-- CVE-2026-45078
-- GHSA-8q93-326v-3m7g
-details: Synapse is an open source Matrix homeserver implementation. Prior to 1.152.1,
-  local authenticated users can cause Synapse to starve other requests of CPU and
-  lead to other requests failing, causing other users to be denied service. This vulnerability
-  is fixed in 1.152.1.
-id: PYSEC-0000-CVE-2026-45078
-modified: '2026-06-03T10:54:47.970200Z'
-published: '2026-05-28T17:16:31.750Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: https://github.com/element-hq/synapse/security/advisories/GHSA-8q93-326v-3m7g
 severity:
-- score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
