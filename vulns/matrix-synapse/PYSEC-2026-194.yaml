@@ -1,14 +1,20 @@
+id: PYSEC-2026-194
+published: "2026-05-28T17:16:31.590Z"
+modified: "2026-06-05T10:22:40.838242Z"
+aliases:
+- CVE-2026-45076
+- GHSA-6qf2-7x63-mm6v
+details: Synapse is an open source Matrix homeserver implementation. Prior to 1.152.1, in federated rooms, malicious homeservers can craft room events in such a way that prevents Synapse from providing full history to paginating clients. Clients could therefore fail to display room history. This vulnerability is fixed in 1.152.1.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: matrix-synapse
+    ecosystem: PyPI
     purl: pkg:pypi/matrix-synapse
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 1.152.1
-    type: ECOSYSTEM
   versions:
   - 0.33.5
   - 0.33.5.1
@@ -512,19 +518,10 @@ affected:
   - 1.98.0rc1
   - 1.99.0
   - 1.99.0rc1
-aliases:
-- CVE-2026-45076
-- GHSA-6qf2-7x63-mm6v
-details: Synapse is an open source Matrix homeserver implementation. Prior to 1.152.1,
-  in federated rooms, malicious homeservers can craft room events in such a way that
-  prevents Synapse from providing full history to paginating clients. Clients could
-  therefore fail to display room history. This vulnerability is fixed in 1.152.1.
-id: PYSEC-0000-CVE-2026-45076
-modified: '2026-06-05T10:22:40.838242Z'
-published: '2026-05-28T17:16:31.590Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: https://github.com/element-hq/synapse/security/advisories/GHSA-6qf2-7x63-mm6v
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L
