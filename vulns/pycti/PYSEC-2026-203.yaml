@@ -1,14 +1,20 @@
+id: PYSEC-2026-203
+published: "2026-06-02T22:16:16.727Z"
+modified: "2026-06-06T09:31:54.080036Z"
+aliases:
+- CVE-2026-35212
+- GHSA-rg6r-x26x-63vq
+details: OpenCTI is an open source platform for managing cyber threat intelligence knowledge and observables. Versions prior to 7.260227.0 are vulnerable to XSS in the rendering of email-message observable body data. The content of the body field isn't appropriately sanitized when being rendered. Does require user interaction but could be exploited by someone sharing stix or any of the ingester. This could lead to CSRF and then large scale session theft. Version 7.260227.0 contains a fix.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: pycti
+    ecosystem: PyPI
     purl: pkg:pypi/pycti
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 7.260227.0
-    type: ECOSYSTEM
   versions:
   - 1.2.1
   - 1.2.11
@@ -400,21 +406,10 @@ affected:
   - 6.9.8
   - 6.9.9
   - 7.260224.0
-aliases:
-- CVE-2026-35212
-- GHSA-rg6r-x26x-63vq
-details: OpenCTI is an open source platform for managing cyber threat intelligence
-  knowledge and observables. Versions prior to 7.260227.0 are vulnerable to XSS in
-  the rendering of email-message observable body data. The content of the body field
-  isn't appropriately sanitized when being rendered. Does require user interaction
-  but could be exploited by someone sharing stix or any of the ingester. This could
-  lead to CSRF and then large scale session theft. Version 7.260227.0 contains a fix.
-id: PYSEC-0000-CVE-2026-35212
-modified: '2026-06-06T09:31:54.080036Z'
-published: '2026-06-02T22:16:16.727Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: https://github.com/OpenCTI-Platform/opencti/security/advisories/GHSA-rg6r-x26x-63vq
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
