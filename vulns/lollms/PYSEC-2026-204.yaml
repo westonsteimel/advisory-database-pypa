@@ -1,14 +1,19 @@
+id: PYSEC-2026-204
+published: "2026-03-29T18:16:14.460Z"
+modified: "2026-06-06T19:12:55.895665Z"
+aliases:
+- CVE-2026-0562
+details: A critical security vulnerability in parisneo/lollms versions up to 2.2.0 allows any authenticated user to accept or reject friend requests belonging to other users. The `respond_request()` function in `backend/routers/friends.py` does not implement proper authorization checks, enabling Insecure Direct Object Reference (IDOR) attacks. Specifically, the `/api/friends/requests/{friendship_id}` endpoint fails to verify whether the authenticated user is part of the friendship or the intended recipient of the request. This vulnerability can lead to unauthorized access, privacy violations, and potential social engineering attacks. The issue has been addressed in version 2.2.0.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: lollms
+    ecosystem: PyPI
     purl: pkg:pypi/lollms
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 2.1.1
-    type: ECOSYSTEM
   versions:
   - 1.1.10
   - 1.1.11
@@ -128,20 +133,7 @@ affected:
   - 2.0.8
   - 2.0.9
   - 2.1.0
-aliases:
-- CVE-2026-0562
-details: A critical security vulnerability in parisneo/lollms versions up to 2.2.0
-  allows any authenticated user to accept or reject friend requests belonging to other
-  users. The `respond_request()` function in `backend/routers/friends.py` does not
-  implement proper authorization checks, enabling Insecure Direct Object Reference
-  (IDOR) attacks. Specifically, the `/api/friends/requests/{friendship_id}` endpoint
-  fails to verify whether the authenticated user is part of the friendship or the
-  intended recipient of the request. This vulnerability can lead to unauthorized access,
-  privacy violations, and potential social engineering attacks. The issue has been
-  addressed in version 2.2.0.
-id: PYSEC-0000-CVE-2026-0562
-modified: '2026-06-06T19:12:55.895665Z'
-published: '2026-03-29T18:16:14.460Z'
+  ecosystem_specific: {}
 references:
 - type: WEB
   url: https://aydinnyunus.github.io/2026/04/18/idor-lollms-friend-request-cve-2026-0562/
@@ -150,5 +142,5 @@ references:
 - type: FIX
   url: https://github.com/parisneo/lollms/commit/c46297799f8e1e23305373f8350746b905e0e83c
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L
