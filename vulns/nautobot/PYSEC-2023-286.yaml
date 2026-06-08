@@ -34,10 +34,10 @@ affected:
     repo: https://github.com/nautobot/nautobot
   - type: ECOSYSTEM
     events:
-    - introduced: 2.0.0
-    - fixed: 2.0.6
     - introduced: 1.1.0
     - fixed: 1.6.7
+    - introduced: 2.0.0
+    - fixed: 2.0.6
   versions:
   - 1.1.0
   - 1.1.1

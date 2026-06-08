@@ -27,10 +27,10 @@ affected:
     - fixed: 1d897910139e2c0b11984fc9b78c1da1365bec21
   - type: ECOSYSTEM
     events:
-    - introduced: '5.0'
-    - fixed: 5.2.1
     - introduced: '4.0'
     - fixed: 4.6.1
+    - introduced: '5.0'
+    - fixed: 5.2.1
   versions:
   - '4.0'
   - '4.1'

@@ -26,12 +26,12 @@ affected:
     - fixed: 7e83fdd2563ffac081db7ecdf1affa65ef38c468
   - type: ECOSYSTEM
     events:
-    - introduced: "1.8"
-    - fixed: 1.8.2
-    - introduced: "1.7"
-    - fixed: 1.7.4
     - introduced: "0"
     - fixed: 1.6.2
+    - introduced: "1.7"
+    - fixed: 1.7.4
+    - introduced: "1.8"
+    - fixed: 1.8.2
   versions:
   - 0.0.1
   - 0.0.2

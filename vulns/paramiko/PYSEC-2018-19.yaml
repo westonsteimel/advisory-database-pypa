@@ -19,6 +19,8 @@ affected:
     events:
     - introduced: '0'
     - fixed: 1.17.6
+    - introduced: 1.18.0
+    - fixed: 1.18.5
     - introduced: 2.0.0
     - fixed: 2.0.8
     - introduced: 2.1.0
@@ -27,8 +29,6 @@ affected:
     - fixed: 2.2.3
     - introduced: 2.3.0
     - fixed: 2.3.2
-    - introduced: 1.18.0
-    - fixed: 1.18.5
   versions:
   - 0.1-bulbasaur
   - 0.1-charmander

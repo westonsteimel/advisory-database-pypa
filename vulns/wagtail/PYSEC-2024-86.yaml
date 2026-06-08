@@ -21,10 +21,10 @@ affected:
     repo: https://github.com/wagtail/wagtail
   - type: ECOSYSTEM
     events:
-    - introduced: "6.1"
-    - fixed: 6.1.3
     - introduced: "6.0"
     - fixed: 6.0.6
+    - introduced: "6.1"
+    - fixed: 6.1.3
     - introduced: "2.0"
     - fixed: 5.2.6
   versions:

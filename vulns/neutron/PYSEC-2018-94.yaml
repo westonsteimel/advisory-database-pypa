@@ -16,10 +16,10 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: 12.0.0
-    - fixed: 12.0.3
     - introduced: 7.0.0
     - fixed: 11.0.5
+    - introduced: 12.0.0
+    - fixed: 12.0.3
   versions:
   - 10.0.5
   - 10.0.6

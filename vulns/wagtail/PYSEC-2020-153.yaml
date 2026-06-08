@@ -16,10 +16,10 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: "2.8"
-    - fixed: 2.8.2
     - introduced: "2.7"
     - fixed: 2.7.3
+    - introduced: "2.8"
+    - fixed: 2.8.2
   versions:
   - "2.7"
   - 2.7.1

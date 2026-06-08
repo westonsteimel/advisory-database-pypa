@@ -16,12 +16,12 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: 2.16.0
-    - fixed: 2.16.3
-    - introduced: 2.15.0
-    - fixed: 2.15.9
     - introduced: "0"
     - fixed: 2.14.4
+    - introduced: 2.15.0
+    - fixed: 2.15.9
+    - introduced: 2.16.0
+    - fixed: 2.16.3
   versions:
   - 0.0.1a1
   - 2.11.0
