@@ -1,14 +1,19 @@
+id: PYSEC-2026-205
+published: "2026-05-01T09:16:17.440Z"
+modified: "2026-06-08T12:31:44.732269Z"
+aliases:
+- CVE-2026-43003
+details: An issue was discovered in OpenStack ironic-python-agent 1.0.0 through 11.5.0. Ironic Python Agent (IPA) sometimes executes grub-install from within a chroot of the deployed partition image, leading to code execution in the case of a malicious image.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: ironic-python-agent
+    ecosystem: PyPI
     purl: pkg:pypi/ironic-python-agent
   ranges:
-  - events:
+  - type: ECOSYSTEM
+    events:
     - introduced: 1.0.0
     - fixed: 11.6.0
-    type: ECOSYSTEM
   versions:
   - 1.0.0
   - 1.0.1
@@ -130,20 +135,12 @@ affected:
   - 9.7.3
   - 9.8.0
   - 9.9.0
-aliases:
-- CVE-2026-43003
-details: An issue was discovered in OpenStack ironic-python-agent 1.0.0 through 11.5.0.
-  Ironic Python Agent (IPA) sometimes executes grub-install from within a chroot of
-  the deployed partition image, leading to code execution in the case of a malicious
-  image.
-id: PYSEC-0000-CVE-2026-43003
-modified: '2026-06-08T12:31:44.732269Z'
-published: '2026-05-01T09:16:17.440Z'
+  ecosystem_specific: {}
 references:
 - type: WEB
-  url: https://github.com/openstack/ironic-python-agent/blob/236b33abffe6688afc39c21e351cc3889b3db2dd/ironic_python_agent/efi_utils.py#L134-L139
+  url: "https://github.com/openstack/ironic-python-agent/blob/236b33abffe6688afc39c21e351cc3889b3db2dd/ironic_python_agent/efi_utils.py#L134-L139"
 - type: REPORT
   url: https://bugs.launchpad.net/ironic-python-agent/+bug/2148310
 severity:
-- score: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H
