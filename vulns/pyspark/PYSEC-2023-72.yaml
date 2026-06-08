@@ -16,11 +16,7 @@ affected:
   - type: ECOSYSTEM
     events:
     - introduced: "0"
-    - fixed: 3.1.1
-    - introduced: 3.2.0
     - fixed: 3.2.2
-    - introduced: 3.1.1
-    - fixed: 3.2.0
   versions:
   - 2.1.1
   - 2.1.2
