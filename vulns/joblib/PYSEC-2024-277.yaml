@@ -123,6 +123,7 @@ details: 'joblib v1.4.2 was discovered to contain a deserialization vulnerabilit
 id: PYSEC-2024-277
 modified: '2026-05-21T14:54:30.656359Z'
 published: '2024-05-17T19:15:07.373Z'
+withdrawn: '2026-06-09T16:03:00.000Z'
 references:
 - type: REPORT
   url: https://github.com/joblib/joblib/issues/1582
