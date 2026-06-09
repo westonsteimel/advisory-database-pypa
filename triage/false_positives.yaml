@@ -69,3 +69,4 @@ packages:
 - wolfssl  # Most likely not the python package.
 - krb5    # Most likely not the python package.
 - hyperledger # Most likely not the python package.
+- steam # The python steam package is unlikely to be the target package of a vulnerability
