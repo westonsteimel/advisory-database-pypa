@@ -132,6 +132,28 @@ affected:
   - 29.2.0
   - 30.0.0
   - 30.0.0.0rc1
+  - 28.3.1
+  - 29.2.1
+  - 29.2.2
+  - 29.3.0
+  - 29.4.0
+  - 30.1.0
+  - 30.2.0
+  - 30.2.1
+  - 30.3.0
+  - 31.0.0
+  - 31.0.0.0rc1
+  - 31.0.1
+  - 31.1.0
+  - 31.2.0
+  - 31.3.0
+  - 32.0.0
+  - 32.0.0.0rc1
+  - 32.1.0
+  - 32.2.0
+  - 33.0.0
+  - 33.0.0.0rc1
+  - 33.0.1
 aliases:
 - CVE-2012-3361
 - GHSA-cm54-3vvf-f5p8
@@ -139,7 +161,7 @@ details: virt/disk/api.py in OpenStack Compute (Nova) Folsom (2012.2), Essex (20
   and Diablo (2011.3) allows remote authenticated users to overwrite arbitrary files
   via a symlink attack on a file in an image.
 id: PYSEC-2012-39
-modified: '2024-11-21T14:22:56.493974Z'
+modified: '2026-06-10T16:51:41.477980Z'
 published: '2012-07-22T16:55:00Z'
 references:
 - type: ADVISORY
@@ -147,19 +169,15 @@ references:
 - type: WEB
   url: https://review.openstack.org/#/c/9268/
 - type: EVIDENCE
-  url: 
-    https://github.com/openstack/nova/commit/b0feaffdb2b1c51182b8dce41b367f3449af5dd9
+  url: https://github.com/openstack/nova/commit/b0feaffdb2b1c51182b8dce41b367f3449af5dd9
 - type: FIX
-  url: 
-    https://github.com/openstack/nova/commit/b0feaffdb2b1c51182b8dce41b367f3449af5dd9
+  url: https://github.com/openstack/nova/commit/b0feaffdb2b1c51182b8dce41b367f3449af5dd9
 - type: WEB
   url: https://bugs.launchpad.net/nova/+bug/1015531
 - type: EVIDENCE
-  url: 
-    https://github.com/openstack/nova/commit/2427d4a99bed35baefd8f17ba422cb7aae8dcca7
+  url: https://github.com/openstack/nova/commit/2427d4a99bed35baefd8f17ba422cb7aae8dcca7
 - type: FIX
-  url: 
-    https://github.com/openstack/nova/commit/2427d4a99bed35baefd8f17ba422cb7aae8dcca7
+  url: https://github.com/openstack/nova/commit/2427d4a99bed35baefd8f17ba422cb7aae8dcca7
 - type: WEB
   url: http://www.securityfocus.com/bid/54278
 - type: ADVISORY

@@ -1,36 +1,17 @@
-id: PYSEC-2022-43131
-details: diplib v3.0.0 is vulnerable to Double Free.
-aliases:
-- CVE-2021-39432
-- GHSA-xf2w-5673-h6ww
-modified: '2024-12-27T22:48:17.996707Z'
-published: '2022-11-04T17:15:00Z'
-withdrawn: '2024-11-22T04:37:03Z'
-references:
-- type: FIX
-  url: https://github.com/DIPlib/diplib/commit/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5
-- type: EVIDENCE
-  url: https://github.com/DIPlib/diplib/issues/80
-- type: REPORT
-  url: https://github.com/DIPlib/diplib/issues/80
-- type: FIX
-  url: https://github.com/DIPlib/diplib/issues/80
-- type: ADVISORY
-  url: https://github.com/advisories/GHSA-xf2w-5673-h6ww
 affected:
 - package:
-    name: diplib
     ecosystem: PyPI
+    name: diplib
     purl: pkg:pypi/diplib
   ranges:
-  - type: GIT
-    repo: https://github.com/DIPlib/diplib
-    events:
+  - events:
     - introduced: '0'
     - fixed: 8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5
-  - type: ECOSYSTEM
-    events:
+    repo: https://github.com/DIPlib/diplib
+    type: GIT
+  - events:
     - introduced: '0'
+    type: ECOSYSTEM
   versions:
   - 3.0.0
   - 3.0b5
@@ -49,6 +30,26 @@ affected:
   - 3.5.0
   - 3.5.1
   - 3.5.2
+  - 3.6.0
+aliases:
+- CVE-2021-39432
+- GHSA-xf2w-5673-h6ww
+details: diplib v3.0.0 is vulnerable to Double Free.
+id: PYSEC-2022-43131
+modified: '2026-06-10T16:51:09.441557Z'
+published: '2022-11-04T17:15:00Z'
+references:
+- type: FIX
+  url: https://github.com/DIPlib/diplib/commit/8b9a2670ce66ff2fd5addf592f7825e1f5adb5b5
+- type: EVIDENCE
+  url: https://github.com/DIPlib/diplib/issues/80
+- type: REPORT
+  url: https://github.com/DIPlib/diplib/issues/80
+- type: FIX
+  url: https://github.com/DIPlib/diplib/issues/80
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-xf2w-5673-h6ww
 severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+  type: CVSS_V3
+withdrawn: '2024-11-22T04:37:03Z'

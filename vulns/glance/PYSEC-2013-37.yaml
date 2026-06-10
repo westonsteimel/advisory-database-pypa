@@ -86,6 +86,24 @@ affected:
   - 29.0.0.0b2
   - 29.0.0.0b3
   - 29.0.0.0rc1
+  - 27.1.1
+  - 28.2.0
+  - 29.1.0
+  - 29.2.0
+  - 29.2.1
+  - 30.0.0
+  - 30.0.0.0b2
+  - 30.0.0.0rc1
+  - 30.1.0
+  - 30.2.0
+  - 31.0.0
+  - 31.0.0.0b2
+  - 31.0.0.0rc1
+  - 31.1.0
+  - 32.0.0
+  - 32.0.0.0b2
+  - 32.0.0.0rc1
+  - 32.0.0.0rc2
 aliases:
 - CVE-2013-0212
 - GHSA-xv7j-2v4w-cjvh
@@ -95,7 +113,7 @@ details: store/swift.py in OpenStack Glance Essex (2012.1), Folsom (2012.2) befo
   allows remote authenticated users to obtain sensitive information by reading the
   error messages.
 id: PYSEC-2013-37
-modified: '2024-11-21T14:22:51.177765Z'
+modified: '2026-06-10T16:51:24.158635Z'
 published: '2013-02-24T21:55:00Z'
 references:
 - type: FIX
@@ -105,8 +123,7 @@ references:
 - type: WEB
   url: https://lists.launchpad.net/openstack/msg20517.html
 - type: FIX
-  url: 
-    https://github.com/openstack/glance/commit/e96273112b5b5da58d970796b7cfce04c5030a89
+  url: https://github.com/openstack/glance/commit/e96273112b5b5da58d970796b7cfce04c5030a89
 - type: FIX
   url: http://ubuntu.com/usn/usn-1710-1
 - type: ADVISORY
@@ -118,13 +135,11 @@ references:
 - type: WEB
   url: https://bugs.launchpad.net/glance/+bug/1098962
 - type: FIX
-  url: 
-    https://github.com/openstack/glance/commit/37d4d96bf88c2bf3e7e9511b5e321cf4bed364b7
+  url: https://github.com/openstack/glance/commit/37d4d96bf88c2bf3e7e9511b5e321cf4bed364b7
 - type: ADVISORY
   url: http://secunia.com/advisories/51957
 - type: FIX
-  url: 
-    https://github.com/openstack/glance/commit/96a470be64adcef97f235ca96ed3c59ed954a4c1
+  url: https://github.com/openstack/glance/commit/96a470be64adcef97f235ca96ed3c59ed954a4c1
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-xv7j-2v4w-cjvh
 withdrawn: '2024-11-22T04:37:04Z'

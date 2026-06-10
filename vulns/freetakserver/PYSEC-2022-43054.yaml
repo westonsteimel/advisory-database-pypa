@@ -1,22 +1,12 @@
-id: PYSEC-2022-43054
-modified: 2023-08-17T03:22:31.240214Z
-published: 2022-03-11T00:15:00Z
-aliases:
-- CVE-2022-25508
-- GHSA-hggv-mcp4-vxc5
-details: An access control issue in the component /ManageRoute/postRoute of FreeTAKServer
-  v1.9.8 allows unauthenticated attackers to cause a Denial of Service (DoS) via an
-  unusually large amount of created routes, or create unsafe or false routes for legitimate
-  users.
 affected:
 - package:
     ecosystem: PyPI
     name: freetakserver
     purl: pkg:pypi/freetakserver
   ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: "0"
+  - events:
+    - introduced: '0'
+    type: ECOSYSTEM
   versions:
   - 0.0.1.5
   - 0.1.0
@@ -52,8 +42,8 @@ affected:
   - 0.1.9.8.5
   - 0.1.9.9.1
   - 0.1.9.9.5.5
-  - "0.111"
-  - "0.112"
+  - '0.111'
+  - '0.112'
   - 0.2.0.11a0
   - 0.2.0.13
   - 0.2.0.17b0
@@ -80,14 +70,14 @@ affected:
   - 0.9.9.1
   - 0.9.9.2
   - 1.0.3
-  - "1.1"
+  - '1.1'
   - 1.1.1
   - 1.1.2
-  - "1.2"
+  - '1.2'
   - 1.2.0.1
   - 1.2.0.2
   - 1.2.5
-  - "1.3"
+  - '1.3'
   - 1.3.0.5
   - 1.3.0.6
   - 1.5.10
@@ -96,9 +86,9 @@ affected:
   - 1.5.12
   - 1.7.1
   - 1.7.5
-  - "1.8"
+  - '1.8'
   - 1.8.1
-  - "1.9"
+  - '1.9'
   - 1.9.1
   - 1.9.1.5
   - 1.9.5
@@ -122,9 +112,26 @@ affected:
   - 2.0.21
   - 2.0.66
   - 2.0.69
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+  - 0.2.1a1
+  - 0.2a1
+  - '2.1'
+  - 2.1.1
+  - 2.1.2
+  - 2.1.3
+  - 2.1.4.5
+  - '2.2'
+  - 2.2.0.1
+  - 2.2.1
+aliases:
+- CVE-2022-25508
+- GHSA-hggv-mcp4-vxc5
+details: An access control issue in the component /ManageRoute/postRoute of FreeTAKServer
+  v1.9.8 allows unauthenticated attackers to cause a Denial of Service (DoS) via an
+  unusually large amount of created routes, or create unsafe or false routes for legitimate
+  users.
+id: PYSEC-2022-43054
+modified: '2026-06-10T16:51:23.618348Z'
+published: '2022-03-11T00:15:00Z'
 references:
 - type: EVIDENCE
   url: https://github.com/FreeTAKTeam/FreeTakServer/issues/291
@@ -132,3 +139,6 @@ references:
   url: https://github.com/FreeTAKTeam/FreeTakServer/issues/291
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-hggv-mcp4-vxc5
+severity:
+- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+  type: CVSS_V3

@@ -1,26 +1,12 @@
-id: PYSEC-2021-339
-details: Improper Authentication in Lin-CMS-Flask v0.1.1 allows remote attackers to
-  launch brute force login attempts without restriction via the 'login' function in
-  the component 'app/api/cms/user.py'.
-aliases:
-- CVE-2020-18698
-- GHSA-h6r2-pgvx-683c
-modified: '2022-03-16T02:19:49.985623Z'
-published: '2021-08-16T18:15:00Z'
-references:
-- type: REPORT
-  url: https://github.com/TaleLin/lin-cms-flask/issues/27
-- type: ADVISORY
-  url: https://github.com/advisories/GHSA-h6r2-pgvx-683c
 affected:
 - package:
-    name: lin-cms
     ecosystem: PyPI
+    name: lin-cms
     purl: pkg:pypi/lin-cms
   ranges:
-  - type: ECOSYSTEM
-    events:
+  - events:
     - introduced: '0'
+    type: ECOSYSTEM
   versions:
   - 0.1.1a1
   - 0.1.1a2
@@ -55,3 +41,20 @@ affected:
   - 0.4.6
   - 0.4.7
   - 0.4.8
+  - 0.4.10
+  - 0.4.11
+  - 0.4.9
+aliases:
+- CVE-2020-18698
+- GHSA-h6r2-pgvx-683c
+details: Improper Authentication in Lin-CMS-Flask v0.1.1 allows remote attackers to
+  launch brute force login attempts without restriction via the 'login' function in
+  the component 'app/api/cms/user.py'.
+id: PYSEC-2021-339
+modified: '2026-06-10T16:51:30.783316Z'
+published: '2021-08-16T18:15:00Z'
+references:
+- type: REPORT
+  url: https://github.com/TaleLin/lin-cms-flask/issues/27
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h6r2-pgvx-683c
