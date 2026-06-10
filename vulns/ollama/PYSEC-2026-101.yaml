@@ -1,6 +1,7 @@
 id: PYSEC-2026-101
 published: "2026-01-21T18:16:23.470Z"
 modified: "2026-02-02T17:27:47.887Z"
+withdrawn: "2026-06-10T11:00:00Z"
 aliases:
 - CVE-2025-66959
 details: An issue in ollama v.0.12.10 allows a remote attacker to cause a denial of service via the GGUF decoder
