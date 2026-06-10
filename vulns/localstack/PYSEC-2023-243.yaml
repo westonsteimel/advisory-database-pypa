@@ -494,6 +494,7 @@ affected:
   - 4.9.3.dev1
   - 4.9.3.dev128
   - 4.9.3.dev131
+  - 2026.5.3
 aliases:
 - CVE-2023-48054
 - GHSA-8633-g3ph-97rp
@@ -501,7 +502,7 @@ details: Missing SSL certificate validation in localstack v2.3.2 allows attacker
   to eavesdrop on communications between the host and server via a man-in-the-middle
   attack.
 id: PYSEC-2023-243
-modified: '2026-06-10T16:51:31.560130Z'
+modified: '2026-06-10T17:39:26.242377Z'
 published: '2023-11-16T18:15:00Z'
 references:
 - type: WEB
