@@ -3,6 +3,7 @@ modified: 2025-01-14T05:22:21.870348Z
 published: 2024-02-28T00:15:53Z
 aliases:
 - CVE-2024-1892
+- GHSA-cc65-xxvf-f7r9
 details: A Regular Expression Denial of Service (ReDoS) vulnerability exists in the
   XMLFeedSpider class of the scrapy/scrapy project, specifically in the parsing of
   XML content. By crafting malicious XML content that exploits inefficient regular
@@ -138,3 +139,5 @@ references:
   url: https://huntr.com/bounties/271f94f2-1e05-4616-ac43-41752389e26b
 - type: WEB
   url: https://huntr.com/bounties/271f94f2-1e05-4616-ac43-41752389e26b
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cc65-xxvf-f7r9

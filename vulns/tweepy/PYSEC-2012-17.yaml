@@ -37,7 +37,10 @@ references:
   url: http://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/79831
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pwx5-xg7g-wpc5
 aliases:
 - CVE-2012-5825
+- GHSA-pwx5-xg7g-wpc5
 modified: "2021-08-27T03:22:49.526995Z"
 published: "2012-11-04T22:55:00Z"

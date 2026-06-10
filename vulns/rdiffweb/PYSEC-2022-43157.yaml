@@ -1,8 +1,9 @@
 id: PYSEC-2022-43157
-modified: 2024-11-21T14:23:00.33324Z
+modified: 2024-11-21T14:23:00.333240Z
 published: 2022-10-06T18:16:00Z
 aliases:
 - CVE-2022-3376
+- GHSA-7wr6-fj4x-893v
 details: Weak Password Requirements in GitHub repository ikus060/rdiffweb prior to
   2.5.0a4.
 affected:
@@ -110,10 +111,13 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
 references:
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/2ffc2af65c8f8113b06e0b89929c604bcdf844b9
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/2ffc2af65c8f8113b06e0b89929c604bcdf844b9
 - type: EVIDENCE
   url: https://huntr.dev/bounties/a9021e93-6d18-4ac1-98ce-550c4697a4ed
 - type: FIX
   url: https://huntr.dev/bounties/a9021e93-6d18-4ac1-98ce-550c4697a4ed
 - type: WEB
   url: https://huntr.dev/bounties/a9021e93-6d18-4ac1-98ce-550c4697a4ed
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-7wr6-fj4x-893v

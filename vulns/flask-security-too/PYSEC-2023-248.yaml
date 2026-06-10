@@ -3,6 +3,7 @@ modified: 2024-01-17T11:19:18.188431Z
 published: 2023-12-26T22:15:00Z
 aliases:
 - CVE-2023-49438
+- GHSA-672h-6x89-76m5
 details: An open redirect vulnerability in the python package Flask-Security-Too <=5.3.2
   allows attackers to redirect unsuspecting users to malicious sites via a crafted
   URL by abusing the ?next parameter on the /login and /register routes.
@@ -72,4 +73,7 @@ references:
 - type: WEB
   url: https://github.com/brandon-t-elliott/CVE-2023-49438
 - type: WEB
-  url: https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/6HCYH377TPUMUHELPI36PDS2ZM4VFIXM/
+  url: 
+    https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/6HCYH377TPUMUHELPI36PDS2ZM4VFIXM/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-672h-6x89-76m5

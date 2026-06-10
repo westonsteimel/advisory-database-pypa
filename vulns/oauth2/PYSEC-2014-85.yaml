@@ -49,7 +49,10 @@ references:
   url: https://github.com/simplegeo/python-oauth2/issues/129
 - type: WEB
   url: http://www.securityfocus.com/bid/62386
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4433-4cxq-vv73
 aliases:
 - CVE-2013-4346
+- GHSA-4433-4cxq-vv73
 modified: "2021-08-27T03:22:09.637359Z"
 published: "2014-05-20T14:55:00Z"

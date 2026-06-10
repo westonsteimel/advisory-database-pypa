@@ -51,12 +51,16 @@ references:
 - type: WEB
   url: https://security.snyk.io/vuln/SNYK-PYTHON-ONNX-2395479
 - type: WEB
-  url: https://github.com/onnx/onnx/blob/96516aecd4c110b0ac57eba08ac236ebf7205728/onnx/checker.cc%23L129
+  url: 
+    https://github.com/onnx/onnx/blob/96516aecd4c110b0ac57eba08ac236ebf7205728/onnx/checker.cc%23L129
 - type: FIX
   url: https://github.com/onnx/onnx/commit/f369b0e859024095d721f1d1612da5a8fa38988d
 - type: WEB
   url: https://github.com/onnx/onnx/pull/4400
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-ffxj-547x-5j7c
 aliases:
 - CVE-2022-25882
+- GHSA-ffxj-547x-5j7c
 modified: "2023-05-04T03:49:47.105559Z"
 published: "2023-01-26T21:15:00Z"

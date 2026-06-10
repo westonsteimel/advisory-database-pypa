@@ -64,10 +64,14 @@ affected:
   - 1.8.2
 references:
 - type: FIX
-  url: https://github.com/octoprint/octoprint/commit/40e6217ac1a85cc5ed592873ae49db01d3005da4
+  url: 
+    https://github.com/octoprint/octoprint/commit/40e6217ac1a85cc5ed592873ae49db01d3005da4
 - type: WEB
   url: https://huntr.dev/bounties/d27d232b-2578-4b32-b3b4-74aabdadf629
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-937f-qh3w-6g87
 aliases:
 - CVE-2022-2888
+- GHSA-937f-qh3w-6g87
 modified: "2022-09-22T17:04:30.485402Z"
 published: "2022-09-21T12:15:00Z"

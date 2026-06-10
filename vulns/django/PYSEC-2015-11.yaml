@@ -137,16 +137,21 @@ references:
 - type: WEB
   url: http://www.securitytracker.com/id/1034237
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-December/174770.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-December/174770.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2015-12/msg00017.html
 - type: ADVISORY
   url: http://www.debian.org/security/2015/dsa-3404
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-December/173375.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-December/173375.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2015-12/msg00014.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6wcr-wcqm-3mfh
 aliases:
 - CVE-2015-8213
+- GHSA-6wcr-wcqm-3mfh
 modified: "2021-09-01T08:35:41.190803Z"
 published: "2015-12-07T20:59:00Z"

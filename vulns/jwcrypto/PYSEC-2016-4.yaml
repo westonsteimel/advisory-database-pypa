@@ -24,7 +24,8 @@ affected:
   - 0.3.1
 references:
 - type: FIX
-  url: https://github.com/latchset/jwcrypto/commit/eb5be5bd94c8cae1d7f3ba9801377084d8e5a7ba
+  url: 
+    https://github.com/latchset/jwcrypto/commit/eb5be5bd94c8cae1d7f3ba9801377084d8e5a7ba
 - type: REPORT
   url: https://github.com/latchset/jwcrypto/issues/65
 - type: WEB
@@ -33,7 +34,10 @@ references:
   url: https://github.com/latchset/jwcrypto/releases/tag/v0.3.2
 - type: WEB
   url: http://www.securityfocus.com/bid/92729
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wg33-x934-3ghh
 aliases:
 - CVE-2016-6298
+- GHSA-wg33-x934-3ghh
 modified: "2021-07-05T00:01:22.078687Z"
 published: "2016-09-01T23:59:00Z"

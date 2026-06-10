@@ -38,14 +38,18 @@ affected:
   - 1.9.1
 references:
 - type: FIX
-  url: https://github.com/uisautomation/django-ucamlookup/commit/5e25e4765637ea4b9e0bf5fcd5e9a922abee7eb3
+  url: 
+    https://github.com/uisautomation/django-ucamlookup/commit/5e25e4765637ea4b9e0bf5fcd5e9a922abee7eb3
 - type: WEB
   url: https://vuldb.com/?ctiid.217441
 - type: WEB
   url: https://vuldb.com/?id.217441
 - type: WEB
   url: https://github.com/uisautomation/django-ucamlookup/releases/tag/1.9.2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pjx4-3f3p-29v3
 aliases:
 - CVE-2016-15010
+- GHSA-pjx4-3f3p-29v3
 modified: "2023-05-04T03:49:45.271028Z"
 published: "2023-01-05T09:15:00Z"

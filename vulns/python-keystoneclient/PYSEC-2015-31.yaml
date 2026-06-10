@@ -66,7 +66,10 @@ references:
   url: http://rhn.redhat.com/errata/RHSA-2015-1685.html
 - type: ADVISORY
   url: http://rhn.redhat.com/errata/RHSA-2015-1677.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-p9wq-mjh8-q72m
 aliases:
 - CVE-2015-1852
+- GHSA-p9wq-mjh8-q72m
 modified: "2021-07-25T23:34:52.173858Z"
 published: "2015-04-17T17:59:00Z"

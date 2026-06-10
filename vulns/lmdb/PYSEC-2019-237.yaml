@@ -5,15 +5,19 @@ details: 'An issue was discovered in py-lmdb 0.97. For certain values of mp_flag
   by an attacker.'
 aliases:
 - CVE-2019-16225
+- GHSA-c74c-p4p7-r8q5
 modified: '2021-12-14T08:17:08.271573Z'
 published: '2019-09-11T15:15:00Z'
 references:
 - type: WEB
-  url: https://github.com/TeamSeri0us/pocs/tree/master/lmdb/lmdb%20write%20to%20illegal%20address
+  url: 
+    https://github.com/TeamSeri0us/pocs/tree/master/lmdb/lmdb%20write%20to%20illegal%20address
 - type: PACKAGE
   url: https://pypi.org/project/lmdb
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2019-16225
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c74c-p4p7-r8q5
 affected:
 - package:
     name: lmdb

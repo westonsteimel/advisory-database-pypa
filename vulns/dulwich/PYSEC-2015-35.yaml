@@ -51,7 +51,10 @@ references:
   url: http://www.debian.org/security/2015/dsa-3206
 - type: WEB
   url: https://lists.launchpad.net/dulwich-users/msg00829.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vjjf-3rvg-gv3v
 aliases:
 - CVE-2015-0838
+- GHSA-vjjf-3rvg-gv3v
 modified: "2021-08-27T03:22:03.427700Z"
 published: "2015-03-31T14:59:00Z"

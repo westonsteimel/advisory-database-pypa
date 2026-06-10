@@ -3,6 +3,7 @@ modified: 2023-11-07T20:24:25.208233Z
 published: 2012-09-05T23:55:00Z
 aliases:
 - CVE-2012-3542
+- GHSA-gf2q-j2qq-pjf2
 details: 'OpenStack Keystone, as used in OpenStack Folsom before folsom-rc1 and OpenStack
   Essex (2012.1), allows remote attackers to add an arbitrary user to an arbitrary
   tenant via a request to update the user''s default tenant to the administrative
@@ -71,13 +72,15 @@ references:
 - type: ADVISORY
   url: http://secunia.com/advisories/50467
 - type: FIX
-  url: https://github.com/openstack/keystone/commit/5438d3b5a219d7c8fa67e66e538d325a61617155
+  url: 
+    https://github.com/openstack/keystone/commit/5438d3b5a219d7c8fa67e66e538d325a61617155
 - type: WEB
   url: https://bugs.launchpad.net/keystone/+bug/1040626
 - type: WEB
   url: http://www.securityfocus.com/bid/55326
 - type: FIX
-  url: https://github.com/openstack/keystone/commit/c13d0ba606f7b2bdc609a7f388334e5efec3f3aa
+  url: 
+    https://github.com/openstack/keystone/commit/c13d0ba606f7b2bdc609a7f388334e5efec3f3aa
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2012/08/30/6
 - type: ADVISORY
@@ -86,3 +89,5 @@ references:
   url: http://secunia.com/advisories/50494
 - type: WEB
   url: https://lists.launchpad.net/openstack/msg16282.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gf2q-j2qq-pjf2

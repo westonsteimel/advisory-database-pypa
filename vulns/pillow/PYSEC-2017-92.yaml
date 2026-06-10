@@ -37,7 +37,10 @@ references:
   url: http://pillow.readthedocs.io/en/4.1.x/releasenotes/3.1.2.html
 - type: WEB
   url: http://www.securityfocus.com/bid/98042
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v9pc-9mvp-x87g
 aliases:
 - CVE-2016-3076
+- GHSA-v9pc-9mvp-x87g
 modified: "2021-08-27T03:22:10.292415Z"
 published: "2017-04-24T18:59:00Z"

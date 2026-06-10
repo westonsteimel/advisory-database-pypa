@@ -162,14 +162,18 @@ affected:
   - 5.2rc5
 references:
 - type: WEB
-  url: https://www.compass-security.com/fileadmin/Research/Advisories/2021-07_CSNC-2021-013_XSS_in_Plone_CMS.txt
+  url: 
+    https://www.compass-security.com/fileadmin/Research/Advisories/2021-07_CSNC-2021-013_XSS_in_Plone_CMS.txt
 - type: WEB
   url: https://plone.org/download/releases/5.2.3
 - type: WEB
   url: https://plone.org/security/hotfix/20210518
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2021/05/22/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hprr-4vfq-fcxw
 aliases:
 - CVE-2021-3313
+- GHSA-hprr-4vfq-fcxw
 modified: "2021-06-09T05:00:50.662546Z"
 published: "2021-05-20T16:15:00Z"

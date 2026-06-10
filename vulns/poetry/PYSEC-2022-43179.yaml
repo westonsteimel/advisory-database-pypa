@@ -3,8 +3,6 @@ modified: 2025-04-09T17:27:27.255151Z
 published: 2022-09-07T19:15:08Z
 aliases:
 - CVE-2022-36070
-related:
-- GHSA-j4j9-7hg9-97g6
 - GHSA-j4j9-7hg9-97g6
 details: Poetry is a dependency manager for Python. To handle dependencies that come
   from a Git repository, Poetry executes various commands, e.g. `git config`. These
@@ -179,3 +177,5 @@ references:
   url: https://github.com/python-poetry/poetry/releases/tag/1.1.9
 - type: WEB
   url: https://github.com/python-poetry/poetry/releases/tag/1.2.0b1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j4j9-7hg9-97g6

@@ -3,6 +3,7 @@ modified: 2024-11-21T14:23:01.805729Z
 published: 2023-05-18T17:15:00Z
 aliases:
 - CVE-2023-2800
+- GHSA-282v-666c-3fvg
 details: Insecure Temporary File in GitHub repository huggingface/transformers prior
   to 4.30.0.
 affected:
@@ -136,10 +137,13 @@ severity:
   score: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
 references:
 - type: FIX
-  url: https://github.com/huggingface/transformers/commit/80ca92470938bbcc348e2d9cf4734c7c25cb1c43
+  url: 
+    https://github.com/huggingface/transformers/commit/80ca92470938bbcc348e2d9cf4734c7c25cb1c43
 - type: EVIDENCE
   url: https://huntr.dev/bounties/a3867b4e-6701-4418-8c20-3c6e7084a44a
 - type: FIX
   url: https://huntr.dev/bounties/a3867b4e-6701-4418-8c20-3c6e7084a44a
 - type: WEB
   url: https://huntr.dev/bounties/a3867b4e-6701-4418-8c20-3c6e7084a44a
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-282v-666c-3fvg

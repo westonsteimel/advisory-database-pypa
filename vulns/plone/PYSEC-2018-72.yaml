@@ -128,7 +128,10 @@ affected:
 references:
 - type: WEB
   url: https://plone.org/security/hotfix/20171128/sandbox-escape
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qc57-h2f7-p4hx
 aliases:
 - CVE-2017-1000483
+- GHSA-qc57-h2f7-p4hx
 modified: "2021-08-25T04:30:16.983029Z"
 published: "2018-01-03T18:29:00Z"

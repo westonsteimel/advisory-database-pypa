@@ -3,8 +3,9 @@ modified: 2023-09-25T14:28:09.019811Z
 published: 2023-09-25T12:15:00Z
 aliases:
 - CVE-2023-41419
-details: An issue in Gevent before version 23.9.0 allows a remote attacker
-  to escalate privileges via a crafted script to the WSGIServer component.
+- GHSA-x7m3-jprg-wc5g
+details: An issue in Gevent before version 23.9.0 allows a remote attacker to escalate
+  privileges via a crafted script to the WSGIServer component.
 affected:
 - package:
     ecosystem: PyPI
@@ -106,3 +107,5 @@ references:
   url: https://github.com/gevent/gevent/issues/1989
 - type: FIX
   url: https://github.com/gevent/gevent/commit/2f53c851eaf926767fbac62385615efd4886221c
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x7m3-jprg-wc5g

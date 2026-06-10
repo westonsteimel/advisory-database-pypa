@@ -42,7 +42,10 @@ references:
   url: http://www.debian.org/security/2010/dsa-2014
 - type: ADVISORY
   url: http://secunia.com/advisories/38903
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-977v-29j9-9rxc
 aliases:
 - CVE-2010-0669
+- GHSA-977v-29j9-9rxc
 modified: "2021-07-05T00:01:22.841909Z"
 published: "2010-02-26T19:30:00Z"

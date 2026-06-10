@@ -34,10 +34,14 @@ references:
 - type: ADVISORY
   url: http://secunia.com/advisories/40270
 - type: ADVISORY
-  url: http://plone.org/products/plone/security/advisories/cve-2010-unassigned-html-injection-in-safe_html
+  url: 
+    http://plone.org/products/plone/security/advisories/cve-2010-unassigned-html-injection-in-safe_html
 - type: WEB
   url: http://www.securityfocus.com/bid/40999
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qj7x-wm9q-qjx8
 aliases:
 - CVE-2010-2422
+- GHSA-qj7x-wm9q-qjx8
 modified: "2021-07-16T01:31:27.252837Z"
 published: "2010-06-24T12:17:00Z"

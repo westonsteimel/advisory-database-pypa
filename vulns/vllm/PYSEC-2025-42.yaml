@@ -3,8 +3,8 @@ modified: 2025-05-28T21:23:12.396609Z
 published: 2025-04-30T01:15:51Z
 aliases:
 - CVE-2025-32444
-related:
 - GHSA-hj4w-hm2g-p6w5
+related:
 - GHSA-x3m8-f7g5-qhm7
 details: vLLM is a high-throughput and memory-efficient inference and serving engine
   for LLMs. Versions starting from 0.6.5 and prior to 0.8.5, having vLLM integration
@@ -53,6 +53,10 @@ references:
 - type: EVIDENCE
   url: https://github.com/vllm-project/vllm/security/advisories/GHSA-hj4w-hm2g-p6w5
 - type: FIX
-  url: https://github.com/vllm-project/vllm/commit/a5450f11c95847cf51a17207af9a3ca5ab569b2c
+  url: 
+    https://github.com/vllm-project/vllm/commit/a5450f11c95847cf51a17207af9a3ca5ab569b2c
 - type: WEB
-  url: https://github.com/vllm-project/vllm/blob/32b14baf8a1f7195ca09484de3008063569b43c5/vllm/distributed/kv_transfer/kv_pipe/mooncake_pipe.py#L179
+  url: 
+    https://github.com/vllm-project/vllm/blob/32b14baf8a1f7195ca09484de3008063569b43c5/vllm/distributed/kv_transfer/kv_pipe/mooncake_pipe.py#L179
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hj4w-hm2g-p6w5

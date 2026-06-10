@@ -3,6 +3,7 @@ modified: 2025-04-08T10:23:25.044416Z
 published: 2024-04-16T00:15:12Z
 aliases:
 - CVE-2024-3573
+- GHSA-hq88-wg7q-gp4g
 details: mlflow/mlflow is vulnerable to Local File Inclusion (LFI) due to improper
   parsing of URIs, allowing attackers to bypass checks and read arbitrary files on
   the system. The issue arises from the 'is_local_uri' function's failure to properly
@@ -125,3 +126,5 @@ references:
   url: https://huntr.com/bounties/8ea058a7-4ef8-4baf-9198-bc0147fc543c
 - type: WEB
   url: https://huntr.com/bounties/8ea058a7-4ef8-4baf-9198-bc0147fc543c
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hq88-wg7q-gp4g

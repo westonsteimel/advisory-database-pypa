@@ -116,14 +116,18 @@ references:
 - type: ADVISORY
   url: https://security.gentoo.org/glsa/201510-06
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-November/172084.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-November/172084.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2015-10/msg00046.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2015-10/msg00043.html
 - type: WEB
   url: http://www.securitytracker.com/id/1032820
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-q5qw-4364-5hhm
 aliases:
 - CVE-2015-5144
+- GHSA-q5qw-4364-5hhm
 modified: "2021-07-05T00:01:20.182098Z"
 published: "2015-07-14T17:59:00Z"

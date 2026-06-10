@@ -5,6 +5,7 @@ details: A vulnerability in UI of Apache Airflow allows an attacker to view unma
   issue affects Apache Airflow prior to 2.3.1.
 aliases:
 - CVE-2022-27949
+- GHSA-fvw2-2pf7-77vw
 modified: '2023-05-04T04:29:22.592547Z'
 published: '2022-11-14T10:15:00Z'
 references:
@@ -20,6 +21,8 @@ references:
   url: http://www.openwall.com/lists/oss-security/2022/11/14/3
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2022/11/14/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fvw2-2pf7-77vw
 affected:
 - package:
     name: apache-airflow

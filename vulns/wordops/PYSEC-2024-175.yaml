@@ -3,6 +3,7 @@ modified: 2025-01-18T22:21:44.991242Z
 published: 2024-05-06T00:15:10Z
 aliases:
 - CVE-2024-34528
+- GHSA-23qq-p4gq-gc2g
 details: WordOps through 3.20.0 has a wo/cli/plugins/stack_pref.py TOCTOU race condition
   because the conf_path os.open does not use a mode parameter during file creation.
 affected:
@@ -60,4 +61,7 @@ references:
 - type: REPORT
   url: https://github.com/WordOps/WordOps/issues/611
 - type: WEB
-  url: https://github.com/WordOps/WordOps/blob/ecf20192c7853925e2cb3f8c8378cd0d86ca0d62/wo/cli/plugins/stack_pref.py#L77
+  url: 
+    https://github.com/WordOps/WordOps/blob/ecf20192c7853925e2cb3f8c8378cd0d86ca0d62/wo/cli/plugins/stack_pref.py#L77
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-23qq-p4gq-gc2g

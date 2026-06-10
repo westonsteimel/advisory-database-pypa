@@ -156,12 +156,16 @@ affected:
   - 1.2.9
 references:
 - type: WEB
-  url: http://packetstormsecurity.com/files/149898/AjentiCP-1.2.23.13-Cross-Site-Scripting.html
+  url: 
+    http://packetstormsecurity.com/files/149898/AjentiCP-1.2.23.13-Cross-Site-Scripting.html
 - type: WEB
   url: https://www.exploit-db.com/exploits/45691/
 - type: WEB
   url: https://numanozdemir.com/ajenti-xss.txt
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5pcv-m8w2-62m9
 aliases:
 - CVE-2018-18548
+- GHSA-5pcv-m8w2-62m9
 modified: "2021-12-13T06:35:03.125488Z"
 published: "2018-10-24T21:29:00Z"

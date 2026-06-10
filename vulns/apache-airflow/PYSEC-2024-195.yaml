@@ -3,6 +3,7 @@ modified: 2025-01-19T16:22:56.419822Z
 published: 2024-06-14T09:15:09Z
 aliases:
 - CVE-2024-25142
+- GHSA-9xpj-62mm-24h2
 details: |+
   Use of Web Browser Cache Containing Sensitive Information vulnerability in Apache Airflow. 
 
@@ -231,3 +232,5 @@ references:
   url: https://github.com/apache/airflow/pull/39550
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2024/06/13/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9xpj-62mm-24h2

@@ -173,7 +173,10 @@ references:
   url: http://lists.opensuse.org/opensuse-security-announce/2019-06/msg00077.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00020.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v735-2pp6-h86r
 aliases:
 - CVE-2018-16859
+- GHSA-v735-2pp6-h86r
 modified: "2021-08-25T04:29:51.914778Z"
 published: "2018-11-29T18:29:00Z"

@@ -21,7 +21,10 @@ references:
   url: https://github.com/git-big-picture/git-big-picture/pull/27
 - type: WEB
   url: https://github.com/git-big-picture/git-big-picture/releases/tag/v1.0.0
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x38j-4rr5-hqrj
 aliases:
 - CVE-2021-3028
+- GHSA-x38j-4rr5-hqrj
 modified: "2021-01-19T14:43:00Z"
 published: "2021-01-13T17:15:00Z"

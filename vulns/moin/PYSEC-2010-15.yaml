@@ -31,7 +31,8 @@ references:
 - type: WEB
   url: http://marc.info/?l=oss-security&m=126676896601156&w=2
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2010-February/035438.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2010-February/035438.html
 - type: WEB
   url: http://www.osvdb.org/62043
 - type: REPORT
@@ -41,7 +42,8 @@ references:
 - type: ADVISORY
   url: http://www.vupen.com/english/advisories/2010/0266
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2010-February/035374.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2010-February/035374.html
 - type: WEB
   url: http://moinmo.in/SecurityFixes
 - type: WEB
@@ -60,7 +62,10 @@ references:
   url: http://secunia.com/advisories/38903
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/56002
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-574f-mh6m-c6qm
 aliases:
 - CVE-2010-0668
+- GHSA-574f-mh6m-c6qm
 modified: "2021-07-16T01:31:23.566810Z"
 published: "2010-02-26T19:30:00Z"

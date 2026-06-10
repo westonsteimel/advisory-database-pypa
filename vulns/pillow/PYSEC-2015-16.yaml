@@ -52,14 +52,18 @@ references:
 - type: WEB
   url: http://pillow.readthedocs.org/releasenotes/2.7.0.html
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148442.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148442.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2015-04/msg00056.html
 - type: WEB
   url: http://www.oracle.com/technetwork/topics/security/bulletinjul2015-2511963.html
 - type: WEB
   url: http://www.securityfocus.com/bid/77758
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h5rf-vgqx-wjv2
 aliases:
 - CVE-2014-9601
+- GHSA-h5rf-vgqx-wjv2
 modified: "2021-07-05T00:01:23.853626Z"
 published: "2015-01-16T16:59:00Z"

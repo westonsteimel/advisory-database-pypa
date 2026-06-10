@@ -39,7 +39,10 @@ references:
   url: http://advisories.mageia.org/MGASA-2014-0320.html
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/94497
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-75cw-5cgv-g853
 aliases:
 - CVE-2014-3429
+- GHSA-75cw-5cgv-g853
 modified: "2021-11-10T21:26:51.333186Z"
 published: "2014-08-07T11:13:00Z"

@@ -3,6 +3,7 @@ modified: 2024-03-01T14:20:34.498842Z
 published: 2024-03-01T11:15:00Z
 aliases:
 - CVE-2024-26280
+- GHSA-6xwf-xvf3-v459
 details: |-
   Apache Airflow, versions before 2.8.2, has a vulnerability that allows authenticated Ops and Viewers users to view all information on audit logs, including dag names and usernames they were not permitted to view. With 2.8.2 and newer, Ops and Viewer users do not have audit log permission by default, they need to be explicitly granted permissions to see the logs. Only admin users have audit log permission by default.
 
@@ -202,3 +203,5 @@ references:
   url: https://github.com/apache/airflow/pull/37501
 - type: WEB
   url: https://lists.apache.org/thread/knskxxxml95091rsnpxkpo1jjp8rj0fh
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6xwf-xvf3-v459

@@ -33,10 +33,15 @@ affected:
   - 1.6.0
 references:
 - type: FIX
-  url: https://github.com/tensorflow/tensorflow/commit/49f73c55d56edffebde4bca4a407ad69c1cae433
+  url: 
+    https://github.com/tensorflow/tensorflow/commit/49f73c55d56edffebde4bca4a407ad69c1cae433
 - type: ADVISORY
-  url: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-001.md
+  url: 
+    https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-001.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h98h-8mxr-m8gx
 aliases:
 - CVE-2018-21233
+- GHSA-h98h-8mxr-m8gx
 modified: "2021-12-09T06:35:11.657729Z"
 published: "2020-05-04T15:15:00Z"

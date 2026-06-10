@@ -33,6 +33,7 @@ affected:
   - 7.9.0
 aliases:
 - CVE-2026-1709
+- GHSA-4jqp-9qjv-57m2
 details: A flaw was found in Keylime. The Keylime registrar, since version 7.12.0,
   does not enforce client-side Transport Layer Security (TLS) authentication. This
   authentication bypass vulnerability allows unauthenticated clients with network
@@ -53,6 +54,8 @@ references:
   url: https://access.redhat.com/security/cve/CVE-2026-1709
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=2435514
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4jqp-9qjv-57m2
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
   type: CVSS_V3

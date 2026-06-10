@@ -3,6 +3,7 @@ modified: 2024-02-14T00:26:12.242703Z
 published: 2023-12-15T01:15:00Z
 aliases:
 - CVE-2023-6831
+- GHSA-554w-xh4j-8w64
 details: 'Path Traversal: ''\..\filename'' in GitHub repository mlflow/mlflow prior
   to 2.9.2.'
 affected:
@@ -116,3 +117,5 @@ references:
   url: https://huntr.com/bounties/0acdd745-0167-4912-9d5c-02035fe5b314
 - type: FIX
   url: https://github.com/mlflow/mlflow/commit/1da75dfcecd4d169e34809ade55748384e8af6c1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-554w-xh4j-8w64

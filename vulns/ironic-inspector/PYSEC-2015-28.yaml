@@ -33,7 +33,10 @@ references:
   url: https://access.redhat.com/errata/RHSA-2015:1929
 - type: ADVISORY
   url: http://rhn.redhat.com/errata/RHSA-2015-2685.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x64g-wjmw-w328
 aliases:
 - CVE-2015-5306
+- GHSA-x64g-wjmw-w328
 modified: "2021-07-25T23:34:38.274751Z"
 published: "2015-11-25T20:59:00Z"

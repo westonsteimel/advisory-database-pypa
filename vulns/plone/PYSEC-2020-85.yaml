@@ -129,12 +129,16 @@ references:
 - type: WEB
   url: https://plone.org/security/hotfix/20200121
 - type: WEB
-  url: https://plone.org/security/hotfix/20200121/an-open-redirection-on-the-login-form-and-possibly-other-places
+  url: 
+    https://plone.org/security/hotfix/20200121/an-open-redirection-on-the-login-form-and-possibly-other-places
 - type: WEB
   url: https://www.openwall.com/lists/oss-security/2020/01/22/1
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2020/01/24/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-82j9-wfcf-9v2h
 aliases:
 - CVE-2020-7936
+- GHSA-82j9-wfcf-9v2h
 modified: "2020-01-24T21:32:00Z"
 published: "2020-01-23T21:15:00Z"

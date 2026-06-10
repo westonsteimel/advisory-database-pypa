@@ -87,6 +87,7 @@ affected:
   - 2.8.0
 aliases:
 - CVE-2026-32981
+- GHSA-j3mh-qmjj-xp83
 details: A path traversal vulnerability was identified in Ray Dashboard (default port
   8265) in Ray versions prior to 2.8.1. Due to improper validation and sanitization
   of user-supplied paths in the static file handling mechanism, an attacker can use
@@ -97,11 +98,14 @@ modified: '2026-05-20T09:19:16.836389Z'
 published: '2026-03-17T20:16:14.373Z'
 references:
 - type: ADVISORY
-  url: https://www.vulncheck.com/advisories/ray-dashboard-path-traversal-leading-to-local-file-disclosure
+  url: 
+    https://www.vulncheck.com/advisories/ray-dashboard-path-traversal-leading-to-local-file-disclosure
 - type: PACKAGE
   url: https://github.com/ray-project/ray
 - type: EVIDENCE
   url: https://packetstorm.news/files/id/215801/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j3mh-qmjj-xp83
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
   type: CVSS_V3

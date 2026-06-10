@@ -1,8 +1,9 @@
 id: PYSEC-2024-13
-modified: 2024-01-24T16:22:57.35253Z
+modified: 2024-01-24T16:22:57.352530Z
 published: 2024-01-24T13:15:00Z
 aliases:
 - CVE-2023-50943
+- GHSA-c3c6-f2ww-xfr2
 details: |
   Apache Airflow, versions before 2.8.1, have a vulnerability that allows a potential attacker to poison the XCom data by bypassing the protection of "enable_xcom_pickling=False" configuration setting resulting in poisoned data after XCom deserialization. This vulnerability is considered low since it requires a DAG author to exploit it. Users are recommended to upgrade to version 2.8.1 or later, which fixes this issue.
 affected:
@@ -196,3 +197,5 @@ references:
   url: https://github.com/apache/airflow/pull/36255
 - type: WEB
   url: https://lists.apache.org/thread/fx278v0twqzxkcts70tc04cp3f8p56pn
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c3c6-f2ww-xfr2

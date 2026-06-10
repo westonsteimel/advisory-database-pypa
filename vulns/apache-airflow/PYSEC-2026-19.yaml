@@ -64,6 +64,7 @@ affected:
   - 3.2.0rc2
 aliases:
 - CVE-2026-32690
+- GHSA-w9r4-94fj-xp69
 details: |-
   Secrets in Variables saved as JSON dictionaries were not properly redacted - in case thee variables were retrieved by the user the secrets stored as nested fields were not masked.
 
@@ -78,6 +79,8 @@ references:
   url: https://lists.apache.org/thread/7rnzxofntcznqxnhsmjvvlvygwph7rn5
 - type: REPORT
   url: https://github.com/apache/airflow/pull/63480
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-w9r4-94fj-xp69
 severity:
 - score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
   type: CVSS_V3

@@ -33,12 +33,16 @@ references:
 - type: REPORT
   url: https://github.com/devsnd/cherrymusic/issues/598
 - type: FIX
-  url: https://github.com/devsnd/cherrymusic/commit/62dec34a1ea0741400dd6b6c660d303dcd651e86
+  url: 
+    https://github.com/devsnd/cherrymusic/commit/62dec34a1ea0741400dd6b6c660d303dcd651e86
 - type: WEB
   url: http://www.fomori.org/cherrymusic/Changes.html
 - type: WEB
   url: http://www.securityfocus.com/bid/97149
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-q624-9634-77gh
 aliases:
 - CVE-2015-8309
+- GHSA-q624-9634-77gh
 modified: "2021-11-16T21:20:28.227902Z"
 published: "2017-03-27T15:59:00Z"

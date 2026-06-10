@@ -24,7 +24,8 @@ references:
 - type: WEB
   url: http://www.securityfocus.com/bid/36655
 - type: WEB
-  url: http://groups.google.com/group/django-users/browse_thread/thread/15df9e45118dfc51/
+  url: 
+    http://groups.google.com/group/django-users/browse_thread/thread/15df9e45118dfc51/
 - type: ADVISORY
   url: http://secunia.com/advisories/36948
 - type: ADVISORY
@@ -41,7 +42,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2009/10/13/6
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/53727
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-p6m5-h7pp-v2x5
 aliases:
 - CVE-2009-3695
+- GHSA-p6m5-h7pp-v2x5
 modified: "2021-07-15T02:22:07.960103Z"
 published: "2009-10-13T10:30:00Z"

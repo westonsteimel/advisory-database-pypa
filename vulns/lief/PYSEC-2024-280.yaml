@@ -34,6 +34,7 @@ affected:
   - 0.9.0
 aliases:
 - CVE-2024-31636
+- GHSA-377p-g8gr-5wpg
 details: An issue in LIEF v.0.14.1 allows a local attacker to obtain sensitive information
   via the name parameter of the machd_reader.c component.
 id: PYSEC-2024-280
@@ -46,6 +47,8 @@ references:
   url: https://github.com/lief-project/LIEF/issues/1038
 - type: PACKAGE
   url: https://github.com/lief-project/LIEF
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-377p-g8gr-5wpg
 severity:
 - score: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N
   type: CVSS_V3

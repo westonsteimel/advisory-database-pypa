@@ -75,6 +75,7 @@ affected:
   - 3.9b1
 aliases:
 - CVE-2026-0846
+- GHSA-h8wq-7xc4-p3qx
 details: A vulnerability in the `filestring()` function of the `nltk.util` module
   in nltk version 3.9.2 allows arbitrary file read due to improper validation of input
   paths. The function directly opens files specified by user input without sanitization,
@@ -88,6 +89,8 @@ published: '2026-03-09T20:16:05.703Z'
 references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/007b84f8-418e-4300-99d0-bf504c2f97eb
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h8wq-7xc4-p3qx
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
   type: CVSS_V3

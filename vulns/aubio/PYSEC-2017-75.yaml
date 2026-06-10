@@ -22,7 +22,10 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/aubio/aubio/issues/148
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vcwx-8mqh-2557
 aliases:
 - CVE-2017-17054
+- GHSA-vcwx-8mqh-2557
 modified: "2021-08-25T04:29:55.630157Z"
 published: "2017-11-29T07:29:00Z"

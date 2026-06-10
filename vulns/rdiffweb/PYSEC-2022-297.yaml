@@ -22,8 +22,12 @@ references:
 - type: WEB
   url: https://huntr.dev/bounties/1f6a5e49-23f2-45f7-8661-19f9cee8ae97
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/ee98e5af78ec60db8a17fef6ea0ca250e3f31eec
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/ee98e5af78ec60db8a17fef6ea0ca250e3f31eec
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8wxf-c45w-g66g
 aliases:
 - CVE-2022-3326
+- GHSA-8wxf-c45w-g66g
 modified: "2022-10-03T14:07:00Z"
 published: "2022-09-29T00:15:00Z"

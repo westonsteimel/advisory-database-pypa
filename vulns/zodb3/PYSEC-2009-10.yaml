@@ -55,7 +55,10 @@ references:
   url: http://pypi.python.org/pypi/ZODB3/3.8.3
 - type: ADVISORY
   url: http://www.vupen.com/english/advisories/2009/2534
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m52m-2qpx-9j4j
 aliases:
 - CVE-2009-2701
+- GHSA-m52m-2qpx-9j4j
 modified: "2024-01-17T10:48:40.464440Z"
 published: "2009-09-08T18:30:00Z"

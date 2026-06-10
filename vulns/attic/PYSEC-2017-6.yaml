@@ -39,7 +39,10 @@ references:
   url: http://www.securityfocus.com/bid/74821
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2015/05/31/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5x6q-ffwj-8vcf
 aliases:
 - CVE-2015-4082
+- GHSA-5x6q-ffwj-8vcf
 modified: "2021-07-05T00:01:17.176184Z"
 published: "2017-08-18T16:29:00Z"

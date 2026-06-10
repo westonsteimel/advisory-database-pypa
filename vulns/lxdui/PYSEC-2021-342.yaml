@@ -15,7 +15,10 @@ affected:
 references:
 - type: WEB
   url: https://github.com/AdaptiveScale/lxdui/pull/353
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-p4xh-4869-8vrg
 aliases:
 - CVE-2021-40494
+- GHSA-p4xh-4869-8vrg
 modified: "2021-09-26T23:32:34.569818Z"
 published: "2021-09-03T02:15:00Z"

@@ -118,7 +118,10 @@ references:
   url: https://docs.saltstack.com/en/latest/topics/releases/2015.8.3.html
 - type: WEB
   url: http://www.securityfocus.com/bid/96390
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6prw-8xhm-h247
 aliases:
 - CVE-2015-8034
+- GHSA-6prw-8xhm-h247
 modified: "2021-07-05T00:01:26.287704Z"
 published: "2017-01-30T22:59:00Z"

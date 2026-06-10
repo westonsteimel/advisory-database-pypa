@@ -91,7 +91,10 @@ references:
   url: https://plone.org/products/plone/security/advisories/20121106/01
 - type: ADVISORY
   url: http://rhn.redhat.com/errata/RHSA-2014-1194.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-7hxc-mwx7-5hmc
 aliases:
 - CVE-2012-5485
+- GHSA-7hxc-mwx7-5hmc
 modified: "2021-09-01T08:44:28.919312Z"
 published: "2014-09-30T14:55:00Z"

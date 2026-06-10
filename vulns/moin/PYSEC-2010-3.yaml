@@ -31,7 +31,10 @@ references:
   url: http://secunia.com/advisories/38903
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/56595
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5jjr-gmq3-f986
 aliases:
 - CVE-2010-0717
+- GHSA-5jjr-gmq3-f986
 modified: "2021-07-05T00:01:22.874295Z"
 published: "2010-02-26T19:30:00Z"

@@ -87,7 +87,10 @@ references:
   url: http://plone.org/products/plone-hotfix/releases/20130618
 - type: WEB
   url: http://www.securityfocus.com/archive/1/530787/100/0/threaded
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-56p3-rrp4-2j82
 aliases:
 - CVE-2013-4200
+- GHSA-56p3-rrp4-2j82
 modified: "2021-07-25T23:34:47.517338Z"
 published: "2014-01-21T16:06:00Z"

@@ -31,7 +31,10 @@ references:
   url: http://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf
 - type: WEB
   url: https://svn.apache.org/repos/asf/libcloud/trunk/CHANGES
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-prcq-52f8-fp44
 aliases:
 - CVE-2012-3446
+- GHSA-prcq-52f8-fp44
 modified: "2021-08-27T03:21:55.557676Z"
 published: "2012-11-04T22:55:00Z"

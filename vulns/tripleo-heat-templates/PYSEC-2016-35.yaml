@@ -44,7 +44,10 @@ references:
   url: https://access.redhat.com/errata/RHSA-2015:2650
 - type: WEB
   url: https://bugs.launchpad.net/tripleo/+bug/1516027
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m94p-8942-pm49
 aliases:
 - CVE-2015-5303
+- GHSA-m94p-8942-pm49
 modified: "2021-08-27T03:22:48.456695Z"
 published: "2016-04-11T21:59:00Z"

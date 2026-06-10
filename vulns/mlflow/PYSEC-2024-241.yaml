@@ -3,6 +3,7 @@ modified: 2025-04-08T10:23:24.946136Z
 published: 2024-02-23T22:15:55Z
 aliases:
 - CVE-2024-27133
+- GHSA-3v79-q7ph-j75h
 details: Insufficient sanitization in MLflow leads to XSS when running a recipe that
   uses an untrusted dataset. This issue leads to a client-side RCE when running the
   recipe in Jupyter Notebook. The vulnerability stems from lack of sanitization over
@@ -109,10 +110,14 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
 references:
 - type: EVIDENCE
-  url: https://research.jfrog.com/vulnerabilities/mlflow-untrusted-dataset-xss-jfsa-2024-000631932/
+  url: 
+    https://research.jfrog.com/vulnerabilities/mlflow-untrusted-dataset-xss-jfsa-2024-000631932/
 - type: FIX
   url: https://github.com/mlflow/mlflow/pull/10893
 - type: REPORT
   url: https://github.com/mlflow/mlflow/pull/10893
 - type: WEB
-  url: https://research.jfrog.com/vulnerabilities/mlflow-untrusted-dataset-xss-jfsa-2024-000631932/
+  url: 
+    https://research.jfrog.com/vulnerabilities/mlflow-untrusted-dataset-xss-jfsa-2024-000631932/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3v79-q7ph-j75h

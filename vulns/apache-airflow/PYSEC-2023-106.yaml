@@ -3,6 +3,7 @@ modified: 2023-07-12T12:59:56.816194Z
 published: 2023-07-12T10:15:00Z
 aliases:
 - CVE-2023-36543
+- GHSA-3h4m-m55v-gx4m
 details: Apache Airflow, versions before 2.6.3, has a vulnerability where an authenticated
   user can use crafted input to make the current request hang. It is recommended to
   upgrade to a version that is not affected
@@ -178,3 +179,5 @@ references:
   url: https://github.com/apache/airflow/pull/32060
 - type: WEB
   url: https://lists.apache.org/thread/tokfs980504ylgk3cv3hjlnrtbv4tng4
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3h4m-m55v-gx4m

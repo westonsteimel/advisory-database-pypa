@@ -144,7 +144,10 @@ references:
   url: http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00021.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00026.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h653-95qw-h2mp
 aliases:
 - CVE-2019-14858
+- GHSA-h653-95qw-h2mp
 modified: "2021-08-27T03:21:53.021460Z"
 published: "2019-10-14T15:15:00Z"

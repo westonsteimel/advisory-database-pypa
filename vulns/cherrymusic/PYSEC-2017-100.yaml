@@ -32,12 +32,16 @@ references:
 - type: REPORT
   url: https://github.com/devsnd/cherrymusic/issues/598
 - type: FIX
-  url: https://github.com/devsnd/cherrymusic/commit/62dec34a1ea0741400dd6b6c660d303dcd651e86
+  url: 
+    https://github.com/devsnd/cherrymusic/commit/62dec34a1ea0741400dd6b6c660d303dcd651e86
 - type: WEB
   url: http://www.fomori.org/cherrymusic/Changes.html
 - type: WEB
   url: http://www.securityfocus.com/bid/97148
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4wcc-jv3p-prqw
 aliases:
 - CVE-2015-8310
+- GHSA-4wcc-jv3p-prqw
 modified: "2021-11-16T21:20:28.264266Z"
 published: "2017-03-27T15:59:00Z"

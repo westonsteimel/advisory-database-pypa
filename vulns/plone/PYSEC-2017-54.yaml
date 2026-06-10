@@ -28,7 +28,10 @@ references:
   url: https://bugzilla.redhat.com/show_bug.cgi?id=1264796
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2015/09/22/16
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fq9r-8jpm-2222
 aliases:
 - CVE-2015-7318
+- GHSA-fq9r-8jpm-2222
 modified: "2021-07-25T23:34:48.507474Z"
 published: "2017-09-25T17:29:00Z"

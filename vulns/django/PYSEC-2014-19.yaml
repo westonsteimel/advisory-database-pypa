@@ -61,7 +61,10 @@ references:
   url: http://lists.opensuse.org/opensuse-updates/2014-09/msg00023.html
 - type: ADVISORY
   url: http://secunia.com/advisories/61281
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-q7q2-qf2q-rw3w
 aliases:
 - CVE-2014-1418
+- GHSA-q7q2-qf2q-rw3w
 modified: "2021-09-01T08:18:55.376993Z"
 published: "2014-05-16T15:55:00Z"

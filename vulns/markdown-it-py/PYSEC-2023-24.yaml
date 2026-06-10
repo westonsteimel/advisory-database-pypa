@@ -59,8 +59,12 @@ affected:
   - 2.1.0
 references:
 - type: FIX
-  url: https://github.com/executablebooks/markdown-it-py/commit/ae03c6107dfa18e648f6fdd1280f5b89092d5d49
+  url: 
+    https://github.com/executablebooks/markdown-it-py/commit/ae03c6107dfa18e648f6fdd1280f5b89092d5d49
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vrjv-mxr7-vjf8
 aliases:
 - CVE-2023-26303
+- GHSA-vrjv-mxr7-vjf8
 modified: "2023-05-04T03:49:46.302314Z"
 published: "2023-02-23T00:15:00Z"

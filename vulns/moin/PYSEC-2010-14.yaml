@@ -35,7 +35,10 @@ references:
   url: http://marc.info/?l=oss-security&m=126676896601156&w=2
 - type: WEB
   url: http://hg.moinmo.in/moin/1.9/raw-file/1.9.1/docs/CHANGES
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-876c-qmcf-cxv6
 aliases:
 - CVE-2010-0667
+- GHSA-876c-qmcf-cxv6
 modified: "2021-07-16T01:31:23.463823Z"
 published: "2010-02-26T19:30:00Z"

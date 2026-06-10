@@ -3,6 +3,7 @@ modified: 2023-11-12T16:29:15.404665Z
 published: 2023-11-12T14:15:00Z
 aliases:
 - CVE-2023-47037
+- GHSA-hm9r-7f84-25c9
 details: |+
   We failed to apply CVE-2023-40611 in 2.7.1 and this vulnerability was marked as fixed then. 
 
@@ -193,3 +194,5 @@ references:
   url: https://github.com/apache/airflow/pull/33413
 - type: WEB
   url: https://lists.apache.org/thread/04y4vrw1t2xl030gswtctc4nt1w90cb0
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hm9r-7f84-25c9

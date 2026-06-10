@@ -68,7 +68,10 @@ references:
   url: https://www.exploit-db.com/exploits/44223/
 - type: ADVISORY
   url: https://www.debian.org/security/2018/dsa-4142
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h2vm-c85r-5vh5
 aliases:
 - CVE-2018-7490
+- GHSA-h2vm-c85r-5vh5
 modified: "2021-08-25T04:30:36.296302Z"
 published: "2018-02-26T22:29:00Z"

@@ -3,8 +3,6 @@ modified: 2025-01-16T21:21:41.436934Z
 published: 2024-02-26T20:19:05Z
 aliases:
 - CVE-2024-26149
-related:
-- GHSA-9p8r-4xp4-gw5w
 - GHSA-9p8r-4xp4-gw5w
 details: Vyper is a pythonic Smart Contract Language for the ethereum virtual machine.
   If an excessively large value is specified as the starting index for an array in
@@ -82,3 +80,5 @@ references:
   url: https://github.com/vyperlang/vyper/security/advisories/GHSA-9p8r-4xp4-gw5w
 - type: FIX
   url: https://github.com/vyperlang/vyper/security/advisories/GHSA-9p8r-4xp4-gw5w
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9p8r-4xp4-gw5w

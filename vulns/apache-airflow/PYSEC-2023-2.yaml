@@ -155,7 +155,10 @@ references:
   url: https://github.com/apache/airflow/pull/29501
 - type: WEB
   url: https://lists.apache.org/thread/z8w6ckzs61ql365tv4d19k82o67r15p2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h6g5-wqqr-3mw3
 aliases:
 - CVE-2023-25695
+- GHSA-h6g5-wqqr-3mw3
 modified: "2023-05-04T03:49:44.630805Z"
 published: "2023-03-15T10:15:00Z"

@@ -3,6 +3,7 @@ modified: 2025-02-10T23:22:41.449105Z
 published: 2024-11-22T22:15:07Z
 aliases:
 - CVE-2024-11393
+- GHSA-wrfc-pvp9-mr9g
 details: |-
   Hugging Face Transformers MaskFormer Model Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Hugging Face Transformers. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
 
@@ -190,3 +191,5 @@ severity:
 references:
 - type: ADVISORY
   url: https://www.zerodayinitiative.com/advisories/ZDI-24-1514/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wrfc-pvp9-mr9g

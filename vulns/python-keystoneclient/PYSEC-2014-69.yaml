@@ -34,7 +34,10 @@ references:
   url: http://rhn.redhat.com/errata/RHSA-2013-0944.html
 - type: ADVISORY
   url: http://www.ubuntu.com/usn/USN-1851-1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4rrr-j7ff-r844
 aliases:
 - CVE-2013-2104
+- GHSA-4rrr-j7ff-r844
 modified: "2021-07-25T23:34:51.958825Z"
 published: "2014-01-21T18:55:00Z"

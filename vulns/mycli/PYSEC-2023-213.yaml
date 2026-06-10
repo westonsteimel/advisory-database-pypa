@@ -3,6 +3,7 @@ modified: 2023-10-25T22:26:24.480718Z
 published: 2023-10-19T22:15:00Z
 aliases:
 - CVE-2023-44690
+- GHSA-v9vj-9pxv-mr2w
 details: Inadequate encryption strength in mycli 1.27.0 allows attackers to view sensitive
   information via /mycli/config.py
 affected:
@@ -72,3 +73,5 @@ references:
   url: https://github.com/dbcli/mycli/issues/1131
 - type: REPORT
   url: https://github.com/dbcli/mycli/issues/1131
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v9vj-9pxv-mr2w

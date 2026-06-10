@@ -3,6 +3,7 @@ modified: 2023-10-18T20:24:08.541134Z
 published: 2023-10-14T10:15:00Z
 aliases:
 - CVE-2023-42792
+- GHSA-j3w8-2p2h-mrr9
 details: |
   Apache Airflow, in versions prior to 2.7.2, contains a security vulnerability that allows an authenticated user with limited access to some DAGs, to craft a request that could give the user write access to various DAG resources for DAGs that the user had no access to, thus, enabling the user to clear DAGs they shouldn't.
 
@@ -193,3 +194,5 @@ references:
   url: https://lists.apache.org/thread/1spbo9nkn49fc2hnxqm9tf6mgqwp9tjq
 - type: ADVISORY
   url: https://lists.apache.org/thread/1spbo9nkn49fc2hnxqm9tf6mgqwp9tjq
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j3w8-2p2h-mrr9

@@ -119,10 +119,14 @@ affected:
   - 5.1a1
 references:
 - type: WEB
-  url: https://plone.org/security/hotfix/20160419/unauthorized-disclosure-of-site-content
+  url: 
+    https://plone.org/security/hotfix/20160419/unauthorized-disclosure-of-site-content
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2016/04/20/2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v4vj-49m5-wjhw
 aliases:
 - CVE-2016-4042
+- GHSA-v4vj-49m5-wjhw
 modified: "2021-07-25T23:34:48.613344Z"
 published: "2017-02-24T20:59:00Z"

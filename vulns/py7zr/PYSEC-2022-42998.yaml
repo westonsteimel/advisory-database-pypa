@@ -4,21 +4,27 @@ details: A directory traversal vulnerability in the SevenZipFile.extractall() fu
   files via extracting a crafted 7z file.
 aliases:
 - CVE-2022-44900
+- GHSA-m8xw-9x5x-6vh3
 modified: '2023-05-04T04:29:28.497759Z'
 published: '2022-12-06T20:15:00Z'
 references:
 - type: FIX
   url: https://github.com/miurahr/py7zr/commit/1bb43f17515c7f69673a1c88ab9cc72a7bbef406
 - type: EVIDENCE
-  url: http://packetstormsecurity.com/files/170127/py7zr-0.20.0-Directory-Traversal.html
+  url: 
+    http://packetstormsecurity.com/files/170127/py7zr-0.20.0-Directory-Traversal.html
 - type: WEB
-  url: http://packetstormsecurity.com/files/170127/py7zr-0.20.0-Directory-Traversal.html
+  url: 
+    http://packetstormsecurity.com/files/170127/py7zr-0.20.0-Directory-Traversal.html
 - type: ADVISORY
-  url: http://packetstormsecurity.com/files/170127/py7zr-0.20.0-Directory-Traversal.html
+  url: 
+    http://packetstormsecurity.com/files/170127/py7zr-0.20.0-Directory-Traversal.html
 - type: EVIDENCE
   url: https://lessonsec.com/cve/cve-2022-44900/
 - type: WEB
   url: https://lessonsec.com/cve/cve-2022-44900/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m8xw-9x5x-6vh3
 affected:
 - package:
     name: py7zr

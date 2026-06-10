@@ -36,7 +36,10 @@ references:
   url: https://huntr.dev/bounties/359bea50-2bc6-426a-b2f9-175d401b1ed0
 - type: FIX
   url: https://github.com/delgan/loguru/commit/ea39375e62f9b8f18e2ca798a5c0fb8c972b7eaa
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-39ph-wr67-j4xq
 aliases:
 - CVE-2022-0338
+- GHSA-39ph-wr67-j4xq
 modified: "2022-01-28T21:25:28.417398Z"
 published: "2022-01-25T09:15:00Z"

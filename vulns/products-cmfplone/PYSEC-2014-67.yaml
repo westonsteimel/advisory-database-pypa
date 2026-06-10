@@ -59,7 +59,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2013/12/10/15
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2013/12/12/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rg52-j87w-pf83
 aliases:
 - CVE-2013-7060
+- GHSA-rg52-j87w-pf83
 modified: "2021-07-25T23:34:50.035277Z"
 published: "2014-05-02T14:55:00Z"

@@ -3,7 +3,13 @@ published: "2024-09-07T08:15:11.407Z"
 modified: "2025-06-03T21:12:43.280Z"
 aliases:
 - CVE-2024-45498
-details: "Example DAG: example_inlet_event_extra.py shipped with Apache Airflow version 2.10.0 has a vulnerability that allows an authenticated attacker with only DAG trigger permission to execute arbitrary commands. If you used that example as the base of your DAGs - please review if you have not copied the dangerous example; see  https://github.com/apache/airflow/pull/41873 \u00a0for more information. We recommend against exposing the example DAGs in your deployment. If you must expose the example DAGs, upgrade Airflow to version 2.10.1 or later."
+- GHSA-c392-whpc-vfpr
+details: "Example DAG: example_inlet_event_extra.py shipped with Apache Airflow version
+  2.10.0 has a vulnerability that allows an authenticated attacker with only DAG trigger
+  permission to execute arbitrary commands. If you used that example as the base of
+  your DAGs - please review if you have not copied the dangerous example; see  https://github.com/apache/airflow/pull/41873
+   for more information. We recommend against exposing the example DAGs in your deployment.
+  If you must expose the example DAGs, upgrade Airflow to version 2.10.1 or later."
 affected:
 - package:
     name: apache-airflow
@@ -22,6 +28,8 @@ references:
   url: https://github.com/apache/airflow/pull/41873
 - type: ARTICLE
   url: http://www.openwall.com/lists/oss-security/2024/09/06/2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c392-whpc-vfpr
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H

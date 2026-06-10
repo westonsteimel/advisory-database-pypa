@@ -3,6 +3,7 @@ modified: 2025-04-09T17:27:24.793038Z
 published: 2022-11-09T20:15:10Z
 aliases:
 - CVE-2022-42966
+- GHSA-2p9h-ccw7-33gf
 details: An exponential ReDoS (Regular Expression Denial of Service) can be triggered
   in the cleo PyPI package, when an attacker is able to supply arbitrary input to
   the Table.set_rows method
@@ -56,3 +57,5 @@ references:
   url: https://research.jfrog.com/vulnerabilities/cleo-redos-xray-257186/
 - type: WEB
   url: https://research.jfrog.com/vulnerabilities/cleo-redos-xray-257186/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2p9h-ccw7-33gf

@@ -169,7 +169,10 @@ references:
   url: https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.7.2_.282018-10-01.29
 - type: WEB
   url: https://www.mercurial-scm.org/repo/hg/rev/5405cb1a7901
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-p575-cf9h-wv42
 aliases:
 - CVE-2018-17983
+- GHSA-p575-cf9h-wv42
 modified: "2021-08-27T03:22:07.367975Z"
 published: "2018-10-04T23:29:00Z"

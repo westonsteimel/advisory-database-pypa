@@ -3,6 +3,7 @@ modified: 2024-02-28T16:22:37.359017Z
 published: 2023-12-14T14:15:00Z
 aliases:
 - CVE-2023-6572
+- GHSA-gqvf-3hgp-5hxv
 details: Command Injection in GitHub repository gradio-app/gradio prior to main.
 affected:
 - package:
@@ -542,4 +543,7 @@ references:
 - type: WEB
   url: https://huntr.com/bounties/21d2ff0c-d43a-4afd-bb4d-049ee8da5b5c
 - type: FIX
-  url: https://github.com/gradio-app/gradio/commit/5b5af1899dd98d63e1f9b48a93601c2db1f56520
+  url: 
+    https://github.com/gradio-app/gradio/commit/5b5af1899dd98d63e1f9b48a93601c2db1f56520
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gqvf-3hgp-5hxv

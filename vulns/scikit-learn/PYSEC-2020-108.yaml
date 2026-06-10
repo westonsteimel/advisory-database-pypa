@@ -70,12 +70,17 @@ references:
 - type: REPORT
   url: https://github.com/scikit-learn/scikit-learn/issues/18891
 - type: WEB
-  url: https://github.com/cjlin1/libsvm/blob/9a3a9708926dec87d382c43b203f2ca19c2d56a0/svm.cpp#L2501
+  url: 
+    https://github.com/cjlin1/libsvm/blob/9a3a9708926dec87d382c43b203f2ca19c2d56a0/svm.cpp#L2501
 - type: WEB
   url: http://seclists.org/fulldisclosure/2020/Nov/44
 - type: WEB
-  url: http://packetstormsecurity.com/files/160281/SciKit-Learn-0.23.2-Denial-Of-Service.html
+  url: 
+    http://packetstormsecurity.com/files/160281/SciKit-Learn-0.23.2-Denial-Of-Service.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jxfp-4rvq-9h9m
 aliases:
 - CVE-2020-28975
+- GHSA-jxfp-4rvq-9h9m
 modified: "2020-12-03T18:50:00Z"
 published: "2020-11-21T21:15:00Z"

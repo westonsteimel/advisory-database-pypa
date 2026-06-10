@@ -1,8 +1,9 @@
 id: PYSEC-2022-43160
-modified: 2024-11-21T14:23:00.51546Z
+modified: 2024-11-21T14:23:00.515460Z
 published: 2022-10-13T20:15:00Z
 aliases:
 - CVE-2022-3456
+- GHSA-92gf-p376-6r9r
 details: Allocation of Resources Without Limits or Throttling in GitHub repository
   ikus060/rdiffweb prior to 2.5.0.
 affected:
@@ -115,6 +116,9 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 references:
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/b78ec09f4582e363f6f449df6f987127e126c311
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/b78ec09f4582e363f6f449df6f987127e126c311
 - type: WEB
   url: https://huntr.dev/bounties/b34412ca-50c5-4615-b7e3-5d07d33acfce
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-92gf-p376-6r9r

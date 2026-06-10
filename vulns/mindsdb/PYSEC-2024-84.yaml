@@ -147,10 +147,10 @@ affected:
   - 26.1.0
 aliases:
 - CVE-2024-45854
-details: "Deserialization of untrusted data can occur in versions 23.10.3.0 and newer\
-  \ of the MindsDB platform, enabling a maliciously uploaded \u2018inhouse\u2019 model\
-  \ to run arbitrary code on the server when a \u2018describe\u2019 query is run on\
-  \ it."
+- GHSA-7vhh-gfjc-x8rm
+details: "Deserialization of untrusted data can occur in versions 23.10.3.0 and newer
+  of the MindsDB platform, enabling a maliciously uploaded ‘inhouse’ model to run
+  arbitrary code on the server when a ‘describe’ query is run on it."
 id: PYSEC-2024-84
 modified: '2026-04-23T07:43:20.526718Z'
 published: '2024-09-12T13:15:00Z'
@@ -159,6 +159,8 @@ references:
   url: https://hiddenlayer.com/sai-security-advisory/2024-09-mindsdb/
 - type: ADVISORY
   url: https://hiddenlayer.com/sai-security-advisory/2024-09-mindsdb/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-7vhh-gfjc-x8rm
 severity:
 - score: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H
   type: CVSS_V3

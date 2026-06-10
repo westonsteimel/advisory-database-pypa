@@ -31,7 +31,10 @@ references:
   url: http://lists.opensuse.org/opensuse-updates/2014-02/msg00015.html
 - type: WEB
   url: http://www.securityfocus.com/archive/1/530624/100/0/threaded
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g892-9h8m-r69r
 aliases:
 - CVE-2013-6480
+- GHSA-g892-9h8m-r69r
 modified: "2021-11-22T04:57:51.510127Z"
 published: "2014-01-07T18:55:00Z"

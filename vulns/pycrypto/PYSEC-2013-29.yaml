@@ -34,12 +34,16 @@ affected:
   - "2.6"
 references:
 - type: FIX
-  url: https://github.com/dlitz/pycrypto/commit/19dcf7b15d61b7dc1a125a367151de40df6ef175
+  url: 
+    https://github.com/dlitz/pycrypto/commit/19dcf7b15d61b7dc1a125a367151de40df6ef175
 - type: ADVISORY
   url: http://www.debian.org/security/2013/dsa-2781
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2013/10/17/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x377-f64p-hf5j
 aliases:
 - CVE-2013-1445
+- GHSA-x377-f64p-hf5j
 modified: "2021-08-27T03:22:16.634811Z"
 published: "2013-10-26T17:55:00Z"

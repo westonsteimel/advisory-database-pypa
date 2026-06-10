@@ -3,6 +3,7 @@ modified: 2024-09-13T21:22:04.531357Z
 published: 2024-06-07T19:15:00Z
 aliases:
 - CVE-2024-36827
+- GHSA-whf4-fpj8-pgg8
 details: An XML External Entity (XXE) vulnerability in the ebookmeta.get_metadata
   function of ebookmeta before v1.2.8 allows attackers to access sensitive information
   or cause a Denial of Service (DoS) via crafted XML input.
@@ -50,3 +51,5 @@ severity:
 references:
 - type: REPORT
   url: https://github.com/dnkorpushov/ebookmeta/issues/16#issue-2317712335
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-whf4-fpj8-pgg8

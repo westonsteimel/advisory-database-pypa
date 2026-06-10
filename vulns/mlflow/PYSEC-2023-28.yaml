@@ -93,7 +93,10 @@ references:
   url: https://huntr.dev/bounties/ae92f814-6a08-435c-8445-eec0ef4f1085
 - type: FIX
   url: https://github.com/mlflow/mlflow/commit/63ef72aa4334a6473ce7f889573c92fcae0b3c0d
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wp72-7hj9-5265
 aliases:
 - CVE-2023-1176
+- GHSA-wp72-7hj9-5265
 modified: "2023-05-04T03:49:46.565156Z"
 published: "2023-03-24T15:15:00Z"

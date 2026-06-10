@@ -3,6 +3,7 @@ modified: 2024-01-21T20:21:00.544327Z
 published: 2024-01-21T17:15:00Z
 aliases:
 - CVE-2024-23732
+- GHSA-r67w-f99w-mgxj
 details: The JSON loader in Embedchain before 0.1.57 allows a ReDoS (regular expression
   denial of service) via a long string to json.py.
 affected:
@@ -180,3 +181,5 @@ references:
   url: https://github.com/embedchain/embedchain/pull/1122
 - type: WEB
   url: https://github.com/embedchain/embedchain/compare/0.1.56...0.1.57
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-r67w-f99w-mgxj

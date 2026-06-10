@@ -80,12 +80,16 @@ references:
 - type: WEB
   url: https://plone.org/security/hotfix/20150910/non-persistent-xss-in-plone
 - type: FIX
-  url: https://github.com/plone/Products.CMFPlone/commit/3da710a2cd68587f0bf34f2e7ea1167d6eeee087
+  url: 
+    https://github.com/plone/Products.CMFPlone/commit/3da710a2cd68587f0bf34f2e7ea1167d6eeee087
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=1264788
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2015/09/22/14
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vf8g-m3vq-6p4p
 aliases:
 - CVE-2015-7316
+- GHSA-vf8g-m3vq-6p4p
 modified: "2021-07-25T23:34:48.448357Z"
 published: "2017-09-25T17:29:00Z"

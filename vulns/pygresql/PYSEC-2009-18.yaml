@@ -14,6 +14,7 @@ affected:
   ecosystem_specific: {}
 aliases:
 - CVE-2009-2940
+- GHSA-xv6x-43gq-4hfj
 details: The pygresql module 3.8.1 and 4.0 for Python does not properly support the
   PQescapeStringConn function, which might allow remote attackers to leverage escaping
   issues involving multibyte character encodings.
@@ -31,3 +32,5 @@ references:
   url: http://secunia.com/advisories/37654
 - type: ADVISORY
   url: http://www.debian.org/security/2009/dsa-1911
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-xv6x-43gq-4hfj

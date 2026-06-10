@@ -299,6 +299,7 @@ affected:
   - 4.9.8
 aliases:
 - CVE-2025-14692
+- GHSA-x37w-7p52-8f49
 details: A flaw has been found in Mayan EDMS up to 4.10.1. The impacted element is
   an unknown function of the file /authentication/. This manipulation causes open
   redirect. It is possible to initiate the attack remotely. The exploit has been published
@@ -322,6 +323,8 @@ references:
   url: https://vuldb.com/?ctiid.336410
 - type: EVIDENCE
   url: https://github.com/ionutluca888/Mayan-EDMS-OpenRedirect-POC/tree/main
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x37w-7p52-8f49
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
   type: CVSS_V3

@@ -3,6 +3,7 @@ modified: 2024-10-17T17:21:59.592496Z
 published: 2024-06-06T19:16:00Z
 aliases:
 - CVE-2024-4881
+- GHSA-p8h7-c8gw-6x8c
 details: A path traversal vulnerability exists in the parisneo/lollms application,
   affecting version 9.4.0 and potentially earlier versions, but fixed in version 5.9.0.
   The vulnerability arises due to improper validation of file paths between Windows
@@ -277,4 +278,7 @@ references:
 - type: WEB
   url: https://huntr.com/bounties/94f7f901-80b0-4cf5-b545-ac5c1e7635e9
 - type: FIX
-  url: https://github.com/parisneo/lollms/commit/95ad36eeffc6a6be3e3f35ed35a384d768f0ecf6
+  url: 
+    https://github.com/parisneo/lollms/commit/95ad36eeffc6a6be3e3f35ed35a384d768f0ecf6
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-p8h7-c8gw-6x8c

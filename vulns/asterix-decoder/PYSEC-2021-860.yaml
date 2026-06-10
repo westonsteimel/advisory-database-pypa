@@ -46,8 +46,12 @@ references:
 - type: REPORT
   url: https://github.com/CroatiaControlLtd/asterix/issues/183
 - type: FIX
-  url: https://github.com/croatiacontrolltd/asterix/commit/3f765d387d239ccc44e278a2ffa600fb6a6587f9
+  url: 
+    https://github.com/croatiacontrolltd/asterix/commit/3f765d387d239ccc44e278a2ffa600fb6a6587f9
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6mmf-v5q7-vw2w
 aliases:
 - CVE-2021-44144
+- GHSA-6mmf-v5q7-vw2w
 modified: "2022-01-05T02:16:11.881162Z"
 published: "2021-11-22T21:15:00Z"

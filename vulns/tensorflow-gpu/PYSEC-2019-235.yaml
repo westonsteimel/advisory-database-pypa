@@ -35,8 +35,12 @@ affected:
   - 1.9.0
 references:
 - type: ADVISORY
-  url: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2019-001.md
+  url: 
+    https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2019-001.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mfg7-x5m7-6p8w
 aliases:
 - CVE-2019-9635
+- GHSA-mfg7-x5m7-6p8w
 modified: "2021-12-09T06:35:11.945126Z"
 published: "2019-04-24T17:29:00Z"

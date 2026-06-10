@@ -29,7 +29,10 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/lief-project/LIEF/issues/763
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-52xx-r3g2-p8jm
 aliases:
 - CVE-2022-38306
+- GHSA-52xx-r3g2-p8jm
 modified: "2022-09-18T05:55:18.856467Z"
 published: "2022-09-13T21:15:00Z"

@@ -3,6 +3,7 @@ modified: 2025-01-18T19:19:06.317325Z
 published: 2024-06-27T22:15:10Z
 aliases:
 - CVE-2024-39705
+- GHSA-cgvx-9447-vcch
 details: NLTK through 3.8.1 allows remote code execution if untrusted packages have
   pickled Python code, and the integrated data package download functionality is used.
   This affects, for example, averaged_perceptron_tagger and punkt.
@@ -84,3 +85,5 @@ references:
   url: https://github.com/nltk/nltk/issues/3266
 - type: WEB
   url: https://www.vicarius.io/vsociety/posts/rce-in-python-nltk-cve-2024-39705-39706
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cgvx-9447-vcch

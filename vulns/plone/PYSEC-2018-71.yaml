@@ -126,8 +126,12 @@ affected:
   - 5.1rc2
 references:
 - type: WEB
-  url: https://plone.org/security/hotfix/20171128/xss-using-the-home_page-member-property
+  url: 
+    https://plone.org/security/hotfix/20171128/xss-using-the-home_page-member-property
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-859j-668v-mrr6
 aliases:
 - CVE-2017-1000482
+- GHSA-859j-668v-mrr6
 modified: "2021-08-25T04:30:16.873350Z"
 published: "2018-01-03T18:29:00Z"

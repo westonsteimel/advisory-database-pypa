@@ -36,7 +36,10 @@ references:
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/27708
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/27706
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-r524-c2gf-5chr
 aliases:
 - CVE-2006-3695
+- GHSA-r524-c2gf-5chr
 modified: "2021-07-16T01:31:33.987147Z"
 published: "2006-07-21T14:03:00Z"

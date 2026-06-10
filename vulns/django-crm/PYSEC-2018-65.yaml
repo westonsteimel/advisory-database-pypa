@@ -23,7 +23,10 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/MicroPyramid/Django-CRM/issues/68
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hq4r-47qc-3jhc
 aliases:
 - CVE-2018-16552
+- GHSA-hq4r-47qc-3jhc
 modified: "2021-08-25T04:29:58.134898Z"
 published: "2018-09-05T22:29:00Z"

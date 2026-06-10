@@ -3,6 +3,7 @@ modified: 2023-07-26T14:25:58.775032Z
 published: 2023-07-26T12:15:00Z
 aliases:
 - CVE-2023-38673
+- GHSA-9q9v-qgwx-84mr
 details: |
   PaddlePaddle before 2.5.0 has a command injection in fs.py. This resulted in the ability to execute arbitrary commands on the operating system.
 affected:
@@ -42,4 +43,7 @@ affected:
   - 2.5.0rc1
 references:
 - type: ADVISORY
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-005.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-005.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9q9v-qgwx-84mr

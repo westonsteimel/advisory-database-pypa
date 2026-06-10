@@ -90,7 +90,10 @@ references:
   url: https://github.com/plone/Products.CMFPlone/blob/4.2.3/docs/CHANGES.txt
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2012/11/10/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3g6w-4m7x-97v6
 aliases:
 - CVE-2012-5494
+- GHSA-3g6w-4m7x-97v6
 modified: "2021-09-01T08:44:29.835907Z"
 published: "2014-09-30T14:55:00Z"

@@ -64,7 +64,10 @@ references:
   url: http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00021.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-security-announce/2020-04/msg00026.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6fq2-x65v-v9h7
 aliases:
 - CVE-2019-14856
+- GHSA-6fq2-x65v-v9h7
 modified: "2021-07-02T02:41:34.512855Z"
 published: "2019-11-26T14:15:00Z"

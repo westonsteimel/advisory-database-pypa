@@ -3,6 +3,7 @@ modified: 2023-10-20T16:31:18.806057Z
 published: 2023-02-06T17:15:00Z
 aliases:
 - CVE-2020-36660
+- GHSA-fxqx-xgqq-gf42
 details: A vulnerability was found in paxswill EVE Ship Replacement Program 0.12.11.
   It has been rated as problematic. This issue affects some unknown processing of
   the file src/evesrp/views/api.py of the component User Information Handler. The
@@ -92,6 +93,9 @@ references:
 - type: WEB
   url: https://vuldb.com/?ctiid.220211
 - type: FIX
-  url: https://github.com/paxswill/evesrp/commit/9e03f68e46e85ca9c9694a6971859b3ee66f0240
+  url: 
+    https://github.com/paxswill/evesrp/commit/9e03f68e46e85ca9c9694a6971859b3ee66f0240
 - type: WEB
   url: https://github.com/paxswill/evesrp/releases/tag/v0.12.12
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fxqx-xgqq-gf42

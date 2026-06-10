@@ -89,7 +89,10 @@ references:
   url: https://github.com/plone/Products.CMFPlone/blob/4.2.3/docs/CHANGES.txt
 - type: WEB
   url: https://plone.org/products/plone-hotfix/releases/20121106
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-w6pw-5gh5-4952
 aliases:
 - CVE-2012-5495
+- GHSA-w6pw-5gh5-4952
 modified: "2021-09-01T08:44:29.952455Z"
 published: "2014-09-30T14:55:00Z"

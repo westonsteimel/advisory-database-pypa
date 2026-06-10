@@ -3,6 +3,7 @@ modified: 2023-08-22T18:27:28.580705Z
 published: 2023-08-15T17:15:00Z
 aliases:
 - CVE-2023-39659
+- GHSA-prgp-w7vf-ch62
 details: An issue in langchain langchain-ai v.0.0.232 and before allows a remote attacker
   to execute arbitrary code via a crafted script to the PythonAstREPLTool._run component.
 affected:
@@ -262,3 +263,5 @@ references:
   url: https://github.com/langchain-ai/langchain/pull/5640
 - type: FIX
   url: https://github.com/langchain-ai/langchain/pull/5640
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-prgp-w7vf-ch62

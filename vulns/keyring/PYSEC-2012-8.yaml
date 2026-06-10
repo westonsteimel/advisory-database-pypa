@@ -35,7 +35,10 @@ references:
   url: http://pypi.python.org/pypi/keyring
 - type: ADVISORY
   url: http://www.ubuntu.com/usn/USN-1634-1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-p3h7-3c45-qj4v
 aliases:
 - CVE-2012-4571
+- GHSA-p3h7-3c45-qj4v
 modified: "2021-07-15T02:22:15.253541Z"
 published: "2012-11-30T22:55:00Z"

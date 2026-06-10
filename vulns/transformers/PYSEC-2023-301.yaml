@@ -3,6 +3,7 @@ modified: 2024-11-21T14:23:01.933055Z
 published: 2023-12-20T17:15:00Z
 aliases:
 - CVE-2023-7018
+- GHSA-v68g-wm8c-6x7j
 details: Deserialization of Untrusted Data in GitHub repository huggingface/transformers
   prior to 4.36.
 affected:
@@ -157,4 +158,7 @@ references:
 - type: WEB
   url: https://huntr.com/bounties/e1a3e548-e53a-48df-b708-9ee62140963c
 - type: FIX
-  url: https://github.com/huggingface/transformers/commit/1d63b0ec361e7a38f1339385e8a5a855085532ce
+  url: 
+    https://github.com/huggingface/transformers/commit/1d63b0ec361e7a38f1339385e8a5a855085532ce
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v68g-wm8c-6x7j

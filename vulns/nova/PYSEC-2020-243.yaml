@@ -64,7 +64,10 @@ references:
   url: https://security.openstack.org/ossa/OSSA-2020-006.html
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2020/08/25/4
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c7w7-9c85-4qxv
 aliases:
 - CVE-2020-17376
+- GHSA-c7w7-9c85-4qxv
 modified: "2021-08-27T03:22:09.410263Z"
 published: "2020-08-26T19:15:00Z"

@@ -3,6 +3,7 @@ modified: 2024-02-24T07:19:09.418536Z
 published: 2024-02-24T05:15:00Z
 aliases:
 - CVE-2024-21502
+- GHSA-ph86-g9r3-5qw4
 details: Versions of the package fastecdsa before 2.3.2 are vulnerable to Use of Uninitialized
   Variable on the stack, via the curvemath_mul function in src/curveMath.c, due to
   being used and interpreted as user-defined type. Depending on the variable's actual
@@ -77,4 +78,7 @@ references:
 - type: WEB
   url: https://github.com/AntonKueltz/fastecdsa/blob/v2.3.1/src/curveMath.c%23L210
 - type: FIX
-  url: https://github.com/AntonKueltz/fastecdsa/commit/57fc5689c95d649dab7ef60cc99ac64589f01e36
+  url: 
+    https://github.com/AntonKueltz/fastecdsa/commit/57fc5689c95d649dab7ef60cc99ac64589f01e36
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-ph86-g9r3-5qw4

@@ -3,8 +3,6 @@ modified: 2025-05-05T19:21:20.899426Z
 published: 2024-04-25T17:15:50Z
 aliases:
 - CVE-2024-32481
-related:
-- GHSA-ppx5-q359-pvwj
 - GHSA-ppx5-q359-pvwj
 details: Vyper is a pythonic Smart Contract Language for the Ethereum virtual machine.
   Starting in version 0.3.8 and prior to version 0.4.0b1, when looping over a `range`
@@ -46,8 +44,13 @@ references:
 - type: EVIDENCE
   url: https://github.com/vyperlang/vyper/security/advisories/GHSA-ppx5-q359-pvwj
 - type: FIX
-  url: https://github.com/vyperlang/vyper/commit/3de1415ee77a9244eb04bdb695e249d3ec9ed868
+  url: 
+    https://github.com/vyperlang/vyper/commit/3de1415ee77a9244eb04bdb695e249d3ec9ed868
 - type: FIX
-  url: https://github.com/vyperlang/vyper/commit/5319cfbe14951e007ccdb323257e5ada869b35d5
+  url: 
+    https://github.com/vyperlang/vyper/commit/5319cfbe14951e007ccdb323257e5ada869b35d5
 - type: WEB
-  url: https://github.com/vyperlang/vyper/blob/9136169468f317a53b4e7448389aa315f90b95ba/vyper/codegen/stmt.py#L286-L287
+  url: 
+    https://github.com/vyperlang/vyper/blob/9136169468f317a53b4e7448389aa315f90b95ba/vyper/codegen/stmt.py#L286-L287
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-ppx5-q359-pvwj

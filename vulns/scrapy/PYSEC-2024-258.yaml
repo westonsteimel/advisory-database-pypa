@@ -1,8 +1,9 @@
 id: PYSEC-2024-258
-modified: 2025-07-15T17:37:50.05173Z
+modified: 2025-07-15T17:37:50.051730Z
 published: 2024-05-20T08:15:08Z
 aliases:
 - CVE-2024-1968
+- GHSA-4qqq-9vqf-3h3f
 details: In scrapy/scrapy, an issue was identified where the Authorization header
   is not removed during redirects that only change the scheme (e.g., HTTPS to HTTP)
   but remain within the same domain. This behavior contravenes the Fetch standard,
@@ -134,3 +135,5 @@ references:
   url: https://github.com/scrapy/scrapy/commit/1d0502f25bbe55a22899af915623fda1aaeb9dd8
 - type: WEB
   url: https://huntr.com/bounties/27f6a021-a891-446a-ada5-0226d619dd1a
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4qqq-9vqf-3h3f

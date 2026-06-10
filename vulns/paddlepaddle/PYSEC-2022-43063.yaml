@@ -3,6 +3,7 @@ modified: 2024-11-22T12:27:25.862098Z
 published: 2022-12-07T09:15:00Z
 aliases:
 - CVE-2022-46742
+- GHSA-gcjf-29m9-888q
 details: |
   Code injection in paddle.audio.functional.get_window in PaddlePaddle 2.4.0-rc0 allows arbitrary code execution.
 affected:
@@ -38,8 +39,13 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 references:
 - type: EVIDENCE
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2022-002.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2022-002.md
 - type: FIX
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2022-002.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2022-002.md
 - type: ADVISORY
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2022-002.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2022-002.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gcjf-29m9-888q

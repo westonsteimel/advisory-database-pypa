@@ -3,6 +3,7 @@ modified: 2025-01-19T07:21:16.859034Z
 published: 2024-07-17T08:15:02Z
 aliases:
 - CVE-2024-39877
+- GHSA-g5hv-r743-v8pm
 details: Apache Airflow 2.4.0, and versions before 2.9.3, has a vulnerability that
   allows authenticated DAG authors to craft a doc_md parameter in a way that could
   execute arbitrary code in the scheduler context, which should be forbidden according
@@ -106,3 +107,5 @@ references:
   url: https://github.com/apache/airflow/pull/40522
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2024/07/16/7
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g5hv-r743-v8pm

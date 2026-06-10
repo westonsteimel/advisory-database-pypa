@@ -3,6 +3,7 @@ modified: 2025-04-09T17:27:27.486485Z
 published: 2025-03-03T17:15:14Z
 aliases:
 - CVE-2025-25301
+- GHSA-r5gx-c49x-h878
 details: Rembg is a tool to remove images background. In Rembg 2.0.57 and earlier,
   the /api/remove endpoint takes a URL query parameter that allows an image to be
   fetched, processed and returned. An attacker may be able to query this endpoint
@@ -56,3 +57,5 @@ references:
   url: https://securitylab.github.com/advisories/GHSL-2024-161_GHSL-2024-162_rembg/
 - type: EVIDENCE
   url: https://securitylab.github.com/advisories/GHSL-2024-161_GHSL-2024-162_rembg/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-r5gx-c49x-h878

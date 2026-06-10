@@ -3,6 +3,7 @@ modified: 2023-10-18T20:24:08.482939Z
 published: 2023-10-14T10:15:00Z
 aliases:
 - CVE-2023-42780
+- GHSA-cgx2-rrmr-jx43
 details: |+
   Apache Airflow, versions prior to 2.7.2, contains a security vulnerability that allows authenticated users of Airflow to list warnings for all DAGs, even if the user had no permission to see those DAGs. It would reveal the dag_ids and the stack-traces of import errors for those DAGs with import errors.
   Users of Apache Airflow are advised to upgrade to version 2.7.2 or newer to mitigate the risk associated with this vulnerability.
@@ -193,3 +194,5 @@ references:
   url: https://lists.apache.org/thread/h5tvsvov8j55wojt5sojdprs05oby34d
 - type: ADVISORY
   url: https://lists.apache.org/thread/h5tvsvov8j55wojt5sojdprs05oby34d
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cgx2-rrmr-jx43

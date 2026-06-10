@@ -27,6 +27,7 @@ affected:
   - '1.7'
 aliases:
 - CVE-2008-1937
+- GHSA-rqxp-6926-hphr
 details: The user form processing (userform.py) in MoinMoin before 1.6.3, when using
   ACLs or a non-empty superusers list, does not properly manage users, which allows
   remote attackers to gain privileges.
@@ -50,3 +51,5 @@ references:
   url: http://www.vupen.com/english/advisories/2008/1307/references
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/41909
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rqxp-6926-hphr

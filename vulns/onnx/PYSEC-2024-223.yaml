@@ -3,6 +3,7 @@ modified: 2025-01-22T16:23:22.060512Z
 published: 2024-02-23T18:15:50Z
 aliases:
 - CVE-2024-27319
+- GHSA-h8wv-9h96-m4hr
 details: |
   Versions of the package onnx before and including 1.15.0 are vulnerable to Out-of-bounds Read as the ONNX_ASSERT and ONNX_ASSERTM functions have an off by one string copy.
 affected:
@@ -59,6 +60,10 @@ references:
 - type: FIX
   url: https://github.com/onnx/onnx/commit/08a399ba75a805b7813ab8936b91d0e274b08287
 - type: WEB
-  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FGTBH5ZYL2LGYHIJDHN2MAUURIR5E7PY/
+  url: 
+    https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FGTBH5ZYL2LGYHIJDHN2MAUURIR5E7PY/
 - type: WEB
-  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TFJJID2IZDOLFDMWVYTBDI75ZJQC6JOL/
+  url: 
+    https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TFJJID2IZDOLFDMWVYTBDI75ZJQC6JOL/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h8wv-9h96-m4hr

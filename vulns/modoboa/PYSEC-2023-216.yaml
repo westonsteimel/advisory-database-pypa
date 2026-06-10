@@ -3,6 +3,7 @@ modified: 2023-10-27T20:23:07.820957Z
 published: 2023-10-20T17:15:00Z
 aliases:
 - CVE-2023-5689
+- GHSA-9wj3-cfq8-wpvj
 details: Cross-site Scripting (XSS) - DOM in GitHub repository modoboa/modoboa prior
   to 2.2.2.
 affected:
@@ -97,10 +98,13 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N
 references:
 - type: FIX
-  url: https://github.com/modoboa/modoboa/commit/d33d3cd2d11dbfebd8162c46e2c2a9873919a967
+  url: 
+    https://github.com/modoboa/modoboa/commit/d33d3cd2d11dbfebd8162c46e2c2a9873919a967
 - type: EVIDENCE
   url: https://huntr.com/bounties/24835833-3421-412b-bafb-1b7ea3cf60e6
 - type: FIX
   url: https://huntr.com/bounties/24835833-3421-412b-bafb-1b7ea3cf60e6
 - type: WEB
   url: https://huntr.com/bounties/24835833-3421-412b-bafb-1b7ea3cf60e6
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9wj3-cfq8-wpvj

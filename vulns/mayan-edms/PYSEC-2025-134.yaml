@@ -299,6 +299,7 @@ affected:
   - 4.9.8
 aliases:
 - CVE-2025-14691
+- GHSA-774q-r975-vqwp
 details: A vulnerability was detected in Mayan EDMS up to 4.10.1. The affected element
   is an unknown function of the file /authentication/. The manipulation results in
   cross site scripting. The attack may be performed from remote. The exploit is now
@@ -322,6 +323,8 @@ references:
   url: https://vuldb.com/?ctiid.336409
 - type: EVIDENCE
   url: https://github.com/ionutluca888/Mayan-EDMS-XSS-POC
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-774q-r975-vqwp
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
   type: CVSS_V3

@@ -168,7 +168,10 @@ references:
   url: https://github.com/apache/airflow/pull/30447
 - type: WEB
   url: https://lists.apache.org/thread/kqf5lxmko133780clsp827xfsh4xd3fl
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vcf6-3wv2-5vcr
 aliases:
 - CVE-2023-29247
+- GHSA-vcf6-3wv2-5vcr
 modified: "2023-06-05T01:12:45.763850Z"
 published: "2023-05-08T10:15:00Z"

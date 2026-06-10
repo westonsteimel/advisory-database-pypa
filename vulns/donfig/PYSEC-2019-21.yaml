@@ -23,7 +23,10 @@ references:
   url: https://github.com/pytroll/donfig/issues/5
 - type: WEB
   url: https://github.com/pytroll/donfig/commits/master
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3qr5-h7w4-3gx3
 aliases:
 - CVE-2019-7537
+- GHSA-3qr5-h7w4-3gx3
 modified: "2019-03-26T14:13:00Z"
 published: "2019-03-21T20:29:00Z"

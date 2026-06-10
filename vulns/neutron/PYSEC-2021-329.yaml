@@ -107,7 +107,10 @@ references:
   url: https://security.openstack.org/ossa/OSSA-2021-006.html
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2021/09/09/2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cpx3-696p-3cw9
 aliases:
 - CVE-2021-40797
+- GHSA-cpx3-696p-3cw9
 modified: "2021-09-23T00:11:02.378195Z"
 published: "2021-09-08T20:15:00Z"

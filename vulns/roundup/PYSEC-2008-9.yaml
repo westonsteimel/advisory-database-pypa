@@ -57,7 +57,8 @@ references:
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=436546
 - type: WEB
-  url: http://roundup.cvs.sourceforge.net/roundup/roundup/CHANGES.txt?revision=1.939&view=markup
+  url: 
+    http://roundup.cvs.sourceforge.net/roundup/roundup/CHANGES.txt?revision=1.939&view=markup
 - type: WEB
   url: https://www.redhat.com/archives/fedora-package-announce/2008-March/msg00264.html
 - type: WEB
@@ -80,7 +81,10 @@ references:
   url: http://www.vupen.com/english/advisories/2008/0891
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/41241
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c3qv-mf8h-434r
 aliases:
 - CVE-2008-1474
+- GHSA-c3qv-mf8h-434r
 modified: "2021-08-27T03:22:19.598501Z"
 published: "2008-03-24T22:44:00Z"

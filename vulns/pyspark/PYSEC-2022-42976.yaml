@@ -49,7 +49,10 @@ references:
   url: https://lists.apache.org/thread/60mgbswq2lsmrxykfxpqq13ztkm2ht6q
 - type: WEB
   url: https://lists.apache.org/thread/60mgbswq2lsmrxykfxpqq13ztkm2ht6q
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-43xg-8wmj-cw8h
 aliases:
 - CVE-2022-31777
+- GHSA-43xg-8wmj-cw8h
 modified: "2022-11-07T01:10:29.334199Z"
 published: "2022-11-01T16:15:00Z"

@@ -37,7 +37,10 @@ references:
   url: https://onekey.com/blog/security-advisory-remote-command-execution-in-binwalk/
 - type: WEB
   url: https://github.com/jrspruitt/ubi_reader/pull/57
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vp2x-3mc3-3cj4
 aliases:
 - CVE-2023-0591
+- GHSA-vp2x-3mc3-3cj4
 modified: "2023-05-04T03:49:48.432460Z"
 published: "2023-01-31T10:15:00Z"

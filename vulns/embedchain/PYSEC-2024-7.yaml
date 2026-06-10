@@ -3,6 +3,7 @@ modified: 2024-01-21T20:21:00.484037Z
 published: 2024-01-21T17:15:00Z
 aliases:
 - CVE-2024-23731
+- GHSA-rhhj-5436-95vf
 details: The OpenAPI loader in Embedchain before 0.1.57 allows attackers to execute
   arbitrary code, related to the openapi.py yaml.load function argument.
 affected:
@@ -180,3 +181,5 @@ references:
   url: https://github.com/embedchain/embedchain/pull/1122
 - type: WEB
   url: https://github.com/embedchain/embedchain/compare/0.1.56...0.1.57
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rhhj-5436-95vf

@@ -3,6 +3,7 @@ modified: 2024-11-21T14:22:55.105976Z
 published: 2023-01-19T18:15:00Z
 aliases:
 - CVE-2023-0406
+- GHSA-g298-59pg-93h7
 details: Cross-Site Request Forgery (CSRF) in GitHub repository modoboa/modoboa prior
   to 2.0.4.
 affected:
@@ -88,10 +89,13 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N
 references:
 - type: FIX
-  url: https://github.com/modoboa/modoboa/commit/7f0573e917227686d2cc127be1364e2908740807
+  url: 
+    https://github.com/modoboa/modoboa/commit/7f0573e917227686d2cc127be1364e2908740807
 - type: EVIDENCE
   url: https://huntr.dev/bounties/d7007f76-3dbc-48a7-a2fb-377040fe100c
 - type: FIX
   url: https://huntr.dev/bounties/d7007f76-3dbc-48a7-a2fb-377040fe100c
 - type: WEB
   url: https://huntr.dev/bounties/d7007f76-3dbc-48a7-a2fb-377040fe100c
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g298-59pg-93h7

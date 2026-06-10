@@ -5,6 +5,7 @@ details: A vulnerability was found in keylime. This security issue happens in so
   attempts for that host leaving it in an attested state but not verifying that anymore.
 aliases:
 - CVE-2022-3500
+- GHSA-hff2-x2j9-gxgv
 modified: '2023-05-04T04:29:25.773897Z'
 published: '2022-11-22T19:15:00Z'
 references:
@@ -16,6 +17,8 @@ references:
   url: https://github.com/keylime/keylime/pull/1128
 - type: WEB
   url: https://access.redhat.com/security/cve/CVE-2022-3500
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hff2-x2j9-gxgv
 affected:
 - package:
     name: keylime

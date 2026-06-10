@@ -3,6 +3,7 @@ modified: 2026-02-25T19:20:58Z
 published: 2023-03-31T20:15:00Z
 aliases:
 - CVE-2022-4899
+- GHSA-5c9c-6x87-f9vm
 summary: zstd vulnerable to buffer overrun
 details: A vulnerability was found in zstd v1.4.10, where an attacker can supply empty
   string as an argument to the command line tool to cause buffer overrun.
@@ -60,3 +61,5 @@ references:
   url: https://github.com/facebook/zstd/issues/3200
 - type: ADVISORY
   url: https://security.netapp.com/advisory/ntap-20230725-0005/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5c9c-6x87-f9vm

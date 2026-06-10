@@ -119,18 +119,23 @@ references:
 - type: WEB
   url: https://selenic.com/hg/rev/a56296f55a5e
 - type: WEB
-  url: https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_3.8_.2F_3.8.1_.282016-5-1.29
+  url: 
+    https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_3.8_.2F_3.8.1_.282016-5-1.29
 - type: ADVISORY
   url: http://www.debian.org/security/2016/dsa-3570
 - type: WEB
   url: http://www.securityfocus.com/bid/90536
 - type: WEB
-  url: http://www.slackware.com/security/viewer.php?l=slackware-security&y=2016&m=slackware-security.533255
+  url: 
+    http://www.slackware.com/security/viewer.php?l=slackware-security&y=2016&m=slackware-security.533255
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2016-05/msg00082.html
 - type: ADVISORY
   url: https://security.gentoo.org/glsa/201612-19
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-49cw-434h-qc57
 aliases:
 - CVE-2016-3105
+- GHSA-49cw-434h-qc57
 modified: "2021-08-27T03:22:06.927942Z"
 published: "2016-05-09T20:59:00Z"

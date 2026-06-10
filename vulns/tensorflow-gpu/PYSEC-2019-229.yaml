@@ -29,8 +29,12 @@ affected:
   - 1.7.0
 references:
 - type: ADVISORY
-  url: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-006.md
+  url: 
+    https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-006.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-q492-f7gr-27rp
 aliases:
 - CVE-2018-10055
+- GHSA-q492-f7gr-27rp
 modified: "2021-12-09T06:35:11.612649Z"
 published: "2019-04-24T17:29:00Z"

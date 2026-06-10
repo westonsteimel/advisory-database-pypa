@@ -4,6 +4,7 @@ details: A flaw was found in openstack-glance. This issue could allow a remote, 
   using these modified images.
 aliases:
 - CVE-2022-4134
+- GHSA-5gp5-vxj6-4257
 modified: '2024-11-25T22:26:00.352650Z'
 published: '2023-03-06T23:15:00Z'
 references:
@@ -13,6 +14,8 @@ references:
   url: https://bugzilla.redhat.com/show_bug.cgi?id=2147462
 - type: REPORT
   url: https://bugs.launchpad.net/glance/+bug/1990157
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5gp5-vxj6-4257
 affected:
 - package:
     name: glance

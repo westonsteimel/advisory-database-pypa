@@ -60,7 +60,10 @@ references:
   url: http://www.securityfocus.com/bid/74775
 - type: ADVISORY
   url: http://rhn.redhat.com/errata/RHSA-2015-1092.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-79jf-ccm8-43w7
 aliases:
 - CVE-2015-4053
+- GHSA-79jf-ccm8-43w7
 modified: "2021-07-05T00:01:17.307671Z"
 published: "2015-06-08T14:59:00Z"

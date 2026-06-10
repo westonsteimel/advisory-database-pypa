@@ -3,6 +3,7 @@ modified: 2023-10-22T20:22:30.887585Z
 published: 2023-10-22T19:15:00Z
 aliases:
 - CVE-2021-46897
+- GHSA-h454-rq3m-89rc
 details: views.py in Wagtail CRX CodeRed Extensions (formerly CodeRed CMS or coderedcms)
   before 0.22.3 allows upward protected/..%2f..%2f path traversal when serving protected
   media.
@@ -62,3 +63,5 @@ references:
   url: https://github.com/coderedcorp/coderedcms/pull/450
 - type: WEB
   url: https://github.com/coderedcorp/coderedcms/compare/v0.22.2...v0.22.3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h454-rq3m-89rc

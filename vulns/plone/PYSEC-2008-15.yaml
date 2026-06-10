@@ -11,6 +11,7 @@ affected:
   ecosystem_specific: {}
 aliases:
 - CVE-2008-0164
+- GHSA-4j3w-g62x-hrcp
 details: Multiple cross-site request forgery (CSRF) vulnerabilities in Plone CMS 3.0.5
   and 3.0.6 allow remote attackers to (1) add arbitrary accounts via the join_form
   page and (2) change the privileges of arbitrary groups via the prefs_groups_overview
@@ -31,3 +32,5 @@ references:
   url: http://secunia.com/advisories/29361
 - type: EVIDENCE
   url: http://www.procheckup.com/Hacking_Plone_CMS.pdf
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4j3w-g62x-hrcp

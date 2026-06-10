@@ -27,6 +27,7 @@ affected:
   - 2.0.4.dev0
 aliases:
 - CVE-2025-48459
+- GHSA-776q-jw43-fhjx
 details: |-
   Deserialization of Untrusted Data vulnerability in Apache IoTDB.
 
@@ -41,6 +42,8 @@ references:
   url: http://www.openwall.com/lists/oss-security/2025/09/24/8
 - type: ADVISORY
   url: https://lists.apache.org/thread/mr84n19nv8d0bmcrfsj3mm5ff5qn4q2f
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-776q-jw43-fhjx
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
   type: CVSS_V3

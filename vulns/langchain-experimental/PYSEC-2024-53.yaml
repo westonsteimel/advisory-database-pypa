@@ -3,6 +3,7 @@ modified: 2024-06-16T17:20:32.187558Z
 published: 2024-06-16T15:15:00Z
 aliases:
 - CVE-2024-38459
+- GHSA-wmvm-9vqv-5qpp
 details: langchain_experimental (aka LangChain Experimental) before 0.0.61 for LangChain
   provides Python REPL access without an opt-in step. NOTE; this issue exists because
   of an incomplete fix for CVE-2024-27444.
@@ -89,6 +90,10 @@ references:
 - type: WEB
   url: https://github.com/langchain-ai/langchain/pull/22860
 - type: FIX
-  url: https://github.com/langchain-ai/langchain/commit/ce0b0f22a175139df8f41cdcfb4d2af411112009
+  url: 
+    https://github.com/langchain-ai/langchain/commit/ce0b0f22a175139df8f41cdcfb4d2af411112009
 - type: WEB
-  url: https://github.com/langchain-ai/langchain/compare/langchain-experimental==0.0.60...langchain-experimental==0.0.61
+  url: 
+    https://github.com/langchain-ai/langchain/compare/langchain-experimental==0.0.60...langchain-experimental==0.0.61
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wmvm-9vqv-5qpp

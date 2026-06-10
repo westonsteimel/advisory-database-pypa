@@ -77,7 +77,10 @@ references:
   url: https://bugs.tryton.org/issue4155
 - type: WEB
   url: http://www.tryton.org/posts/security-release-for-issue4155.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m9jj-5qvj-5fhx
 aliases:
 - CVE-2014-6633
+- GHSA-m9jj-5qvj-5fhx
 modified: "2021-10-12T02:55:35.904690Z"
 published: "2018-04-12T15:29:00Z"

@@ -64,6 +64,7 @@ affected:
   - 3.0.66.1
 aliases:
 - CVE-2013-2100
+- GHSA-8823-xphr-qw9v
 details: The urlopen function in pym/portage/util/_urlopen.py in Gentoo Portage 2.1.12,
   when using HTTPS, does not verify X.509 certificates from SSL servers, which allows
   man-in-the-middle attackers to spoof servers and modify binary package lists via
@@ -84,4 +85,6 @@ references:
   url: https://security.gentoo.org/glsa/201507-16
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/84315
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8823-xphr-qw9v
 withdrawn: '2024-11-22T04:37:05Z'

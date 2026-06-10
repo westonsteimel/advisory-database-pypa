@@ -3,6 +3,7 @@ modified: 2022-05-06T13:40:00Z
 published: 2022-04-26T16:15:00Z
 aliases:
 - CVE-2022-23942
+- GHSA-98j2-hfxp-8h8r
 details: Apache Doris, prior to 1.0.0, used a hardcoded key and IV to initialize the
   cipher used for ldap password, which may lead to information disclosure.
 affected:
@@ -31,3 +32,5 @@ references:
   url: http://www.openwall.com/lists/oss-security/2022/04/26/3
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2022/04/26/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-98j2-hfxp-8h8r

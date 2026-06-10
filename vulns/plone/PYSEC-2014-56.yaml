@@ -82,7 +82,10 @@ references:
   url: http://plone.org/products/plone/security/advisories/20130618-announcement
 - type: WEB
   url: http://seclists.org/oss-sec/2013/q3/261
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-f5h9-3hpf-9j8m
 aliases:
 - CVE-2013-4192
+- GHSA-f5h9-3hpf-9j8m
 modified: "2021-07-25T23:34:46.316071Z"
 published: "2014-03-11T19:37:00Z"

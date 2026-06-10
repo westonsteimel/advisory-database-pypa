@@ -118,6 +118,7 @@ affected:
   - 20.0.2
 aliases:
 - CVE-2025-65681
+- GHSA-gq25-78jf-v78c
 details: An issue was discovered in Overhang.IO (tutor-open-edx) (overhangio/tutor)
   20.0.2 allowing local unauthorized attackers to gain access to sensitive information
   due to the absence of proper cache-control HTTP headers and client-side session
@@ -132,6 +133,8 @@ references:
   url: https://github.com/Rivek619/CVE-2025-65681
 - type: PACKAGE
   url: https://github.com/overhangio/tutor
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gq25-78jf-v78c
 severity:
 - score: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N
   type: CVSS_V3

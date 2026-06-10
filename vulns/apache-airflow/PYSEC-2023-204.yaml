@@ -3,6 +3,7 @@ modified: 2023-10-18T20:24:08.594791Z
 published: 2023-10-14T10:15:00Z
 aliases:
 - CVE-2023-45348
+- GHSA-fpxx-xv4c-gxqp
 details: |2-
 
   Apache Airflow, versions 2.7.0 and 2.7.1, is affected by a vulnerability that allows an authenticated user to retrieve sensitive configuration information when the "expose_config" option is set to "non-sensitive-only". The `expose_config` option is False by default.
@@ -33,3 +34,5 @@ references:
   url: https://lists.apache.org/thread/sy4l5d6tn58hr8r61r2fkt1f0qock9z9
 - type: FIX
   url: https://github.com/apache/airflow/pull/34712
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fpxx-xv4c-gxqp

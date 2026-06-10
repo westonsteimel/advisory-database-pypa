@@ -103,14 +103,20 @@ references:
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2015-04/msg00001.html
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148485.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148485.html
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148696.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148696.html
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148608.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148608.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2015-09/msg00035.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6g95-x6cj-mg4v
 aliases:
 - CVE-2015-0222
+- GHSA-6g95-x6cj-mg4v
 modified: "2021-07-05T00:01:19.802913Z"
 published: "2015-01-16T16:59:00Z"

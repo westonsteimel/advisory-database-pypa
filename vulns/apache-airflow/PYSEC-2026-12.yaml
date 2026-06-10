@@ -56,10 +56,11 @@ affected:
   - 3.1.7rc2
 aliases:
 - CVE-2026-24098
-details: "Apache Airflow versions 3.0.0 - 3.1.7, has vulnerability that allows authenticated\
-  \ UI users with permission to one or more specific Dags to view import errors generated\
-  \ by other Dags they did not have access to. \n\nUsers are advised to upgrade to\
-  \ 3.1.7 or later, which resolves this issue"
+- GHSA-5g2w-9f8g-g5q7
+details: "Apache Airflow versions 3.0.0 - 3.1.7, has vulnerability that allows authenticated
+  UI users with permission to one or more specific Dags to view import errors generated
+  by other Dags they did not have access to. \n\nUsers are advised to upgrade to 3.1.7
+  or later, which resolves this issue"
 id: PYSEC-2026-12
 modified: '2026-05-20T09:18:52.793450Z'
 published: '2026-02-09T11:16:14.660Z'
@@ -70,6 +71,8 @@ references:
   url: https://lists.apache.org/thread/nx96435v77xdst7ls5lk57kqvqyj095x
 - type: FIX
   url: https://github.com/apache/airflow/pull/60801
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5g2w-9f8g-g5q7
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
   type: CVSS_V3

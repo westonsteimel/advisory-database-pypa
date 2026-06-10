@@ -63,7 +63,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2014/05/01/15
 - type: ADVISORY
   url: http://www.debian.org/security/2014/dsa-2948
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-873q-wpqr-xfgw
 aliases:
 - CVE-2014-3137
+- GHSA-873q-wpqr-xfgw
 modified: "2021-08-27T03:21:56.361083Z"
 published: "2014-10-25T22:55:00Z"

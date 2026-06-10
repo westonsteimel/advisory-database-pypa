@@ -167,7 +167,10 @@ references:
   url: https://www.mercurial-scm.org/repo/hg/rev/90a274965de7
 - type: WEB
   url: https://lists.debian.org/debian-lts-announce/2020/07/msg00032.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3v62-ww8w-758m
 aliases:
 - CVE-2018-13348
+- GHSA-3v62-ww8w-758m
 modified: "2021-08-27T03:22:07.326002Z"
 published: "2018-07-06T00:29:00Z"

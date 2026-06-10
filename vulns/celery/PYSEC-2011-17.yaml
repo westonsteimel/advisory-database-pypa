@@ -49,7 +49,10 @@ references:
   url: http://secunia.com/advisories/46973
 - type: WEB
   url: http://www.securityfocus.com/bid/50825
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rpc6-h455-3rx5
 aliases:
 - CVE-2011-4356
+- GHSA-rpc6-h455-3rx5
 modified: "2021-08-27T03:21:56.662825Z"
 published: "2011-12-05T11:55:00Z"

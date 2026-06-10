@@ -3,6 +3,7 @@ modified: 2024-03-19T11:18:50.379002Z
 published: 2024-03-19T05:15:00Z
 aliases:
 - CVE-2024-21503
+- GHSA-fj7x-q9j7-g6q6
 details: "Versions of the package black before 24.3.0 are vulnerable to Regular Expression
   Denial of Service (ReDoS) via the lines_with_leading_tabs_expanded function in the
   strings.py file. An attacker could exploit this vulnerability by crafting a malicious
@@ -89,3 +90,5 @@ references:
   url: https://github.com/psf/black/releases/tag/24.3.0
 - type: FIX
   url: https://github.com/psf/black/commit/f00093672628d212b8965a8993cee8bedf5fe9b8
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fj7x-q9j7-g6q6

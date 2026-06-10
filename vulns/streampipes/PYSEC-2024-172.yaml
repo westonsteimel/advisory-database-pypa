@@ -3,6 +3,7 @@ modified: 2025-01-18T22:21:43.557516Z
 published: 2024-07-17T09:15:02Z
 aliases:
 - CVE-2024-30471
+- GHSA-2qph-v9p2-q2gv
 details: |+
   Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability in Apache StreamPipes in user self-registration.
   This allows an attacker to potentially request the creation of multiple accounts with the same email address until the email address is registered, creating many identical users and corrupting StreamPipe's user management.
@@ -35,3 +36,5 @@ references:
   url: https://lists.apache.org/thread/8yodrmohgcybq900or3d4hc1msl230fr
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2024/07/16/9
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2qph-v9p2-q2gv

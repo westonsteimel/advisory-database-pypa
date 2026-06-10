@@ -3,8 +3,6 @@ modified: 2025-01-19T01:52:24.377662Z
 published: 2024-03-18T22:15:07Z
 aliases:
 - CVE-2024-28237
-related:
-- GHSA-x7mf-wrh9-r76c
 - GHSA-x7mf-wrh9-r76c
 details: OctoPrint provides a web interface for controlling consumer 3D printers.
   OctoPrint versions up until and including 1.9.3 contain a vulnerability that allows
@@ -27,7 +25,6 @@ affected:
   - type: GIT
     events:
     - introduced: "0"
-    - fixed: 779894c1bc6478332d14bc9ed1006df1354eb517
     - fixed: 779894c1bc6478332d14bc9ed1006df1354eb517
     repo: https://github.com/octoprint/octoprint
   - type: ECOSYSTEM
@@ -107,4 +104,7 @@ references:
 - type: EVIDENCE
   url: https://github.com/OctoPrint/OctoPrint/security/advisories/GHSA-x7mf-wrh9-r76c
 - type: FIX
-  url: https://github.com/OctoPrint/OctoPrint/commit/779894c1bc6478332d14bc9ed1006df1354eb517
+  url: 
+    https://github.com/OctoPrint/OctoPrint/commit/779894c1bc6478332d14bc9ed1006df1354eb517
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x7mf-wrh9-r76c

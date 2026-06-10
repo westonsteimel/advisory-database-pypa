@@ -3,6 +3,7 @@ modified: 2023-07-19T17:26:16.938508Z
 published: 2023-07-19T15:15:00Z
 aliases:
 - CVE-2022-40896
+- GHSA-mrwq-x4v8-fh7p
 details: A ReDoS issue was discovered in pygments/lexers/smithy.py in pygments through
   2.15.0 via SmithyLexer.
 affected:
@@ -77,6 +78,9 @@ references:
 - type: PACKAGE
   url: https://pypi.org/project/Pygments/
 - type: WEB
-  url: https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages-part-2/
+  url: 
+    https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages-part-2/
 - type: WEB
   url: https://github.com/pygments/pygments/blob/master/pygments/lexers/smithy.py#L61
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mrwq-x4v8-fh7p

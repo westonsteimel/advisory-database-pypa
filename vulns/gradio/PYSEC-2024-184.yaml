@@ -3,6 +3,7 @@ modified: 2025-01-19T04:23:00.017053Z
 published: 2024-06-06T18:15:18Z
 aliases:
 - CVE-2024-4941
+- GHSA-6v6g-j5fq-hpvw
 details: A local file inclusion vulnerability exists in the JSON component of gradio-app/gradio
   version 4.25. The vulnerability arises from improper input validation in the `postprocess()`
   function within `gradio/components/json_component.py`, where a user-controlled string
@@ -564,6 +565,9 @@ references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/39889ce1-298d-4568-aecd-7ae40c2ca58e
 - type: FIX
-  url: https://github.com/gradio-app/gradio/commit/ee1e2942e0a1ae84a08a05464e41c8108a03fa9c
+  url: 
+    https://github.com/gradio-app/gradio/commit/ee1e2942e0a1ae84a08a05464e41c8108a03fa9c
 - type: WEB
   url: https://huntr.com/bounties/39889ce1-298d-4568-aecd-7ae40c2ca58e
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6v6g-j5fq-hpvw

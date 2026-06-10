@@ -26,9 +26,11 @@ references:
 - type: WEB
   url: http://sourceforge.net/forum/forum.php?forum_id=749199
 - type: WEB
-  url: https://www.redhat.com/archives/fedora-package-announce/2007-November/msg00243.html
+  url: 
+    https://www.redhat.com/archives/fedora-package-announce/2007-November/msg00243.html
 - type: WEB
-  url: https://www.redhat.com/archives/fedora-package-announce/2007-November/msg00257.html
+  url: 
+    https://www.redhat.com/archives/fedora-package-announce/2007-November/msg00257.html
 - type: WEB
   url: http://www.securityfocus.com/bid/26227
 - type: ADVISORY
@@ -43,7 +45,10 @@ references:
   url: http://www.vupen.com/english/advisories/2007/3661
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/38143
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9v8h-57gv-qch6
 aliases:
 - CVE-2007-5712
+- GHSA-9v8h-57gv-qch6
 modified: "2021-07-15T02:22:07.728618Z"
 published: "2007-10-30T19:46:00Z"

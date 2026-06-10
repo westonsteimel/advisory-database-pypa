@@ -32,10 +32,14 @@ affected:
   - 1.1.9
 references:
 - type: FIX
-  url: https://github.com/ilanschnell/bsdiff4/commit/49a4cee2feef7deaf9d89e5e793a8824930284d7
+  url: 
+    https://github.com/ilanschnell/bsdiff4/commit/49a4cee2feef7deaf9d89e5e793a8824930284d7
 - type: WEB
   url: https://github.com/ilanschnell/bsdiff4/blob/master/CHANGELOG.txt
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-f8m3-jpxr-hm5x
 aliases:
 - CVE-2020-15904
+- GHSA-f8m3-jpxr-hm5x
 modified: "2020-07-31T16:15:00Z"
 published: "2020-07-22T23:15:00Z"

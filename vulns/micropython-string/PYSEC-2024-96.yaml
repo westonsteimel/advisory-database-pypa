@@ -3,6 +3,7 @@ modified: 2024-09-25T06:23:56.151249Z
 published: 2024-09-17T19:15:00Z
 aliases:
 - CVE-2024-8946
+- GHSA-74qm-4v7r-jw2f
 details: A vulnerability was found in MicroPython 1.23.0. It has been classified as
   critical. Affected is the function mp_vfs_umount of the file extmod/vfs.c of the
   component VFS Unmount Handler. The manipulation leads to heap-based buffer overflow.
@@ -48,4 +49,7 @@ references:
 - type: REPORT
   url: https://github.com/micropython/micropython/issues/13006#issuecomment-1820309455
 - type: FIX
-  url: https://github.com/micropython/micropython/commit/29943546343c92334e8518695a11fc0e2ceea68b
+  url: 
+    https://github.com/micropython/micropython/commit/29943546343c92334e8518695a11fc0e2ceea68b
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-74qm-4v7r-jw2f

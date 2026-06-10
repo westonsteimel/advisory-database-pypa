@@ -91,7 +91,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2012/11/10/1
 - type: ADVISORY
   url: http://rhn.redhat.com/errata/RHSA-2014-1194.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-683w-84m7-p8pw
 aliases:
 - CVE-2012-5497
+- GHSA-683w-84m7-p8pw
 modified: "2021-09-01T08:44:30.107520Z"
 published: "2014-09-30T14:55:00Z"

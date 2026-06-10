@@ -3,6 +3,7 @@ modified: 2023-08-17T03:22:33.522615Z
 published: 2022-07-27T14:15:00Z
 aliases:
 - CVE-2022-34529
+- GHSA-gq4p-4hxv-5rg9
 details: WASM3 v0.5.0 was discovered to contain a segmentation fault via the component
   Compile_Memory_CopyFill.
 affected:
@@ -28,3 +29,5 @@ references:
   url: https://github.com/wasm3/wasm3/issues/337
 - type: REPORT
   url: https://github.com/wasm3/wasm3/issues/337
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gq4p-4hxv-5rg9

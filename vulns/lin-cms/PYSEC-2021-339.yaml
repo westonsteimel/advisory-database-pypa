@@ -4,11 +4,14 @@ details: Improper Authentication in Lin-CMS-Flask v0.1.1 allows remote attackers
   the component 'app/api/cms/user.py'.
 aliases:
 - CVE-2020-18698
+- GHSA-h6r2-pgvx-683c
 modified: '2022-03-16T02:19:49.985623Z'
 published: '2021-08-16T18:15:00Z'
 references:
 - type: REPORT
   url: https://github.com/TaleLin/lin-cms-flask/issues/27
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h6r2-pgvx-683c
 affected:
 - package:
     name: lin-cms

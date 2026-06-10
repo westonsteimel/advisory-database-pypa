@@ -31,18 +31,23 @@ references:
 - type: ADVISORY
   url: http://secunia.com/advisories/31163
 - type: WEB
-  url: http://sourceforge.net/tracker/download.php?group_id=91231&atid=596416&file_id=271779&aid=1925164
+  url: 
+    http://sourceforge.net/tracker/download.php?group_id=91231&atid=596416&file_id=271779&aid=1925164
 - type: WEB
   url: http://osvdb.org/47082
 - type: WEB
-  url: http://sourceforge.net/tracker/index.php?func=detail&aid=1925164&group_id=91231&atid=596416
+  url: 
+    http://sourceforge.net/tracker/index.php?func=detail&aid=1925164&group_id=91231&atid=596416
 - type: ADVISORY
   url: http://secunia.com/advisories/31081
 - type: WEB
   url: http://www.securityfocus.com/bid/30282
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/43878
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9jp4-68vc-r8wq
 aliases:
 - CVE-2008-6547
+- GHSA-9jp4-68vc-r8wq
 modified: "2021-07-16T01:31:20.304490Z"
 published: "2009-03-30T01:30:00Z"

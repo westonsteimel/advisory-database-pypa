@@ -3,6 +3,7 @@ modified: 2024-07-17T23:22:04.987078Z
 published: 2024-07-17T20:15:00Z
 aliases:
 - CVE-2024-39125
+- GHSA-xjgw-ghrx-wfff
 details: Roundup before 2.4.0 allows XSS via a SCRIPT element in an HTTP Referer header.
 affected:
 - package:
@@ -93,3 +94,5 @@ references:
   url: https://www.roundup-tracker.org
 - type: WEB
   url: https://www.roundup-tracker.org/docs/security.html#cve-announcements
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-xjgw-ghrx-wfff

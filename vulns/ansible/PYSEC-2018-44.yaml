@@ -150,7 +150,10 @@ references:
   url: https://usn.ubuntu.com/4072-1/
 - type: WEB
   url: http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00020.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hwrm-63v2-42g4
 aliases:
 - CVE-2018-16837
+- GHSA-hwrm-63v2-42g4
 modified: "2021-07-02T02:41:34.271290Z"
 published: "2018-10-23T15:29:00Z"

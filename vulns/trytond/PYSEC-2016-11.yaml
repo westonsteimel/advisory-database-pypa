@@ -51,7 +51,10 @@ references:
   url: https://bugs.tryton.org/issue5167
 - type: WEB
   url: http://www.tryton.org/posts/security-release-for-issue5167.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c8q5-2j73-qvcc
 aliases:
 - CVE-2015-0861
+- GHSA-c8q5-2j73-qvcc
 modified: "2021-07-05T00:01:27.588881Z"
 published: "2016-04-13T15:59:00Z"

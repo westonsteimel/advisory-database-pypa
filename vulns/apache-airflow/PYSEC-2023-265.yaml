@@ -3,6 +3,7 @@ modified: 2024-11-21T14:22:40.621314Z
 published: 2023-12-21T10:15:00Z
 aliases:
 - CVE-2023-48291
+- GHSA-8f57-wcmg-4jmh
 details: |-
   Apache Airflow, in versions prior to 2.8.0, contains a security vulnerability that allows an authenticated user with limited access to some DAGs, to craft a request that could give the user write access to various DAG resources for DAGs that the user had no access to, thus, enabling the user to clear DAGs they shouldn't.
 
@@ -207,3 +208,5 @@ references:
   url: http://www.openwall.com/lists/oss-security/2023/12/21/1
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2023/12/21/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8f57-wcmg-4jmh

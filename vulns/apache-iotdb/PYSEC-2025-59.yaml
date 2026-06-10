@@ -3,6 +3,7 @@ modified: 2025-07-01T21:22:47.177405Z
 published: 2025-05-14T11:15:47Z
 aliases:
 - CVE-2024-24780
+- GHSA-f4rq-f4j9-f6rm
 details: |-
   Remote Code Execution with untrusted URI of UDF vulnerability in Apache IoTDB. The attacker who has privilege to create UDF can register malicious function from untrusted URI.
 
@@ -37,3 +38,5 @@ references:
   url: https://lists.apache.org/thread/xphtm98v3zsk9vlpfh481m1ry2ctxvmj
 - type: ARTICLE
   url: http://www.openwall.com/lists/oss-security/2025/05/14/2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-f4rq-f4j9-f6rm

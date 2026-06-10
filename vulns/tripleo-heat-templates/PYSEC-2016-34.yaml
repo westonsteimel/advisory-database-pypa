@@ -47,7 +47,10 @@ references:
   url: https://bugzilla.redhat.com/show_bug.cgi?id=1261697
 - type: WEB
   url: https://launchpadlibrarian.net/217268516/CVE-2015-5271_puppet-swift.patch
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8936-44gw-7664
 aliases:
 - CVE-2015-5271
+- GHSA-8936-44gw-7664
 modified: "2021-08-27T03:22:48.421612Z"
 published: "2016-04-15T17:59:00Z"

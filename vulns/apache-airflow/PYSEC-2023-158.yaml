@@ -1,8 +1,9 @@
 id: PYSEC-2023-158
-modified: 2023-09-04T08:29:37.78147Z
+modified: 2023-09-04T08:29:37.781470Z
 published: 2023-08-23T16:15:00Z
 aliases:
 - CVE-2023-40273
+- GHSA-pm87-24wq-r8w9
 details: |
   The session fixation vulnerability allowed the authenticated user to continue accessing Airflow webserver even after the password of the user has been reset by the admin - up until the expiry of the session of the user. Other than manually cleaning the session database (for database session backend), or changing the secure_key and restarting the webserver, there were no mechanisms to force-logout the user (and all other users with that).
 
@@ -193,3 +194,5 @@ references:
   url: https://www.openwall.com/lists/oss-security/2023/08/23/1
 - type: WEB
   url: https://www.openwall.com/lists/oss-security/2023/08/23/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pm87-24wq-r8w9

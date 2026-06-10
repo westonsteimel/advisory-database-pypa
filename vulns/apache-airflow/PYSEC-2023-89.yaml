@@ -49,7 +49,10 @@ references:
   url: https://github.com/apache/airflow/pull/31788
 - type: WEB
   url: https://github.com/apache/airflow/pull/31820
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mjff-wv85-hmcj
 aliases:
 - CVE-2023-35005
+- GHSA-mjff-wv85-hmcj
 modified: "2023-06-19T10:29:28.607914Z"
 published: "2023-06-19T09:15:00Z"

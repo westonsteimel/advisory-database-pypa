@@ -157,7 +157,8 @@ affected:
   - 4.5rc0
 references:
 - type: WEB
-  url: https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.5.1_.2F_4.5.2_.282018-03-06.29
+  url: 
+    https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.5.1_.2F_4.5.2_.282018-03-06.29
 - type: WEB
   url: https://lists.debian.org/debian-lts-announce/2018/03/msg00034.html
 - type: WEB
@@ -166,7 +167,10 @@ references:
   url: https://access.redhat.com/errata/RHSA-2019:2276
 - type: WEB
   url: https://lists.debian.org/debian-lts-announce/2020/07/msg00032.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4mr4-7vjv-9hm6
 aliases:
 - CVE-2018-1000132
+- GHSA-4mr4-7vjv-9hm6
 modified: "2021-08-27T03:22:07.192158Z"
 published: "2018-03-14T13:29:00Z"

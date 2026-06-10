@@ -3,6 +3,7 @@ modified: 2025-06-26T21:23:03.132527Z
 published: 2025-06-24T08:15:24Z
 aliases:
 - CVE-2025-50213
+- GHSA-9r64-3wmc-x8m8
 details: |-
   Failure to Sanitize Special Elements into a Different Plane (Special Element Injection) vulnerability in Apache Airflow Providers Snowflake.
 
@@ -164,3 +165,5 @@ references:
   url: https://github.com/apache/airflow/pull/51734
 - type: WEB
   url: https://lists.apache.org/thread/2kqfmyt2pghg5f6797g8hzvq331v8qx3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9r64-3wmc-x8m8

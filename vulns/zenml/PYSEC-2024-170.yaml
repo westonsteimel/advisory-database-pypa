@@ -3,6 +3,7 @@ modified: 2025-01-18T19:19:08.253212Z
 published: 2024-06-06T19:15:53Z
 aliases:
 - CVE-2024-2171
+- GHSA-vwgf-7f9h-h499
 details: A stored Cross-Site Scripting (XSS) vulnerability was identified in the zenml-io/zenml
   repository, specifically within the 'logo_url' field. By injecting malicious payloads
   into this field, an attacker could send harmful messages to other users, potentially
@@ -164,10 +165,13 @@ references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/cee06a28-7e3b-460b-b504-69add838ebe8
 - type: FIX
-  url: https://github.com/zenml-io/zenml/commit/68bcb3ba60cba9729c9713a49c39502d40fb945e
+  url: 
+    https://github.com/zenml-io/zenml/commit/68bcb3ba60cba9729c9713a49c39502d40fb945e
 - type: FIX
   url: https://huntr.com/bounties/cee06a28-7e3b-460b-b504-69add838ebe8
 - type: REPORT
   url: https://huntr.com/bounties/cee06a28-7e3b-460b-b504-69add838ebe8
 - type: WEB
   url: https://huntr.com/bounties/cee06a28-7e3b-460b-b504-69add838ebe8
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vwgf-7f9h-h499

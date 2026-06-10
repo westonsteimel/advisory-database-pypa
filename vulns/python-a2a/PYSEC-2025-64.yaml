@@ -3,6 +3,7 @@ modified: 2025-07-02T21:23:13.806273Z
 published: 2025-06-17T07:15:18Z
 aliases:
 - CVE-2025-6167
+- GHSA-rp38-pj7h-r8q2
 details: A vulnerability classified as critical has been found in themanojdesai python-a2a
   up to 0.5.5. Affected is the function create_workflow of the file python_a2a/agent_flow/server/api.py.
   The manipulation leads to path traversal. Upgrading to version 0.5.6 is able to
@@ -72,3 +73,5 @@ references:
   url: https://vuldb.com/?id.312642
 - type: WEB
   url: https://vuldb.com/?submit.593613
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rp38-pj7h-r8q2

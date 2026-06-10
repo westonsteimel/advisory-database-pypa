@@ -84,7 +84,10 @@ references:
   url: http://plone.org/products/plone/security/advisories/20130618-announcement
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=978471
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j67j-8hrp-76xm
 aliases:
 - CVE-2013-4195
+- GHSA-j67j-8hrp-76xm
 modified: "2021-07-25T23:34:46.736480Z"
 published: "2014-03-11T19:37:00Z"

@@ -36,7 +36,10 @@ references:
   url: https://bugs.launchpad.net/httplib2/+bug/1175272
 - type: WEB
   url: http://www.securityfocus.com/bid/52179
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-q48q-77qv-cf9p
 aliases:
 - CVE-2013-2037
+- GHSA-q48q-77qv-cf9p
 modified: "2021-08-27T03:42:09.595120Z"
 published: "2014-01-18T21:55:00Z"

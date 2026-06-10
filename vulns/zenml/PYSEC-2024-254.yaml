@@ -3,6 +3,7 @@ modified: 2025-06-13T00:48:41.806476Z
 published: 2024-04-16T00:15:11Z
 aliases:
 - CVE-2024-2260
+- GHSA-g3r5-72hf-p7p2
 details: A session fixation vulnerability exists in the zenml-io/zenml application,
   where JWT tokens used for user authentication are not invalidated upon logout. This
   flaw allows an attacker to bypass authentication mechanisms by reusing a victim's
@@ -162,6 +163,9 @@ references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/2d0856ec-ed73-477a-8ea2-d5d4f15cf167
 - type: FIX
-  url: https://github.com/zenml-io/zenml/commit/68bcb3ba60cba9729c9713a49c39502d40fb945e
+  url: 
+    https://github.com/zenml-io/zenml/commit/68bcb3ba60cba9729c9713a49c39502d40fb945e
 - type: WEB
   url: https://huntr.com/bounties/2d0856ec-ed73-477a-8ea2-d5d4f15cf167
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g3r5-72hf-p7p2

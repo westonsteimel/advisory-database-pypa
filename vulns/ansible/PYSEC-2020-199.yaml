@@ -39,7 +39,10 @@ references:
   url: https://www.securityfocus.com/bid/68232
 - type: WEB
   url: https://github.com/ansible/ansible/blob/release1.5.5/CHANGELOG.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qg47-5px9-32g7
 aliases:
 - CVE-2014-4657
+- GHSA-qg47-5px9-32g7
 modified: "2021-07-02T02:41:33.107799Z"
 published: "2020-02-20T15:15:00Z"

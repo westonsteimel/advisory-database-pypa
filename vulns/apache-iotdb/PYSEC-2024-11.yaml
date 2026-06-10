@@ -3,6 +3,7 @@ modified: 2024-01-22T22:21:02.620877Z
 published: 2024-01-15T11:15:00Z
 aliases:
 - CVE-2023-46226
+- GHSA-rxgg-273w-rfw7
 details: |+
   Remote Code Execution vulnerability in Apache IoTDB.This issue affects Apache IoTDB: from 1.0.0 through 1.2.2.
 
@@ -35,3 +36,5 @@ references:
   url: http://www.openwall.com/lists/oss-security/2024/01/15/1
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2024/01/15/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rxgg-273w-rfw7

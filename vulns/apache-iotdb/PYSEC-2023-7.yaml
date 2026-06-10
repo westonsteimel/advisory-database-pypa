@@ -24,7 +24,10 @@ references:
   url: https://lists.apache.org/thread/3dgvzgstycf8b5hyf4z3n7cqdhcyln3l
 - type: ADVISORY
   url: https://lists.apache.org/thread/3dgvzgstycf8b5hyf4z3n7cqdhcyln3l
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pvjv-386f-c8wh
 aliases:
 - CVE-2023-24831
+- GHSA-pvjv-386f-c8wh
 modified: "2023-05-04T03:49:44.888533Z"
 published: "2023-04-17T07:15:00Z"

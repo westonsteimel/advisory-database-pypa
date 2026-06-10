@@ -3,6 +3,7 @@ modified: 2025-04-09T17:27:26.322333Z
 published: 2025-03-20T10:15:54Z
 aliases:
 - CVE-2025-1474
+- GHSA-4rj2-9gcx-5qhx
 details: In mlflow/mlflow version 2.18, an admin is able to create a new user account
   without setting a password. This vulnerability could lead to security risks, as
   accounts without passwords may be susceptible to unauthorized access. Additionally,
@@ -153,3 +154,5 @@ references:
   url: https://github.com/mlflow/mlflow/commit/149c9e18aa219bc47e86b432e130e467a36f4a17
 - type: WEB
   url: https://huntr.com/bounties/e79f7774-10fe-46b2-b522-e73b748e3b2d
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4rj2-9gcx-5qhx

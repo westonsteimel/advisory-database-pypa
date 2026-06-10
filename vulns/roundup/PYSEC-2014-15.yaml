@@ -82,7 +82,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2013/02/13/8
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/84189
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mccq-3m7h-fjxg
 aliases:
 - CVE-2012-6130
+- GHSA-mccq-3m7h-fjxg
 modified: "2021-07-05T00:01:25.790750Z"
 published: "2014-04-11T15:55:00Z"

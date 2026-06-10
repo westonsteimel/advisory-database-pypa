@@ -165,7 +165,10 @@ references:
   url: https://github.com/apache/airflow/pull/29506
 - type: WEB
   url: https://lists.apache.org/thread/3y83gr0qb8t49ppfk4fb2yk7md8ltq4v
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jchm-fm4q-c2fp
 aliases:
 - CVE-2023-25754
+- GHSA-jchm-fm4q-c2fp
 modified: "2023-06-05T01:12:45.655810Z"
 published: "2023-05-08T12:15:00Z"

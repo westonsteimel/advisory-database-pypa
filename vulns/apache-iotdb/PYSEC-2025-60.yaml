@@ -3,6 +3,7 @@ modified: 2025-07-01T21:22:47.232036Z
 published: 2025-05-14T11:16:28Z
 aliases:
 - CVE-2025-26864
+- GHSA-5fc3-pqf2-57cx
 details: |-
   Exposure of Sensitive Information to an Unauthorized Actor, Insertion of Sensitive Information into Log File vulnerability in the OpenIdAuthorizer of Apache IoTDB.
 
@@ -59,3 +60,5 @@ references:
   url: https://lists.apache.org/thread/2kcjnlypppk8qjh17dpz0jvkcpn6l162
 - type: ARTICLE
   url: http://www.openwall.com/lists/oss-security/2025/05/14/4
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5fc3-pqf2-57cx

@@ -61,7 +61,10 @@ references:
   url: https://access.redhat.com/errata/RHSA-2019:0879
 - type: WEB
   url: https://usn.ubuntu.com/4036-1/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9773-3fqg-8w25
 aliases:
 - CVE-2019-9735
+- GHSA-9773-3fqg-8w25
 modified: "2021-08-27T03:22:08.807010Z"
 published: "2019-03-13T02:29:00Z"

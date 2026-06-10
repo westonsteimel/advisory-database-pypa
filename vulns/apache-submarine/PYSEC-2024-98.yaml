@@ -3,6 +3,7 @@ modified: 2024-09-26T17:22:54.526846Z
 published: 2024-06-12T15:15:00Z
 aliases:
 - CVE-2024-36265
+- GHSA-6q97-8v3g-rpxw
 details: |+
   ** UNSUPPORTED WHEN ASSIGNED ** Incorrect Authorization vulnerability in Apache Submarine Server Core.
 
@@ -33,3 +34,5 @@ references:
   url: https://lists.apache.org/thread/prckhhst19qxof064hsm8cccxtofvflz
 - type: ARTICLE
   url: http://www.openwall.com/lists/oss-security/2024/06/12/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6q97-8v3g-rpxw

@@ -33,12 +33,16 @@ references:
 - type: ARTICLE
   url: https://www.djangoproject.com/weblog/2013/sep/15/security/
 - type: WEB
-  url: http://python.6.x6.nabble.com/Set-a-reasonable-upper-bound-on-password-length-td5032218.html
+  url: 
+    http://python.6.x6.nabble.com/Set-a-reasonable-upper-bound-on-password-length-td5032218.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2013-10/msg00015.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2013-11/msg00035.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4c42-4rxm-x6qf
 aliases:
 - CVE-2013-1443
+- GHSA-4c42-4rxm-x6qf
 modified: "2021-07-15T02:22:08.840916Z"
 published: "2013-09-23T20:55:00Z"

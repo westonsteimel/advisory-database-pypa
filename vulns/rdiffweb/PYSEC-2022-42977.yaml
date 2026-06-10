@@ -102,10 +102,14 @@ affected:
   - 2.4.9
 references:
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/f2a32f2a9f3fb8be1a9432ac3d81d3aacdb13095
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/f2a32f2a9f3fb8be1a9432ac3d81d3aacdb13095
 - type: WEB
   url: https://huntr.dev/bounties/02207c8f-2b15-4a31-a86a-74fd2fca0ed1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-99j5-fvg3-54pm
 aliases:
 - CVE-2022-3327
+- GHSA-99j5-fvg3-54pm
 modified: "2022-11-07T01:10:29.482920Z"
 published: "2022-10-20T00:15:00Z"

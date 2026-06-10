@@ -48,8 +48,11 @@ references:
   url: https://snyk.io/vuln/SNYK-PYTHON-CABOT-609862
 - type: WEB
   url: https://github.com/arachnys/cabot/pull/694
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mqwh-r366-4224
 aliases:
 - CVE-2020-7734
 - SNYK-PYTHON-CABOT-609862
+- GHSA-mqwh-r366-4224
 modified: "2021-08-27T03:21:56.574917Z"
 published: "2020-09-22T08:15:00Z"

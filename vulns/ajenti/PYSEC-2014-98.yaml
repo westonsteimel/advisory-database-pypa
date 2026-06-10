@@ -87,10 +87,14 @@ references:
 - type: WEB
   url: http://www.osvdb.org/102174
 - type: WEB
-  url: http://packetstormsecurity.com/files/124804/Ajenti-1.2.13-Cross-Site-Scripting.html
+  url: 
+    http://packetstormsecurity.com/files/124804/Ajenti-1.2.13-Cross-Site-Scripting.html
 - type: REPORT
   url: https://github.com/Eugeny/ajenti/issues/233
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9crx-p357-5vw8
 aliases:
 - CVE-2014-2260
+- GHSA-9crx-p357-5vw8
 modified: "2021-12-13T06:35:03.047936Z"
 published: "2014-04-30T23:58:00Z"

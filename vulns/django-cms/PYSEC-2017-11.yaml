@@ -60,10 +60,14 @@ references:
 - type: ARTICLE
   url: https://www.django-cms.org/en/blog/2015/06/27/311-3014-release/
 - type: FIX
-  url: https://github.com/divio/django-cms/commit/f77cbc607d6e2a62e63287d37ad320109a2cc78a
+  url: 
+    https://github.com/divio/django-cms/commit/f77cbc607d6e2a62e63287d37ad320109a2cc78a
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2015/06/28/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2pqc-gv8q-pvqv
 aliases:
 - CVE-2015-5081
+- GHSA-2pqc-gv8q-pvqv
 modified: "2021-07-05T00:01:17.665929Z"
 published: "2017-08-18T18:29:00Z"

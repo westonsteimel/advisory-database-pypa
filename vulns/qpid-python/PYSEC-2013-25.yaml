@@ -28,7 +28,10 @@ references:
   url: http://rhn.redhat.com/errata/RHSA-2013-1024.html
 - type: WEB
   url: http://svn.apache.org/viewvc?view=revision&revision=1460013
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3g2p-7c6p-vj8c
 aliases:
 - CVE-2013-1909
+- GHSA-3g2p-7c6p-vj8c
 modified: "2021-07-25T23:34:52.564224Z"
 published: "2013-08-23T16:55:00Z"

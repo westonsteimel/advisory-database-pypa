@@ -34,7 +34,10 @@ references:
   url: http://www.vupen.com/english/advisories/2010/1208
 - type: WEB
   url: http://ubuntu.com/usn/usn-941-1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jj23-fj2v-m872
 aliases:
 - CVE-2009-4762
+- GHSA-jj23-fj2v-m872
 modified: "2010-05-27T05:47:00Z"
 published: "2010-03-29T20:30:00Z"

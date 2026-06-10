@@ -30,7 +30,10 @@ references:
   url: http://docs.saltstack.com/topics/releases/0.17.1.html
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2013/10/18/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v89f-4mc4-h6w9
 aliases:
 - CVE-2013-4435
+- GHSA-v89f-4mc4-h6w9
 modified: "2021-07-05T00:01:25.968572Z"
 published: "2013-11-05T18:55:00Z"

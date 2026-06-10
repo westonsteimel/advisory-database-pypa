@@ -3,6 +3,7 @@ modified: 2025-01-18T22:21:43.678475Z
 published: 2024-07-17T09:15:02Z
 aliases:
 - CVE-2024-31979
+- GHSA-9gr7-gh74-qg9x
 details: "Server-Side Request Forgery (SSRF) vulnerability in Apache StreamPipes during
   installation process of pipeline elements.\nPreviously, StreamPipes allowed users
   to configure custom endpoints from which to install additional pipeline elements.
@@ -35,3 +36,5 @@ references:
   url: https://lists.apache.org/thread/8lryp3bxnby9kmk13odkz2jbfdjfvf0y
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2024/07/16/11
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9gr7-gh74-qg9x

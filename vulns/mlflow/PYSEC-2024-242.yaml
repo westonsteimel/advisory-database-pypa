@@ -3,6 +3,7 @@ modified: 2025-04-08T10:23:24.995743Z
 published: 2024-06-06T19:15:55Z
 aliases:
 - CVE-2024-2928
+- GHSA-j46q-5pxx-8vmw
 details: A Local File Inclusion (LFI) vulnerability was identified in mlflow/mlflow,
   specifically in version 2.9.2, which was fixed in version 2.11.3. This vulnerability
   arises from the application's failure to properly validate URI fragments for directory
@@ -134,3 +135,5 @@ references:
   url: https://huntr.com/bounties/19bf02d7-6393-4a95-b9d0-d6d4d2d8c298
 - type: WEB
   url: https://huntr.com/bounties/19bf02d7-6393-4a95-b9d0-d6d4d2d8c298
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j46q-5pxx-8vmw

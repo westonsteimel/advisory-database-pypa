@@ -65,14 +65,18 @@ references:
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2015/04/09/11
 - type: FIX
-  url: https://github.com/ceph/ceph-deploy/commit/eee56770393bf19ed2dd5389226c6190c08dee3f
+  url: 
+    https://github.com/ceph/ceph-deploy/commit/eee56770393bf19ed2dd5389226c6190c08dee3f
 - type: WEB
   url: http://lists.fedoraproject.org/pipermail/package-announce/2015-April/155576.html
 - type: WEB
   url: http://www.securityfocus.com/bid/74043
 - type: WEB
   url: http://lists.fedoraproject.org/pipermail/package-announce/2015-April/155631.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9w4f-3v37-6f75
 aliases:
 - CVE-2015-3010
+- GHSA-9w4f-3v37-6f75
 modified: "2021-07-05T00:01:17.275200Z"
 published: "2015-06-16T16:59:00Z"

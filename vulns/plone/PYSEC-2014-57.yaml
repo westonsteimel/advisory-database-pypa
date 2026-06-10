@@ -83,7 +83,10 @@ references:
   url: http://seclists.org/oss-sec/2013/q3/261
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=978469
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6fgf-x7wg-hp8r
 aliases:
 - CVE-2013-4193
+- GHSA-6fgf-x7wg-hp8r
 modified: "2021-07-25T23:34:46.454886Z"
 published: "2014-03-11T19:37:00Z"

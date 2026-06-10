@@ -83,7 +83,10 @@ references:
   url: https://github.com/mlflow/mlflow/issues/7166
 - type: REPORT
   url: https://github.com/mlflow/mlflow/issues/7166#issuecomment-1541543234
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wc6j-5g83-xfm6
 aliases:
 - CVE-2023-30172
+- GHSA-wc6j-5g83-xfm6
 modified: "2023-06-05T01:12:55.587142Z"
 published: "2023-05-11T02:15:00Z"

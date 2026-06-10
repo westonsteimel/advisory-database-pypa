@@ -31,10 +31,14 @@ affected:
   - 0.6c9
 references:
 - type: WEB
-  url: http://www.reddit.com/r/Python/comments/17rfh7/warning_dont_use_pip_in_an_untrusted_network_a/
+  url: 
+    http://www.reddit.com/r/Python/comments/17rfh7/warning_dont_use_pip_in_an_untrusted_network_a/
 - type: WEB
   url: https://pypi.python.org/pypi/setuptools/0.9.8#changes
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-27x4-j476-jp5f
 aliases:
 - CVE-2013-1633
+- GHSA-27x4-j476-jp5f
 modified: "2021-07-15T02:22:20.324113Z"
 published: "2013-08-06T02:52:00Z"

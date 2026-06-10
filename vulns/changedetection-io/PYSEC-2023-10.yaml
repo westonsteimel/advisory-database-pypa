@@ -64,7 +64,10 @@ references:
   url: https://github.com/dgtlmoon/changedetection.io/issues/1358
 - type: EVIDENCE
   url: https://www.youtube.com/watch?v=TRTpRlkU3Hc
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-68wj-c2jw-5pp9
 aliases:
 - CVE-2023-24769
+- GHSA-68wj-c2jw-5pp9
 modified: "2023-05-04T03:49:45.088821Z"
 published: "2023-02-17T22:15:00Z"

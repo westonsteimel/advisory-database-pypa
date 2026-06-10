@@ -3,6 +3,7 @@ modified: 2024-04-16T15:20:55.191003Z
 published: 2023-12-07T05:15:00Z
 aliases:
 - CVE-2023-6568
+- GHSA-vwhf-3v6x-wff8
 details: A reflected Cross-Site Scripting (XSS) vulnerability exists in the mlflow/mlflow
   repository, specifically within the handling of the Content-Type header in POST
   requests. An attacker can inject malicious JavaScript code into the Content-Type
@@ -121,3 +122,5 @@ references:
   url: https://huntr.com/bounties/816bdaaa-8153-4732-951e-b0d92fddf709
 - type: FIX
   url: https://github.com/mlflow/mlflow/commit/28ff3f94994941e038f2172c6484b65dc4db6ca1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vwhf-3v6x-wff8

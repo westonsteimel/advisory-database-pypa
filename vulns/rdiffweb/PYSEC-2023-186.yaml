@@ -3,6 +3,7 @@ modified: 2023-10-02T20:24:26.790735Z
 published: 2023-09-29T14:15:00Z
 aliases:
 - CVE-2023-5289
+- GHSA-c4rv-2j6x-pq7x
 details: Allocation of Resources Without Limits or Throttling in GitHub repository
   ikus060/rdiffweb prior to 2.8.4.
 affected:
@@ -155,4 +156,7 @@ references:
 - type: WEB
   url: https://huntr.dev/bounties/8d0e0804-d3fd-49fe-bfa4-7a91135767ce
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/06f89b43469aae70e8833e55192721523f86c5a2
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/06f89b43469aae70e8833e55192721523f86c5a2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c4rv-2j6x-pq7x

@@ -3,6 +3,7 @@ modified: 2024-03-14T11:19:09.515892Z
 published: 2024-03-14T09:15:00Z
 aliases:
 - CVE-2024-28746
+- GHSA-h574-6646-vfxx
 details: |
   Apache Airflow, versions 2.8.0 through 2.8.2, has a vulnerability that allows an authenticated user with limited permissions to access resources such as variables, connections, etc from the UI which they do not have permission to access. 
 
@@ -30,3 +31,5 @@ references:
   url: https://github.com/apache/airflow/pull/37881
 - type: WEB
   url: https://lists.apache.org/thread/b4pffc7w7do6qgk4jjbyxvdz5odrvny7
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h574-6646-vfxx

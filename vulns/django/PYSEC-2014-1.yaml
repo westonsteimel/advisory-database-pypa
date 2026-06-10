@@ -78,7 +78,10 @@ references:
   url: http://lists.opensuse.org/opensuse-updates/2014-09/msg00023.html
 - type: ADVISORY
   url: http://secunia.com/advisories/61281
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rvq6-mrpv-m6rm
 aliases:
 - CVE-2014-0472
+- GHSA-rvq6-mrpv-m6rm
 modified: "2021-07-05T00:01:18.476528Z"
 published: "2014-04-23T15:55:00Z"

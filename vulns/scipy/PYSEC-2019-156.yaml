@@ -42,14 +42,20 @@ references:
 - type: FIX
   url: https://github.com/scipy/scipy/commit/bd296e0336420b840fcd2faabb97084fd252a973
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119759.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119759.html
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119771.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2013-October/119771.html
 - type: WEB
   url: http://www.securityfocus.com/bid/63008
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2013-November/120696.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2013-November/120696.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-xp76-357g-9wqq
 aliases:
 - CVE-2013-4251
+- GHSA-xp76-357g-9wqq
 modified: "2021-07-05T00:01:27.093286Z"
 published: "2019-11-04T20:15:00Z"

@@ -3,6 +3,7 @@ modified: 2025-01-19T04:23:01.784352Z
 published: 2024-11-24T16:15:06Z
 aliases:
 - CVE-2024-53899
+- GHSA-rqc4-2hc7-8c8v
 details: 'virtualenv before 20.26.6 allows command injection through the activation
   scripts for a virtual environment. Magic template strings are not quoted correctly
   when replacing. NOTE: this is not the same as CVE-2024-9287.'
@@ -249,3 +250,5 @@ references:
   url: https://github.com/pypa/virtualenv/pull/2771
 - type: WEB
   url: https://github.com/pypa/virtualenv/releases/tag/20.26.6
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rqc4-2hc7-8c8v

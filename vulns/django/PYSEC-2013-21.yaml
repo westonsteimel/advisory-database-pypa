@@ -59,7 +59,10 @@ references:
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/86437
 - type: ADVISORY
   url: http://www.debian.org/security/2013/dsa-2740
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9cwg-mhxf-hh59
 aliases:
 - CVE-2013-6044
+- GHSA-9cwg-mhxf-hh59
 modified: "2021-07-15T02:22:09.088856Z"
 published: "2013-10-04T17:55:00Z"

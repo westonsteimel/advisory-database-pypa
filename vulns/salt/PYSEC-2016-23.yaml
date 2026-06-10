@@ -22,7 +22,10 @@ references:
   url: http://lists.opensuse.org/opensuse-updates/2016-03/msg00034.html
 - type: WEB
   url: https://docs.saltstack.com/en/latest/topics/releases/2015.8.4.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vqh4-crjf-jjxx
 aliases:
 - CVE-2016-1866
+- GHSA-vqh4-crjf-jjxx
 modified: "2021-07-25T23:34:53.906248Z"
 published: "2016-04-12T14:59:00Z"

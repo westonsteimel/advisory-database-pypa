@@ -34,7 +34,10 @@ references:
   url: http://www.debian.org/security/2016/dsa-3715
 - type: WEB
   url: http://www.securityfocus.com/bid/94501
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5fq5-pfv8-mrfv
 aliases:
 - CVE-2016-9119
+- GHSA-5fq5-pfv8-mrfv
 modified: "2021-07-05T00:01:23.049637Z"
 published: "2017-01-30T22:59:00Z"

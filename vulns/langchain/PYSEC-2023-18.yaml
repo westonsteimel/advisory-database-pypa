@@ -154,7 +154,10 @@ references:
   url: https://github.com/hwchase17/langchain/issues/814
 - type: REPORT
   url: https://github.com/hwchase17/langchain/issues/1026
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fprp-p869-w6q2
 aliases:
 - CVE-2023-29374
+- GHSA-fprp-p869-w6q2
 modified: "2023-05-04T03:49:46.000016Z"
 published: "2023-04-05T02:15:00Z"

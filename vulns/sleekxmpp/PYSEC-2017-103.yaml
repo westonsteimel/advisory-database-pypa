@@ -6,15 +6,18 @@ details: 'An incorrect implementation of "XEP-0280: Message Carbons" in multiple
   as bundled in poezio (0.8 - 0.10) and other products.'
 aliases:
 - CVE-2017-5591
+- GHSA-c35g-jr5f-h83p
 modified: '2021-12-14T08:19:29.328413Z'
 published: '2017-02-09T20:59:00Z'
 references:
 - type: WEB
-  url: https://rt-solutions.de/wp-content/uploads/2017/02/CVE-2017-5589_xmpp_carbons.pdf
+  url: 
+    https://rt-solutions.de/wp-content/uploads/2017/02/CVE-2017-5589_xmpp_carbons.pdf
 - type: WEB
   url: https://rt-solutions.de/en/2017/02/CVE-2017-5589_xmpp_carbons/
 - type: FIX
-  url: https://github.com/poezio/slixmpp/commit/22664ee7b86c8e010f312b66d12590fb47160ad8
+  url: 
+    https://github.com/poezio/slixmpp/commit/22664ee7b86c8e010f312b66d12590fb47160ad8
 - type: WEB
   url: http://openwall.com/lists/oss-security/2017/02/09/29
 - type: WEB
@@ -23,6 +26,8 @@ references:
   url: https://pypi.org/project/sleekxmpp
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2017-5591
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c35g-jr5f-h83p
 affected:
 - package:
     name: sleekxmpp

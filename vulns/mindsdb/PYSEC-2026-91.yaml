@@ -583,6 +583,7 @@ affected:
   - 25.9.3rc1
 aliases:
 - CVE-2026-2531
+- GHSA-6xw9-2p64-7622
 details: A security vulnerability has been detected in MindsDB up to 25.14.1. This
   vulnerability affects the function clear_filename of the file mindsdb/utilities/security.py
   of the component File Upload. Such manipulation leads to server-side request forgery.
@@ -606,7 +607,10 @@ references:
 - type: FIX
   url: https://github.com/mindsdb/mindsdb/pull/12213
 - type: FIX
-  url: https://github.com/themavik/mindsdb/commit/74d6f0fd4b630218519a700fbee1c05c7fd4b1ed
+  url: 
+    https://github.com/themavik/mindsdb/commit/74d6f0fd4b630218519a700fbee1c05c7fd4b1ed
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6xw9-2p64-7622
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L
   type: CVSS_V3

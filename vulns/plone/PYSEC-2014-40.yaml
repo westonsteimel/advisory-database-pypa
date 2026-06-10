@@ -94,7 +94,10 @@ references:
   url: https://plone.org/products/plone/security/advisories/20121106/14
 - type: ADVISORY
   url: http://rhn.redhat.com/errata/RHSA-2014-1194.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-97rj-p794-wq6m
 aliases:
 - CVE-2012-5498
+- GHSA-97rj-p794-wq6m
 modified: "2021-09-01T08:44:30.217052Z"
 published: "2014-09-30T14:55:00Z"

@@ -3,6 +3,7 @@ modified: 2024-10-08T19:19:01.400873Z
 published: 2024-10-08T16:15:00Z
 aliases:
 - CVE-2024-45230
+- GHSA-5hgc-2vfp-mqvc
 details: An issue was discovered in Django 5.1 before 5.1.1, 5.0 before 5.0.9, and
   4.2 before 4.2.16. The urlize() and urlizetrunc() template filters are subject to
   a potential denial-of-service attack via very large inputs with a specific sequence
@@ -55,3 +56,5 @@ references:
   url: https://groups.google.com/forum/#%21forum/django-announce
 - type: ARTICLE
   url: https://www.djangoproject.com/weblog/2024/sep/03/security-releases/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5hgc-2vfp-mqvc

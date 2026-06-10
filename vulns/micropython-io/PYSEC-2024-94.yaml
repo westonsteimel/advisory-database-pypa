@@ -3,6 +3,7 @@ modified: 2024-09-25T06:23:55.930133Z
 published: 2024-09-17T19:15:00Z
 aliases:
 - CVE-2024-8947
+- GHSA-pwwp-3q7j-9mx8
 details: A vulnerability was found in MicroPython 1.22.2. It has been declared as
   critical. Affected by this vulnerability is an unknown functionality of the file
   py/objarray.c. The manipulation leads to use after free. The attack can be launched
@@ -49,6 +50,9 @@ references:
 - type: REPORT
   url: https://github.com/micropython/micropython/issues/13283#issuecomment-1918479709
 - type: FIX
-  url: https://github.com/micropython/micropython/commit/4bed614e707c0644c06e117f848fa12605c711cd
+  url: 
+    https://github.com/micropython/micropython/commit/4bed614e707c0644c06e117f848fa12605c711cd
 - type: WEB
   url: https://github.com/micropython/micropython/releases/tag/v1.23.0
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pwwp-3q7j-9mx8

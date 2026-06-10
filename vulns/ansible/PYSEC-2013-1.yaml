@@ -25,7 +25,10 @@ references:
   url: http://www.ansible.com/security
 - type: WEB
   url: https://groups.google.com/forum/#!topic/ansible-project/UVDYW0HGcNg
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fj24-ghp9-39v3
 aliases:
 - CVE-2013-4259
+- GHSA-fj24-ghp9-39v3
 modified: "2021-07-02T02:41:32.926386Z"
 published: "2013-09-16T19:14:00Z"

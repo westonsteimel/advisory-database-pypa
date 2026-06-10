@@ -46,7 +46,10 @@ references:
   url: https://www.brzozowski.io
 - type: ARTICLE
   url: https://octoprint.org/blog/2021/04/27/new-release-1.6.0/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x9rq-fjp5-qgm9
 aliases:
 - CVE-2021-32560
+- GHSA-x9rq-fjp5-qgm9
 modified: "2021-05-11T15:18:00Z"
 published: "2021-05-11T14:15:00Z"

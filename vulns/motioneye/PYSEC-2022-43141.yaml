@@ -3,6 +3,7 @@ modified: 2024-11-21T14:22:55.422153Z
 published: 2022-03-24T17:15:00Z
 aliases:
 - CVE-2022-25568
+- GHSA-2c7w-v459-cwgf
 details: MotionEye v0.42.1 and below allows attackers to access sensitive information
   via a GET request to /config/list. To exploit this vulnerability, a regular user
   password must be unconfigured.
@@ -83,3 +84,5 @@ references:
   url: https://www.pizzapower.me/2022/02/17/motioneye-config-info-disclosure/
 - type: REPORT
   url: https://github.com/ccrisan/motioneye/issues/2292
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2c7w-v459-cwgf

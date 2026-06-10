@@ -3,6 +3,7 @@ details: A refcounting issue which leads to potential memory leak was discovered
   scipy commit 8627df31ab in Py_FindObjects() function.
 aliases:
 - CVE-2023-25399
+- GHSA-9jx5-6pgf-crrp
 modified: '2023-08-17T13:32:44.929651Z'
 published: '2023-07-05T17:15:00Z'
 references:
@@ -18,6 +19,8 @@ references:
   url: https://github.com/scipy/scipy/pull/16397
 - type: WEB
   url: http://www.square16.org/achievement/cve-2023-25399/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9jx5-6pgf-crrp
 affected:
 - package:
     name: scipy

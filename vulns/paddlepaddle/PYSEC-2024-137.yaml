@@ -1,8 +1,9 @@
 id: PYSEC-2024-137
-modified: 2024-11-21T14:22:57.84484Z
+modified: 2024-11-21T14:22:57.844840Z
 published: 2024-01-03T09:15:00Z
 aliases:
 - CVE-2023-52305
+- GHSA-rx2r-q96c-w5cc
 details: |+
   FPE in paddle.topk in PaddlePaddle before 2.6.0. This flaw can cause a runtime crash and a denial of service.
 
@@ -37,6 +38,10 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
 references:
 - type: FIX
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-014.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-014.md
 - type: ADVISORY
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-014.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-014.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rx2r-q96c-w5cc

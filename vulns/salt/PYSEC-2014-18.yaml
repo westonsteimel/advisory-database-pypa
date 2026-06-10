@@ -81,7 +81,10 @@ references:
   url: http://www.securityfocus.com/bid/69319
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/95392
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mfr3-9cj8-h2qm
 aliases:
 - CVE-2014-3563
+- GHSA-mfr3-9cj8-h2qm
 modified: "2021-07-05T00:01:26.140564Z"
 published: "2014-08-22T17:55:00Z"

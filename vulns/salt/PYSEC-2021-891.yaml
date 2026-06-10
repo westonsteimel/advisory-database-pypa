@@ -3,6 +3,7 @@ modified: 2025-04-09T17:27:27.582884Z
 published: 2021-03-03T10:15:13Z
 aliases:
 - CVE-2021-25315
+- GHSA-pmj6-9f8c-8g2m
 details: 'CWE - CWE-287: Improper Authentication vulnerability in SUSE Linux Enterprise
   Server 15 SP 3; openSUSE Tumbleweed allows local attackers to execute arbitrary
   code via salt without the need to specify valid credentials. This issue affects:
@@ -217,3 +218,5 @@ references:
   url: https://bugzilla.suse.com/show_bug.cgi?id=1182382
 - type: REPORT
   url: https://bugzilla.suse.com/show_bug.cgi?id=1182382
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pmj6-9f8c-8g2m

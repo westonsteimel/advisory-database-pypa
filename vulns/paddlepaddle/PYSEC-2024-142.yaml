@@ -3,6 +3,7 @@ modified: 2024-11-21T14:22:58.166295Z
 published: 2024-01-03T09:15:00Z
 aliases:
 - CVE-2023-52310
+- GHSA-j5h9-9r39-43q5
 details: |+
   PaddlePaddle before 2.6.0 has a command injection in get_online_pass_interval. This resulted in the ability to execute arbitrary commands on the operating system.
 
@@ -41,6 +42,10 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 references:
 - type: FIX
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-019.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-019.md
 - type: ADVISORY
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-019.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-019.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j5h9-9r39-43q5

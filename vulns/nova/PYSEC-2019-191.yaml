@@ -49,7 +49,10 @@ references:
   url: https://access.redhat.com/errata/RHSA-2019:2631
 - type: ADVISORY
   url: https://access.redhat.com/errata/RHSA-2019:2652
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pg64-r7rr-phv8
 aliases:
 - CVE-2019-14433
+- GHSA-pg64-r7rr-phv8
 modified: "2021-08-27T03:22:09.327110Z"
 published: "2019-08-09T19:15:00Z"

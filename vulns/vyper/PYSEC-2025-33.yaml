@@ -3,8 +3,6 @@ modified: 2025-04-23T21:23:01.322686Z
 published: 2025-01-14T18:16:05Z
 aliases:
 - CVE-2025-21607
-related:
-- GHSA-vgf2-gvx8-xwc3
 - GHSA-vgf2-gvx8-xwc3
 details: Vyper is a Pythonic Smart Contract Language for the EVM. When the Vyper Compiler
   uses the precompiles EcRecover (0x1) and Identity (0x4), the success flag of the
@@ -104,3 +102,5 @@ references:
   url: https://github.com/vyperlang/vyper/security/advisories/GHSA-vgf2-gvx8-xwc3
 - type: EVIDENCE
   url: https://github.com/vyperlang/vyper/security/advisories/GHSA-vgf2-gvx8-xwc3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vgf2-gvx8-xwc3

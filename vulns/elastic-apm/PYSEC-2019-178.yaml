@@ -44,8 +44,12 @@ references:
 - type: WEB
   url: https://www.elastic.co/community/security/
 - type: WEB
-  url: https://discuss.elastic.co/t/elastic-apm-agent-for-python-5-1-0-security-update/196145
+  url: 
+    https://discuss.elastic.co/t/elastic-apm-agent-for-python-5-1-0-security-update/196145
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-22jh-6gx8-f944
 aliases:
 - CVE-2019-7617
+- GHSA-22jh-6gx8-f944
 modified: "2021-08-27T03:22:03.550445Z"
 published: "2019-08-22T17:15:00Z"

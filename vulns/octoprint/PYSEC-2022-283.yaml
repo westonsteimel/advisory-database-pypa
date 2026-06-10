@@ -65,8 +65,12 @@ references:
 - type: WEB
   url: https://huntr.dev/bounties/f45c24cb-9104-4c6e-a9e1-5c7e75e83884
 - type: FIX
-  url: https://github.com/octoprint/octoprint/commit/ef95ef1c101b79394f134e8fce000e6bae046571
+  url: 
+    https://github.com/octoprint/octoprint/commit/ef95ef1c101b79394f134e8fce000e6bae046571
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2p75-q37p-f852
 aliases:
 - CVE-2022-3068
+- GHSA-2p75-q37p-f852
 modified: "2022-09-22T17:04:30.556436Z"
 published: "2022-09-21T12:15:00Z"

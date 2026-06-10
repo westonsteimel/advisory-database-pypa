@@ -58,6 +58,7 @@ affected:
   - 4.0.0a0
 aliases:
 - CVE-2024-1681
+- GHSA-84pr-m4jr-85g5
 details: corydolphin/flask-cors is vulnerable to log injection when the log level
   is set to debug. An attacker can inject fake log entries into the log file by sending
   a specially crafted GET request containing a CRLF sequence in the request path.
@@ -72,6 +73,8 @@ references:
   url: https://lists.debian.org/debian-lts-announce/2025/05/msg00049.html
 - type: EVIDENCE
   url: https://huntr.com/bounties/25a7a0ba-9fa2-4777-acb6-03e5539bb644
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-84pr-m4jr-85g5
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
   type: CVSS_V3

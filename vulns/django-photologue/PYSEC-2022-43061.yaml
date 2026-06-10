@@ -3,6 +3,7 @@ modified: 2023-11-07T20:24:24.147635Z
 published: 2022-12-15T21:15:00Z
 aliases:
 - CVE-2022-4526
+- GHSA-287q-jfcp-9vhv
 details: A vulnerability was found in django-photologue up to 3.15.1 and classified
   as problematic. Affected by this issue is some unknown functionality of the file
   photologue/templates/photologue/photo_detail.html of the component Default Template
@@ -67,8 +68,11 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
 references:
 - type: FIX
-  url: https://github.com/richardbarran/django-photologue/commit/960cb060ce5e2964e6d716ff787c72fc18a371e7
+  url: 
+    https://github.com/richardbarran/django-photologue/commit/960cb060ce5e2964e6d716ff787c72fc18a371e7
 - type: REPORT
   url: https://github.com/richardbarran/django-photologue/issues/223
 - type: WEB
   url: https://vuldb.com/?id.215906
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-287q-jfcp-9vhv

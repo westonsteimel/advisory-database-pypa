@@ -43,7 +43,10 @@ affected:
 references:
 - type: WEB
   url: https://www.linotp.org/CVE-2019-12887.txt
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rqg8-xjp2-pg9w
 aliases:
 - CVE-2019-12887
+- GHSA-rqg8-xjp2-pg9w
 modified: "2020-08-24T17:37:00Z"
 published: "2019-06-27T14:15:00Z"

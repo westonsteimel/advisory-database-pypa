@@ -81,7 +81,8 @@ affected:
   - 2.0.3
 references:
 - type: FIX
-  url: https://github.com/modoboa/modoboa/commit/47d17ac6643f870719691073956a26e4be0a4806
+  url: 
+    https://github.com/modoboa/modoboa/commit/47d17ac6643f870719691073956a26e4be0a4806
 - type: EVIDENCE
   url: https://huntr.dev/bounties/a17e7a9f-0fee-4130-a522-5a0466fc17c7
 - type: REPORT
@@ -90,7 +91,10 @@ references:
   url: https://huntr.dev/bounties/a17e7a9f-0fee-4130-a522-5a0466fc17c7
 - type: WEB
   url: https://huntr.dev/bounties/a17e7a9f-0fee-4130-a522-5a0466fc17c7
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rfhw-fm4m-52j6
 aliases:
 - CVE-2023-0777
+- GHSA-rfhw-fm4m-52j6
 modified: "2023-05-04T03:49:46.777940Z"
 published: "2023-02-10T19:15:00Z"

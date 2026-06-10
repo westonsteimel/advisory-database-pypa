@@ -3,6 +3,7 @@ modified: 2025-01-18T19:19:08.205431Z
 published: 2024-06-06T19:15:53Z
 aliases:
 - CVE-2024-2035
+- GHSA-9x88-4jg8-4vf7
 details: An improper authorization vulnerability exists in the zenml-io/zenml repository,
   specifically within the API PUT /api/v1/users/id endpoint. This vulnerability allows
   any authenticated user to modify the information of other users, including changing
@@ -165,10 +166,13 @@ references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/1cfc6493-082e-4229-9f2f-496801a6557c
 - type: FIX
-  url: https://github.com/zenml-io/zenml/commit/b95f083efffa56831cd41d8ed536aeb0b6038fa3
+  url: 
+    https://github.com/zenml-io/zenml/commit/b95f083efffa56831cd41d8ed536aeb0b6038fa3
 - type: FIX
   url: https://huntr.com/bounties/1cfc6493-082e-4229-9f2f-496801a6557c
 - type: REPORT
   url: https://huntr.com/bounties/1cfc6493-082e-4229-9f2f-496801a6557c
 - type: WEB
   url: https://huntr.com/bounties/1cfc6493-082e-4229-9f2f-496801a6557c
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9x88-4jg8-4vf7

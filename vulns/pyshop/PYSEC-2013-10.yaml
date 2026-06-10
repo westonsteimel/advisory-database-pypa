@@ -27,12 +27,17 @@ affected:
   - "0.7"
 references:
 - type: WEB
-  url: http://www.reddit.com/r/Python/comments/17rfh7/warning_dont_use_pip_in_an_untrusted_network_a/
+  url: 
+    http://www.reddit.com/r/Python/comments/17rfh7/warning_dont_use_pip_in_an_untrusted_network_a/
 - type: WEB
   url: https://github.com/mardiros/pyshop/blob/master/CHANGES.txt
 - type: FIX
-  url: https://github.com/mardiros/pyshop/commit/ffadb0bcdef1e385884571670210cfd6ba351784
+  url: 
+    https://github.com/mardiros/pyshop/commit/ffadb0bcdef1e385884571670210cfd6ba351784
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-f594-f3v3-g649
 aliases:
 - CVE-2013-1630
+- GHSA-f594-f3v3-g649
 modified: "2021-07-05T00:01:25.257414Z"
 published: "2013-08-06T02:52:00Z"

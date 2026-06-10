@@ -99,7 +99,10 @@ references:
   url: https://bugs.tryton.org/issue2476
 - type: WEB
   url: http://hg.tryton.org/trytond/rev/8e64d52ecea4
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cqg4-rf29-3mv6
 aliases:
 - CVE-2012-0215
+- GHSA-cqg4-rf29-3mv6
 modified: "2021-07-05T00:01:27.407587Z"
 published: "2012-07-12T20:55:00Z"

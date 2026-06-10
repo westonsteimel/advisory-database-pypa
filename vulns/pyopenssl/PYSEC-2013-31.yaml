@@ -35,7 +35,10 @@ references:
   url: http://www.debian.org/security/2013/dsa-2763
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2013-11/msg00015.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6748-36qp-fx6r
 aliases:
 - CVE-2013-4314
+- GHSA-6748-36qp-fx6r
 modified: "2021-08-27T03:22:17.495539Z"
 published: "2013-09-30T21:55:00Z"

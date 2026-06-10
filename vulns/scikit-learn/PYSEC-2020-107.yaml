@@ -67,8 +67,12 @@ references:
 - type: WEB
   url: https://github.com/0FuzzingQ/vuln/blob/master/sklearn%20unserialize.md
 - type: WEB
-  url: https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  url: 
+    https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jjw5-xxj6-pcv5
 aliases:
 - CVE-2020-13092
+- GHSA-jjw5-xxj6-pcv5
 modified: "2020-05-19T19:05:00Z"
 published: "2020-05-15T19:15:00Z"

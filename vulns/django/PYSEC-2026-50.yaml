@@ -32,6 +32,7 @@ affected:
   - 6.0.4
 aliases:
 - CVE-2026-35192
+- GHSA-7h2m-m8vj-598h
 details: |-
   An issue was discovered in 6.0 before 6.0.5 and 5.2 before 5.2.14.
   Response headers do not vary on cookies if a session is not modified, but `SESSION_SAVE_EVERY_REQUEST` is `True`. A remote attacker can steal a user's session after that user visits a cached public page.
@@ -47,6 +48,8 @@ references:
   url: https://groups.google.com/g/django-announce
 - type: ADVISORY
   url: https://www.djangoproject.com/weblog/2026/may/05/security-releases/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-7h2m-m8vj-598h
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N
   type: CVSS_V3

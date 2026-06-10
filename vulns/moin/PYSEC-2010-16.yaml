@@ -59,7 +59,10 @@ references:
   url: http://moinmo.in/SecurityFixes
 - type: WEB
   url: http://hg.moinmo.in/moin/1.8/rev/4238b0c90871
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5m2m-27cg-7v4v
 aliases:
 - CVE-2010-2487
+- GHSA-5m2m-27cg-7v4v
 modified: "2021-07-16T01:31:23.671563Z"
 published: "2010-08-05T13:22:00Z"

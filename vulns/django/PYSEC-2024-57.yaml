@@ -3,6 +3,7 @@ modified: 2024-07-10T11:20:07.604887Z
 published: 2024-07-10T05:15:00Z
 aliases:
 - CVE-2024-39329
+- GHSA-x7q2-wr7g-xqmf
 details: An issue was discovered in Django 5.0 before 5.0.7 and 4.2 before 4.2.14.
   The django.contrib.auth.backends.ModelBackend.authenticate() method allows remote
   attackers to enumerate users via a timing attack involving login requests for users
@@ -48,3 +49,5 @@ references:
   url: https://groups.google.com/forum/#%21forum/django-announce
 - type: ARTICLE
   url: https://www.djangoproject.com/weblog/2024/jul/09/security-releases/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x7q2-wr7g-xqmf

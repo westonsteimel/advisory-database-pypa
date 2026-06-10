@@ -3,11 +3,14 @@ details: An issue discovered in esptool 4.6.2 allows attackers to view sensitive
   via weak cryptographic algorithm.
 aliases:
 - CVE-2023-46894
+- GHSA-3f38-96qm-r3fw
 modified: '2024-01-02T13:04:16.284694Z'
 published: '2023-11-09T16:15:00Z'
 references:
 - type: EVIDENCE
   url: https://github.com/espressif/esptool/issues/926
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3f38-96qm-r3fw
 affected:
 - package:
     name: esptool

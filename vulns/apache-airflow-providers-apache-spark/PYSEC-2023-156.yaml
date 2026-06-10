@@ -3,6 +3,7 @@ modified: 2023-09-01T18:27:11.679668Z
 published: 2023-08-28T08:15:00Z
 aliases:
 - CVE-2023-40195
+- GHSA-8q28-pw9g-w82c
 details: "Deserialization of Untrusted Data, Inclusion of Functionality from Untrusted
   Control Sphere vulnerability in Apache Software Foundation Apache Airflow Spark
   Provider.\n\nWhen the Apache Spark provider is installed on an Airflow deployment,
@@ -78,3 +79,5 @@ references:
   url: https://lists.apache.org/thread/fzy95b1d6zv31j5wrx3znhzcscck2o24
 - type: FIX
   url: https://github.com/apache/airflow/pull/33233
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8q28-pw9g-w82c

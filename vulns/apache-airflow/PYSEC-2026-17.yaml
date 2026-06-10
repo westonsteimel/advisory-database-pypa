@@ -32,6 +32,7 @@ affected:
   - 3.1.8rc2
 aliases:
 - CVE-2026-30911
+- GHSA-8x34-9q3v-h7g8
 details: |-
   Apache Airflow versions 3.1.0 through 3.1.7 missing authorization vulnerability in the Execution API's Human-in-the-Loop (HITL) endpoints that allows any authenticated task instance to read, approve, or reject HITL workflows belonging to any other task instance.
 
@@ -47,6 +48,8 @@ references:
   url: https://lists.apache.org/thread/1rs2v7fcko2otl6n9ytthcj87cmsgx51
 - type: FIX
   url: https://github.com/apache/airflow/pull/62886
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8x34-9q3v-h7g8
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N
   type: CVSS_V3

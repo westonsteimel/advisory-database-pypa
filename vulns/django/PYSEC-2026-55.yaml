@@ -32,6 +32,7 @@ affected:
   - 6.0.4
 aliases:
 - CVE-2026-6907
+- GHSA-5hrc-gvxj-w55p
 details: |-
   An issue was discovered in 6.0 before 6.0.5 and 5.2 before 5.2.14.
   `django.middleware.cache.UpdateCacheMiddleware` erroneously caches requests where the `Vary` header contained an asterisk (`'*'`). This can lead to private data being stored and served.
@@ -47,6 +48,8 @@ references:
   url: https://groups.google.com/g/django-announce
 - type: ADVISORY
   url: https://www.djangoproject.com/weblog/2026/may/05/security-releases/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5hrc-gvxj-w55p
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
   type: CVSS_V3

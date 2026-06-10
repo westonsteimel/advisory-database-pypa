@@ -3,6 +3,7 @@ details: The package joblib from 0 and before 1.2.0 are vulnerable to Arbitrary 
   Execution via the pre_dispatch flag in Parallel() class due to the eval() statement.
 aliases:
 - CVE-2022-21797
+- GHSA-6hrg-qmvc-2xh8
 modified: '2022-10-10T13:42:48.035346Z'
 published: '2022-09-26T05:15:00Z'
 references:
@@ -14,6 +15,8 @@ references:
   url: https://github.com/joblib/joblib/pull/1321
 - type: WEB
   url: https://security.snyk.io/vuln/SNYK-PYTHON-JOBLIB-3027033
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6hrg-qmvc-2xh8
 affected:
 - package:
     name: joblib

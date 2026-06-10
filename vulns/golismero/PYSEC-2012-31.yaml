@@ -12,6 +12,7 @@ affected:
   - 2.0.3-1
 aliases:
 - CVE-2012-0054
+- GHSA-vwxc-3cfr-37jq
 details: libs/updater.py in GoLismero 0.6.3, and other versions before Git revision
   2b3bb43d6867, as used in backtrack and possibly other products, allows local users
   to overwrite arbitrary files via a symlink attack on GoLismero-controlled files,
@@ -27,5 +28,8 @@ references:
 - type: WEB
   url: http://www.osvdb.org/78472
 - type: WEB
-  url: http://code.google.com/p/golismero/source/detail?r=2b3bb43d68676efd687361f7de29380189031ab8
+  url: 
+    http://code.google.com/p/golismero/source/detail?r=2b3bb43d68676efd687361f7de29380189031ab8
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vwxc-3cfr-37jq
 withdrawn: '2024-11-22T04:37:04Z'

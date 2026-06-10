@@ -1,10 +1,8 @@
 id: PYSEC-2024-249
-modified: 2025-05-19T11:22:35.31228Z
+modified: 2025-05-19T11:22:35.312280Z
 published: 2024-02-22T22:15:47Z
 aliases:
 - CVE-2024-26152
-related:
-- GHSA-6xv9-957j-qfhg
 - GHSA-6xv9-957j-qfhg
 details: |
   ### Summary
@@ -59,7 +57,6 @@ affected:
   - type: GIT
     events:
     - introduced: "0"
-    - fixed: 5df9ae3828b98652e9fa290a19f4deedf51ef6c8
     - fixed: 5df9ae3828b98652e9fa290a19f4deedf51ef6c8
     repo: https://github.com/humansignal/label-studio
   - type: ECOSYSTEM
@@ -151,12 +148,17 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
 references:
 - type: ADVISORY
-  url: https://github.com/HumanSignal/label-studio/security/advisories/GHSA-6xv9-957j-qfhg
+  url: 
+    https://github.com/HumanSignal/label-studio/security/advisories/GHSA-6xv9-957j-qfhg
 - type: EVIDENCE
-  url: https://github.com/HumanSignal/label-studio/security/advisories/GHSA-6xv9-957j-qfhg
+  url: 
+    https://github.com/HumanSignal/label-studio/security/advisories/GHSA-6xv9-957j-qfhg
 - type: FIX
-  url: https://github.com/HumanSignal/label-studio/commit/5df9ae3828b98652e9fa290a19f4deedf51ef6c8
+  url: 
+    https://github.com/HumanSignal/label-studio/commit/5df9ae3828b98652e9fa290a19f4deedf51ef6c8
 - type: FIX
   url: https://github.com/HumanSignal/label-studio/pull/5232
 - type: WEB
   url: https://github.com/HumanSignal/label-studio/releases/tag/1.11.0
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6xv9-957j-qfhg

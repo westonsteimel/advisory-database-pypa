@@ -48,7 +48,8 @@ references:
 - type: ADVISORY
   url: http://www.ubuntu.com/usn/USN-2168-1
 - type: FIX
-  url: https://github.com/python-imaging/Pillow/commit/4e9f367dfd3f04c8f5d23f7f759ec12782e10ee7
+  url: 
+    https://github.com/python-imaging/Pillow/commit/4e9f367dfd3f04c8f5d23f7f759ec12782e10ee7
 - type: WEB
   url: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=737059
 - type: WEB
@@ -57,7 +58,10 @@ references:
   url: http://www.securityfocus.com/bid/65511
 - type: ADVISORY
   url: https://security.gentoo.org/glsa/201612-52
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x895-2wrm-hvp7
 aliases:
 - CVE-2014-1932
+- GHSA-x895-2wrm-hvp7
 modified: "2021-07-15T02:22:16.928376Z"
 published: "2014-04-17T14:55:00Z"

@@ -3,6 +3,7 @@ modified: 2024-10-11T17:21:29.672975Z
 published: 2024-06-06T19:15:00Z
 aliases:
 - CVE-2024-2032
+- GHSA-c546-8jmq-hprj
 details: A race condition vulnerability exists in zenml-io/zenml versions up to and
   including 0.55.3, which allows for the creation of multiple users with the same
   username when requests are sent in parallel. This issue was fixed in version 0.55.5.
@@ -163,4 +164,7 @@ references:
 - type: WEB
   url: https://huntr.com/bounties/6199cd5d-611f-4ea9-96c5-52a952ba5a56
 - type: FIX
-  url: https://github.com/zenml-io/zenml/commit/afcaf741ef9114c9b32f722f101b97de3d8d147b
+  url: 
+    https://github.com/zenml-io/zenml/commit/afcaf741ef9114c9b32f722f101b97de3d8d147b
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c546-8jmq-hprj

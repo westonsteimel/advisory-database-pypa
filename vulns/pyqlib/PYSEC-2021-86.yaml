@@ -26,8 +26,11 @@ references:
   url: https://github.com/418sec/huntr/pull/1329
 - type: ADVISORY
   url: https://snyk.io/vuln/SNYK-PYTHON-QLIB-1054635
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hjr4-fhgp-23g9
 aliases:
 - CVE-2021-23338
 - SNYK-PYTHON-QLIB-1054635
+- GHSA-hjr4-fhgp-23g9
 modified: "2021-06-09T05:01:32.318077Z"
 published: "2021-02-15T16:15:00Z"

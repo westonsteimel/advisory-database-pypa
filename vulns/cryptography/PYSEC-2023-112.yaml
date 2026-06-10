@@ -3,6 +3,7 @@ modified: 2023-08-21T15:28:13.372385Z
 published: 2023-07-14T20:15:00Z
 aliases:
 - CVE-2023-38325
+- GHSA-cf7p-gm2m-833m
 details: The cryptography package before 41.0.2 for Python mishandles SSH certificates
   that have critical options.
 affected:
@@ -30,3 +31,5 @@ references:
   url: https://github.com/pyca/cryptography/issues/9207
 - type: WEB
   url: https://github.com/pyca/cryptography/pull/9208
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cf7p-gm2m-833m

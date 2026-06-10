@@ -37,7 +37,10 @@ references:
   url: https://security.openstack.org/ossa/OSSA-2020-003.html
 - type: WEB
   url: https://usn.ubuntu.com/4480-1/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rqw2-hhrf-7936
 aliases:
 - CVE-2020-12692
+- GHSA-rqw2-hhrf-7936
 modified: "2020-09-02T16:15:00Z"
 published: "2020-05-07T00:15:00Z"

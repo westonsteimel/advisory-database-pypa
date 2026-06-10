@@ -3,6 +3,7 @@ modified: 2025-07-16T21:23:40.211079Z
 published: 2025-06-23T21:15:25Z
 aliases:
 - CVE-2025-2828
+- GHSA-h5gc-rm8j-5gpr
 details: A Server-Side Request Forgery (SSRF) vulnerability exists in the RequestsToolkit
   component of the langchain-community package (specifically, langchain_community.agent_toolkits.openapi.toolkit.RequestsToolkit)
   in langchain-ai/langchain version 0.0.27. This vulnerability occurs because the
@@ -63,6 +64,9 @@ references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/8f771040-7f34-420a-b96b-5b93d4a99afc
 - type: FIX
-  url: https://github.com/langchain-ai/langchain/commit/e188d4ecb085d4561a0be3c583d26aa9c2c3283f
+  url: 
+    https://github.com/langchain-ai/langchain/commit/e188d4ecb085d4561a0be3c583d26aa9c2c3283f
 - type: WEB
   url: https://huntr.com/bounties/8f771040-7f34-420a-b96b-5b93d4a99afc
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h5gc-rm8j-5gpr

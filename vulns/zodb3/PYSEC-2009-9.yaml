@@ -56,7 +56,10 @@ references:
   url: http://www.vupen.com/english/advisories/2009/2217
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/52379
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5432-c996-hvhj
 aliases:
 - CVE-2009-0669
+- GHSA-5432-c996-hvhj
 modified: "2021-07-16T01:31:36.719288Z"
 published: "2009-08-07T19:30:00Z"

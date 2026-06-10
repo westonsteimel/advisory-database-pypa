@@ -3,6 +3,7 @@ modified: 2025-02-10T23:22:41.499413Z
 published: 2024-11-22T22:15:07Z
 aliases:
 - CVE-2024-11394
+- GHSA-hxxf-235m-72v3
 details: |-
   Hugging Face Transformers Trax Model Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Hugging Face Transformers. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
 
@@ -190,3 +191,5 @@ severity:
 references:
 - type: ADVISORY
   url: https://www.zerodayinitiative.com/advisories/ZDI-24-1515/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hxxf-235m-72v3

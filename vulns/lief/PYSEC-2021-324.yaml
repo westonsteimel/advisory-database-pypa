@@ -28,7 +28,10 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/lief-project/LIEF/issues/449
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-22x7-vwh9-5w4g
 aliases:
 - CVE-2021-32297
+- GHSA-22x7-vwh9-5w4g
 modified: "2021-09-20T18:35:23.431537Z"
 published: "2021-09-20T16:15:00Z"

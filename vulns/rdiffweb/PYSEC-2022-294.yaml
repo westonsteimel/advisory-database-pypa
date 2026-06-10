@@ -102,8 +102,12 @@ references:
 - type: WEB
   url: https://huntr.dev/bounties/f9fedf94-41c9-49c4-8552-e407123a44e7
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/626cca1b75b6c587afd4241a9692e8929b1921a5
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/626cca1b75b6c587afd4241a9692e8929b1921a5
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-xhw9-4wqq-x67v
 aliases:
 - CVE-2022-3298
+- GHSA-xhw9-4wqq-x67v
 modified: "2022-09-28T18:56:44.617660Z"
 published: "2022-09-26T22:15:00Z"

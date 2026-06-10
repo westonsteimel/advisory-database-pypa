@@ -28,7 +28,10 @@ references:
   url: http://www.oracle.com/technetwork/topics/security/bulletinapr2016-2952098.html
 - type: WEB
   url: http://www.securityfocus.com/bid/64544
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gh2c-6m38-c78j
 aliases:
 - CVE-2013-6444
+- GHSA-gh2c-6m38-c78j
 modified: "2021-08-27T03:22:18.708966Z"
 published: "2014-05-05T17:06:00Z"

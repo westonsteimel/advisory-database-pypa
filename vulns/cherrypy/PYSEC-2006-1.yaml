@@ -22,7 +22,8 @@ references:
 - type: WEB
   url: http://sourceforge.net/project/shownotes.php?release_id=384316&group_id=56099
 - type: WEB
-  url: http://groups.google.com/group/cherrypy-announce/browse_thread/thread/92b2972f774fe6df/2f63afc9433dc306#2f63afc9433dc306
+  url: 
+    http://groups.google.com/group/cherrypy-announce/browse_thread/thread/92b2972f774fe6df/2f63afc9433dc306#2f63afc9433dc306
 - type: WEB
   url: http://www.securityfocus.com/bid/16760
 - type: WEB
@@ -37,7 +38,10 @@ references:
   url: http://www.vupen.com/english/advisories/2006/0677
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/24809
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vx77-5pf4-c9wr
 aliases:
 - CVE-2006-0847
+- GHSA-vx77-5pf4-c9wr
 modified: "2021-07-05T00:01:17.388273Z"
 published: "2006-02-22T02:02:00Z"

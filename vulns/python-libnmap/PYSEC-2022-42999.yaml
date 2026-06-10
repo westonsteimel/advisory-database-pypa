@@ -7,6 +7,7 @@ details: '** DISPUTED ** In the python-libnmap package through 0.7.2 for Python,
   the NmapProcess documentation implies that this is an expected use case.'
 aliases:
 - CVE-2022-30284
+- GHSA-qwqv-j7jr-4hp6
 modified: '2023-05-04T04:29:28.652969Z'
 published: '2022-05-04T22:15:00Z'
 references:
@@ -22,6 +23,8 @@ references:
   url: https://libnmap.readthedocs.io/en/latest/process.html#using-libnmap-process
 - type: WEB
   url: https://libnmap.readthedocs.io/en/latest/process.html#using-libnmap-process
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qwqv-j7jr-4hp6
 affected:
 - package:
     name: python-libnmap

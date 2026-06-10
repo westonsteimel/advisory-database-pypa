@@ -184,15 +184,18 @@ references:
 - type: WEB
   url: https://github.com/saltstack/salt/releases
 - type: ARTICLE
-  url: https://www.saltstack.com/blog/on-november-3-2020-saltstack-publicly-disclosed-three-new-cves/
+  url: 
+    https://www.saltstack.com/blog/on-november-3-2020-saltstack-publicly-disclosed-three-new-cves/
 - type: WEB
-  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TPOGB2F6XUAIGFDTOCQDNB2VIXFXHWMA/
+  url: 
+    https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/TPOGB2F6XUAIGFDTOCQDNB2VIXFXHWMA/
 - type: WEB
   url: http://lists.opensuse.org/opensuse-security-announce/2020-11/msg00029.html
 - type: ADVISORY
   url: https://security.gentoo.org/glsa/202011-13
 - type: WEB
-  url: http://packetstormsecurity.com/files/160039/SaltStack-Salt-REST-API-Arbitrary-Command-Execution.html
+  url: 
+    http://packetstormsecurity.com/files/160039/SaltStack-Salt-REST-API-Arbitrary-Command-Execution.html
 - type: ADVISORY
   url: https://www.zerodayinitiative.com/advisories/ZDI-20-1380/
 - type: ADVISORY
@@ -207,7 +210,10 @@ references:
   url: https://lists.debian.org/debian-lts-announce/2020/12/msg00007.html
 - type: ADVISORY
   url: https://www.debian.org/security/2021/dsa-4837
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qr38-h96j-2j3w
 aliases:
 - CVE-2020-16846
+- GHSA-qr38-h96j-2j3w
 modified: "2021-03-30T13:29:00Z"
 published: "2020-11-06T08:15:00Z"

@@ -115,8 +115,12 @@ references:
 - type: WEB
   url: https://plone.org/security/hotfix/20151006
 - type: WEB
-  url: http://packetstormsecurity.com/files/133889/Zope-Management-Interface-4.3.7-Cross-Site-Request-Forgery.html
+  url: 
+    http://packetstormsecurity.com/files/133889/Zope-Management-Interface-4.3.7-Cross-Site-Request-Forgery.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-p3qm-44cf-f8qx
 aliases:
 - CVE-2015-7293
+- GHSA-p3qm-44cf-f8qx
 modified: "2021-07-25T23:34:47.925835Z"
 published: "2017-09-25T21:29:00Z"

@@ -3,6 +3,7 @@ modified: 2025-04-08T10:23:24.900947Z
 published: 2024-02-23T22:15:55Z
 aliases:
 - CVE-2024-27132
+- GHSA-6749-m5cp-6cg7
 details: |+
   Insufficient sanitization in MLflow leads to XSS when running an untrusted recipe.
 
@@ -112,10 +113,14 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
 references:
 - type: EVIDENCE
-  url: https://research.jfrog.com/vulnerabilities/mlflow-untrusted-recipe-xss-jfsa-2024-000631930/
+  url: 
+    https://research.jfrog.com/vulnerabilities/mlflow-untrusted-recipe-xss-jfsa-2024-000631930/
 - type: FIX
   url: https://github.com/mlflow/mlflow/pull/10873
 - type: REPORT
   url: https://github.com/mlflow/mlflow/pull/10873
 - type: WEB
-  url: https://research.jfrog.com/vulnerabilities/mlflow-untrusted-recipe-xss-jfsa-2024-000631930/
+  url: 
+    https://research.jfrog.com/vulnerabilities/mlflow-untrusted-recipe-xss-jfsa-2024-000631930/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6749-m5cp-6cg7

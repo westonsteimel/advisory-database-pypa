@@ -3,6 +3,7 @@ modified: 2024-11-21T14:22:40.797843Z
 published: 2023-11-24T08:15:00Z
 aliases:
 - CVE-2023-48796
+- GHSA-4vvc-r4p4-qgrr
 details: |+
   Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache DolphinScheduler.
 
@@ -49,3 +50,5 @@ references:
   url: http://www.openwall.com/lists/oss-security/2023/11/24/1
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2023/11/24/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4vvc-r4p4-qgrr

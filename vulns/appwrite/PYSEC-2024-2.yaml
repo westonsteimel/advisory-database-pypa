@@ -3,6 +3,7 @@ modified: 2024-01-17T11:19:17.695321Z
 published: 2024-01-09T09:15:00Z
 aliases:
 - CVE-2023-50974
+- GHSA-g777-crp9-m27g
 details: In Appwrite CLI before 3.0.0, when using the login command, the credentials
   of the Appwrite user are stored in a ~/.appwrite/prefs.json file with 0644 as UNIX
   permissions. Any user of the local system can access those credentials.
@@ -54,3 +55,5 @@ references:
   url: https://gist.github.com/SkypLabs/72ee00ecfa7d1a3494e2d69a24279c1d
 - type: WEB
   url: https://appwrite.io/docs/tooling/command-line/installation
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g777-crp9-m27g

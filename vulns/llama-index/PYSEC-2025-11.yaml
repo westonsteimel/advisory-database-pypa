@@ -3,6 +3,7 @@ modified: 2025-04-01T23:22:47.294256Z
 published: 2025-03-20T10:15:31Z
 aliases:
 - CVE-2024-12910
+- GHSA-jvpf-xf32-2w4q
 details: A vulnerability in the `KnowledgeBaseWebReader` class of the run-llama/llama_index
   repository, version latest, allows an attacker to cause a Denial of Service (DoS)
   by controlling a URL variable to contain the root URL. This leads to infinite recursive
@@ -461,4 +462,7 @@ references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/27883f22-35ff-49df-aaa5-05031c7d6ad8
 - type: FIX
-  url: https://github.com/run-llama/llama_index/commit/159ce485a1168100bb219dc1b93133f1121579d9
+  url: 
+    https://github.com/run-llama/llama_index/commit/159ce485a1168100bb219dc1b93133f1121579d9
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jvpf-xf32-2w4q

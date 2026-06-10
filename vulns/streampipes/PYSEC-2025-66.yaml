@@ -3,6 +3,7 @@ modified: 2025-07-08T15:23:46.628375Z
 published: 2025-03-03T11:15:11Z
 aliases:
 - CVE-2024-24778
+- GHSA-vm7w-2724-5m23
 details: "Improper privilege management in a REST interface allowed registered users
   to access unauthorized resources if the resource ID was know. \n\n\n\n\n\nThis issue
   affects Apache StreamPipes: through 0.95.1.\n\nUsers are recommended to upgrade
@@ -32,3 +33,5 @@ references:
   url: http://www.openwall.com/lists/oss-security/2025/03/03/1
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2025/03/03/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vm7w-2724-5m23

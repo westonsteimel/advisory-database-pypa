@@ -6,6 +6,7 @@ details: A vulnerability classified as problematic was found in MindSpore 2.0.0-
   is VDB-230176.
 aliases:
 - CVE-2023-2970
+- GHSA-x67g-47p3-rc7f
 modified: '2023-06-16T08:29:55.937187Z'
 published: '2023-05-30T06:16:00Z'
 references:
@@ -18,7 +19,10 @@ references:
 - type: WEB
   url: https://gitee.com/mindspore/mindspore/issues/I73DOS
 - type: WEB
-  url: https://gitee.com/mindspore/mindspore/commit/30f4729ea2c01e1ed437ba92a81e2fc098d608a9
+  url: 
+    https://gitee.com/mindspore/mindspore/commit/30f4729ea2c01e1ed437ba92a81e2fc098d608a9
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x67g-47p3-rc7f
 affected:
 - package:
     name: mindspore

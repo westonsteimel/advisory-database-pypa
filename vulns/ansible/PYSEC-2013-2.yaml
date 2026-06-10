@@ -25,7 +25,10 @@ references:
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/86898
 - type: WEB
   url: https://groups.google.com/forum/#!topic/ansible-project/UVDYW0HGcNg
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pcqv-c46v-2p4v
 aliases:
 - CVE-2013-4260
+- GHSA-pcqv-c46v-2p4v
 modified: "2021-07-02T02:41:32.973358Z"
 published: "2013-09-16T19:14:00Z"

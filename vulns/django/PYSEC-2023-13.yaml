@@ -62,7 +62,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2023/02/14/1
 - type: WEB
   url: https://groups.google.com/forum/#!forum/django-announce
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2hrw-hx67-34x6
 aliases:
 - CVE-2023-24580
+- GHSA-2hrw-hx67-34x6
 modified: "2023-05-04T03:49:45.612158Z"
 published: "2023-02-15T01:15:00Z"

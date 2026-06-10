@@ -3,6 +3,7 @@ modified: 2025-05-12T15:23:53.861001Z
 published: 2024-04-16T00:15:11Z
 aliases:
 - CVE-2024-2083
+- GHSA-6h3f-43vq-53hj
 details: A directory traversal vulnerability exists in the zenml-io/zenml repository,
   specifically within the /api/v1/steps endpoint. Attackers can exploit this vulnerability
   by manipulating the 'logs' URI path in the request to fetch arbitrary file content,
@@ -155,8 +156,11 @@ references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/f24b2216-6a4b-42a1-becb-9b47e6cf117f
 - type: FIX
-  url: https://github.com/zenml-io/zenml/commit/00e934f33a243a554f5f65b80eefd5ea5117367b
+  url: 
+    https://github.com/zenml-io/zenml/commit/00e934f33a243a554f5f65b80eefd5ea5117367b
 - type: REPORT
   url: https://huntr.com/bounties/f24b2216-6a4b-42a1-becb-9b47e6cf117f
 - type: WEB
   url: https://huntr.com/bounties/f24b2216-6a4b-42a1-becb-9b47e6cf117f
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6h3f-43vq-53hj

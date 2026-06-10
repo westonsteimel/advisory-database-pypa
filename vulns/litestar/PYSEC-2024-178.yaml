@@ -3,8 +3,8 @@ modified: 2025-01-19T01:52:23.772726Z
 published: 2024-11-20T21:15:08Z
 aliases:
 - CVE-2024-52581
-related:
 - GHSA-gjcc-jvgw-wvwj
+related:
 - GHSA-p24m-863f-fm6q
 details: Litestar is an Asynchronous Server Gateway Interface (ASGI) framework. Prior
   to version 2.13.0, the multipart form parser shipped with litestar expects the entire
@@ -98,3 +98,5 @@ references:
   url: https://github.com/litestar-org/litestar/commit/53c1473b5ff7502816a9a339ffc90731bb0c2138
 - type: WEB
   url: https://github.com/litestar-org/litestar/blob/main/litestar/_multipart.py#L97
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gjcc-jvgw-wvwj

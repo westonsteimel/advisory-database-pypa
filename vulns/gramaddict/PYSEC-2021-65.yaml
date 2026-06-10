@@ -23,7 +23,10 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/GramAddict/bot/issues/134
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-q5h6-49gg-2wfg
 aliases:
 - CVE-2020-36245
+- GHSA-q5h6-49gg-2wfg
 modified: "2021-02-24T13:58:00Z"
 published: "2021-02-17T22:15:00Z"

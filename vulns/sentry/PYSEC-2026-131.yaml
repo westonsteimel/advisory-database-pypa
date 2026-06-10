@@ -292,6 +292,7 @@ affected:
   - 8.2.0
 aliases:
 - CVE-2021-47935
+- GHSA-444r-2whx-3685
 details: Sentry 8.2.0 contains a remote code execution vulnerability that allows authenticated
   superusers to execute arbitrary commands by injecting malicious pickle-serialized
   objects through the audit log entry data parameter. Attackers can submit crafted
@@ -304,9 +305,12 @@ references:
 - type: WEB
   url: https://sentry.io/welcome/
 - type: ADVISORY
-  url: https://www.vulncheck.com/advisories/sentry-remote-code-execution-via-pickle-deserialization
+  url: 
+    https://www.vulncheck.com/advisories/sentry-remote-code-execution-via-pickle-deserialization
 - type: EVIDENCE
   url: https://www.exploit-db.com/exploits/50318
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-444r-2whx-3685
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
   type: CVSS_V3

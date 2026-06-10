@@ -87,8 +87,12 @@ references:
 - type: WEB
   url: https://huntr.dev/bounties/54fb6d6a-6b39-45b6-b62a-930260ba484b
 - type: FIX
-  url: https://github.com/modoboa/modoboa/commit/130257c96a2392ada795785a91178e656e27015c
+  url: 
+    https://github.com/modoboa/modoboa/commit/130257c96a2392ada795785a91178e656e27015c
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9gxx-32p7-ff7m
 aliases:
 - CVE-2023-2160
+- GHSA-9gxx-32p7-ff7m
 modified: "2023-05-04T03:49:46.887089Z"
 published: "2023-04-18T16:15:00Z"

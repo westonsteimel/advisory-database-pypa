@@ -28,8 +28,12 @@ affected:
   - 1.7.0
 references:
 - type: ADVISORY
-  url: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-004.md
+  url: 
+    https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-004.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mw6v-crh8-8533
 aliases:
 - CVE-2018-7575
+- GHSA-mw6v-crh8-8533
 modified: "2021-12-09T06:35:11.711453Z"
 published: "2019-04-24T21:29:00Z"

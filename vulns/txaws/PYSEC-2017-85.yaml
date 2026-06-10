@@ -23,7 +23,10 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/twisted/txaws/issues/24
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cggm-52qp-wvw7
 aliases:
 - CVE-2017-1000007
+- GHSA-cggm-52qp-wvw7
 modified: "2021-08-25T04:30:35.998894Z"
 published: "2017-07-17T13:18:00Z"

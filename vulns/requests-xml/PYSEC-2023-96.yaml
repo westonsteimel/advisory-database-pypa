@@ -3,6 +3,7 @@ modified: 2023-07-06T22:29:19.818007Z
 published: 2023-06-29T21:15:00Z
 aliases:
 - CVE-2020-26708
+- GHSA-ccrc-9x59-3vc4
 details: requests-xml v0.2.3 was discovered to contain an XML External Entity Injection
   (XXE) vulnerability which allows attackers to execute arbitrary code via a crafted
   XML file.
@@ -25,3 +26,5 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/erinxocon/requests-xml/issues/7
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-ccrc-9x59-3vc4

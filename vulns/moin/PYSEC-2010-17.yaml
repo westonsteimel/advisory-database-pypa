@@ -44,7 +44,10 @@ references:
   url: http://marc.info/?l=oss-security&m=127799369406968&w=2
 - type: WEB
   url: http://marc.info/?l=oss-security&m=127809682420259&w=2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2j76-26qq-7rvv
 aliases:
 - CVE-2010-2969
+- GHSA-2j76-26qq-7rvv
 modified: "2021-07-16T01:31:23.735889Z"
 published: "2010-08-05T13:22:00Z"

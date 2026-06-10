@@ -92,7 +92,10 @@ affected:
 references:
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=1934330
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-w8hx-f868-pvch
 aliases:
 - CVE-2021-20267
+- GHSA-w8hx-f868-pvch
 modified: "2021-08-27T03:22:08.884816Z"
 published: "2021-05-28T19:15:00Z"

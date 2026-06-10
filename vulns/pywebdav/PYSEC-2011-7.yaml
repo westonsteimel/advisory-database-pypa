@@ -51,7 +51,10 @@ references:
   url: http://www.vupen.com/english/advisories/2011/0634
 - type: WEB
   url: http://www.securityfocus.com/bid/46655
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-69vw-jfq7-935g
 aliases:
 - CVE-2011-0432
+- GHSA-69vw-jfq7-935g
 modified: "2021-07-05T00:01:25.487912Z"
 published: "2011-03-14T19:55:00Z"

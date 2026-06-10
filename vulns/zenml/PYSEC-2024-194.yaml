@@ -3,6 +3,7 @@ modified: 2025-01-19T13:22:31.835293Z
 published: 2024-06-06T19:15:54Z
 aliases:
 - CVE-2024-2383
+- GHSA-mq73-g4qr-fgcq
 details: A clickjacking vulnerability exists in zenml-io/zenml versions up to and
   including 0.55.5 due to the application's failure to set appropriate X-Frame-Options
   or Content-Security-Policy HTTP headers. This vulnerability allows an attacker to
@@ -165,10 +166,13 @@ references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963
 - type: FIX
-  url: https://github.com/zenml-io/zenml/commit/f863fde1269bc355951f8cfc826c0244d88ad5e9
+  url: 
+    https://github.com/zenml-io/zenml/commit/f863fde1269bc355951f8cfc826c0244d88ad5e9
 - type: FIX
   url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963
 - type: REPORT
   url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963
 - type: WEB
   url: https://huntr.com/bounties/22d26f5a-c0ae-4344-aa7d-08ff5ada3963
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mq73-g4qr-fgcq

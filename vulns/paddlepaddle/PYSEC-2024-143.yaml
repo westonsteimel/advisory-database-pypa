@@ -3,6 +3,7 @@ modified: 2024-11-21T14:22:58.223275Z
 published: 2024-01-03T09:15:00Z
 aliases:
 - CVE-2023-52311
+- GHSA-rf7p-79xq-8xwm
 details: |+
   PaddlePaddle before 2.6.0 has a command injection in _wget_download. This resulted in the ability to execute arbitrary commands on the operating system.
 
@@ -41,6 +42,10 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 references:
 - type: FIX
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-020.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-020.md
 - type: ADVISORY
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-020.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-020.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rf7p-79xq-8xwm

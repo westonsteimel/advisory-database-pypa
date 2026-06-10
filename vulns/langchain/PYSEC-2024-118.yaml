@@ -3,6 +3,7 @@ modified: 2024-11-03T20:22:34.854295Z
 published: 2024-06-06T19:15:00Z
 aliases:
 - CVE-2024-2965
+- GHSA-3hjh-jh2h-vrg6
 details: A Denial-of-Service (DoS) vulnerability exists in the `SitemapLoader` class
   of the `langchain-ai/langchain` repository, affecting all versions. The `parse_sitemap`
   method, responsible for parsing sitemaps and extracting URLs, lacks a mechanism
@@ -429,4 +430,7 @@ references:
 - type: WEB
   url: https://huntr.com/bounties/90b0776d-9fa6-4841-aac4-09fde5918cae
 - type: FIX
-  url: https://github.com/langchain-ai/langchain/commit/73c42306745b0831aa6fe7fe4eeb70d2c2d87a82
+  url: 
+    https://github.com/langchain-ai/langchain/commit/73c42306745b0831aa6fe7fe4eeb70d2c2d87a82
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3hjh-jh2h-vrg6

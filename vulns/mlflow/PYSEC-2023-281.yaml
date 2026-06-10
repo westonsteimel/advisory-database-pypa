@@ -3,6 +3,7 @@ modified: 2024-11-21T14:22:54.938745Z
 published: 2023-12-12T04:15:00Z
 aliases:
 - CVE-2023-6709
+- GHSA-cxfr-5q3r-2rc2
 details: Improper Neutralization of Special Elements Used in a Template Engine in
   GitHub repository mlflow/mlflow prior to 2.9.2.
 affected:
@@ -120,3 +121,5 @@ references:
   url: https://huntr.com/bounties/9e4cc07b-6fff-421b-89bd-9445ef61d34d
 - type: FIX
   url: https://github.com/mlflow/mlflow/commit/432b8ccf27fd3a76df4ba79bb1bec62118a85625
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cxfr-5q3r-2rc2

@@ -24,7 +24,10 @@ references:
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/78435
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2012/09/11/10
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jfgc-5vh4-8rh5
 aliases:
 - CVE-2012-2238
+- GHSA-jfgc-5vh4-8rh5
 modified: "2021-08-27T03:22:48.643Z"
 published: "2019-11-21T14:15:00Z"

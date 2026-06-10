@@ -3,6 +3,7 @@ modified: 2025-04-09T17:27:26.223213Z
 published: 2023-07-19T01:15:10Z
 aliases:
 - CVE-2023-3765
+- GHSA-fmxj-6h9g-6vw3
 details: Absolute Path Traversal in GitHub repository mlflow/mlflow prior to 2.5.0.
 affected:
 - package:
@@ -110,3 +111,5 @@ references:
   url: https://huntr.dev/bounties/4be5fd63-8a0a-490d-9ee1-f33dc768ed76
 - type: WEB
   url: https://huntr.dev/bounties/4be5fd63-8a0a-490d-9ee1-f33dc768ed76
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fmxj-6h9g-6vw3

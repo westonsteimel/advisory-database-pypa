@@ -3,7 +3,12 @@ published: "2025-11-24T18:15:49.830Z"
 modified: "2026-04-15T00:35:42.020Z"
 aliases:
 - CVE-2025-13609
-details: A vulnerability has been identified in keylime where an attacker can exploit this flaw by registering a new agent using a different Trusted Platform Module (TPM) device but claiming an existing agent's unique identifier (UUID). This action overwrites the legitimate agent's identity, enabling the attacker to impersonate the compromised agent and potentially bypass security controls.
+- GHSA-xh5w-g8gq-r3v9
+details: A vulnerability has been identified in keylime where an attacker can exploit
+  this flaw by registering a new agent using a different Trusted Platform Module (TPM)
+  device but claiming an existing agent's unique identifier (UUID). This action overwrites
+  the legitimate agent's identity, enabling the attacker to impersonate the compromised
+  agent and potentially bypass security controls.
 affected:
 - package:
     name: keylime
@@ -28,6 +33,8 @@ references:
   url: https://bugzilla.redhat.com/show_bug.cgi?id=2416761
 - type: REPORT
   url: https://github.com/keylime/keylime/issues/1820
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-xh5w-g8gq-r3v9
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:H/A:L

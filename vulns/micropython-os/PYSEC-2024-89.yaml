@@ -3,6 +3,7 @@ modified: 2024-09-23T21:22:09.689786Z
 published: 2024-09-17T19:15:00Z
 aliases:
 - CVE-2024-8948
+- GHSA-vh3x-525m-jp4r
 details: A vulnerability was found in MicroPython 1.23.0. It has been rated as critical.
   Affected by this issue is the function mpz_as_bytes of the file py/objint.c. The
   manipulation leads to heap-based buffer overflow. The attack may be launched remotely.
@@ -52,4 +53,7 @@ references:
 - type: REPORT
   url: https://github.com/micropython/micropython/issues/13041
 - type: FIX
-  url: https://github.com/micropython/micropython/commit/908ab1ceca15ee6fd0ef82ca4cba770a3ec41894
+  url: 
+    https://github.com/micropython/micropython/commit/908ab1ceca15ee6fd0ef82ca4cba770a3ec41894
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vh3x-525m-jp4r

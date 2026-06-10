@@ -122,14 +122,18 @@ affected:
   - 2015.8.9
 references:
 - type: WEB
-  url: https://docs.saltstack.com/en/2015.8/ref/configuration/master.html#rotate-aes-key
+  url: 
+    https://docs.saltstack.com/en/2015.8/ref/configuration/master.html#rotate-aes-key
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2016/11/25/3
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2016/11/25/2
 - type: WEB
   url: http://www.securityfocus.com/bid/94553
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hvmj-356c-gpf4
 aliases:
 - CVE-2016-9639
+- GHSA-hvmj-356c-gpf4
 modified: "2021-07-05T00:01:26.392976Z"
 published: "2017-02-07T17:59:00Z"

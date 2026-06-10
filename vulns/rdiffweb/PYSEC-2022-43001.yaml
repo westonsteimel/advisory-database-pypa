@@ -3,15 +3,19 @@ details: Missing Authentication for Critical Function in GitHub repository ikus0
   prior to 2.5.0a6.
 aliases:
 - CVE-2022-4018
+- GHSA-4wph-9vrm-6v3w
 modified: '2023-05-04T04:29:28.960174Z'
 published: '2022-11-16T13:15:00Z'
 references:
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/f2a32f2a9f3fb8be1a9432ac3d81d3aacdb13095
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/f2a32f2a9f3fb8be1a9432ac3d81d3aacdb13095
 - type: EVIDENCE
   url: https://huntr.dev/bounties/5340c2f6-0252-40f6-8929-cca5d64958a5
 - type: WEB
   url: https://huntr.dev/bounties/5340c2f6-0252-40f6-8929-cca5d64958a5
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4wph-9vrm-6v3w
 affected:
 - package:
     name: rdiffweb

@@ -134,6 +134,7 @@ affected:
   - 65.9.0
 aliases:
 - CVE-2026-27982
+- GHSA-2jpr-83rg-v67j
 details: An open redirect vulnerability exists in django-allauth versions prior to
   65.14.1 when SAML IdP initiated SSO is enabled (it is disabled by default), which
   may allow an attacker to redirect users to an arbitrary external website via a crafted
@@ -146,6 +147,8 @@ references:
   url: https://allauth.org/news/2026/02/django-allauth-65.14.1-released/
 - type: ADVISORY
   url: https://jvn.jp/en/jp/JVN23669411/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2jpr-83rg-v67j
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
   type: CVSS_V3

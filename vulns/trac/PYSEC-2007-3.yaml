@@ -19,7 +19,10 @@ affected:
 references:
 - type: WEB
   url: http://trac.edgewall.org/wiki/ChangeLog
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-7jjr-3r8r-9pcf
 aliases:
 - CVE-2007-1406
+- GHSA-7jjr-3r8r-9pcf
 modified: "2021-07-16T01:31:34.212521Z"
 published: "2007-03-10T22:19:00Z"

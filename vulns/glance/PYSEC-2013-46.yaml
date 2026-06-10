@@ -3,7 +3,11 @@ published: "2013-03-22T21:55:01.487Z"
 modified: "2026-04-29T01:13:23.040Z"
 aliases:
 - CVE-2013-1840
-details: The v1 API in OpenStack Glance Essex (2012.1), Folsom (2012.2), and Grizzly, when using the single-tenant Swift or S3 store, reports the location field, which allows remote authenticated users to obtain the operator's backend credentials via a request for a cached image.
+- GHSA-c8w9-83vg-r8vv
+details: The v1 API in OpenStack Glance Essex (2012.1), Folsom (2012.2), and Grizzly,
+  when using the single-tenant Swift or S3 store, reports the location field, which
+  allows remote authenticated users to obtain the operator's backend credentials via
+  a request for a cached image.
 affected:
 - package:
     name: glance
@@ -38,3 +42,5 @@ references:
   url: http://secunia.com/advisories/52565
 - type: ADVISORY
   url: http://www.ubuntu.com/usn/USN-1764-1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c8w9-83vg-r8vv

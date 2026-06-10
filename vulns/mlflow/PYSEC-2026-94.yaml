@@ -184,11 +184,12 @@ affected:
   - 3.9.0rc0
 aliases:
 - CVE-2026-33866
-details: "MLflow is vulnerable to an authorization bypass affecting the AJAX endpoint\
-  \ used to download saved model artifacts. Due to missing access\u2011control validation,\
-  \ a user without permissions to a given experiment can directly query this endpoint\
-  \ and retrieve model artifacts they are not authorized to access.\n\n \nThis issue\
-  \ affects MLflow version through 3.10.1"
+- GHSA-46r5-x6jq-v8g6
+details: "MLflow is vulnerable to an authorization bypass affecting the AJAX endpoint
+  used to download saved model artifacts. Due to missing access‑control validation,
+  a user without permissions to a given experiment can directly query this endpoint
+  and retrieve model artifacts they are not authorized to access.\n\n \nThis issue
+  affects MLflow version through 3.10.1"
 id: PYSEC-2026-94
 modified: '2026-05-20T09:19:08.285844Z'
 published: '2026-04-07T13:16:47Z'
@@ -199,6 +200,8 @@ references:
   url: https://github.com/mlflow/mlflow/pull/21708
 - type: EVIDENCE
   url: https://afine.com/blogs/attacking-mlflow-how-ml-artifacts-become-attack-vectors
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-46r5-x6jq-v8g6
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N
   type: CVSS_V3

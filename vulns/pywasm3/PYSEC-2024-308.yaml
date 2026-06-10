@@ -17,6 +17,7 @@ affected:
   - 0.5.0
 aliases:
 - CVE-2024-34249
+- GHSA-mq9p-qw76-q6h7
 details: wasm3 v0.5.0 was discovered to contain a heap buffer overflow which leads
   to segmentation fault via the function "DeallocateSlot" in wasm3/source/m3_compile.c.
 id: PYSEC-2024-308
@@ -25,6 +26,8 @@ published: '2024-05-06T15:15:24.367Z'
 references:
 - type: REPORT
   url: https://github.com/wasm3/wasm3/issues/485
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mq9p-qw76-q6h7
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
   type: CVSS_V3

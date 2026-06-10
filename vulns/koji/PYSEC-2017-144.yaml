@@ -52,6 +52,7 @@ affected:
   - 1.35.1
 aliases:
 - CVE-2017-1002153
+- GHSA-vwp5-w4rq-g4cc
 details: Koji 1.13.0 does not properly validate SCM paths, allowing an attacker to
   work around blacklisted paths for build submission.
 id: PYSEC-2017-144
@@ -62,6 +63,8 @@ references:
   url: https://pagure.io/koji/issue/563
 - type: FIX
   url: https://pagure.io/koji/issue/563
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vwp5-w4rq-g4cc
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
   type: CVSS_V3

@@ -44,7 +44,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2020/03/12/1
 - type: WEB
   url: https://security.openstack.org/ossa/OSSA-2020-002.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jx7v-gmqc-6xrj
 aliases:
 - CVE-2020-9543
+- GHSA-jx7v-gmqc-6xrj
 modified: "2020-07-14T17:27:00Z"
 published: "2020-03-12T17:15:00Z"

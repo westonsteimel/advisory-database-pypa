@@ -40,7 +40,10 @@ references:
   url: https://www.securityfocus.com/bid/68233
 - type: WEB
   url: https://github.com/ansible/ansible/blob/release1.5.5/CHANGELOG.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5g4v-2pc6-4hh4
 aliases:
 - CVE-2014-4658
+- GHSA-5g4v-2pc6-4hh4
 modified: "2021-07-02T02:41:33.150700Z"
 published: "2020-02-20T15:15:00Z"

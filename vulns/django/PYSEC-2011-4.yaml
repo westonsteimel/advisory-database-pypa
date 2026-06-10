@@ -49,7 +49,10 @@ references:
   url: http://www.debian.org/security/2011/dsa-2332
 - type: WEB
   url: https://hermes.opensuse.org/messages/14700881
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rm2j-x595-q9cj
 aliases:
 - CVE-2011-4139
+- GHSA-rm2j-x595-q9cj
 modified: "2021-07-05T00:01:18.041571Z"
 published: "2011-10-19T10:55:00Z"

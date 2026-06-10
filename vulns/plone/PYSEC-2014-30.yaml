@@ -91,7 +91,10 @@ references:
   url: https://plone.org/products/plone/security/advisories/20121106/04
 - type: ADVISORY
   url: http://rhn.redhat.com/errata/RHSA-2014-1194.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cxw7-85xm-3xrc
 aliases:
 - CVE-2012-5488
+- GHSA-cxw7-85xm-3xrc
 modified: "2021-09-01T08:44:29.194034Z"
 published: "2014-09-30T14:55:00Z"

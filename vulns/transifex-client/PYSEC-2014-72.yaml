@@ -41,7 +41,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2013/12/13/5
 - type: REPORT
   url: https://github.com/transifex/transifex-client/issues/42
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jf99-2rj4-jxrm
 aliases:
 - CVE-2013-7110
+- GHSA-jf99-2rj4-jxrm
 modified: "2021-07-25T23:34:56.578427Z"
 published: "2014-05-02T01:59:00Z"

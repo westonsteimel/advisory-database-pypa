@@ -34,8 +34,12 @@ affected:
   - 1.5.3
 references:
 - type: WEB
-  url: https://groups.google.com/forum/#!searchin/ansible-project/1.5.4/ansible-project/MUQxiKwSQDc/id6aVaawVboJ
+  url: 
+    https://groups.google.com/forum/#!searchin/ansible-project/1.5.4/ansible-project/MUQxiKwSQDc/id6aVaawVboJ
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-49m5-2838-q2rv
 aliases:
 - CVE-2014-2686
+- GHSA-49m5-2838-q2rv
 modified: "2021-07-02T02:41:33.018970Z"
 published: "2020-01-09T13:15:00Z"

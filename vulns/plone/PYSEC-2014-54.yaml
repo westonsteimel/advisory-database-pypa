@@ -84,7 +84,10 @@ references:
   url: https://bugzilla.redhat.com/show_bug.cgi?id=978451
 - type: WEB
   url: http://plone.org/products/plone-hotfix/releases/20130618
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-89rq-27xp-vgv7
 aliases:
 - CVE-2013-4190
+- GHSA-89rq-27xp-vgv7
 modified: "2021-07-25T23:34:46.028547Z"
 published: "2014-03-11T19:37:00Z"

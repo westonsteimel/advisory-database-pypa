@@ -18,8 +18,12 @@ affected:
   - "1.8"
 references:
 - type: ARTICLE
-  url: https://www.okta.com/security-blog/2018/06/issues-around-third-party-apple-code-signing-checks/
+  url: 
+    https://www.okta.com/security-blog/2018/06/issues-around-third-party-apple-code-signing-checks/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g3cc-pvjj-9xq9
 aliases:
 - CVE-2018-10406
+- GHSA-g3cc-pvjj-9xq9
 modified: "2021-08-27T03:22:09.893229Z"
 published: "2018-06-13T22:29:00Z"

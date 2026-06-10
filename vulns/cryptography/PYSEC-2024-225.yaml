@@ -3,8 +3,6 @@ modified: 2025-02-06T00:34:24.427679Z
 published: 2024-02-21T17:15:09Z
 aliases:
 - CVE-2024-26130
-related:
-- GHSA-6vqw-3v5j-54x4
 - GHSA-6vqw-3v5j-54x4
 details: cryptography is a package designed to expose cryptographic primitives and
   recipes to Python developers. Starting in version 38.0.0 and prior to version 42.0.4,
@@ -23,7 +21,6 @@ affected:
   - type: GIT
     events:
     - introduced: "0"
-    - fixed: 97d231672763cdb5959a3b191e692a362f1b9e55
     - fixed: 97d231672763cdb5959a3b191e692a362f1b9e55
     repo: https://github.com/pyca/cryptography
   - type: ECOSYSTEM
@@ -61,8 +58,11 @@ references:
 - type: ADVISORY
   url: https://github.com/pyca/cryptography/security/advisories/GHSA-6vqw-3v5j-54x4
 - type: FIX
-  url: https://github.com/pyca/cryptography/commit/97d231672763cdb5959a3b191e692a362f1b9e55
+  url: 
+    https://github.com/pyca/cryptography/commit/97d231672763cdb5959a3b191e692a362f1b9e55
 - type: FIX
   url: https://github.com/pyca/cryptography/pull/10423
 - type: REPORT
   url: https://github.com/pyca/cryptography/pull/10423
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6vqw-3v5j-54x4

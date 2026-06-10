@@ -61,7 +61,10 @@ affected:
 references:
 - type: WEB
   url: https://scalyr-static.s3.amazonaws.com/technical-details/index.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-738x-v49g-p6hx
 aliases:
 - CVE-2020-24715
+- GHSA-738x-v49g-p6hx
 modified: "2021-08-27T03:22:21.152325Z"
 published: "2020-08-27T22:15:00Z"

@@ -3,6 +3,7 @@ details: Tahoe-LAFS 1.9.0 fails to ensure integrity which allows remote attacker
   to corrupt mutable files or directories upon retrieval.
 aliases:
 - CVE-2012-0051
+- GHSA-v62p-cjv8-35xh
 modified: '2024-12-19T05:47:49.035329Z'
 published: '2019-11-07T18:15:00Z'
 withdrawn: '2024-11-22T04:37:05Z'
@@ -33,6 +34,8 @@ references:
   url: http://www.openwall.com/lists/oss-security/2012/01/26/9
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2012/01/26/9
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v62p-cjv8-35xh
 affected:
 - package:
     name: tahoe-lafs

@@ -106,7 +106,10 @@ references:
   url: http://www.mandriva.com/security/advisories?name=MDVSA-2015:109
 - type: WEB
   url: http://www.securityfocus.com/bid/73095
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6565-fg86-6jcx
 aliases:
 - CVE-2015-2241
+- GHSA-6565-fg86-6jcx
 modified: "2021-07-05T00:01:19.894697Z"
 published: "2015-03-12T14:59:00Z"

@@ -3,6 +3,7 @@ modified: 2024-02-10T07:18:43.563257Z
 published: 2024-02-02T05:15:00Z
 aliases:
 - CVE-2024-21485
+- GHSA-547x-748v-vp6p
 details: "Versions of the package dash-core-components before 2.13.0; all versions
   of the package dash-core-components; versions of the package dash before 2.15.0;
   all versions of the package dash-html-components; versions of the package dash-html-components
@@ -243,3 +244,5 @@ references:
   url: https://github.com/plotly/dash/releases/tag/v2.15.0
 - type: FIX
   url: https://github.com/plotly/dash/commit/9920073c9a8619ae8f90fcec1924f2f3a4332a8c
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-547x-748v-vp6p

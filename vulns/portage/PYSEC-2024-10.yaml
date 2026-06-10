@@ -3,6 +3,7 @@ modified: 2024-01-22T18:22:47.599296Z
 published: 2024-01-12T03:15:00Z
 aliases:
 - CVE-2016-20021
+- GHSA-pw5x-x5jw-ccmh
 details: 'In Gentoo Portage before 3.0.47, there is missing PGP validation of executed
   code: the standalone emerge-webrsync downloads a .gpgsig file but does not perform
   signature verification. Unless emerge-webrsync is used, Portage is not vulnerable.'
@@ -62,3 +63,5 @@ references:
   url: https://bugs.gentoo.org/597800
 - type: FIX
   url: https://bugs.gentoo.org/597800
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pw5x-x5jw-ccmh

@@ -79,7 +79,10 @@ references:
   url: https://sourceforge.net/p/roundup/code/ci/tip/tree/CHANGES.txt
 - type: ADVISORY
   url: http://www.debian.org/security/2016/dsa-3502
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j556-q367-2gw6
 aliases:
 - CVE-2014-6276
+- GHSA-j556-q367-2gw6
 modified: "2021-08-27T03:22:19.738380Z"
 published: "2016-04-13T14:59:00Z"

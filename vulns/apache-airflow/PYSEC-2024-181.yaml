@@ -3,6 +3,7 @@ modified: 2025-01-19T04:22:59.351008Z
 published: 2024-08-21T16:15:08Z
 aliases:
 - CVE-2024-41937
+- GHSA-w7cp-g8v7-r54m
 details: |-
   Apache Airflow, versions before 2.10.0, have a vulnerability that allows the developer of a malicious provider to execute a cross-site scripting attack when clicking on a provider documentation link. This would require the provider to be installed on the web server and the user to click the provider link.
   Users should upgrade to 2.10.0 or later, which fixes this vulnerability.
@@ -227,3 +228,5 @@ references:
   url: https://lists.apache.org/thread/lwlmgg6hqfmkpvw5py4w53hxyl37jl6d
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2024/08/21/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-w7cp-g8v7-r54m

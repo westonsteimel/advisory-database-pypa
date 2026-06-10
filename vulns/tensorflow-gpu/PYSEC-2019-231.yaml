@@ -27,8 +27,12 @@ affected:
   - 1.6.0
 references:
 - type: ADVISORY
-  url: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-002.md
+  url: 
+    https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-002.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jfq2-rj7f-9gvf
 aliases:
 - CVE-2018-7576
+- GHSA-jfq2-rj7f-9gvf
 modified: "2021-12-09T06:35:11.756170Z"
 published: "2019-04-23T21:29:00Z"

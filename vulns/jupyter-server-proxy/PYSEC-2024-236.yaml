@@ -3,8 +3,6 @@ modified: 2025-02-26T23:22:41.524251Z
 published: 2024-06-11T22:15:09Z
 aliases:
 - CVE-2024-35225
-related:
-- GHSA-fvcq-4x64-hqxr
 - GHSA-fvcq-4x64-hqxr
 details: Jupyter Server Proxy allows users to run arbitrary external processes alongside
   their notebook server and provide authenticated web access to them. Versions of
@@ -31,8 +29,6 @@ affected:
     - introduced: "0"
     - fixed: 7abc9dc5bbb0b4b440548a5375261b8b8192fc22
     - fixed: ff78128087e73fb9d0909e1366f8bf051e8ea878
-    - fixed: 7abc9dc5bbb0b4b440548a5375261b8b8192fc22
-    - fixed: ff78128087e73fb9d0909e1366f8bf051e8ea878
     repo: https://github.com/jupyterhub/jupyter-server-proxy
   - type: ECOSYSTEM
     events:
@@ -55,10 +51,16 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
 references:
 - type: ADVISORY
-  url: https://github.com/jupyterhub/jupyter-server-proxy/security/advisories/GHSA-fvcq-4x64-hqxr
+  url: 
+    https://github.com/jupyterhub/jupyter-server-proxy/security/advisories/GHSA-fvcq-4x64-hqxr
 - type: FIX
-  url: https://github.com/jupyterhub/jupyter-server-proxy/commit/7abc9dc5bbb0b4b440548a5375261b8b8192fc22
+  url: 
+    https://github.com/jupyterhub/jupyter-server-proxy/commit/7abc9dc5bbb0b4b440548a5375261b8b8192fc22
 - type: FIX
-  url: https://github.com/jupyterhub/jupyter-server-proxy/commit/ff78128087e73fb9d0909e1366f8bf051e8ea878
+  url: 
+    https://github.com/jupyterhub/jupyter-server-proxy/commit/ff78128087e73fb9d0909e1366f8bf051e8ea878
 - type: WEB
-  url: https://github.com/jupyterhub/jupyter-server-proxy/blob/62a290f08750f7ae55a0c29ca339c9a39a7b2a7b/jupyter_server_proxy/handlers.py#L328
+  url: 
+    https://github.com/jupyterhub/jupyter-server-proxy/blob/62a290f08750f7ae55a0c29ca339c9a39a7b2a7b/jupyter_server_proxy/handlers.py#L328
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fvcq-4x64-hqxr

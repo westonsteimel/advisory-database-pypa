@@ -3,6 +3,7 @@ modified: 2024-11-21T14:22:57.974712Z
 published: 2024-01-03T09:15:00Z
 aliases:
 - CVE-2023-52307
+- GHSA-g57v-2687-jx33
 details: |+
   Stack overflow in paddle.linalg.lu_unpack in PaddlePaddle before 2.6.0. This flaw can lead to a denial of service, or even more damage.
 
@@ -37,6 +38,10 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 references:
 - type: FIX
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-016.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-016.md
 - type: ADVISORY
-  url: https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-016.md
+  url: 
+    https://github.com/PaddlePaddle/Paddle/blob/develop/security/advisory/pdsa-2023-016.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g57v-2687-jx33

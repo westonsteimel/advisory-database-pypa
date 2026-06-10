@@ -9,6 +9,7 @@ affected:
     type: ECOSYSTEM
 aliases:
 - CVE-2006-4249
+- GHSA-r7j4-82xw-8m9p
 details: Unspecified vulnerability in PlonePAS in Plone 2.5 and 2.5.1, when anonymous
   member registration is enabled, allows an attacker to "masquerade as a group."
 id: PYSEC-2006-6
@@ -29,3 +30,5 @@ references:
   url: http://www.vupen.com/english/advisories/2006/4878
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/30762
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-r7j4-82xw-8m9p

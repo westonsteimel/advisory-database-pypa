@@ -61,7 +61,10 @@ affected:
 references:
 - type: WEB
   url: https://scalyr-static.s3.amazonaws.com/technical-details/index.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-w6xv-mf6f-r5f6
 aliases:
 - CVE-2020-24714
+- GHSA-w6xv-mf6f-r5f6
 modified: "2021-08-27T03:22:21.123825Z"
 published: "2020-08-27T22:15:00Z"

@@ -28,9 +28,11 @@ references:
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=460966
 - type: WEB
-  url: https://www.redhat.com/archives/fedora-package-announce/2008-September/msg00091.html
+  url: 
+    https://www.redhat.com/archives/fedora-package-announce/2008-September/msg00091.html
 - type: WEB
-  url: https://www.redhat.com/archives/fedora-package-announce/2008-September/msg00131.html
+  url: 
+    https://www.redhat.com/archives/fedora-package-announce/2008-September/msg00131.html
 - type: ADVISORY
   url: http://www.debian.org/security/2008/dsa-1640
 - type: ADVISORY
@@ -39,7 +41,10 @@ references:
   url: http://osvdb.org/47906
 - type: ADVISORY
   url: http://www.vupen.com/english/advisories/2008/2533
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-r5cj-wv24-92p5
 aliases:
 - CVE-2008-3909
+- GHSA-r5cj-wv24-92p5
 modified: "2021-07-15T02:22:07.826825Z"
 published: "2008-09-04T17:41:00Z"

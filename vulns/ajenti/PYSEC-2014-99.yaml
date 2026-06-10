@@ -131,7 +131,10 @@ references:
   url: https://www.netsparker.com/critical-xss-vulnerabilities-in-ajenti
 - type: WEB
   url: http://www.securityfocus.com/bid/68047
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2ch8-f849-pjg3
 aliases:
 - CVE-2014-4301
+- GHSA-2ch8-f849-pjg3
 modified: "2021-12-13T06:35:03.086455Z"
 published: "2014-06-18T14:55:00Z"

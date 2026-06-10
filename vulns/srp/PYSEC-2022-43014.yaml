@@ -49,7 +49,10 @@ references:
   url: https://github.com/cocagne/pysrp/pull/43
 - type: WEB
   url: https://github.com/cocagne/pysrp/pull/43
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-xmc3-9m9j-w9x4
 aliases:
 - CVE-2021-4286
+- GHSA-xmc3-9m9j-w9x4
 modified: "2023-05-04T03:49:48.139972Z"
 published: "2022-12-27T11:15:00Z"

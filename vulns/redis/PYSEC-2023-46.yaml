@@ -5,6 +5,7 @@ details: 'redis-py through 4.5.3 leaves a connection open after canceling an asy
   exists because of an incomplete fix for CVE-2023-28858.'
 aliases:
 - CVE-2023-28859
+- GHSA-8fww-64cx-x8p5
 modified: '2023-06-05T01:13:00.432606Z'
 published: '2023-03-26T19:15:00Z'
 references:
@@ -12,6 +13,8 @@ references:
   url: https://github.com/redis/redis-py/pull/2641
 - type: REPORT
   url: https://github.com/redis/redis-py/issues/2665
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8fww-64cx-x8p5
 affected:
 - package:
     name: redis

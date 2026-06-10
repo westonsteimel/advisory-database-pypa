@@ -104,16 +104,24 @@ references:
 - type: WEB
   url: https://security.snyk.io/vuln/SNYK-PYTHON-GITPYTHON-3113858
 - type: WEB
-  url: https://github.com/gitpython-developers/GitPython/blob/bec61576ae75803bc4e60d8de7a629c194313d1c/git/repo/base.py%23L1249
+  url: 
+    https://github.com/gitpython-developers/GitPython/blob/bec61576ae75803bc4e60d8de7a629c194313d1c/git/repo/base.py%23L1249
 - type: ARTICLE
-  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IKMVYKLWX62UEYKAN64RUZMOIAMZM5JN/
+  url: 
+    https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IKMVYKLWX62UEYKAN64RUZMOIAMZM5JN/
 - type: WEB
-  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IKMVYKLWX62UEYKAN64RUZMOIAMZM5JN/
+  url: 
+    https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IKMVYKLWX62UEYKAN64RUZMOIAMZM5JN/
 - type: ARTICLE
-  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SJHN3QUXPJIMM6SULIR3PR34UFWRAE7X/
+  url: 
+    https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SJHN3QUXPJIMM6SULIR3PR34UFWRAE7X/
 - type: WEB
-  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SJHN3QUXPJIMM6SULIR3PR34UFWRAE7X/
+  url: 
+    https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SJHN3QUXPJIMM6SULIR3PR34UFWRAE7X/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hcpj-qp55-gfph
 aliases:
 - CVE-2022-24439
+- GHSA-hcpj-qp55-gfph
 modified: "2023-05-04T03:49:45.777062Z"
 published: "2022-12-06T05:15:00Z"

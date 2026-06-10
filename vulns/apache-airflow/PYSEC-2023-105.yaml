@@ -1,8 +1,9 @@
 id: PYSEC-2023-105
-modified: 2023-07-12T12:59:56.73368Z
+modified: 2023-07-12T12:59:56.733680Z
 published: 2023-07-12T10:15:00Z
 aliases:
 - CVE-2023-22888
+- GHSA-5946-8p38-vffp
 details: Apache Airflow, versions before 2.6.3, is affected by a vulnerability that
   allows an attacker to cause a service disruption by manipulating the run_id parameter.
   This vulnerability is considered low since it requires an authenticated user to
@@ -179,3 +180,5 @@ references:
   url: https://github.com/apache/airflow/pull/32293
 - type: WEB
   url: https://lists.apache.org/thread/dnlht2hvm7k81k5tgjtsfmk27c76kq7z
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5946-8p38-vffp

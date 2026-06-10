@@ -35,7 +35,10 @@ references:
   url: http://www.ubuntu.com/usn/USN-3137-1
 - type: ADVISORY
   url: http://www.debian.org/security/2016/dsa-3715
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3x76-j3jj-439j
 aliases:
 - CVE-2016-7148
+- GHSA-3x76-j3jj-439j
 modified: "2021-08-27T03:22:07.805432Z"
 published: "2016-11-10T17:59:00Z"

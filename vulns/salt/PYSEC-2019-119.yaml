@@ -167,12 +167,17 @@ affected:
   - 2018.3.3
 references:
 - type: WEB
-  url: https://github.com/saltstack/salt/blob/f22de0887cd7167887f113bf394244b74fb36b6b/salt/modules/mysql.py#L1534
+  url: 
+    https://github.com/saltstack/salt/blob/f22de0887cd7167887f113bf394244b74fb36b6b/salt/modules/mysql.py#L1534
 - type: FIX
-  url: https://github.com/ShantonRU/salt/commit/a46c86a987c78e74e87969d8d3b27094e6544b7a
+  url: 
+    https://github.com/ShantonRU/salt/commit/a46c86a987c78e74e87969d8d3b27094e6544b7a
 - type: WEB
   url: https://github.com/saltstack/salt/pull/51462
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h8xp-h3jf-wv4v
 aliases:
 - CVE-2019-1010259
+- GHSA-h8xp-h3jf-wv4v
 modified: "2019-08-13T18:15:00Z"
 published: "2019-07-18T17:15:00Z"

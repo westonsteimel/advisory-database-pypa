@@ -3,17 +3,21 @@ details: Improper Privilege Management in GitHub repository ikus060/rdiffweb pri
   to 2.5.2.
 aliases:
 - CVE-2022-4314
+- GHSA-g594-55mp-f6q8
 modified: '2023-05-04T04:29:29.006053Z'
 published: '2022-12-12T18:15:00Z'
 references:
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/b2df3679564d0daa2856213bb307d3e34bd89a25
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/b2df3679564d0daa2856213bb307d3e34bd89a25
 - type: EVIDENCE
   url: https://huntr.dev/bounties/b2dc504d-92ae-4221-a096-12ff223d95a8
 - type: FIX
   url: https://huntr.dev/bounties/b2dc504d-92ae-4221-a096-12ff223d95a8
 - type: WEB
   url: https://huntr.dev/bounties/b2dc504d-92ae-4221-a096-12ff223d95a8
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g594-55mp-f6q8
 affected:
 - package:
     name: rdiffweb

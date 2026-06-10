@@ -3,6 +3,7 @@ modified: 2023-10-14T12:46:00.410542Z
 published: 2023-10-14T10:15:00Z
 aliases:
 - CVE-2023-42663
+- GHSA-32wr-qqw6-5mfp
 details: |+
   Apache Airflow, versions before 2.7.2, has a vulnerability that allows an authorized user who has access to read specific DAGs only, to read information about task instances in other DAGs.
   Users of Apache Airflow are advised to upgrade to version 2.7.2 or newer to mitigate the risk associated with this vulnerability.
@@ -188,3 +189,5 @@ references:
   url: https://github.com/apache/airflow/pull/34315
 - type: WEB
   url: https://lists.apache.org/thread/xj86cvfkxgd0cyqfmz6mh1bsfc61c6o9
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-32wr-qqw6-5mfp

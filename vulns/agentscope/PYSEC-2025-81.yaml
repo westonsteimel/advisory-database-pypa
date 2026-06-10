@@ -16,6 +16,7 @@ affected:
   - 0.0.4
 aliases:
 - CVE-2024-8487
+- GHSA-75v5-6885-59f9
 details: A Cross-Origin Resource Sharing (CORS) vulnerability exists in modelscope/agentscope
   version v0.0.4. The CORS configuration on the agentscope server does not properly
   restrict access to only trusted origins, allowing any external domain to make requests
@@ -28,6 +29,8 @@ published: '2025-03-20T10:15:42.360Z'
 references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/7aca7507-a94e-4e63-83a2-15648e5c4067
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-75v5-6885-59f9
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
   type: CVSS_V3

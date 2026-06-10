@@ -3,6 +3,7 @@ modified: 2024-11-15T20:23:01.816492Z
 published: 2024-10-11T16:15:00Z
 aliases:
 - CVE-2024-6985
+- GHSA-6h64-g7cj-hj56
 details: A path traversal vulnerability exists in the api open_personality_folder
   endpoint of parisneo/lollms-webui. This vulnerability allows an attacker to read
   any folder in the personality_folder on the victim's computer, even though sanitize_path
@@ -270,4 +271,7 @@ references:
 - type: WEB
   url: https://huntr.com/bounties/79c11579-47d8-4e68-8466-b47c3bf5ef6a
 - type: FIX
-  url: https://github.com/parisneo/lollms/commit/28ee567a9a120967215ff19b96ab7515ce469620
+  url: 
+    https://github.com/parisneo/lollms/commit/28ee567a9a120967215ff19b96ab7515ce469620
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6h64-g7cj-hj56

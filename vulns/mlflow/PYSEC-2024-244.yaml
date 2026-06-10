@@ -3,6 +3,7 @@ modified: 2025-04-08T10:23:25.092581Z
 published: 2024-05-16T09:15:14Z
 aliases:
 - CVE-2024-3848
+- GHSA-rfqq-wq6w-72jm
 details: A path traversal vulnerability exists in mlflow/mlflow version 2.11.0, identified
   as a bypass for the previously addressed CVE-2023-6909. The vulnerability arises
   from the application's handling of artifact URLs, where a '#' character can be used
@@ -137,3 +138,5 @@ references:
   url: https://huntr.com/bounties/8d5aadaa-522f-4839-b41b-d7da362dd610
 - type: WEB
   url: https://huntr.com/bounties/8d5aadaa-522f-4839-b41b-d7da362dd610
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rfqq-wq6w-72jm

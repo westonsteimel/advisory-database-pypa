@@ -3,6 +3,7 @@ modified: 2025-01-19T13:22:31.701775Z
 published: 2024-06-06T19:15:53Z
 aliases:
 - CVE-2024-2213
+- GHSA-j527-v579-m98h
 details: An issue was discovered in zenml-io/zenml versions up to and including 0.55.4.
   Due to improper authentication mechanisms, an attacker with access to an active
   user session can change the account password without needing to know the current
@@ -165,10 +166,13 @@ references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/8f5534ac-fd08-4b8b-8c2e-35949aa36e48
 - type: FIX
-  url: https://github.com/zenml-io/zenml/commit/58cb3d987372c91eb605853c35325701733337c2
+  url: 
+    https://github.com/zenml-io/zenml/commit/58cb3d987372c91eb605853c35325701733337c2
 - type: FIX
   url: https://huntr.com/bounties/8f5534ac-fd08-4b8b-8c2e-35949aa36e48
 - type: REPORT
   url: https://huntr.com/bounties/8f5534ac-fd08-4b8b-8c2e-35949aa36e48
 - type: WEB
   url: https://huntr.com/bounties/8f5534ac-fd08-4b8b-8c2e-35949aa36e48
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j527-v579-m98h

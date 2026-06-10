@@ -5,15 +5,19 @@ details: 'An issue was discovered in py-lmdb 0.97. mdb_node_del does not validat
   an attacker.'
 aliases:
 - CVE-2019-16226
+- GHSA-r8g9-w4f3-9crm
 modified: '2021-12-14T08:17:08.339672Z'
 published: '2019-09-11T15:15:00Z'
 references:
 - type: WEB
-  url: https://github.com/TeamSeri0us/pocs/tree/master/lmdb/lmdb%20memory%20corruption%20vuln
+  url: 
+    https://github.com/TeamSeri0us/pocs/tree/master/lmdb/lmdb%20memory%20corruption%20vuln
 - type: PACKAGE
   url: https://pypi.org/project/lmdb
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2019-16226
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-r8g9-w4f3-9crm
 affected:
 - package:
     name: lmdb

@@ -54,12 +54,16 @@ references:
 - type: WEB
   url: https://plone.org/security/hotfix/20200121
 - type: WEB
-  url: https://plone.org/security/hotfix/20200121/xss-in-the-title-field-on-plone-5-0-and-higher
+  url: 
+    https://plone.org/security/hotfix/20200121/xss-in-the-title-field-on-plone-5-0-and-higher
 - type: WEB
   url: https://www.openwall.com/lists/oss-security/2020/01/22/1
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2020/01/24/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8mc4-2xrc-g582
 aliases:
 - CVE-2020-7937
+- GHSA-8mc4-2xrc-g582
 modified: "2020-01-24T23:07:00Z"
 published: "2020-01-23T21:15:00Z"

@@ -3,6 +3,7 @@ modified: 2023-11-22T11:21:52.095543Z
 published: 2023-11-22T10:15:00Z
 aliases:
 - CVE-2023-37924
+- GHSA-v5gj-fx3g-hcpw
 details: |+
   Apache Software Foundation Apache Submarine has an SQL injection vulnerability when a user logs in. This issue can result in unauthorized login.
   Now we have fixed this issue and now user must have the correct login to access workbench.
@@ -29,3 +30,5 @@ references:
   url: https://github.com/apache/submarine/pull/1037
 - type: WEB
   url: https://lists.apache.org/thread/g99h773vd49n1wyghdq1llv2f83w1b3r
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v5gj-fx3g-hcpw

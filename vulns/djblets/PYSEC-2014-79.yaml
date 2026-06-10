@@ -102,16 +102,22 @@ references:
 - type: ADVISORY
   url: http://secunia.com/advisories/58691
 - type: FIX
-  url: https://github.com/djblets/djblets/commit/50000d0bbb983fa8c097b588d06b64df8df483bd
+  url: 
+    https://github.com/djblets/djblets/commit/50000d0bbb983fa8c097b588d06b64df8df483bd
 - type: WEB
   url: http://seclists.org/oss-sec/2014/q2/498
 - type: WEB
   url: http://seclists.org/oss-sec/2014/q2/494
 - type: FIX
-  url: https://github.com/djblets/djblets/commit/77ac64642ad530bf69e390c51fc6fdcb8914c8e7
+  url: 
+    https://github.com/djblets/djblets/commit/77ac64642ad530bf69e390c51fc6fdcb8914c8e7
 - type: FIX
-  url: https://github.com/djblets/djblets/commit/e2c79117efd925636acd871a5f473512602243cf
+  url: 
+    https://github.com/djblets/djblets/commit/e2c79117efd925636acd871a5f473512602243cf
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4xf6-xr96-7vmp
 aliases:
 - CVE-2014-3995
+- GHSA-4xf6-xr96-7vmp
 modified: "2021-08-27T03:22:03.303468Z"
 published: "2014-06-16T18:55:00Z"

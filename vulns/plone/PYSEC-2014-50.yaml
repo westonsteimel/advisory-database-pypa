@@ -94,7 +94,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2012/11/10/1
 - type: WEB
   url: https://bugs.launchpad.net/zope2/+bug/1071067
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wprr-mc54-c62q
 aliases:
 - CVE-2012-5508
+- GHSA-wprr-mc54-c62q
 modified: "2021-09-01T08:44:31.321280Z"
 published: "2014-11-03T22:55:00Z"

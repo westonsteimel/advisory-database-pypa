@@ -3,6 +3,7 @@ modified: 2023-09-07T20:23:20.197102Z
 published: 2023-09-05T11:15:00Z
 aliases:
 - CVE-2023-20897
+- GHSA-vpjg-wmf8-29h9
 details: |
   Salt masters prior to 3005.2 or 3006.2 contain a DOS in minion return. After receiving several bad packets on the request server equal to the number of worker threads, the master will become unresponsive to return requests until restarted.
 affected:
@@ -237,3 +238,5 @@ severity:
 references:
 - type: ADVISORY
   url: https://saltproject.io/security-announcements/2023-08-10-advisory/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vpjg-wmf8-29h9

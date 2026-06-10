@@ -61,7 +61,10 @@ references:
   url: http://www.ubuntu.com/usn/USN-2705-1
 - type: WEB
   url: http://www.securityfocus.com/bid/69864
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-7f2c-vp52-gmfw
 aliases:
 - CVE-2014-7144
+- GHSA-7f2c-vp52-gmfw
 modified: "2021-07-25T23:34:52.128374Z"
 published: "2014-10-02T14:55:00Z"

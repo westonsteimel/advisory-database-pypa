@@ -20,10 +20,15 @@ references:
 - type: WEB
   url: https://github.com/mkalioby/django-mfa2/releases/tag/v2.5.1-release
 - type: EVIDENCE
-  url: https://github.com/mkalioby/django-mfa2/blob/0936ea253354dd95cb127f09d0efa31324caef27/mfa/FIDO2.py#L58
+  url: 
+    https://github.com/mkalioby/django-mfa2/blob/0936ea253354dd95cb127f09d0efa31324caef27/mfa/FIDO2.py#L58
 - type: WEB
-  url: https://github.com/mkalioby/django-mfa2/blob/0936ea253354dd95cb127f09d0efa31324caef27/mfa/FIDO2.py#L58
+  url: 
+    https://github.com/mkalioby/django-mfa2/blob/0936ea253354dd95cb127f09d0efa31324caef27/mfa/FIDO2.py#L58
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vw39-2wj9-4q86
 aliases:
 - CVE-2022-42731
+- GHSA-vw39-2wj9-4q86
 modified: "2022-10-11T19:05:00Z"
 published: "2022-10-11T14:15:00Z"

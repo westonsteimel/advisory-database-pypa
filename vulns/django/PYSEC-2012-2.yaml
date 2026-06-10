@@ -49,7 +49,10 @@ references:
   url: http://www.debian.org/security/2012/dsa-2529
 - type: ADVISORY
   url: http://www.mandriva.com/security/advisories?name=MDVSA-2012:143
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-78vx-ggch-wghm
 aliases:
 - CVE-2012-3442
+- GHSA-78vx-ggch-wghm
 modified: "2021-07-05T00:01:18.211806Z"
 published: "2012-07-31T17:55:00Z"

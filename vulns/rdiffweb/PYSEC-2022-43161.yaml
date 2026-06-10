@@ -3,6 +3,7 @@ modified: 2024-11-21T14:23:00.575892Z
 published: 2022-10-13T20:15:00Z
 aliases:
 - CVE-2022-3457
+- GHSA-824x-jcxf-hpfg
 details: Origin Validation Error in GitHub repository ikus060/rdiffweb prior to 2.5.0a5.
 affected:
 - package:
@@ -114,6 +115,9 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 references:
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/afc1bdfab5161c74012ff2590a6ec49cc0d8fde0
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/afc1bdfab5161c74012ff2590a6ec49cc0d8fde0
 - type: WEB
   url: https://huntr.dev/bounties/cfcab02e-d6ad-4dcf-b1b0-da90434bc55b
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-824x-jcxf-hpfg

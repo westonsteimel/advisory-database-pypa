@@ -23,7 +23,10 @@ references:
   url: https://www.djangoproject.com/weblog/2016/feb/01/releases-192-and-189/
 - type: WEB
   url: http://www.securityfocus.com/bid/82329
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-46x4-9jmv-jc8p
 aliases:
 - CVE-2016-2048
+- GHSA-46x4-9jmv-jc8p
 modified: "2021-07-15T02:22:10.055528Z"
 published: "2016-02-08T19:59:00Z"

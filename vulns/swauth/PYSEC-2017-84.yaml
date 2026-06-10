@@ -26,7 +26,8 @@ affected:
   - 1.2.0
 references:
 - type: FIX
-  url: https://github.com/openstack/swauth/commit/70af7986265a3defea054c46efc82d0698917298
+  url: 
+    https://github.com/openstack/swauth/commit/70af7986265a3defea054c46efc82d0698917298
 - type: WEB
   url: https://bugs.launchpad.net/swift/+bug/1655781
 - type: WEB
@@ -35,7 +36,10 @@ references:
   url: https://www.debian.org/security/2017/dsa-4044
 - type: WEB
   url: http://www.securityfocus.com/bid/101926
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qhq8-xwqv-pvv9
 aliases:
 - CVE-2017-16613
+- GHSA-qhq8-xwqv-pvv9
 modified: "2021-08-25T04:30:33.081491Z"
 published: "2017-11-21T13:29:00Z"

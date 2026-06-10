@@ -107,12 +107,17 @@ references:
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2015-04/msg00001.html
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148485.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148485.html
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148608.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-January/148608.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2015-09/msg00035.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gv98-g628-m9x5
 aliases:
 - CVE-2015-0220
+- GHSA-gv98-g628-m9x5
 modified: "2021-07-05T00:01:19.540383Z"
 published: "2015-01-16T16:59:00Z"

@@ -3,8 +3,6 @@ modified: 2025-02-12T21:21:51.559667Z
 published: 2024-07-05T19:15:10Z
 aliases:
 - CVE-2024-39689
-related:
-- GHSA-248v-346w-9cwc
 - GHSA-248v-346w-9cwc
 details: Certifi is a curated collection of Root Certificates for validating the trustworthiness
   of SSL certificates while verifying the identity of TLS hosts. Certifi starting
@@ -22,7 +20,6 @@ affected:
   - type: GIT
     events:
     - introduced: "0"
-    - fixed: bd8153872e9c6fc98f4023df9c2deaffea2fa463
     - fixed: bd8153872e9c6fc98f4023df9c2deaffea2fa463
     repo: https://github.com/certifi/python-certifi
   - type: ECOSYSTEM
@@ -50,10 +47,14 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
 references:
 - type: ADVISORY
-  url: https://github.com/certifi/python-certifi/security/advisories/GHSA-248v-346w-9cwc
+  url: 
+    https://github.com/certifi/python-certifi/security/advisories/GHSA-248v-346w-9cwc
 - type: ADVISORY
   url: https://security.netapp.com/advisory/ntap-20241206-0001/
 - type: ARTICLE
   url: https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI
 - type: FIX
-  url: https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463
+  url: 
+    https://github.com/certifi/python-certifi/commit/bd8153872e9c6fc98f4023df9c2deaffea2fa463
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-248v-346w-9cwc

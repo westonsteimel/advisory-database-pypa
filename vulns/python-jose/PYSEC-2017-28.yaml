@@ -43,10 +43,14 @@ references:
 - type: WEB
   url: https://github.com/mpdavis/python-jose/releases/tag/1.3.2
 - type: WEB
-  url: https://github.com/mpdavis/python-jose/pull/35/commits/89b46353b9f611e9da38de3d2fedf52331167b93
+  url: 
+    https://github.com/mpdavis/python-jose/pull/35/commits/89b46353b9f611e9da38de3d2fedf52331167b93
 - type: WEB
   url: http://www.securityfocus.com/bid/95845
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-w799-prg3-cx77
 aliases:
 - CVE-2016-7036
+- GHSA-w799-prg3-cx77
 modified: "2021-07-05T00:01:25.423622Z"
 published: "2017-01-23T21:59:00Z"

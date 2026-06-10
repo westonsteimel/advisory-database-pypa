@@ -3,6 +3,7 @@ modified: 2025-07-08T19:22:27.449399Z
 published: 2025-06-19T21:15:27Z
 aliases:
 - CVE-2025-6279
+- GHSA-rpfv-46xj-5984
 details: A vulnerability, which was classified as critical, has been found in Upsonic
   up to 0.55.6. This issue affects the function cloudpickle.loads of the file /tools/add_tool
   of the component Pickle Handler. The manipulation leads to deserialization. The
@@ -352,3 +353,5 @@ references:
   url: https://vuldb.com/?id.313283
 - type: WEB
   url: https://vuldb.com/?submit.593099
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rpfv-46xj-5984

@@ -3,6 +3,7 @@ modified: 2024-09-16T19:20:04.841635Z
 published: 2024-09-12T13:15:00Z
 aliases:
 - CVE-2024-45849
+- GHSA-c85f-pcx6-2ghm
 details: An arbitrary code execution vulnerability exists in versions 23.10.5.0 up
   to 24.7.4.1 of the MindsDB platform, when the Microsoft SharePoint integration is
   installed on the server. For databases created with the SharePoint engine, an ‘INSERT’
@@ -57,3 +58,5 @@ references:
   url: https://hiddenlayer.com/sai-security-advisory/2024-09-mindsdb/
 - type: ADVISORY
   url: https://hiddenlayer.com/sai-security-advisory/2024-09-mindsdb/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c85f-pcx6-2ghm

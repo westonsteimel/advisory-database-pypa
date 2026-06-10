@@ -3,6 +3,7 @@ modified: 2025-06-03T17:36:58.579358Z
 published: 2025-05-26T08:15:19Z
 aliases:
 - CVE-2025-5175
+- GHSA-qpxx-2cwh-r5vh
 details: A vulnerability was found in erdogant pypickle up to 1.1.5. It has been classified
   as critical. This affects the function Save of the file pypickle/pypickle.py. The
   manipulation leads to improper authorization. Attacking locally is a requirement.
@@ -57,7 +58,8 @@ references:
 - type: EVIDENCE
   url: https://github.com/erdogant/pypickle/issues/3#issuecomment-2888589652
 - type: FIX
-  url: https://github.com/erdogant/pypickle/commit/14b4cae704a0bb4eb6723e238f25382d847a1917
+  url: 
+    https://github.com/erdogant/pypickle/commit/14b4cae704a0bb4eb6723e238f25382d847a1917
 - type: REPORT
   url: https://github.com/erdogant/pypickle/issues/3
 - type: REPORT
@@ -72,3 +74,5 @@ references:
   url: https://vuldb.com/?id.310263
 - type: WEB
   url: https://vuldb.com/?submit.579824
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qpxx-2cwh-r5vh

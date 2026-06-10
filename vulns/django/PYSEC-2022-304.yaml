@@ -57,7 +57,10 @@ references:
   url: https://www.djangoproject.com/weblog/2022/oct/04/security-releases/
 - type: WEB
   url: https://groups.google.com/forum/#!forum/django-announce
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qrw5-5h28-6cmg
 aliases:
 - CVE-2022-41323
+- GHSA-qrw5-5h28-6cmg
 modified: "2022-10-16T10:47:15.418796Z"
 published: "2022-10-16T06:15:00Z"

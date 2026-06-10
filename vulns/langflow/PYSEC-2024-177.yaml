@@ -3,6 +3,7 @@ modified: 2025-01-19T01:52:23.722576Z
 published: 2024-06-10T20:15:15Z
 aliases:
 - CVE-2024-37014
+- GHSA-qg33-x2c5-6p44
 details: Langflow through 0.6.19 allows remote code execution if untrusted users are
   able to reach the "POST /api/v1/custom_component" endpoint and provide a Python
   script.
@@ -190,3 +191,5 @@ references:
   url: https://github.com/langflow-ai/langflow/issues/1973
 - type: REPORT
   url: https://github.com/langflow-ai/langflow/issues/1973
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qg33-x2c5-6p44

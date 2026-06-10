@@ -3,6 +3,7 @@ modified: 2023-07-28T16:31:09.279625Z
 published: 2023-07-19T19:15:00Z
 aliases:
 - CVE-2023-3674
+- GHSA-g4wg-cfpf-9689
 details: A flaw was found in the keylime attestation verifier, which fails to flag
   a device's submitted TPM quote as faulty when the quote's signature does not validate
   for some reason. Instead, it will only emit an error in the log without flagging
@@ -47,4 +48,7 @@ references:
 - type: FIX
   url: https://bugzilla.redhat.com/show_bug.cgi?id=2222903
 - type: FIX
-  url: https://github.com/keylime/keylime/commit/95ce3d86bd2c53009108ffda2dcf553312d733db
+  url: 
+    https://github.com/keylime/keylime/commit/95ce3d86bd2c53009108ffda2dcf553312d733db
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g4wg-cfpf-9689

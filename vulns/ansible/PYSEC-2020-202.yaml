@@ -45,14 +45,18 @@ references:
 - type: WEB
   url: https://security-tracker.debian.org/tracker/CVE-2014-4660
 - type: FIX
-  url: https://github.com/ansible/ansible/commit/c4b5e46054c74176b2446c82d4df1a2610eddc08
+  url: 
+    https://github.com/ansible/ansible/commit/c4b5e46054c74176b2446c82d4df1a2610eddc08
 - type: WEB
   url: https://www.securityfocus.com/bid/68231
 - type: WEB
   url: https://www.openwall.com/lists/oss-security/2014/06/26/19
 - type: WEB
   url: https://github.com/ansible/ansible/blob/release1.5.5/CHANGELOG.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5xm4-jmpw-p6j3
 aliases:
 - CVE-2014-4660
+- GHSA-5xm4-jmpw-p6j3
 modified: "2021-07-02T02:41:33.239912Z"
 published: "2020-02-20T03:15:00Z"

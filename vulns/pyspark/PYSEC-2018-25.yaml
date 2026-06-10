@@ -23,8 +23,12 @@ references:
 - type: WEB
   url: https://spark.apache.org/security.html#CVE-2018-1334
 - type: WEB
-  url: https://lists.apache.org/thread.html/4d6d210e319a501b740293daaeeeadb51927111fb8261a3e4cd60060@%3Cdev.spark.apache.org%3E
+  url: 
+    https://lists.apache.org/thread.html/4d6d210e319a501b740293daaeeeadb51927111fb8261a3e4cd60060@%3Cdev.spark.apache.org%3E
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6mqq-8r44-vmjc
 aliases:
 - CVE-2018-1334
+- GHSA-6mqq-8r44-vmjc
 modified: "2021-06-16T00:03:24.717902Z"
 published: "2018-07-12T13:29:00Z"

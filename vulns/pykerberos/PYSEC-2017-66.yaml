@@ -28,7 +28,10 @@ references:
   url: http://www.securityfocus.com/bid/74760
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2015/05/21/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mffc-9gx5-99g3
 aliases:
 - CVE-2015-3206
+- GHSA-mffc-9gx5-99g3
 modified: "2021-07-25T23:34:51.016854Z"
 published: "2017-08-25T18:29:00Z"

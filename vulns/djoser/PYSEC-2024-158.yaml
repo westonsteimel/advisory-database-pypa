@@ -3,6 +3,7 @@ modified: 2025-01-14T05:22:11.856636Z
 published: 2024-12-13T05:15:07Z
 aliases:
 - CVE-2024-21543
+- GHSA-v49p-m6gh-747c
 details: Versions of the package djoser before 2.3.0 are vulnerable to Authentication
   Bypass when the authenticate() function fails. This is because the system falls
   back to querying the database directly, granting access to users with valid credentials,
@@ -72,7 +73,8 @@ affected:
   - 2.2.3
 references:
 - type: FIX
-  url: https://github.com/sunscrapers/djoser/commit/d33c3993c0c735f23cbedc60fa59fce69354f19d
+  url: 
+    https://github.com/sunscrapers/djoser/commit/d33c3993c0c735f23cbedc60fa59fce69354f19d
 - type: REPORT
   url: https://github.com/sunscrapers/djoser/issues/795
 - type: WEB
@@ -81,3 +83,5 @@ references:
   url: https://github.com/sunscrapers/djoser/releases/tag/2.3.0
 - type: WEB
   url: https://security.snyk.io/vuln/SNYK-PYTHON-DJOSER-8366540
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v49p-m6gh-747c

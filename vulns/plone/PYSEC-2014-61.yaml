@@ -83,7 +83,10 @@ references:
   url: http://plone.org/products/plone/security/advisories/20130618-announcement
 - type: WEB
   url: http://plone.org/products/plone-hotfix/releases/20130618
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jjvw-3h9j-p7jf
 aliases:
 - CVE-2013-4197
+- GHSA-jjvw-3h9j-p7jf
 modified: "2021-07-25T23:34:47.083456Z"
 published: "2014-03-11T19:37:00Z"

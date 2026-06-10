@@ -59,7 +59,10 @@ references:
   url: https://usn.ubuntu.com/4072-1/
 - type: WEB
   url: https://lists.debian.org/debian-lts-announce/2019/09/msg00016.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fc4h-467w-46rh
 aliases:
 - CVE-2018-10875
+- GHSA-fc4h-467w-46rh
 modified: "2021-07-02T02:41:34.153569Z"
 published: "2018-07-13T22:29:00Z"

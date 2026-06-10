@@ -39,7 +39,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2012/11/10/1
 - type: ADVISORY
   url: https://plone.org/products/plone/security/advisories/20121106/12
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gx6w-hcw3-5r37
 aliases:
 - CVE-2012-5496
+- GHSA-gx6w-hcw3-5r37
 modified: "2021-07-25T23:34:44.340105Z"
 published: "2014-09-30T14:55:00Z"

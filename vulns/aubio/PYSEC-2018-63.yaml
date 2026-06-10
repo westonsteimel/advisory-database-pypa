@@ -26,7 +26,10 @@ references:
   url: http://lists.opensuse.org/opensuse-security-announce/2019-03/msg00031.html
 - type: WEB
   url: http://lists.opensuse.org/opensuse-security-announce/2019-04/msg00071.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3x58-8qmv-wqw5
 aliases:
 - CVE-2018-14523
+- GHSA-3x58-8qmv-wqw5
 modified: "2021-08-25T04:29:55.843499Z"
 published: "2018-07-23T08:29:00Z"

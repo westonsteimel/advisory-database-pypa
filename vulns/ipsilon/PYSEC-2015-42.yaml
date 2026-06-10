@@ -5,6 +5,7 @@ details: providers/saml2/admin.py in the Identity Provider (IdP) server in Ipsil
   Service Provider (SP).
 aliases:
 - CVE-2015-5301
+- GHSA-9qp4-79q8-58pr
 modified: '2024-12-05T09:35:27.751929Z'
 published: '2015-11-17T15:59:00Z'
 withdrawn: '2024-11-22T04:37:04Z'
@@ -20,11 +21,16 @@ references:
 - type: WEB
   url: https://fedorahosted.org/ipsilon/wiki/Releases/v1.1.1
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-November/171076.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-November/171076.html
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-November/171067.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-November/171067.html
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-November/171052.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-November/171052.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9qp4-79q8-58pr
 affected:
 - package:
     name: ipsilon

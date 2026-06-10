@@ -29,7 +29,10 @@ references:
   url: https://github.com/apache/airflow/pull/26409
 - type: WEB
   url: https://lists.apache.org/thread/cn098dcp5x3c402xrb06p3l7nz5goffm
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4fg5-j4mm-wfpg
 aliases:
 - CVE-2022-40754
+- GHSA-4fg5-j4mm-wfpg
 modified: "2022-09-21T10:45:51.897136Z"
 published: "2022-09-21T08:15:00Z"

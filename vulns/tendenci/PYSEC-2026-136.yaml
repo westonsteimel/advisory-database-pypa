@@ -700,6 +700,7 @@ affected:
   - 7.5.2
 aliases:
 - CVE-2020-36962
+- GHSA-4q3w-jgfx-4792
 details: Tendenci 12.3.1 contains a CSV formula injection vulnerability in the contact
   form message field that allows attackers to inject malicious formulas during export.
   Attackers can submit crafted payloads like '=10+20+cmd|' /C calc'!A0' in the message
@@ -717,6 +718,9 @@ references:
   url: https://github.com/tendenci/tendenci
 - type: EVIDENCE
   url: https://www.exploit-db.com/exploits/49145
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4q3w-jgfx-4792
 severity:
-- score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+- score: 
+    CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
   type: CVSS_V4

@@ -1,8 +1,9 @@
 id: PYSEC-2023-284
-modified: 2024-11-21T14:22:55.16071Z
+modified: 2024-11-21T14:22:55.160710Z
 published: 2023-01-23T14:15:00Z
 aliases:
 - CVE-2023-0438
+- GHSA-9c64-x3cx-vgmm
 details: Cross-Site Request Forgery (CSRF) in GitHub repository modoboa/modoboa prior
   to 2.0.4.
 affected:
@@ -96,4 +97,7 @@ references:
 - type: WEB
   url: https://huntr.dev/bounties/07a5b61b-306d-47c4-8ff0-06c540c7dfb3
 - type: FIX
-  url: https://github.com/modoboa/modoboa/commit/38d778cc71e370216e067d054ce0169ad83078c8
+  url: 
+    https://github.com/modoboa/modoboa/commit/38d778cc71e370216e067d054ce0169ad83078c8
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9c64-x3cx-vgmm

@@ -48,10 +48,14 @@ affected:
   - 1.6.5
 references:
 - type: FIX
-  url: https://github.com/ansible/ansible/commit/8ed6350e65c82292a631f08845dfaacffe7f07f5
+  url: 
+    https://github.com/ansible/ansible/commit/8ed6350e65c82292a631f08845dfaacffe7f07f5
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=1335551
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4cvm-5776-jx9f
 aliases:
 - CVE-2014-3498
+- GHSA-4cvm-5776-jx9f
 modified: "2021-07-02T02:41:33.064199Z"
 published: "2017-06-08T18:29:00Z"

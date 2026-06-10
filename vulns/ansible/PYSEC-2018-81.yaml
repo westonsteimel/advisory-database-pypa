@@ -124,7 +124,10 @@ references:
   url: https://access.redhat.com/errata/RHSA-2019:0054
 - type: WEB
   url: https://usn.ubuntu.com/4072-1/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3xvg-x47j-x75w
 aliases:
 - CVE-2018-10874
+- GHSA-3xvg-x47j-x75w
 modified: "2021-11-11T23:46:36.679476Z"
 published: "2018-07-02T13:29:00Z"

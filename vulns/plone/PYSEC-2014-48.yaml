@@ -90,7 +90,10 @@ references:
   url: https://plone.org/products/plone/security/advisories/20121106/22
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2012/11/10/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-79hj-474h-v4xv
 aliases:
 - CVE-2012-5506
+- GHSA-79hj-474h-v4xv
 modified: "2021-09-01T08:44:31.097145Z"
 published: "2014-09-30T14:55:00Z"

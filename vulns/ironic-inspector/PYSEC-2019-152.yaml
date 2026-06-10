@@ -70,20 +70,28 @@ affected:
   - 8.2.0
 references:
 - type: WEB
-  url: https://docs.openstack.org/releasenotes/ironic-inspector/ocata.html#relnotes-5-0-2-7-origin-stable-ocata
+  url: 
+    https://docs.openstack.org/releasenotes/ironic-inspector/ocata.html#relnotes-5-0-2-7-origin-stable-ocata
 - type: WEB
-  url: https://docs.openstack.org/releasenotes/ironic-inspector/stein.html#relnotes-8-2-1-stable-stein
+  url: 
+    https://docs.openstack.org/releasenotes/ironic-inspector/stein.html#relnotes-8-2-1-stable-stein
 - type: WEB
-  url: https://docs.openstack.org/releasenotes/ironic-inspector/queens.html#relnotes-7-2-4-stable-queens
+  url: 
+    https://docs.openstack.org/releasenotes/ironic-inspector/queens.html#relnotes-7-2-4-stable-queens
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-10141
 - type: WEB
-  url: https://docs.openstack.org/releasenotes/ironic-inspector/rocky.html#relnotes-8-0-3-stable-rocky
+  url: 
+    https://docs.openstack.org/releasenotes/ironic-inspector/rocky.html#relnotes-8-0-3-stable-rocky
 - type: WEB
-  url: https://docs.openstack.org/releasenotes/ironic-inspector/pike.html#relnotes-6-0-3-4-stable-pike
+  url: 
+    https://docs.openstack.org/releasenotes/ironic-inspector/pike.html#relnotes-6-0-3-4-stable-pike
 - type: ADVISORY
   url: https://access.redhat.com/errata/RHSA-2019:2505
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c7fc-cm7p-92r2
 aliases:
 - CVE-2019-10141
+- GHSA-c7fc-cm7p-92r2
 modified: "2021-07-05T00:01:21.998814Z"
 published: "2019-07-30T17:15:00Z"

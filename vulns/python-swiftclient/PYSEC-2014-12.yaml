@@ -28,7 +28,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2014/02/17/7
 - type: WEB
   url: https://bugs.launchpad.net/python-swiftclient/+bug/1199783
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-p3xv-97g8-4wmj
 aliases:
 - CVE-2013-6396
+- GHSA-p3xv-97g8-4wmj
 modified: "2021-07-05T00:01:25.452828Z"
 published: "2014-02-18T19:55:00Z"

@@ -102,8 +102,12 @@ references:
 - type: WEB
   url: https://huntr.dev/bounties/d3bf1e5d-055a-44b8-8d60-54ab966ed63a
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/5ac38b2a75becbab9f948bd5e37ecbcd9f0b362e
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/5ac38b2a75becbab9f948bd5e37ecbcd9f0b362e
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qq29-5vjh-vxwr
 aliases:
 - CVE-2022-3301
+- GHSA-qq29-5vjh-vxwr
 modified: "2022-09-28T20:45:53.940487Z"
 published: "2022-09-26T11:15:00Z"

@@ -3,6 +3,7 @@ modified: 2025-01-14T05:22:11.817473Z
 published: 2024-12-06T12:15:18Z
 aliases:
 - CVE-2024-53908
+- GHSA-m9g8-fxxm-xg86
 details: An issue was discovered in Django 5.1 before 5.1.4, 5.0 before 5.0.10, and
   4.2 before 4.2.17. Direct usage of the django.db.models.fields.json.HasKey lookup,
   when an Oracle database is used, is subject to SQL injection if untrusted data is
@@ -61,3 +62,5 @@ references:
   url: https://groups.google.com/g/django-announce
 - type: WEB
   url: https://www.openwall.com/lists/oss-security/2024/12/04/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m9g8-fxxm-xg86

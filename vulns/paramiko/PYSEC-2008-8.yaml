@@ -47,9 +47,11 @@ references:
 - type: WEB
   url: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=460706
 - type: WEB
-  url: https://www.redhat.com/archives/fedora-package-announce/2008-January/msg00529.html
+  url: 
+    https://www.redhat.com/archives/fedora-package-announce/2008-January/msg00529.html
 - type: WEB
-  url: https://www.redhat.com/archives/fedora-package-announce/2008-January/msg00594.html
+  url: 
+    https://www.redhat.com/archives/fedora-package-announce/2008-January/msg00594.html
 - type: WEB
   url: http://www.securityfocus.com/bid/27307
 - type: ADVISORY
@@ -62,7 +64,10 @@ references:
   url: http://secunia.com/advisories/29168
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/39749
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wqmm-q65g-2hqr
 aliases:
 - CVE-2008-0299
+- GHSA-wqmm-q65g-2hqr
 modified: "2021-08-27T03:22:10.050129Z"
 published: "2008-01-16T23:00:00Z"

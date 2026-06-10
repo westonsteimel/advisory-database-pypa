@@ -3,6 +3,7 @@ modified: 2023-07-10T18:33:06.804092Z
 published: 2023-06-30T20:15:00Z
 aliases:
 - CVE-2023-31543
+- GHSA-v4f4-23wc-99mh
 details: A dependency confusion in pipreqs v0.3.0 to v0.4.11 allows attackers to execute
   arbitrary code via uploading a crafted PyPI package to the chosen repository server.
 affected:
@@ -51,3 +52,5 @@ references:
   url: https://gist.github.com/adeadfed/ccc834440af354a5638f889bee34bafe
 - type: WEB
   url: https://gist.github.com/adeadfed/ccc834440af354a5638f889bee34bafe
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v4f4-23wc-99mh

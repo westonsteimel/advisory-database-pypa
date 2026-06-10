@@ -33,7 +33,10 @@ references:
   url: http://www.vupen.com/english/advisories/2008/2223/references
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/44016
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x6jf-c7wh-7m7w
 aliases:
 - CVE-2008-3328
+- GHSA-x6jf-c7wh-7m7w
 modified: "2021-07-16T01:31:34.385513Z"
 published: "2008-07-27T22:41:00Z"

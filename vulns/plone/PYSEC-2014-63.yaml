@@ -84,7 +84,10 @@ references:
   url: https://bugzilla.redhat.com/show_bug.cgi?id=978482
 - type: WEB
   url: http://seclists.org/oss-sec/2013/q3/261
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-xfjq-9rxq-ph6m
 aliases:
 - CVE-2013-4199
+- GHSA-xfjq-9rxq-ph6m
 modified: "2021-07-25T23:34:47.359775Z"
 published: "2014-03-11T19:37:00Z"

@@ -3,6 +3,7 @@ modified: 2025-01-14T05:22:17.204098Z
 published: 2024-12-10T05:15:07Z
 aliases:
 - CVE-2024-21542
+- GHSA-8qch-vj6m-2694
 details: Versions of the package luigi before 3.6.0 are vulnerable to Arbitrary File
   Write via Archive Extraction (Zip Slip) due to improper destination file path validation
   in the _extract_packages_archive function.
@@ -114,3 +115,5 @@ references:
   url: https://github.com/spotify/luigi/releases/tag/v3.6.0
 - type: WEB
   url: https://security.snyk.io/vuln/SNYK-PYTHON-LUIGI-7830489
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8qch-vj6m-2694

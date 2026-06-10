@@ -3,6 +3,7 @@ modified: 2024-07-17T23:22:05.024899Z
 published: 2024-07-17T20:15:00Z
 aliases:
 - CVE-2024-39126
+- GHSA-x37x-qf4v-f54f
 details: Roundup before 2.4.0 allows XSS via JavaScript in PDF, XML, and SVG documents.
 affected:
 - package:
@@ -93,3 +94,5 @@ references:
   url: https://www.roundup-tracker.org
 - type: WEB
   url: https://www.roundup-tracker.org/docs/security.html#cve-announcements
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x37x-qf4v-f54f

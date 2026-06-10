@@ -51,7 +51,10 @@ references:
   url: http://secunia.com/advisories/50885
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/65545
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m9j7-xcj7-42j9
 aliases:
 - CVE-2011-1058
+- GHSA-m9j7-xcj7-42j9
 modified: "2021-07-05T00:01:22.907058Z"
 published: "2011-02-22T18:00:00Z"

@@ -46,7 +46,10 @@ references:
   url: https://www.brzozowski.io
 - type: ARTICLE
   url: https://octoprint.org/blog/2021/04/27/new-release-1.6.0/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vcx4-fpmp-mvv6
 aliases:
 - CVE-2021-32561
+- GHSA-vcx4-fpmp-mvv6
 modified: "2021-05-11T15:18:00Z"
 published: "2021-05-11T14:15:00Z"

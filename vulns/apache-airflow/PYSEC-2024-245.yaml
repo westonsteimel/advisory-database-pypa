@@ -3,6 +3,7 @@ modified: 2025-05-01T21:22:38.598048Z
 published: 2024-02-29T11:15:08Z
 aliases:
 - CVE-2024-27906
+- GHSA-6v6w-h8m6-7mv2
 details: |-
   Apache Airflow, versions before 2.8.2, has a vulnerability that allows authenticated users to view DAG code and import errors of DAGs they do not have permission to view through the API and the UI.
 
@@ -208,3 +209,5 @@ references:
   url: https://github.com/apache/airflow/pull/37468
 - type: WEB
   url: https://github.com/apache/airflow/pull/37290
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6v6w-h8m6-7mv2

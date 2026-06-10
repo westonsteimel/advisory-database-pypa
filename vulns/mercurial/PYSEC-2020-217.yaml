@@ -114,8 +114,12 @@ references:
 - type: WEB
   url: https://libgit2.org/security/
 - type: FIX
-  url: https://github.com/libgit2/libgit2/commit/928429c5c96a701bcbcafacb2421a82602b36915
+  url: 
+    https://github.com/libgit2/libgit2/commit/928429c5c96a701bcbcafacb2421a82602b36915
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6vvc-c2m3-cjf3
 aliases:
 - CVE-2014-9390
+- GHSA-6vvc-c2m3-cjf3
 modified: "2021-07-25T23:34:39.934367Z"
 published: "2020-02-12T02:15:00Z"

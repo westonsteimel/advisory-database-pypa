@@ -3,6 +3,7 @@ modified: 2024-11-01T21:22:09.060172Z
 published: 2024-10-29T13:15:00Z
 aliases:
 - CVE-2024-6581
+- GHSA-cm59-8rmv-f2cj
 details: A vulnerability in the discussion image upload function of the Lollms application,
   version v9.9, allows for the uploading of SVG files. Due to incomplete filtering
   in the sanitize_svg function, this can lead to cross-site scripting (XSS) vulnerabilities,
@@ -299,4 +300,7 @@ references:
 - type: WEB
   url: https://huntr.com/bounties/ad68ecd6-44e2-449b-8e7e-f2b71b1b43c7
 - type: FIX
-  url: https://github.com/parisneo/lollms/commit/328b960a0de2097e13654ac752253e9541521ddd
+  url: 
+    https://github.com/parisneo/lollms/commit/328b960a0de2097e13654ac752253e9541521ddd
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cm59-8rmv-f2cj

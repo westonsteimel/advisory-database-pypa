@@ -3,13 +3,16 @@ details: Radicale before 1.1.2 and 2.x before 2.0.0rc2 is prone to timing oracle
   and simple brute-force attacks when using the htpasswd authentication method.
 aliases:
 - CVE-2017-8342
+- GHSA-rpv4-63g3-9x23
 modified: '2021-12-14T08:18:58.722697Z'
 published: '2017-04-30T15:59:00Z'
 references:
 - type: FIX
-  url: https://github.com/Kozea/Radicale/commit/190b1dd795f0c552a4992445a231da760211183b
+  url: 
+    https://github.com/Kozea/Radicale/commit/190b1dd795f0c552a4992445a231da760211183b
 - type: FIX
-  url: https://github.com/Kozea/Radicale/commit/059ba8dec1f22ccbeab837e288b3833a099cee2d
+  url: 
+    https://github.com/Kozea/Radicale/commit/059ba8dec1f22ccbeab837e288b3833a099cee2d
 - type: WEB
   url: https://github.com/Kozea/Radicale/blob/1.1.2/NEWS.rst
 - type: WEB
@@ -20,6 +23,8 @@ references:
   url: https://pypi.org/project/radicale
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2017-8342
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rpv4-63g3-9x23
 affected:
 - package:
     name: radicale

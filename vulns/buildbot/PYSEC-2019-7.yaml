@@ -46,8 +46,12 @@ affected:
   - 1.8.0
 references:
 - type: WEB
-  url: https://github.com/buildbot/buildbot/wiki/CRLF-injection-in-Buildbot-login-and-logout-redirect-code
+  url: 
+    https://github.com/buildbot/buildbot/wiki/CRLF-injection-in-Buildbot-login-and-logout-redirect-code
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-66x7-2r56-fj77
 aliases:
 - CVE-2019-7313
+- GHSA-66x7-2r56-fj77
 modified: "2019-02-06T21:48:00Z"
 published: "2019-02-03T08:29:00Z"

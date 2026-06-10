@@ -38,7 +38,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2014/01/18/4
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/90593
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9gcf-pq99-rjw3
 aliases:
 - CVE-2014-1604
+- GHSA-9gcf-pq99-rjw3
 modified: "2021-07-05T00:01:25.895879Z"
 published: "2014-01-28T00:55:00Z"

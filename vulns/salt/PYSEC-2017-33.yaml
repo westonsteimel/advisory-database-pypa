@@ -117,7 +117,10 @@ references:
   url: https://docs.saltstack.com/en/latest/topics/releases/2015.8.8.html
 - type: WEB
   url: https://docs.saltstack.com/en/latest/topics/releases/2015.5.10.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v2rp-9cpj-pfw2
 aliases:
 - CVE-2016-3176
+- GHSA-v2rp-9cpj-pfw2
 modified: "2021-07-05T00:01:26.354816Z"
 published: "2017-01-31T19:59:00Z"

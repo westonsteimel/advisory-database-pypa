@@ -3,6 +3,7 @@ modified: 2025-04-09T17:27:25.169049Z
 published: 2025-04-02T13:15:44Z
 aliases:
 - CVE-2025-27556
+- GHSA-wqfg-m96j-85vm
 details: An issue was discovered in Django 5.1 before 5.1.8 and 5.0 before 5.0.14.
   The NFKC normalization is slow on Windows. As a consequence, django.contrib.auth.views.LoginView,
   django.contrib.auth.views.LogoutView, and django.views.i18n.set_language are subject
@@ -52,3 +53,5 @@ references:
   url: https://groups.google.com/g/django-announce
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2025/04/02/2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wqfg-m96j-85vm

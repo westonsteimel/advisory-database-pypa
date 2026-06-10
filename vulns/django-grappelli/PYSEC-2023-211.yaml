@@ -3,6 +3,7 @@ modified: 2023-10-22T20:22:30.994719Z
 published: 2023-10-22T19:15:00Z
 aliases:
 - CVE-2021-46898
+- GHSA-9x43-5qcq-h79q
 details: views/switch.py in django-grappelli (aka Django Grappelli) before 2.15.2
   attempts to prevent external redirection with startswith("/") but this does not
   consider a protocol-relative URL (e.g., //example.com) attack.
@@ -90,10 +91,13 @@ affected:
   - 2.9.1
 references:
 - type: FIX
-  url: https://github.com/sehmaschine/django-grappelli/commit/4ca94bcda0fa2720594506853d85e00c8212968f
+  url: 
+    https://github.com/sehmaschine/django-grappelli/commit/4ca94bcda0fa2720594506853d85e00c8212968f
 - type: WEB
   url: https://github.com/sehmaschine/django-grappelli/pull/976
 - type: WEB
   url: https://github.com/sehmaschine/django-grappelli/compare/2.15.1...2.15.2
 - type: REPORT
   url: https://github.com/sehmaschine/django-grappelli/issues/975
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9x43-5qcq-h79q

@@ -761,6 +761,7 @@ affected:
   - 7.5.2
 aliases:
 - CVE-2025-70959
+- GHSA-g7hj-29xq-r64w
 details: A stored cross-site scripting (XSS) vulnerability in the Jobs module of Tendenci
   CMS v15.3.7 allows attackers to execute arbitrary web scripts or HTML via injecting
   a crafted payload.
@@ -770,6 +771,8 @@ published: '2026-02-02T23:16:02.830Z'
 references:
 - type: EVIDENCE
   url: https://github.com/emirhanyucelll/tendenci/blob/main/Readme.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g7hj-29xq-r64w
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N
   type: CVSS_V3

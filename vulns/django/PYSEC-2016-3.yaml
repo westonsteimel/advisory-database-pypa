@@ -152,7 +152,10 @@ references:
   url: http://rhn.redhat.com/errata/RHSA-2016-2039.html
 - type: ADVISORY
   url: http://rhn.redhat.com/errata/RHSA-2016-2038.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-crhm-qpjc-cm64
 aliases:
 - CVE-2016-7401
+- GHSA-crhm-qpjc-cm64
 modified: "2021-07-05T00:01:20.518242Z"
 published: "2016-10-03T18:59:00Z"

@@ -56,12 +56,16 @@ references:
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2015/03/22/26
 - type: WEB
-  url: https://git.samba.org/?p=jelmer/dulwich.git;a=commitdiff;h=091638be3c89f46f42c3b1d57dc1504af5729176
+  url: 
+    https://git.samba.org/?p=jelmer/dulwich.git;a=commitdiff;h=091638be3c89f46f42c3b1d57dc1504af5729176
 - type: WEB
   url: http://lists.fedoraproject.org/pipermail/package-announce/2015-April/154523.html
 - type: WEB
   url: http://lists.fedoraproject.org/pipermail/package-announce/2015-April/154551.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4j5j-58j7-6c3w
 aliases:
 - CVE-2014-9706
+- GHSA-4j5j-58j7-6c3w
 modified: "2021-08-27T03:22:03.389388Z"
 published: "2015-03-31T14:59:00Z"

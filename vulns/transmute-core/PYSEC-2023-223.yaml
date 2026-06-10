@@ -3,6 +3,7 @@ modified: 2023-11-02T10:30:07.951105Z
 published: 2023-11-02T06:15:00Z
 aliases:
 - CVE-2023-47204
+- GHSA-w9cp-3x79-2p8p
 details: Unsafe YAML deserialization in yaml.Loader in transmute-core before 1.13.5
   allows attackers to execute arbitrary Python code.
 affected:
@@ -95,3 +96,5 @@ references:
   url: https://github.com/toumorokoshi/transmute-core/pull/58
 - type: WEB
   url: https://github.com/toumorokoshi/transmute-core/releases/tag/v1.13.5
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-w9cp-3x79-2p8p

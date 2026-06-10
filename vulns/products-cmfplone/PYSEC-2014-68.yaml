@@ -59,7 +59,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2013/12/12/3
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2013/12/10/15
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4vr8-r7qr-fpvq
 aliases:
 - CVE-2013-7061
+- GHSA-4vr8-r7qr-fpvq
 modified: "2021-07-25T23:34:50.085881Z"
 published: "2014-05-02T14:55:00Z"

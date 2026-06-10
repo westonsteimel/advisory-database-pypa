@@ -3,6 +3,7 @@ modified: 2024-11-21T14:23:00.456366Z
 published: 2022-10-14T12:15:00Z
 aliases:
 - CVE-2022-3439
+- GHSA-x8x2-wc2h-wc48
 details: Allocation of Resources Without Limits or Throttling in GitHub repository
   ikus060/rdiffweb prior to 2.5.0.
 affected:
@@ -115,6 +116,9 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 references:
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/b78ec09f4582e363f6f449df6f987127e126c311
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/b78ec09f4582e363f6f449df6f987127e126c311
 - type: WEB
   url: https://huntr.dev/bounties/37b86c45-b240-4626-bd53-b6f02d10e0d7
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x8x2-wc2h-wc48

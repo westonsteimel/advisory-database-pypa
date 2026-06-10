@@ -3,6 +3,7 @@ modified: 2024-10-10T17:22:00.587279Z
 published: 2024-02-12T14:15:00Z
 aliases:
 - CVE-2023-6681
+- GHSA-cw2r-4p82-qv79
 details: A vulnerability was found in JWCrypto. This flaw allows an attacker to cause
   a denial of service (DoS) attack and possible password brute-force and dictionary
   attacks to be more resource-intensive. This issue can result in a large amount of
@@ -49,3 +50,5 @@ references:
   url: https://bugzilla.redhat.com/show_bug.cgi?id=2260843
 - type: ADVISORY
   url: https://access.redhat.com/errata/RHSA-2024:3267
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cw2r-4p82-qv79

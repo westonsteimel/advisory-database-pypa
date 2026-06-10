@@ -65,12 +65,16 @@ affected:
   - 3.3.5rc1
 references:
 - type: WEB
-  url: https://gitlab.com/mailman/mailman/-/commit/e4a39488c4510fcad8851217f10e7337a196bb51
+  url: 
+    https://gitlab.com/mailman/mailman/-/commit/e4a39488c4510fcad8851217f10e7337a196bb51
 - type: WEB
   url: https://gitlab.com/mailman/mailman/-/tags
 - type: WEB
   url: https://gitlab.com/mailman/mailman/-/issues/911
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2jg5-xgvv-4wq7
 aliases:
 - CVE-2021-34337
+- GHSA-2jg5-xgvv-4wq7
 modified: "2023-05-04T03:49:46.203477Z"
 published: "2023-04-15T20:16:00Z"

@@ -18,12 +18,16 @@ references:
 - type: WEB
   url: https://plone.org/security/hotfix/20200121
 - type: WEB
-  url: https://plone.org/security/hotfix/20200121/privilege-escalation-when-plone-restapi-is-installed
+  url: 
+    https://plone.org/security/hotfix/20200121/privilege-escalation-when-plone-restapi-is-installed
 - type: WEB
   url: https://www.openwall.com/lists/oss-security/2020/01/22/1
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2020/01/24/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cjg3-q24h-9qwf
 aliases:
 - CVE-2020-7938
+- GHSA-cjg3-q24h-9qwf
 modified: "2020-01-24T23:03:00Z"
 published: "2020-01-23T21:15:00Z"

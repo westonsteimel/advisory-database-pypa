@@ -29,7 +29,10 @@ references:
   url: https://lists.apache.org/thread/z20x8m16fnhxdkoollv53w1ybsts687t
 - type: WEB
   url: https://github.com/apache/airflow/pull/26337
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5rp4-749p-vx26
 aliases:
 - CVE-2022-40604
+- GHSA-5rp4-749p-vx26
 modified: "2022-09-21T10:45:51.858507Z"
 published: "2022-09-21T08:15:00Z"

@@ -37,7 +37,10 @@ affected:
 references:
 - type: WEB
   url: http://docs.saltstack.com/topics/releases/0.17.1.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-7wx3-vr2f-6p29
 aliases:
 - CVE-2013-6617
+- GHSA-7wx3-vr2f-6p29
 modified: "2021-07-05T00:01:26.106423Z"
 published: "2013-11-05T18:55:00Z"

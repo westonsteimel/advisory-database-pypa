@@ -91,7 +91,10 @@ references:
   url: https://plone.org/products/plone/security/advisories/20121106/03
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2012/11/10/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9m4g-f42q-vrrh
 aliases:
 - CVE-2012-5487
+- GHSA-9m4g-f42q-vrrh
 modified: "2021-09-01T08:44:29.087946Z"
 published: "2014-09-30T14:55:00Z"

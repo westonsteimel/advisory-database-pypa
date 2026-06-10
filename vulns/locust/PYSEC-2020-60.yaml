@@ -28,7 +28,10 @@ affected:
 references:
 - type: WEB
   url: https://docs.locust.io/en/stable/changelog.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vqxw-9pg7-v7v9
 aliases:
 - CVE-2020-28364
+- GHSA-vqxw-9pg7-v7v9
 modified: "2020-11-17T20:37:00Z"
 published: "2020-11-09T21:15:00Z"

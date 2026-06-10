@@ -4,11 +4,14 @@ details: Cross Site Scripting (XSS) in Mezzanine v4.3.1 allows remote attackers 
   This issue is different than CVE-2018-16632.
 aliases:
 - CVE-2020-19002
+- GHSA-fpv7-hx6r-9vcx
 modified: '2022-02-23T20:45:43.686053Z'
 published: '2021-08-27T19:15:00Z'
 references:
 - type: REPORT
   url: https://github.com/stephenmcd/mezzanine/issues/1921
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fpv7-hx6r-9vcx
 affected:
 - package:
     name: mezzanine

@@ -3,6 +3,7 @@ modified: 2023-09-12T14:27:23.660908Z
 published: 2023-09-12T12:15:00Z
 aliases:
 - CVE-2023-40611
+- GHSA-wpg8-mf6h-gm92
 details: |
   Apache Airflow, versions before 2.7.1, is affected by a vulnerability that allows authenticated and DAG-view authorized Users to modify some DAG run detail values when submitting notes. This could have them alter details such as configuration parameters, start date, etc.
 
@@ -186,3 +187,5 @@ references:
   url: https://lists.apache.org/thread/8y9xk1s3j4qr36yzqn8ogbn9fl7pxrn0
 - type: WEB
   url: https://github.com/apache/airflow/pull/33413
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wpg8-mf6h-gm92

@@ -3,6 +3,7 @@ modified: 2025-06-27T17:22:55.175431Z
 published: 2025-03-20T10:15:48Z
 aliases:
 - CVE-2024-9340
+- GHSA-6gmf-2369-c76c
 details: A Denial of Service (DoS) vulnerability in zenml-io/zenml version 0.66.0
   allows unauthenticated attackers to cause excessive resource consumption by sending
   malformed multipart requests with arbitrary characters appended to the end of multipart
@@ -178,6 +179,9 @@ references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/c9200654-7dc0-4c1d-8573-ab79a87fb4f6
 - type: FIX
-  url: https://github.com/zenml-io/zenml/commit/cba152eb9ca3071c8372b0b91c02d9d3351de48d
+  url: 
+    https://github.com/zenml-io/zenml/commit/cba152eb9ca3071c8372b0b91c02d9d3351de48d
 - type: WEB
   url: https://huntr.com/bounties/c9200654-7dc0-4c1d-8573-ab79a87fb4f6
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6gmf-2369-c76c

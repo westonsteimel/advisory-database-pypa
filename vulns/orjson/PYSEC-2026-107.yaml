@@ -156,6 +156,7 @@ affected:
   - 3.9.9
 aliases:
 - CVE-2025-67221
+- GHSA-hx9q-6w63-j58v
 details: The orjson.dumps function in orjson thru 3.11.4 does not limit recursion
   for deeply nested JSON documents.
 id: PYSEC-2026-107
@@ -166,6 +167,8 @@ references:
   url: https://github.com/ijl/orjson
 - type: EVIDENCE
   url: https://github.com/kpatsakis/orjson_vulnerability
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hx9q-6w63-j58v
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
   type: CVSS_V3

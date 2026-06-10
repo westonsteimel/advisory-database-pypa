@@ -3,6 +3,7 @@ modified: 2025-01-18T22:21:43.618882Z
 published: 2024-07-17T10:15:01Z
 aliases:
 - CVE-2024-31411
+- GHSA-6523-jf4r-c962
 details: |+
   Unrestricted Upload of File with dangerous type vulnerability in Apache StreamPipes.
   Such a dangerous type might be an executable file that may lead to a remote code execution (RCE).
@@ -36,3 +37,5 @@ references:
   url: https://lists.apache.org/thread/b0657okbwzg5xxs11hphvc9qrd9s70mt
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2024/07/16/10
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6523-jf4r-c962

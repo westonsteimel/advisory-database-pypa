@@ -270,6 +270,7 @@ affected:
   - 4.8.3
 aliases:
 - CVE-2014-3840
+- GHSA-wpvx-26f7-65q3
 details: Multiple cross-site scripting (XSS) vulnerabilities in apps/common/templates/calculate_form_title.html
   in Mayan EDMS 0.13 allow remote authenticated users to inject arbitrary web script
   or HTML via a (1) tag or the (2) title of a source in a Staging folder, (3) Name
@@ -291,9 +292,13 @@ references:
 - type: WEB
   url: http://seclists.org/oss-sec/2014/q2/352
 - type: EVIDENCE
-  url: https://github.com/mayan-edms/mayan-edms/commit/398c480c10416d76e7c1dcb607e726e8fc988e72
+  url: 
+    https://github.com/mayan-edms/mayan-edms/commit/398c480c10416d76e7c1dcb607e726e8fc988e72
 - type: FIX
-  url: https://github.com/mayan-edms/mayan-edms/commit/398c480c10416d76e7c1dcb607e726e8fc988e72
+  url: 
+    https://github.com/mayan-edms/mayan-edms/commit/398c480c10416d76e7c1dcb607e726e8fc988e72
 - type: WEB
   url: http://www.exploit-db.com/exploits/33493
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wpvx-26f7-65q3
 withdrawn: '2024-11-22T04:37:04Z'

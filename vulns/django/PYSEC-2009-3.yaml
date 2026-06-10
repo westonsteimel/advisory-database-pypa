@@ -34,10 +34,15 @@ references:
 - type: ADVISORY
   url: http://secunia.com/advisories/36153
 - type: WEB
-  url: https://www.redhat.com/archives/fedora-package-announce/2009-August/msg00055.html
+  url: 
+    https://www.redhat.com/archives/fedora-package-announce/2009-August/msg00055.html
 - type: WEB
-  url: https://www.redhat.com/archives/fedora-package-announce/2009-August/msg00069.html
+  url: 
+    https://www.redhat.com/archives/fedora-package-announce/2009-August/msg00069.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9xg7-gg9m-rmq9
 aliases:
 - CVE-2009-2659
+- GHSA-9xg7-gg9m-rmq9
 modified: "2021-07-15T02:22:07.875702Z"
 published: "2009-08-04T16:30:00Z"

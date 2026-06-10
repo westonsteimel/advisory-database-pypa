@@ -36,7 +36,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2014/11/20/6
 - type: WEB
   url: http://www.oracle.com/technetwork/topics/security/bulletinjul2015-2511963.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-53mr-44pp-crf4
 aliases:
 - CVE-2014-8991
+- GHSA-53mr-44pp-crf4
 modified: "2021-07-05T00:01:24.413265Z"
 published: "2014-11-24T15:59:00Z"

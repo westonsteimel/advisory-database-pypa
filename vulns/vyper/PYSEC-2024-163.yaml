@@ -3,8 +3,6 @@ modified: 2025-01-14T05:22:23.036505Z
 published: 2024-04-25T18:15:09Z
 aliases:
 - CVE-2024-32648
-related:
-- GHSA-m2v9-w374-5hj9
 - GHSA-m2v9-w374-5hj9
 details: |
   Vyper is a pythonic Smart Contract Language for the Ethereum virtual machine. Prior to version 0.3.0, default functions don't respect nonreentrancy keys and the lock isn't emitted. No vulnerable production contracts were found. Additionally, using a lock on a `default` function is a very sparsely used pattern. As such, the impact is low. Version 0.3.0 contains a patch for the issue.
@@ -17,7 +15,6 @@ affected:
   - type: GIT
     events:
     - introduced: "0"
-    - fixed: 93287e5ac184b53b395c907d40701f721daf8177
     - fixed: 93287e5ac184b53b395c907d40701f721daf8177
     repo: https://github.com/vyperlang/vyper
   - type: ECOSYSTEM
@@ -65,6 +62,9 @@ references:
 - type: ADVISORY
   url: https://github.com/vyperlang/vyper/security/advisories/GHSA-m2v9-w374-5hj9
 - type: FIX
-  url: https://github.com/vyperlang/vyper/commit/93287e5ac184b53b395c907d40701f721daf8177
+  url: 
+    https://github.com/vyperlang/vyper/commit/93287e5ac184b53b395c907d40701f721daf8177
 - type: REPORT
   url: https://github.com/vyperlang/vyper/issues/2455
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m2v9-w374-5hj9

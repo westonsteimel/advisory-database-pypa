@@ -29,8 +29,12 @@ affected:
   - 1.7.0
 references:
 - type: ADVISORY
-  url: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-005.md
+  url: 
+    https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2018-005.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qx2v-j445-g354
 aliases:
 - CVE-2018-7577
+- GHSA-qx2v-j445-g354
 modified: "2021-12-09T06:35:11.800944Z"
 published: "2019-04-24T17:29:00Z"

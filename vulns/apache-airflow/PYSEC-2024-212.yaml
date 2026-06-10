@@ -3,6 +3,7 @@ modified: 2025-01-19T22:22:22.289672Z
 published: 2024-09-07T08:15:11Z
 aliases:
 - CVE-2024-45034
+- GHSA-92xg-gmrq-5c3w
 details: "Apache Airflow versions before 2.10.1 have a vulnerability that allows DAG
   authors to add local settings to the DAG folder and get it executed by the scheduler,
   where the scheduler is not supposed to execute code submitted by the DAG author.
@@ -227,3 +228,5 @@ references:
   url: https://lists.apache.org/thread/b4fcw33vh60yfg9990n5vmc7sy2dcgjx
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2024/09/06/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-92xg-gmrq-5c3w

@@ -3,6 +3,7 @@ modified: 2023-07-18T16:37:19.127985Z
 published: 2023-07-11T15:15:00Z
 aliases:
 - CVE-2023-37659
+- GHSA-jx3q-5rgf-vrrr
 details: xalpha v0.11.4 is vulnerable to Remote Command Execution (RCE).
 affected:
 - package:
@@ -25,3 +26,5 @@ references:
   url: https://github.com/refraction-ray/xalpha/issues/175
 - type: REPORT
   url: https://github.com/refraction-ray/xalpha/issues/175
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jx3q-5rgf-vrrr

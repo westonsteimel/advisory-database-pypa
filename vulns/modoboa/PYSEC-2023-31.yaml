@@ -87,8 +87,12 @@ references:
 - type: WEB
   url: https://huntr.dev/bounties/891ad0cb-d12f-4c5e-aac8-d7326caf2129
 - type: FIX
-  url: https://github.com/modoboa/modoboa/commit/eef9ab72b5305578a3ad7a7463bd284aa645e98b
+  url: 
+    https://github.com/modoboa/modoboa/commit/eef9ab72b5305578a3ad7a7463bd284aa645e98b
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jm3m-wr3p-hjrq
 aliases:
 - CVE-2023-0519
+- GHSA-jm3m-wr3p-hjrq
 modified: "2023-05-04T03:49:46.722786Z"
 published: "2023-01-26T23:15:00Z"

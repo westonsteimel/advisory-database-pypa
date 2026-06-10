@@ -3,6 +3,7 @@ modified: 2024-01-22T07:20:28.329958Z
 published: 2024-01-22T01:15:00Z
 aliases:
 - CVE-2024-23750
+- GHSA-g7ph-8423-pf4j
 details: MetaGPT through 0.6.4 allows the QaEngineer role to execute arbitrary code
   because RunCode.run_script() passes shell metacharacters to subprocess.Popen.
 affected:
@@ -30,3 +31,5 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/geekan/MetaGPT/issues/731
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g7ph-8423-pf4j

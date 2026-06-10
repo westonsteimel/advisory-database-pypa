@@ -167,6 +167,7 @@ affected:
   - 4.9.1
 aliases:
 - CVE-2025-13742
+- GHSA-2mm6-624x-fqrr
 details: Emails sent by pretix can utilize placeholders that will be filled with customer
   data. For example, when {name} is used in an email template, it will be replaced
   with the buyer's name for the final email. If the name of the attendee contained
@@ -182,6 +183,8 @@ published: '2025-11-27T11:15:47.760Z'
 references:
 - type: ARTICLE
   url: https://pretix.eu/about/en/blog/20251126-release-2025-9-1/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2mm6-624x-fqrr
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
   type: CVSS_V3

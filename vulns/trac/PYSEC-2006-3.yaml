@@ -35,7 +35,10 @@ references:
   url: http://www.vupen.com/english/advisories/2006/4422
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/30146
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2q26-r8c4-jfx5
 aliases:
 - CVE-2006-5878
+- GHSA-2q26-r8c4-jfx5
 modified: "2021-07-16T01:31:34.062903Z"
 published: "2006-11-14T19:07:00Z"

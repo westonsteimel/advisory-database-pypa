@@ -241,7 +241,10 @@ references:
   url: http://www.debian.org/security/2016/dsa-3656
 - type: WEB
   url: http://www.tryton.org/posts/security-release-for-issue5795-and-issue5808.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-52j9-v3jc-9xgc
 aliases:
 - CVE-2016-1241
+- GHSA-52j9-v3jc-9xgc
 modified: "2021-10-12T02:55:35.373801Z"
 published: "2016-09-07T19:28:00Z"

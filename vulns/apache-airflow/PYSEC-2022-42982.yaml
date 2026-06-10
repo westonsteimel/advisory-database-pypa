@@ -5,6 +5,7 @@ details: A vulnerability in Example Dags of Apache Airflow allows an attacker wi
   to 2.4.0.
 aliases:
 - CVE-2022-40127
+- GHSA-6pw3-8h9w-32gc
 modified: '2023-05-04T04:29:22.645854Z'
 published: '2022-11-14T10:15:00Z'
 references:
@@ -20,6 +21,8 @@ references:
   url: http://www.openwall.com/lists/oss-security/2022/11/14/2
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2022/11/14/2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6pw3-8h9w-32gc
 affected:
 - package:
     name: apache-airflow

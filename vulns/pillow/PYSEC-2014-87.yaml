@@ -43,7 +43,10 @@ references:
   url: http://people.canonical.com/~ubuntu-security/cve/2014/CVE-2014-1932.html
 - type: WEB
   url: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=737059
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8m9x-pxwq-j236
 aliases:
 - CVE-2014-3007
+- GHSA-8m9x-pxwq-j236
 modified: "2021-08-27T03:22:10.225452Z"
 published: "2014-04-27T20:55:00Z"

@@ -65,7 +65,8 @@ references:
 - type: WEB
   url: http://www.securityfocus.com/bid/76428
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2015-November/172084.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2015-November/172084.html
 - type: ADVISORY
   url: http://rhn.redhat.com/errata/RHSA-2015-1894.html
 - type: ADVISORY
@@ -82,7 +83,10 @@ references:
   url: http://www.debian.org/security/2015/dsa-3338
 - type: ADVISORY
   url: https://access.redhat.com/errata/RHSA-2015:1876
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pgxh-wfw4-jx2v
 aliases:
 - CVE-2015-5963
+- GHSA-pgxh-wfw4-jx2v
 modified: "2021-07-15T02:22:09.927134Z"
 published: "2015-08-24T14:59:00Z"

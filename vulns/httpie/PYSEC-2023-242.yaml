@@ -3,6 +3,7 @@ modified: 2023-11-22T02:43:48.390438Z
 published: 2023-11-16T18:15:00Z
 aliases:
 - CVE-2023-48052
+- GHSA-8r96-8889-qg2x
 details: Missing SSL certificate validation in HTTPie v3.2.2 allows attackers to eavesdrop
   on communications between the host and server via a man-in-the-middle attack.
 affected:
@@ -74,3 +75,5 @@ severity:
 references:
 - type: WEB
   url: https://gxx777.github.io/HTTPie_3.2.2_Cryptographic_API_Misuse_Vulnerability.md
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8r96-8889-qg2x

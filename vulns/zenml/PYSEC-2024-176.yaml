@@ -3,6 +3,7 @@ modified: 2025-01-18T22:21:45.122426Z
 published: 2024-06-30T16:15:03Z
 aliases:
 - CVE-2024-5062
+- GHSA-3434-hc3m-8mmm
 details: A reflected Cross-Site Scripting (XSS) vulnerability was identified in zenml-io/zenml
   version 0.57.1. The vulnerability exists due to improper neutralization of input
   during web page generation, specifically within the survey redirect parameter. This
@@ -173,4 +174,7 @@ references:
 - type: EVIDENCE
   url: https://huntr.com/bounties/ceddd3c1-a9da-4d6c-85c4-41d4d1e1102f
 - type: FIX
-  url: https://github.com/zenml-io/zenml/commit/21edd863c0ba53c1110b6f018a07c2d6853cf6d4
+  url: 
+    https://github.com/zenml-io/zenml/commit/21edd863c0ba53c1110b6f018a07c2d6853cf6d4
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3434-hc3m-8mmm

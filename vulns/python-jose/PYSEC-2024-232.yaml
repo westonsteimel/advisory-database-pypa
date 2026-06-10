@@ -3,6 +3,7 @@ modified: 2025-02-18T19:20:15.468012Z
 published: 2024-04-26T00:15:09Z
 aliases:
 - CVE-2024-33663
+- GHSA-6c5p-j8vq-pqhj
 details: python-jose through 3.3.0 has algorithm confusion with OpenSSH ECDSA keys
   and other key formats. This is similar to CVE-2022-29217.
 affected:
@@ -57,4 +58,7 @@ references:
 - type: REPORT
   url: https://github.com/mpdavis/python-jose/issues/346
 - type: WEB
-  url: https://www.vicarius.io/vsociety/posts/algorithm-confusion-in-python-jose-cve-2024-33663
+  url: 
+    https://www.vicarius.io/vsociety/posts/algorithm-confusion-in-python-jose-cve-2024-33663
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6c5p-j8vq-pqhj

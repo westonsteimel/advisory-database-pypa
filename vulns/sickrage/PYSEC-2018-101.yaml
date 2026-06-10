@@ -332,12 +332,17 @@ affected:
   - 9.2.99
 references:
 - type: FIX
-  url: https://github.com/SickRage/SickRage/commit/8156a74a68aea930d1e1047baba8b115c3abfc44
+  url: 
+    https://github.com/SickRage/SickRage/commit/8156a74a68aea930d1e1047baba8b115c3abfc44
 - type: WEB
-  url: https://github.com/SickRage/sickrage.github.io/blob/master/sickrage-news/CHANGES.md
+  url: 
+    https://github.com/SickRage/sickrage.github.io/blob/master/sickrage-news/CHANGES.md
 - type: WEB
   url: https://www.exploit-db.com/exploits/44545/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jrcv-3c5h-rh3q
 aliases:
 - CVE-2018-9160
+- GHSA-jrcv-3c5h-rh3q
 modified: "2021-08-27T03:22:21.352713Z"
 published: "2018-03-31T21:29:00Z"

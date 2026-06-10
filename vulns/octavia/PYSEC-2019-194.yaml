@@ -25,7 +25,10 @@ references:
   url: https://access.redhat.com/errata/RHSA-2019:1683
 - type: ADVISORY
   url: https://access.redhat.com/errata/RHSA-2019:1742
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jjgh-m322-fjx6
 aliases:
 - CVE-2019-3895
+- GHSA-jjgh-m322-fjx6
 modified: "2021-08-27T03:22:09.805726Z"
 published: "2019-06-03T19:29:00Z"

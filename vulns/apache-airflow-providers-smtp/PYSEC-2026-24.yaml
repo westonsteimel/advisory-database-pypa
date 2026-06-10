@@ -47,6 +47,7 @@ affected:
   - 3.0.0rc1
 aliases:
 - CVE-2026-41016
+- GHSA-x8mh-94wc-33gv
 details: Apache Airflow's SMTP provider `SmtpHook` called Python's `smtplib.SMTP.starttls()`
   without an SSL context, so no certificate validation was performed on the TLS upgrade.
   A man-in-the-middle between the Airflow worker and the SMTP server could present
@@ -61,6 +62,8 @@ references:
   url: https://lists.apache.org/thread/gb202qy5r31bgdd3d51d7s5o1jh40kc4
 - type: FIX
   url: https://github.com/apache/airflow/pull/65346
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x8mh-94wc-33gv
 severity:
 - score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
   type: CVSS_V3

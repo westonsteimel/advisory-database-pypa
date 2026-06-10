@@ -6,13 +6,17 @@ details: A vulnerability classified as problematic was found in collective.conta
   to apply a patch to fix this issue. The identifier of this vulnerability is VDB-216496.
 aliases:
 - CVE-2022-4638
+- GHSA-5pqf-rvm7-3wgw
 modified: '2023-05-04T04:29:24.049172Z'
 published: '2022-12-21T22:15:00Z'
 references:
 - type: WEB
   url: https://vuldb.com/?id.216496
 - type: FIX
-  url: https://github.com/collective/collective.contact.widget/commit/5da36305ca7ed433782be8901c47387406fcda12
+  url: 
+    https://github.com/collective/collective.contact.widget/commit/5da36305ca7ed433782be8901c47387406fcda12
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5pqf-rvm7-3wgw
 affected:
 - package:
     name: collective-contact-widget

@@ -101,7 +101,10 @@ references:
   url: https://www.debian.org/security/2019/dsa-4426
 - type: WEB
   url: https://seclists.org/bugtraq/2019/Apr/14
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-f6f2-pwrj-64h3
 aliases:
 - CVE-2019-10868
+- GHSA-f6f2-pwrj-64h3
 modified: "2020-08-26T12:45:00Z"
 published: "2019-04-05T01:29:00Z"

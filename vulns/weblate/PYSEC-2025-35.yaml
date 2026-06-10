@@ -3,8 +3,6 @@ modified: 2025-04-30T17:22:51.467257Z
 published: 2025-04-15T21:16:04Z
 aliases:
 - CVE-2025-32021
-related:
-- GHSA-m67m-3p5g-cw9j
 - GHSA-m67m-3p5g-cw9j
 details: Weblate is a web based localization tool. Prior to version 5.11, when creating
   a new component from an existing component that has a source code repository URL
@@ -179,3 +177,5 @@ references:
   url: https://github.com/WeblateOrg/weblate/security/advisories/GHSA-m67m-3p5g-cw9j
 - type: WEB
   url: https://github.com/WeblateOrg/weblate/releases/tag/weblate-5.11
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m67m-3p5g-cw9j

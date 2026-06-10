@@ -3,6 +3,7 @@ modified: 2025-07-13T21:23:01.161315Z
 published: 2025-07-13T20:15:25Z
 aliases:
 - CVE-2025-53865
+- GHSA-qxh9-qmf2-rhwc
 details: In Roundup before 2.5.0, XSS can occur via interaction between URLs and issue
   tracker templates (devel and responsive).
 affected:
@@ -96,3 +97,5 @@ references:
   url: https://www.roundup-tracker.org/docs/security.html
 - type: WEB
   url: https://www.roundup-tracker.org/docs/upgrading.html#cve-2025-53865
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qxh9-qmf2-rhwc

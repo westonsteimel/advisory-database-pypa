@@ -28,7 +28,10 @@ references:
   url: http://www.vupen.com/english/advisories/2008/3080
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/46492
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-437p-qw95-wqqr
 aliases:
 - CVE-2008-5646
+- GHSA-437p-qw95-wqqr
 modified: "2021-07-16T01:31:34.451441Z"
 published: "2008-12-17T18:30:00Z"

@@ -1,9 +1,10 @@
 id: PYSEC-2025-19
-modified: 2025-04-09T17:27:26.91635Z
+modified: 2025-04-09T17:27:26.916350Z
 published: 2025-03-03T19:15:34Z
 aliases:
 - CVE-2025-1889
 - GHSA-655q-fx9r-782v
+- GHSA-769v-p64c-89pr
 details: picklescan before 0.0.22 only considers standard pickle file extensions in
   the scope for its vulnerability scan. An attacker could craft a malicious model
   that uses Pickle and include a malicious pickle file with a non-standard file extension.
@@ -54,3 +55,5 @@ references:
   url: https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-1889
 - type: WEB
   url: https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-1889
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-769v-p64c-89pr

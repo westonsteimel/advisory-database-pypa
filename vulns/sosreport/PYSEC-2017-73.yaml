@@ -31,7 +31,10 @@ references:
   url: http://rhn.redhat.com/errata/RHSA-2016-0188.html
 - type: ADVISORY
   url: http://rhn.redhat.com/errata/RHSA-2016-0152.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3g56-2hh3-35ph
 aliases:
 - CVE-2015-7529
+- GHSA-3g56-2hh3-35ph
 modified: "2021-07-25T23:34:55.577295Z"
 published: "2017-11-06T17:29:00Z"

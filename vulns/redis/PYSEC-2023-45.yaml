@@ -6,6 +6,7 @@ details: redis-py before 4.5.3, as used in ChatGPT and other products, leaves a 
   4.4.3, and 4.5.3; however, CVE-2023-28859 is a separate vulnerability.
 aliases:
 - CVE-2023-28858
+- GHSA-24wv-mv5m-xv4h
 modified: '2023-06-05T01:13:00.293462Z'
 published: '2023-03-26T19:15:00Z'
 references:
@@ -21,6 +22,8 @@ references:
   url: https://github.com/redis/redis-py/compare/v4.4.2...v4.4.3
 - type: WEB
   url: https://github.com/redis/redis-py/compare/v4.5.2...v4.5.3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-24wv-mv5m-xv4h
 affected:
 - package:
     name: redis

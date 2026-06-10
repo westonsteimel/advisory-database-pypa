@@ -83,12 +83,16 @@ references:
 - type: WEB
   url: https://plone.org/security/hotfix/20200121
 - type: WEB
-  url: https://plone.org/security/hotfix/20200121/password-strength-checks-were-not-always-checked
+  url: 
+    https://plone.org/security/hotfix/20200121/password-strength-checks-were-not-always-checked
 - type: WEB
   url: https://www.openwall.com/lists/oss-security/2020/01/22/1
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2020/01/24/1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cw58-gpgw-hwx2
 aliases:
 - CVE-2020-7940
+- GHSA-cw58-gpgw-hwx2
 modified: "2020-01-24T22:52:00Z"
 published: "2020-01-23T21:15:00Z"

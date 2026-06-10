@@ -57,7 +57,10 @@ references:
   url: https://www.djangoproject.com/weblog/2023/feb/01/security-releases/
 - type: WEB
   url: https://groups.google.com/forum/#!forum/django-announce
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-q2jf-h9jm-m7p4
 aliases:
 - CVE-2023-23969
+- GHSA-q2jf-h9jm-m7p4
 modified: "2023-05-04T03:49:45.437728Z"
 published: "2023-02-01T19:15:00Z"

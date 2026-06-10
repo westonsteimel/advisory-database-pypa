@@ -3,6 +3,7 @@ modified: 2023-10-27T20:23:07.873996Z
 published: 2023-10-20T17:15:00Z
 aliases:
 - CVE-2023-5690
+- GHSA-57cr-rq3f-ppmx
 details: Cross-Site Request Forgery (CSRF) in GitHub repository modoboa/modoboa prior
   to 2.2.2.
 affected:
@@ -103,4 +104,7 @@ references:
 - type: WEB
   url: https://huntr.com/bounties/980c75a5-d978-4b0e-9bcc-2b2682c97e01
 - type: FIX
-  url: https://github.com/modoboa/modoboa/commit/23e4c25511c66c0548da001236f47e19e3f9e4d9
+  url: 
+    https://github.com/modoboa/modoboa/commit/23e4c25511c66c0548da001236f47e19e3f9e4d9
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-57cr-rq3f-ppmx

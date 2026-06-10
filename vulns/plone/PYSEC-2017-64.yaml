@@ -119,7 +119,10 @@ references:
   url: https://plone.org/security/hotfix/20170117
 - type: WEB
   url: http://www.securityfocus.com/bid/96117
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-84jm-cpc5-c7g7
 aliases:
 - CVE-2016-7147
+- GHSA-84jm-cpc5-c7g7
 modified: "2021-07-25T23:34:49.702847Z"
 published: "2017-02-04T05:59:00Z"

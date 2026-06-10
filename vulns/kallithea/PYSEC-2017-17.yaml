@@ -21,12 +21,16 @@ references:
 - type: WEB
   url: https://kallithea-scm.org/security/cve-2015-1864.html
 - type: WEB
-  url: https://kallithea-scm.org/repos/kallithea/changeset/a8f2986afc18c9221bf99f88b06e60ab83c86c55
+  url: 
+    https://kallithea-scm.org/repos/kallithea/changeset/a8f2986afc18c9221bf99f88b06e60ab83c86c55
 - type: WEB
   url: http://www.securityfocus.com/bid/74184
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2015/04/14/12
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fh5c-7gmg-xmp6
 aliases:
 - CVE-2015-1864
+- GHSA-fh5c-7gmg-xmp6
 modified: "2021-07-05T00:01:22.152589Z"
 published: "2017-09-19T15:29:00Z"

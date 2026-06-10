@@ -3,6 +3,7 @@ modified: 2023-10-04T18:37:48.407821Z
 published: 2023-10-03T05:15:00Z
 aliases:
 - CVE-2023-26151
+- GHSA-gfvq-mxw3-mfq3
 details: Versions of the package asyncua before 0.9.96 are vulnerable to Denial of
   Service (DoS) such that an attacker can send a malformed packet and as a result,
   the server will enter into an infinite loop and consume excessive memory.
@@ -71,4 +72,7 @@ references:
 - type: FIX
   url: https://github.com/FreeOpcUa/opcua-asyncio/pull/1039
 - type: FIX
-  url: https://github.com/FreeOpcUa/opcua-asyncio/commit/f6603daa34a93a658f0e176cb0b9ee5a6643b262
+  url: 
+    https://github.com/FreeOpcUa/opcua-asyncio/commit/f6603daa34a93a658f0e176cb0b9ee5a6643b262
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gfvq-mxw3-mfq3

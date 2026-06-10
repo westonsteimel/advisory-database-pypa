@@ -163,14 +163,18 @@ references:
 - type: WEB
   url: https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.6.1_.282018-06-06.29
 - type: WEB
-  url: https://www.mercurial-scm.org/repo/hg-committed/log?rev=modifies%28%22mercurial%2Fmpatch.c%22%29+and+4.5%3A%3A
+  url: 
+    https://www.mercurial-scm.org/repo/hg-committed/log?rev=modifies%28%22mercurial%2Fmpatch.c%22%29+and+4.5%3A%3A
 - type: WEB
   url: https://www.mercurial-scm.org/repo/hg/rev/1acfc35d478c
 - type: ADVISORY
   url: https://access.redhat.com/errata/RHSA-2019:2276
 - type: WEB
   url: https://lists.debian.org/debian-lts-announce/2020/07/msg00032.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3mjj-mr4f-qxmx
 aliases:
 - CVE-2018-13347
+- GHSA-3mjj-mr4f-qxmx
 modified: "2021-08-27T03:22:07.281860Z"
 published: "2018-07-06T00:29:00Z"

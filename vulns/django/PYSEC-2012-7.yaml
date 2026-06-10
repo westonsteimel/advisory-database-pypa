@@ -40,7 +40,8 @@ references:
 - type: WEB
   url: http://securitytracker.com/id?1027708
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2012-October/090666.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2012-October/090666.html
 - type: ADVISORY
   url: http://secunia.com/advisories/51314
 - type: ADVISORY
@@ -54,16 +55,21 @@ references:
 - type: FIX
   url: https://github.com/django/django/commit/92d3430f12171f16f566c9050c40feefb830a4a3
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2012-October/090904.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2012-October/090904.html
 - type: WEB
-  url: http://lists.fedoraproject.org/pipermail/package-announce/2012-October/090970.html
+  url: 
+    http://lists.fedoraproject.org/pipermail/package-announce/2012-October/090970.html
 - type: WEB
   url: http://ubuntu.com/usn/usn-1632-1
 - type: ADVISORY
   url: http://www.debian.org/security/2013/dsa-2634
 - type: WEB
   url: http://ubuntu.com/usn/usn-1757-1
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2655-q453-22f9
 aliases:
 - CVE-2012-4520
+- GHSA-2655-q453-22f9
 modified: "2021-07-15T02:22:08.562601Z"
 published: "2012-11-18T23:55:00Z"

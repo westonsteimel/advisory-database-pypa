@@ -22,7 +22,10 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/aubio/aubio/issues/187
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rcv6-7hmv-fj7h
 aliases:
 - CVE-2018-14521
+- GHSA-rcv6-7hmv-fj7h
 modified: "2021-08-25T04:29:55.761457Z"
 published: "2018-07-23T08:29:00Z"

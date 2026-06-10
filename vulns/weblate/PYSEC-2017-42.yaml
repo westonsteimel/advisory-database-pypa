@@ -34,7 +34,8 @@ references:
 - type: REPORT
   url: https://github.com/WeblateOrg/weblate/issues/1317
 - type: FIX
-  url: https://github.com/WeblateOrg/weblate/commit/abe0d2a29a1d8e896bfe829c8461bf8b391f1079
+  url: 
+    https://github.com/WeblateOrg/weblate/commit/abe0d2a29a1d8e896bfe829c8461bf8b391f1079
 - type: WEB
   url: https://github.com/WeblateOrg/weblate/blob/weblate-2.10.1/docs/changes.rst
 - type: WEB
@@ -43,7 +44,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2017/01/20/1
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2017/01/18/11
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j24g-gm76-j829
 aliases:
 - CVE-2017-5537
+- GHSA-j24g-gm76-j829
 modified: "2021-07-05T00:01:28.288013Z"
 published: "2017-03-15T15:59:00Z"

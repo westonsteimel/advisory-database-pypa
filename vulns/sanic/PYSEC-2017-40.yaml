@@ -32,7 +32,10 @@ references:
   url: https://github.com/channelcat/sanic/releases/tag/0.5.1
 - type: REPORT
   url: https://github.com/channelcat/sanic/issues/633
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mpmf-hr8p-p49g
 aliases:
 - CVE-2017-16762
+- GHSA-mpmf-hr8p-p49g
 modified: "2021-07-05T00:01:27.045850Z"
 published: "2017-11-10T09:29:00Z"

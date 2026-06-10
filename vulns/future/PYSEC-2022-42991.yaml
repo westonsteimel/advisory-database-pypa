@@ -73,14 +73,20 @@ references:
 - type: WEB
   url: https://github.com/python/cpython/pull/17157
 - type: WEB
-  url: https://github.com/PythonCharmers/python-future/blob/master/src/future/backports/http/cookiejar.py#L215
+  url: 
+    https://github.com/PythonCharmers/python-future/blob/master/src/future/backports/http/cookiejar.py#L215
 - type: EVIDENCE
-  url: https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/
+  url: 
+    https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/
 - type: ADVISORY
-  url: https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/
+  url: 
+    https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/
 - type: WEB
   url: https://github.com/PythonCharmers/python-future/pull/610
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v3c5-jqr6-7qm8
 aliases:
 - CVE-2022-40899
+- GHSA-v3c5-jqr6-7qm8
 modified: "2023-05-04T03:49:45.660760Z"
 published: "2022-12-23T00:15:00Z"

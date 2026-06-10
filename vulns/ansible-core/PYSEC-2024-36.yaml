@@ -3,6 +3,7 @@ modified: 2024-02-14T07:20:09.911618Z
 published: 2024-02-06T12:15:00Z
 aliases:
 - CVE-2024-0690
+- GHSA-h24r-m9qc-pvpg
 details: An information disclosure flaw was found in ansible-core due to a failure
   to respect the ANSIBLE_NO_LOG configuration in some scenarios. It was discovered
   that information is still included in the output in certain tasks, such as loop
@@ -159,3 +160,5 @@ references:
   url: https://github.com/ansible/ansible/pull/82565
 - type: ADVISORY
   url: https://access.redhat.com/errata/RHSA-2024:0733
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h24r-m9qc-pvpg

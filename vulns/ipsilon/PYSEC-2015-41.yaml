@@ -5,6 +5,7 @@ details: providers/saml2/admin.py in the Identity Provider (IdP) server in Ipsil
   service via a duplicate SP name.
 aliases:
 - CVE-2015-5217
+- GHSA-6875-ff47-r6p6
 modified: '2024-12-05T09:35:27.711043Z'
 published: '2015-11-17T15:59:00Z'
 withdrawn: '2024-11-22T04:37:04Z'
@@ -17,6 +18,8 @@ references:
   url: https://pagure.io/ipsilon/826e6339441546f596320f3d73304ab5f7c10de6
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=1255172
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6875-ff47-r6p6
 affected:
 - package:
     name: ipsilon

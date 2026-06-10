@@ -24,10 +24,14 @@ affected:
   - 0.9.9
 references:
 - type: WEB
-  url: https://github.com/graphite-project/graphite-web/blob/master/docs/releases/0_9_11.rst
+  url: 
+    https://github.com/graphite-project/graphite-web/blob/master/docs/releases/0_9_11.rst
 - type: ADVISORY
   url: http://secunia.com/advisories/54556
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-ch3j-w953-hfcm
 aliases:
 - CVE-2013-5942
+- GHSA-ch3j-w953-hfcm
 modified: "2021-11-16T21:20:28.715114Z"
 published: "2013-09-27T10:08:00Z"

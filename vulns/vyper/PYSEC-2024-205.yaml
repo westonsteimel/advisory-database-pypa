@@ -3,8 +3,6 @@ modified: 2025-01-19T19:19:01.519824Z
 published: 2024-02-26T20:19:05Z
 aliases:
 - CVE-2024-24564
-related:
-- GHSA-4hwq-4cpm-8vmx
 - GHSA-4hwq-4cpm-8vmx
 details: Vyper is a pythonic Smart Contract Language for the ethereum virtual machine.
   When using the built-in `extract32(b, start)`, if the `start` index provided has
@@ -97,4 +95,7 @@ references:
 - type: EVIDENCE
   url: https://github.com/vyperlang/vyper/security/advisories/GHSA-4hwq-4cpm-8vmx
 - type: FIX
-  url: https://github.com/vyperlang/vyper/commit/3d9c537142fb99b2672f21e2057f5f202cde194f
+  url: 
+    https://github.com/vyperlang/vyper/commit/3d9c537142fb99b2672f21e2057f5f202cde194f
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4hwq-4cpm-8vmx

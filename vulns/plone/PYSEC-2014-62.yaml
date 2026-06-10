@@ -83,7 +83,10 @@ references:
   url: http://plone.org/products/plone-hotfix/releases/20130618
 - type: ADVISORY
   url: http://plone.org/products/plone/security/advisories/20130618-announcement
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qjxf-6pr8-j87v
 aliases:
 - CVE-2013-4198
+- GHSA-qjxf-6pr8-j87v
 modified: "2021-07-25T23:34:47.220560Z"
 published: "2014-03-11T19:37:00Z"

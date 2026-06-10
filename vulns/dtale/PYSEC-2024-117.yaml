@@ -3,6 +3,7 @@ modified: 2024-11-03T20:22:34.425699Z
 published: 2024-06-06T19:16:00Z
 aliases:
 - CVE-2024-3408
+- GHSA-v9q6-fm48-rx74
 details: man-group/dtale version 3.10.0 is vulnerable to an authentication bypass
   and remote code execution (RCE) due to improper input validation. The vulnerability
   arises from a hardcoded `SECRET_KEY` in the flask configuration, allowing attackers
@@ -205,4 +206,7 @@ references:
 - type: WEB
   url: https://huntr.com/bounties/57a06666-ff85-4577-af19-f3dfb7b02f91
 - type: FIX
-  url: https://github.com/man-group/dtale/commit/32bd6fb4a63de779ff1e51823a456865ea3cbd13
+  url: 
+    https://github.com/man-group/dtale/commit/32bd6fb4a63de779ff1e51823a456865ea3cbd13
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v9q6-fm48-rx74

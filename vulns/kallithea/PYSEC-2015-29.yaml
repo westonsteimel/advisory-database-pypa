@@ -25,7 +25,10 @@ references:
   url: https://rhodecode.com/blog/rhodecode-enterprise-security-release/
 - type: WEB
   url: https://exchange.xforce.ibmcloud.com/vulnerabilities/100888
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hhx9-4vw2-x54r
 aliases:
 - CVE-2015-0260
+- GHSA-hhx9-4vw2-x54r
 modified: "2021-07-25T23:49:37.203310Z"
 published: "2015-02-16T15:59:00Z"

@@ -36,7 +36,10 @@ affected:
 references:
 - type: WEB
   url: https://helpx.adobe.com/security/products/ops_cli/apsb21-88.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x23q-4j9j-9cxw
 aliases:
 - CVE-2021-40720
+- GHSA-x23q-4j9j-9cxw
 modified: "2021-10-24T23:24:39.018050Z"
 published: "2021-10-15T15:15:00Z"

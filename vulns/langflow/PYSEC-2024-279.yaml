@@ -249,6 +249,7 @@ affected:
   - 1.0.9
 aliases:
 - CVE-2024-42835
+- GHSA-56m6-4mhw-h3g5
 details: langflow v1.0.12 was discovered to contain a remote code execution (RCE)
   vulnerability via the PythonCodeTool component.
 id: PYSEC-2024-279
@@ -257,6 +258,8 @@ published: '2024-10-31T14:15:05.610Z'
 references:
 - type: REPORT
   url: https://github.com/langflow-ai/langflow/issues/2908
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-56m6-4mhw-h3g5
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
   type: CVSS_V3

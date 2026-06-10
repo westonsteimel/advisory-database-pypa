@@ -93,7 +93,10 @@ references:
   url: https://bugs.launchpad.net/zodb/+bug/135108
 - type: WEB
   url: http://lists.opensuse.org/opensuse-security-announce/2010-12/msg00006.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j6m4-frxh-p4x8
 aliases:
 - CVE-2010-3495
+- GHSA-j6m4-frxh-p4x8
 modified: "2021-07-16T01:31:36.925737Z"
 published: "2010-10-19T20:00:00Z"

@@ -5,6 +5,7 @@ details: 'AIOHTTP 3.8.1 can report a "ValueError: Invalid IPv6 URL" outcome, whi
   occur, and many common contexts have exception handing in the calling application'
 aliases:
 - CVE-2022-33124
+- GHSA-rwqr-c348-m5wr
 modified: '2024-02-16T13:47:54.655573Z'
 published: '2022-06-23T17:15:00Z'
 withdrawn: '2023-11-08T00:54:24Z'
@@ -13,6 +14,8 @@ references:
   url: https://github.com/aio-libs/aiohttp/issues/6772
 - type: REPORT
   url: https://github.com/aio-libs/aiohttp/issues/6772
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rwqr-c348-m5wr
 affected:
 - package:
     name: aiohttp

@@ -47,7 +47,10 @@ affected:
 references:
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16856
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qcj3-h27m-mp9x
 aliases:
 - CVE-2018-16856
+- GHSA-qcj3-h27m-mp9x
 modified: "2021-08-27T03:22:09.768851Z"
 published: "2019-03-26T18:29:00Z"

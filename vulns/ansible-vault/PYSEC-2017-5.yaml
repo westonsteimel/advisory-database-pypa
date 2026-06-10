@@ -30,12 +30,16 @@ references:
 - type: REPORT
   url: https://github.com/tomoh1r/ansible-vault/issues/4
 - type: FIX
-  url: https://github.com/tomoh1r/ansible-vault/commit/3f8f659ef443ab870bb19f95d43543470168ae04
+  url: 
+    https://github.com/tomoh1r/ansible-vault/commit/3f8f659ef443ab870bb19f95d43543470168ae04
 - type: WEB
   url: https://github.com/tomoh1r/ansible-vault/blob/v1.0.5/CHANGES.txt
 - type: WEB
   url: http://www.securityfocus.com/bid/100824
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c2w9-48qc-qpj4
 aliases:
 - CVE-2017-2809
+- GHSA-c2w9-48qc-qpj4
 modified: "2021-07-05T00:01:14.915465Z"
 published: "2017-09-14T19:29:00Z"

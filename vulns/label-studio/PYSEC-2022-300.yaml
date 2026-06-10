@@ -179,7 +179,10 @@ references:
   url: https://github.com/heartexlabs/label-studio/pull/2840
 - type: WEB
   url: https://github.com/heartexlabs/label-studio/pull/2840
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pc6f-259w-w3j6
 aliases:
 - CVE-2022-36551
+- GHSA-pc6f-259w-w3j6
 modified: "2022-10-04T22:46:41.362638Z"
 published: "2022-10-03T12:15:00Z"

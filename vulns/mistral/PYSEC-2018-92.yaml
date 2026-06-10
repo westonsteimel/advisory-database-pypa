@@ -82,7 +82,10 @@ references:
   url: https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16849
 - type: WEB
   url: https://bugs.launchpad.net/mistral/+bug/1783708
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fqw7-c6vr-q29m
 aliases:
 - CVE-2018-16849
+- GHSA-fqw7-c6vr-q29m
 modified: "2021-08-27T03:22:07.552723Z"
 published: "2018-11-02T21:29:00Z"

@@ -3,6 +3,7 @@ modified: 2024-11-21T14:22:40.744438Z
 published: 2023-12-21T10:15:00Z
 aliases:
 - CVE-2023-50783
+- GHSA-5938-79hg-xh3q
 details: |-
   Apache Airflow, versions before 2.8.0, is affected by a vulnerability that allows an authenticated user without the variable edit permission, to update a variable.
   This flaw compromises the integrity of variable management, potentially leading to unauthorized data modification.
@@ -205,3 +206,5 @@ references:
   url: http://www.openwall.com/lists/oss-security/2023/12/21/4
 - type: WEB
   url: http://www.openwall.com/lists/oss-security/2023/12/21/4
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5938-79hg-xh3q

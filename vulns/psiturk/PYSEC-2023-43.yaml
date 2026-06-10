@@ -76,14 +76,18 @@ references:
 - type: WEB
   url: https://vuldb.com/?id.219676
 - type: FIX
-  url: https://github.com/NYUCCL/psiTurk/commit/47787e15cecd66f2aa87687bf852ae0194a4335f
+  url: 
+    https://github.com/NYUCCL/psiTurk/commit/47787e15cecd66f2aa87687bf852ae0194a4335f
 - type: EVIDENCE
   url: https://github.com/NYUCCL/psiTurk/pull/517
 - type: FIX
   url: https://github.com/NYUCCL/psiTurk/pull/517
 - type: WEB
   url: https://github.com/NYUCCL/psiTurk/pull/517
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9mq4-9556-6qxq
 aliases:
 - CVE-2021-4315
+- GHSA-9mq4-9556-6qxq
 modified: "2023-05-04T03:49:47.366068Z"
 published: "2023-01-28T23:15:00Z"

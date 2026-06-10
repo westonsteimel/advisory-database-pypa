@@ -9,6 +9,7 @@ details: OpenStack Ironic before 29.0.1 can write unintended files to a target n
   The fixed versions are 24.1.3, 26.1.1, and 29.0.1.
 aliases:
 - CVE-2025-44021
+- GHSA-q3m2-crgq-5p3q
 modified: '2025-05-13T04:24:03.083929Z'
 published: '2025-05-08T17:16:01Z'
 references:
@@ -16,6 +17,8 @@ references:
   url: https://bugs.launchpad.net/ironic/+bug/2107847
 - type: WEB
   url: https://security.openstack.org/ossa/OSSA-2025-001.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-q3m2-crgq-5p3q
 affected:
 - package:
     name: ironic

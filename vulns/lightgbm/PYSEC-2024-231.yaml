@@ -3,6 +3,7 @@ modified: 2025-02-15T07:20:34.246161Z
 published: 2024-11-12T18:15:28Z
 aliases:
 - CVE-2024-43598
+- GHSA-2586-f3p4-hq84
 details: LightGBM Remote Code Execution Vulnerability
 affected:
 - package:
@@ -59,3 +60,5 @@ references:
   url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43598
 - type: FIX
   url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43598
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2586-f3p4-hq84

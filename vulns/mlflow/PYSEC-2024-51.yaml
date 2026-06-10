@@ -3,6 +3,7 @@ modified: 2024-05-16T11:19:52.866536Z
 published: 2024-05-16T09:15:00Z
 aliases:
 - CVE-2024-4263
+- GHSA-p4jx-q62p-x5jr
 details: A broken access control vulnerability exists in mlflow/mlflow versions before
   2.10.1, where low privilege users with only EDIT permissions on an experiment can
   delete any artifacts. This issue arises due to the lack of proper validation for
@@ -120,3 +121,5 @@ references:
   url: https://huntr.com/bounties/bfa116d3-2af8-4c4a-ac34-ccde7491ae11
 - type: FIX
   url: https://github.com/mlflow/mlflow/commit/b43e0e3de5b500554e13dc032ba2083b2d6c94b8
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-p4jx-q62p-x5jr

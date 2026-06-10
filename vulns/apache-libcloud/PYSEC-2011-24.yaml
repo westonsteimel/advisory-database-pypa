@@ -17,7 +17,8 @@ affected:
   - 0.4.0
 references:
 - type: WEB
-  url: http://mail-archives.apache.org/mod_mbox/incubator-libcloud/201009.mbox/%3C5860913.463891285776633273.JavaMail.jira@thor%3E
+  url: 
+    http://mail-archives.apache.org/mod_mbox/incubator-libcloud/201009.mbox/%3C5860913.463891285776633273.JavaMail.jira@thor%3E
 - type: WEB
   url: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=598463
 - type: WEB
@@ -26,7 +27,10 @@ references:
   url: http://wiki.apache.org/incubator/LibcloudSSL
 - type: WEB
   url: https://issues.apache.org/jira/browse/LIBCLOUD-55
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-w3j6-8j34-q43x
 aliases:
 - CVE-2010-4340
+- GHSA-w3j6-8j34-q43x
 modified: "2021-11-16T21:20:27.993612Z"
 published: "2011-09-12T12:41:00Z"

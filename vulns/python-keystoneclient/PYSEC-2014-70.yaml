@@ -42,7 +42,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2014/03/27/4
 - type: ADVISORY
   url: http://rhn.redhat.com/errata/RHSA-2014-0409.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gwvq-rgqf-993f
 aliases:
 - CVE-2014-0105
+- GHSA-gwvq-rgqf-993f
 modified: "2021-07-25T23:34:52.050807Z"
 published: "2014-04-15T14:55:00Z"

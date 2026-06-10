@@ -86,7 +86,10 @@ references:
   url: https://jvn.jp/en/jp/JVN45127776/
 - type: WEB
   url: https://github.com/tornadoweb/tornado/releases/tag/v6.3.2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hj3f-6gcp-jg8j
 aliases:
 - CVE-2023-28370
+- GHSA-hj3f-6gcp-jg8j
 modified: "2023-06-05T01:13:01.694311Z"
 published: "2023-05-25T10:15:00Z"

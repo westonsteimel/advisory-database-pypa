@@ -99,8 +99,12 @@ references:
 - type: WEB
   url: https://huntr.dev/bounties/15c8fd98-7f50-4d46-b013-42710af1f99c
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/422791ea45713aaaa865bdca74addb9fffd93a71
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/422791ea45713aaaa865bdca74addb9fffd93a71
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cw2v-wv4g-w4p6
 aliases:
 - CVE-2022-3232
+- GHSA-cw2v-wv4g-w4p6
 modified: "2022-09-21T10:45:56.877746Z"
 published: "2022-09-17T20:15:00Z"

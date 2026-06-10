@@ -92,7 +92,10 @@ references:
   url: http://rhn.redhat.com/errata/RHSA-2014-1194.html
 - type: WEB
   url: https://github.com/plone/Products.CMFPlone/blob/4.2.3/docs/CHANGES.txt
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2q75-f7cp-w86q
 aliases:
 - CVE-2012-5500
+- GHSA-2q75-f7cp-w86q
 modified: "2021-09-01T08:44:30.447394Z"
 published: "2014-11-03T22:55:00Z"

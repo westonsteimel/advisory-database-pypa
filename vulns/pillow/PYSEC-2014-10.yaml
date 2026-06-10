@@ -53,12 +53,16 @@ references:
 - type: ADVISORY
   url: http://www.debian.org/security/2014/dsa-3009
 - type: FIX
-  url: https://github.com/python-pillow/Pillow/commit/205e056f8f9b06ed7b925cf8aa0874bc4aaf8a7d
+  url: 
+    https://github.com/python-pillow/Pillow/commit/205e056f8f9b06ed7b925cf8aa0874bc4aaf8a7d
 - type: WEB
   url: http://lists.opensuse.org/opensuse-updates/2015-04/msg00056.html
 - type: ADVISORY
   url: http://secunia.com/advisories/59825
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cfmr-38g9-f2h7
 aliases:
 - CVE-2014-3589
+- GHSA-cfmr-38g9-f2h7
 modified: "2021-07-05T00:01:23.718339Z"
 published: "2014-08-25T14:55:00Z"

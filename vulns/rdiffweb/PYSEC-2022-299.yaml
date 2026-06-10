@@ -24,8 +24,12 @@ references:
 - type: FIX
   url: https://huntr.dev/bounties/4e8f6136-50c7-4fa1-ac98-699bcb7b35ce
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/b62c479ff6979563c7c23e7182942bc4f460a2c7
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/b62c479ff6979563c7c23e7182942bc4f460a2c7
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3fhq-72hw-jqwv
 aliases:
 - CVE-2022-3371
+- GHSA-3fhq-72hw-jqwv
 modified: "2022-10-04T16:30:00Z"
 published: "2022-09-30T14:15:00Z"

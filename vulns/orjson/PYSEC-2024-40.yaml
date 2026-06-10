@@ -3,6 +3,7 @@ modified: 2024-02-26T18:22:26.039698Z
 published: 2024-02-26T16:28:00Z
 aliases:
 - CVE-2024-27454
+- GHSA-pwr2-4v36-6qpr
 details: orjson.loads in orjson before 3.9.15 does not limit recursion for deeply
   nested JSON documents.
 affected:
@@ -149,3 +150,5 @@ references:
   url: https://github.com/ijl/orjson/blob/master/CHANGELOG.md#3915
 - type: WEB
   url: https://monicz.dev/CVE-2024-27454
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-pwr2-4v36-6qpr

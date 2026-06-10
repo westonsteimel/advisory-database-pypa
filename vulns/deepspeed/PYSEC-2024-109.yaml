@@ -3,6 +3,7 @@ modified: 2024-10-17T23:22:43.000269Z
 published: 2024-10-08T18:15:00Z
 aliases:
 - CVE-2024-43497
+- GHSA-8cp5-3rf8-8gfh
 details: DeepSpeed Remote Code Execution Vulnerability
 affected:
 - package:
@@ -116,3 +117,5 @@ references:
   url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43497
 - type: ADVISORY
   url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43497
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8cp5-3rf8-8gfh

@@ -3,6 +3,7 @@ modified: 2025-04-08T10:23:24.852109Z
 published: 2024-06-06T19:15:51Z
 aliases:
 - CVE-2024-0520
+- GHSA-5q6c-ffvg-xcm9
 details: A vulnerability in mlflow/mlflow version 8.2.1 allows for remote code execution
   due to improper neutralization of special elements used in an OS command ('Command
   Injection') within the `mlflow.data.http_dataset_source.py` module. Specifically,
@@ -128,3 +129,5 @@ references:
   url: https://huntr.com/bounties/93e470d7-b6f0-409b-af63-49d3e2a26dbc
 - type: WEB
   url: https://huntr.com/bounties/93e470d7-b6f0-409b-af63-49d3e2a26dbc
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5q6c-ffvg-xcm9

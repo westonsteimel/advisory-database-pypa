@@ -206,7 +206,10 @@ references:
   url: https://github.com/home-assistant/home-assistant/pull/13836
 - type: WEB
   url: https://github.com/home-assistant/home-assistant/releases/tag/0.67.0
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-mh78-8f49-vjg3
 aliases:
 - CVE-2018-21019
+- GHSA-mh78-8f49-vjg3
 modified: "2021-11-24T22:47:02.221265Z"
 published: "2019-09-23T16:15:00Z"

@@ -138,9 +138,11 @@ affected:
   - 1.9.9
 references:
 - type: WEB
-  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QXDKJYHN74BWY3P7AR2UZDVJREQMRE6S/
+  url: 
+    https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QXDKJYHN74BWY3P7AR2UZDVJREQMRE6S/
 - type: WEB
-  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OG5ROMUPS6C7BXELD3TAUUH7OBYV56WQ/
+  url: 
+    https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OG5ROMUPS6C7BXELD3TAUUH7OBYV56WQ/
 - type: WEB
   url: http://www.securitytracker.com/id/1037159
 - type: ADVISORY
@@ -151,7 +153,10 @@ references:
   url: http://www.securityfocus.com/bid/94068
 - type: ADVISORY
   url: http://www.debian.org/security/2017/dsa-3835
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3f2c-jm6v-cr35
 aliases:
 - CVE-2016-9014
+- GHSA-3f2c-jm6v-cr35
 modified: "2021-07-15T02:22:10.532243Z"
 published: "2016-12-09T20:59:00Z"

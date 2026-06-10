@@ -3,6 +3,7 @@ modified: 2023-07-07T02:41:36.549732Z
 published: 2023-06-29T21:15:00Z
 aliases:
 - CVE-2020-26710
+- GHSA-vv6q-6hwp-vrgp
 details: easy-parse v0.1.1 was discovered to contain a XML External Entity Injection
   (XXE) vulnerability which allows attackers to execute arbitrary code via a crafted
   XML file.
@@ -21,3 +22,5 @@ affected:
 references:
 - type: REPORT
   url: https://github.com/uncmath25/easy-parse/issues/3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vv6q-6hwp-vrgp

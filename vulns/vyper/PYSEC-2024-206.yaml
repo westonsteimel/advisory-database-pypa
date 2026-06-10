@@ -3,8 +3,6 @@ modified: 2025-01-19T19:19:01.566553Z
 published: 2024-04-25T18:15:08Z
 aliases:
 - CVE-2024-32645
-related:
-- GHSA-xchq-w5r3-4wg3
 - GHSA-xchq-w5r3-4wg3
 details: Vyper is a pythonic Smart Contract Language for the Ethereum virtual machine.
   In versions 0.3.10 and prior, incorrect values can be logged when `raw_log` builtin
@@ -91,3 +89,5 @@ severity:
 references:
 - type: ADVISORY
   url: https://github.com/vyperlang/vyper/security/advisories/GHSA-xchq-w5r3-4wg3
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-xchq-w5r3-4wg3

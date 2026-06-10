@@ -28,7 +28,10 @@ references:
   url: https://github.com/snapcore/snapcraft/pull/3345
 - type: WEB
   url: https://bugs.launchpad.net/bugs/1901572
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qxm5-vx5j-pp6w
 aliases:
 - CVE-2020-27348
+- GHSA-qxm5-vx5j-pp6w
 modified: "2020-12-14T20:36:00Z"
 published: "2020-12-04T03:15:00Z"

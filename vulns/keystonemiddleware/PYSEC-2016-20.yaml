@@ -50,7 +50,10 @@ references:
   url: http://www.oracle.com/technetwork/topics/security/bulletinapr2016-2952098.html
 - type: WEB
   url: http://www.securityfocus.com/bid/80498
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8c4w-v65p-jvcv
 aliases:
 - CVE-2015-7546
+- GHSA-8c4w-v65p-jvcv
 modified: "2021-07-25T23:34:39.104396Z"
 published: "2016-02-03T18:59:00Z"

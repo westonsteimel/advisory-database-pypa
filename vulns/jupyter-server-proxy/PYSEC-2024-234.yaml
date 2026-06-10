@@ -3,8 +3,6 @@ modified: 2025-02-21T18:23:35.992501Z
 published: 2024-03-20T20:15:08Z
 aliases:
 - CVE-2024-28179
-related:
-- GHSA-w3vc-fx9p-wp4v
 - GHSA-w3vc-fx9p-wp4v
 details: Jupyter Server Proxy allows users to run arbitrary external processes alongside
   their Jupyter notebook servers and provides authenticated web access. Prior to versions
@@ -25,8 +23,6 @@ affected:
   - type: GIT
     events:
     - introduced: "0"
-    - fixed: 764e499f61a87641916a7a427d4c4b1ac3f321a9
-    - fixed: bead903b7c0354b6efd8b4cde94b89afab653e03
     - fixed: 764e499f61a87641916a7a427d4c4b1ac3f321a9
     - fixed: bead903b7c0354b6efd8b4cde94b89afab653e03
     repo: https://github.com/jupyterhub/jupyter-server-proxy
@@ -72,10 +68,16 @@ severity:
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 references:
 - type: ADVISORY
-  url: https://github.com/jupyterhub/jupyter-server-proxy/security/advisories/GHSA-w3vc-fx9p-wp4v
+  url: 
+    https://github.com/jupyterhub/jupyter-server-proxy/security/advisories/GHSA-w3vc-fx9p-wp4v
 - type: FIX
-  url: https://github.com/jupyterhub/jupyter-server-proxy/commit/764e499f61a87641916a7a427d4c4b1ac3f321a9
+  url: 
+    https://github.com/jupyterhub/jupyter-server-proxy/commit/764e499f61a87641916a7a427d4c4b1ac3f321a9
 - type: FIX
-  url: https://github.com/jupyterhub/jupyter-server-proxy/commit/bead903b7c0354b6efd8b4cde94b89afab653e03
+  url: 
+    https://github.com/jupyterhub/jupyter-server-proxy/commit/bead903b7c0354b6efd8b4cde94b89afab653e03
 - type: WEB
-  url: https://github.com/jupyterhub/jupyter-server-proxy/blob/9b624c4d9507176334b46a85d94a4aa3bcd29bed/jupyter_server_proxy/handlers.py#L433
+  url: 
+    https://github.com/jupyterhub/jupyter-server-proxy/blob/9b624c4d9507176334b46a85d94a4aa3bcd29bed/jupyter_server_proxy/handlers.py#L433
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-w3vc-fx9p-wp4v

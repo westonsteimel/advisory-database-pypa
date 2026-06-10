@@ -8,15 +8,19 @@ details: A vulnerability was found in collective.task up to 3.0.9. It has been c
   this vulnerability is VDB-215907.
 aliases:
 - CVE-2022-4527
+- GHSA-4r9h-x77w-mffv
 modified: '2023-05-04T04:29:24.403566Z'
 published: '2022-12-15T21:15:00Z'
 references:
 - type: FIX
-  url: https://github.com/collective/collective.task/commit/1aac7f83fa2c2b41d59ba02748912953461f3fac
+  url: 
+    https://github.com/collective/collective.task/commit/1aac7f83fa2c2b41d59ba02748912953461f3fac
 - type: WEB
   url: https://github.com/collective/collective.task/releases/tag/3.0.10
 - type: WEB
   url: https://vuldb.com/?id.215907
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4r9h-x77w-mffv
 affected:
 - package:
     name: collective-task

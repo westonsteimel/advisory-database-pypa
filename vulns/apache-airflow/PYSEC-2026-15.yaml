@@ -59,6 +59,7 @@ affected:
   - 3.1.8rc2
 aliases:
 - CVE-2026-28563
+- GHSA-x3fv-96qh-67m7
 details: |-
   Apache Airflow versions 3.1.0 through 3.1.7 /ui/dependencies endpoint returns the full DAG dependency graph without filtering by authorized DAG IDs. This allows an authenticated user with only DAG Dependencies permission to enumerate DAGs they are not authorized to view.
 
@@ -74,6 +75,8 @@ references:
   url: https://lists.apache.org/thread/dwzf62qg9z8wvfsjknpfd8bvtwghd49s
 - type: FIX
   url: https://github.com/apache/airflow/pull/62046
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x3fv-96qh-67m7
 severity:
 - score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N
   type: CVSS_V3

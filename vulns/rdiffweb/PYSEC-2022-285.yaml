@@ -100,8 +100,12 @@ references:
 - type: WEB
   url: https://huntr.dev/bounties/5ec206e0-eca0-4957-9af4-fdd9185d1db3
 - type: FIX
-  url: https://github.com/ikus060/rdiffweb/commit/18a5aabd48fa6d2d2771a25f95610c28a1a097ca
+  url: 
+    https://github.com/ikus060/rdiffweb/commit/18a5aabd48fa6d2d2771a25f95610c28a1a097ca
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9vxf-mcm6-5m42
 aliases:
 - CVE-2022-3233
+- GHSA-9vxf-mcm6-5m42
 modified: "2022-09-23T06:43:04.843450Z"
 published: "2022-09-21T20:15:00Z"

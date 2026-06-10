@@ -50,7 +50,10 @@ references:
   url: https://access.redhat.com/errata/RHSA-2019:4358
 - type: WEB
   url: https://usn.ubuntu.com/4262-1/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2j23-fwqm-mgwr
 aliases:
 - CVE-2019-19687
+- GHSA-2j23-fwqm-mgwr
 modified: "2019-12-20T00:15:00Z"
 published: "2019-12-09T18:15:00Z"

@@ -51,7 +51,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2013/09/12/7
 - type: WEB
   url: http://www.securityfocus.com/bid/62388
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-rv8h-p43r-4x5r
 aliases:
 - CVE-2013-4347
+- GHSA-rv8h-p43r-4x5r
 modified: "2021-08-27T03:22:09.666793Z"
 published: "2014-05-20T14:55:00Z"

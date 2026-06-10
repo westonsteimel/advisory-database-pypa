@@ -149,7 +149,10 @@ references:
   url: http://www.ubuntu.com/usn/USN-2915-1
 - type: WEB
   url: http://www.securitytracker.com/id/1035152
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fp6p-5xvw-m74f
 aliases:
 - CVE-2016-2513
+- GHSA-fp6p-5xvw-m74f
 modified: "2021-07-15T02:22:10.225115Z"
 published: "2016-04-08T15:59:00Z"

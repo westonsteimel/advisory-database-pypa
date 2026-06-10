@@ -143,7 +143,8 @@ affected:
   - 4.3rc0
 references:
 - type: WEB
-  url: https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29
+  url: 
+    https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29
 - type: ADVISORY
   url: https://security.gentoo.org/glsa/201709-18
 - type: WEB
@@ -152,7 +153,10 @@ references:
   url: http://www.debian.org/security/2017/dsa-3963
 - type: ADVISORY
   url: https://access.redhat.com/errata/RHSA-2017:2489
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hvr9-wr9p-grgr
 aliases:
 - CVE-2017-1000115
+- GHSA-hvr9-wr9p-grgr
 modified: "2021-08-27T03:22:07.021138Z"
 published: "2017-10-05T01:29:00Z"

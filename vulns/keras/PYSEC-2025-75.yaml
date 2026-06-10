@@ -3,7 +3,10 @@ published: "2025-08-11T08:15:26.507Z"
 modified: "2025-08-14T16:24:41.287Z"
 aliases:
 - CVE-2025-8747
-details: A safe mode bypass vulnerability in the `Model.load_model` method in Keras versions 3.0.0 through 3.10.0 allows an attacker to achieve arbitrary code execution by convincing a user to load a specially crafted `.keras` model archive.
+- GHSA-c9rc-mg46-23w3
+details: A safe mode bypass vulnerability in the `Model.load_model` method in Keras
+  versions 3.0.0 through 3.10.0 allows an attacker to achieve arbitrary code execution
+  by convincing a user to load a specially crafted `.keras` model archive.
 affected:
 - package:
     name: keras
@@ -14,6 +17,8 @@ references:
   url: https://jfrog.com/blog/keras-safe_mode-bypass-vulnerability/
 - type: REPORT
   url: https://github.com/keras-team/keras/pull/21429
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-c9rc-mg46-23w3
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H

@@ -97,7 +97,10 @@ references:
   url: http://www.openwall.com/lists/oss-security/2015/05/19/2
 - type: WEB
   url: https://groups.google.com/forum/#!topic/salt-users/8Kv1bytGD6c
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8j9g-c9rp-jvg4
 aliases:
 - CVE-2015-4017
+- GHSA-8j9g-c9rp-jvg4
 modified: "2021-07-05T00:01:26.252043Z"
 published: "2017-08-25T18:29:00Z"

@@ -29,7 +29,10 @@ references:
   url: https://access.redhat.com/security/cve/cve-2014-0161
 - type: REPORT
   url: https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-0161
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wf9j-m9fv-92gq
 aliases:
 - CVE-2014-0161
+- GHSA-wf9j-m9fv-92gq
 modified: "2021-08-27T03:22:09.942049Z"
 published: "2020-01-02T18:15:00Z"
