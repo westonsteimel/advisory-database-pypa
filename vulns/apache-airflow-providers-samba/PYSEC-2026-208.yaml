@@ -1,14 +1,19 @@
+id: PYSEC-2026-208
+published: "2026-06-09T09:16:30.443Z"
+modified: "2026-06-13T09:37:37.959463Z"
+aliases:
+- CVE-2026-49818
+details: The Apache Airflow Samba provider's `GCSToSambaOperator` joined GCS object names to the SMB destination path without a containment check, so an object named with `../` segments resolved a write path outside the configured `destination_path`. An attacker able to write objects into the source GCS bucket — typically an external data producer distinct from the trusted DAG author — could write files to arbitrary locations on the Samba target when the operator ran. Upgrade apache-airflow-providers-samba to 4.12.6 or later, which validates the resolved destination stays within `destination_path`.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: apache-airflow-providers-samba
+    ecosystem: PyPI
     purl: pkg:pypi/apache-airflow-providers-samba
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 4.12.6
-    type: ECOSYSTEM
   versions:
   - 1.0.0
   - 1.0.0b1
@@ -88,19 +93,7 @@ affected:
   - 4.9.1rc1
   - 4.9.2
   - 4.9.2rc1
-aliases:
-- CVE-2026-49818
-details: "The Apache Airflow Samba provider's `GCSToSambaOperator` joined GCS object\
-  \ names to the SMB destination path without a containment check, so an object named\
-  \ with `../` segments resolved a write path outside the configured `destination_path`.\
-  \ An attacker able to write objects into the source GCS bucket \u2014 typically\
-  \ an external data producer distinct from the trusted DAG author \u2014 could write\
-  \ files to arbitrary locations on the Samba target when the operator ran. Upgrade\
-  \ apache-airflow-providers-samba to 4.12.6 or later, which validates the resolved\
-  \ destination stays within `destination_path`."
-id: PYSEC-0000-CVE-2026-49818
-modified: '2026-06-13T09:37:37.959463Z'
-published: '2026-06-09T09:16:30.443Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: http://www.openwall.com/lists/oss-security/2026/06/09/8
@@ -109,5 +102,5 @@ references:
 - type: FIX
   url: https://github.com/apache/airflow/pull/67857
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
