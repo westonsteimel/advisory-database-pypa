@@ -1,16 +1,21 @@
+id: PYSEC-2026-212
+published: "2026-06-04T12:16:24.620Z"
+modified: "2026-06-15T19:36:32.619147Z"
+aliases:
+- CVE-2026-10804
+details: A vulnerability has been found in Streamlit up to 1.53.0. Impacted is an unknown function in the library lib/streamlit/runtime/caching/hashing.py of the component Palette Handler. Such manipulation leads to use of weak hash. Local access is required to approach this attack. The attack requires a high level of complexity. The exploitability is considered difficult. The exploit has been disclosed to the public and may be used. The pull request to fix this issue awaits acceptance.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: streamlit
+    ecosystem: PyPI
     purl: pkg:pypi/streamlit
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 1.53.1
-    type: ECOSYSTEM
   versions:
-  - '0.1'
+  - "0.1"
   - 0.11.0
   - 0.12.2
   - 0.12.3
@@ -38,7 +43,7 @@ affected:
   - 0.18.1
   - 0.19.0
   - 0.19.1
-  - '0.2'
+  - "0.2"
   - 0.20.0
   - 0.21.0
   - 0.22.0
@@ -55,7 +60,7 @@ affected:
   - 0.27.0
   - 0.28.0
   - 0.29.0
-  - '0.3'
+  - "0.3"
   - 0.30.0
   - 0.31.0
   - 0.32.0
@@ -64,7 +69,7 @@ affected:
   - 0.35.0
   - 0.36.0
   - 0.37.0
-  - '0.4'
+  - "0.4"
   - 0.40.0
   - 0.40.1
   - 0.41.0
@@ -83,7 +88,7 @@ affected:
   - 0.48.0
   - 0.48.1
   - 0.49.0
-  - '0.5'
+  - "0.5"
   - 0.50.0
   - 0.50.1
   - 0.50.2
@@ -102,7 +107,7 @@ affected:
   - 0.57.3
   - 0.58.0
   - 0.59.0
-  - '0.6'
+  - "0.6"
   - 0.60.0
   - 0.61.0
   - 0.62.0
@@ -121,7 +126,7 @@ affected:
   - 0.69.0
   - 0.69.1
   - 0.69.2
-  - '0.7'
+  - "0.7"
   - 0.70.0
   - 0.71.0
   - 0.72.0
@@ -134,7 +139,7 @@ affected:
   - 0.77.0
   - 0.78.0
   - 0.79.0
-  - '0.8'
+  - "0.8"
   - 0.8.2
   - 0.80.0
   - 0.81.0
@@ -268,17 +273,7 @@ affected:
   - 1.9.1rc2
   - 1.9.2
   - 1.9.2rc1
-aliases:
-- CVE-2026-10804
-details: A vulnerability has been found in Streamlit up to 1.53.0. Impacted is an
-  unknown function in the library lib/streamlit/runtime/caching/hashing.py of the
-  component Palette Handler. Such manipulation leads to use of weak hash. Local access
-  is required to approach this attack. The attack requires a high level of complexity.
-  The exploitability is considered difficult. The exploit has been disclosed to the
-  public and may be used. The pull request to fix this issue awaits acceptance.
-id: PYSEC-0000-CVE-2026-10804
-modified: '2026-06-15T19:36:32.619147Z'
-published: '2026-06-04T12:16:24.620Z'
+  ecosystem_specific: {}
 references:
 - type: WEB
   url: https://github.com/streamlit/streamlit/
@@ -295,5 +290,5 @@ references:
 - type: FIX
   url: https://github.com/streamlit/streamlit/pull/14635
 severity:
-- score: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
