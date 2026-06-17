@@ -1,15 +1,21 @@
+id: PYSEC-2026-217
+published: "2026-06-12T18:16:34.123Z"
+modified: "2026-06-17T18:17:26.527028Z"
+aliases:
+- CVE-2026-44172
+- GHSA-pv9p-5w55-55jm
+details: MariaDB server is a community developed fork of MySQL server. In versions 3.3.18 and 3.4.8, an application that was taking non-validated user input, escaping it with mysql_real_escape_string() and sending it to the database using text protocol and big5 character set was vulnerable to SQL injections, even though mysql_real_escape_string() was supposed to prevent them. This issue has been patched in versions 3.3.19 and 3.4.9.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: mariadb
+    ecosystem: PyPI
     purl: pkg:pypi/mariadb
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - last_affected: 3.3.18
     - last_affected: 3.4.8
-    type: ECOSYSTEM
   versions:
   - 0.9.52
   - 0.9.53
@@ -53,23 +59,12 @@ affected:
   - 1.1.9
   - 2.0.0rc1
   - 2.0.0rc2
-aliases:
-- CVE-2026-44172
-- GHSA-pv9p-5w55-55jm
-details: MariaDB server is a community developed fork of MySQL server. In versions
-  3.3.18 and 3.4.8, an application that was taking non-validated user input, escaping
-  it with mysql_real_escape_string() and sending it to the database using text protocol
-  and big5 character set was vulnerable to SQL injections, even though mysql_real_escape_string()
-  was supposed to prevent them. This issue has been patched in versions 3.3.19 and
-  3.4.9.
-id: PYSEC-0000-CVE-2026-44172
-modified: '2026-06-17T18:17:26.527028Z'
-published: '2026-06-12T18:16:34.123Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: https://github.com/MariaDB/server/security/advisories/GHSA-pv9p-5w55-55jm
 - type: ADVISORY
   url: https://jira.mariadb.org/browse/CONC-819
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
