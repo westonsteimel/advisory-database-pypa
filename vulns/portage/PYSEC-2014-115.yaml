@@ -75,6 +75,7 @@ affected:
   - 3.0.76
   - 3.0.77
   - 3.0.78
+  - 3.0.80
 aliases:
 - CVE-2013-2100
 - GHSA-8823-xphr-qw9v
@@ -83,7 +84,7 @@ details: The urlopen function in pym/portage/util/_urlopen.py in Gentoo Portage 
   man-in-the-middle attackers to spoof servers and modify binary package lists via
   a crafted certificate.
 id: PYSEC-2014-115
-modified: '2026-06-10T16:51:53.419306Z'
+modified: '2026-06-17T10:19:29.468076Z'
 published: '2014-09-29T22:55:00Z'
 references:
 - type: EVIDENCE
