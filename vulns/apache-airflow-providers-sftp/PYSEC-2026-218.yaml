@@ -1,14 +1,19 @@
+id: PYSEC-2026-218
+published: "2026-06-17T13:20:47.213Z"
+modified: "2026-06-18T11:27:41.032705Z"
+aliases:
+- CVE-2026-50203
+details: A path traversal in the SFTP provider (`SFTPHook.retrieve_directory` / `SFTPOperator(operation=get)`) let a malicious or compromised remote SFTP server write files outside the configured local destination directory via crafted directory-entry names. No Airflow account is required — the attack surface is any deployment downloading directories from an untrusted SFTP server. Upgrade `apache-airflow-providers-sftp` to 5.8.1 or later.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: apache-airflow-providers-sftp
+    ecosystem: PyPI
     purl: pkg:pypi/apache-airflow-providers-sftp
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 5.8.1
-    type: ECOSYSTEM
   versions:
   - 1.0.0
   - 1.0.0b1
@@ -146,17 +151,7 @@ affected:
   - 5.8.0
   - 5.8.0rc1
   - 5.8.1rc1
-aliases:
-- CVE-2026-50203
-details: "A path traversal in the SFTP provider (`SFTPHook.retrieve_directory` / `SFTPOperator(operation=get)`)\
-  \ let a malicious or compromised remote SFTP server write files outside the configured\
-  \ local destination directory via crafted directory-entry names. No Airflow account\
-  \ is required \u2014 the attack surface is any deployment downloading directories\
-  \ from an untrusted SFTP server. Upgrade `apache-airflow-providers-sftp` to 5.8.1\
-  \ or later."
-id: PYSEC-0000-CVE-2026-50203
-modified: '2026-06-18T11:27:41.032705Z'
-published: '2026-06-17T13:20:47.213Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: http://www.openwall.com/lists/oss-security/2026/06/16/3
@@ -165,5 +160,5 @@ references:
 - type: FIX
   url: https://github.com/apache/airflow/pull/67985
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
