@@ -1,14 +1,19 @@
+id: PYSEC-2024-314
+published: "2024-03-14T19:15:50.877Z"
+modified: "2026-06-23T13:40:44.341611Z"
+aliases:
+- CVE-2024-28423
+details: Airflow-Diagrams v2.1.0 was discovered to contain an arbitrary file upload vulnerability in the unsafe_load function at cli.py. This vulnerability allows attackers to execute arbitrary code via uploading a crafted YML file.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: diagrams
+    ecosystem: PyPI
     purl: pkg:pypi/diagrams
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - last_affected: 2.1.0
-    type: ECOSYSTEM
   versions:
   - 0.1.0
   - 0.10.0
@@ -60,17 +65,10 @@ affected:
   - 0.8.1
   - 0.8.2
   - 0.9.0
-aliases:
-- CVE-2024-28423
-details: Airflow-Diagrams v2.1.0 was discovered to contain an arbitrary file upload
-  vulnerability in the unsafe_load function at cli.py. This vulnerability allows attackers
-  to execute arbitrary code via uploading a crafted YML file.
-id: PYSEC-0000-CVE-2024-28423
-modified: '2026-06-23T13:40:44.341611Z'
-published: '2024-03-14T19:15:50.877Z'
+  ecosystem_specific: {}
 references:
 - type: PACKAGE
   url: https://github.com/bayuncao/vul-cve-15
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
