@@ -104,6 +104,7 @@ details: An issue discovered in esptool 4.6.2 allows attackers to view sensitive
 id: PYSEC-2023-234
 modified: '2026-06-10T16:51:23.139179Z'
 published: '2023-11-09T16:15:00Z'
+withdrawn: '2026-06-23T12:08:00Z'
 references:
 - type: EVIDENCE
   url: https://github.com/espressif/esptool/issues/926
