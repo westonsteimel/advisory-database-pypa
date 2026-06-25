@@ -1,14 +1,20 @@
+id: PYSEC-2026-223
+published: "2026-06-23T17:17:08.410Z"
+modified: "2026-06-25T23:10:36.687437Z"
+aliases:
+- CVE-2026-55446
+- GHSA-qwqc-p3q8-wcg9
+details: Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.0.19, an attacker can send a /api/v1/files/upload/ request without any authentication token/cookies and abuse a very long multipart form boundary to make the langflow app unusable for all users for an indefinite amount of time. This vulnerability is fixed in 1.0.19.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: langflow
+    ecosystem: PyPI
     purl: pkg:pypi/langflow
   ranges:
-  - events:
-    - introduced: '0'
-    - fixed: 1.9.1
-    type: ECOSYSTEM
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.0.19
   versions:
   - 0.0.31
   - 0.0.32
@@ -245,9 +251,6 @@ affected:
   - 1.0.16
   - 1.0.17
   - 1.0.18
-  - 1.0.19
-  - 1.0.19.post1
-  - 1.0.19.post2
   - 1.0.2
   - 1.0.3
   - 1.0.4
@@ -256,72 +259,12 @@ affected:
   - 1.0.7
   - 1.0.8
   - 1.0.9
-  - 1.1.0
-  - 1.1.1
-  - 1.1.2
-  - 1.1.3
-  - 1.1.4
-  - 1.1.4.post1
-  - 1.2.0
-  - 1.3.0
-  - 1.3.1
-  - 1.3.2
-  - 1.3.3
-  - 1.3.4
-  - 1.4.0
-  - 1.4.1
-  - 1.4.2
-  - 1.4.3
-  - 1.5.0
-  - 1.5.0.post1
-  - 1.5.0.post2
-  - 1.5.1
-  - 1.6.0
-  - 1.6.1
-  - 1.6.2
-  - 1.6.3
-  - 1.6.4
-  - 1.6.5
-  - 1.6.6
-  - 1.6.7
-  - 1.6.8
-  - 1.6.9
-  - 1.7.0
-  - 1.7.1
-  - 1.7.2
-  - 1.7.3
-  - 1.8.0
-  - 1.8.0rc0
-  - 1.8.0rc1
-  - 1.8.0rc2
-  - 1.8.0rc3
-  - 1.8.0rc4
-  - 1.8.0rc5
-  - 1.8.0rc6
-  - 1.8.1
-  - 1.8.2
-  - 1.8.3
-  - 1.8.3rc0
-  - 1.8.4
-  - 1.9.0
-aliases:
-- CVE-2026-55450
-- GHSA-x223-p2gf-v735
-details: Langflow is a tool for building and deploying AI-powered agents and workflows.
-  Prior to 1.9.1, unauthenticated users can upload any amount of data to the server
-  without any limitations. No need for any prior knowledge, only network access to
-  Langflow. This can lead to space exhaustion on the server. In addition, in the response,
-  the absolute path of the uploaded file is reported to the attacker, which is an
-  information leak that can assist in chaining other primitives. This vulnerability
-  is fixed in 1.9.1.
-id: PYSEC-0000-CVE-2026-55450
-modified: '2026-06-25T23:10:36.756076Z'
-published: '2026-06-23T17:17:08.663Z'
+  ecosystem_specific: {}
 references:
 - type: FIX
-  url: https://github.com/langflow-ai/langflow/pull/12831
+  url: https://github.com/langflow-ai/langflow/pull/3923
 - type: FIX
-  url: https://github.com/langflow-ai/langflow/security/advisories/GHSA-x223-p2gf-v735
+  url: https://github.com/langflow-ai/langflow/security/advisories/GHSA-qwqc-p3q8-wcg9
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

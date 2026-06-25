@@ -1,14 +1,20 @@
+id: PYSEC-2026-221
+published: "2026-06-23T17:17:08.050Z"
+modified: "2026-06-25T23:10:36.509788Z"
+aliases:
+- CVE-2026-55255
+- GHSA-qrpv-q767-xqq2
+details: Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.2, an Insecure Direct Object Reference (IDOR) vulnerability in /api/v1/responses endpoint allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request. This vulnerability is fixed in 1.9.2.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: langflow
+    ecosystem: PyPI
     purl: pkg:pypi/langflow
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 1.9.2
-    type: ECOSYSTEM
   versions:
   - 0.0.31
   - 0.0.32
@@ -305,22 +311,12 @@ affected:
   - 1.8.4
   - 1.9.0
   - 1.9.1
-aliases:
-- CVE-2026-55255
-- GHSA-qrpv-q767-xqq2
-details: Langflow is a tool for building and deploying AI-powered agents and workflows.
-  Prior to 1.9.2, an Insecure Direct Object Reference (IDOR) vulnerability in /api/v1/responses
-  endpoint allows an authenticated attacker to execute any flow belonging to another
-  user by specifying the victim's flow ID in the request. This vulnerability is fixed
-  in 1.9.2.
-id: PYSEC-0000-CVE-2026-55255
-modified: '2026-06-25T23:10:36.509788Z'
-published: '2026-06-23T17:17:08.050Z'
+  ecosystem_specific: {}
 references:
 - type: FIX
   url: https://github.com/langflow-ai/langflow/pull/12832
 - type: EVIDENCE
   url: https://github.com/langflow-ai/langflow/security/advisories/GHSA-qrpv-q767-xqq2
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:L
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:L

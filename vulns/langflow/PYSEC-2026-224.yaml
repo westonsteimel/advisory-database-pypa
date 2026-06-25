@@ -1,14 +1,20 @@
+id: PYSEC-2026-224
+published: "2026-06-23T17:17:08.663Z"
+modified: "2026-06-25T23:10:36.756076Z"
+aliases:
+- CVE-2026-55450
+- GHSA-x223-p2gf-v735
+details: Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.1, unauthenticated users can upload any amount of data to the server without any limitations. No need for any prior knowledge, only network access to Langflow. This can lead to space exhaustion on the server. In addition, in the response, the absolute path of the uploaded file is reported to the attacker, which is an information leak that can assist in chaining other primitives. This vulnerability is fixed in 1.9.1.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: langflow
+    ecosystem: PyPI
     purl: pkg:pypi/langflow
   ranges:
-  - events:
-    - introduced: '0'
-    - fixed: 1.7.0
-    type: ECOSYSTEM
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.9.1
   versions:
   - 0.0.31
   - 0.0.32
@@ -286,23 +292,30 @@ affected:
   - 1.6.7
   - 1.6.8
   - 1.6.9
-aliases:
-- CVE-2026-55423
-- GHSA-7hw8-6q6r-4276
-details: Langflow is a tool for building and deploying AI-powered agents and workflows.
-  Prior to 1.7.0, the logout button does not clear the session. The previous user
-  stays logged in unless another user explicitly logs in. This vulnerability is fixed
-  in 1.7.0.
-id: PYSEC-0000-CVE-2026-55423
-modified: '2026-06-25T23:10:36.614826Z'
-published: '2026-06-23T17:17:08.283Z'
+  - 1.7.0
+  - 1.7.1
+  - 1.7.2
+  - 1.7.3
+  - 1.8.0
+  - 1.8.0rc0
+  - 1.8.0rc1
+  - 1.8.0rc2
+  - 1.8.0rc3
+  - 1.8.0rc4
+  - 1.8.0rc5
+  - 1.8.0rc6
+  - 1.8.1
+  - 1.8.2
+  - 1.8.3
+  - 1.8.3rc0
+  - 1.8.4
+  - 1.9.0
+  ecosystem_specific: {}
 references:
-- type: REPORT
-  url: https://github.com/langflow-ai/langflow/pull/10528
 - type: FIX
-  url: https://github.com/langflow-ai/langflow/pull/10527
+  url: https://github.com/langflow-ai/langflow/pull/12831
 - type: FIX
-  url: https://github.com/langflow-ai/langflow/security/advisories/GHSA-7hw8-6q6r-4276
+  url: https://github.com/langflow-ai/langflow/security/advisories/GHSA-x223-p2gf-v735
 severity:
-- score: CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:H

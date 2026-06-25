@@ -1,14 +1,20 @@
+id: PYSEC-2026-222
+published: "2026-06-23T17:17:08.283Z"
+modified: "2026-06-25T23:10:36.614826Z"
+aliases:
+- CVE-2026-55423
+- GHSA-7hw8-6q6r-4276
+details: Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.7.0, the logout button does not clear the session. The previous user stays logged in unless another user explicitly logs in. This vulnerability is fixed in 1.7.0.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: langflow
+    ecosystem: PyPI
     purl: pkg:pypi/langflow
   ranges:
-  - events:
-    - introduced: '0'
-    - fixed: 1.0.19
-    type: ECOSYSTEM
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.7.0
   versions:
   - 0.0.31
   - 0.0.32
@@ -245,6 +251,9 @@ affected:
   - 1.0.16
   - 1.0.17
   - 1.0.18
+  - 1.0.19
+  - 1.0.19.post1
+  - 1.0.19.post2
   - 1.0.2
   - 1.0.3
   - 1.0.4
@@ -253,22 +262,44 @@ affected:
   - 1.0.7
   - 1.0.8
   - 1.0.9
-aliases:
-- CVE-2026-55446
-- GHSA-qwqc-p3q8-wcg9
-details: Langflow is a tool for building and deploying AI-powered agents and workflows.
-  Prior to 1.0.19, an attacker can send a /api/v1/files/upload/ request without any
-  authentication token/cookies and abuse a very long multipart form boundary to make
-  the langflow app unusable for all users for an indefinite amount of time. This vulnerability
-  is fixed in 1.0.19.
-id: PYSEC-0000-CVE-2026-55446
-modified: '2026-06-25T23:10:36.687437Z'
-published: '2026-06-23T17:17:08.410Z'
+  - 1.1.0
+  - 1.1.1
+  - 1.1.2
+  - 1.1.3
+  - 1.1.4
+  - 1.1.4.post1
+  - 1.2.0
+  - 1.3.0
+  - 1.3.1
+  - 1.3.2
+  - 1.3.3
+  - 1.3.4
+  - 1.4.0
+  - 1.4.1
+  - 1.4.2
+  - 1.4.3
+  - 1.5.0
+  - 1.5.0.post1
+  - 1.5.0.post2
+  - 1.5.1
+  - 1.6.0
+  - 1.6.1
+  - 1.6.2
+  - 1.6.3
+  - 1.6.4
+  - 1.6.5
+  - 1.6.6
+  - 1.6.7
+  - 1.6.8
+  - 1.6.9
+  ecosystem_specific: {}
 references:
+- type: REPORT
+  url: https://github.com/langflow-ai/langflow/pull/10528
 - type: FIX
-  url: https://github.com/langflow-ai/langflow/pull/3923
+  url: https://github.com/langflow-ai/langflow/pull/10527
 - type: FIX
-  url: https://github.com/langflow-ai/langflow/security/advisories/GHSA-qwqc-p3q8-wcg9
+  url: https://github.com/langflow-ai/langflow/security/advisories/GHSA-7hw8-6q6r-4276
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
