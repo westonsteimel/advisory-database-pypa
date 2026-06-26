@@ -1,9 +1,11 @@
-id: PYSEC-0000-pyphetools.yaml
-modified: 2026-06-26T16:48:06Z
-summary: Malicious code in pyphetools (PyPI)
+id: PYSEC-2026-233
+modified: "2026-06-25T14:59:12Z"
+aliases:
+- MAL-2026-5316
+summary: Malicious code in gpsea (PyPI)
 details: |
   Part of the "Hades" wave of the Shai-Hulud supply-chain campaign. On 2026-06-08,
-  malicious phantom releases of pyphetools were published to PyPI using stolen
+  malicious phantom releases of gpsea were published to PyPI using stolen
   credentials. The package executes a bundled JavaScript payload (via the Bun
   runtime) on import that harvests and exfiltrates credentials and attempts
   self-propagation. This entry is a summary; behavior may not be fully
@@ -11,17 +13,15 @@ details: |
   indicators of compromise.
 affected:
 - package:
+    name: gpsea
     ecosystem: PyPI
-    name: pyphetools
-    purl: pkg:pypi/pyphetools
+    purl: pkg:pypi/gpsea
   versions:
-  - "0.9.120"
+  - 0.9.14
 references:
 - type: EVIDENCE
-  url: https://inspector.pypi.io/project/pyphetools/0.9.120/packages/d3/24/d2a5d61332a4d5d1a7694286462d4108c1c67b3137a0d05e1dc9583b83bb/pyphetools-0.9.120-py3-none-any.whl/pyphetools-setup.pth
+  url: https://inspector.pypi.io/project/gpsea/0.9.14/packages/82/12/c1d31012b9e97334d5159ccfbef14ffe95d9970add20ba9293bffca182b6/gpsea-0.9.14-py3-none-any.whl/gpsea/_index.js
 - type: ARTICLE
   url: https://www.endorlabs.com/learn/shai-hulud-hades-wave-hits-six-pypi-bioinformatics-packages
 - type: ARTICLE
   url: https://www.stepsecurity.io/blog/the-hades-campaign-pypi-packages
-aliases:
-- MAL-2026-5324
