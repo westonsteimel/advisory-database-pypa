@@ -1,14 +1,20 @@
+id: PYSEC-2026-230
+published: "2026-06-23T13:16:44.947Z"
+modified: "2026-06-26T11:40:39.472479Z"
+aliases:
+- CVE-2026-56263
+- GHSA-365w-hqf6-vxfg
+details: Crawl4AI before 0.8.7 contains a stored cross-site scripting vulnerability in the monitor dashboard that renders crawl URLs and error messages via innerHTML without escaping. An attacker can submit a crafted crawl request with malicious markup that executes in an operator's browser when viewing the dashboard.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: crawl4ai
+    ecosystem: PyPI
     purl: pkg:pypi/crawl4ai
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 0.8.7
-    type: ECOSYSTEM
   versions:
   - 0.3.0
   - 0.3.1
@@ -74,23 +80,14 @@ affected:
   - 0.8.0
   - 0.8.5
   - 0.8.6
-aliases:
-- CVE-2026-56262
-- GHSA-365w-hqf6-vxfg
-details: Crawl4AI before 0.8.7 contains an authentication bypass vulnerability in
-  the monitor router endpoints that allows unauthenticated attackers to access destructive
-  operations. Remote attackers can invoke the /monitor/actions/cleanup endpoint and
-  manipulate monitoring state without authentication, causing service disruption.
-id: PYSEC-0000-CVE-2026-56262
-modified: '2026-06-26T11:40:39.353533Z'
-published: '2026-06-24T13:16:35.263Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: https://github.com/unclecode/crawl4ai/security/advisories/GHSA-365w-hqf6-vxfg
 - type: ADVISORY
-  url: https://www.vulncheck.com/advisories/crawl4ai-unauthenticated-access-to-monitor-endpoints-via-docker-api-server
+  url: https://www.vulncheck.com/advisories/crawl4ai-stored-cross-site-scripting-in-monitor-dashboard
 - type: PACKAGE
   url: https://github.com/unclecode/crawl4ai
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L
-  type: CVSS_V3
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
