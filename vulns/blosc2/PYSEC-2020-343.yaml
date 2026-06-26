@@ -112,13 +112,14 @@ affected:
   - 4.4.5
   - 4.5.0
   - 4.5.1
+  - 4.6.0
 aliases:
 - CVE-2020-29367
 - GHSA-8c7c-2c8j-3xfp
 details: blosc2.c in Blosc C-Blosc2 through 2.0.0.beta.5 has a heap-based buffer overflow
   when there is a lack of space to write compressed data.
 id: PYSEC-2020-343
-modified: '2026-06-17T12:02:53.546475Z'
+modified: '2026-06-26T10:33:23.767750Z'
 published: '2020-11-27T20:15:00Z'
 references:
 - type: FIX
