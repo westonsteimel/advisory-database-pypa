@@ -1,16 +1,22 @@
+id: PYSEC-2026-237
+published: "2026-06-22T18:16:46.010Z"
+modified: "2026-06-27T10:27:57.261885Z"
+aliases:
+- CVE-2026-54275
+- GHSA-4m7w-qmgq-4wj5
+details: AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.1, the server_hostname TLS SNI check can be bypassed when an existing connection is reused. If an application makes multiple requests to the same domain, but with different per-request server_hostname parameters, then the later calls may succeed by reusing the existing connection when they should have been rejected due to the TLS SNI check. This vulnerability is fixed in 3.14.1.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: aiohttp
+    ecosystem: PyPI
     purl: pkg:pypi/aiohttp
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 3.14.1
-    type: ECOSYSTEM
   versions:
-  - '0.1'
+  - "0.1"
   - 0.10.0
   - 0.10.1
   - 0.10.2
@@ -45,7 +51,7 @@ affected:
   - 0.18.3
   - 0.18.4
   - 0.19.0
-  - '0.2'
+  - "0.2"
   - 0.20.0
   - 0.20.1
   - 0.20.2
@@ -69,8 +75,8 @@ affected:
   - 0.22.3
   - 0.22.4
   - 0.22.5
-  - '0.3'
-  - '0.4'
+  - "0.3"
+  - "0.4"
   - 0.4.1
   - 0.4.2
   - 0.4.3
@@ -317,21 +323,10 @@ affected:
   - 3.9.4
   - 3.9.4rc0
   - 3.9.5
-aliases:
-- CVE-2026-54275
-- GHSA-4m7w-qmgq-4wj5
-details: AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python.
-  Prior to 3.14.1, the server_hostname TLS SNI check can be bypassed when an existing
-  connection is reused. If an application makes multiple requests to the same domain,
-  but with different per-request server_hostname parameters, then the later calls
-  may succeed by reusing the existing connection when they should have been rejected
-  due to the TLS SNI check. This vulnerability is fixed in 3.14.1.
-id: PYSEC-0000-CVE-2026-54275
-modified: '2026-06-27T10:27:57.261885Z'
-published: '2026-06-22T18:16:46.010Z'
+  ecosystem_specific: {}
 references:
 - type: ADVISORY
   url: https://github.com/aio-libs/aiohttp/security/advisories/GHSA-4m7w-qmgq-4wj5
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

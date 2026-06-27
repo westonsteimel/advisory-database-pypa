@@ -1,14 +1,20 @@
+id: PYSEC-2026-242
+published: "2026-06-23T17:16:52.790Z"
+modified: "2026-06-27T10:28:49.146396Z"
+aliases:
+- CVE-2026-33760
+- GHSA-9c59-2mvc-vfr8
+details: Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.0, Langflow's /api/v1/monitor router exposes 7 endpoints that perform read, write, and delete operations on user-owned resources — messages, sessions, build artifacts, and LLM transaction logs — without verifying that the authenticated requester owns the targeted resource. Any authenticated user can read, modify, rename, or permanently delete another user's data by supplying the target's resource ID or flow_id. This is a classic IDOR/BOLA vulnerability. Notably, the same source file (monitor.py) contains one correctly-implemented endpoint that uses an ownership check, demonstrating the correct pattern was known but inconsistently applied. This vulnerability is fixed in 1.9.0.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: langflow
+    ecosystem: PyPI
     purl: pkg:pypi/langflow
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 1.9.0
-    type: ECOSYSTEM
   versions:
   - 0.0.31
   - 0.0.32
@@ -303,25 +309,10 @@ affected:
   - 1.8.3
   - 1.8.3rc0
   - 1.8.4
-aliases:
-- CVE-2026-33760
-- GHSA-9c59-2mvc-vfr8
-details: "Langflow is a tool for building and deploying AI-powered agents and workflows.\
-  \ Prior to 1.9.0, Langflow's /api/v1/monitor router exposes 7 endpoints that perform\
-  \ read, write, and delete operations on user-owned resources \u2014 messages, sessions,\
-  \ build artifacts, and LLM transaction logs \u2014 without verifying that the authenticated\
-  \ requester owns the targeted resource. Any authenticated user can read, modify,\
-  \ rename, or permanently delete another user's data by supplying the target's resource\
-  \ ID or flow_id. This is a classic IDOR/BOLA vulnerability. Notably, the same source\
-  \ file (monitor.py) contains one correctly-implemented endpoint that uses an ownership\
-  \ check, demonstrating the correct pattern was known but inconsistently applied.\
-  \ This vulnerability is fixed in 1.9.0."
-id: PYSEC-0000-CVE-2026-33760
-modified: '2026-06-27T10:28:49.146396Z'
-published: '2026-06-23T17:16:52.790Z'
+  ecosystem_specific: {}
 references:
 - type: EVIDENCE
   url: https://github.com/langflow-ai/langflow/security/advisories/GHSA-9c59-2mvc-vfr8
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H

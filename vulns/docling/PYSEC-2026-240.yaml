@@ -1,14 +1,20 @@
+id: PYSEC-2026-240
+published: "2026-06-24T18:17:17.467Z"
+modified: "2026-06-27T10:28:35.752410Z"
+aliases:
+- CVE-2026-44020
+- GHSA-m88r-rg27-5xfg
+details: "Docling simplifies document processing by parsing diverse formats and providing integrations with the generative AI ecosystem. From 2.13.0 until 2.74.0, the USPTO patent XML parser used the standard xml.sax.parseString() without protection against XML External Entity (XXE) attacks. An attacker could craft malicious USPTO patent XML files with external entity references that could read arbitrary files from the server filesystem, perform Server-Side Request Forgery (SSRF) attacks, or cause denial of service through entity expansion (Billion Laughs attack). The vulnerability affects three USPTO patent format parsers: ICE (v4.x), Grant v2.5, and Application v1.x. This vulnerability is fixed in 2.74.0."
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: docling
+    ecosystem: PyPI
     purl: pkg:pypi/docling
   ranges:
-  - events:
+  - type: ECOSYSTEM
+    events:
     - introduced: 2.13.0
     - fixed: 2.74.0
-    type: ECOSYSTEM
   versions:
   - 2.13.0
   - 2.14.0
@@ -94,24 +100,10 @@ affected:
   - 2.72.0
   - 2.73.0
   - 2.73.1
-aliases:
-- CVE-2026-44020
-- GHSA-m88r-rg27-5xfg
-details: 'Docling simplifies document processing by parsing diverse formats and providing
-  integrations with the generative AI ecosystem. From 2.13.0 until 2.74.0, the USPTO
-  patent XML parser used the standard xml.sax.parseString() without protection against
-  XML External Entity (XXE) attacks. An attacker could craft malicious USPTO patent
-  XML files with external entity references that could read arbitrary files from the
-  server filesystem, perform Server-Side Request Forgery (SSRF) attacks, or cause
-  denial of service through entity expansion (Billion Laughs attack). The vulnerability
-  affects three USPTO patent format parsers: ICE (v4.x), Grant v2.5, and Application
-  v1.x. This vulnerability is fixed in 2.74.0.'
-id: PYSEC-0000-CVE-2026-44020
-modified: '2026-06-27T10:28:35.752410Z'
-published: '2026-06-24T18:17:17.467Z'
+  ecosystem_specific: {}
 references:
 - type: FIX
   url: https://github.com/docling-project/docling/security/advisories/GHSA-m88r-rg27-5xfg
 severity:
-- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

@@ -1,14 +1,20 @@
+id: PYSEC-2026-241
+published: "2026-06-23T18:18:08.767Z"
+modified: "2026-06-27T10:28:41.064018Z"
+aliases:
+- CVE-2026-54317
+- GHSA-x84v-g949-293w
+details: "Home Assistant is open source home automation software that puts local control and privacy first. Prior to 2026.6.0, the Konnected integration registers an HTTP endpoint, KonnectedView (homeassistant/components/konnected/__init__.py), that is marked as not requiring authentication (requires_auth = False). A comment next to that line says auth is instead handled \"via the access token from configuration.\" That promise is only half true. Write requests (POST and PUT) are handled by update_sensor(), which does check the request's Authorization: Bearer <token> header against the integration's stored access tokens (using hmac.compare_digest). Read requests (GET) are handled by a separate get() method that has no authentication check at all. This vulnerability is fixed in 2026.6.0."
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: homeassistant
+    ecosystem: PyPI
     purl: pkg:pypi/homeassistant
   ranges:
-  - events:
-    - introduced: '0'
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
     - fixed: 2026.6.0
-    type: ECOSYSTEM
   versions:
   - 0.10.0
   - 0.10.1
@@ -243,7 +249,7 @@ affected:
   - 0.17.3
   - 0.18.0
   - 0.18.2
-  - '0.19'
+  - "0.19"
   - 0.19.1
   - 0.19.2
   - 0.19.3
@@ -1593,25 +1599,10 @@ affected:
   - 2026.6.0b2
   - 2026.6.0b3
   - 2026.6.0b4
-aliases:
-- CVE-2026-54317
-- GHSA-x84v-g949-293w
-details: 'Home Assistant is open source home automation software that puts local control
-  and privacy first. Prior to 2026.6.0, the Konnected integration registers an HTTP
-  endpoint, KonnectedView (homeassistant/components/konnected/__init__.py), that is
-  marked as not requiring authentication (requires_auth = False). A comment next to
-  that line says auth is instead handled "via the access token from configuration."
-  That promise is only half true. Write requests (POST and PUT) are handled by update_sensor(),
-  which does check the request''s Authorization: Bearer <token> header against the
-  integration''s stored access tokens (using hmac.compare_digest). Read requests (GET)
-  are handled by a separate get() method that has no authentication check at all.
-  This vulnerability is fixed in 2026.6.0.'
-id: PYSEC-0000-CVE-2026-54317
-modified: '2026-06-27T10:28:41.064018Z'
-published: '2026-06-23T18:18:08.767Z'
+  ecosystem_specific: {}
 references:
 - type: EVIDENCE
   url: https://github.com/home-assistant/core/security/advisories/GHSA-x84v-g949-293w
 severity:
-- score: CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L

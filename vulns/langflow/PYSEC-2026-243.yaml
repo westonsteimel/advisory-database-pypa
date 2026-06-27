@@ -1,14 +1,20 @@
+id: PYSEC-2026-243
+published: "2026-06-23T17:17:01.240Z"
+modified: "2026-06-27T10:28:49.234889Z"
+aliases:
+- CVE-2026-48519
+- GHSA-v5ff-9q35-q26f
+details: Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.2, the "Shareable Playground" (or "Public Flows" in code) contains a critical RCE vulnerability. Shareable Playground feature works by enabling the execution of workflows by unauthenticated users, by accessing a link. Specifically, it enables the route /api/v1/build_public_tmp to execute any public flow, given a public flow ID. When the route executes the flow, it allows for providing arbitrary custom Python code as the nodes code, inside the JSON payload. The vulnerable field is data.nodes[X].data.node.template.code.value. This vulnerability is fixed in 1.9.2.
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: langflow
+    ecosystem: PyPI
     purl: pkg:pypi/langflow
   ranges:
-  - events:
-    - introduced: '0'
-    - fixed: 1.10.0
-    type: ECOSYSTEM
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 1.9.2
   versions:
   - 0.0.31
   - 0.0.32
@@ -262,7 +268,6 @@ affected:
   - 1.1.3
   - 1.1.4
   - 1.1.4.post1
-  - 1.10.0rc0
   - 1.2.0
   - 1.3.0
   - 1.3.1
@@ -306,30 +311,10 @@ affected:
   - 1.8.4
   - 1.9.0
   - 1.9.1
-  - 1.9.2
-  - 1.9.3
-  - 1.9.3rc0
-  - 1.9.4
-  - 1.9.5
-  - 1.9.6
-  - 1.9.6rc0
-aliases:
-- CVE-2026-48520
-- GHSA-rcjh-r59h-gq37
-details: Langflow is a tool for building and deploying AI-powered agents and workflows.
-  Prior to 1.10.0, the "Shareable Playground" (or "Public Flows" in code) contains
-  a potential arbitrary file-read vulnerability, depending on the exact flow configuration
-  used. By making a flow public, public execution of the flow is allowed. The execution
-  request can contain a list of files that gets read by Langflow and fed into the
-  LLM. The files path can be any path supported by the storage - it can be either
-  a local file or S3 path if supported by the local configuration This vulnerability
-  is fixed in 1.10.0.
-id: PYSEC-0000-CVE-2026-48520
-modified: '2026-06-27T10:28:49.331820Z'
-published: '2026-06-23T17:17:01.367Z'
+  ecosystem_specific: {}
 references:
 - type: EVIDENCE
-  url: https://github.com/langflow-ai/langflow/security/advisories/GHSA-rcjh-r59h-gq37
+  url: https://github.com/langflow-ai/langflow/security/advisories/GHSA-v5ff-9q35-q26f
 severity:
-- score: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H
