@@ -9,6 +9,15 @@ affected:
     name: django
     ecosystem: PyPI
     purl: pkg:pypi/django
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: "1.1"
+    - fixed: "1.1.4"
+  - type: ECOSYSTEM
+    events:
+    - introduced: "1.2"
+    - fixed: "1.2.5"
 references:
 - type: WEB
   url: http://lists.fedoraproject.org/pipermail/package-announce/2011-February/054207.html
