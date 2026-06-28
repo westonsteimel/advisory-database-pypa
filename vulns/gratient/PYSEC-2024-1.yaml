@@ -16,7 +16,8 @@ affected:
   - "0.5"
 references:
 - type: EVIDENCE
-  url: https://inspector.pypi.io/project/gratient/0.5/packages/c5/c5/353e45fa57fa5f1b2b42fa24a029cdfb018d7263850fb43b6d6352157734/gratient-0.5-py3-none-any.whl/gratient/__init__.py#line.4
+  url: 
+    https://inspector.pypi.io/project/gratient/0.5/packages/c5/c5/353e45fa57fa5f1b2b42fa24a029cdfb018d7263850fb43b6d6352157734/gratient-0.5-py3-none-any.whl/gratient/__init__.py#line.4
 - type: WEB
   url: https://pypi.org/project/gratient/
 credits:
@@ -24,3 +25,4 @@ credits:
   type: ANALYST
 - name: Mike Fiedler
   type: COORDINATOR
+published: '2024-01-03T22:31:36Z'

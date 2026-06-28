@@ -19,7 +19,9 @@ references:
 - type: EVIDENCE
   url: https://nitter.tiekoetter.com/SFLinux/status/1949906299308953827
 - type: EVIDENCE
-  url: https://www.stepsecurity.io/blog/supply-chain-security-alert-num2words-pypi-package-shows-signs-of-compromise
+  url: 
+    https://www.stepsecurity.io/blog/supply-chain-security-alert-num2words-pypi-package-shows-signs-of-compromise
 credits:
 - name: Mike Fiedler
   type: COORDINATOR
+published: '2025-07-31T14:34:47Z'

@@ -20,6 +20,8 @@ affected:
   - 100.10.7
 references:
 - type: EVIDENCE
-  url: https://inspector.pypi.io/project/pygments-style-solarized/100.10.7/packages/f8/de/dc31f9eb4322bbce87fe341f9b4e2fc31587dedc785de629af3e53b1c1f5/pygments-style-solarized-100.10.7.tar.gz/pygments-style-solarized-100.10.7/pygments-style-solarized/pygments-style-solarized.py#line.1
+  url: 
+    https://inspector.pypi.io/project/pygments-style-solarized/100.10.7/packages/f8/de/dc31f9eb4322bbce87fe341f9b4e2fc31587dedc785de629af3e53b1c1f5/pygments-style-solarized-100.10.7.tar.gz/pygments-style-solarized-100.10.7/pygments-style-solarized/pygments-style-solarized.py#line.1
 - type: WEB
   url: https://github.com/shkumagai/pygments-style-solarized/pull/22/files
+published: '2025-03-17T16:35:37Z'

@@ -20,8 +20,11 @@ affected:
   - 0.1.1
 references:
 - type: EVIDENCE
-  url: https://inspector.pypi.io/project/ppkt2synergy/0.1.1/packages/fa/a2/fe059119c07fca569cc874e00291af868654ecffa4fd1cbdbf0590f1c0a7/ppkt2synergy-0.1.1-py3-none-any.whl/ppkt2synergy/_index.js
+  url: 
+    https://inspector.pypi.io/project/ppkt2synergy/0.1.1/packages/fa/a2/fe059119c07fca569cc874e00291af868654ecffa4fd1cbdbf0590f1c0a7/ppkt2synergy-0.1.1-py3-none-any.whl/ppkt2synergy/_index.js
 - type: ARTICLE
-  url: https://www.endorlabs.com/learn/shai-hulud-hades-wave-hits-six-pypi-bioinformatics-packages
+  url: 
+    https://www.endorlabs.com/learn/shai-hulud-hades-wave-hits-six-pypi-bioinformatics-packages
 - type: ARTICLE
   url: https://www.stepsecurity.io/blog/the-hades-campaign-pypi-packages
+published: '2026-06-26T14:23:44Z'

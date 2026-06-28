@@ -1,5 +1,5 @@
 id: PYSEC-2023-182
-modified: 2023-09-29T21:15:27.86396Z
+modified: 2023-09-29T21:15:27.863960Z
 related:
 - CVE-2023-4863
 details: opencv-contrib-python-headless versions before v4.8.1.78 bundled libwebp
@@ -77,3 +77,4 @@ references:
   url: https://github.com/opencv/opencv/wiki/ChangeLog#version481
 - type: FIX
   url: https://github.com/opencv/opencv/pull/24274
+published: '2023-09-29T21:14:05Z'

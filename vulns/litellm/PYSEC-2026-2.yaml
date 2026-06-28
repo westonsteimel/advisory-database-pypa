@@ -20,7 +20,7 @@ details: |
   runs on, and in a Kubernetes environment also by creating a new pod.
   The persistence script then contacts hxxps://checkmarx[.]zone/raw for
   further instructions.
-  
+
   Anyone who has installed and run the project should assume
   any credentials available to litellm environment may have been exposed,
   and revoke/rotate them accordingly. The affected environment should be
@@ -59,3 +59,4 @@ credits:
   type: COORDINATOR
 - name: Kamil Mańkowski
   type: ANALYST
+published: '2026-03-24T15:35:32Z'

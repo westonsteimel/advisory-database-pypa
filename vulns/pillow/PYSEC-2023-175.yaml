@@ -1,7 +1,7 @@
 id: PYSEC-2023-175
 details: Pillow versions before v10.0.1 bundled libwebp binaries in wheels that are
-  vulnerable to CVE-2023-5129 (previously CVE-2023-4863). Pillow v10.0.1 upgrades the bundled libwebp binary
-  to v1.3.2.
+  vulnerable to CVE-2023-5129 (previously CVE-2023-4863). Pillow v10.0.1 upgrades
+  the bundled libwebp binary to v1.3.2.
 modified: '2023-09-25T17:25:13.946374Z'
 related:
 - CVE-2023-4863
@@ -117,3 +117,4 @@ affected:
   - 9.3.0
   - 9.4.0
   - 9.5.0
+published: '2023-09-20T05:29:33Z'

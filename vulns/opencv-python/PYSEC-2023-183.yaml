@@ -1,5 +1,5 @@
 id: PYSEC-2023-183
-modified: 2023-09-29T21:15:28.03903Z
+modified: 2023-09-29T21:15:28.039030Z
 related:
 - CVE-2023-4863
 details: opencv-python versions before v4.8.1.78 bundled libwebp binaries in wheels
@@ -82,3 +82,4 @@ references:
   url: https://github.com/opencv/opencv/wiki/ChangeLog#version481
 - type: FIX
   url: https://github.com/opencv/opencv/pull/24274
+published: '2023-09-29T21:14:05Z'

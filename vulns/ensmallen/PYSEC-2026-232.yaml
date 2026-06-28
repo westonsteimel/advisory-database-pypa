@@ -20,8 +20,11 @@ affected:
   - 0.8.101
 references:
 - type: EVIDENCE
-  url: https://inspector.pypi.io/project/ensmallen/0.8.101/packages/53/bf/6210699d6165e632ebad20175808bf71e4a09a48dab3a1e0a4c002d8cc5b/ensmallen-0.8.101-py3-none-any.whl/ensmallen/_index.js
+  url: 
+    https://inspector.pypi.io/project/ensmallen/0.8.101/packages/53/bf/6210699d6165e632ebad20175808bf71e4a09a48dab3a1e0a4c002d8cc5b/ensmallen-0.8.101-py3-none-any.whl/ensmallen/_index.js
 - type: ARTICLE
-  url: https://www.endorlabs.com/learn/shai-hulud-hades-wave-hits-six-pypi-bioinformatics-packages
+  url: 
+    https://www.endorlabs.com/learn/shai-hulud-hades-wave-hits-six-pypi-bioinformatics-packages
 - type: ARTICLE
   url: https://www.stepsecurity.io/blog/the-hades-campaign-pypi-packages
+published: '2026-06-24T14:01:10Z'

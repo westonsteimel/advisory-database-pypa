@@ -24,7 +24,9 @@ affected:
   - 1.1.5.post1
 references:
 - type: EVIDENCE
-  url: https://inspector.pypi.io/project/dydx-v4-client/1.1.5.post1/packages/4b/06/4d848676e932b0fc9d707bb78603dc76555141cc832819cd1e5077bdf2a2/dydx_v4_client-1.1.5.post1.tar.gz/dydx_v4_client-1.1.5.post1/dydx_v4_client/_bootstrap.py#line.18
+  url: 
+    https://inspector.pypi.io/project/dydx-v4-client/1.1.5.post1/packages/4b/06/4d848676e932b0fc9d707bb78603dc76555141cc832819cd1e5077bdf2a2/dydx_v4_client-1.1.5.post1.tar.gz/dydx_v4_client-1.1.5.post1/dydx_v4_client/_bootstrap.py#line.18
 credits:
 - name: Mike Fiedler
   type: COORDINATOR
+published: '2026-01-28T21:09:02Z'

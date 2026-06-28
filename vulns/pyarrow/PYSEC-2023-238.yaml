@@ -57,3 +57,4 @@ references:
   url: https://github.com/apache/arrow/commit/f14170976372436ec1d03a724d8d3f3925484ecf
 - type: FIX
   url: https://pypi.org/project/pyarrow-hotfix/
+published: '2023-11-17T17:41:59Z'
