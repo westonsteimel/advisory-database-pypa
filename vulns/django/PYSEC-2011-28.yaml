@@ -34,6 +34,7 @@ details: The administrative interface in django.contrib.admin in Django before 1
 id: PYSEC-2011-28
 modified: '2026-06-28T22:26:42.955597Z'
 published: '2011-01-10T20:00:16.877Z'
+withdrawn: "2026-06-28T22:31:00Z"
 references:
 - type: WEB
   url: http://lists.fedoraproject.org/pipermail/package-announce/2011-January/053041.html

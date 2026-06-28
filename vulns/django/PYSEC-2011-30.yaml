@@ -32,6 +32,7 @@ details: Django 1.1.x before 1.1.4 and 1.2.x before 1.2.5 does not properly vali
 id: PYSEC-2011-30
 modified: '2026-06-28T22:26:43.377421Z'
 published: '2011-02-14T21:00:03.210Z'
+withdrawn: "2026-06-28T22:31:00Z"
 references:
 - type: WEB
   url: http://lists.fedoraproject.org/pipermail/package-announce/2011-February/054207.html
