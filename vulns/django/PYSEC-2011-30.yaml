@@ -1,23 +1,37 @@
-id: PYSEC-2011-30
-published: "2011-02-14T21:00:03.210Z"
-modified: "2026-04-29T01:13:23.040Z"
-aliases:
-- CVE-2011-0696
-details: Django 1.1.x before 1.1.4 and 1.2.x before 1.2.5 does not properly validate HTTP requests that contain an X-Requested-With header, which makes it easier for remote attackers to conduct cross-site request forgery (CSRF) attacks via forged AJAX requests that leverage a "combination of browser plugins and redirects," a related issue to CVE-2011-0447.
 affected:
 - package:
-    name: django
     ecosystem: PyPI
+    name: django
     purl: pkg:pypi/django
   ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: "1.1"
-    - fixed: "1.1.4"
-  - type: ECOSYSTEM
-    events:
-    - introduced: "1.2"
-    - fixed: "1.2.5"
+  - events:
+    - introduced: '1.1'
+    - fixed: 1.1.4
+    type: ECOSYSTEM
+  - events:
+    - introduced: '1.2'
+    - fixed: 1.2.5
+    type: ECOSYSTEM
+  versions:
+  - '1.1'
+  - 1.1.1
+  - 1.1.2
+  - 1.1.3
+  - '1.2'
+  - 1.2.1
+  - 1.2.2
+  - 1.2.3
+  - 1.2.4
+aliases:
+- CVE-2011-0696
+details: Django 1.1.x before 1.1.4 and 1.2.x before 1.2.5 does not properly validate
+  HTTP requests that contain an X-Requested-With header, which makes it easier for
+  remote attackers to conduct cross-site request forgery (CSRF) attacks via forged
+  AJAX requests that leverage a "combination of browser plugins and redirects," a
+  related issue to CVE-2011-0447.
+id: PYSEC-2011-30
+modified: '2026-06-28T22:26:43.377421Z'
+published: '2011-02-14T21:00:03.210Z'
 references:
 - type: WEB
   url: http://lists.fedoraproject.org/pipermail/package-announce/2011-February/054207.html
