@@ -33,6 +33,7 @@ cat <<EOL > "vulns/$package_name/$id"
 # See https://ossf.github.io/osv-schema/ for format and field descriptions.
 id: $id
 modified: $modified
+published: $modified
 summary: $summary
 details: |
 affected:
