@@ -1,30 +1,27 @@
-id: PYSEC-0000-google-adk-GHSA-rg7c-g689-fr3x
-modified: '2026-06-29T11:50:47.550836Z'
-published: '2026-06-29T11:50:47.550836Z'
-aliases:
-- CVE-2026-4810
-- GHSA-rg7c-g689-fr3x
-summary: Google Agent Development Kit (ADK) has a Code Injection and Missing Authentication
-  vulnerability
-details: "A Code Injection and Missing Authentication vulnerability in Google Agent
-  Development Kit (ADK) versions 1.7.0 (and 2.0.0a1) through 1.28.1 (and 2.0.0a2)
-  on Python (OSS), Cloud Run, and GKE allows an unauthenticated remote attacker to
-  execute arbitrary code on the server hosting the ADK instance.\n\nThis vulnerability
-  was patched in versions 1.28.1 and 2.0.0a2.\n\n\nCustomers need to redeploy the
-  upgraded ADK to their production environments. In addition, if they are running
-  ADK Web locally, they also need to upgrade their local instance."
-severity:
-- type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/U:Amber
 affected:
 - package:
     ecosystem: PyPI
     name: google-adk
   ranges:
-  - type: ECOSYSTEM
-    events:
+  - events:
     - introduced: 2.0.0a1
     - fixed: 2.0.0a2
+    type: ECOSYSTEM
+  versions:
+  - 2.0.0a1
+aliases:
+- CVE-2026-4810
+- GHSA-rg7c-g689-fr3x
+details: |-
+  A Code Injection and Missing Authentication vulnerability in Google Agent Development Kit (ADK) versions 1.7.0 (and 2.0.0a1) through 1.28.1 (and 2.0.0a2) on Python (OSS), Cloud Run, and GKE allows an unauthenticated remote attacker to execute arbitrary code on the server hosting the ADK instance.
+
+  This vulnerability was patched in versions 1.28.1 and 2.0.0a2.
+
+
+  Customers need to redeploy the upgraded ADK to their production environments. In addition, if they are running ADK Web locally, they also need to upgrade their local instance.
+id: PYSEC-0000-google-adk-GHSA-rg7c-g689-fr3x
+modified: '2026-06-29T12:05:28.576832Z'
+published: '2026-06-29T11:50:47.550836Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2026-4810
@@ -36,3 +33,8 @@ references:
   url: https://pypi.org/project/google-adk
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-rg7c-g689-fr3x
+severity:
+- score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/U:Amber
+  type: CVSS_V4
+summary: Google Agent Development Kit (ADK) has a Code Injection and Missing Authentication
+  vulnerability

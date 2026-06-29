@@ -1,35 +1,34 @@
-id: PYSEC-0000-uni2ts-GHSA-7x99-8x99-xc54
-modified: '2026-06-29T11:50:52.030793Z'
-published: '2026-06-29T11:50:52.030793Z'
-aliases:
-- CVE-2026-22584
-- GHSA-7x99-8x99-xc54
-summary: Salesforce Uni2TS has a Code Injection vulnerability
-details: "Improper Control of Generation of Code ('Code Injection') vulnerability
-  in Salesforce Uni2TS on MacOS, Windows, Linux allows Leverage Executable Code in
-  Non-Executable Files.This issue affects Uni2TS: through 1.2.0."
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 affected:
-- package:
+- database_specific:
+    last_known_affected_version_range: <= 1.2.0
+  package:
     ecosystem: PyPI
     name: uni2ts
   ranges:
-  - type: ECOSYSTEM
-    events:
+  - events:
     - introduced: '0'
     - fixed: 2.0.0
-  database_specific:
-    last_known_affected_version_range: <= 1.2.0
+    type: ECOSYSTEM
+  versions:
+  - 1.1.0
+  - 1.1.1
+  - 1.2.0
+aliases:
+- CVE-2026-22584
+- GHSA-7x99-8x99-xc54
+details: 'Improper Control of Generation of Code (''Code Injection'') vulnerability
+  in Salesforce Uni2TS on MacOS, Windows, Linux allows Leverage Executable Code in
+  Non-Executable Files.This issue affects Uni2TS: through 1.2.0.'
+id: PYSEC-0000-uni2ts-GHSA-7x99-8x99-xc54
+modified: '2026-06-29T12:05:50.877361Z'
+published: '2026-06-29T11:50:52.030793Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2026-22584
 - type: WEB
   url: https://github.com/SalesforceAIResearch/uni2ts/pull/218
 - type: WEB
-  url: 
-    https://github.com/SalesforceAIResearch/uni2ts/commit/7f2d51dd729de018f0f22504f39a8475c6fed1c4
+  url: https://github.com/SalesforceAIResearch/uni2ts/commit/7f2d51dd729de018f0f22504f39a8475c6fed1c4
 - type: PACKAGE
   url: https://github.com/SalesforceAIResearch/uni2ts
 - type: WEB
@@ -40,3 +39,7 @@ references:
   url: https://pypi.org/project/uni2ts
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-7x99-8x99-xc54
+severity:
+- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+  type: CVSS_V3
+summary: Salesforce Uni2TS has a Code Injection vulnerability

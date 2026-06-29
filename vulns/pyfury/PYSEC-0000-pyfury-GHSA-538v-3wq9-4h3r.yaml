@@ -1,30 +1,41 @@
-id: PYSEC-0000-pyfury-GHSA-538v-3wq9-4h3r
-modified: '2026-06-29T11:50:37.028397Z'
-published: '2026-06-29T11:50:37.028397Z'
-aliases:
-- CVE-2025-61622
-- GHSA-538v-3wq9-4h3r
-summary: Apache Pyfory python is vulnerable to deserialization of untrusted data
-details: "Deserialization of untrusted data in python in pyfory versions 0.12.0 through
-  0.12.2, or the legacy pyfury versions from 0.1.0 through 0.10.3: allows arbitrary
-  code execution. An application is vulnerable if it reads pyfory serialized data
-  from untrusted sources. An attacker can craft a data stream that selects pickle-fallback
-  serializer during deserialization, leading to the execution of `pickle.loads`, which
-  is vulnerable to remote code execution.\n\nUsers are recommended to upgrade to pyfory
-  version 0.12.3 or later, which has removed pickle fallback serializer and thus fixes
-  this issue."
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 affected:
 - package:
     ecosystem: PyPI
     name: pyfury
   ranges:
-  - type: ECOSYSTEM
-    events:
+  - events:
     - introduced: 0.1.0
     - last_affected: 0.10.3
+    type: ECOSYSTEM
+  versions:
+  - 0.10.2
+  - 0.10.2rc1
+  - 0.10.3
+  - 0.2.0
+  - 0.2.0a1
+  - 0.2.1
+  - 0.2.1a1
+  - 0.3.0
+  - 0.3.0a1
+  - 0.3.0a2
+  - 0.3.0a3
+  - 0.3.1
+  - 0.4.0
+  - 0.4.1
+aliases:
+- CVE-2025-61622
+- GHSA-538v-3wq9-4h3r
+details: "Deserialization of untrusted data in\_python in pyfory\_versions 0.12.0\
+  \ through 0.12.2, or the\_legacy\_pyfury versions from\_0.1.0 through 0.10.3: allows\
+  \ arbitrary code execution. An application is vulnerable if it reads pyfory serialized\
+  \ data from untrusted sources.\_An attacker can craft a data stream that selects\
+  \ pickle-fallback serializer during deserialization, leading to the execution of\
+  \ `pickle.loads`, which is\_vulnerable to\_remote code execution.\n\nUsers are recommended\
+  \ to upgrade to pyfory version 0.12.3 or later, which has removed pickle fallback\
+  \ serializer and thus fixes this issue."
+id: PYSEC-0000-pyfury-GHSA-538v-3wq9-4h3r
+modified: '2026-06-29T12:05:44.436545Z'
+published: '2026-06-29T11:50:37.028397Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2025-61622
@@ -44,3 +55,7 @@ references:
   url: https://pypi.org/project/pyfury
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-538v-3wq9-4h3r
+severity:
+- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+  type: CVSS_V3
+summary: Apache Pyfory python is vulnerable to deserialization of untrusted data

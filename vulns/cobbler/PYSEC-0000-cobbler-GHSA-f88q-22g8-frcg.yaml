@@ -1,10 +1,19 @@
-id: PYSEC-0000-cobbler-GHSA-f88q-22g8-frcg
-modified: '2026-06-29T11:50:32.707122Z'
-published: '2026-06-29T11:50:32.707122Z'
+affected:
+- database_specific:
+    last_known_affected_version_range: <= 2.6.11
+  package:
+    ecosystem: PyPI
+    name: cobbler
+  ranges:
+  - events:
+    - introduced: '0'
+    - fixed: 3.0.0
+    type: ECOSYSTEM
+  versions:
+  - 0.6.3-2
 aliases:
 - CVE-2018-1000226
 - GHSA-f88q-22g8-frcg
-summary: Cobbler Improper Validation of Security Tokens
 details: Cobbler version Verified as present in Cobbler versions 2.6.11+, but code
   inspection suggests at least 2.0.0+ or possibly even older versions may be vulnerable
   contains a Incorrect Access Control vulnerability in XMLRPC API (/cobbler_api) that
@@ -12,20 +21,9 @@ details: Cobbler version Verified as present in Cobbler versions 2.6.11+, but co
   harvesting. This attack appear to be exploitable via "network connectivity". Taking
   advantage of improper validation of security tokens in API endpoints. Please note
   this is a different issue than CVE-2018-10931.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-affected:
-- package:
-    ecosystem: PyPI
-    name: cobbler
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 3.0.0
-  database_specific:
-    last_known_affected_version_range: <= 2.6.11
+id: PYSEC-0000-cobbler-GHSA-f88q-22g8-frcg
+modified: '2026-06-29T12:05:24.325486Z'
+published: '2026-06-29T11:50:32.707122Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2018-1000226
@@ -39,3 +37,7 @@ references:
   url: https://pypi.org/project/cobbler
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-f88q-22g8-frcg
+severity:
+- score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+  type: CVSS_V3
+summary: Cobbler Improper Validation of Security Tokens

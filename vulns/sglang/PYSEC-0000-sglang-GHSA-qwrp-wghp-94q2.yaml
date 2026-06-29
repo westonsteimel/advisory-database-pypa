@@ -1,27 +1,39 @@
-id: PYSEC-0000-sglang-GHSA-qwrp-wghp-94q2
-modified: '2026-06-29T11:50:50.577356Z'
-published: '2026-06-29T11:50:50.577356Z'
-aliases:
-- CVE-2026-7302
-- GHSA-qwrp-wghp-94q2
-summary: SGLang's multimodal generation runtime has an unauthenticated path traversal
-  vulnerability
-details: SGLang's multimodal generation runtime is vulnerable to an unauthenticated
-  path traversal vulnerability, allowing an attacker to write arbitrary files anywhere
-  the server process has write access, by including ../ sequences in the upload filename
-  when sent to specific endpoints.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H
 affected:
 - package:
     ecosystem: PyPI
     name: sglang
   ranges:
-  - type: ECOSYSTEM
-    events:
+  - events:
     - introduced: 0.5.5
     - last_affected: 0.5.12
+    type: ECOSYSTEM
+  versions:
+  - 0.5.10
+  - 0.5.10.post1
+  - 0.5.10rc0
+  - 0.5.11
+  - 0.5.12
+  - 0.5.5
+  - 0.5.5.post1
+  - 0.5.5.post2
+  - 0.5.5.post3
+  - 0.5.6
+  - 0.5.6.post1
+  - 0.5.6.post2
+  - 0.5.7
+  - 0.5.8
+  - 0.5.8.post1
+  - 0.5.9
+aliases:
+- CVE-2026-7302
+- GHSA-qwrp-wghp-94q2
+details: SGLang's multimodal generation runtime is vulnerable to an unauthenticated
+  path traversal vulnerability, allowing an attacker to write arbitrary files anywhere
+  the server process has write access, by including ../ sequences in the upload filename
+  when sent to specific endpoints.
+id: PYSEC-0000-sglang-GHSA-qwrp-wghp-94q2
+modified: '2026-06-29T12:05:48.873728Z'
+published: '2026-06-29T11:50:50.577356Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2026-7302
@@ -35,3 +47,8 @@ references:
   url: https://pypi.org/project/sglang
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-qwrp-wghp-94q2
+severity:
+- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H
+  type: CVSS_V3
+summary: SGLang's multimodal generation runtime has an unauthenticated path traversal
+  vulnerability

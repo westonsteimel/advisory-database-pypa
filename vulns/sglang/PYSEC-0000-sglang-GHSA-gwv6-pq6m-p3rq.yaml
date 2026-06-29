@@ -1,26 +1,38 @@
-id: PYSEC-0000-sglang-GHSA-gwv6-pq6m-p3rq
-modified: '2026-06-29T11:50:49.817132Z'
-published: '2026-06-29T11:50:49.817132Z'
-aliases:
-- CVE-2026-7301
-- GHSA-gwv6-pq6m-p3rq
-summary: 'SGLanG: Multimodal scheduler deserializes untrusted pickle data on 0.0.0.0
-  ROUTER socket'
-details: SGLang's multimodal generation runtime scheduler's ROUTER socket binds to
-  0.0.0.0 by default and contains a sink that calls pickle.loads() on incoming messages,
-  enabling RCE when exposed to the internet.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 affected:
 - package:
     ecosystem: PyPI
     name: sglang
   ranges:
-  - type: ECOSYSTEM
-    events:
+  - events:
     - introduced: 0.5.5
     - last_affected: 0.5.12
+    type: ECOSYSTEM
+  versions:
+  - 0.5.10
+  - 0.5.10.post1
+  - 0.5.10rc0
+  - 0.5.11
+  - 0.5.12
+  - 0.5.5
+  - 0.5.5.post1
+  - 0.5.5.post2
+  - 0.5.5.post3
+  - 0.5.6
+  - 0.5.6.post1
+  - 0.5.6.post2
+  - 0.5.7
+  - 0.5.8
+  - 0.5.8.post1
+  - 0.5.9
+aliases:
+- CVE-2026-7301
+- GHSA-gwv6-pq6m-p3rq
+details: SGLang's multimodal generation runtime scheduler's ROUTER socket binds to
+  0.0.0.0 by default and contains a sink that calls pickle.loads() on incoming messages,
+  enabling RCE when exposed to the internet.
+id: PYSEC-0000-sglang-GHSA-gwv6-pq6m-p3rq
+modified: '2026-06-29T12:05:48.753976Z'
+published: '2026-06-29T11:50:49.817132Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2026-7301
@@ -34,3 +46,8 @@ references:
   url: https://pypi.org/project/sglang
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-gwv6-pq6m-p3rq
+severity:
+- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+  type: CVSS_V3
+summary: 'SGLanG: Multimodal scheduler deserializes untrusted pickle data on 0.0.0.0
+  ROUTER socket'

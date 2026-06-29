@@ -1,10 +1,43 @@
-id: PYSEC-0000-lollms-GHSA-mvrm-fh8q-6wr2
-modified: '2026-06-29T11:50:41.906697Z'
-published: '2026-06-29T11:50:41.906697Z'
+affected:
+- package:
+    ecosystem: PyPI
+    name: lollms
+  ranges:
+  - events:
+    - introduced: 5.9.0
+    - fixed: 9.5.1
+    type: ECOSYSTEM
+  versions:
+  - 5.9.0
+  - 5.9.1
+  - 5.9.2
+  - 5.9.3
+  - 5.9.4
+  - 5.9.5
+  - 6.0.0
+  - 6.0.1
+  - 6.0.2
+  - 6.0.3
+  - 6.0.5
+  - 6.0.6
+  - 6.0.7
+  - 6.0.8
+  - 6.0.9
+  - 6.1.1
+  - 6.2.0
+  - 6.4.0
+  - 6.5.0
+  - 6.5.1
+  - 6.5.2
+  - 6.6.0
+  - 6.7.0
+  - 6.9.0
+  - 7.2.0
+  - 9.3.0
+  - 9.5.0
 aliases:
 - CVE-2024-5443
 - GHSA-mvrm-fh8q-6wr2
-summary: Remote Code Execution via path traversal bypass in lollms
 details: CVE-2024-4320 describes a vulnerability in the parisneo/lollms software,
   specifically within the `ExtensionBuilder().build_extension()` function. The vulnerability
   arises from the `/mount_extension` endpoint, where a path traversal issue allows
@@ -16,24 +49,14 @@ details: CVE-2024-4320 describes a vulnerability in the parisneo/lollms software
   and trigger the execution of `__init__.py` in the current directory, leading to
   remote code execution. The vulnerability affects versions from 5.9.0, and has been
   addressed in version 9.5.1.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-affected:
-- package:
-    ecosystem: PyPI
-    name: lollms
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: 5.9.0
-    - fixed: 9.5.1
+id: PYSEC-0000-lollms-GHSA-mvrm-fh8q-6wr2
+modified: '2026-06-29T12:05:34.845726Z'
+published: '2026-06-29T11:50:41.906697Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-5443
 - type: WEB
-  url: 
-    https://github.com/parisneo/lollms/commit/2d0c4e76be93195836ecd0948027e791b8a2626f
+  url: https://github.com/parisneo/lollms/commit/2d0c4e76be93195836ecd0948027e791b8a2626f
 - type: PACKAGE
   url: https://github.com/ParisNeo/lollms
 - type: WEB
@@ -42,3 +65,7 @@ references:
   url: https://pypi.org/project/lollms
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-mvrm-fh8q-6wr2
+severity:
+- score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+  type: CVSS_V3
+summary: Remote Code Execution via path traversal bypass in lollms

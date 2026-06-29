@@ -1,42 +1,43 @@
-id: PYSEC-0000-langchain-experimental-GHSA-p2qj-r53j-h3xj
-modified: '2026-06-29T11:50:41.097287Z'
-published: '2026-06-29T11:50:41.097287Z'
-aliases:
-- CVE-2024-46946
-- GHSA-p2qj-r53j-h3xj
-summary: LangChain Experimental Eval Injection vulnerability
-details: langchain_experimental (aka LangChain Experimental) 0.1.17 through 0.3.0
-  for LangChain allows attackers to execute arbitrary code through sympy.sympify (which
-  uses eval) in LLMSymbolicMathChain. LLMSymbolicMathChain was introduced in fcccde406dd9e9b05fc9babcbeb9ff527b0ec0c6
-  (2023-10-05).
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-- type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
 affected:
 - package:
     ecosystem: PyPI
     name: langchain-experimental
   ranges:
-  - type: ECOSYSTEM
-    events:
+  - events:
     - introduced: 0.1.17
     - last_affected: 0.3.0
+    type: ECOSYSTEM
+  versions:
+  - 0.3.0
+  - 0.3.0.dev1
+aliases:
+- CVE-2024-46946
+- GHSA-p2qj-r53j-h3xj
+details: langchain_experimental (aka LangChain Experimental) 0.1.17 through 0.3.0
+  for LangChain allows attackers to execute arbitrary code through sympy.sympify (which
+  uses eval) in LLMSymbolicMathChain. LLMSymbolicMathChain was introduced in fcccde406dd9e9b05fc9babcbeb9ff527b0ec0c6
+  (2023-10-05).
+id: PYSEC-0000-langchain-experimental-GHSA-p2qj-r53j-h3xj
+modified: '2026-06-29T12:05:31.712653Z'
+published: '2026-06-29T11:50:41.097287Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-46946
 - type: WEB
   url: https://docs.sympy.org/latest/modules/codegen.html
 - type: WEB
-  url: 
-    https://gist.github.com/12end/68c0c58d2564ef4141bccd4651480820#file-cve-2024-46946-txt
+  url: https://gist.github.com/12end/68c0c58d2564ef4141bccd4651480820#file-cve-2024-46946-txt
 - type: PACKAGE
   url: https://github.com/langchain-ai/langchain
 - type: WEB
-  url: 
-    https://github.com/langchain-ai/langchain/releases/tag/langchain-experimental%3D%3D0.3.0
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-experimental%3D%3D0.3.0
 - type: PACKAGE
   url: https://pypi.org/project/langchain-experimental
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-p2qj-r53j-h3xj
+severity:
+- score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+  type: CVSS_V3
+- score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+  type: CVSS_V4
+summary: LangChain Experimental Eval Injection vulnerability
