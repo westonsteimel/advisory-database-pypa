@@ -1,6 +1,6 @@
-id: PYSEC-0000-dynamo-release.yaml
-modified: 2026-06-29T15:36:03Z
-published: 2026-06-29T15:36:03Z
+id: PYSEC-2026-581
+published: "2026-06-29T15:36:03Z"
+modified: "2026-06-29T15:36:03Z"
 aliases:
 - MAL-2026-5274
 summary: Malicious code in dynamo-release (PyPI)
@@ -21,10 +21,8 @@ affected:
   - 1.5.4
 references:
 - type: EVIDENCE
-  url:
-    https://inspector.pypi.io/project/dynamo-release/1.5.4/packages/4a/52/8b85585fc5392a1342d3e62296a9b79c3e1c48737cf6fd4b1ef47e1cf264/dynamo_release-1.5.4-py3-none-any.whl//dynamo_release-setup.pth
+  url: https://inspector.pypi.io/project/dynamo-release/1.5.4/packages/4a/52/8b85585fc5392a1342d3e62296a9b79c3e1c48737cf6fd4b1ef47e1cf264/dynamo_release-1.5.4-py3-none-any.whl//dynamo_release-setup.pth
 - type: ARTICLE
-  url:
-    https://www.endorlabs.com/learn/shai-hulud-hades-wave-hits-six-pypi-bioinformatics-packages
+  url: https://www.endorlabs.com/learn/shai-hulud-hades-wave-hits-six-pypi-bioinformatics-packages
 - type: ARTICLE
   url: https://www.stepsecurity.io/blog/the-hades-campaign-pypi-packages

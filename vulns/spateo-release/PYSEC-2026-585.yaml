@@ -1,6 +1,6 @@
-id: PYSEC-0000-spateo-release.yaml
-modified: 2026-06-29T15:42:24Z
-published: 2026-06-29T15:42:24Z
+id: PYSEC-2026-585
+published: "2026-06-29T15:42:24Z"
+modified: "2026-06-29T15:42:24Z"
 aliases:
 - MAL-2026-5278
 summary: Malicious code in spateo-release (PyPI)
@@ -21,10 +21,8 @@ affected:
   - 1.1.2
 references:
 - type: EVIDENCE
-  url:
-    https://inspector.pypi.io/project/spateo-release/1.1.2/packages/02/9f/3798519d4af1c85f17a2e1d50e22a00341f63fe53e314a68f960f35e5b75/spateo_release-1.1.2-py3-none-any.whl//spateo_release-setup.pth
+  url: https://inspector.pypi.io/project/spateo-release/1.1.2/packages/02/9f/3798519d4af1c85f17a2e1d50e22a00341f63fe53e314a68f960f35e5b75/spateo_release-1.1.2-py3-none-any.whl//spateo_release-setup.pth
 - type: ARTICLE
-  url:
-    https://www.endorlabs.com/learn/shai-hulud-hades-wave-hits-six-pypi-bioinformatics-packages
+  url: https://www.endorlabs.com/learn/shai-hulud-hades-wave-hits-six-pypi-bioinformatics-packages
 - type: ARTICLE
   url: https://www.stepsecurity.io/blog/the-hades-campaign-pypi-packages
