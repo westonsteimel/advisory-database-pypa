@@ -1,6 +1,6 @@
 # Python Packaging Advisory Database
 
-This is community owned repository of advisories for packages published on
+This is a community owned repository of advisories for packages published on
 <https://pypi.org>.
 
 Advisories live in the [vulns](vulns/) directory and use a YAML encoding of
