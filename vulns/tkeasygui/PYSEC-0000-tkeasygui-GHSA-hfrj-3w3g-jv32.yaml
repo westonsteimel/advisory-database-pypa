@@ -1,0 +1,38 @@
+id: PYSEC-0000-tkeasygui-GHSA-hfrj-3w3g-jv32
+modified: '2026-06-29T11:50:37.683122Z'
+published: '2026-06-29T11:50:37.683122Z'
+aliases:
+- CVE-2025-55037
+- GHSA-hfrj-3w3g-jv32
+summary: TkEasyGUI Vulnerable to OS Command Injection
+details: Improper neutralization of special elements used in an OS command ('OS Command
+  Injection') issue exists in TkEasyGUI versions prior to v1.0.22. If this vulnerability
+  is exploited, an arbitrary OS command may be executed by a remote unauthenticated
+  attacker if the settings are configured to construct messages from external sources.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: tkeasygui
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.0.22
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-55037
+- type: PACKAGE
+  url: https://github.com/kujirahand/tkeasygui-python
+- type: WEB
+  url: https://github.com/kujirahand/tkeasygui-python/releases/tag/v1.0.22
+- type: WEB
+  url: https://jvn.jp/en/jp/JVN48739895
+- type: PACKAGE
+  url: https://pypi.org/project/tkeasygui
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hfrj-3w3g-jv32

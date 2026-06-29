@@ -1,0 +1,43 @@
+id: PYSEC-0000-apache-airflow-providers-apache-hive-GHSA-hg6c-qqcm-r79r
+modified: '2026-06-29T11:50:43.895991Z'
+published: '2026-06-29T11:50:43.895991Z'
+aliases:
+- CVE-2023-35797
+- GHSA-hg6c-qqcm-r79r
+summary: Apache Airflow Hive Provider Beeline remote code execution with Principal
+details: "Improper Input Validation vulnerability in Apache Software Foundation Apache
+  Airflow Hive Provider.\nThis issue affects Apache Airflow Apache Hive Provider:
+  before 6.1.1.\n\nBefore version 6.1.1 it was possible to bypass the security check
+  to RCE via\nprincipal parameter. For this to be exploited it requires access to
+  modifying the connection details.\n\nIt is recommended updating provider version
+  to 6.1.1 in order to avoid this vulnerability."
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: apache-airflow-providers-apache-hive
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 6.1.1
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-35797
+- type: WEB
+  url: https://github.com/apache/airflow/pull/31983
+- type: WEB
+  url: 
+    https://github.com/apache/airflow/commit/6724eeb6210d5965937eaf9dae3e476eb30f8268
+- type: PACKAGE
+  url: https://github.com/apache/airflow
+- type: WEB
+  url: https://lists.apache.org/thread/30y19ok07fw52x5hnkbhwqo3ho0wwc1y
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2023/07/12/3
+- type: PACKAGE
+  url: https://pypi.org/project/apache-airflow-providers-apache-hive
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hg6c-qqcm-r79r

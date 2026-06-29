@@ -1,0 +1,42 @@
+id: PYSEC-0000-mocodo-GHSA-j6cv-98jx-mrwr
+modified: '2026-06-29T11:50:40.115425Z'
+published: '2026-06-29T11:50:40.115425Z'
+aliases:
+- CVE-2024-35374
+- GHSA-j6cv-98jx-mrwr
+summary: Mocodo vulnerable to SQL injection in `/web/generate.php`
+details: Mocodo Mocodo Online 4.2.6 and below does not properly sanitize the `sql_case`
+  input field in `/web/generate.php`, allowing remote attackers to execute arbitrary
+  SQL commands and potentially command injection, leading to remote code execution
+  (RCE) under certain conditions.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: mocodo
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 4.2.7
+  database_specific:
+    last_known_affected_version_range: <= 4.2.6
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-35374
+- type: WEB
+  url: 
+    https://github.com/laowantong/mocodo/commit/f9368df28518b6c4a92fd207c260f1978ec34d6e
+- type: WEB
+  url: https://chocapikk.com/posts/2024/mocodo-vulnerabilities
+- type: PACKAGE
+  url: https://github.com/laowantong/mocodo
+- type: WEB
+  url: 
+    https://github.com/laowantong/mocodo/blob/11ca879060a68e06844058cd969c6379214cc2a8/web/generate.php#L104-L158
+- type: PACKAGE
+  url: https://pypi.org/project/mocodo
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j6cv-98jx-mrwr

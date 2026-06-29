@@ -1,0 +1,39 @@
+id: PYSEC-0000-products-sqlalchemyda-GHSA-r3jc-3qmm-w3pw
+modified: '2026-06-29T11:50:40.542423Z'
+published: '2026-06-29T11:50:40.542423Z'
+aliases:
+- CVE-2024-24811
+- GHSA-r3jc-3qmm-w3pw
+summary: SQLAlchemyDA unauthenticated arbitrary SQL query execution
+details: "### Impact\nThe vulnerability allows unauthenticated execution of arbitrary
+  SQL statements on the database the SQLAlchemyDA instance is connected to. All users
+  are affected.\n\n### Patches\nThe problem has been patched in version 2.2. \n\n
+  ### Workarounds\nThere is no workaround. All users are urged to upgrade to version
+  2.2\n"
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: products-sqlalchemyda
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: '2.2'
+references:
+- type: WEB
+  url: 
+    https://github.com/zopefoundation/Products.SQLAlchemyDA/security/advisories/GHSA-r3jc-3qmm-w3pw
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-24811
+- type: WEB
+  url: 
+    https://github.com/zopefoundation/Products.SQLAlchemyDA/commit/e682b99f8406f20bc3f0f2c77153ed7345fd215a
+- type: PACKAGE
+  url: https://github.com/zopefoundation/Products.SQLAlchemyDA
+- type: PACKAGE
+  url: https://pypi.org/project/products-sqlalchemyda
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-r3jc-3qmm-w3pw
