@@ -35,15 +35,17 @@ id: $id
 modified: $modified
 published: $modified
 summary: $summary
+# aliases:
+# - FOO-2026-1234
 details: |
 affected:
 - package:
-    ecosystem: $ecosystem
     name: $package_name
+    ecosystem: $ecosystem
     purl: $purl
   # versions:
-  # - "0.1.0"
-  # - "0.1.1"
+  # - 0.1.0
+  # - 0.1.1
 references:
 - type: EVIDENCE
   url: $evidence_url
