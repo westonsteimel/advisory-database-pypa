@@ -1,15 +1,18 @@
 repos:
 - repo: https://github.com/python-jsonschema/check-jsonschema
-  rev: 0.23.3
+  rev: 0.37.3
   hooks:
   - id: check-jsonschema
     files: "^vulns/[a-z0-9_-]+/.+\\.yaml"
     args: [--schemafile, "https://raw.githubusercontent.com/ossf/osv-schema/refs/tags/v1.6.7/validation/schema.json", --no-cache]
 - repo: https://github.com/jackdewinter/pymarkdown
-  rev: v0.9.25
+  rev: v0.9.38
   hooks:
     - id: pymarkdown
+      # Rules reference: https://pymarkdown.readthedocs.io/en/latest/rules/
       args:
-      - -d
+      - --enable-rules
+      - MD009
+      - --disable-rules
       - MD013
       - scan
