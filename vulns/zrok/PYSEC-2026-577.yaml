@@ -1,6 +1,6 @@
 id: PYSEC-2026-577
 published: "2026-06-29T11:50:50.353793Z"
-modified: "2026-06-29T12:05:52.727773Z"
+modified: "2026-07-01T20:23:12.283893Z"
 aliases:
 - CVE-2026-45568
 - GHSA-jh67-hwqw-m5r7
@@ -10,6 +10,7 @@ affected:
 - package:
     name: zrok
     ecosystem: PyPI
+    purl: pkg:pypi/zrok
   ranges:
   - type: ECOSYSTEM
     events:

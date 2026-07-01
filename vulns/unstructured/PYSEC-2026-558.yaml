@@ -1,6 +1,6 @@
 id: PYSEC-2026-558
 published: "2026-06-29T11:50:51.107727Z"
-modified: "2026-06-29T12:05:50.985804Z"
+modified: "2026-07-01T20:23:10.814686Z"
 aliases:
 - CVE-2025-64712
 - GHSA-gm8q-m8mv-jj5m
@@ -10,6 +10,7 @@ affected:
 - package:
     name: unstructured
     ecosystem: PyPI
+    purl: pkg:pypi/unstructured
   ranges:
   - type: ECOSYSTEM
     events:

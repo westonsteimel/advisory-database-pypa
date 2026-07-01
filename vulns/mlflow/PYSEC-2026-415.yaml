@@ -1,6 +1,6 @@
 id: PYSEC-2026-415
 published: "2026-06-29T11:50:43.574098Z"
-modified: "2026-06-29T12:05:36.326565Z"
+modified: "2026-07-01T20:22:58.262031Z"
 aliases:
 - CVE-2023-6014
 - GHSA-4qq5-mxxx-m6gg
@@ -10,6 +10,7 @@ affected:
 - package:
     name: mlflow
     ecosystem: PyPI
+    purl: pkg:pypi/mlflow
   ranges:
   - type: ECOSYSTEM
     events:

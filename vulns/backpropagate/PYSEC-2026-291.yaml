@@ -1,6 +1,6 @@
 id: PYSEC-2026-291
 published: "2026-06-29T11:50:52.233310Z"
-modified: "2026-06-29T12:05:21.479871Z"
+modified: "2026-07-01T20:22:49.661886Z"
 aliases:
 - CVE-2026-48797
 - GHSA-f65r-h4g3-3h9h
@@ -10,6 +10,7 @@ affected:
 - package:
     name: backpropagate
     ecosystem: PyPI
+    purl: pkg:pypi/backpropagate
   ranges:
   - type: ECOSYSTEM
     events:

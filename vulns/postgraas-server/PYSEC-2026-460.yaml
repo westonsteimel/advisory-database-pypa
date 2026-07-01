@@ -1,6 +1,6 @@
 id: PYSEC-2026-460
 published: "2026-06-29T11:50:43.829442Z"
-modified: "2026-06-29T12:05:40.951548Z"
+modified: "2026-07-01T20:23:00.973281Z"
 aliases:
 - CVE-2018-25088
 - GHSA-vghm-8cjp-hjw6
@@ -10,6 +10,7 @@ affected:
 - package:
     name: postgraas-server
     ecosystem: PyPI
+    purl: pkg:pypi/postgraas-server
   ranges:
   - type: ECOSYSTEM
     events:

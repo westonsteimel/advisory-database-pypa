@@ -1,6 +1,6 @@
 id: PYSEC-2026-438
 published: "2026-06-29T11:50:48.313799Z"
-modified: "2026-06-29T12:05:38.707676Z"
+modified: "2026-07-01T20:22:59.524333Z"
 aliases:
 - CVE-2026-40525
 - GHSA-jgq2-vq69-gr6h
@@ -10,6 +10,7 @@ affected:
 - package:
     name: openviking
     ecosystem: PyPI
+    purl: pkg:pypi/openviking
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-319
 published: "2026-06-29T11:50:52.380343Z"
-modified: "2026-06-29T12:05:24.784315Z"
+modified: "2026-07-01T20:22:50.664862Z"
 aliases:
 - CVE-2026-53753
 - GHSA-qxjp-w3pj-48m7
@@ -10,6 +10,7 @@ affected:
 - package:
     name: crawl4ai
     ecosystem: PyPI
+    purl: pkg:pypi/crawl4ai
   ranges:
   - type: ECOSYSTEM
     events:

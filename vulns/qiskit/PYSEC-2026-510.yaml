@@ -1,6 +1,6 @@
 id: PYSEC-2026-510
 published: "2026-06-29T11:50:34.769394Z"
-modified: "2026-06-29T11:50:34.769394Z"
+modified: "2026-07-01T20:23:03.454788Z"
 aliases:
 - CVE-2025-2000
 - GHSA-6m2c-76ff-6vrf
@@ -10,6 +10,7 @@ affected:
 - package:
     name: qiskit
     ecosystem: PyPI
+    purl: pkg:pypi/qiskit
   ranges:
   - type: ECOSYSTEM
     events:

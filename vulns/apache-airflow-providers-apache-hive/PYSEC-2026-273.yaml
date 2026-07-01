@@ -1,15 +1,16 @@
 id: PYSEC-2026-273
 published: "2026-06-29T11:50:43.895991Z"
-modified: "2026-06-29T12:05:19.014525Z"
+modified: "2026-07-01T20:22:48.450333Z"
 aliases:
 - CVE-2023-35797
 - GHSA-hg6c-qqcm-r79r
 summary: Apache Airflow Hive Provider Beeline remote code execution with Principal
-details: "Improper Input Validation vulnerability in Apache Software Foundation Apache Airflow Hive Provider.\nThis issue affects Apache Airflow Apache Hive Provider: before 6.1.1.\n\nBefore version 6.1.1 it was\u00a0possible to bypass the security check to RCE via\nprincipal parameter. For this to be\u00a0exploited it requires access to modifying the connection details.\n\nIt is recommended updating provider version to 6.1.1 in order to avoid this\u00a0vulnerability."
+details: "Improper Input Validation vulnerability in Apache Software Foundation Apache Airflow Hive Provider.\nThis issue affects Apache Airflow Apache Hive Provider: before 6.1.1.\n\nBefore version 6.1.1 it was possible to bypass the security check to RCE via\nprincipal parameter. For this to be exploited it requires access to modifying the connection details.\n\nIt is recommended updating provider version to 6.1.1 in order to avoid this vulnerability."
 affected:
 - package:
     name: apache-airflow-providers-apache-hive
     ecosystem: PyPI
+    purl: pkg:pypi/apache-airflow-providers-apache-hive
   ranges:
   - type: ECOSYSTEM
     events:

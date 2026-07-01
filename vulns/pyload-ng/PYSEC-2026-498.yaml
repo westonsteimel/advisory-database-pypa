@@ -1,6 +1,6 @@
 id: PYSEC-2026-498
 published: "2026-06-29T11:50:44.189733Z"
-modified: "2026-06-29T12:05:44.942456Z"
+modified: "2026-07-01T20:23:02.943788Z"
 aliases:
 - CVE-2023-0297
 - GHSA-pf38-5p22-x6h6
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pyload-ng
     ecosystem: PyPI
+    purl: pkg:pypi/pyload-ng
   ranges:
   - type: ECOSYSTEM
     events:

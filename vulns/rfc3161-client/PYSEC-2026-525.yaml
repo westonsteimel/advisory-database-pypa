@@ -1,6 +1,6 @@
 id: PYSEC-2026-525
 published: "2026-06-29T11:50:38.536479Z"
-modified: "2026-06-29T12:05:47.732165Z"
+modified: "2026-07-01T20:23:04.101395Z"
 aliases:
 - CVE-2025-52556
 - GHSA-6qhv-4h7r-2g9m
@@ -10,6 +10,7 @@ affected:
 - package:
     name: rfc3161-client
     ecosystem: PyPI
+    purl: pkg:pypi/rfc3161-client
   ranges:
   - type: ECOSYSTEM
     events:

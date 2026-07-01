@@ -1,6 +1,6 @@
 id: PYSEC-2026-321
 published: "2026-06-29T11:50:34.829705Z"
-modified: "2026-06-29T12:05:25.785412Z"
+modified: "2026-07-01T20:22:50.961374Z"
 aliases:
 - CVE-2024-10902
 - GHSA-3xq5-x4fj-rff7
@@ -10,6 +10,7 @@ affected:
 - package:
     name: dbgpt
     ecosystem: PyPI
+    purl: pkg:pypi/dbgpt
   ranges:
   - type: ECOSYSTEM
     events:

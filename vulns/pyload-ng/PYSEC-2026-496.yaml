@@ -1,6 +1,6 @@
 id: PYSEC-2026-496
 published: "2026-06-29T11:50:37.278367Z"
-modified: "2026-06-29T12:05:44.824176Z"
+modified: "2026-07-01T20:23:02.916755Z"
 aliases:
 - CVE-2025-53890
 - GHSA-8w3f-4r8f-pf53
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pyload-ng
     ecosystem: PyPI
+    purl: pkg:pypi/pyload-ng
   ranges:
   - type: ECOSYSTEM
     events:

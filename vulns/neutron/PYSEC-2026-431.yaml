@@ -1,6 +1,6 @@
 id: PYSEC-2026-431
 published: "2026-06-29T11:50:32.602905Z"
-modified: "2026-06-29T11:50:32.602905Z"
+modified: "2026-07-01T20:22:58.870010Z"
 aliases:
 - CVE-2015-8914
 - GHSA-3vj4-cvjp-482h
@@ -10,6 +10,7 @@ affected:
 - package:
     name: neutron
     ecosystem: PyPI
+    purl: pkg:pypi/neutron
   ranges:
   - type: ECOSYSTEM
     events:

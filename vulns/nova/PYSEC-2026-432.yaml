@@ -1,6 +1,6 @@
 id: PYSEC-2026-432
 published: "2026-06-29T11:50:32.179235Z"
-modified: "2026-06-29T11:50:32.179235Z"
+modified: "2026-07-01T20:22:59.110726Z"
 aliases:
 - CVE-2017-7214
 - GHSA-f4g4-cj8f-3cr9
@@ -10,6 +10,7 @@ affected:
 - package:
     name: nova
     ecosystem: PyPI
+    purl: pkg:pypi/nova
   ranges:
   - type: ECOSYSTEM
     events:

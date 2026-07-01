@@ -1,6 +1,6 @@
 id: PYSEC-2026-536
 published: "2026-06-29T11:50:49.817132Z"
-modified: "2026-06-29T12:05:48.753976Z"
+modified: "2026-07-01T20:23:04.984433Z"
 aliases:
 - CVE-2026-7301
 - GHSA-gwv6-pq6m-p3rq
@@ -10,6 +10,7 @@ affected:
 - package:
     name: sglang
     ecosystem: PyPI
+    purl: pkg:pypi/sglang
   ranges:
   - type: ECOSYSTEM
     events:

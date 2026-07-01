@@ -1,6 +1,6 @@
 id: PYSEC-2026-358
 published: "2026-06-29T11:50:35.500212Z"
-modified: "2026-06-29T12:05:30.358355Z"
+modified: "2026-07-01T20:22:54.566438Z"
 aliases:
 - CVE-2024-11042
 - GHSA-227r-w5j2-6243
@@ -10,6 +10,7 @@ affected:
 - package:
     name: invokeai
     ecosystem: PyPI
+    purl: pkg:pypi/invokeai
   ranges:
   - type: ECOSYSTEM
     events:

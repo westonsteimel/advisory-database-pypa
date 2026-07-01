@@ -1,6 +1,6 @@
 id: PYSEC-2026-314
 published: "2026-06-29T11:50:32.228898Z"
-modified: "2026-06-29T12:05:24.119622Z"
+modified: "2026-07-01T20:22:50.469875Z"
 aliases:
 - CVE-2017-1000469
 - GHSA-96hw-v598-jvgh
@@ -10,6 +10,7 @@ affected:
 - package:
     name: cobbler
     ecosystem: PyPI
+    purl: pkg:pypi/cobbler
   ranges:
   - type: ECOSYSTEM
     events:

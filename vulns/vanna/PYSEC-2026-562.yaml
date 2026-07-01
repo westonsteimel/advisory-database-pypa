@@ -1,6 +1,6 @@
 id: PYSEC-2026-562
 published: "2026-06-29T11:50:42.052160Z"
-modified: "2026-06-29T12:05:51.414791Z"
+modified: "2026-07-01T20:23:10.996611Z"
 aliases:
 - CVE-2024-5826
 - GHSA-rrqq-fv6m-692m
@@ -10,6 +10,7 @@ affected:
 - package:
     name: vanna
     ecosystem: PyPI
+    purl: pkg:pypi/vanna
   ranges:
   - type: ECOSYSTEM
     events:

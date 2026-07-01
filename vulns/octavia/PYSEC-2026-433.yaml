@@ -1,6 +1,6 @@
 id: PYSEC-2026-433
 published: "2026-06-29T11:50:32.761316Z"
-modified: "2026-06-29T12:05:37.911242Z"
+modified: "2026-07-01T20:22:59.221842Z"
 aliases:
 - CVE-2019-17134
 - GHSA-r4v4-3jj7-jc29
@@ -10,6 +10,7 @@ affected:
 - package:
     name: octavia
     ecosystem: PyPI
+    purl: pkg:pypi/octavia
   ranges:
   - type: ECOSYSTEM
     events:

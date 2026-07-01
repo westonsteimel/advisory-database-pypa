@@ -1,6 +1,6 @@
 id: PYSEC-2026-315
 published: "2026-06-29T11:50:32.707122Z"
-modified: "2026-06-29T12:05:24.325486Z"
+modified: "2026-07-01T20:22:50.475555Z"
 aliases:
 - CVE-2018-1000226
 - GHSA-f88q-22g8-frcg
@@ -10,6 +10,7 @@ affected:
 - package:
     name: cobbler
     ecosystem: PyPI
+    purl: pkg:pypi/cobbler
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-408
 published: "2026-06-29T11:50:45.547276Z"
-modified: "2026-06-29T12:05:35.468510Z"
+modified: "2026-07-01T20:22:57.483176Z"
 aliases:
 - CVE-2026-27825
 - GHSA-xjgw-4wvw-rgm4
@@ -10,6 +10,7 @@ affected:
 - package:
     name: mcp-atlassian
     ecosystem: PyPI
+    purl: pkg:pypi/mcp-atlassian
   ranges:
   - type: ECOSYSTEM
     events:

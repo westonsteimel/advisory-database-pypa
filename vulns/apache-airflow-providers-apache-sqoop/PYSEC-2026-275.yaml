@@ -1,6 +1,6 @@
 id: PYSEC-2026-275
 published: "2026-06-29T11:50:42.787940Z"
-modified: "2026-06-29T12:05:19.193089Z"
+modified: "2026-07-01T20:22:48.471825Z"
 aliases:
 - CVE-2023-25693
 - GHSA-j69x-v4wc-3fpf
@@ -10,6 +10,7 @@ affected:
 - package:
     name: apache-airflow-providers-apache-sqoop
     ecosystem: PyPI
+    purl: pkg:pypi/apache-airflow-providers-apache-sqoop
   ranges:
   - type: ECOSYSTEM
     events:

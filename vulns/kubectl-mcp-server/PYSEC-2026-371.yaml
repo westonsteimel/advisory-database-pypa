@@ -1,6 +1,6 @@
 id: PYSEC-2026-371
 published: "2026-06-29T11:50:48.972414Z"
-modified: "2026-06-29T11:50:48.972414Z"
+modified: "2026-07-01T20:22:55.271296Z"
 aliases:
 - CVE-2025-65719
 - GHSA-94gr-w3q5-rfqr
@@ -10,6 +10,7 @@ affected:
 - package:
     name: kubectl-mcp-server
     ecosystem: PyPI
+    purl: pkg:pypi/kubectl-mcp-server
   ranges:
   - type: ECOSYSTEM
     events:

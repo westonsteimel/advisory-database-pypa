@@ -1,6 +1,6 @@
 id: PYSEC-2026-338
 published: "2026-06-29T11:50:45.183289Z"
-modified: "2026-06-29T12:05:27.904766Z"
+modified: "2026-07-01T20:22:52.844800Z"
 aliases:
 - CVE-2026-32871
 - GHSA-vv7q-7jx5-f767
@@ -10,6 +10,7 @@ affected:
 - package:
     name: fastmcp
     ecosystem: PyPI
+    purl: pkg:pypi/fastmcp
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-337
 published: "2026-06-29T11:50:42.494130Z"
-modified: "2026-06-29T12:05:27.847004Z"
+modified: "2026-07-01T20:22:52.801600Z"
 aliases:
 - CVE-2023-1712
 - GHSA-w7qg-j435-78qw
@@ -10,6 +10,7 @@ affected:
 - package:
     name: farm-haystack
     ecosystem: PyPI
+    purl: pkg:pypi/farm-haystack
   ranges:
   - type: ECOSYSTEM
     events:

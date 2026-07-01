@@ -1,6 +1,6 @@
 id: PYSEC-2026-264
 published: "2026-06-29T11:50:39.839103Z"
-modified: "2026-06-29T12:05:18.629992Z"
+modified: "2026-07-01T20:22:47.861786Z"
 aliases:
 - CVE-2024-35059
 - GHSA-jqff-8g2v-642h
@@ -10,6 +10,7 @@ affected:
 - package:
     name: ait-core
     ecosystem: PyPI
+    purl: pkg:pypi/ait-core
   ranges:
   - type: ECOSYSTEM
     events:

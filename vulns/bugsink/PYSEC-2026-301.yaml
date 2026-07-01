@@ -1,6 +1,6 @@
 id: PYSEC-2026-301
 published: "2026-06-29T11:50:51.616272Z"
-modified: "2026-06-29T12:05:22.870331Z"
+modified: "2026-07-01T20:22:50.066284Z"
 aliases:
 - CVE-2026-27614
 - GHSA-vp6q-7m36-pq3w
@@ -10,6 +10,7 @@ affected:
 - package:
     name: bugsink
     ecosystem: PyPI
+    purl: pkg:pypi/bugsink
   ranges:
   - type: ECOSYSTEM
     events:

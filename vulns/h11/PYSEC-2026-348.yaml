@@ -1,6 +1,6 @@
 id: PYSEC-2026-348
 published: "2026-06-29T11:50:35.684909Z"
-modified: "2026-06-29T12:05:28.951711Z"
+modified: "2026-07-01T20:22:54.082067Z"
 aliases:
 - CVE-2025-43859
 - GHSA-vqfr-h8mv-ghfj
@@ -10,6 +10,7 @@ affected:
 - package:
     name: h11
     ecosystem: PyPI
+    purl: pkg:pypi/h11
   ranges:
   - type: ECOSYSTEM
     events:

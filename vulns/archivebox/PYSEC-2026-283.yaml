@@ -1,6 +1,6 @@
 id: PYSEC-2026-283
 published: "2026-06-29T11:50:49.398282Z"
-modified: "2026-06-29T12:05:20.400246Z"
+modified: "2026-07-01T20:22:49.438749Z"
 aliases:
 - CVE-2026-42601
 - GHSA-3h23-7824-pj8r
@@ -10,6 +10,7 @@ affected:
 - package:
     name: archivebox
     ecosystem: PyPI
+    purl: pkg:pypi/archivebox
   ranges:
   - type: ECOSYSTEM
     events:

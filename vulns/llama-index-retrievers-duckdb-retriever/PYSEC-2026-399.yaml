@@ -1,6 +1,6 @@
 id: PYSEC-2026-399
 published: "2026-06-29T11:50:35.232967Z"
-modified: "2026-06-29T12:05:34.330833Z"
+modified: "2026-07-01T20:22:56.508105Z"
 aliases:
 - CVE-2024-11958
 - GHSA-339r-cjv9-x78g
@@ -10,6 +10,7 @@ affected:
 - package:
     name: llama-index-retrievers-duckdb-retriever
     ecosystem: PyPI
+    purl: pkg:pypi/llama-index-retrievers-duckdb-retriever
   ranges:
   - type: ECOSYSTEM
     events:

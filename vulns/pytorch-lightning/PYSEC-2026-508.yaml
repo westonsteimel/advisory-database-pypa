@@ -1,6 +1,6 @@
 id: PYSEC-2026-508
 published: "2026-06-29T11:50:50.913630Z"
-modified: "2026-06-29T11:50:50.913630Z"
+modified: "2026-07-01T20:23:03.348610Z"
 aliases:
 - CVE-2026-44484
 - GHSA-w37p-236h-pfx3
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pytorch-lightning
     ecosystem: PyPI
+    purl: pkg:pypi/pytorch-lightning
   versions:
   - 2.6.3
 references:

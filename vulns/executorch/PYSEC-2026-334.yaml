@@ -1,6 +1,6 @@
 id: PYSEC-2026-334
 published: "2026-06-29T11:50:37.795816Z"
-modified: "2026-06-29T12:05:27.619480Z"
+modified: "2026-07-01T20:22:52.477033Z"
 aliases:
 - CVE-2025-54950
 - GHSA-f9hx-c6jf-3qxm
@@ -10,6 +10,7 @@ affected:
 - package:
     name: executorch
     ecosystem: PyPI
+    purl: pkg:pypi/executorch
   ranges:
   - type: ECOSYSTEM
     events:

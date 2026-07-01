@@ -1,6 +1,6 @@
 id: PYSEC-2026-354
 published: "2026-06-29T11:50:49.177992Z"
-modified: "2026-06-29T12:05:29.541462Z"
+modified: "2026-07-01T20:22:54.309521Z"
 aliases:
 - CVE-2026-31234
 - GHSA-mf8f-x4r3-jm8c
@@ -10,6 +10,7 @@ affected:
 - package:
     name: horovod
     ecosystem: PyPI
+    purl: pkg:pypi/horovod
   ranges:
   - type: ECOSYSTEM
     events:

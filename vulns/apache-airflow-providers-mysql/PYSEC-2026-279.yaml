@@ -1,6 +1,6 @@
 id: PYSEC-2026-279
 published: "2026-06-29T11:50:44.395790Z"
-modified: "2026-06-29T12:05:19.658914Z"
+modified: "2026-07-01T20:22:48.527915Z"
 aliases:
 - CVE-2023-22884
 - GHSA-c732-xvv8-g94c
@@ -10,6 +10,7 @@ affected:
 - package:
     name: apache-airflow-providers-mysql
     ecosystem: PyPI
+    purl: pkg:pypi/apache-airflow-providers-mysql
   ranges:
   - type: ECOSYSTEM
     events:

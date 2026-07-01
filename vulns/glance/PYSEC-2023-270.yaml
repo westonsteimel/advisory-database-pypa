@@ -1,11 +1,9 @@
 id: PYSEC-2023-270
-details: A flaw was found in openstack-glance. This issue could allow a remote, authenticated
-  attacker to tamper with images, compromising the integrity of virtual machines created
-  using these modified images.
+details: A flaw was found in openstack-glance. This issue could allow a remote, authenticated attacker to tamper with images, compromising the integrity of virtual machines created using these modified images.
 aliases:
 - CVE-2022-4134
 - GHSA-5gp5-vxj6-4257
-modified: '2024-11-25T22:26:00.352650Z'
+modified: '2026-07-01T20:22:53.366107Z'
 published: '2023-03-06T23:15:00Z'
 references:
 - type: ADVISORY
@@ -20,6 +18,7 @@ affected:
 - package:
     name: glance
     ecosystem: PyPI
+    purl: pkg:pypi/glance
   ranges:
   - type: ECOSYSTEM
     events:

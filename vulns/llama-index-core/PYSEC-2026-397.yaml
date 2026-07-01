@@ -1,6 +1,6 @@
 id: PYSEC-2026-397
 published: "2026-06-29T11:50:39.328327Z"
-modified: "2026-06-29T12:05:34.221502Z"
+modified: "2026-07-01T20:22:56.494655Z"
 aliases:
 - CVE-2024-3098
 - GHSA-wvpx-g427-q9wc
@@ -10,6 +10,7 @@ affected:
 - package:
     name: llama-index-core
     ecosystem: PyPI
+    purl: pkg:pypi/llama-index-core
   ranges:
   - type: ECOSYSTEM
     events:

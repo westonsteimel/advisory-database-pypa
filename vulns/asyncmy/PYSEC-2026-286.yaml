@@ -1,6 +1,6 @@
 id: PYSEC-2026-286
 published: "2026-06-29T11:50:38.965576Z"
-modified: "2026-06-29T12:05:20.717468Z"
+modified: "2026-07-01T20:22:49.484655Z"
 aliases:
 - CVE-2025-65896
 - GHSA-qhqw-rrw9-25rm
@@ -10,6 +10,7 @@ affected:
 - package:
     name: asyncmy
     ecosystem: PyPI
+    purl: pkg:pypi/asyncmy
   ranges:
   - type: ECOSYSTEM
     events:

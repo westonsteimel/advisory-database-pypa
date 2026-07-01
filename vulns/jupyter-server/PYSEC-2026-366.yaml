@@ -1,6 +1,6 @@
 id: PYSEC-2026-366
 published: "2026-06-29T11:50:52.185377Z"
-modified: "2026-06-29T12:05:31.075153Z"
+modified: "2026-07-01T20:22:54.921081Z"
 aliases:
 - CVE-2026-44727
 - GHSA-fcw5-x6j4-ccmp
@@ -10,6 +10,7 @@ affected:
 - package:
     name: jupyter-server
     ecosystem: PyPI
+    purl: pkg:pypi/jupyter-server
   ranges:
   - type: ECOSYSTEM
     events:

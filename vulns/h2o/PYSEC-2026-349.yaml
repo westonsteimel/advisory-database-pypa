@@ -1,6 +1,6 @@
 id: PYSEC-2026-349
 published: "2026-06-29T11:50:37.630839Z"
-modified: "2026-06-29T12:05:29.076055Z"
+modified: "2026-07-01T20:22:54.093490Z"
 aliases:
 - CVE-2025-6544
 - GHSA-5w3j-gwgh-4rfv
@@ -10,6 +10,7 @@ affected:
 - package:
     name: h2o
     ecosystem: PyPI
+    purl: pkg:pypi/h2o
   ranges:
   - type: ECOSYSTEM
     events:

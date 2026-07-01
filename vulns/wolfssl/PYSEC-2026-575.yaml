@@ -1,15 +1,16 @@
 id: PYSEC-2026-575
 published: "2026-06-29T11:50:51.846296Z"
-modified: "2026-06-29T12:05:52.554054Z"
+modified: "2026-07-01T20:23:12.060789Z"
 aliases:
 - CVE-2025-15346
 - GHSA-vj87-jj27-4h9c
 summary: wolfSSL Python module vulnerable to Improper Authentication
-details: "A vulnerability in the handling of verify_mode = CERT_REQUIRED in the wolfssl Python package (wolfssl-py) causes client certificate requirements to not be fully enforced.\u00a0\n\nBecause the WOLFSSL_VERIFY_FAIL_IF_NO_PEER_CERT flag was not included, the behavior effectively matched CERT_OPTIONAL: a peer certificate was verified if presented, but connections were incorrectly authenticated when no client certificate was provided.\u00a0\n\nThis results in improper authentication, allowing attackers to bypass mutual TLS (mTLS) client authentication by omitting a client certificate during the TLS handshake.\u00a0\n\nThe issue affects versions up to and including 5.8.2."
+details: "A vulnerability in the handling of verify_mode = CERT_REQUIRED in the wolfssl Python package (wolfssl-py) causes client certificate requirements to not be fully enforced. \n\nBecause the WOLFSSL_VERIFY_FAIL_IF_NO_PEER_CERT flag was not included, the behavior effectively matched CERT_OPTIONAL: a peer certificate was verified if presented, but connections were incorrectly authenticated when no client certificate was provided. \n\nThis results in improper authentication, allowing attackers to bypass mutual TLS (mTLS) client authentication by omitting a client certificate during the TLS handshake. \n\nThe issue affects versions up to and including 5.8.2."
 affected:
 - package:
     name: wolfssl
     ecosystem: PyPI
+    purl: pkg:pypi/wolfssl
   ranges:
   - type: ECOSYSTEM
     events:

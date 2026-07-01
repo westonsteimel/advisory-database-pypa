@@ -1,6 +1,6 @@
 id: PYSEC-2026-372
 published: "2026-06-29T11:50:43.657008Z"
-modified: "2026-06-29T12:05:31.831497Z"
+modified: "2026-07-01T20:22:55.646349Z"
 aliases:
 - CVE-2023-32785
 - GHSA-8h5w-f6q9-wg35
@@ -10,6 +10,7 @@ affected:
 - package:
     name: langchain
     ecosystem: PyPI
+    purl: pkg:pypi/langchain
   ranges:
   - type: ECOSYSTEM
     events:

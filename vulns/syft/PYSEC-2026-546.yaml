@@ -1,6 +1,6 @@
 id: PYSEC-2026-546
 published: "2026-06-29T11:50:49.505067Z"
-modified: "2026-06-29T12:05:49.735741Z"
+modified: "2026-07-01T20:23:05.610433Z"
 aliases:
 - CVE-2026-31220
 - GHSA-cfpg-c974-jfhq
@@ -10,6 +10,7 @@ affected:
 - package:
     name: syft
     ecosystem: PyPI
+    purl: pkg:pypi/syft
   ranges:
   - type: ECOSYSTEM
     events:

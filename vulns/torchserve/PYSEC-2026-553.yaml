@@ -1,6 +1,6 @@
 id: PYSEC-2026-553
 published: "2026-06-29T11:50:43.712809Z"
-modified: "2026-06-29T12:05:50.472379Z"
+modified: "2026-07-01T20:23:10.243049Z"
 aliases:
 - CVE-2023-43654
 - GHSA-8fxr-qfr9-p34w
@@ -10,6 +10,7 @@ affected:
 - package:
     name: torchserve
     ecosystem: PyPI
+    purl: pkg:pypi/torchserve
   ranges:
   - type: ECOSYSTEM
     events:

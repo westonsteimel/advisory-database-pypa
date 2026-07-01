@@ -1,6 +1,6 @@
 id: PYSEC-2026-458
 published: "2026-06-29T11:50:46.103956Z"
-modified: "2026-06-29T12:05:40.717474Z"
+modified: "2026-07-01T20:23:00.353248Z"
 aliases:
 - CVE-2025-62373
 - GHSA-c2jg-5cp7-6wc7
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pipecat-ai
     ecosystem: PyPI
+    purl: pkg:pypi/pipecat-ai
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-383
 published: "2026-06-29T11:50:51.798759Z"
-modified: "2026-06-29T12:05:32.944107Z"
+modified: "2026-07-01T20:22:56.065274Z"
 aliases:
 - CVE-2026-25481
 - GHSA-x34r-63hx-w57f
@@ -10,6 +10,7 @@ affected:
 - package:
     name: langroid
     ecosystem: PyPI
+    purl: pkg:pypi/langroid
   ranges:
   - type: ECOSYSTEM
     events:

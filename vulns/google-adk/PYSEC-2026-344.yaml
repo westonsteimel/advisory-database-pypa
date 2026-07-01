@@ -1,21 +1,22 @@
 id: PYSEC-2026-344
 published: "2026-06-29T11:50:47.550836Z"
-modified: "2026-06-29T12:05:28.576832Z"
+modified: "2026-07-01T20:22:53.408650Z"
 aliases:
 - CVE-2026-4810
 - GHSA-rg7c-g689-fr3x
 summary: Google Agent Development Kit (ADK) has a Code Injection and Missing Authentication vulnerability
 details: |-
   A Code Injection and Missing Authentication vulnerability in Google Agent Development Kit (ADK) versions 1.7.0 (and 2.0.0a1) through 1.28.1 (and 2.0.0a2) on Python (OSS), Cloud Run, and GKE allows an unauthenticated remote attacker to execute arbitrary code on the server hosting the ADK instance.
-  
+
   This vulnerability was patched in versions 1.28.1 and 2.0.0a2.
-  
-  
+
+
   Customers need to redeploy the upgraded ADK to their production environments. In addition, if they are running ADK Web locally, they also need to upgrade their local instance.
 affected:
 - package:
     name: google-adk
     ecosystem: PyPI
+    purl: pkg:pypi/google-adk
   ranges:
   - type: ECOSYSTEM
     events:

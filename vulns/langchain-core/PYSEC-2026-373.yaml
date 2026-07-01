@@ -1,6 +1,6 @@
 id: PYSEC-2026-373
 published: "2026-06-29T11:50:38.732432Z"
-modified: "2026-06-29T12:05:31.647164Z"
+modified: "2026-07-01T20:22:55.355493Z"
 aliases:
 - CVE-2025-68664
 - GHSA-c67j-w6g6-q2cm
@@ -10,6 +10,7 @@ affected:
 - package:
     name: langchain-core
     ecosystem: PyPI
+    purl: pkg:pypi/langchain-core
   ranges:
   - type: ECOSYSTEM
     events:

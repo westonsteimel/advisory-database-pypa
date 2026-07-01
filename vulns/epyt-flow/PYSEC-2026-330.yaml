@@ -1,6 +1,6 @@
 id: PYSEC-2026-330
 published: "2026-06-29T11:50:50.959788Z"
-modified: "2026-06-29T12:05:27.220480Z"
+modified: "2026-07-01T20:22:52.406443Z"
 aliases:
 - CVE-2026-25632
 - GHSA-74vm-8frp-7w68
@@ -10,6 +10,7 @@ affected:
 - package:
     name: epyt-flow
     ecosystem: PyPI
+    purl: pkg:pypi/epyt-flow
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-305
 published: "2026-06-29T11:50:32.663521Z"
-modified: "2026-06-29T12:05:23.352554Z"
+modified: "2026-07-01T20:22:50.154701Z"
 aliases:
 - CVE-2022-30765
 - GHSA-8ppf-x4gr-2x7g
@@ -10,6 +10,7 @@ affected:
 - package:
     name: calibreweb
     ecosystem: PyPI
+    purl: pkg:pypi/calibreweb
   ranges:
   - type: ECOSYSTEM
     events:

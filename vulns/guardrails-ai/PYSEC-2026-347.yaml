@@ -1,6 +1,6 @@
 id: PYSEC-2026-347
 published: "2026-06-29T11:50:50.458991Z"
-modified: "2026-06-29T12:05:28.898968Z"
+modified: "2026-07-01T20:22:54.068049Z"
 aliases:
 - CVE-2026-31233
 - GHSA-r6hf-g5x6-7pv9
@@ -10,6 +10,7 @@ affected:
 - package:
     name: guardrails-ai
     ecosystem: PyPI
+    purl: pkg:pypi/guardrails-ai
   ranges:
   - type: ECOSYSTEM
     events:

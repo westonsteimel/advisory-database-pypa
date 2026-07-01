@@ -1,6 +1,6 @@
 id: PYSEC-2026-572
 published: "2026-06-29T11:50:42.538947Z"
-modified: "2026-06-29T12:05:52.328884Z"
+modified: "2026-07-01T20:23:11.940577Z"
 aliases:
 - CVE-2018-25082
 - GHSA-h384-ph77-3699
@@ -10,6 +10,7 @@ affected:
 - package:
     name: weixin-python
     ecosystem: PyPI
+    purl: pkg:pypi/weixin-python
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-389
 published: "2026-06-29T11:50:41.762215Z"
-modified: "2026-06-29T12:05:33.544665Z"
+modified: "2026-07-01T20:22:56.345088Z"
 aliases:
 - CVE-2024-5751
 - GHSA-gppg-gqw8-wh9g
@@ -10,6 +10,7 @@ affected:
 - package:
     name: litellm
     ecosystem: PyPI
+    purl: pkg:pypi/litellm
   ranges:
   - type: ECOSYSTEM
     events:

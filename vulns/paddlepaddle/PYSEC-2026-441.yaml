@@ -1,6 +1,6 @@
 id: PYSEC-2026-441
 published: "2026-06-29T11:50:34.051020Z"
-modified: "2026-06-29T12:05:39.110324Z"
+modified: "2026-07-01T20:22:59.721245Z"
 aliases:
 - CVE-2022-46741
 - GHSA-2hvc-hwg3-hpvw
@@ -10,6 +10,7 @@ affected:
 - package:
     name: paddlepaddle
     ecosystem: PyPI
+    purl: pkg:pypi/paddlepaddle
   ranges:
   - type: ECOSYSTEM
     events:

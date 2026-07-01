@@ -1,6 +1,6 @@
 id: PYSEC-2026-363
 published: "2026-06-29T11:50:52.278396Z"
-modified: "2026-06-29T12:05:30.841787Z"
+modified: "2026-07-01T20:22:54.817516Z"
 aliases:
 - CVE-2026-44180
 - GHSA-chq7-94j8-cj28
@@ -10,6 +10,7 @@ affected:
 - package:
     name: jupyter-enterprise-gateway
     ecosystem: PyPI
+    purl: pkg:pypi/jupyter-enterprise-gateway
   ranges:
   - type: ECOSYSTEM
     events:

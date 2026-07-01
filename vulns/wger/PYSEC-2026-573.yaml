@@ -1,6 +1,6 @@
 id: PYSEC-2026-573
 published: "2026-06-29T11:50:33.145504Z"
-modified: "2026-06-29T12:05:52.444138Z"
+modified: "2026-07-01T20:23:11.992618Z"
 aliases:
 - CVE-2022-2650
 - GHSA-gr58-76rp-mmg4
@@ -10,6 +10,7 @@ affected:
 - package:
     name: wger
     ecosystem: PyPI
+    purl: pkg:pypi/wger
   ranges:
   - type: ECOSYSTEM
     events:

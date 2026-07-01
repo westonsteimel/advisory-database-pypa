@@ -1,6 +1,6 @@
 id: PYSEC-2026-396
 published: "2026-06-29T11:50:39.698454Z"
-modified: "2026-06-29T12:05:34.160503Z"
+modified: "2026-07-01T20:22:56.484978Z"
 aliases:
 - CVE-2024-3271
 - GHSA-r6gp-rff2-p3hf
@@ -10,6 +10,7 @@ affected:
 - package:
     name: llama-index-core
     ecosystem: PyPI
+    purl: pkg:pypi/llama-index-core
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-523
 published: "2026-06-29T11:50:33.755195Z"
-modified: "2026-06-29T11:50:33.755195Z"
+modified: "2026-07-01T20:23:04.020678Z"
 aliases:
 - CVE-2022-34558
 - GHSA-4vq7-8699-4xgc
@@ -10,6 +10,7 @@ affected:
 - package:
     name: reqmgr2
     ecosystem: PyPI
+    purl: pkg:pypi/reqmgr2
   ranges:
   - type: ECOSYSTEM
     events:

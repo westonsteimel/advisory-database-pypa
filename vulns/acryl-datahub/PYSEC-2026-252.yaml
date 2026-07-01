@@ -1,6 +1,6 @@
 id: PYSEC-2026-252
 published: "2026-06-29T11:50:33.490689Z"
-modified: "2026-06-29T12:05:17.281123Z"
+modified: "2026-07-01T20:22:47.545360Z"
 aliases:
 - CVE-2022-39366
 - GHSA-r8gm-v65f-c973
@@ -10,6 +10,7 @@ affected:
 - package:
     name: acryl-datahub
     ecosystem: PyPI
+    purl: pkg:pypi/acryl-datahub
   ranges:
   - type: ECOSYSTEM
     events:

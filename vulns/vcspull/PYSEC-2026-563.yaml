@@ -1,6 +1,6 @@
 id: PYSEC-2026-563
 published: "2026-06-29T11:50:31.953566Z"
-modified: "2026-06-29T12:05:51.484555Z"
+modified: "2026-07-01T20:23:11.167334Z"
 aliases:
 - CVE-2022-21187
 - GHSA-mv2w-4jqc-6fg4
@@ -10,6 +10,7 @@ affected:
 - package:
     name: vcspull
     ecosystem: PyPI
+    purl: pkg:pypi/vcspull
   ranges:
   - type: ECOSYSTEM
     events:

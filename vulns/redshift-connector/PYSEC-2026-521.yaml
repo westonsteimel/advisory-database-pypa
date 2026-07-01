@@ -1,6 +1,6 @@
 id: PYSEC-2026-521
 published: "2026-06-29T11:50:48.775479Z"
-modified: "2026-06-29T12:05:47.112487Z"
+modified: "2026-07-01T20:23:03.966387Z"
 aliases:
 - CVE-2026-8838
 - GHSA-29h4-r29x-hchv
@@ -10,6 +10,7 @@ affected:
 - package:
     name: redshift-connector
     ecosystem: PyPI
+    purl: pkg:pypi/redshift-connector
   ranges:
   - type: ECOSYSTEM
     events:

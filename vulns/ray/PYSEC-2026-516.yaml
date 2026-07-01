@@ -1,6 +1,6 @@
 id: PYSEC-2026-516
 published: "2026-06-29T11:50:43.308049Z"
-modified: "2026-06-29T12:05:46.696853Z"
+modified: "2026-07-01T20:23:03.587282Z"
 aliases:
 - CVE-2023-6020
 - GHSA-6cxr-8q3m-jwrr
@@ -10,6 +10,7 @@ affected:
 - package:
     name: ray
     ecosystem: PyPI
+    purl: pkg:pypi/ray
   ranges:
   - type: ECOSYSTEM
     events:

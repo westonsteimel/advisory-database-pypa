@@ -1,6 +1,6 @@
 id: PYSEC-2026-346
 published: "2026-06-29T11:50:46.919489Z"
-modified: "2026-06-29T12:05:28.809001Z"
+modified: "2026-07-01T20:22:54.000071Z"
 aliases:
 - CVE-2026-40258
 - GHSA-m5gr-86j6-99jp
@@ -10,6 +10,7 @@ affected:
 - package:
     name: gramps-webapi
     ecosystem: PyPI
+    purl: pkg:pypi/gramps-webapi
   ranges:
   - type: ECOSYSTEM
     events:

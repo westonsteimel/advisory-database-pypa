@@ -1,6 +1,6 @@
 id: PYSEC-2026-500
 published: "2026-06-29T11:50:46.168172Z"
-modified: "2026-06-29T12:05:45.115817Z"
+modified: "2026-07-01T20:23:02.980943Z"
 aliases:
 - CVE-2026-5463
 - GHSA-qpc3-8vqg-8g6w
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pymetasploit3
     ecosystem: PyPI
+    purl: pkg:pypi/pymetasploit3
   ranges:
   - type: ECOSYSTEM
     events:

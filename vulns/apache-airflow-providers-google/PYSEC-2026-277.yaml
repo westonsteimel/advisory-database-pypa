@@ -1,6 +1,6 @@
 id: PYSEC-2026-277
 published: "2026-06-29T11:50:42.896100Z"
-modified: "2026-06-29T12:05:19.425447Z"
+modified: "2026-07-01T20:22:48.512031Z"
 aliases:
 - CVE-2023-25691
 - GHSA-8g23-2q5p-8866
@@ -10,6 +10,7 @@ affected:
 - package:
     name: apache-airflow-providers-google
     ecosystem: PyPI
+    purl: pkg:pypi/apache-airflow-providers-google
   ranges:
   - type: ECOSYSTEM
     events:

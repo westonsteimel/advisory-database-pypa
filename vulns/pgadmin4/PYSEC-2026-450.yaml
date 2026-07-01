@@ -1,6 +1,6 @@
 id: PYSEC-2026-450
 published: "2026-06-29T11:50:38.596444Z"
-modified: "2026-06-29T12:05:39.673584Z"
+modified: "2026-07-01T20:22:59.869357Z"
 aliases:
 - CVE-2025-13780
 - GHSA-fxmw-jcgr-w44v
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pgadmin4
     ecosystem: PyPI
+    purl: pkg:pypi/pgadmin4
   ranges:
   - type: ECOSYSTEM
     events:

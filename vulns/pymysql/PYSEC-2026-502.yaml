@@ -1,6 +1,6 @@
 id: PYSEC-2026-502
 published: "2026-06-29T11:50:39.950131Z"
-modified: "2026-06-29T12:05:45.282082Z"
+modified: "2026-07-01T20:23:03.004299Z"
 aliases:
 - CVE-2024-36039
 - GHSA-v9hf-5j83-6xpp
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pymysql
     ecosystem: PyPI
+    purl: pkg:pypi/pymysql
   ranges:
   - type: ECOSYSTEM
     events:

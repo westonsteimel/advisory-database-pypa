@@ -1,6 +1,6 @@
 id: PYSEC-2026-565
 published: "2026-06-29T11:50:51.569348Z"
-modified: "2026-06-29T12:05:51.665550Z"
+modified: "2026-07-01T20:23:11.278808Z"
 aliases:
 - CVE-2026-22778
 - GHSA-4r2x-xpjr-7cvv
@@ -10,6 +10,7 @@ affected:
 - package:
     name: vllm
     ecosystem: PyPI
+    purl: pkg:pypi/vllm
   ranges:
   - type: ECOSYSTEM
     events:

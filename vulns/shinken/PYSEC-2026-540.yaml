@@ -1,6 +1,6 @@
 id: PYSEC-2026-540
 published: "2026-06-29T11:50:33.392933Z"
-modified: "2026-06-29T12:05:48.987922Z"
+modified: "2026-07-01T20:23:05.025809Z"
 aliases:
 - CVE-2022-37298
 - GHSA-p373-jqfm-j6wr
@@ -10,6 +10,7 @@ affected:
 - package:
     name: shinken
     ecosystem: PyPI
+    purl: pkg:pypi/shinken
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-486
 published: "2026-06-29T11:50:48.093694Z"
-modified: "2026-06-29T12:05:43.700469Z"
+modified: "2026-07-01T20:23:01.968066Z"
 aliases:
 - CVE-2026-39888
 - GHSA-qf73-2hrx-xprp
@@ -10,6 +10,7 @@ affected:
 - package:
     name: praisonaiagents
     ecosystem: PyPI
+    purl: pkg:pypi/praisonaiagents
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-270
 published: "2026-06-29T11:50:33.352300Z"
-modified: "2026-06-29T12:05:20.029585Z"
+modified: "2026-07-01T20:22:49.250924Z"
 aliases:
 - CVE-2022-40189
 - GHSA-rmf2-pwfq-h75j
@@ -10,6 +10,7 @@ affected:
 - package:
     name: apache-airflow
     ecosystem: PyPI
+    purl: pkg:pypi/apache-airflow
   ranges:
   - type: ECOSYSTEM
     events:

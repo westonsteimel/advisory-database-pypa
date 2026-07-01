@@ -1,6 +1,6 @@
 id: PYSEC-2026-281
 published: "2026-06-29T11:50:33.912853Z"
-modified: "2026-06-29T11:50:33.912853Z"
+modified: "2026-07-01T20:22:49.408498Z"
 aliases:
 - CVE-2021-21386
 - GHSA-8434-v7xw-8m9x
@@ -10,6 +10,7 @@ affected:
 - package:
     name: apkleaks
     ecosystem: PyPI
+    purl: pkg:pypi/apkleaks
   ranges:
   - type: ECOSYSTEM
     events:

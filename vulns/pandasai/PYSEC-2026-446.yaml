@@ -1,6 +1,6 @@
 id: PYSEC-2026-446
 published: "2026-06-29T11:50:41.468092Z"
-modified: "2026-06-29T12:05:39.448249Z"
+modified: "2026-07-01T20:22:59.757187Z"
 aliases:
 - CVE-2024-23752
 - GHSA-5g73-69p4-7gvx
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pandasai
     ecosystem: PyPI
+    purl: pkg:pypi/pandasai
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-364
 published: "2026-06-29T11:50:52.903440Z"
-modified: "2026-06-29T12:05:30.902603Z"
+modified: "2026-07-01T20:22:54.829379Z"
 aliases:
 - CVE-2026-44181
 - GHSA-f49j-v924-fx9w
@@ -10,6 +10,7 @@ affected:
 - package:
     name: jupyter-enterprise-gateway
     ecosystem: PyPI
+    purl: pkg:pypi/jupyter-enterprise-gateway
   ranges:
   - type: ECOSYSTEM
     events:

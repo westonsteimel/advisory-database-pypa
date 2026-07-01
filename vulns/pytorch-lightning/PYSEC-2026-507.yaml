@@ -1,6 +1,6 @@
 id: PYSEC-2026-507
 published: "2026-06-29T11:50:34.262484Z"
-modified: "2026-06-29T12:05:45.885190Z"
+modified: "2026-07-01T20:23:03.338811Z"
 aliases:
 - CVE-2024-8019
 - GHSA-4cv3-v7pv-rfhf
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pytorch-lightning
     ecosystem: PyPI
+    purl: pkg:pypi/pytorch-lightning
   ranges:
   - type: ECOSYSTEM
     events:

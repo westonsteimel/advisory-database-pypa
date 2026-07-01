@@ -1,6 +1,6 @@
 id: PYSEC-2026-292
 published: "2026-06-29T11:50:36.889602Z"
-modified: "2026-06-29T12:05:21.625985Z"
+modified: "2026-07-01T20:22:49.693046Z"
 aliases:
 - CVE-2025-10284
 - GHSA-fhw8-8v9p-7jp7
@@ -10,6 +10,7 @@ affected:
 - package:
     name: bbot
     ecosystem: PyPI
+    purl: pkg:pypi/bbot
   ranges:
   - type: ECOSYSTEM
     events:

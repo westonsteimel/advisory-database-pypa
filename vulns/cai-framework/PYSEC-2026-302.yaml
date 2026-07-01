@@ -1,6 +1,6 @@
 id: PYSEC-2026-302
 published: "2026-06-29T11:50:38.843030Z"
-modified: "2026-06-29T12:05:23.126356Z"
+modified: "2026-07-01T20:22:50.111382Z"
 aliases:
 - CVE-2025-67511
 - GHSA-4c65-9gqf-4w8h
@@ -10,6 +10,7 @@ affected:
 - package:
     name: cai-framework
     ecosystem: PyPI
+    purl: pkg:pypi/cai-framework
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-327
 published: "2026-06-29T11:50:37.443319Z"
-modified: "2026-06-29T12:05:26.229825Z"
+modified: "2026-07-01T20:22:51.022251Z"
 aliases:
 - CVE-2025-58367
 - GHSA-mw26-5g2v-hqw3
@@ -10,6 +10,7 @@ affected:
 - package:
     name: deepdiff
     ecosystem: PyPI
+    purl: pkg:pypi/deepdiff
   ranges:
   - type: ECOSYSTEM
     events:

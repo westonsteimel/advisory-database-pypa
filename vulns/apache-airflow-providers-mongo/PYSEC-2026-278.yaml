@@ -1,6 +1,6 @@
 id: PYSEC-2026-278
 published: "2026-06-29T11:50:40.389103Z"
-modified: "2026-06-29T12:05:19.540441Z"
+modified: "2026-07-01T20:22:48.520271Z"
 aliases:
 - CVE-2024-25141
 - GHSA-x5pm-h33q-cjrw
@@ -12,6 +12,7 @@ affected:
 - package:
     name: apache-airflow-providers-mongo
     ecosystem: PyPI
+    purl: pkg:pypi/apache-airflow-providers-mongo
   ranges:
   - type: ECOSYSTEM
     events:

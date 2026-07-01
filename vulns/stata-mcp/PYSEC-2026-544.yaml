@@ -1,6 +1,6 @@
 id: PYSEC-2026-544
 published: "2026-06-29T11:50:52.497266Z"
-modified: "2026-06-29T12:05:49.377695Z"
+modified: "2026-07-01T20:23:05.367908Z"
 aliases:
 - CVE-2026-47708
 - GHSA-4p62-hqp5-g644
@@ -10,6 +10,7 @@ affected:
 - package:
     name: stata-mcp
     ecosystem: PyPI
+    purl: pkg:pypi/stata-mcp
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-253
 published: "2026-06-29T11:50:35.291980Z"
-modified: "2026-06-29T12:05:17.338259Z"
+modified: "2026-07-01T20:22:47.620233Z"
 aliases:
 - CVE-2024-8502
 - GHSA-9w5h-67gf-xvv8
@@ -10,6 +10,7 @@ affected:
 - package:
     name: agentscope
     ecosystem: PyPI
+    purl: pkg:pypi/agentscope
   ranges:
   - type: ECOSYSTEM
     events:

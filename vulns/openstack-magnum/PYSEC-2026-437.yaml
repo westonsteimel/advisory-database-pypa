@@ -1,6 +1,6 @@
 id: PYSEC-2026-437
 published: "2026-06-29T11:50:32.538452Z"
-modified: "2026-06-29T12:05:38.644552Z"
+modified: "2026-07-01T20:22:59.516599Z"
 aliases:
 - CVE-2016-7404
 - GHSA-793v-r35j-9rp9
@@ -10,6 +10,7 @@ affected:
 - package:
     name: openstack-magnum
     ecosystem: PyPI
+    purl: pkg:pypi/openstack-magnum
   ranges:
   - type: ECOSYSTEM
     events:

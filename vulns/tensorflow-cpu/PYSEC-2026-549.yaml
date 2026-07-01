@@ -1,6 +1,6 @@
 id: PYSEC-2026-549
 published: "2026-06-29T11:50:42.369767Z"
-modified: "2026-06-29T12:05:50.031344Z"
+modified: "2026-07-01T20:23:07.029309Z"
 aliases:
 - CVE-2023-25668
 - GHSA-gw97-ff7c-9v96
@@ -10,6 +10,7 @@ affected:
 - package:
     name: tensorflow-cpu
     ecosystem: PyPI
+    purl: pkg:pypi/tensorflow-cpu
   ranges:
   - type: ECOSYSTEM
     events:

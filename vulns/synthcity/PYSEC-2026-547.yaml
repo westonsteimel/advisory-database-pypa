@@ -1,6 +1,6 @@
 id: PYSEC-2026-547
 published: "2026-06-29T11:50:41.569372Z"
-modified: "2026-06-29T12:05:49.874968Z"
+modified: "2026-07-01T20:23:05.624111Z"
 aliases:
 - CVE-2024-0937
 - GHSA-4957-7vhp-7v59
@@ -10,6 +10,7 @@ affected:
 - package:
     name: synthcity
     ecosystem: PyPI
+    purl: pkg:pypi/synthcity
   ranges:
   - type: ECOSYSTEM
     events:

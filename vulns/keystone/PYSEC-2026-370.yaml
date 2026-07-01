@@ -1,6 +1,6 @@
 id: PYSEC-2026-370
 published: "2026-06-29T11:50:33.812046Z"
-modified: "2026-06-29T12:05:31.470692Z"
+modified: "2026-07-01T20:22:55.228672Z"
 aliases:
 - CVE-2021-3563
 - GHSA-cc99-whm5-mmq3
@@ -10,6 +10,7 @@ affected:
 - package:
     name: keystone
     ecosystem: PyPI
+    purl: pkg:pypi/keystone
   ranges:
   - type: ECOSYSTEM
     events:

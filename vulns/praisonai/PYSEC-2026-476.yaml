@@ -1,6 +1,6 @@
 id: PYSEC-2026-476
 published: "2026-06-29T11:50:48.248527Z"
-modified: "2026-06-29T12:05:43.003501Z"
+modified: "2026-07-01T20:23:01.702411Z"
 aliases:
 - CVE-2026-40154
 - GHSA-pv9q-275h-rh7x
@@ -10,6 +10,7 @@ affected:
 - package:
     name: praisonai
     ecosystem: PyPI
+    purl: pkg:pypi/praisonai
   ranges:
   - type: ECOSYSTEM
     events:

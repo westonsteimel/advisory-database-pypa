@@ -1,6 +1,6 @@
 id: PYSEC-2026-455
 published: "2026-06-29T11:50:45.494556Z"
-modified: "2026-06-29T12:05:40.121490Z"
+modified: "2026-07-01T20:22:59.991064Z"
 aliases:
 - CVE-2026-53873
 - GHSA-7wx9-6375-f5wh
@@ -10,6 +10,7 @@ affected:
 - package:
     name: picklescan
     ecosystem: PyPI
+    purl: pkg:pypi/picklescan
   ranges:
   - type: ECOSYSTEM
     events:

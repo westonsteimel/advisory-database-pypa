@@ -1,6 +1,6 @@
 id: PYSEC-2026-285
 published: "2026-06-29T11:50:36.550940Z"
-modified: "2026-06-29T12:05:20.658458Z"
+modified: "2026-07-01T20:22:49.477669Z"
 aliases:
 - CVE-2025-55449
 - GHSA-4m32-cjv7-f425
@@ -10,6 +10,7 @@ affected:
 - package:
     name: astrbot
     ecosystem: PyPI
+    purl: pkg:pypi/astrbot
   ranges:
   - type: ECOSYSTEM
     events:

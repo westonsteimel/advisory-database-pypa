@@ -1,6 +1,6 @@
 id: PYSEC-2026-429
 published: "2026-06-29T11:50:32.992811Z"
-modified: "2026-06-29T12:05:37.404128Z"
+modified: "2026-07-01T20:22:58.708002Z"
 aliases:
 - CVE-2016-4972
 - GHSA-87r7-q54j-f9qg
@@ -10,6 +10,7 @@ affected:
 - package:
     name: murano
     ecosystem: PyPI
+    purl: pkg:pypi/murano
   ranges:
   - type: ECOSYSTEM
     events:

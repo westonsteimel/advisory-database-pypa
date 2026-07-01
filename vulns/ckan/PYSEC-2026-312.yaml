@@ -1,6 +1,6 @@
 id: PYSEC-2026-312
 published: "2026-06-29T11:50:42.696551Z"
-modified: "2026-06-29T11:50:42.696551Z"
+modified: "2026-07-01T20:22:50.417515Z"
 aliases:
 - CVE-2023-32321
 - GHSA-446m-hmmm-hm8m
@@ -10,6 +10,7 @@ affected:
 - package:
     name: ckan
     ecosystem: PyPI
+    purl: pkg:pypi/ckan
   versions:
   - 2.10.0
 references:

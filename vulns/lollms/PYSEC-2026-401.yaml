@@ -1,6 +1,6 @@
 id: PYSEC-2026-401
 published: "2026-06-29T11:50:47.224865Z"
-modified: "2026-06-29T12:05:34.724135Z"
+modified: "2026-07-01T20:22:56.771583Z"
 aliases:
 - CVE-2026-1115
 - GHSA-8wrq-fv5f-pfp2
@@ -10,6 +10,7 @@ affected:
 - package:
     name: lollms
     ecosystem: PyPI
+    purl: pkg:pypi/lollms
   ranges:
   - type: ECOSYSTEM
     events:

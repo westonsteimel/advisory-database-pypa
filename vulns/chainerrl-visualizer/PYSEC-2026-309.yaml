@@ -1,6 +1,6 @@
 id: PYSEC-2026-309
 published: "2026-06-29T11:50:33.588318Z"
-modified: "2026-06-29T12:05:23.626418Z"
+modified: "2026-07-01T20:22:50.259424Z"
 aliases:
 - CVE-2022-31573
 - GHSA-687h-86vc-5x59
@@ -10,6 +10,7 @@ affected:
 - package:
     name: chainerrl-visualizer
     ecosystem: PyPI
+    purl: pkg:pypi/chainerrl-visualizer
   ranges:
   - type: ECOSYSTEM
     events:

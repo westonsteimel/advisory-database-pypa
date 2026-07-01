@@ -1,6 +1,6 @@
 id: PYSEC-2026-340
 published: "2026-06-29T11:50:40.498361Z"
-modified: "2026-06-29T12:05:28.160299Z"
+modified: "2026-07-01T20:22:53.007843Z"
 aliases:
 - CVE-2024-25128
 - GHSA-j2pw-vp55-fqqj
@@ -10,6 +10,7 @@ affected:
 - package:
     name: flask-appbuilder
     ecosystem: PyPI
+    purl: pkg:pypi/flask-appbuilder
   ranges:
   - type: ECOSYSTEM
     events:

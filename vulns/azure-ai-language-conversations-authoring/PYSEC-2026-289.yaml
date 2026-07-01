@@ -1,6 +1,6 @@
 id: PYSEC-2026-289
 published: "2026-06-29T11:50:51.457063Z"
-modified: "2026-06-29T12:05:21.371552Z"
+modified: "2026-07-01T20:22:49.625745Z"
 aliases:
 - CVE-2026-21531
 - GHSA-436v-jg82-p533
@@ -10,6 +10,7 @@ affected:
 - package:
     name: azure-ai-language-conversations-authoring
     ecosystem: PyPI
+    purl: pkg:pypi/azure-ai-language-conversations-authoring
   ranges:
   - type: ECOSYSTEM
     events:

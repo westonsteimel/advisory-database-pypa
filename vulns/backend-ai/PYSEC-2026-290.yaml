@@ -1,6 +1,6 @@
 id: PYSEC-2026-290
 published: "2026-06-29T11:50:38.333670Z"
-modified: "2026-06-29T11:50:38.333670Z"
+modified: "2026-07-01T20:22:49.653897Z"
 aliases:
 - CVE-2025-49652
 - GHSA-ww28-4m4v-cq4j
@@ -10,6 +10,7 @@ affected:
 - package:
     name: backend-ai
     ecosystem: PyPI
+    purl: pkg:pypi/backend-ai
   ranges:
   - type: ECOSYSTEM
     events:

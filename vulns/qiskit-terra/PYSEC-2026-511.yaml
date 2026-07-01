@@ -1,6 +1,6 @@
 id: PYSEC-2026-511
 published: "2026-06-29T11:50:34.706122Z"
-modified: "2026-06-29T12:05:46.112336Z"
+modified: "2026-07-01T20:23:03.448348Z"
 aliases:
 - CVE-2025-2000
 - GHSA-6m2c-76ff-6vrf
@@ -10,6 +10,7 @@ affected:
 - package:
     name: qiskit-terra
     ecosystem: PyPI
+    purl: pkg:pypi/qiskit-terra
   ranges:
   - type: ECOSYSTEM
     events:

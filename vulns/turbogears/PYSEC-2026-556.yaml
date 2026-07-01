@@ -1,6 +1,6 @@
 id: PYSEC-2026-556
 published: "2026-06-29T11:50:42.829954Z"
-modified: "2026-06-29T12:05:50.761849Z"
+modified: "2026-07-01T20:23:10.676310Z"
 aliases:
 - CVE-2019-25101
 - GHSA-8q38-w56m-qq2c
@@ -10,6 +10,7 @@ affected:
 - package:
     name: turbogears
     ecosystem: PyPI
+    purl: pkg:pypi/turbogears
   ranges:
   - type: ECOSYSTEM
     events:

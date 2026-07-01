@@ -1,6 +1,6 @@
 id: PYSEC-2026-393
 published: "2026-06-29T11:50:41.670418Z"
-modified: "2026-06-29T12:05:34.038070Z"
+modified: "2026-07-01T20:22:56.464580Z"
 aliases:
 - CVE-2024-23730
 - GHSA-297x-2qf3-jrj3
@@ -10,6 +10,7 @@ affected:
 - package:
     name: llama-hub
     ecosystem: PyPI
+    purl: pkg:pypi/llama-hub
   ranges:
   - type: ECOSYSTEM
     events:

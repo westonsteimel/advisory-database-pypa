@@ -1,6 +1,6 @@
 id: PYSEC-2026-576
 published: "2026-06-29T11:50:44.123752Z"
-modified: "2026-06-29T12:05:52.606502Z"
+modified: "2026-07-01T20:23:12.100943Z"
 aliases:
 - CVE-2023-40889
 - GHSA-mhp6-jvpx-2p4m
@@ -10,6 +10,7 @@ affected:
 - package:
     name: zbar
     ecosystem: PyPI
+    purl: pkg:pypi/zbar
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-505
 published: "2026-06-29T11:50:52.950837Z"
-modified: "2026-06-29T11:50:52.950837Z"
+modified: "2026-07-01T20:23:03.228458Z"
 aliases:
 - CVE-2015-5306
 - GHSA-x64g-wjmw-w328
@@ -10,6 +10,7 @@ affected:
 - package:
     name: python-ironic-inspector-client
     ecosystem: PyPI
+    purl: pkg:pypi/python-ironic-inspector-client
   ranges:
   - type: ECOSYSTEM
     events:

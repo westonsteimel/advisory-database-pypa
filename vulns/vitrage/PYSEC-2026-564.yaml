@@ -1,6 +1,6 @@
 id: PYSEC-2026-564
 published: "2026-06-29T11:50:51.052829Z"
-modified: "2026-06-29T12:05:51.604430Z"
+modified: "2026-07-01T20:23:11.192377Z"
 aliases:
 - CVE-2026-28370
 - GHSA-8xwf-cr4r-856r
@@ -10,6 +10,7 @@ affected:
 - package:
     name: vitrage
     ecosystem: PyPI
+    purl: pkg:pypi/vitrage
   ranges:
   - type: ECOSYSTEM
     events:

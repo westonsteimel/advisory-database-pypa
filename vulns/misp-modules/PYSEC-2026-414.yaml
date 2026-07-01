@@ -1,6 +1,6 @@
 id: PYSEC-2026-414
 published: "2026-06-29T11:50:50.405820Z"
-modified: "2026-06-29T12:05:36.271025Z"
+modified: "2026-07-01T20:22:58.041637Z"
 aliases:
 - CVE-2026-44364
 - GHSA-j4rh-7jcr-qm69
@@ -10,6 +10,7 @@ affected:
 - package:
     name: misp-modules
     ecosystem: PyPI
+    purl: pkg:pypi/misp-modules
   ranges:
   - type: ECOSYSTEM
     events:

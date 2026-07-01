@@ -1,6 +1,6 @@
 id: PYSEC-2026-356
 published: "2026-06-29T11:50:50.309063Z"
-modified: "2026-06-29T12:05:30.107735Z"
+modified: "2026-07-01T20:22:54.401793Z"
 aliases:
 - CVE-2026-31235
 - GHSA-g82g-j283-hj97
@@ -10,6 +10,7 @@ affected:
 - package:
     name: imgaug
     ecosystem: PyPI
+    purl: pkg:pypi/imgaug
   ranges:
   - type: ECOSYSTEM
     events:

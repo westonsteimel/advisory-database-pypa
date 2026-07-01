@@ -1,6 +1,6 @@
 id: PYSEC-2026-522
 published: "2026-06-29T11:50:43.995090Z"
-modified: "2026-06-29T12:05:47.189019Z"
+modified: "2026-07-01T20:23:04.001605Z"
 aliases:
 - CVE-2019-19450
 - GHSA-pj98-2xf6-cff5
@@ -10,6 +10,7 @@ affected:
 - package:
     name: reportlab
     ecosystem: PyPI
+    purl: pkg:pypi/reportlab
   ranges:
   - type: ECOSYSTEM
     events:

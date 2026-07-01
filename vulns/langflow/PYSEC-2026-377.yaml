@@ -1,6 +1,6 @@
 id: PYSEC-2026-377
 published: "2026-06-29T11:50:50.263156Z"
-modified: "2026-06-29T12:05:32.022942Z"
+modified: "2026-07-01T20:22:55.845000Z"
 aliases:
 - CVE-2026-42048
 - GHSA-9whx-c884-c68q
@@ -10,6 +10,7 @@ affected:
 - package:
     name: langflow
     ecosystem: PyPI
+    purl: pkg:pypi/langflow
   ranges:
   - type: ECOSYSTEM
     events:

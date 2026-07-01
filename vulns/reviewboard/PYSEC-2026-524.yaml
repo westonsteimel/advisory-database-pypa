@@ -1,6 +1,6 @@
 id: PYSEC-2026-524
 published: "2026-06-29T11:50:32.931283Z"
-modified: "2026-06-29T12:05:47.612325Z"
+modified: "2026-07-01T20:23:04.091952Z"
 aliases:
 - CVE-2013-4409
 - GHSA-58h8-44mg-r43x
@@ -10,6 +10,7 @@ affected:
 - package:
     name: reviewboard
     ecosystem: PyPI
+    purl: pkg:pypi/reviewboard
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-300
 published: "2026-06-29T11:50:36.064223Z"
-modified: "2026-06-29T12:05:22.569855Z"
+modified: "2026-07-01T20:22:50.049087Z"
 aliases:
 - CVE-2025-47241
 - GHSA-x39x-9qw5-ghrf
@@ -10,6 +10,7 @@ affected:
 - package:
     name: browser-use
     ecosystem: PyPI
+    purl: pkg:pypi/browser-use
   ranges:
   - type: ECOSYSTEM
     events:

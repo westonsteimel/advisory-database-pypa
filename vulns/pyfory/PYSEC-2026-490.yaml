@@ -1,15 +1,16 @@
 id: PYSEC-2026-490
 published: "2026-06-29T11:50:36.968662Z"
-modified: "2026-06-29T12:05:44.312407Z"
+modified: "2026-07-01T20:23:02.648327Z"
 aliases:
 - CVE-2025-61622
 - GHSA-538v-3wq9-4h3r
 summary: Apache Pyfory python is vulnerable to deserialization of untrusted data
-details: "Deserialization of untrusted data in\u00a0python in pyfory\u00a0versions 0.12.0 through 0.12.2, or the\u00a0legacy\u00a0pyfury versions from\u00a00.1.0 through 0.10.3: allows arbitrary code execution. An application is vulnerable if it reads pyfory serialized data from untrusted sources.\u00a0An attacker can craft a data stream that selects pickle-fallback serializer during deserialization, leading to the execution of `pickle.loads`, which is\u00a0vulnerable to\u00a0remote code execution.\n\nUsers are recommended to upgrade to pyfory version 0.12.3 or later, which has removed pickle fallback serializer and thus fixes this issue."
+details: "Deserialization of untrusted data in python in pyfory versions 0.12.0 through 0.12.2, or the legacy pyfury versions from 0.1.0 through 0.10.3: allows arbitrary code execution. An application is vulnerable if it reads pyfory serialized data from untrusted sources. An attacker can craft a data stream that selects pickle-fallback serializer during deserialization, leading to the execution of `pickle.loads`, which is vulnerable to remote code execution.\n\nUsers are recommended to upgrade to pyfory version 0.12.3 or later, which has removed pickle fallback serializer and thus fixes this issue."
 affected:
 - package:
     name: pyfory
     ecosystem: PyPI
+    purl: pkg:pypi/pyfory
   ranges:
   - type: ECOSYSTEM
     events:

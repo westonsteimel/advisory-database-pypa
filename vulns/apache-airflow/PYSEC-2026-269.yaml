@@ -1,20 +1,21 @@
 id: PYSEC-2026-269
 published: "2026-06-29T11:50:47.739296Z"
-modified: "2026-06-29T12:05:19.967880Z"
+modified: "2026-07-01T20:22:49.240468Z"
 aliases:
 - CVE-2025-57735
 - GHSA-c92r-g8j5-vhcx
 summary: "Apache Airflow: JWT token still valid after logout"
 details: |-
   When user logged out, the JWT token the user had authtenticated with was not invalidated, which could lead to reuse of that token in case it was intercepted. In Airflow 3.2 we implemented the mechanism that implements token invalidation at logout. Users who are concerned about the logout scenario and possibility of intercepting the tokens, should upgrade to Airflow 3.2+
-  
-  
-  
+
+
+
   Users are recommended to upgrade to version 3.2.0, which fixes this issue.
 affected:
 - package:
     name: apache-airflow
     ecosystem: PyPI
+    purl: pkg:pypi/apache-airflow
   ranges:
   - type: ECOSYSTEM
     events:

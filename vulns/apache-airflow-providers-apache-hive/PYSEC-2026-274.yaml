@@ -1,6 +1,6 @@
 id: PYSEC-2026-274
 published: "2026-06-29T11:50:33.981448Z"
-modified: "2026-06-29T12:05:19.074108Z"
+modified: "2026-07-01T20:22:48.459474Z"
 aliases:
 - CVE-2022-46421
 - GHSA-rc58-qr9j-cpgw
@@ -10,6 +10,7 @@ affected:
 - package:
     name: apache-airflow-providers-apache-hive
     ecosystem: PyPI
+    purl: pkg:pypi/apache-airflow-providers-apache-hive
   ranges:
   - type: ECOSYSTEM
     events:

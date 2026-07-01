@@ -1,6 +1,6 @@
 id: PYSEC-2026-328
 published: "2026-06-29T11:50:49.713473Z"
-modified: "2026-06-29T12:05:26.523191Z"
+modified: "2026-07-01T20:22:51.403723Z"
 aliases:
 - CVE-2026-42196
 - GHSA-67qg-7284-2277
@@ -10,6 +10,7 @@ affected:
 - package:
     name: django-s3file
     ecosystem: PyPI
+    purl: pkg:pypi/django-s3file
   ranges:
   - type: ECOSYSTEM
     events:

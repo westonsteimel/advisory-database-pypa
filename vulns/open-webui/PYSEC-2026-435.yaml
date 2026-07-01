@@ -1,6 +1,6 @@
 id: PYSEC-2026-435
 published: "2026-06-29T11:50:50.111197Z"
-modified: "2026-06-29T12:05:38.149472Z"
+modified: "2026-07-01T20:22:59.420790Z"
 aliases:
 - CVE-2026-44551
 - GHSA-2r4p-jpmg-48f4
@@ -10,6 +10,7 @@ affected:
 - package:
     name: open-webui
     ecosystem: PyPI
+    purl: pkg:pypi/open-webui
   ranges:
   - type: ECOSYSTEM
     events:

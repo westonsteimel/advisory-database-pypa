@@ -1,6 +1,6 @@
 id: PYSEC-2026-282
 published: "2026-06-29T11:50:49.946441Z"
-modified: "2026-06-29T12:05:20.338066Z"
+modified: "2026-07-01T20:22:49.421836Z"
 aliases:
 - CVE-2026-31072
 - GHSA-9cfw-f3f9-7mm7
@@ -10,6 +10,7 @@ affected:
 - package:
     name: apscheduler
     ecosystem: PyPI
+    purl: pkg:pypi/apscheduler
   ranges:
   - type: ECOSYSTEM
     events:

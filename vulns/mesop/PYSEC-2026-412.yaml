@@ -1,6 +1,6 @@
 id: PYSEC-2026-412
 published: "2026-06-29T11:50:45.018132Z"
-modified: "2026-06-29T12:05:35.961656Z"
+modified: "2026-07-01T20:22:57.669592Z"
 aliases:
 - CVE-2026-33057
 - GHSA-gjgx-rvqr-6w6v
@@ -10,6 +10,7 @@ affected:
 - package:
     name: mesop
     ecosystem: PyPI
+    purl: pkg:pypi/mesop
   ranges:
   - type: ECOSYSTEM
     events:

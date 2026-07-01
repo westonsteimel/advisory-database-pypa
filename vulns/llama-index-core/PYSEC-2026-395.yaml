@@ -1,6 +1,6 @@
 id: PYSEC-2026-395
 published: "2026-06-29T11:50:41.215936Z"
-modified: "2026-06-29T12:05:34.099011Z"
+modified: "2026-07-01T20:22:56.474948Z"
 aliases:
 - CVE-2024-45201
 - GHSA-fxc2-8m62-m85x
@@ -10,6 +10,7 @@ affected:
 - package:
     name: llama-index-core
     ecosystem: PyPI
+    purl: pkg:pypi/llama-index-core
   ranges:
   - type: ECOSYSTEM
     events:

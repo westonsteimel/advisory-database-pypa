@@ -1,6 +1,6 @@
 id: PYSEC-2026-454
 published: "2026-06-29T11:50:36.720081Z"
-modified: "2026-06-29T12:05:39.967276Z"
+modified: "2026-07-01T20:22:59.909866Z"
 aliases:
 - CVE-2025-12762
 - GHSA-w2p4-p4rh-qcm3
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pgadmin4
     ecosystem: PyPI
+    purl: pkg:pypi/pgadmin4
   ranges:
   - type: ECOSYSTEM
     events:

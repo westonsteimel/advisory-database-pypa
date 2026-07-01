@@ -2,6 +2,7 @@ affected:
 - package:
     ecosystem: PyPI
     name: Plone
+    purl: pkg:pypi/plone
   ranges:
   - events:
     - introduced: '0'
@@ -9,12 +10,9 @@ affected:
     type: ECOSYSTEM
 aliases:
 - CVE-2008-0164
-details: Multiple cross-site request forgery (CSRF) vulnerabilities in Plone CMS 3.0.5
-  and 3.0.6 allow remote attackers to (1) add arbitrary accounts via the join_form
-  page and (2) change the privileges of arbitrary groups via the prefs_groups_overview
-  page.
+details: Multiple cross-site request forgery (CSRF) vulnerabilities in Plone CMS 3.0.5 and 3.0.6 allow remote attackers to (1) add arbitrary accounts via the join_form page and (2) change the privileges of arbitrary groups via the prefs_groups_overview page.
 id: PYSEC-2008-14
-modified: '2024-11-25T18:35:18.357593Z'
+modified: '2026-07-01T20:23:00.426419Z'
 published: '2008-03-20T00:44:00Z'
 references:
 - type: ADVISORY

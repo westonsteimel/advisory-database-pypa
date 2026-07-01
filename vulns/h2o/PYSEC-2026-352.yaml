@@ -1,6 +1,6 @@
 id: PYSEC-2026-352
 published: "2026-06-29T11:50:41.149183Z"
-modified: "2026-06-29T12:05:29.239235Z"
+modified: "2026-07-01T20:22:54.129056Z"
 aliases:
 - CVE-2024-45758
 - GHSA-hrmc-jmp7-mpm2
@@ -10,6 +10,7 @@ affected:
 - package:
     name: h2o
     ecosystem: PyPI
+    purl: pkg:pypi/h2o
   ranges:
   - type: ECOSYSTEM
     events:

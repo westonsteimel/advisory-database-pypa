@@ -1,6 +1,6 @@
 id: PYSEC-2026-526
 published: "2026-06-29T11:50:33.689769Z"
-modified: "2026-06-29T12:05:47.786503Z"
+modified: "2026-07-01T20:23:04.195521Z"
 aliases:
 - CVE-2022-35411
 - GHSA-8rq8-f485-7v8x
@@ -10,6 +10,7 @@ affected:
 - package:
     name: rpc-py
     ecosystem: PyPI
+    purl: pkg:pypi/rpc-py
   ranges:
   - type: ECOSYSTEM
     events:

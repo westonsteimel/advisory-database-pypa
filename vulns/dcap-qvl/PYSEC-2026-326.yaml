@@ -1,6 +1,6 @@
 id: PYSEC-2026-326
 published: "2026-06-29T11:50:51.988422Z"
-modified: "2026-06-29T12:05:26.169637Z"
+modified: "2026-07-01T20:22:51.008654Z"
 aliases:
 - CVE-2026-22696
 - GHSA-796p-j2gh-9m2q
@@ -10,6 +10,7 @@ affected:
 - package:
     name: dcap-qvl
     ecosystem: PyPI
+    purl: pkg:pypi/dcap-qvl
   ranges:
   - type: ECOSYSTEM
     events:

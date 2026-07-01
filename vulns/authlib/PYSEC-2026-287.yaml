@@ -1,6 +1,6 @@
 id: PYSEC-2026-287
 published: "2026-06-29T11:50:45.440491Z"
-modified: "2026-06-29T12:05:20.772177Z"
+modified: "2026-07-01T20:22:49.564964Z"
 aliases:
 - CVE-2026-27962
 - GHSA-wvwj-cvrp-7pv5
@@ -10,6 +10,7 @@ affected:
 - package:
     name: authlib
     ecosystem: PyPI
+    purl: pkg:pypi/authlib
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-368
 published: "2026-06-29T11:50:37.095983Z"
-modified: "2026-06-29T12:05:31.251217Z"
+modified: "2026-07-01T20:22:55.074992Z"
 aliases:
 - CVE-2025-49655
 - GHSA-cvhh-q5g5-qprp
@@ -10,6 +10,7 @@ affected:
 - package:
     name: keras
     ecosystem: PyPI
+    purl: pkg:pypi/keras
   ranges:
   - type: ECOSYSTEM
     events:

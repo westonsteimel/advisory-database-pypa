@@ -1,6 +1,6 @@
 id: PYSEC-2026-551
 published: "2026-06-29T11:50:51.891261Z"
-modified: "2026-06-29T12:05:50.239311Z"
+modified: "2026-07-01T20:23:10.079817Z"
 aliases:
 - CVE-2025-61492
 - GHSA-h4rf-624j-gj33
@@ -10,6 +10,7 @@ affected:
 - package:
     name: terminal-controller
     ecosystem: PyPI
+    purl: pkg:pypi/terminal-controller
   ranges:
   - type: ECOSYSTEM
     events:

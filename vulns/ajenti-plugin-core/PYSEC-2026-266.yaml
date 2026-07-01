@@ -1,6 +1,6 @@
 id: PYSEC-2026-266
 published: "2026-06-29T11:50:45.705669Z"
-modified: "2026-06-29T12:05:18.774945Z"
+modified: "2026-07-01T20:22:47.930750Z"
 aliases:
 - CVE-2026-40177
 - GHSA-3mcx-6wxm-qr8v
@@ -10,6 +10,7 @@ affected:
 - package:
     name: ajenti-plugin-core
     ecosystem: PyPI
+    purl: pkg:pypi/ajenti-plugin-core
   ranges:
   - type: ECOSYSTEM
     events:

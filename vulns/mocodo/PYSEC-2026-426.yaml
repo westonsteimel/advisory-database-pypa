@@ -1,6 +1,6 @@
 id: PYSEC-2026-426
 published: "2026-06-29T11:50:40.115425Z"
-modified: "2026-06-29T12:05:37.061381Z"
+modified: "2026-07-01T20:22:58.435412Z"
 aliases:
 - CVE-2024-35374
 - GHSA-j6cv-98jx-mrwr
@@ -10,6 +10,7 @@ affected:
 - package:
     name: mocodo
     ecosystem: PyPI
+    purl: pkg:pypi/mocodo
   ranges:
   - type: ECOSYSTEM
     events:

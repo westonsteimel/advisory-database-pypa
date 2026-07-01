@@ -1,6 +1,6 @@
 id: PYSEC-2026-394
 published: "2026-06-29T11:50:38.482622Z"
-modified: "2026-06-29T12:05:34.401068Z"
+modified: "2026-07-01T20:22:56.586862Z"
 aliases:
 - CVE-2025-1793
 - GHSA-v3c8-3pr6-gr7p
@@ -10,6 +10,7 @@ affected:
 - package:
     name: llama-index
     ecosystem: PyPI
+    purl: pkg:pypi/llama-index
   ranges:
   - type: ECOSYSTEM
     events:

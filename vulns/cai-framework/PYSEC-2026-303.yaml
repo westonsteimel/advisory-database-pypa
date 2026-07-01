@@ -1,6 +1,6 @@
 id: PYSEC-2026-303
 published: "2026-06-29T11:50:51.942019Z"
-modified: "2026-06-29T12:05:23.183713Z"
+modified: "2026-07-01T20:22:50.121006Z"
 aliases:
 - CVE-2026-25130
 - GHSA-jfpc-wj3m-qw2m
@@ -10,6 +10,7 @@ affected:
 - package:
     name: cai-framework
     ecosystem: PyPI
+    purl: pkg:pypi/cai-framework
   ranges:
   - type: ECOSYSTEM
     events:

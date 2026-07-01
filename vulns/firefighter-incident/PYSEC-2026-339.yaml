@@ -1,6 +1,6 @@
 id: PYSEC-2026-339
 published: "2026-06-29T11:50:50.634046Z"
-modified: "2026-06-29T12:05:28.028391Z"
+modified: "2026-07-01T20:22:52.903088Z"
 aliases:
 - CVE-2026-42864
 - GHSA-fqvv-jvhr-g5jc
@@ -10,6 +10,7 @@ affected:
 - package:
     name: firefighter-incident
     ecosystem: PyPI
+    purl: pkg:pypi/firefighter-incident
   ranges:
   - type: ECOSYSTEM
     events:

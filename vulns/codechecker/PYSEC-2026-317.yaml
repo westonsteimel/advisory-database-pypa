@@ -1,6 +1,6 @@
 id: PYSEC-2026-317
 published: "2026-06-29T11:50:50.050635Z"
-modified: "2026-06-29T12:05:24.431393Z"
+modified: "2026-07-01T20:22:50.508956Z"
 aliases:
 - CVE-2026-25660
 - GHSA-4v9x-cqc5-j645
@@ -10,6 +10,7 @@ affected:
 - package:
     name: codechecker
     ecosystem: PyPI
+    purl: pkg:pypi/codechecker
   ranges:
   - type: ECOSYSTEM
     events:

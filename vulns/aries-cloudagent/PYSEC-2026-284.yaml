@@ -1,6 +1,6 @@
 id: PYSEC-2026-284
 published: "2026-06-29T11:50:41.397353Z"
-modified: "2026-06-29T12:05:20.529754Z"
+modified: "2026-07-01T20:22:49.459249Z"
 aliases:
 - CVE-2024-21669
 - GHSA-97x9-59rv-q5pm
@@ -10,6 +10,7 @@ affected:
 - package:
     name: aries-cloudagent
     ecosystem: PyPI
+    purl: pkg:pypi/aries-cloudagent
   ranges:
   - type: ECOSYSTEM
     events:

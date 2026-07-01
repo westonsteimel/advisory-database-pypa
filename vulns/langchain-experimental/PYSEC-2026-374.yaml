@@ -1,6 +1,6 @@
 id: PYSEC-2026-374
 published: "2026-06-29T11:50:41.097287Z"
-modified: "2026-06-29T12:05:31.712653Z"
+modified: "2026-07-01T20:22:55.391040Z"
 aliases:
 - CVE-2024-46946
 - GHSA-p2qj-r53j-h3xj
@@ -10,6 +10,7 @@ affected:
 - package:
     name: langchain-experimental
     ecosystem: PyPI
+    purl: pkg:pypi/langchain-experimental
   ranges:
   - type: ECOSYSTEM
     events:

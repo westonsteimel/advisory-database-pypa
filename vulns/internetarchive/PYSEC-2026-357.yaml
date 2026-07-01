@@ -1,6 +1,6 @@
 id: PYSEC-2026-357
 published: "2026-06-29T11:50:37.387123Z"
-modified: "2026-06-29T12:05:30.231122Z"
+modified: "2026-07-01T20:22:54.516702Z"
 aliases:
 - CVE-2025-58438
 - GHSA-wx3r-v6h7-frjp
@@ -10,6 +10,7 @@ affected:
 - package:
     name: internetarchive
     ecosystem: PyPI
+    purl: pkg:pypi/internetarchive
   ranges:
   - type: ECOSYSTEM
     events:

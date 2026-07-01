@@ -1,6 +1,6 @@
 id: PYSEC-2026-410
 published: "2026-06-29T11:50:52.123329Z"
-modified: "2026-06-29T12:05:35.709061Z"
+modified: "2026-07-01T20:22:57.505231Z"
 aliases:
 - CVE-2026-49257
 - GHSA-73cv-556c-w3g6
@@ -10,6 +10,7 @@ affected:
 - package:
     name: mcp-pinot-server
     ecosystem: PyPI
+    purl: pkg:pypi/mcp-pinot-server
   ranges:
   - type: ECOSYSTEM
     events:

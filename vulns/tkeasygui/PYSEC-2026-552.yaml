@@ -1,6 +1,6 @@
 id: PYSEC-2026-552
 published: "2026-06-29T11:50:37.683122Z"
-modified: "2026-06-29T12:05:50.357907Z"
+modified: "2026-07-01T20:23:10.097538Z"
 aliases:
 - CVE-2025-55037
 - GHSA-hfrj-3w3g-jv32
@@ -10,6 +10,7 @@ affected:
 - package:
     name: tkeasygui
     ecosystem: PyPI
+    purl: pkg:pypi/tkeasygui
   ranges:
   - type: ECOSYSTEM
     events:

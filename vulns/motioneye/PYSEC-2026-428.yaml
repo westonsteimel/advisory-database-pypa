@@ -1,6 +1,6 @@
 id: PYSEC-2026-428
 published: "2026-06-29T11:50:52.323990Z"
-modified: "2026-06-29T12:05:37.291578Z"
+modified: "2026-07-01T20:22:58.678887Z"
 aliases:
 - CVE-2026-46488
 - GHSA-r3cw-c95m-wfh9
@@ -10,6 +10,7 @@ affected:
 - package:
     name: motioneye
     ecosystem: PyPI
+    purl: pkg:pypi/motioneye
   ranges:
   - type: ECOSYSTEM
     events:

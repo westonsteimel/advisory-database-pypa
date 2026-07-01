@@ -1,6 +1,6 @@
 id: PYSEC-2026-427
 published: "2026-06-29T11:50:36.347186Z"
-modified: "2026-06-29T12:05:37.173855Z"
+modified: "2026-07-01T20:22:58.530561Z"
 aliases:
 - CVE-2025-60455
 - GHSA-7xcv-9j6c-2fmc
@@ -10,6 +10,7 @@ affected:
 - package:
     name: modular
     ecosystem: PyPI
+    purl: pkg:pypi/modular
   ranges:
   - type: ECOSYSTEM
     events:

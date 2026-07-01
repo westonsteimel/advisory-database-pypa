@@ -1,6 +1,6 @@
 id: PYSEC-2026-405
 published: "2026-06-29T11:50:48.925693Z"
-modified: "2026-06-29T12:05:35.087059Z"
+modified: "2026-07-01T20:22:56.823984Z"
 aliases:
 - CVE-2026-31238
 - GHSA-xp5q-5q7g-q26r
@@ -10,6 +10,7 @@ affected:
 - package:
     name: ludwig
     ecosystem: PyPI
+    purl: pkg:pypi/ludwig
   ranges:
   - type: ECOSYSTEM
     events:

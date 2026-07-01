@@ -1,6 +1,6 @@
 id: PYSEC-2026-307
 published: "2026-06-29T11:50:33.865743Z"
-modified: "2026-06-29T12:05:23.456089Z"
+modified: "2026-07-01T20:22:50.165947Z"
 aliases:
 - CVE-2021-4171
 - GHSA-xp7p-3gx7-j6wx
@@ -10,6 +10,7 @@ affected:
 - package:
     name: calibreweb
     ecosystem: PyPI
+    purl: pkg:pypi/calibreweb
   ranges:
   - type: ECOSYSTEM
     events:

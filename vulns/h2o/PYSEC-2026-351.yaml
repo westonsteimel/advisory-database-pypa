@@ -1,6 +1,6 @@
 id: PYSEC-2026-351
 published: "2026-06-29T11:50:35.058540Z"
-modified: "2026-06-29T12:05:29.184189Z"
+modified: "2026-07-01T20:22:54.116563Z"
 aliases:
 - CVE-2024-10553
 - GHSA-h7xg-cmpp-48hf
@@ -10,6 +10,7 @@ affected:
 - package:
     name: h2o
     ecosystem: PyPI
+    purl: pkg:pypi/h2o
   ranges:
   - type: ECOSYSTEM
     events:

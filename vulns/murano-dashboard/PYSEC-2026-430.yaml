@@ -1,6 +1,6 @@
 id: PYSEC-2026-430
 published: "2026-06-29T11:50:33.043646Z"
-modified: "2026-06-29T12:05:37.350066Z"
+modified: "2026-07-01T20:22:58.700091Z"
 aliases:
 - CVE-2016-4972
 - GHSA-87r7-q54j-f9qg
@@ -10,6 +10,7 @@ affected:
 - package:
     name: murano-dashboard
     ecosystem: PyPI
+    purl: pkg:pypi/murano-dashboard
   ranges:
   - type: ECOSYSTEM
     events:

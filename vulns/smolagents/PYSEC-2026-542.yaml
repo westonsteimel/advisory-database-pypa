@@ -1,6 +1,6 @@
 id: PYSEC-2026-542
 published: "2026-06-29T11:50:37.329072Z"
-modified: "2026-06-29T12:05:49.095234Z"
+modified: "2026-07-01T20:23:05.176528Z"
 aliases:
 - CVE-2025-5120
 - GHSA-6v92-r5mx-h5fx
@@ -10,6 +10,7 @@ affected:
 - package:
     name: smolagents
     ecosystem: PyPI
+    purl: pkg:pypi/smolagents
   ranges:
   - type: ECOSYSTEM
     events:

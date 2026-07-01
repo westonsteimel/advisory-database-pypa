@@ -1,6 +1,6 @@
 id: PYSEC-2026-365
 published: "2026-06-29T11:50:35.874980Z"
-modified: "2026-06-29T11:50:35.874980Z"
+modified: "2026-07-01T20:22:54.840490Z"
 aliases:
 - CVE-2025-32428
 - GHSA-vrq4-9hc3-cgp7
@@ -10,6 +10,7 @@ affected:
 - package:
     name: jupyter-remote-desktop-proxy
     ecosystem: PyPI
+    purl: pkg:pypi/jupyter-remote-desktop-proxy
   ranges:
   - type: ECOSYSTEM
     events:

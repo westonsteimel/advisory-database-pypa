@@ -1,6 +1,6 @@
 id: PYSEC-2026-256
 published: "2026-06-29T11:50:46.517573Z"
-modified: "2026-06-29T12:05:17.517700Z"
+modified: "2026-07-01T20:22:47.645877Z"
 aliases:
 - CVE-2026-35002
 - GHSA-77rh-m34w-rv36
@@ -10,6 +10,7 @@ affected:
 - package:
     name: agno
     ecosystem: PyPI
+    purl: pkg:pypi/agno
   ranges:
   - type: ECOSYSTEM
     events:

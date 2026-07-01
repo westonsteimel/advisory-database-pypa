@@ -1,6 +1,6 @@
 id: PYSEC-2026-445
 published: "2026-06-29T11:50:39.027739Z"
-modified: "2026-06-29T12:05:39.329680Z"
+modified: "2026-07-01T20:22:59.743217Z"
 aliases:
 - CVE-2024-0917
 - GHSA-mrmm-qmrj-xgp6
@@ -10,6 +10,7 @@ affected:
 - package:
     name: paddlepaddle
     ecosystem: PyPI
+    purl: pkg:pypi/paddlepaddle
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-513
 published: "2026-06-29T11:50:38.223427Z"
-modified: "2026-06-29T12:05:46.550722Z"
+modified: "2026-07-01T20:23:03.548254Z"
 aliases:
 - CVE-2024-49375
 - GHSA-cpv4-ggrr-7j9v
@@ -10,6 +10,7 @@ affected:
 - package:
     name: rasa
     ecosystem: PyPI
+    purl: pkg:pypi/rasa
   ranges:
   - type: ECOSYSTEM
     events:

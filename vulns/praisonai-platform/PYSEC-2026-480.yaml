@@ -1,6 +1,6 @@
 id: PYSEC-2026-480
 published: "2026-06-29T11:50:52.797416Z"
-modified: "2026-06-29T12:05:41.172528Z"
+modified: "2026-07-01T20:23:01.004330Z"
 aliases:
 - CVE-2026-47413
 - GHSA-8g2p-pqm3-fcfh
@@ -10,6 +10,7 @@ affected:
 - package:
     name: praisonai-platform
     ecosystem: PyPI
+    purl: pkg:pypi/praisonai-platform
   ranges:
   - type: ECOSYSTEM
     events:

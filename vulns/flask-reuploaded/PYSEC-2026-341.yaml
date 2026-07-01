@@ -1,6 +1,6 @@
 id: PYSEC-2026-341
 published: "2026-06-29T11:50:51.002002Z"
-modified: "2026-06-29T12:05:28.222117Z"
+modified: "2026-07-01T20:22:53.047171Z"
 aliases:
 - CVE-2026-27641
 - GHSA-65mp-fq8v-56jr
@@ -10,6 +10,7 @@ affected:
 - package:
     name: flask-reuploaded
     ecosystem: PyPI
+    purl: pkg:pypi/flask-reuploaded
   ranges:
   - type: ECOSYSTEM
     events:

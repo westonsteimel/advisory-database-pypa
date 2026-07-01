@@ -1,6 +1,6 @@
 id: PYSEC-2026-259
 published: "2026-06-29T11:50:35.626775Z"
-modified: "2026-06-29T12:05:17.875596Z"
+modified: "2026-07-01T20:22:47.682466Z"
 aliases:
 - CVE-2024-6829
 - GHSA-75px-35p4-qq6h
@@ -10,6 +10,7 @@ affected:
 - package:
     name: aim
     ecosystem: PyPI
+    purl: pkg:pypi/aim
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-304
 published: "2026-06-29T11:50:32.006359Z"
-modified: "2026-06-29T12:05:23.301128Z"
+modified: "2026-07-01T20:22:50.148948Z"
 aliases:
 - CVE-2022-0766
 - GHSA-2647-c639-qv2j
@@ -10,6 +10,7 @@ affected:
 - package:
     name: calibreweb
     ecosystem: PyPI
+    purl: pkg:pypi/calibreweb
   ranges:
   - type: ECOSYSTEM
     events:

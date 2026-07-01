@@ -1,6 +1,6 @@
 id: PYSEC-2026-501
 published: "2026-06-29T11:50:43.774027Z"
-modified: "2026-06-29T12:05:45.228852Z"
+modified: "2026-07-01T20:23:02.988949Z"
 aliases:
 - CVE-2023-45853
 - GHSA-mq29-j5xf-cjwr
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pyminizip
     ecosystem: PyPI
+    purl: pkg:pypi/pyminizip
   ranges:
   - type: ECOSYSTEM
     events:

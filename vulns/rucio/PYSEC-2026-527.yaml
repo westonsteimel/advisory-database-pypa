@@ -1,6 +1,6 @@
 id: PYSEC-2026-527
 published: "2026-06-29T11:50:49.082878Z"
-modified: "2026-06-29T12:05:47.846437Z"
+modified: "2026-07-01T20:23:04.233398Z"
 aliases:
 - CVE-2026-29090
 - GHSA-6j7p-qjhg-9947
@@ -10,6 +10,7 @@ affected:
 - package:
     name: rucio
     ecosystem: PyPI
+    purl: pkg:pypi/rucio
   ranges:
   - type: ECOSYSTEM
     events:

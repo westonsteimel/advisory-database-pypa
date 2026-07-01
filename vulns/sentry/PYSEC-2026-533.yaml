@@ -1,6 +1,6 @@
 id: PYSEC-2026-533
 published: "2026-06-29T11:50:47.877063Z"
-modified: "2026-06-29T12:05:48.579456Z"
+modified: "2026-07-01T20:23:04.909803Z"
 aliases:
 - CVE-2026-27197
 - GHSA-ggmg-cqg6-j45g
@@ -10,6 +10,7 @@ affected:
 - package:
     name: sentry
     ecosystem: PyPI
+    purl: pkg:pypi/sentry
   ranges:
   - type: ECOSYSTEM
     events:

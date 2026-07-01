@@ -1,6 +1,6 @@
 id: PYSEC-2026-336
 published: "2026-06-29T11:50:37.907855Z"
-modified: "2026-06-29T12:05:27.724309Z"
+modified: "2026-07-01T20:22:52.488658Z"
 aliases:
 - CVE-2025-54951
 - GHSA-xc7w-r669-48pf
@@ -10,6 +10,7 @@ affected:
 - package:
     name: executorch
     ecosystem: PyPI
+    purl: pkg:pypi/executorch
   ranges:
   - type: ECOSYSTEM
     events:

@@ -1,6 +1,6 @@
 id: PYSEC-2026-434
 published: "2026-06-29T11:50:52.997366Z"
-modified: "2026-06-29T12:05:38.028618Z"
+modified: "2026-07-01T20:22:59.378325Z"
 aliases:
 - CVE-2021-41868
 - GHSA-7g47-xxff-9p85
@@ -10,6 +10,7 @@ affected:
 - package:
     name: onionshare-cli
     ecosystem: PyPI
+    purl: pkg:pypi/onionshare-cli
   ranges:
   - type: ECOSYSTEM
     events:

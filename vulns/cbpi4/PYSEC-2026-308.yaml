@@ -1,6 +1,6 @@
 id: PYSEC-2026-308
 published: "2026-06-29T11:50:40.064038Z"
-modified: "2026-06-29T12:05:23.573273Z"
+modified: "2026-07-01T20:22:50.205186Z"
 aliases:
 - CVE-2024-3955
 - GHSA-4f92-w438-f484
@@ -10,6 +10,7 @@ affected:
 - package:
     name: cbpi4
     ecosystem: PyPI
+    purl: pkg:pypi/cbpi4
   ranges:
   - type: ECOSYSTEM
     events:

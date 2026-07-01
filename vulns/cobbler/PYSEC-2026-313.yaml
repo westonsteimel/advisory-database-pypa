@@ -1,6 +1,6 @@
 id: PYSEC-2026-313
 published: "2026-06-29T11:50:32.434499Z"
-modified: "2026-06-29T11:50:32.434499Z"
+modified: "2026-07-01T20:22:50.463280Z"
 aliases:
 - CVE-2018-10931
 - GHSA-8787-63px-3m23
@@ -10,6 +10,7 @@ affected:
 - package:
     name: cobbler
     ecosystem: PyPI
+    purl: pkg:pypi/cobbler
   ranges:
   - type: ECOSYSTEM
     events:

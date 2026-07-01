@@ -1,6 +1,6 @@
 id: PYSEC-2026-459
 published: "2026-06-29T11:50:32.119427Z"
-modified: "2026-06-29T12:05:40.784173Z"
+modified: "2026-07-01T20:23:00.383868Z"
 aliases:
 - CVE-2020-7941
 - GHSA-w6g9-xccc-347h
@@ -10,6 +10,7 @@ affected:
 - package:
     name: plone-app-contenttypes
     ecosystem: PyPI
+    purl: pkg:pypi/plone-app-contenttypes
   ranges:
   - type: ECOSYSTEM
     events:

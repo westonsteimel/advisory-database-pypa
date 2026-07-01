@@ -1,6 +1,6 @@
 id: PYSEC-2026-509
 published: "2026-06-29T11:50:41.827932Z"
-modified: "2026-06-29T12:05:45.976980Z"
+modified: "2026-07-01T20:23:03.439257Z"
 aliases:
 - CVE-2024-3829
 - GHSA-7m75-x27w-r52r
@@ -10,6 +10,7 @@ affected:
 - package:
     name: qdrant-client
     ecosystem: PyPI
+    purl: pkg:pypi/qdrant-client
   ranges:
   - type: ECOSYSTEM
     events:

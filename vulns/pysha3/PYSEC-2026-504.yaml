@@ -1,6 +1,6 @@
 id: PYSEC-2026-504
 published: "2026-06-29T11:50:42.592721Z"
-modified: "2026-06-29T12:05:45.598077Z"
+modified: "2026-07-01T20:23:03.122139Z"
 aliases:
 - CVE-2022-37454
 - GHSA-6w4m-2xhg-2658
@@ -10,6 +10,7 @@ affected:
 - package:
     name: pysha3
     ecosystem: PyPI
+    purl: pkg:pypi/pysha3
   ranges:
   - type: ECOSYSTEM
     events:

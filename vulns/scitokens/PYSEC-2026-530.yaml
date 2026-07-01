@@ -1,6 +1,6 @@
 id: PYSEC-2026-530
 published: "2026-06-29T11:50:44.789392Z"
-modified: "2026-06-29T12:05:48.329126Z"
+modified: "2026-07-01T20:23:04.757243Z"
 aliases:
 - CVE-2026-32714
 - GHSA-rh5m-2482-966c
@@ -10,6 +10,7 @@ affected:
 - package:
     name: scitokens
     ecosystem: PyPI
+    purl: pkg:pypi/scitokens
   ranges:
   - type: ECOSYSTEM
     events:

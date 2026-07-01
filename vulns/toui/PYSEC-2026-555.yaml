@@ -1,6 +1,6 @@
 id: PYSEC-2026-555
 published: "2026-06-29T11:50:42.742671Z"
-modified: "2026-06-29T12:05:50.643006Z"
+modified: "2026-07-01T20:23:10.286587Z"
 aliases:
 - CVE-2023-33175
 - GHSA-hh7j-pg39-q563
@@ -10,6 +10,7 @@ affected:
 - package:
     name: toui
     ecosystem: PyPI
+    purl: pkg:pypi/toui
   ranges:
   - type: ECOSYSTEM
     events:

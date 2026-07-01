@@ -1,6 +1,6 @@
 id: PYSEC-2026-294
 published: "2026-06-29T11:50:35.815930Z"
-modified: "2026-06-29T12:05:21.786906Z"
+modified: "2026-07-01T20:22:49.820821Z"
 aliases:
 - CVE-2025-27520
 - GHSA-33xw-247w-6hmc
@@ -10,6 +10,7 @@ affected:
 - package:
     name: bentoml
     ecosystem: PyPI
+    purl: pkg:pypi/bentoml
   ranges:
   - type: ECOSYSTEM
     events:

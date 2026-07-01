@@ -1,6 +1,6 @@
 id: PYSEC-2026-413
 published: "2026-06-29T11:50:52.704177Z"
-modified: "2026-06-29T12:05:36.029039Z"
+modified: "2026-07-01T20:22:57.686031Z"
 aliases:
 - CVE-2026-48039
 - GHSA-9gw6-46qc-99vr
@@ -10,6 +10,7 @@ affected:
 - package:
     name: meta-ads-mcp
     ecosystem: PyPI
+    purl: pkg:pypi/meta-ads-mcp
   ranges:
   - type: ECOSYSTEM
     events:
