@@ -8,20 +8,12 @@ affected:
     - introduced: '0'
     - fixed: 11.0.0a0
     type: ECOSYSTEM
-- package:
-    ecosystem: PyPI
-    name: glance
-  ranges:
-  - events:
-    - introduced: '0'
-    - fixed: 11.0.0a0
-    type: ECOSYSTEM
 aliases:
 - CVE-2015-1881
 - GHSA-4jp4-3c62-r8jv
 details: OpenStack Image Registry and Delivery Service (Glance) 2014.2 through 2014.2.2 does not properly remove images, which allows remote authenticated users to cause a denial of service (disk consumption) by creating a large number of images using the task v2 API and then deleting them, a different vulnerability than CVE-2014-9684.
 id: PYSEC-2015-38
-modified: '2026-07-01T20:22:53.353503Z'
+modified: '2026-07-02T10:13:02.658153Z'
 published: '2015-02-24T15:59:00Z'
 references:
 - type: EVIDENCE

@@ -11,6 +11,7 @@ affected:
 - package:
     ecosystem: PyPI
     name: plone
+    purl: pkg:pypi/plone
   ranges:
   - events:
     - introduced: '3.0'
@@ -21,7 +22,7 @@ aliases:
 - GHSA-hf26-vvmx-x8c8
 details: Plone 2.5 through 2.5.4 and 3.0 through 3.0.2 allows remote attackers to execute arbitrary Python code via network data containing pickled objects for the (1) statusmessages or (2) linkintegrity module, which the module unpickles and executes.
 id: PYSEC-2007-4
-modified: '2026-07-01T20:23:00.420716Z'
+modified: '2026-07-02T10:13:09.137758Z'
 published: '2007-11-07T21:46:00Z'
 references:
 - type: ADVISORY

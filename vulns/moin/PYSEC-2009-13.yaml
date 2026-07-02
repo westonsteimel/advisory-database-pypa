@@ -7,13 +7,6 @@ affected:
   - events:
     - introduced: '0'
     - fixed: 1.6.3
-    type: ECOSYSTEM
-- package:
-    ecosystem: PyPI
-    name: moin
-    purl: pkg:pypi/moin
-  ranges:
-  - events:
     - introduced: '1.7'
     - fixed: 1.7.1
     type: ECOSYSTEM
@@ -26,7 +19,7 @@ details: MoinMoin 1.6.2 and 1.7 does not properly enforce ACL checks when acl_hi
   is set to True, which might allow remote attackers to bypass intended access restrictions,
   a different vulnerability than CVE-2008-1937.
 id: PYSEC-2009-13
-modified: '2024-11-25T18:35:18.357593Z'
+modified: '2026-07-02T10:13:07.338482Z'
 published: '2009-04-03T18:30:00Z'
 references:
 - type: WEB

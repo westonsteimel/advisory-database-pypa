@@ -7,20 +7,6 @@ affected:
   - events:
     - introduced: '0'
     - fixed: 1.6.3
-    type: ECOSYSTEM
-- package:
-    ecosystem: PyPI
-    name: moin
-  ranges:
-  - events:
-    - introduced: '0'
-    - fixed: 1.6.3
-    type: ECOSYSTEM
-- package:
-    ecosystem: PyPI
-    name: moin
-  ranges:
-  - events:
     - introduced: '1.7'
     - fixed: 1.7.1
     type: ECOSYSTEM
@@ -31,7 +17,7 @@ aliases:
 - GHSA-rqxp-6926-hphr
 details: The user form processing (userform.py) in MoinMoin before 1.6.3, when using ACLs or a non-empty superusers list, does not properly manage users, which allows remote attackers to gain privileges.
 id: PYSEC-2008-12
-modified: '2026-07-01T20:22:58.540909Z'
+modified: '2026-07-02T10:13:07.338482Z'
 published: '2008-04-25T06:05:00Z'
 references:
 - type: EVIDENCE
