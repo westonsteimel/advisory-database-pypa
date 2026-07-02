@@ -1,6 +1,6 @@
 id: PYSEC-2026-290
 published: "2026-06-29T11:50:38.333670Z"
-modified: "2026-07-01T20:22:49.653897Z"
+modified: "2026-07-02T12:33:00Z"
 aliases:
 - CVE-2025-49652
 - GHSA-ww28-4m4v-cq4j
@@ -8,12 +8,14 @@ summary: BackendAI Missing Authentication for Critical Function
 details: Missing Authentication in the registration feature of Lablup's BackendAI allows arbitrary users to create user accounts that can access private data even when registration is disabled.
 affected:
 - package:
-    name: backend-ai
     ecosystem: PyPI
+    name: backend-ai
     purl: pkg:pypi/backend-ai
   ranges:
   - type: ECOSYSTEM
     events:
+    - introduced: '0'
+    - fixed: 25.15.6
     - introduced: 25.16.0rc1
     - fixed: 25.19.0rc1
 references:

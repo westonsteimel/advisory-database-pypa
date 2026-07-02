@@ -4,22 +4,18 @@ affected:
     name: moin
     purl: pkg:pypi/moin
   ranges:
-  - events:
+  - type: ECOSYSTEM
+    events:
     - introduced: '0'
     - fixed: 1.6.3
     - introduced: '1.7'
     - fixed: 1.7.1
-    type: ECOSYSTEM
-  versions:
-  - '1.7'
 aliases:
 - CVE-2008-6603
 - GHSA-wc8w-gh5m-62fv
-details: MoinMoin 1.6.2 and 1.7 does not properly enforce ACL checks when acl_hierarchic
-  is set to True, which might allow remote attackers to bypass intended access restrictions,
-  a different vulnerability than CVE-2008-1937.
+details: MoinMoin 1.6.2 and 1.7 does not properly enforce ACL checks when acl_hierarchic is set to True, which might allow remote attackers to bypass intended access restrictions, a different vulnerability than CVE-2008-1937.
 id: PYSEC-2009-13
-modified: '2026-07-02T10:13:07.338482Z'
+modified: "2026-07-02T12:33:00Z"
 published: '2009-04-03T18:30:00Z'
 references:
 - type: WEB

@@ -1,6 +1,6 @@
 id: PYSEC-2026-510
 published: "2026-06-29T11:50:34.769394Z"
-modified: "2026-07-01T20:23:03.454788Z"
+modified: "2026-07-02T12:33:00Z"
 aliases:
 - CVE-2025-2000
 - GHSA-6m2c-76ff-6vrf
@@ -8,12 +8,14 @@ summary: Qiskit allows arbitrary code execution decoding QPY format versions < 1
 details: "### Impact\n\nA maliciously crafted QPY file can potentially execute arbitrary-code embedded in the payload without privilege escalation when deserializing QPY formats < 13. A python process calling Qiskit's `qiskit.qpy.load()` function could potentially execute any arbitrary Python code embedded in the correct place in the binary file as part of a specially constructed payload.\n\n### Patches\n\nFixed in Qiskit 1.4.2 and in Qiskit 2.0.0rc2"
 affected:
 - package:
-    name: qiskit
     ecosystem: PyPI
+    name: qiskit
     purl: pkg:pypi/qiskit
   ranges:
   - type: ECOSYSTEM
     events:
+    - introduced: '0'
+    - fixed: 1.4.2
     - introduced: 2.0.0rc1
     - fixed: 2.0.0rc2
   versions:

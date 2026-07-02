@@ -1,6 +1,6 @@
 id: PYSEC-2026-360
 published: "2026-06-29T11:50:32.271750Z"
-modified: "2026-07-01T20:22:54.626753Z"
+modified: "2026-07-02T12:33:00Z"
 aliases:
 - CVE-2016-8638
 - GHSA-376m-3rm2-9jm6
@@ -8,14 +8,20 @@ summary: Session Fixation in ipsilon
 details: A vulnerability in ipsilon 2.0 before 2.0.2, 1.2 before 1.2.1, 1.1 before 1.1.2, and 1.0 before 1.0.3 was found that allows attacker to log out active sessions of other users.  This issue is related to how it tracks sessions, and allows an unauthenticated attacker to view and terminate active sessions from other users. It is also called a "SAML2 multi-session vulnerability."
 affected:
 - package:
-    name: ipsilon
     ecosystem: PyPI
+    name: ipsilon
     purl: pkg:pypi/ipsilon
   ranges:
   - type: ECOSYSTEM
     events:
     - introduced: 1.0.0
     - fixed: 1.0.3
+    - introduced: 1.1.0
+    - fixed: 1.1.2
+    - introduced: 2.0.0
+    - fixed: 2.0.2
+    - introduced: 1.2.0
+    - fixed: 1.2.1
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2016-8638

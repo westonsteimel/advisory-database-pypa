@@ -1,6 +1,6 @@
 id: PYSEC-2026-440
 published: "2026-06-29T11:50:32.870631Z"
-modified: "2026-07-01T20:22:59.604572Z"
+modified: "2026-07-02T12:33:00Z"
 aliases:
 - CVE-2019-15753
 - GHSA-mcpw-cp35-p3h8
@@ -8,12 +8,14 @@ summary: OpenStack os-vif Ageing time of 0 disables linuxbridge MAC learning
 details: In OpenStack os-vif 1.15.x before 1.15.2, and 1.16.0, a hard-coded MAC aging time of 0 disables MAC learning in linuxbridge, forcing obligatory Ethernet flooding of non-local destinations, which both impedes network performance and allows users to possibly view the content of packets for instances belonging to other tenants sharing the same network. Only deployments using the linuxbridge backend are affected. This occurs in PyRoute2.add() in `internal/command/ip/linux/impl_pyroute2.py`.
 affected:
 - package:
-    name: os-vif
     ecosystem: PyPI
+    name: os-vif
     purl: pkg:pypi/os-vif
   ranges:
   - type: ECOSYSTEM
     events:
+    - introduced: 1.15.0
+    - fixed: 1.15.2
     - introduced: 1.16.0
     - fixed: 1.17.0
   versions:

@@ -4,25 +4,18 @@ affected:
     name: plone
     purl: pkg:pypi/plone
   ranges:
-  - events:
+  - type: ECOSYSTEM
+    events:
     - introduced: '2.5'
     - fixed: 2.5.5
-    type: ECOSYSTEM
-- package:
-    ecosystem: PyPI
-    name: plone
-    purl: pkg:pypi/plone
-  ranges:
-  - events:
     - introduced: '3.0'
     - fixed: 3.0.3
-    type: ECOSYSTEM
 aliases:
 - CVE-2007-5741
 - GHSA-hf26-vvmx-x8c8
 details: Plone 2.5 through 2.5.4 and 3.0 through 3.0.2 allows remote attackers to execute arbitrary Python code via network data containing pickled objects for the (1) statusmessages or (2) linkintegrity module, which the module unpickles and executes.
 id: PYSEC-2007-4
-modified: '2026-07-02T10:13:09.137758Z'
+modified: "2026-07-02T12:33:00Z"
 published: '2007-11-07T21:46:00Z'
 references:
 - type: ADVISORY

@@ -1,6 +1,6 @@
 id: PYSEC-2026-433
 published: "2026-06-29T11:50:32.761316Z"
-modified: "2026-07-01T20:22:59.221842Z"
+modified: "2026-07-02T12:33:00Z"
 aliases:
 - CVE-2019-17134
 - GHSA-r4v4-3jj7-jc29
@@ -8,17 +8,18 @@ summary: OpenStack Octavia Amphora-Agent not requiring Client-Certificate
 details: Amphora Images in OpenStack Octavia >=0.10.0 <2.1.2, >=3.0.0 <3.2.0, >=4.0.0 <4.1.0 allows anyone with access to the management network to bypass client-certificate based authentication and retrieve information or issue configuration commands via simple HTTP requests to the Agent on port https/9443, because the `cmd/agent.py` gunicorn cert_reqs option is True but is supposed to be ssl.CERT_REQUIRED.
 affected:
 - package:
-    name: octavia
     ecosystem: PyPI
+    name: octavia
     purl: pkg:pypi/octavia
   ranges:
   - type: ECOSYSTEM
     events:
+    - introduced: 0.10.0
+    - fixed: 2.1.2
+    - introduced: 3.0.0
+    - fixed: 3.2.0
     - introduced: 4.0.0
     - fixed: 4.1.0
-  versions:
-  - 4.0.0
-  - 4.0.1
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2019-17134

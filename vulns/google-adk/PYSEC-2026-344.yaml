@@ -1,6 +1,6 @@
 id: PYSEC-2026-344
 published: "2026-06-29T11:50:47.550836Z"
-modified: "2026-07-01T20:22:53.408650Z"
+modified: "2026-07-02T12:33:00Z"
 aliases:
 - CVE-2026-4810
 - GHSA-rg7c-g689-fr3x
@@ -14,16 +14,16 @@ details: |-
   Customers need to redeploy the upgraded ADK to their production environments. In addition, if they are running ADK Web locally, they also need to upgrade their local instance.
 affected:
 - package:
-    name: google-adk
     ecosystem: PyPI
+    name: google-adk
     purl: pkg:pypi/google-adk
   ranges:
   - type: ECOSYSTEM
     events:
+    - introduced: 1.7.0
+    - fixed: 1.28.1
     - introduced: 2.0.0a1
     - fixed: 2.0.0a2
-  versions:
-  - 2.0.0a1
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2026-4810

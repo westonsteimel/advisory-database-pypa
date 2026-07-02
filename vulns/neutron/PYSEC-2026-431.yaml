@@ -1,6 +1,6 @@
 id: PYSEC-2026-431
 published: "2026-06-29T11:50:32.602905Z"
-modified: "2026-07-01T20:22:58.870010Z"
+modified: "2026-07-02T12:33:00Z"
 aliases:
 - CVE-2015-8914
 - GHSA-3vj4-cvjp-482h
@@ -8,12 +8,14 @@ summary: OpenStack Neutron allows remote attackers to bypass an intended ICMPv6-
 details: The IPTables firewall in OpenStack Neutron before 7.0.4 and 8.0.0 through 8.1.0 allows remote attackers to bypass an intended ICMPv6-spoofing protection mechanism and consequently cause a denial of service or intercept network traffic via a link-local source address.
 affected:
 - package:
-    name: neutron
     ecosystem: PyPI
+    name: neutron
     purl: pkg:pypi/neutron
   ranges:
   - type: ECOSYSTEM
     events:
+    - introduced: '0'
+    - fixed: 7.0.5
     - introduced: 8.0.0
     - fixed: 8.1.1
 references:

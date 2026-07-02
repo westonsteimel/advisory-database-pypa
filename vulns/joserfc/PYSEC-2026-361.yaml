@@ -1,6 +1,6 @@
 id: PYSEC-2026-361
 published: "2026-06-29T11:50:36.396676Z"
-modified: "2026-07-01T20:22:54.761165Z"
+modified: "2026-07-02T12:33:00Z"
 aliases:
 - CVE-2025-65015
 - GHSA-frfh-8v73-gjg4
@@ -9,17 +9,16 @@ details: "### Summary\nThe `ExceededSizeError` exception messages are embedded w
   Auth tag size of '{tag!r}' exceeds {self.max_auth_tag_length} bytes.\")\n```\nAnother occurrence of `ExceededSizeError` in **`joserfc/_rfc7518/jwe_zips.py`** is not affected\nby this issue as it does not include the payload content in the exception message.\n\n### Impact\nIn scenarios where a web application does not reject excessively large HTTP header payloads, using `joserfc` can expose the system to an **Allocation of Resources Without Limits or Throttling** (CWE-770), potentially impacting disk, memory, and CPU on the application host, as well as any external log storage, ingestion pipelines or alerting services. This risk can be mitigated by removing the JWT payload from the logged content in some `joserfc.errors.ExceededSizeError()` exception message occurrences. It would also be beneficial for the documentation to advise deploying the library behind a robust web server or reverse proxy that correctly enforces maximum request header sizes."
 affected:
 - package:
-    name: joserfc
     ecosystem: PyPI
+    name: joserfc
     purl: pkg:pypi/joserfc
   ranges:
   - type: ECOSYSTEM
     events:
+    - introduced: 1.3.3
+    - fixed: 1.3.5
     - introduced: 1.4.0
     - fixed: 1.4.2
-  versions:
-  - 1.4.0
-  - 1.4.1
 references:
 - type: WEB
   url: https://github.com/authlib/joserfc/security/advisories/GHSA-frfh-8v73-gjg4
