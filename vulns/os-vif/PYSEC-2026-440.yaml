@@ -1,25 +1,31 @@
-id: PYSEC-2026-440
-published: "2026-06-29T11:50:32.870631Z"
-modified: "2026-07-02T12:33:00Z"
-aliases:
-- CVE-2019-15753
-- GHSA-mcpw-cp35-p3h8
-summary: OpenStack os-vif Ageing time of 0 disables linuxbridge MAC learning
-details: In OpenStack os-vif 1.15.x before 1.15.2, and 1.16.0, a hard-coded MAC aging time of 0 disables MAC learning in linuxbridge, forcing obligatory Ethernet flooding of non-local destinations, which both impedes network performance and allows users to possibly view the content of packets for instances belonging to other tenants sharing the same network. Only deployments using the linuxbridge backend are affected. This occurs in PyRoute2.add() in `internal/command/ip/linux/impl_pyroute2.py`.
 affected:
 - package:
     ecosystem: PyPI
     name: os-vif
     purl: pkg:pypi/os-vif
   ranges:
-  - type: ECOSYSTEM
-    events:
+  - events:
     - introduced: 1.15.0
     - fixed: 1.15.2
     - introduced: 1.16.0
     - fixed: 1.17.0
+    type: ECOSYSTEM
   versions:
   - 1.16.0
+  - 1.15.0
+  - 1.15.1
+aliases:
+- CVE-2019-15753
+- GHSA-mcpw-cp35-p3h8
+details: In OpenStack os-vif 1.15.x before 1.15.2, and 1.16.0, a hard-coded MAC aging
+  time of 0 disables MAC learning in linuxbridge, forcing obligatory Ethernet flooding
+  of non-local destinations, which both impedes network performance and allows users
+  to possibly view the content of packets for instances belonging to other tenants
+  sharing the same network. Only deployments using the linuxbridge backend are affected.
+  This occurs in PyRoute2.add() in `internal/command/ip/linux/impl_pyroute2.py`.
+id: PYSEC-2026-440
+modified: '2026-07-02T12:46:41.101315Z'
+published: '2026-06-29T11:50:32.870631Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2019-15753
@@ -44,5 +50,6 @@ references:
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-mcpw-cp35-p3h8
 severity:
-- type: CVSS_V3
-  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H
+- score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H
+  type: CVSS_V3
+summary: OpenStack os-vif Ageing time of 0 disables linuxbridge MAC learning

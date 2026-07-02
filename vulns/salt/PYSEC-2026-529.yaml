@@ -1,23 +1,44 @@
-id: PYSEC-2026-529
-published: "2026-06-29T11:50:38.396059Z"
-modified: "2026-07-02T12:33:00Z"
-aliases:
-- CVE-2024-38824
-- GHSA-8pcp-r83j-fc92
-summary: Salt vulnerable to directory traversal attack in file receiving method
-details: Directory traversal vulnerability in recv_file method allows arbitrary files to be written to the master cache directory.
 affected:
 - package:
     ecosystem: PyPI
     name: salt
     purl: pkg:pypi/salt
   ranges:
-  - type: ECOSYSTEM
-    events:
+  - events:
     - introduced: 3006.0rc1
     - fixed: '3006.12'
     - introduced: 3007.0rc1
     - fixed: '3007.4'
+    type: ECOSYSTEM
+  versions:
+  - '3006.0'
+  - 3006.0rc1
+  - 3006.0rc2
+  - 3006.0rc3
+  - '3006.1'
+  - '3006.10'
+  - '3006.11'
+  - '3006.2'
+  - '3006.3'
+  - '3006.4'
+  - '3006.5'
+  - '3006.6'
+  - '3006.7'
+  - '3006.8'
+  - '3006.9'
+  - '3007.0'
+  - 3007.0rc1
+  - '3007.1'
+  - '3007.2'
+  - '3007.3'
+aliases:
+- CVE-2024-38824
+- GHSA-8pcp-r83j-fc92
+details: Directory traversal vulnerability in recv_file method allows arbitrary files
+  to be written to the master cache directory.
+id: PYSEC-2026-529
+modified: '2026-07-02T12:46:49.599506Z'
+published: '2026-06-29T11:50:38.396059Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-38824
@@ -34,5 +55,6 @@ references:
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-8pcp-r83j-fc92
 severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N
+- score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N
+  type: CVSS_V3
+summary: Salt vulnerable to directory traversal attack in file receiving method
