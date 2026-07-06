@@ -1,0 +1,38 @@
+id: PYSEC-0000-tripleo-heat-templates-GHSA-hm3x-jwwf-jpr9
+modified: '2026-07-02T14:13:17.118333Z'
+published: '2026-07-02T14:13:17.118333Z'
+aliases:
+- CVE-2021-4180
+- GHSA-hm3x-jwwf-jpr9
+summary: Exposure of Sensitive Information to an Unauthorized Actor in OpenStack tripleo-heat-templates
+details: An information exposure flaw in openstack-tripleo-heat-templates allows an external user to discover the internal IP or hostname. An attacker could exploit this by checking the `www_authenticate_uri parameter` (which is visible to all end users) in configuration files. This would give sensitive information which may aid in additional system exploitation. A patch is available on the `master` branch and anticipated to be part of version 11.6.1.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: tripleo-heat-templates
+    purl: pkg:pypi/tripleo-heat-templates
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 11.6.1
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2021-4180
+- type: WEB
+  url: https://github.com/openstack/tripleo-heat-templates/commit/160936df134a471cfd245bd60964046027a571ea
+- type: WEB
+  url: https://github.com/openstack/tripleo-heat-templates/commit/2b9461e97fc5c4ceb0848d1cc4484f656bb85515
+- type: WEB
+  url: https://bugs.launchpad.net/tripleo/+bug/1955397
+- type: WEB
+  url: https://bugzilla.redhat.com/show_bug.cgi?id=2035793
+- type: PACKAGE
+  url: https://github.com/openstack/tripleo-heat-templates
+- type: PACKAGE
+  url: https://pypi.org/project/tripleo-heat-templates
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hm3x-jwwf-jpr9

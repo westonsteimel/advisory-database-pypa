@@ -1,0 +1,30 @@
+id: PYSEC-0000-contentful-GHSA-g5j6-r3x9-gf2m
+modified: '2026-07-02T14:13:10.258627Z'
+published: '2026-07-02T14:13:10.258627Z'
+aliases:
+- CVE-2020-13258
+- GHSA-g5j6-r3x9-gf2m
+summary: Cross-site scripting in Contentful
+details: Contentful through 2020-05-21 for Python allows reflected XSS, as demonstrated by the api parameter to the-example-app.py.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: contentful
+    purl: pkg:pypi/contentful
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.12.4
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2020-13258
+- type: WEB
+  url: https://github.com/contentful/the-example-app.py/issues/44
+- type: PACKAGE
+  url: https://pypi.org/project/contentful
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g5j6-r3x9-gf2m

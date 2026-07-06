@@ -1,0 +1,50 @@
+id: PYSEC-0000-zope2-GHSA-vh6g-786f-hxxp
+modified: '2026-07-02T14:13:17.937454Z'
+published: '2026-07-02T14:13:17.937454Z'
+aliases:
+- CVE-2011-4924
+- GHSA-vh6g-786f-hxxp
+summary: Zope XSS Vulnerability
+details: 'Cross-site scripting (XSS) vulnerability in Zope 2.8.x before 2.8.12, 2.9.x before 2.9.12, 2.10.x before 2.10.11, 2.11.x before 2.11.6, and 2.12.x before 2.12.3, 3.1.1 through 3.4.1. allows remote attackers to inject arbitrary web script or HTML via vectors related to the way error messages perform sanitization. NOTE: this issue exists because of an incomplete fix for CVE-2010-1104'
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: zope2
+    purl: pkg:pypi/zope2
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.12.22
+    - introduced: 2.13.0a1
+    - fixed: 2.13.12
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2011-4924
+- type: WEB
+  url: https://github.com/zopefoundation/Zope/commit/37e4ea774acc668f6b430a45a6ab1e359710f590
+- type: WEB
+  url: https://github.com/zopefoundation/Zope/commit/a0655194cb39ad88ce3323a3e489927c5f979c44
+- type: WEB
+  url: https://access.redhat.com/security/cve/cve-2011-4924
+- type: WEB
+  url: https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-4924
+- type: PACKAGE
+  url: https://github.com/zopefoundation/Zope
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2011-4924
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2012/01/19/16
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2012/01/19/17
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2012/01/19/18
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2012/01/19/19
+- type: PACKAGE
+  url: https://pypi.org/project/zope2
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vh6g-786f-hxxp
