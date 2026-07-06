@@ -1,24 +1,13 @@
 id: PYSEC-0000-zope2-GHSA-5r4x-qc7q-vj27
-modified: '2026-07-02T14:13:21.447849Z'
-published: '2026-07-02T14:13:21.447849Z'
+summary: Zope Cross-site scripting (XSS) vulnerability in ZMI pages
+details: Cross-site scripting (XSS) vulnerability in ZMI pages that use the manage_tabs_message
+  in Zope 2.11.4, 2.11.2, 2.10.9, 2.10.7, 2.10.6, 2.10.5, 2.10.4, 2.10.2, 2.10.1,
+  2.12.
 aliases:
 - CVE-2009-5145
 - GHSA-5r4x-qc7q-vj27
-summary: Zope Cross-site scripting (XSS) vulnerability in ZMI pages
-details: Cross-site scripting (XSS) vulnerability in ZMI pages that use the manage_tabs_message in Zope 2.11.4, 2.11.2, 2.10.9, 2.10.7, 2.10.6, 2.10.5, 2.10.4, 2.10.2, 2.10.1, 2.12.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: zope2
-    purl: pkg:pypi/zope2
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 2.12.5
+modified: '2026-07-06T07:37:36.122428Z'
+published: '2026-07-02T14:13:21.447849Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2009-5145
@@ -40,3 +29,31 @@ references:
   url: https://pypi.org/project/zope2
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-5r4x-qc7q-vj27
+affected:
+- package:
+    name: zope2
+    ecosystem: PyPI
+    purl: pkg:pypi/zope2
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.12.5
+  versions:
+  - 2.12.0
+  - 2.12.0.a1
+  - 2.12.0a2
+  - 2.12.0a3
+  - 2.12.0a4
+  - 2.12.0b1
+  - 2.12.0b2
+  - 2.12.0b3
+  - 2.12.0b4
+  - 2.12.0c1
+  - 2.12.1
+  - 2.12.2
+  - 2.12.3
+  - 2.12.4
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N

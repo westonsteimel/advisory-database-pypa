@@ -1,22 +1,12 @@
 id: PYSEC-0000-mailman-GHSA-hj4h-vqpq-95wg
-modified: '2026-07-02T14:13:18.155048Z'
-published: '2026-07-02T14:13:18.155048Z'
+summary: Mailman Sensitive Information Disclosure
+details: Mailman before 2.1.5 allows remote attackers to obtain user passwords via
+  a crafted email request to the Mailman server.
 aliases:
 - CVE-2004-0412
 - GHSA-hj4h-vqpq-95wg
-summary: Mailman Sensitive Information Disclosure
-details: Mailman before 2.1.5 allows remote attackers to obtain user passwords via a crafted email request to the Mailman server.
-severity: []
-affected:
-- package:
-    ecosystem: PyPI
-    name: mailman
-    purl: pkg:pypi/mailman
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 2.1.5
+modified: '2026-07-06T07:36:49.646916Z'
+published: '2026-07-02T14:13:18.155048Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2004-0412
@@ -44,3 +34,15 @@ references:
   url: https://pypi.org/project/mailman
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-hj4h-vqpq-95wg
+affected:
+- package:
+    name: mailman
+    ecosystem: PyPI
+    purl: pkg:pypi/mailman
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.1.5
+  versions:
+  - 3.0.0b3-

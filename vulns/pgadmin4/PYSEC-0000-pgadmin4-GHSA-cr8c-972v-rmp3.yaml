@@ -1,24 +1,18 @@
 id: PYSEC-0000-pgadmin4-GHSA-cr8c-972v-rmp3
-modified: '2026-07-02T14:13:16.698617Z'
-published: '2026-07-02T14:13:16.698617Z'
+summary: pgAdmin 4 Path Traversal vulnerability
+details: When run in server mode, pgAdmin 4 allows users to store files on the server
+  under individual storage directories. Files such as SQL scripts may be uploaded
+  through the user interface. The URI to which upload requests are made fails to validate
+  the upload path to prevent path traversal techniques being used to store files outside
+  of the storage directory. A malicious, but authorised and authenticated user can
+  construct an HTTP request using their existing CSRF token and session cookie to
+  manually upload files to any location that the operating system user account under
+  which pgAdmin is running has permission to write.
 aliases:
 - CVE-2022-0959
 - GHSA-cr8c-972v-rmp3
-summary: pgAdmin 4 Path Traversal vulnerability
-details: When run in server mode, pgAdmin 4 allows users to store files on the server under individual storage directories. Files such as SQL scripts may be uploaded through the user interface. The URI to which upload requests are made fails to validate the upload path to prevent path traversal techniques being used to store files outside of the storage directory. A malicious, but authorised and authenticated user can construct an HTTP request using their existing CSRF token and session cookie to manually upload files to any location that the operating system user account under which pgAdmin is running has permission to write.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: pgadmin4
-    purl: pkg:pypi/pgadmin4
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: '6.7'
+modified: '2026-07-06T07:37:07.312287Z'
+published: '2026-07-02T14:13:16.698617Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2022-0959
@@ -32,3 +26,40 @@ references:
   url: https://pypi.org/project/pgadmin4
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-cr8c-972v-rmp3
+affected:
+- package:
+    name: pgadmin4
+    ecosystem: PyPI
+    purl: pkg:pypi/pgadmin4
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: '6.7'
+  versions:
+  - '4.20'
+  - '4.22'
+  - '4.23'
+  - '4.24'
+  - '4.25'
+  - '4.26'
+  - '4.27'
+  - '4.28'
+  - '4.29'
+  - '4.30'
+  - '5.0'
+  - '5.1'
+  - '5.2'
+  - '5.3'
+  - '5.4'
+  - '5.5'
+  - '5.6'
+  - '5.7'
+  - '6.2'
+  - '6.3'
+  - '6.4'
+  - '6.5'
+  - '6.6'
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N

@@ -1,22 +1,14 @@
 id: PYSEC-0000-codechecker-GHSA-fxmx-pfm2-85m2
-modified: '2026-07-02T14:13:14.739420Z'
-published: '2026-07-02T14:13:14.739420Z'
+summary: Cross-site Scripting in Ericsson CodeChecker
+details: In Ericsson CodeChecker prior to 6.18.2, a Stored Cross-site scripting (XSS)
+  vulnerability in the comments component of the reports viewer allows remote attackers
+  to inject arbitrary web script or HTML via the POST JSON data of the /CodeCheckerService
+  API.
 aliases:
 - CVE-2021-44217
 - GHSA-fxmx-pfm2-85m2
-summary: Cross-site Scripting in Ericsson CodeChecker
-details: In Ericsson CodeChecker prior to 6.18.2, a Stored Cross-site scripting (XSS) vulnerability in the comments component of the reports viewer allows remote attackers to inject arbitrary web script or HTML via the POST JSON data of the /CodeCheckerService API.
-severity: []
-affected:
-- package:
-    ecosystem: PyPI
-    name: codechecker
-    purl: pkg:pypi/codechecker
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 6.18.2
+modified: '2026-07-06T07:36:26.124397Z'
+published: '2026-07-02T14:13:14.739420Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2021-44217
@@ -42,3 +34,19 @@ references:
   url: https://pypi.org/project/codechecker
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-fxmx-pfm2-85m2
+affected:
+- package:
+    name: codechecker
+    ecosystem: PyPI
+    purl: pkg:pypi/codechecker
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 6.18.2
+  versions:
+  - 6.16.0
+  - 6.16.0a1
+  - 6.17.0
+  - 6.18.0
+  - 6.18.1

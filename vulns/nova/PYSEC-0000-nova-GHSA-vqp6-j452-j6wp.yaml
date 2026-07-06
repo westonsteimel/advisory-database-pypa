@@ -1,28 +1,13 @@
 id: PYSEC-0000-nova-GHSA-vqp6-j452-j6wp
-modified: '2026-07-02T14:13:15.447305Z'
-published: '2026-07-02T14:13:15.447305Z'
+summary: Open Redirect in CPython that affects users of OpenStack Nova
+details: A vulnerability was found in CPython which is used by openstack-nova's console
+  proxy, noVNC. By crafting a malicious URL, noVNC could be made to redirect to any
+  desired URL.
 aliases:
 - CVE-2021-3654
 - GHSA-vqp6-j452-j6wp
-summary: Open Redirect in CPython that affects users of OpenStack Nova
-details: A vulnerability was found in CPython which is used by openstack-nova's console proxy, noVNC. By crafting a malicious URL, noVNC could be made to redirect to any desired URL.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: nova
-    purl: pkg:pypi/nova
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 21.2.3
-    - introduced: 22.0.0
-    - fixed: 22.2.3
-    - introduced: 23.0.0
-    - fixed: 23.0.3
+modified: '2026-07-06T07:36:58.527262Z'
+published: '2026-07-02T14:13:15.447305Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2021-3654
@@ -48,3 +33,82 @@ references:
   url: https://pypi.org/project/nova
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-vqp6-j452-j6wp
+affected:
+- package:
+    name: nova
+    ecosystem: PyPI
+    purl: pkg:pypi/nova
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 21.2.3
+    - introduced: 22.0.0
+    - fixed: 22.2.3
+    - introduced: 23.0.0
+    - fixed: 23.0.3
+  versions:
+  - 15.1.5
+  - 16.1.6
+  - 16.1.7
+  - 16.1.8
+  - 17.0.10
+  - 17.0.11
+  - 17.0.12
+  - 17.0.13
+  - 17.0.7
+  - 17.0.8
+  - 17.0.9
+  - 18.0.2
+  - 18.0.3
+  - 18.1.0
+  - 18.2.0
+  - 18.2.1
+  - 18.2.2
+  - 18.2.3
+  - 18.3.0
+  - 19.0.0
+  - 19.0.0.0rc1
+  - 19.0.0.0rc2
+  - 19.0.1
+  - 19.0.2
+  - 19.0.3
+  - 19.1.0
+  - 19.2.0
+  - 19.3.0
+  - 19.3.1
+  - 19.3.2
+  - 20.0.0
+  - 20.0.0.0rc1
+  - 20.0.0.0rc2
+  - 20.0.1
+  - 20.1.0
+  - 20.1.1
+  - 20.2.0
+  - 20.3.0
+  - 20.4.0
+  - 20.4.1
+  - 20.5.0
+  - 20.6.0
+  - 20.6.1
+  - 21.0.0
+  - 21.0.0.0rc1
+  - 21.0.0.0rc2
+  - 21.1.0
+  - 21.1.1
+  - 21.1.2
+  - 21.2.0
+  - 21.2.1
+  - 21.2.2
+  - 22.0.0
+  - 22.0.1
+  - 22.1.0
+  - 22.2.0
+  - 22.2.1
+  - 22.2.2
+  - 23.0.0
+  - 23.0.1
+  - 23.0.2
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N

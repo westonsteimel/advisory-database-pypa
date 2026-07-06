@@ -1,26 +1,13 @@
 id: PYSEC-0000-airflow-GHSA-q3p4-gw7r-wqjc
-modified: '2026-07-02T14:13:09.589522Z'
-published: '2026-07-02T14:13:09.589522Z'
+summary: Apache Airflow vulnerable to XSS and local file disclosure
+details: A malicious admin user could edit the state of objects in the Airflow metadata
+  database to execute arbitrary javascript on certain page views. This also presented
+  a Local File Disclosure vulnerability to any file readable by the webserver process.
 aliases:
 - CVE-2019-12417
 - GHSA-q3p4-gw7r-wqjc
-summary: Apache Airflow vulnerable to XSS and local file disclosure
-details: A malicious admin user could edit the state of objects in the Airflow metadata database to execute arbitrary javascript on certain page views. This also presented a Local File Disclosure vulnerability to any file readable by the webserver process.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N
-- type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: airflow
-    purl: pkg:pypi/airflow
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 1.10.6
+modified: '2026-07-06T07:36:16.201481Z'
+published: '2026-07-02T14:13:09.589522Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2019-12417
@@ -36,3 +23,20 @@ references:
   url: https://lists.apache.org/thread.html/f3aa5ff9c7cdb5424b6463c9013f6cf5db83d26c66ea77130cbbe1bc@%3Cusers.airflow.apache.org%3E
 - type: PACKAGE
   url: https://pypi.org/project/airflow
+affected:
+- package:
+    name: airflow
+    ecosystem: PyPI
+    purl: pkg:pypi/airflow
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.10.6
+  versions:
+  - '0.6'
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N

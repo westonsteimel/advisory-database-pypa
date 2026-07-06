@@ -1,22 +1,13 @@
 id: PYSEC-0000-onionshare-cli-GHSA-6rvj-pw9w-jcvc
-modified: '2026-07-02T14:13:13.896919Z'
-published: '2026-07-02T14:13:13.896919Z'
+summary: Information disclosure vulnerability in OnionShare
+details: 'An information disclosure vulnerability in OnionShare 2.3 before 2.4 allows
+  remote unauthenticated attackers to retrieve the full list of participants of a
+  non-public OnionShare node via the --chat feature. '
 aliases:
 - CVE-2021-41867
 - GHSA-6rvj-pw9w-jcvc
-summary: Information disclosure vulnerability in OnionShare
-details: 'An information disclosure vulnerability in OnionShare 2.3 before 2.4 allows remote unauthenticated attackers to retrieve the full list of participants of a non-public OnionShare node via the --chat feature. '
-severity: []
-affected:
-- package:
-    ecosystem: PyPI
-    name: onionshare-cli
-    purl: pkg:pypi/onionshare-cli
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '2.3'
-    - fixed: '2.4'
+modified: '2026-07-06T07:36:59.753847Z'
+published: '2026-07-02T14:13:13.896919Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2021-41867
@@ -30,3 +21,18 @@ references:
   url: https://pypi.org/project/onionshare-cli
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-6rvj-pw9w-jcvc
+affected:
+- package:
+    name: onionshare-cli
+    ecosystem: PyPI
+    purl: pkg:pypi/onionshare-cli
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '2.3'
+    - fixed: '2.4'
+  versions:
+  - '2.3'
+  - 2.3.1
+  - 2.3.2
+  - 2.3.3
