@@ -1,22 +1,13 @@
 id: PYSEC-0000-cobbler-GHSA-p8w2-f44p-fmcj
-modified: '2026-07-06T08:03:24.945214Z'
-published: '2026-07-06T08:03:24.945214Z'
+summary: Cobbler Web Interface Kickstart Template Remote Privilege Escalation Vulnerability
+details: The web interface (CobblerWeb) in Cobbler before 1.2.9 allows remote authenticated
+  users to execute arbitrary Python code with the root privileges in cobblerd by editing
+  a Cheetah kickstart template to import arbitrary Python modules.
 aliases:
 - CVE-2008-6954
 - GHSA-p8w2-f44p-fmcj
-summary: Cobbler Web Interface Kickstart Template Remote Privilege Escalation Vulnerability
-details: The web interface (CobblerWeb) in Cobbler before 1.2.9 allows remote authenticated users to execute arbitrary Python code with the root privileges in cobblerd by editing a Cheetah kickstart template to import arbitrary Python modules.
-severity: []
-affected:
-- package:
-    ecosystem: PyPI
-    name: cobbler
-    purl: pkg:pypi/cobbler
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 1.2.9
+modified: '2026-07-07T11:30:29.626465Z'
+published: '2026-07-06T08:03:24.945214Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2008-6954
@@ -40,3 +31,15 @@ references:
   url: https://pypi.org/project/cobbler
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-p8w2-f44p-fmcj
+affected:
+- package:
+    name: cobbler
+    ecosystem: PyPI
+    purl: pkg:pypi/cobbler
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.2.9
+  versions:
+  - 0.6.3-2

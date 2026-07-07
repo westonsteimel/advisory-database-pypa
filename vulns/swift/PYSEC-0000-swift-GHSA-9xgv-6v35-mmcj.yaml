@@ -1,22 +1,13 @@
 id: PYSEC-0000-swift-GHSA-9xgv-6v35-mmcj
-modified: '2026-07-06T08:03:23.593246Z'
-published: '2026-07-06T08:03:23.593246Z'
+summary: OpenStack Swift Unchecked user input in XML responses
+details: XML injection vulnerability in account/utils.py in OpenStack Swift Folsom,
+  Grizzly, and Havana allows attackers to trigger invalid or spoofed Swift responses
+  via an account name.
 aliases:
 - CVE-2013-2161
 - GHSA-9xgv-6v35-mmcj
-summary: OpenStack Swift Unchecked user input in XML responses
-details: XML injection vulnerability in account/utils.py in OpenStack Swift Folsom, Grizzly, and Havana allows attackers to trigger invalid or spoofed Swift responses via an account name.
-severity: []
-affected:
-- package:
-    ecosystem: PyPI
-    name: swift
-    purl: pkg:pypi/swift
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 1.9.0
+modified: '2026-07-07T11:31:08.918396Z'
+published: '2026-07-06T08:03:23.593246Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2013-2161
@@ -44,3 +35,15 @@ references:
   url: https://pypi.org/project/swift
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-9xgv-6v35-mmcj
+affected:
+- package:
+    name: swift
+    ecosystem: PyPI
+    purl: pkg:pypi/swift
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.9.0
+  versions:
+  - 1.0.2

@@ -1,24 +1,14 @@
 id: PYSEC-0000-mei2volpiano-GHSA-6xm7-3cc5-47f9
-modified: '2026-07-06T08:03:32.548632Z'
-published: '2026-07-06T08:03:32.548632Z'
+summary: MEI2Volpiano is vulnerable to XML External Entity (XXE), leading to a Denial
+  of Service (DoS)
+details: DDMAL MEI2Volpiano 0.8.2 is vulnerable to XML External Entity (XXE), leading
+  to a Denial of Service. This occurs due to the usage of the unsafe 'xml.etree' library
+  to parse untrusted XML input.
 aliases:
 - CVE-2022-37189
 - GHSA-6xm7-3cc5-47f9
-summary: MEI2Volpiano is vulnerable to XML External Entity (XXE), leading to a Denial of Service (DoS)
-details: DDMAL MEI2Volpiano 0.8.2 is vulnerable to XML External Entity (XXE), leading to a Denial of Service. This occurs due to the usage of the unsafe 'xml.etree' library to parse untrusted XML input.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-affected:
-- package:
-    ecosystem: PyPI
-    name: mei2volpiano
-    purl: pkg:pypi/mei2volpiano
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - last_affected: 0.8.2
+modified: '2026-07-07T11:30:45.109619Z'
+published: '2026-07-06T08:03:32.548632Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2022-37189
@@ -34,3 +24,26 @@ references:
   url: https://pypi.org/project/mei2volpiano
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-6xm7-3cc5-47f9
+affected:
+- package:
+    name: mei2volpiano
+    ecosystem: PyPI
+    purl: pkg:pypi/mei2volpiano
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 0.8.2
+  versions:
+  - 0.1.0
+  - 0.1.1
+  - 0.6.0
+  - 0.6.1
+  - 0.7.0
+  - 0.7.3
+  - 0.8.0
+  - 0.8.1
+  - 0.8.2
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

@@ -1,34 +1,24 @@
 id: PYSEC-0000-saleor-GHSA-r8qr-wwg3-2r85
-modified: '2026-07-07T10:17:28.063673Z'
-published: '2026-07-07T10:17:28.063673Z'
+summary: Saleor has Staff-Authenticated Error Message Information Disclosure Vulnerability
+  via Python Exceptions
+details: |
+  ### Impact
+  Some internal Python exceptions are not handled properly and thus are returned in API as error messages. Some messages might contain sensitive information like user email address in staff-authenticated requests.
+
+  This issue has been patched in versions 3.1.48, 3.7.59, 3.8.30, 3.9.27, 3.10.14 and 3.11.12.
+
+  ### Workarounds
+  None
+
+  ### For more information
+  If you have any questions or comments about this advisory:
+  * Open a discussion at https://github.com/saleor/saleor/discussions
+  * Email us at [hello@saleor.io](mailto:hello@saleor.io)
 aliases:
 - CVE-2023-26051
 - GHSA-r8qr-wwg3-2r85
-summary: Saleor has Staff-Authenticated Error Message Information Disclosure Vulnerability via Python Exceptions
-details: "### Impact\nSome internal Python exceptions are not handled properly and thus are returned in API as error messages. Some messages might contain sensitive information like user email address in staff-authenticated requests.\n\nThis issue has been patched in versions 3.1.48, 3.7.59, 3.8.30, 3.9.27, 3.10.14 and 3.11.12.\n\n### Workarounds\nNone\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open a discussion at https://github.com/saleor/saleor/discussions\n* Email us at [hello@saleor.io](mailto:hello@saleor.io)\n"
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: saleor
-    purl: pkg:pypi/saleor
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: 2.0.0
-    - fixed: 3.1.48
-    - introduced: 3.7.0
-    - fixed: 3.7.59
-    - introduced: 3.8.0
-    - fixed: 3.8.30
-    - introduced: 3.9.0
-    - fixed: 3.9.27
-    - introduced: 3.10.0
-    - fixed: 3.10.14
-    - introduced: 3.11.0
-    - fixed: 3.11.12
+modified: '2026-07-07T11:31:06.545610Z'
+published: '2026-07-07T10:17:28.063673Z'
 references:
 - type: WEB
   url: https://github.com/saleor/saleor/security/advisories/GHSA-r8qr-wwg3-2r85
@@ -54,3 +44,28 @@ references:
   url: https://pypi.org/project/saleor
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-r8qr-wwg3-2r85
+affected:
+- package:
+    name: saleor
+    ecosystem: PyPI
+    purl: pkg:pypi/saleor
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 2.0.0
+    - fixed: 3.1.48
+    - introduced: 3.7.0
+    - fixed: 3.7.59
+    - introduced: 3.8.0
+    - fixed: 3.8.30
+    - introduced: 3.9.0
+    - fixed: 3.9.27
+    - introduced: 3.10.0
+    - fixed: 3.10.14
+    - introduced: 3.11.0
+    - fixed: 3.11.12
+  versions:
+  - 2.10.1
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N

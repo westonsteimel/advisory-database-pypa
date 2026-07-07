@@ -1,22 +1,13 @@
 id: PYSEC-0000-soappy-GHSA-52wr-3vww-rmpq
-modified: '2026-07-06T08:03:26.244644Z'
-published: '2026-07-06T08:03:26.244644Z'
+summary: SOAPpy vulnerable to XML External Entity attacks
+details: SOAPpy 0.12.5 allows remote attackers to read arbitrary files via a SOAP
+  request containing an external entity declaration in conjunction with an entity
+  reference, related to an XML External Entity (XXE) issue.
 aliases:
 - CVE-2014-3242
 - GHSA-52wr-3vww-rmpq
-summary: SOAPpy vulnerable to XML External Entity attacks
-details: SOAPpy 0.12.5 allows remote attackers to read arbitrary files via a SOAP request containing an external entity declaration in conjunction with an entity reference, related to an XML External Entity (XXE) issue.
-severity: []
-affected:
-- package:
-    ecosystem: PyPI
-    name: soappy
-    purl: pkg:pypi/soappy
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - last_affected: 0.12.5
+modified: '2026-07-07T11:31:08.235939Z'
+published: '2026-07-06T08:03:26.244644Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2014-3242
@@ -36,3 +27,18 @@ references:
   url: https://pypi.org/project/soappy
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-52wr-3vww-rmpq
+affected:
+- package:
+    name: soappy
+    ecosystem: PyPI
+    purl: pkg:pypi/soappy
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 0.12.5
+  versions:
+  - 0.12.1
+  - 0.12.3
+  - 0.12.4
+  - 0.12.5

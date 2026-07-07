@@ -1,24 +1,22 @@
 id: PYSEC-0000-kiwitcms-GHSA-7968-h4m4-ghm9
-modified: '2026-07-07T10:17:27.708610Z'
-published: '2026-07-07T10:17:27.708610Z'
+summary: No protection against brute-force attacks on login page
+details: |
+  ### Impact
+  Previous versions of Kiwi TCMS do not impose rate limits which makes it easier to attempt brute-force attacks against the login page.
+
+  ### Patches
+  Users should upgrade to v12.0 or later.
+
+  ### Workarounds
+  Users may install and configure a rate-limiting proxy in front of Kiwi TCMS. For example nginx.
+
+  ### References
+  [Disclosed by spyata](https://huntr.dev/bounties/2b1a9be9-45e9-490b-8de0-26a492e79795/)
 aliases:
 - CVE-2023-25156
 - GHSA-7968-h4m4-ghm9
-summary: No protection against brute-force attacks on login page
-details: "### Impact\nPrevious versions of Kiwi TCMS do not impose rate limits which makes it easier to attempt brute-force attacks against the login page.\n\n### Patches\nUsers should upgrade to v12.0 or later.\n\n### Workarounds\nUsers may install and configure a rate-limiting proxy in front of Kiwi TCMS. For example nginx.\n\n### References\n[Disclosed by spyata](https://huntr.dev/bounties/2b1a9be9-45e9-490b-8de0-26a492e79795/)\n"
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-affected:
-- package:
-    ecosystem: PyPI
-    name: kiwitcms
-    purl: pkg:pypi/kiwitcms
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: '12.0'
+modified: '2026-07-07T11:30:40.439197Z'
+published: '2026-07-07T10:17:27.708610Z'
 references:
 - type: WEB
   url: https://github.com/kiwitcms/Kiwi/security/advisories/GHSA-7968-h4m4-ghm9
@@ -36,3 +34,61 @@ references:
   url: https://pypi.org/project/kiwitcms
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-7968-h4m4-ghm9
+affected:
+- package:
+    name: kiwitcms
+    ecosystem: PyPI
+    purl: pkg:pypi/kiwitcms
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: '12.0'
+  versions:
+  - '10.0'
+  - '10.1'
+  - '10.2'
+  - '10.3'
+  - 10.3.999
+  - '10.4'
+  - '10.5'
+  - '11.0'
+  - '11.1'
+  - '11.3'
+  - '11.4'
+  - '11.5'
+  - '11.6'
+  - '11.7'
+  - '6.10'
+  - '6.11'
+  - 6.2.1
+  - '6.3'
+  - '6.4'
+  - '6.5'
+  - 6.5.3
+  - '6.6'
+  - '6.7'
+  - '6.8'
+  - '6.9'
+  - '7.0'
+  - '7.1'
+  - '7.2'
+  - 7.2.1
+  - '7.3'
+  - '8.0'
+  - '8.1'
+  - 8.1.99
+  - '8.2'
+  - '8.3'
+  - '8.4'
+  - '8.5'
+  - '8.6'
+  - 8.6.1
+  - '8.7'
+  - '8.8'
+  - '8.9'
+  - '9.0'
+  - '9.999'
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

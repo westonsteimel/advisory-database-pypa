@@ -1,24 +1,12 @@
 id: PYSEC-0000-web2py-GHSA-pvcp-73cg-6f77
-modified: '2026-07-06T08:03:25.188081Z'
-published: '2026-07-06T08:03:25.188081Z'
+summary: Web2py Reflected XSS vulnerability
+details: Web2py versions 2.14.5 and below was affected by Reflected XSS vulnerability,
+  which allows an attacker to perform an XSS attack on logged in user (admin).
 aliases:
 - CVE-2016-4807
 - GHSA-pvcp-73cg-6f77
-summary: Web2py Reflected XSS vulnerability
-details: Web2py versions 2.14.5 and below was affected by Reflected XSS vulnerability, which allows an attacker to perform an XSS attack on logged in user (admin).
-severity:
-- type: CVSS_V3
-  score: CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: web2py
-    purl: pkg:pypi/web2py
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - last_affected: 2.14.5
+modified: '2026-07-07T11:31:26.091638Z'
+published: '2026-07-06T08:03:25.188081Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2016-4807
@@ -32,3 +20,20 @@ references:
   url: https://pypi.org/project/web2py
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-pvcp-73cg-6f77
+affected:
+- package:
+    name: web2py
+    ecosystem: PyPI
+    purl: pkg:pypi/web2py
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 2.14.5
+  versions:
+  - 1.96.4
+  - 1.98.2
+  - 2.1.1
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N

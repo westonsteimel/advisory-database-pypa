@@ -1,24 +1,14 @@
 id: PYSEC-0000-django-GHSA-x64m-686f-fmm3
-modified: '2026-07-06T08:03:27.102866Z'
-published: '2026-07-06T08:03:27.102866Z'
+summary: XML External Entity (XXE) in Django
+details: The XML libraries for Python as used in OpenStack Keystone Essex and Folsom,
+  Django, and possibly other products allow remote attackers to read arbitrary files
+  via an XML external entity declaration in conjunction with an entity reference,
+  aka an XML External Entity (XXE) attack.
 aliases:
 - CVE-2013-1665
 - GHSA-x64m-686f-fmm3
-summary: XML External Entity (XXE) in Django
-details: The XML libraries for Python as used in OpenStack Keystone Essex and Folsom, Django, and possibly other products allow remote attackers to read arbitrary files via an XML external entity declaration in conjunction with an entity reference, aka an XML External Entity (XXE) attack.
-severity: []
-affected:
-- package:
-    ecosystem: PyPI
-    name: django
-    purl: pkg:pypi/django
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: 1.3.0
-    - fixed: 1.3.6
-    - introduced: 1.4.0
-    - fixed: 1.4.4
+modified: '2026-07-07T11:30:32.415937Z'
+published: '2026-07-06T08:03:27.102866Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2013-1665
@@ -52,3 +42,26 @@ references:
   url: https://pypi.org/project/django
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-x64m-686f-fmm3
+affected:
+- package:
+    name: django
+    ecosystem: PyPI
+    purl: pkg:pypi/django
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 1.3.0
+    - fixed: 1.3.6
+    - introduced: 1.4.0
+    - fixed: 1.4.4
+  versions:
+  - '1.3'
+  - 1.3.1
+  - 1.3.2
+  - 1.3.3
+  - 1.3.4
+  - 1.3.5
+  - '1.4'
+  - 1.4.1
+  - 1.4.2
+  - 1.4.3

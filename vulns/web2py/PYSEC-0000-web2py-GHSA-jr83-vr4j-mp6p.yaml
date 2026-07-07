@@ -1,24 +1,13 @@
 id: PYSEC-0000-web2py-GHSA-jr83-vr4j-mp6p
-modified: '2026-07-06T08:03:21.683498Z'
-published: '2026-07-06T08:03:21.683498Z'
+summary: web2py exposure of sensitive information
+details: 'web2py before 2.14.2 allows remote attackers to obtain the session_cookie_key
+  value via a direct request to examples/simple_examples/status.  NOTE: this issue
+  can be leveraged by remote attackers to execute arbitrary code using CVE-2016-3957.'
 aliases:
 - CVE-2016-3954
 - GHSA-jr83-vr4j-mp6p
-summary: web2py exposure of sensitive information
-details: 'web2py before 2.14.2 allows remote attackers to obtain the session_cookie_key value via a direct request to examples/simple_examples/status.  NOTE: this issue can be leveraged by remote attackers to execute arbitrary code using CVE-2016-3957.'
-severity:
-- type: CVSS_V3
-  score: CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: web2py
-    purl: pkg:pypi/web2py
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 2.14.2
+modified: '2026-07-07T11:31:26.039703Z'
+published: '2026-07-06T08:03:21.683498Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2016-3954
@@ -34,3 +23,20 @@ references:
   url: https://pypi.org/project/web2py
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-jr83-vr4j-mp6p
+affected:
+- package:
+    name: web2py
+    ecosystem: PyPI
+    purl: pkg:pypi/web2py
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.14.2
+  versions:
+  - 1.96.4
+  - 1.98.2
+  - 2.1.1
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N

@@ -1,22 +1,14 @@
 id: PYSEC-0000-neutron-GHSA-hhpj-6pj7-wpx5
-modified: '2026-07-06T08:03:25.638146Z'
-published: '2026-07-06T08:03:25.638146Z'
+summary: OpenStack Neutron Race condition vulnerability
+details: 'Race condition in OpenStack Neutron before 2014.2.4 and 2015.1 before 2015.1.2,
+  when using the ML2 plugin or the security groups AMQP API, allows remote authenticated
+  users to bypass IP anti-spoofing controls by changing the device owner of a port
+  to start with network: before the security group rules are applied.'
 aliases:
 - CVE-2015-5240
 - GHSA-hhpj-6pj7-wpx5
-summary: OpenStack Neutron Race condition vulnerability
-details: 'Race condition in OpenStack Neutron before 2014.2.4 and 2015.1 before 2015.1.2, when using the ML2 plugin or the security groups AMQP API, allows remote authenticated users to bypass IP anti-spoofing controls by changing the device owner of a port to start with network: before the security group rules are applied.'
-severity: []
-affected:
-- package:
-    ecosystem: PyPI
-    name: neutron
-    purl: pkg:pypi/neutron
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 7.0.0
+modified: '2026-07-07T11:30:48.203021Z'
+published: '2026-07-06T08:03:25.638146Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2015-5240
@@ -46,3 +38,15 @@ references:
   url: https://pypi.org/project/neutron
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-hhpj-6pj7-wpx5
+affected:
+- package:
+    name: neutron
+    ecosystem: PyPI
+    purl: pkg:pypi/neutron
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 7.0.0
+  versions:
+  - '0.0'

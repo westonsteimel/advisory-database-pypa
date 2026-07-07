@@ -1,24 +1,15 @@
 id: PYSEC-0000-opcua-GHSA-mfpj-3qhm-976m
-modified: '2026-07-06T08:03:32.159974Z'
-published: '2026-07-06T08:03:32.159974Z'
+summary: Uncontrolled Resource Consumption in asyncua and opcua
+details: All versions of package opcua; all versions of package asyncua are vulnerable
+  to Denial of Service (DoS) due to a missing limitation on the number of received
+  chunks - per single session or in total for all concurrent sessions. An attacker
+  can exploit this vulnerability by sending an unlimited number of huge chunks (e.g.
+  2GB each) without sending the Final closing chunk.
 aliases:
 - CVE-2022-25304
 - GHSA-mfpj-3qhm-976m
-summary: Uncontrolled Resource Consumption in asyncua and opcua
-details: All versions of package opcua; all versions of package asyncua are vulnerable to Denial of Service (DoS) due to a missing limitation on the number of received chunks - per single session or in total for all concurrent sessions. An attacker can exploit this vulnerability by sending an unlimited number of huge chunks (e.g. 2GB each) without sending the Final closing chunk.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-affected:
-- package:
-    ecosystem: PyPI
-    name: opcua
-    purl: pkg:pypi/opcua
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - last_affected: 0.98.13
+modified: '2026-07-07T11:30:52.014451Z'
+published: '2026-07-06T08:03:32.159974Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2022-25304
@@ -36,3 +27,40 @@ references:
   url: https://pypi.org/project/opcua
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-mfpj-3qhm-976m
+affected:
+- package:
+    name: opcua
+    ecosystem: PyPI
+    purl: pkg:pypi/opcua
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 0.98.13
+  versions:
+  - 0.90.4
+  - 0.95.0
+  - 0.95.1
+  - 0.95.2
+  - 0.95.3
+  - 0.96.0.dev0
+  - 0.96.0.dev1
+  - 0.96.0.dev3
+  - 0.96.0.dev4
+  - 0.96.0.dev5
+  - 0.98.1
+  - 0.98.10
+  - 0.98.11
+  - 0.98.12
+  - 0.98.13
+  - 0.98.2
+  - 0.98.3
+  - 0.98.5
+  - 0.98.5rc0
+  - 0.98.6
+  - 0.98.7
+  - 0.98.8
+  - 0.98.9
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
