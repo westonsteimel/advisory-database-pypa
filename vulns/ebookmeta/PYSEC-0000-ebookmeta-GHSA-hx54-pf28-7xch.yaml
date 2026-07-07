@@ -1,0 +1,34 @@
+id: PYSEC-0000-ebookmeta-GHSA-hx54-pf28-7xch
+modified: '2026-07-07T14:34:34.487840Z'
+published: '2026-07-07T14:34:34.487840Z'
+aliases:
+- CVE-2024-37388
+- GHSA-hx54-pf28-7xch
+summary: ebookmeta XML External Entity vulnerability
+details: An XML External Entity (XXE) vulnerability in the `ebookmeta.get_metadata` function via lxml dependency allows attackers to access sensitive information or cause a Denial of Service (DoS) via crafted XML input.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:H/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: ebookmeta
+    purl: pkg:pypi/ebookmeta
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.2.8
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-37388
+- type: WEB
+  url: https://github.com/dnkorpushov/ebookmeta/issues/16#issue-2317712335
+- type: PACKAGE
+  url: https://github.com/dnkorpushov/ebookmeta
+- type: PACKAGE
+  url: https://pypi.org/project/ebookmeta
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hx54-pf28-7xch

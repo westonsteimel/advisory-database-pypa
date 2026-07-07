@@ -1,0 +1,36 @@
+id: PYSEC-0000-tkeasygui-GHSA-ph2w-cx28-vhrq
+modified: '2026-07-07T16:03:03.284369Z'
+published: '2026-07-07T16:03:03.284369Z'
+aliases:
+- CVE-2025-55671
+- GHSA-ph2w-cx28-vhrq
+summary: TkEasyGUI Affected by Uncontrolled Search Path Element Issue
+details: Uncontrolled search path element issue exists in TkEasyGUI versions prior to v1.0.22. If this vulnerability is exploited, arbitrary code may be executed with the privilege of running the program.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+- type: CVSS_V4
+  score: CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: tkeasygui
+    purl: pkg:pypi/tkeasygui
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.0.22
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-55671
+- type: PACKAGE
+  url: https://github.com/kujirahand/tkeasygui-python
+- type: WEB
+  url: https://github.com/kujirahand/tkeasygui-python/releases/tag/v1.0.22
+- type: WEB
+  url: https://jvn.jp/en/jp/JVN48739895
+- type: PACKAGE
+  url: https://pypi.org/project/tkeasygui
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-ph2w-cx28-vhrq

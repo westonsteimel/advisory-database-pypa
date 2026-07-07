@@ -1,0 +1,34 @@
+id: PYSEC-0000-mlflow-GHSA-qg8p-32gr-gh6x
+modified: '2026-07-07T11:45:29.212011Z'
+published: '2026-07-07T11:45:29.212011Z'
+aliases:
+- CVE-2023-6977
+- GHSA-qg8p-32gr-gh6x
+summary: MLflow Local File Disclosure Vulnerability
+details: This vulnerability enables malicious users to read sensitive files on the server.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: mlflow
+    purl: pkg:pypi/mlflow
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.9.2
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-6977
+- type: WEB
+  url: https://github.com/mlflow/mlflow/commit/4bd7f27c810ba7487d53ed5ef1038fca0f8dc28c
+- type: PACKAGE
+  url: https://github.com/mlflow/mlflow
+- type: WEB
+  url: https://huntr.com/bounties/fe53bf71-3687-4711-90df-c26172880aaf
+- type: PACKAGE
+  url: https://pypi.org/project/mlflow
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-qg8p-32gr-gh6x

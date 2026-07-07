@@ -1,0 +1,36 @@
+id: PYSEC-0000-backend-ai-GHSA-h889-475r-wfmm
+modified: '2026-07-07T16:02:54.070366Z'
+published: '2026-07-07T16:02:54.070366Z'
+aliases:
+- CVE-2025-49651
+- GHSA-h889-475r-wfmm
+summary: Backend.AI Missing Authorization vulnerability
+details: "Missing Authorization in Lablup's BackendAI allows attackers to takeover all active sessions; Accessing, stealing, or altering any data accessible in the session. This vulnerability exists in all current versions of BackendAI.\n\nNOTE: The maintainers of BackendAI do not consider this report to fit with their threat model and advise users to follow security advice from https://github.com/lablup/backend.ai/pull/7587 in their instances to protect themselves from the conditions that would lead to the situation described in the CVE record."
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: backend-ai
+    purl: pkg:pypi/backend-ai
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 25.3.3
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-49651
+- type: WEB
+  url: https://github.com/lablup/backend.ai/pull/7587
+- type: PACKAGE
+  url: https://github.com/lablup/backend.ai
+- type: WEB
+  url: https://hiddenlayer.com/sai_security_advisor/2025-05-backendai-49653
+- type: WEB
+  url: https://hiddenlayer.com/sai_security_advisor/2025-06-backendai
+- type: PACKAGE
+  url: https://pypi.org/project/backend-ai
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h889-475r-wfmm

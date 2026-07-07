@@ -1,0 +1,34 @@
+id: PYSEC-0000-barbican-GHSA-6qqp-4vm3-359v
+modified: '2026-07-07T11:45:25.037925Z'
+published: '2026-07-07T11:45:25.037925Z'
+aliases:
+- CVE-2023-1633
+- GHSA-6qqp-4vm3-359v
+summary: OpenStack Barbican credential leak flaw
+details: A credentials leak flaw was found in OpenStack Barbican. This flaw allows a local authenticated attacker to read the configuration file, gaining access to sensitive credentials.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L
+affected:
+- package:
+    ecosystem: PyPI
+    name: barbican
+    purl: pkg:pypi/barbican
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 16.0.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-1633
+- type: WEB
+  url: https://access.redhat.com/security/cve/CVE-2023-1633
+- type: WEB
+  url: https://bugzilla.redhat.com/show_bug.cgi?id=2181761
+- type: PACKAGE
+  url: https://github.com/openstack/barbican
+- type: PACKAGE
+  url: https://pypi.org/project/barbican
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-6qqp-4vm3-359v

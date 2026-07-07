@@ -1,0 +1,38 @@
+id: PYSEC-0000-bigflow-GHSA-w6q2-48ch-fj26
+modified: '2026-07-07T11:45:18.103732Z'
+published: '2026-07-07T11:45:18.103732Z'
+aliases:
+- CVE-2023-25392
+- GHSA-w6q2-48ch-fj26
+summary: Allegro Tech BigFlow vulnerable to Missing SSL Certificate Validation
+details: Allegro Tech BigFlow prior to 1.6.0 is vulnerable to Missing SSL Certificate Validation.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: bigflow
+    purl: pkg:pypi/bigflow
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.6.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-25392
+- type: WEB
+  url: https://github.com/allegro/bigflow/pull/357
+- type: WEB
+  url: https://github.com/allegro/bigflow/commit/4ce197ff99bd38693dea59ab5e9b781fbcef4276
+- type: WEB
+  url: https://github.com/allegro/bigflow/commit/7e956661f76907594e8c82e8fb0af76dbea2a0fc
+- type: PACKAGE
+  url: https://github.com/allegro/bigflow
+- type: WEB
+  url: https://lutrasecurity.com/en/articles/cve-2023-25392
+- type: PACKAGE
+  url: https://pypi.org/project/bigflow
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-w6q2-48ch-fj26

@@ -1,0 +1,36 @@
+id: PYSEC-0000-pgadmin4-GHSA-9crj-hpxh-f6qg
+modified: '2026-07-07T11:45:17.667092Z'
+published: '2026-07-07T11:45:17.667092Z'
+aliases:
+- CVE-2023-0241
+- GHSA-9crj-hpxh-f6qg
+summary: 'pgAdmin 4 vulnerable to directory traversal '
+details: pgAdmin 4 versions prior to v6.19 contains a directory traversal vulnerability. A user of the product may change another user's settings or alter the database.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: pgadmin4
+    purl: pkg:pypi/pgadmin4
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: '6.19'
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-0241
+- type: WEB
+  url: https://github.com/pgadmin-org/pgadmin4/issues/5734
+- type: WEB
+  url: https://github.com/akshay-joshi/pgadmin4/commit/64d7289c5b3831137b17bb4c5022ef4f63d2ef42
+- type: WEB
+  url: https://github.com/pgadmin-org
+- type: WEB
+  url: https://jvn.jp/en/jp/JVN01398015
+- type: PACKAGE
+  url: https://pypi.org/project/pgadmin4
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9crj-hpxh-f6qg

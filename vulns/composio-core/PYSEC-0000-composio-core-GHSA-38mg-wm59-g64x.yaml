@@ -1,0 +1,34 @@
+id: PYSEC-0000-composio-core-GHSA-38mg-wm59-g64x
+modified: '2026-07-07T14:34:57.661261Z'
+published: '2026-07-07T14:34:57.661261Z'
+aliases:
+- CVE-2024-8955
+- GHSA-38mg-wm59-g64x
+summary: composio allows Server-Side Request Forgery (SSRF) in BROWSERTOOL
+details: A Server-Side Request Forgery (SSRF) vulnerability exists in composiohq/composio version v0.4.4. This vulnerability allows an attacker to read the contents of any file in the system by exploiting the BROWSERTOOL_GOTO_PAGE and BROWSERTOOL_GET_PAGE_DETAILS actions.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: composio-core
+    purl: pkg:pypi/composio-core
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 0.4.4
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-8955
+- type: PACKAGE
+  url: https://github.com/ComposioHQ/composio
+- type: WEB
+  url: https://github.com/ComposioHQ/composio/blob/master/python/composio/tools/local/browsertool/actions/goto_page.py#L1
+- type: WEB
+  url: https://huntr.com/bounties/13bc0399-2d9b-449e-95f2-6e9a7e39383d
+- type: PACKAGE
+  url: https://pypi.org/project/composio-core
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-38mg-wm59-g64x

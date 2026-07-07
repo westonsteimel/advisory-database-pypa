@@ -1,0 +1,34 @@
+id: PYSEC-0000-clearml-GHSA-cpcw-9h9m-wqw9
+modified: '2026-07-07T11:45:32.293395Z'
+published: '2026-07-07T11:45:32.293395Z'
+aliases:
+- CVE-2024-24590
+- GHSA-cpcw-9h9m-wqw9
+summary: Allegro AI ClearML vulnerable to deserialization of untrusted data
+details: Deserialization of untrusted data can occur in versions 0.17.0 to 1.14.2 of the client SDK of Allegro AI’s ClearML platform, enabling a maliciously uploaded artifact to run arbitrary code on an end user’s system when interacted with.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: clearml
+    purl: pkg:pypi/clearml
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 0.17.0
+    - fixed: 1.14.3rc0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-24590
+- type: PACKAGE
+  url: https://github.com/allegroai/clearml
+- type: WEB
+  url: https://hiddenlayer.com/research/not-so-clear-how-mlops-solutions-can-muddy-the-waters-of-your-supply-chain
+- type: PACKAGE
+  url: https://pypi.org/project/clearml
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cpcw-9h9m-wqw9
+- type: FIX
+  url: https://github.com/clearml/clearml/commit/e506831599bd8e072e5e54266abfccdfbe4be2ac

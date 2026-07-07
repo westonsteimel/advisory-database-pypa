@@ -1,0 +1,34 @@
+id: PYSEC-0000-aiohttp-GHSA-54jq-c3m8-4m76
+modified: '2026-07-07T16:03:15.611250Z'
+published: '2026-07-07T16:03:15.611250Z'
+aliases:
+- CVE-2025-69226
+- GHSA-54jq-c3m8-4m76
+summary: AIOHTTP vulnerable to brute-force leak of internal static ﬁle path components
+details: "### Summary\nPath normalization for static files prevents path traversal, but opens up the ability for an attacker to ascertain the\nexistence of absolute path components.\n\n### Impact\nIf an application uses `web.static()` (not recommended for production deployments), it may be possible for an attacker to ascertain the existence of path components.\n\n------\n\nPatch: https://github.com/aio-libs/aiohttp/commit/f2a86fd5ac0383000d1715afddfa704413f0711e"
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:U
+affected:
+- package:
+    ecosystem: PyPI
+    name: aiohttp
+    purl: pkg:pypi/aiohttp
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 3.13.3
+references:
+- type: WEB
+  url: https://github.com/aio-libs/aiohttp/security/advisories/GHSA-54jq-c3m8-4m76
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-69226
+- type: FIX
+  url: https://github.com/aio-libs/aiohttp/commit/f2a86fd5ac0383000d1715afddfa704413f0711e
+- type: PACKAGE
+  url: https://github.com/aio-libs/aiohttp
+- type: PACKAGE
+  url: https://pypi.org/project/aiohttp
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-54jq-c3m8-4m76

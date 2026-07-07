@@ -1,0 +1,34 @@
+id: PYSEC-0000-apache-superset-GHSA-hc74-9vjm-c9xv
+modified: '2026-07-07T11:45:27.902149Z'
+published: '2026-07-07T11:45:27.902149Z'
+aliases:
+- CVE-2023-42502
+- GHSA-hc74-9vjm-c9xv
+summary: Apache Superset Open Redirect vulnerability
+details: "An authenticated attacker with update datasets permission could change a dataset link to an untrusted site by spoofing the HTTP Host header, users could be redirected to this site when clicking on that specific dataset. This issue affects Apache Superset versions before 3.0.0.\n"
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: apache-superset
+    purl: pkg:pypi/apache-superset
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 3.0.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-42502
+- type: PACKAGE
+  url: https://github.com/apache/superset
+- type: WEB
+  url: https://lists.apache.org/thread/n8348f194d8o8mln3oxd0s8jdl5bxbmn
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2023/11/28/3
+- type: PACKAGE
+  url: https://pypi.org/project/apache-superset
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hc74-9vjm-c9xv

@@ -1,0 +1,34 @@
+id: PYSEC-0000-apache-superset-GHSA-8w7f-8pr9-xgwj
+modified: '2026-07-07T16:02:53.582186Z'
+published: '2026-07-07T16:02:53.582186Z'
+aliases:
+- CVE-2025-48912
+- GHSA-8w7f-8pr9-xgwj
+summary: 'Apache Superset: Improper authorization bypass on row level security via SQL Injection'
+details: "An authenticated malicious actor using specially crafted requests could bypass row level security configuration by injecting SQL into 'sqlExpression' fields. This allowed the execution of sub-queries to evade parsing defenses ultimately granting unauthorized access to data.\n\nThis issue affects Apache Superset: before 4.1.2.\n\nUsers are recommended to upgrade to version 4.1.2, which fixes the issue."
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: apache-superset
+    purl: pkg:pypi/apache-superset
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 4.1.2
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-48912
+- type: PACKAGE
+  url: https://github.com/apache/superset
+- type: WEB
+  url: https://lists.apache.org/thread/ms2t2oq218hb7l628trsogo4fj7h1135
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2025/05/30/3
+- type: PACKAGE
+  url: https://pypi.org/project/apache-superset
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8w7f-8pr9-xgwj

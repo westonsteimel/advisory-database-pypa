@@ -1,0 +1,36 @@
+id: PYSEC-0000-copyparty-GHSA-8mx2-rjh8-q3jq
+modified: '2026-07-07T16:02:59.193561Z'
+published: '2026-07-07T16:02:59.193561Z'
+aliases:
+- CVE-2025-54589
+- GHSA-8mx2-rjh8-q3jq
+summary: copyparty Reflected XSS via Filter Parameter
+details: "### Summary\nUnauthorized reflected Cross-Site-Scripting when accessing the URL for recent uploads with the `filter` parameter containing JavaScript code.\n\n### Details\nWhen accessing the recent uploads page at `/?ru`, users can filter the results using an input field at the top. This field appends a filter parameter to the URL, which reflects its value directly into a `<script>` block without proper escaping.\nThis vulnerability allows for reflected Cross-Site Scripting (XSS) and can be exploited against both authenticated and unauthenticated users, enabling unwanted actions in the victims browser.\n\n### PoC\nA URL like this will execute `alert(1)`:\n```\nhttps://127.0.0.1:3923/?ru&filter=</script><script>alert(1)</script>\n```"
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+affected:
+- package:
+    ecosystem: PyPI
+    name: copyparty
+    purl: pkg:pypi/copyparty
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.18.7
+references:
+- type: WEB
+  url: https://github.com/9001/copyparty/security/advisories/GHSA-8mx2-rjh8-q3jq
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-54589
+- type: WEB
+  url: https://github.com/9001/copyparty/commit/a8705e611d05eeb22be5d3d7d9ab5c020fe54c62
+- type: PACKAGE
+  url: https://github.com/9001/copyparty
+- type: WEB
+  url: https://github.com/9001/copyparty/releases/tag/v1.18.7
+- type: PACKAGE
+  url: https://pypi.org/project/copyparty
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8mx2-rjh8-q3jq

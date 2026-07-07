@@ -1,0 +1,32 @@
+id: PYSEC-0000-apache-superset-GHSA-4fg9-5w46-xmrj
+modified: '2026-07-07T11:45:23.466175Z'
+published: '2026-07-07T11:45:23.466175Z'
+aliases:
+- CVE-2023-36388
+- GHSA-4fg9-5w46-xmrj
+summary: Apache Superset Server Side Request Forgery vulnerability
+details: "Improper REST API permission in Apache Superset up to and including 2.1.0 allows for an authenticated Gamma users to test network connections, possible SSRF.\n\n"
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: apache-superset
+    purl: pkg:pypi/apache-superset
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.1.1
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-36388
+- type: PACKAGE
+  url: https://github.com/apache/superset
+- type: WEB
+  url: https://lists.apache.org/thread/ccmjjz4jp17yc2kcd18qshmdtf7qorfs
+- type: PACKAGE
+  url: https://pypi.org/project/apache-superset
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-4fg9-5w46-xmrj

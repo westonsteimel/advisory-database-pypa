@@ -1,0 +1,40 @@
+id: PYSEC-0000-weblate-GHSA-57jg-m997-cx3q
+modified: '2026-07-07T16:02:55.231866Z'
+published: '2026-07-07T16:02:55.231866Z'
+aliases:
+- CVE-2025-47951
+- GHSA-57jg-m997-cx3q
+summary: Weblate lacks rate limiting when verifying second factor
+details: "### Impact\n\nThe verification of the second factor was not subject to rate limiting. The absence of rate limiting on the second factor endpoint allows an attacker with valid credentials to automate OTP guessing. \n\n### Patches\n\nThis issue has been addressed in Weblate 5.12 via https://github.com/WeblateOrg/weblate/pull/14918.\n\n### References\n\nThanks to [obscuredeer](https://hackerone.com/obscuredeer) for reporting this [issue at HackerOne](https://hackerone.com/reports/3150564)."
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: weblate
+    purl: pkg:pypi/weblate
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: '5.12'
+references:
+- type: WEB
+  url: https://github.com/WeblateOrg/weblate/security/advisories/GHSA-57jg-m997-cx3q
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-47951
+- type: WEB
+  url: https://github.com/WeblateOrg/weblate/pull/14918
+- type: WEB
+  url: https://github.com/WeblateOrg/weblate/commit/f806293451248c5d95e45b3b507e9d158bc4f384
+- type: WEB
+  url: https://hackerone.com/reports/3150564
+- type: PACKAGE
+  url: https://github.com/WeblateOrg/weblate
+- type: WEB
+  url: https://github.com/WeblateOrg/weblate/releases/tag/weblate-5.12.1
+- type: PACKAGE
+  url: https://pypi.org/project/weblate
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-57jg-m997-cx3q

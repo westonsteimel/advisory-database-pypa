@@ -1,0 +1,34 @@
+id: PYSEC-0000-xml2rfc-GHSA-cfmv-h8fx-85m7
+modified: '2026-07-07T16:03:02.110703Z'
+published: '2026-07-07T16:03:02.110703Z'
+aliases:
+- CVE-2025-11058
+- GHSA-cfmv-h8fx-85m7
+summary: xml2rfc has an arbitrary file read vulnerability
+details: "### Impact\nWhen generating PDF files, this vulnerability allows an attacker to read arbitrary files from the filesystem by injecting malicious link element into the XML.\n\n### Workarounds\nTest untrusted input with `link` elements with `rel=\"attachment\"` before processing.\n\n### Credits\nThis vulnerability was reported by Mohamed Ouad from [Doyensec](https://doyensec.com/)."
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: xml2rfc
+    purl: pkg:pypi/xml2rfc
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 3.30.1
+references:
+- type: WEB
+  url: https://github.com/ietf-tools/xml2rfc/security/advisories/GHSA-cfmv-h8fx-85m7
+- type: WEB
+  url: https://github.com/ietf-tools/xml2rfc/commit/f2b245bc0aeeac0667c8f74e976c466c5991f0e4
+- type: PACKAGE
+  url: https://github.com/ietf-tools/xml2rfc
+- type: PACKAGE
+  url: https://pypi.org/project/xml2rfc
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cfmv-h8fx-85m7
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-11058

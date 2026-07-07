@@ -1,0 +1,38 @@
+id: PYSEC-0000-werkzeug-GHSA-f9vj-2wh5-fj8j
+modified: '2026-07-07T14:34:43.390514Z'
+published: '2026-07-07T14:34:43.390514Z'
+aliases:
+- CVE-2024-49766
+- GHSA-f9vj-2wh5-fj8j
+summary: Werkzeug safe_join not safe on Windows
+details: On Python < 3.11 on Windows, `os.path.isabs()` does not catch UNC paths like `//server/share`. Werkzeug's `safe_join()` relies on this check, and so can produce a path that is not safe, potentially allowing unintended access to data. Applications using Python >= 3.11, or not using Windows, are not vulnerable.
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: werkzeug
+    purl: pkg:pypi/werkzeug
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 3.0.6
+references:
+- type: WEB
+  url: https://github.com/pallets/werkzeug/security/advisories/GHSA-f9vj-2wh5-fj8j
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-49766
+- type: FIX
+  url: https://github.com/pallets/werkzeug/commit/2767bcb10a7dd1c297d812cc5e6d11a474c1f092
+- type: PACKAGE
+  url: https://github.com/pallets/werkzeug
+- type: WEB
+  url: https://github.com/pallets/werkzeug/releases/tag/3.0.6
+- type: WEB
+  url: https://security.netapp.com/advisory/ntap-20250131-0005
+- type: PACKAGE
+  url: https://pypi.org/project/werkzeug
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-f9vj-2wh5-fj8j

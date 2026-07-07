@@ -1,0 +1,34 @@
+id: PYSEC-0000-mlflow-GHSA-m49c-5c52-6696
+modified: '2026-07-07T11:45:38.954744Z'
+published: '2026-07-07T11:45:38.954744Z'
+aliases:
+- CVE-2024-1594
+- GHSA-m49c-5c52-6696
+summary: mlflow vulnerable to Path Traversal
+details: "A path traversal vulnerability exists in the mlflow/mlflow repository, specifically within the handling of the `artifact_location` parameter when creating an experiment. Attackers can exploit this vulnerability by using a fragment component `#` in the artifact location URI to read arbitrary files on the server in the context of the server's process. This issue is similar to CVE-2023-6909 but utilizes a different component of the URI to achieve the same effect. "
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: mlflow
+    purl: pkg:pypi/mlflow
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 2.9.2
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-1594
+- type: PACKAGE
+  url: https://github.com/mlflow/mlflow
+- type: WEB
+  url: https://github.com/mlflow/mlflow/blob/b929a3e727dc48a1eb19b7e954b7897ac09ad3ec/mlflow/utils/uri.py#L246
+- type: WEB
+  url: https://huntr.com/bounties/424b6f6b-e778-4a2b-b860-39730d396f3e
+- type: PACKAGE
+  url: https://pypi.org/project/mlflow
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m49c-5c52-6696

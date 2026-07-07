@@ -1,0 +1,34 @@
+id: PYSEC-0000-aliyundrive-webdav-GHSA-73v2-rxqp-7q4f
+modified: '2026-07-07T11:45:37.035521Z'
+published: '2026-07-07T11:45:37.035521Z'
+aliases:
+- CVE-2024-29640
+- GHSA-73v2-rxqp-7q4f
+summary: aliyundrive-webdav vulnerable to Command Injection
+details: An issue in aliyundrive-webdav v.2.3.3 and before allows a remote attacker to execute arbitrary code via a crafted payload to the sid parameter in the `action_query_qrcode` component.
+severity: []
+affected:
+- package:
+    ecosystem: PyPI
+    name: aliyundrive-webdav
+    purl: pkg:pypi/aliyundrive-webdav
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 2.3.3
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-29640
+- type: WEB
+  url: https://github.com/lakemoon602/vuln/blob/main/detail.md
+- type: PACKAGE
+  url: https://github.com/messense/aliyundrive-webdav
+- type: WEB
+  url: https://github.com/messense/aliyundrive-webdav/blob/main/openwrt/luci-app-aliyundrive-webdav/luasrc/controller/aliyundrive-webdav.lua
+- type: WEB
+  url: http://aliyundrive-webdav.com
+- type: PACKAGE
+  url: https://pypi.org/project/aliyundrive-webdav
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-73v2-rxqp-7q4f

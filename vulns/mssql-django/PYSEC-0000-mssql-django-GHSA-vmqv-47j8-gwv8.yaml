@@ -1,0 +1,32 @@
+id: PYSEC-0000-mssql-django-GHSA-vmqv-47j8-gwv8
+modified: '2026-07-07T11:45:34.954149Z'
+published: '2026-07-07T11:45:34.954149Z'
+aliases:
+- CVE-2024-26164
+- GHSA-vmqv-47j8-gwv8
+summary: Remote Code Execution Vulnerability in Microsoft Django Backend for SQL Server
+details: Microsoft Django Backend for SQL Server Remote Code Execution Vulnerability
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: mssql-django
+    purl: pkg:pypi/mssql-django
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.4.1
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-26164
+- type: PACKAGE
+  url: https://github.com/microsoft/mssql-django
+- type: WEB
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26164
+- type: PACKAGE
+  url: https://pypi.org/project/mssql-django
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vmqv-47j8-gwv8

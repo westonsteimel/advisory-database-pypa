@@ -1,0 +1,38 @@
+id: PYSEC-0000-keystone-GHSA-hcqg-5g63-7j9h
+modified: '2026-07-07T16:03:10.401718Z'
+published: '2026-07-07T16:03:10.401718Z'
+aliases:
+- CVE-2025-65073
+- GHSA-hcqg-5g63-7j9h
+summary: OpenStack Keystone allows /v3/ec2tokens or /v3/s3tokens request with valid AWS Signature to provide Keystone authorization.
+details: OpenStack Keystone before 26.0.1, 27.0.0, and 28.0.0 allows a /v3/ec2tokens or /v3/s3tokens request with a valid AWS Signature to provide Keystone authorization.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:H/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: keystone
+    purl: pkg:pypi/keystone
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 26.0.1
+    - introduced: 27.0.0.0rc1
+    - fixed: 27.0.0
+    - introduced: 28.0.0.0rc1
+    - fixed: 28.0.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-65073
+- type: PACKAGE
+  url: https://github.com/openstack/keystone
+- type: WEB
+  url: https://www.openwall.com/lists/oss-security/2025/11/04/2
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2025/11/17/6
+- type: PACKAGE
+  url: https://pypi.org/project/keystone
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hcqg-5g63-7j9h

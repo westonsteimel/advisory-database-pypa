@@ -1,0 +1,34 @@
+id: PYSEC-0000-pgadmin4-GHSA-cvf4-f829-762v
+modified: '2026-07-07T16:03:10.258949Z'
+published: '2026-07-07T16:03:10.258949Z'
+aliases:
+- CVE-2025-12764
+- GHSA-cvf4-f829-762v
+summary: pgAdmin is affected by an LDAP injection vulnerability
+details: pgAdmin <= 9.9 is affected by an LDAP injection vulnerability in the LDAP authentication flow that allows an attacker to inject special LDAP characters in the username, causing the DC/LDAP server and the client to process an unusual amount of data DOS.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: pgadmin4
+    purl: pkg:pypi/pgadmin4
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: '9.10'
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-12764
+- type: WEB
+  url: https://github.com/pgadmin-org/pgadmin4/issues/9325
+- type: WEB
+  url: https://github.com/pgadmin-org/pgadmin4/commit/09d2b7eeb0e330df73b1aef0cba57788fde52b6b
+- type: PACKAGE
+  url: https://github.com/pgadmin-org/pgadmin4
+- type: PACKAGE
+  url: https://pypi.org/project/pgadmin4
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cvf4-f829-762v

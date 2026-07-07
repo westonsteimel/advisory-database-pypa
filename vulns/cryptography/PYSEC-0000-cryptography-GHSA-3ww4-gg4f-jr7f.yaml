@@ -1,0 +1,40 @@
+id: PYSEC-0000-cryptography-GHSA-3ww4-gg4f-jr7f
+modified: '2026-07-07T11:45:32.057431Z'
+published: '2026-07-07T11:45:32.057431Z'
+aliases:
+- CVE-2023-50782
+- GHSA-3ww4-gg4f-jr7f
+summary: Python Cryptography package vulnerable to Bleichenbacher timing oracle attack
+details: A flaw was found in the python-cryptography package. This issue may allow a remote attacker to decrypt captured messages in TLS servers that use RSA key exchanges, which may lead to exposure of confidential or sensitive data.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: cryptography
+    purl: pkg:pypi/cryptography
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 42.0.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-50782
+- type: WEB
+  url: https://github.com/pyca/cryptography/issues/9785
+- type: WEB
+  url: https://access.redhat.com/security/cve/CVE-2023-50782
+- type: WEB
+  url: https://bugzilla.redhat.com/show_bug.cgi?id=2254432
+- type: PACKAGE
+  url: https://github.com/pyca/cryptography
+- type: WEB
+  url: https://www.couchbase.com/alerts
+- type: PACKAGE
+  url: https://pypi.org/project/cryptography
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3ww4-gg4f-jr7f

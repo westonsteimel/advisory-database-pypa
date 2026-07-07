@@ -1,0 +1,38 @@
+id: PYSEC-0000-weblate-GHSA-m6hq-f4w9-qrjj
+modified: '2026-07-07T16:03:12.872307Z'
+published: '2026-07-07T16:03:12.872307Z'
+aliases:
+- CVE-2025-64725
+- GHSA-m6hq-f4w9-qrjj
+summary: Weblate has improper validation upon invitation acceptance
+details: "### Impact\n\nIt was possible to accept an invitation opened by a different Weblate user.\n\n### Patches\n\n* https://github.com/WeblateOrg/weblate/pull/16913\n\n### Workarounds\n\nUsers should avoid leaving Weblate sessions with an unattended opened invitation.\n\n### References\n\nThanks to Nahid0x for responsibly disclosing this vulnerability to Weblate."
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: weblate
+    purl: pkg:pypi/weblate
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: '5.15'
+references:
+- type: WEB
+  url: https://github.com/WeblateOrg/weblate/security/advisories/GHSA-m6hq-f4w9-qrjj
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-64725
+- type: WEB
+  url: https://github.com/WeblateOrg/weblate/pull/16913
+- type: WEB
+  url: https://github.com/WeblateOrg/weblate/commit/02e904675f0608a6bbfbf9466eeccd9d022591e9
+- type: PACKAGE
+  url: https://github.com/WeblateOrg/weblate
+- type: WEB
+  url: https://github.com/WeblateOrg/weblate/releases/tag/weblate-5.15
+- type: PACKAGE
+  url: https://pypi.org/project/weblate
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m6hq-f4w9-qrjj

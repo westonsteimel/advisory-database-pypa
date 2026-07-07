@@ -1,0 +1,32 @@
+id: PYSEC-0000-crawl4ai-GHSA-445m-27cf-gr3x
+modified: '2026-07-07T16:02:51.277089Z'
+published: '2026-07-07T16:02:51.277089Z'
+aliases:
+- CVE-2025-28197
+- GHSA-445m-27cf-gr3x
+summary: Crawl4AI SSRF vulnerability
+details: Crawl4AI <=0.4.247 is vulnerable to SSRF in /crawl4ai/async_dispatcher.py.
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: crawl4ai
+    purl: pkg:pypi/crawl4ai
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 0.4.247
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-28197
+- type: WEB
+  url: https://gist.github.com/AndrewDzzz/f49e79b09ce0643ee1fc2a829e8875e0
+- type: PACKAGE
+  url: https://github.com/unclecode/crawl4ai
+- type: PACKAGE
+  url: https://pypi.org/project/crawl4ai
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-445m-27cf-gr3x

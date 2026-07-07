@@ -1,0 +1,34 @@
+id: PYSEC-0000-omero-web-GHSA-gpmg-4x4g-mr5r
+modified: '2026-07-07T16:03:01.015416Z'
+published: '2026-07-07T16:03:01.015416Z'
+aliases:
+- CVE-2025-54791
+- GHSA-gpmg-4x4g-mr5r
+summary: OMERO.web displays unecessary user information when requesting password reset
+details: "### Background\n\nIf an error occurred when resetting a user's password using the ``Forgot Password`` option in OMERO.web, the error message displayed on the Web page can disclose information about the user.\n\n### Impact\nOMERO.web before 5.29.1\n\n### Patches\nUser should upgrade to 5.29.2 or higher\n\n### Workarounds\nDisable the ``Forgot password`` option in OMERO.web using the ``omero.web.show_forgot_password`` configuration property[^1].\n\nThanks to Christopher Youd who reported the issue.\n\nOpen an issue in [omero-web](https://github.com/ome/omero-web)\nEmail us at [security@openmicroscopy.org](mailto:security@openmicroscopy.org)\n\n[^1]: https://omero.readthedocs.io/en/stable/sysadmins/config.html#omero.web.show_forgot_password"
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: omero-web
+    purl: pkg:pypi/omero-web
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 5.29.2
+references:
+- type: WEB
+  url: https://github.com/ome/omero-web/security/advisories/GHSA-gpmg-4x4g-mr5r
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-54791
+- type: WEB
+  url: https://github.com/ome/omero-web/commit/8aa2789e8f759c73f1517abe9a0abd44e86644ad
+- type: PACKAGE
+  url: https://github.com/ome/omero-web
+- type: PACKAGE
+  url: https://pypi.org/project/omero-web
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gpmg-4x4g-mr5r

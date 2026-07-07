@@ -1,0 +1,38 @@
+id: PYSEC-0000-mkdocs-include-markdown-plugin-GHSA-v39m-5m9j-m9w9
+modified: '2026-07-07T16:03:06.009053Z'
+published: '2026-07-07T16:03:06.009053Z'
+aliases:
+- CVE-2025-59940
+- GHSA-v39m-5m9j-m9w9
+summary: 'mkdocs-include-markdown-plugin susceptible to unvalidated input colliding with substitution placeholders '
+details: "### Impact\nCWE-20: Improper Input Validation\nLow impact\n\n### Patches\nPatched in v7.1.8 (commit https://github.com/mondeja/mkdocs-include-markdown-plugin/commit/7466d67aa0de8ffbc427204ad2475fed07678915)\n\n### Workarounds\nNo"
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L
+affected:
+- package:
+    ecosystem: PyPI
+    name: mkdocs-include-markdown-plugin
+    purl: pkg:pypi/mkdocs-include-markdown-plugin
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 7.1.8
+references:
+- type: WEB
+  url: https://github.com/mondeja/mkdocs-include-markdown-plugin/security/advisories/GHSA-v39m-5m9j-m9w9
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-59940
+- type: WEB
+  url: https://github.com/mondeja/mkdocs-include-markdown-plugin/issues/274
+- type: WEB
+  url: https://github.com/mondeja/mkdocs-include-markdown-plugin/pull/277
+- type: WEB
+  url: https://github.com/mondeja/mkdocs-include-markdown-plugin/commit/7466d67aa0de8ffbc427204ad2475fed07678915
+- type: PACKAGE
+  url: https://github.com/mondeja/mkdocs-include-markdown-plugin
+- type: PACKAGE
+  url: https://pypi.org/project/mkdocs-include-markdown-plugin
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-v39m-5m9j-m9w9

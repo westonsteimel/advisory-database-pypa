@@ -1,0 +1,34 @@
+id: PYSEC-0000-apache-airflow-GHSA-gp5f-cx7h-8q6f
+modified: '2026-07-07T16:03:08.998940Z'
+published: '2026-07-07T16:03:08.998940Z'
+aliases:
+- CVE-2025-62503
+- GHSA-gp5f-cx7h-8q6f
+summary: Apache Airflow's create action can upsert existing Pools/Connections/Variables
+details: User with CREATE and no UPDATE privilege for Pools, Connections, Variables could update existing records via bulk create API with overwrite action.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: apache-airflow
+    purl: pkg:pypi/apache-airflow
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 3.0.0
+    - fixed: 3.1.1
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-62503
+- type: PACKAGE
+  url: https://github.com/apache/airflow
+- type: WEB
+  url: https://lists.apache.org/thread/ov923dyccwbv01v9mhcv7t7ykzobycfo
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2025/10/29/8
+- type: PACKAGE
+  url: https://pypi.org/project/apache-airflow
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-gp5f-cx7h-8q6f

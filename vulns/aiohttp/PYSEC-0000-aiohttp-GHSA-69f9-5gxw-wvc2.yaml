@@ -1,0 +1,34 @@
+id: PYSEC-0000-aiohttp-GHSA-69f9-5gxw-wvc2
+modified: '2026-07-07T16:03:15.238774Z'
+published: '2026-07-07T16:03:15.238774Z'
+aliases:
+- CVE-2025-69224
+- GHSA-69f9-5gxw-wvc2
+summary: AIOHTTP's unicode processing of header values could cause parsing discrepancies
+details: "### Summary\nThe Python HTTP parser may allow a request smuggling attack with the presence of non-ASCII characters.\n\n### Impact\nIf a pure Python version of aiohttp is installed (i.e. without the usual C extensions) or AIOHTTP_NO_EXTENSIONS is enabled, then an attacker may be able to execute a request smuggling attack to bypass certain firewalls or proxy protections.\n\n------\n\nPatch: https://github.com/aio-libs/aiohttp/commit/32677f2adfd907420c078dda6b79225c6f4ebce0"
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:U
+affected:
+- package:
+    ecosystem: PyPI
+    name: aiohttp
+    purl: pkg:pypi/aiohttp
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 3.13.3
+references:
+- type: WEB
+  url: https://github.com/aio-libs/aiohttp/security/advisories/GHSA-69f9-5gxw-wvc2
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-69224
+- type: FIX
+  url: https://github.com/aio-libs/aiohttp/commit/32677f2adfd907420c078dda6b79225c6f4ebce0
+- type: PACKAGE
+  url: https://github.com/aio-libs/aiohttp
+- type: PACKAGE
+  url: https://pypi.org/project/aiohttp
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-69f9-5gxw-wvc2

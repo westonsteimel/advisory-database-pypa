@@ -1,0 +1,34 @@
+id: PYSEC-0000-mage-ai-GHSA-cgrq-wvfj-v28j
+modified: '2026-07-07T14:34:39.331592Z'
+published: '2026-07-07T14:34:39.331592Z'
+aliases:
+- CVE-2024-8072
+- GHSA-cgrq-wvfj-v28j
+summary: Mage AI allows remote unauthenticated attackers to leak the terminal server command history of arbitrary users
+details: Mage AI allows remote unauthenticated attackers to leak the terminal server command history of arbitrary users.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: mage-ai
+    purl: pkg:pypi/mage-ai
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 0.9.73
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-8072
+- type: PACKAGE
+  url: https://github.com/mage-ai/mage-ai
+- type: WEB
+  url: https://research.jfrog.com/vulnerabilities/mage-ai-terminal-server-infoleak-jfsa-2024-001039574
+- type: PACKAGE
+  url: https://pypi.org/project/mage-ai
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cgrq-wvfj-v28j

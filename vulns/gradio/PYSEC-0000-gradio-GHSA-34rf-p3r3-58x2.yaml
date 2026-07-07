@@ -1,0 +1,34 @@
+id: PYSEC-0000-gradio-GHSA-34rf-p3r3-58x2
+modified: '2026-07-07T11:45:41.724874Z'
+published: '2026-07-07T11:45:41.724874Z'
+aliases:
+- CVE-2024-34511
+- GHSA-34rf-p3r3-58x2
+summary: Gradio's Component Server does not properly consider` _is_server_fn` for functions
+details: Component Server in Gradio before 4.13 does not properly consider` _is_server_fn` for functions.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: gradio
+    purl: pkg:pypi/gradio
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 4.13.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-34511
+- type: FIX
+  url: https://github.com/gradio-app/gradio/commit/24a583688046867ca8b8b02959c441818bdb34a2
+- type: PACKAGE
+  url: https://github.com/gradio-app/gradio
+- type: WEB
+  url: https://www.gradio.app/changelog#4-13-0
+- type: PACKAGE
+  url: https://pypi.org/project/gradio
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-34rf-p3r3-58x2

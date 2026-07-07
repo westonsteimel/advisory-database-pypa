@@ -1,0 +1,36 @@
+id: PYSEC-0000-wlc-GHSA-2mmv-7rrp-g8xh
+modified: '2026-07-07T16:03:18.118006Z'
+published: '2026-07-07T16:03:18.118006Z'
+aliases:
+- CVE-2026-22250
+- GHSA-2mmv-7rrp-g8xh
+summary: Weblate command-line client susceptible to SSL verification skip
+details: "### Impact\nThe SSL verification would be skipped for some crafted URLs.\n\n### Patches\n* https://github.com/WeblateOrg/wlc/pull/1097\n\n### Workarounds\nAvoid using untrusted wlc configurations, as that might cause insecure connections.\n\n### References\nThis issue was reported to us by [wh1zee](https://hackerone.com/wh1zee) via HackerOne."
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:L/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: wlc
+    purl: pkg:pypi/wlc
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.17.0
+references:
+- type: WEB
+  url: https://github.com/WeblateOrg/wlc/security/advisories/GHSA-2mmv-7rrp-g8xh
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-22250
+- type: WEB
+  url: https://github.com/WeblateOrg/wlc/pull/1097
+- type: WEB
+  url: https://github.com/WeblateOrg/wlc/commit/a513864ec4daad00146e6d6e039559726e256fa3
+- type: PACKAGE
+  url: https://github.com/WeblateOrg/wlc
+- type: PACKAGE
+  url: https://pypi.org/project/wlc
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2mmv-7rrp-g8xh

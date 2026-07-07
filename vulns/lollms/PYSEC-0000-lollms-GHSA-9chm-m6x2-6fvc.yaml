@@ -1,0 +1,32 @@
+id: PYSEC-0000-lollms-GHSA-9chm-m6x2-6fvc
+modified: '2026-07-07T14:34:35.775155Z'
+published: '2026-07-07T14:34:35.775155Z'
+aliases:
+- CVE-2024-6085
+- GHSA-9chm-m6x2-6fvc
+summary: lollms vulnerable to path traversal due to unauthenticated root folder settings change
+details: A path traversal vulnerability exists in the XTTS server included in the lollms package, version v9.6. This vulnerability arises from the ability to perform an unauthenticated root folder settings change. Although the read file endpoint is protected against path traversals, this protection can be bypassed by changing the root folder to '/'. This allows attackers to read arbitrary files on the system. Additionally, the output folders can be changed to write arbitrary audio files to any location on the system.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L
+affected:
+- package:
+    ecosystem: PyPI
+    name: lollms
+    purl: pkg:pypi/lollms
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 9.5.1
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-6085
+- type: PACKAGE
+  url: https://github.com/ParisNeo/lollms
+- type: WEB
+  url: https://huntr.com/bounties/d2fb73d7-4b4f-451a-8763-484c189a27fe
+- type: PACKAGE
+  url: https://pypi.org/project/lollms
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9chm-m6x2-6fvc

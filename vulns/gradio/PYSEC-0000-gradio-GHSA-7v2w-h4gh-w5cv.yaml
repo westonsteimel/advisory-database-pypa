@@ -1,0 +1,32 @@
+id: PYSEC-0000-gradio-GHSA-7v2w-h4gh-w5cv
+modified: '2026-07-07T14:34:56.196943Z'
+published: '2026-07-07T14:34:56.196943Z'
+aliases:
+- CVE-2024-8021
+- GHSA-7v2w-h4gh-w5cv
+summary: Gradio Vulnerable to Open Redirect
+details: An open redirect vulnerability exists in the latest version of gradio-app/gradio. The vulnerability allows an attacker to redirect users to a malicious website by URL encoding. This can be exploited by sending a crafted request to the application, which results in a 302 redirect to an attacker-controlled site.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: gradio
+    purl: pkg:pypi/gradio
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 4.37.2
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-8021
+- type: PACKAGE
+  url: https://github.com/gradio-app/gradio
+- type: WEB
+  url: https://huntr.com/bounties/adc23067-ec04-47ef-9265-afd452071888
+- type: PACKAGE
+  url: https://pypi.org/project/gradio
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-7v2w-h4gh-w5cv

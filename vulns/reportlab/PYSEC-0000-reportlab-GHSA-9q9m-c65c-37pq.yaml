@@ -1,0 +1,40 @@
+id: PYSEC-0000-reportlab-GHSA-9q9m-c65c-37pq
+modified: '2026-07-07T11:45:19.111659Z'
+published: '2026-07-07T11:45:19.111659Z'
+aliases:
+- CVE-2023-33733
+- GHSA-9q9m-c65c-37pq
+summary: Reportlab vulnerable to remote code execution
+details: Reportlab up to and including v3.6.12 allows attackers to execute arbitrary code via supplying a crafted PDF file.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: reportlab
+    purl: pkg:pypi/reportlab
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 3.6.13
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-33733
+- type: WEB
+  url: https://github.com/c53elyas/CVE-2023-33733
+- type: WEB
+  url: https://lists.debian.org/debian-lts-announce/2024/10/msg00008.html
+- type: WEB
+  url: https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/36WOY22ECJCPOXHVTNCHEWOQLL7JSWP4
+- type: WEB
+  url: https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/6ALE727IRACYBTTOFIFG57RS4OA2SHIJ
+- type: WEB
+  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/36WOY22ECJCPOXHVTNCHEWOQLL7JSWP4
+- type: WEB
+  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6ALE727IRACYBTTOFIFG57RS4OA2SHIJ
+- type: PACKAGE
+  url: https://pypi.org/project/reportlab
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9q9m-c65c-37pq

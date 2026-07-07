@@ -1,0 +1,36 @@
+id: PYSEC-0000-vantage6-server-GHSA-45gq-q4xh-cp53
+modified: '2026-07-07T11:45:31.678545Z'
+published: '2026-07-07T11:45:31.678545Z'
+aliases:
+- CVE-2024-21671
+- GHSA-45gq-q4xh-cp53
+summary: vantage6 vulnerable to username timing attack
+details: "### Impact\nIt is possible to find out usernames from the response time of login requests. This could aid attackers in credential attacks\n\n### Workarounds\nNo\n"
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: vantage6-server
+    purl: pkg:pypi/vantage6-server
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 4.2.0
+references:
+- type: WEB
+  url: https://github.com/vantage6/vantage6/security/advisories/GHSA-45gq-q4xh-cp53
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-21671
+- type: WEB
+  url: https://github.com/vantage6/vantage6/commit/389f416c445da4f2438c72f34c3b1084485c4e30
+- type: WEB
+  url: https://github.com/pypa/advisory-database/tree/main/vulns/vantage6/PYSEC-2024-31.yaml
+- type: PACKAGE
+  url: https://github.com/vantage6/vantage6
+- type: PACKAGE
+  url: https://pypi.org/project/vantage6-server
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-45gq-q4xh-cp53

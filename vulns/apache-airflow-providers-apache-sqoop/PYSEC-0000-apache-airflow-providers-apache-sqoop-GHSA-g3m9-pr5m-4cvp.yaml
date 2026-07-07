@@ -1,0 +1,34 @@
+id: PYSEC-0000-apache-airflow-providers-apache-sqoop-GHSA-g3m9-pr5m-4cvp
+modified: '2026-07-07T11:45:23.063646Z'
+published: '2026-07-07T11:45:23.063646Z'
+aliases:
+- CVE-2023-27604
+- GHSA-g3m9-pr5m-4cvp
+summary: Airflow Sqoop Provider RCE Vulnerability
+details: "Apache Airflow Sqoop Provider, versions before 4.0.0, is affected by a vulnerability that allows an attacker pass parameters with the connections, which makes it possible to implement RCE attacks via ‘sqoop import --connect’, obtain airflow server permissions, etc. The attacker needs to be logged in and have authorization (permissions) to create/edit connections.\n\n It is recommended to upgrade to a version that is not affected.\nThis issue was reported independently by happyhacking-k, And Xie Jianming and LiuHui of Caiji Sec Team also reported it."
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: apache-airflow-providers-apache-sqoop
+    purl: pkg:pypi/apache-airflow-providers-apache-sqoop
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 4.0.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-27604
+- type: WEB
+  url: https://github.com/apache/airflow/pull/33039
+- type: PACKAGE
+  url: https://github.com/apache/airflow
+- type: WEB
+  url: https://lists.apache.org/thread/lswlxf11do51ob7f6xyyg8qp3n7wdrgd
+- type: PACKAGE
+  url: https://pypi.org/project/apache-airflow-providers-apache-sqoop
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g3m9-pr5m-4cvp

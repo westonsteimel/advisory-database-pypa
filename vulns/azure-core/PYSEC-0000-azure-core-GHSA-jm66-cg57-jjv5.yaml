@@ -1,0 +1,34 @@
+id: PYSEC-0000-azure-core-GHSA-jm66-cg57-jjv5
+modified: '2026-07-07T16:03:18.455480Z'
+published: '2026-07-07T16:03:18.455480Z'
+aliases:
+- CVE-2026-21226
+- GHSA-jm66-cg57-jjv5
+summary: Azure Core is vulnerable to deserialization of untrusted data
+details: Deserialization of untrusted data in Azure Core shared client library for Python allows an authorized attacker to execute code over a network.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: azure-core
+    purl: pkg:pypi/azure-core
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.38.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-21226
+- type: PACKAGE
+  url: https://github.com/Azure/azure-sdk-for-python
+- type: WEB
+  url: https://github.com/Azure/azure-sdk-for-python/blob/6d2e6431ea0991861640e449e51e894247a7771a/sdk/core/azure-core/CHANGELOG.md#1380-2026-01-12
+- type: WEB
+  url: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21226
+- type: PACKAGE
+  url: https://pypi.org/project/azure-core
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jm66-cg57-jjv5

@@ -1,0 +1,40 @@
+id: PYSEC-0000-trytond-GHSA-p3p5-xrmv-4j6x
+modified: '2026-07-07T16:03:11.175142Z'
+published: '2026-07-07T16:03:11.175142Z'
+aliases:
+- CVE-2025-66423
+- GHSA-p3p5-xrmv-4j6x
+summary: trytond does not enforce access rights for the route of the HTML editor.
+details: Tryton trytond 6.0 before 7.6.11 does not enforce access rights for the route of the HTML editor. This is fixed in 7.6.11, 7.4.21, 7.0.40, and 6.0.70.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: trytond
+    purl: pkg:pypi/trytond
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 6.0.0
+    - fixed: 6.0.70
+    - introduced: 7.0.0
+    - fixed: 7.0.40
+    - introduced: 7.1.0
+    - fixed: 7.4.21
+    - introduced: 7.5.0
+    - fixed: 7.6.11
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-66423
+- type: WEB
+  url: https://discuss.tryton.org/t/security-release-for-issue-14364/8952
+- type: WEB
+  url: https://foss.heptapod.net/tryton/tryton/-/issues/14364
+- type: PACKAGE
+  url: https://github.com/tryton/trytond
+- type: PACKAGE
+  url: https://pypi.org/project/trytond
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-p3p5-xrmv-4j6x

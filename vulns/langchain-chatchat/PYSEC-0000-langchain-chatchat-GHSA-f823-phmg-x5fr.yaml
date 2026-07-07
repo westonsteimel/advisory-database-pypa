@@ -1,0 +1,40 @@
+id: PYSEC-0000-langchain-chatchat-GHSA-f823-phmg-x5fr
+modified: '2026-07-07T16:02:56.054752Z'
+published: '2026-07-07T16:02:56.054752Z'
+aliases:
+- CVE-2025-6855
+- GHSA-f823-phmg-x5fr
+summary: Langchain-Chatchat vulnerable to path traversal
+details: A vulnerability, which was classified as critical, has been found in chatchat-space Langchain-Chatchat up to 0.3.1. This issue affects some unknown processing of the file /v1/file. The manipulation of the argument flag leads to path traversal. The exploit has been disclosed to the public and may be used.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L
+- type: CVSS_V4
+  score: CVSS:4.0/AV:A/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P
+affected:
+- package:
+    ecosystem: PyPI
+    name: langchain-chatchat
+    purl: pkg:pypi/langchain-chatchat
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 0.3.1
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-6855
+- type: WEB
+  url: https://github.com/chatchat-space/Langchain-Chatchat/issues/5354
+- type: PACKAGE
+  url: https://github.com/chatchat-space/Langchain-Chatchat
+- type: WEB
+  url: https://vuldb.com/?ctiid.314327
+- type: WEB
+  url: https://vuldb.com/?id.314327
+- type: WEB
+  url: https://vuldb.com/?submit.601162
+- type: PACKAGE
+  url: https://pypi.org/project/langchain-chatchat
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-f823-phmg-x5fr

@@ -1,0 +1,40 @@
+id: PYSEC-0000-zope-GHSA-wm8q-9975-xh5v
+modified: '2026-07-07T11:45:24.678692Z'
+published: '2026-07-07T11:45:24.678692Z'
+aliases:
+- CVE-2023-42458
+- GHSA-wm8q-9975-xh5v
+summary: Zope vulnerable to Stored Cross Site Scripting with SVG images
+details: "### Impact\nThere is a stored cross site scripting vulnerability for SVG images.\n\nNote that an image tag with an SVG image as source is never vulnerable, even when the SVG image contains malicious code. To exploit the vulnerability, an attacker would first need to upload an image, and then trick a user into following a specially crafted link.\n\nAll versions of Zope are impacted on sites that allow untrusted users to upload images.\n\n\n### Patches\nPatches will be released in Zope 4.8.10 and 5.8.5.\n\n### Workarounds\nMake sure the \"Add Documents, Images, and Files\" permission is only assigned to trusted roles. By default only the Manager has this permission."
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: zope
+    purl: pkg:pypi/zope
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 4.8.10
+    - introduced: 5.8.0
+    - fixed: 5.8.5
+references:
+- type: WEB
+  url: https://github.com/zopefoundation/Zope/security/advisories/GHSA-wm8q-9975-xh5v
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-42458
+- type: WEB
+  url: https://github.com/zopefoundation/Zope/commit/26a55dbc301db417f47cafda6fe0f983b5690088
+- type: WEB
+  url: https://github.com/zopefoundation/Zope/commit/603b0a12881c90a072a7a65e32d47ed898ce37cb
+- type: PACKAGE
+  url: https://github.com/zopefoundation/Zope
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2023/09/22/2
+- type: PACKAGE
+  url: https://pypi.org/project/zope
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wm8q-9975-xh5v

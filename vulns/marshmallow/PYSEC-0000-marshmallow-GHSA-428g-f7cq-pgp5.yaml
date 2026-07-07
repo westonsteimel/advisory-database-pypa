@@ -1,0 +1,36 @@
+id: PYSEC-0000-marshmallow-GHSA-428g-f7cq-pgp5
+modified: '2026-07-07T16:03:14.008333Z'
+published: '2026-07-07T16:03:14.008333Z'
+aliases:
+- CVE-2025-68480
+- GHSA-428g-f7cq-pgp5
+summary: Marshmallow has DoS in Schema.load(many)
+details: "### Impact\n\n`Schema.load(data, many=True)` is vulnerable to denial of service attacks. A moderately sized request can consume a disproportionate amount of CPU time.\n\n### Patches\n\n4.1.2, 3.26.2\n\n### Workarounds\n\n```py\n# Fail fast\ndef load_many(schema, data, **kwargs):\n    if not isinstance(data, list):\n        raise ValidationError(['Invalid input type.'])\n    return [schema.load(item, **kwargs) for item in data]\n```"
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+affected:
+- package:
+    ecosystem: PyPI
+    name: marshmallow
+    purl: pkg:pypi/marshmallow
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 3.0.0rc1
+    - fixed: 3.26.2
+    - introduced: 4.0.0
+    - fixed: 4.1.2
+references:
+- type: WEB
+  url: https://github.com/marshmallow-code/marshmallow/security/advisories/GHSA-428g-f7cq-pgp5
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-68480
+- type: WEB
+  url: https://github.com/marshmallow-code/marshmallow/commit/d24a0c9df061c4daa92f71cf85aca25b83eee508
+- type: PACKAGE
+  url: https://github.com/marshmallow-code/marshmallow
+- type: PACKAGE
+  url: https://pypi.org/project/marshmallow
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-428g-f7cq-pgp5

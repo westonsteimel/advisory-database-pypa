@@ -1,0 +1,32 @@
+id: PYSEC-0000-imaginairy-GHSA-x5xw-28w4-53j5
+modified: '2026-07-07T14:34:53.168435Z'
+published: '2026-07-07T14:34:53.168435Z'
+aliases:
+- CVE-2024-12761
+- GHSA-x5xw-28w4-53j5
+summary: imaginAIry Denial of Service (DoS) vulnerability
+details: A Denial of Service (DoS) vulnerability exists in the brycedrennan/imaginairy repository, version 15.0.0. The vulnerability is present in the `/api/stablestudio/generate` endpoint, which can be exploited by sending an invalid request. This causes the server process to terminate abruptly, outputting `KILLED` in the terminal, and results in the unavailability of the server. This issue disrupts the server's functionality, affecting all users.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: imaginairy
+    purl: pkg:pypi/imaginairy
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 15.0.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2024-12761
+- type: PACKAGE
+  url: https://github.com/brycedrennan/imaginAIry
+- type: WEB
+  url: https://huntr.com/bounties/282900f4-2498-42c4-8ce7-ba5368aaf035
+- type: PACKAGE
+  url: https://pypi.org/project/imaginairy
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-x5xw-28w4-53j5
