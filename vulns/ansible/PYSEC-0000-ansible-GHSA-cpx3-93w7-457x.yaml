@@ -1,0 +1,38 @@
+id: PYSEC-0000-ansible-GHSA-cpx3-93w7-457x
+modified: '2026-07-07T10:17:22.912680Z'
+published: '2026-07-07T10:17:22.912680Z'
+aliases:
+- CVE-2022-3697
+- GHSA-cpx3-93w7-457x
+summary: Ansible leaks password to logs
+details: A flaw was found in Ansible in the amazon.aws collection when using the `tower_callback` parameter from the `amazon.aws.ec2_instance` module. This flaw allows an attacker to take advantage of this issue as the module is handling the parameter insecurely, leading to the password leaking in the logs.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: ansible
+    purl: pkg:pypi/ansible
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 2.5.0
+    - fixed: 7.0.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2022-3697
+- type: WEB
+  url: https://github.com/ansible-collections/amazon.aws/pull/1199
+- type: WEB
+  url: https://github.com/ansible/ansible/pull/35749
+- type: WEB
+  url: https://github.com/ansible-community/ansible-build-data/blob/main/6/CHANGELOG-v6.rst
+- type: PACKAGE
+  url: https://github.com/ansible/ansible
+- type: WEB
+  url: https://lists.debian.org/debian-lts-announce/2023/12/msg00018.html
+- type: PACKAGE
+  url: https://pypi.org/project/ansible
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-cpx3-93w7-457x

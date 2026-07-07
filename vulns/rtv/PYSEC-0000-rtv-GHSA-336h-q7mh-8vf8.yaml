@@ -1,0 +1,34 @@
+id: PYSEC-0000-rtv-GHSA-336h-q7mh-8vf8
+modified: '2026-07-06T08:03:24.405975Z'
+published: '2026-07-06T08:03:24.405975Z'
+aliases:
+- CVE-2017-17516
+- GHSA-336h-q7mh-8vf8
+summary: Reddit Terminal Viewer (RTV) vulnerable to argument injection attacks
+details: scripts/inspect_webbrowser.py in Reddit Terminal Viewer (RTV) 1.19.0 does not validate strings before launching the program specified by the BROWSER environment variable, which might allow remote attackers to conduct argument-injection attacks via a crafted URL.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: rtv
+    purl: pkg:pypi/rtv
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 1.19.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2017-17516
+- type: WEB
+  url: https://github.com/michael-lazar/rtv/issues/531
+- type: PACKAGE
+  url: https://github.com/michael-lazar/rtv
+- type: WEB
+  url: https://security-tracker.debian.org/tracker/CVE-2017-17516
+- type: PACKAGE
+  url: https://pypi.org/project/rtv
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-336h-q7mh-8vf8

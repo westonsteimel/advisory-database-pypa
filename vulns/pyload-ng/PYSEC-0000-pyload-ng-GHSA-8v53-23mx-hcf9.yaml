@@ -1,0 +1,34 @@
+id: PYSEC-0000-pyload-ng-GHSA-8v53-23mx-hcf9
+modified: '2026-07-07T10:17:27.200793Z'
+published: '2026-07-07T10:17:27.200793Z'
+aliases:
+- CVE-2023-0509
+- GHSA-8v53-23mx-hcf9
+summary: Improper Certificate Validation in pyload-ng
+details: Improper Certificate Validation in GitHub repository pyload/pyload prior to 0.5.0b3.dev44.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: pyload-ng
+    purl: pkg:pypi/pyload-ng
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 0.5.0b3.dev44
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-0509
+- type: WEB
+  url: https://github.com/pyload/pyload/commit/a9098bdf7406e6faf9df3da6ff2d584e90c13bbb
+- type: PACKAGE
+  url: https://github.com/pyload/pyload
+- type: WEB
+  url: https://huntr.dev/bounties/a370e0c2-a41c-4871-ad91-bc6f31a8e839
+- type: PACKAGE
+  url: https://pypi.org/project/pyload-ng
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8v53-23mx-hcf9

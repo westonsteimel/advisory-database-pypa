@@ -1,0 +1,34 @@
+id: PYSEC-0000-apache-airflow-providers-amazon-GHSA-w695-p3j5-hrj9
+modified: '2026-07-07T10:17:27.975580Z'
+published: '2026-07-07T10:17:27.975580Z'
+aliases:
+- CVE-2023-25956
+- GHSA-w695-p3j5-hrj9
+summary: Apache Airflow AWS Provider Generates Error Message Containing Sensitive Information
+details: Generation of Error Message Containing Sensitive Information vulnerability in the Apache Airflow AWS Provider. This issue affects Apache Airflow AWS Provider versions before 7.2.1.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: apache-airflow-providers-amazon
+    purl: pkg:pypi/apache-airflow-providers-amazon
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 7.2.1
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-25956
+- type: WEB
+  url: https://github.com/apache/airflow/pull/29587
+- type: PACKAGE
+  url: https://github.com/apache/airflow
+- type: WEB
+  url: https://lists.apache.org/thread/07pl9y4gdpw2c6rzqm77dvkm2z2kb5gv
+- type: PACKAGE
+  url: https://pypi.org/project/apache-airflow-providers-amazon
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-w695-p3j5-hrj9

@@ -1,0 +1,34 @@
+id: PYSEC-0000-modoboa-GHSA-q9ww-gjpw-p9g6
+modified: '2026-07-07T10:17:27.764359Z'
+published: '2026-07-07T10:17:27.764359Z'
+aliases:
+- CVE-2023-0860
+- GHSA-q9ww-gjpw-p9g6
+summary: Improper Restriction of Excessive Authentication Attempts in modoboa
+details: Improper Restriction of Excessive Authentication Attempts in GitHub repository modoboa/modoboa-installer prior to 2.0.4.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: modoboa
+    purl: pkg:pypi/modoboa
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.0.4
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-0860
+- type: WEB
+  url: https://github.com/modoboa/modoboa-installer/commit/63d92b73f3da6971ae4e13d033d625773ac91085
+- type: PACKAGE
+  url: https://github.com/modoboa/modoboa
+- type: WEB
+  url: https://huntr.dev/bounties/64f3ab93-1357-4468-8ff4-52bbcec18cca
+- type: PACKAGE
+  url: https://pypi.org/project/modoboa
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-q9ww-gjpw-p9g6

@@ -1,0 +1,40 @@
+id: PYSEC-0000-pgadmin4-GHSA-894c-rg7f-3c62
+modified: '2026-07-07T10:17:26.876275Z'
+published: '2026-07-07T10:17:26.876275Z'
+aliases:
+- CVE-2023-22298
+- GHSA-894c-rg7f-3c62
+summary: pgAdmin 4 Open Redirect vulnerability
+details: Open redirect vulnerability in pgAdmin 4 versions prior to v6.14 allows a remote unauthenticated attacker to redirect a user to an arbitrary web site and conduct a phishing attack by having a user to access a specially crafted URL.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: pgadmin4
+    purl: pkg:pypi/pgadmin4
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: '6.14'
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-22298
+- type: WEB
+  url: https://github.com/pgadmin-org/pgadmin4/issues/5343
+- type: PACKAGE
+  url: https://github.com/pgadmin-org/pgadmin4
+- type: WEB
+  url: https://jvn.jp/en/jp/JVN03832974/index.html
+- type: WEB
+  url: https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VHY2B25YHIIFQ3G44TR7NNEST7FJGJPH
+- type: WEB
+  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VHY2B25YHIIFQ3G44TR7NNEST7FJGJPH
+- type: WEB
+  url: https://www.pgadmin.org
+- type: PACKAGE
+  url: https://pypi.org/project/pgadmin4
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-894c-rg7f-3c62

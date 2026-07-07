@@ -1,0 +1,40 @@
+id: PYSEC-0000-sanic-GHSA-8cw9-5hmv-77w6
+modified: '2026-07-06T08:03:31.763289Z'
+published: '2026-07-06T08:03:31.763289Z'
+aliases:
+- CVE-2022-35920
+- GHSA-8cw9-5hmv-77w6
+summary: sanic vulnerable to Path Traversal when using `app.static` if using encoded `%2F` URLs
+details: "### Impact\nAccess to lateral directories when using `app.static` if using encoded `%2F` URLs. Parent directory traversal is not impacted.\n\n### Patches\n- v20.12.7 (LTS)\n- v21.12.2 (LTS)\n- v22.6.1\n\n### References\nhttps://github.com/sanic-org/sanic/issues/2478\nhttps://github.com/sanic-org/sanic/pull/2495\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [the community forums](https://community.sanicframework.org/)\n* Ping us on [the Discord server](https://discord.gg/FARQzAEMAA)\n\n"
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L
+affected:
+- package:
+    ecosystem: PyPI
+    name: sanic
+    purl: pkg:pypi/sanic
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 20.12.7
+    - introduced: 22.0.0
+    - fixed: 22.6.1
+    - introduced: 21.0.0
+    - fixed: 21.12.2
+references:
+- type: WEB
+  url: https://github.com/sanic-org/sanic/security/advisories/GHSA-8cw9-5hmv-77w6
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2022-35920
+- type: WEB
+  url: https://github.com/sanic-org/sanic/issues/2478
+- type: WEB
+  url: https://github.com/sanic-org/sanic/pull/2495
+- type: PACKAGE
+  url: https://github.com/sanic-org/sanic
+- type: PACKAGE
+  url: https://pypi.org/project/sanic
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8cw9-5hmv-77w6

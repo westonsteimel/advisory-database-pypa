@@ -1,0 +1,34 @@
+id: PYSEC-0000-pyload-ng-GHSA-h8r9-467r-vjjf
+modified: '2026-07-07T10:17:26.317263Z'
+published: '2026-07-07T10:17:26.317263Z'
+aliases:
+- CVE-2023-0057
+- GHSA-h8r9-467r-vjjf
+summary: pyLoad vulnerable to Improper Restriction of Rendered UI Layers or Frames
+details: Improper Restriction of Rendered UI Layers or Frames in GitHub repository pyload/pyload prior to 0.5.0b3.dev33.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: pyload-ng
+    purl: pkg:pypi/pyload-ng
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 0.5.0b3.dev33
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2023-0057
+- type: WEB
+  url: https://github.com/pyload/pyload/commit/bd2a31b7de54570b919aa1581d486e6ee18c0f64
+- type: PACKAGE
+  url: https://github.com/pyload/pyload
+- type: WEB
+  url: https://huntr.dev/bounties/12b64f91-d048-490c-94b0-37514b6d694d
+- type: PACKAGE
+  url: https://pypi.org/project/pyload-ng
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h8r9-467r-vjjf

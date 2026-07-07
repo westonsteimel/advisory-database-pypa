@@ -1,0 +1,34 @@
+id: PYSEC-0000-octoprint-GHSA-5w5x-q9p5-9qg3
+modified: '2026-07-06T08:03:31.877524Z'
+published: '2026-07-06T08:03:31.877524Z'
+aliases:
+- CVE-2022-2822
+- GHSA-5w5x-q9p5-9qg3
+summary: OctoPrint does not have rate limiting on the login page
+details: OctoPrint 1.7.3 and prior does not have rate limiting on the login page, making it possible for attackers to attempt brute force attacks. The severity of this issue is limited by OctoPrint normally running in a restricted LAN. The `devel` and `maintenance` branches of the repository have a fix that limits the rate of failed login attempts.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: octoprint
+    purl: pkg:pypi/octoprint
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 1.7.3
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2022-2822
+- type: WEB
+  url: https://github.com/octoprint/octoprint/commit/82c892ba40b3741d1b7711d949e56af64f5bc2de
+- type: PACKAGE
+  url: https://github.com/octoprint/octoprint
+- type: WEB
+  url: https://huntr.dev/bounties/6369f355-e6ef-4469-af75-0f6ff00cde3d
+- type: PACKAGE
+  url: https://pypi.org/project/octoprint
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5w5x-q9p5-9qg3
