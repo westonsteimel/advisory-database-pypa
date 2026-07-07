@@ -1,24 +1,18 @@
 id: PYSEC-0000-transformers-GHSA-489j-g2vx-39wf
-modified: '2026-07-07T16:02:56.726858Z'
-published: '2026-07-07T16:02:56.726858Z'
+summary: Transformers vulnerable to ReDoS attack through its SETTING_RE variable
+details: A Regular Expression Denial of Service (ReDoS) vulnerability was discovered
+  in the huggingface/transformers repository, specifically in version 4.49.0. The
+  vulnerability is due to inefficient regular expression complexity in the `SETTING_RE`
+  variable within the `transformers/commands/chat.py` file. The regex contains repetition
+  groups and non-optimized quantifiers, leading to exponential backtracking when processing
+  'almost matching' payloads. This can degrade application performance and potentially
+  result in a denial-of-service (DoS) when handling specially crafted input strings.
+  The issue is fixed in version 4.51.0.
 aliases:
 - CVE-2025-3262
 - GHSA-489j-g2vx-39wf
-summary: Transformers vulnerable to ReDoS attack through its SETTING_RE variable
-details: A Regular Expression Denial of Service (ReDoS) vulnerability was discovered in the huggingface/transformers repository, specifically in version 4.49.0. The vulnerability is due to inefficient regular expression complexity in the `SETTING_RE` variable within the `transformers/commands/chat.py` file. The regex contains repetition groups and non-optimized quantifiers, leading to exponential backtracking when processing 'almost matching' payloads. This can degrade application performance and potentially result in a denial-of-service (DoS) when handling specially crafted input strings. The issue is fixed in version 4.51.0.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
-affected:
-- package:
-    ecosystem: PyPI
-    name: transformers
-    purl: pkg:pypi/transformers
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: 4.49.0
-    - fixed: 4.51.0
+modified: '2026-07-07T17:25:42.734398Z'
+published: '2026-07-07T16:02:56.726858Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2025-3262
@@ -34,3 +28,22 @@ references:
   url: https://pypi.org/project/transformers
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-489j-g2vx-39wf
+affected:
+- package:
+    name: transformers
+    ecosystem: PyPI
+    purl: pkg:pypi/transformers
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 4.49.0
+    - fixed: 4.51.0
+  versions:
+  - 4.49.0
+  - 4.50.0
+  - 4.50.1
+  - 4.50.2
+  - 4.50.3
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L

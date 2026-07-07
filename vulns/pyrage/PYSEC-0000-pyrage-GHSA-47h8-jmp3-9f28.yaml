@@ -1,26 +1,18 @@
 id: PYSEC-0000-pyrage-GHSA-47h8-jmp3-9f28
-modified: '2026-07-07T14:34:47.620501Z'
-published: '2026-07-07T14:34:47.620501Z'
+summary: pyrage vulnerable to malicious plugin names, recipients, or identities causing
+  arbitrary binary execution
+details: "`pyrage` uses the Rust `age` crate for its underlying operations, and `age`\
+  \ is vulnerable to GHSA-4fg7-vxc8-qx5w.\n\nAll details of GHSA-4fg7-vxc8-qx5w are\
+  \ relevant to `pyrage` for the versions specified in this advisory. See GHSA-4fg7-vxc8-qx5w\
+  \ for full details.\n\nVersions of `pyrage` before 1.2.0 lack plugin support and\
+  \ are therefore **not affected**.\n\nAn equivalent issue was fixed in [the reference\
+  \ Go implementation of age](https://github.com/FiloSottile/age), see advisory [GHSA-32gq-x56h-299c](https://github.com/FiloSottile/age/security/advisories/GHSA-32gq-x56h-299c).\n\
+  \nThanks to \u2B21-49016 for reporting this issue."
 aliases:
 - CVE-2024-56327
 - GHSA-47h8-jmp3-9f28
-summary: pyrage vulnerable to malicious plugin names, recipients, or identities causing arbitrary binary execution
-details: "`pyrage` uses the Rust `age` crate for its underlying operations, and `age` is vulnerable to GHSA-4fg7-vxc8-qx5w.\n\nAll details of GHSA-4fg7-vxc8-qx5w are relevant to `pyrage` for the versions specified in this advisory. See GHSA-4fg7-vxc8-qx5w for full details.\n\nVersions of `pyrage` before 1.2.0 lack plugin support and are therefore **not affected**.\n\nAn equivalent issue was fixed in [the reference Go implementation of age](https://github.com/FiloSottile/age), see advisory [GHSA-32gq-x56h-299c](https://github.com/FiloSottile/age/security/advisories/GHSA-32gq-x56h-299c).\n\nThanks to ⬡-49016 for reporting this issue."
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-- type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: pyrage
-    purl: pkg:pypi/pyrage
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: 1.2.0
-    - fixed: 1.2.3
+modified: '2026-07-07T17:25:13.519925Z'
+published: '2026-07-07T14:34:47.620501Z'
 references:
 - type: WEB
   url: https://github.com/FiloSottile/age/security/advisories/GHSA-32gq-x56h-299c
@@ -38,3 +30,21 @@ references:
   url: https://pypi.org/project/pyrage
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-47h8-jmp3-9f28
+affected:
+- package:
+    name: pyrage
+    ecosystem: PyPI
+    purl: pkg:pypi/pyrage
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 1.2.0
+    - fixed: 1.2.3
+  versions:
+  - 1.2.1
+  - 1.2.2
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N

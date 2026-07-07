@@ -1,30 +1,16 @@
 id: PYSEC-0000-neutron-GHSA-f27h-g923-68hw
-modified: '2026-07-07T14:34:45.662800Z'
-published: '2026-07-07T14:34:45.662800Z'
+summary: OpenStack Neutron can use an incorrect ID during policy enforcement
+details: In OpenStack Neutron before 25.0.1, neutron/extensions/tagging.py can use
+  an incorrect ID during policy enforcement. It does not apply the proper policy check
+  for changing network tags. An unprivileged tenant is able to change (add and clear)
+  tags on network objects that do not belong to the tenant, and this action is not
+  subjected to the proper policy authorization check. This affects 23 before 23.2.1,
+  24 before 24.0.2, and 25 before 25.0.1.
 aliases:
 - CVE-2024-53916
 - GHSA-f27h-g923-68hw
-summary: OpenStack Neutron can use an incorrect ID during policy enforcement
-details: In OpenStack Neutron before 25.0.1, neutron/extensions/tagging.py can use an incorrect ID during policy enforcement. It does not apply the proper policy check for changing network tags. An unprivileged tenant is able to change (add and clear) tags on network objects that do not belong to the tenant, and this action is not subjected to the proper policy authorization check. This affects 23 before 23.2.1, 24 before 24.0.2, and 25 before 25.0.1.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
-- type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: neutron
-    purl: pkg:pypi/neutron
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: 23.0.0
-    - fixed: 23.2.1
-    - introduced: 24.0.0
-    - fixed: 24.0.2
-    - introduced: 25.0.0
-    - fixed: 25.0.1
+modified: '2026-07-07T17:24:48.085964Z'
+published: '2026-07-07T14:34:45.662800Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-53916
@@ -44,3 +30,29 @@ references:
   url: https://pypi.org/project/neutron
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-f27h-g923-68hw
+affected:
+- package:
+    name: neutron
+    ecosystem: PyPI
+    purl: pkg:pypi/neutron
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 23.0.0
+    - fixed: 23.2.1
+    - introduced: 24.0.0
+    - fixed: 24.0.2
+    - introduced: 25.0.0
+    - fixed: 25.0.1
+  versions:
+  - 23.0.0
+  - 23.1.0
+  - 23.2.0
+  - 24.0.0
+  - 24.0.1
+  - 25.0.0
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N

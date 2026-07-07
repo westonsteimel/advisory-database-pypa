@@ -1,24 +1,16 @@
 id: PYSEC-0000-weasyprint-GHSA-35jj-wx47-4w8r
-modified: '2026-07-07T11:45:34.890224Z'
-published: '2026-07-07T11:45:34.890224Z'
+summary: WeasyPrint allows the attachment of arbitrary files and URLs to a PDF
+details: "### Impact\nSince version 61.0, there's a vulnerability which allows attaching\
+  \ content of arbitrary files and URLs to a generated PDF document, even if `url_fetcher`\
+  \ is configured to prevent access to files and URLs.\n\n### Patches\nFixed by 734ee8e\
+  \ that\u2019s included in 61.2\n\n### Workarounds\n- Check that no PDF attachment\
+  \ is defined in source HTML.\n- Launch WeasyPrint in a sandbox that prevents access\
+  \ to the filesystem and the network."
 aliases:
 - CVE-2024-28184
 - GHSA-35jj-wx47-4w8r
-summary: WeasyPrint allows the attachment of arbitrary files and URLs to a PDF
-details: "### Impact\nSince version 61.0, there's a vulnerability which allows attaching content of arbitrary files and URLs to a generated PDF document, even if `url_fetcher` is configured to prevent access to files and URLs.\n\n### Patches\nFixed by 734ee8e that’s included in 61.2\n\n### Workarounds\n- Check that no PDF attachment is defined in source HTML.\n- Launch WeasyPrint in a sandbox that prevents access to the filesystem and the network."
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L
-affected:
-- package:
-    ecosystem: PyPI
-    name: weasyprint
-    purl: pkg:pypi/weasyprint
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '61.0'
-    - fixed: '61.2'
+modified: '2026-07-07T17:25:49.809516Z'
+published: '2026-07-07T11:45:34.890224Z'
 references:
 - type: WEB
   url: https://github.com/Kozea/WeasyPrint/security/advisories/GHSA-35jj-wx47-4w8r
@@ -34,3 +26,19 @@ references:
   url: https://pypi.org/project/weasyprint
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-35jj-wx47-4w8r
+affected:
+- package:
+    name: weasyprint
+    ecosystem: PyPI
+    purl: pkg:pypi/weasyprint
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '61.0'
+    - fixed: '61.2'
+  versions:
+  - '61.0'
+  - '61.1'
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L

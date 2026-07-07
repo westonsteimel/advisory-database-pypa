@@ -1,24 +1,26 @@
 id: PYSEC-0000-restrictedpython-GHSA-gmj9-h825-chq2
-modified: '2026-07-07T14:34:49.069993Z'
-published: '2026-07-07T14:34:49.069993Z'
+summary: try/except* clauses could allow bypass RestrictedPython via type confusion
+  bug in the CPython interpreter
+details: |
+  ### Impact
+  Via a type confusion bug in the CPython interpreter when using `try/except*` RestrictedPython could be bypassed.
+
+  We believe this should be fixed upstream in Python itself until that we remove support for `try/except*` from RestrictedPython.
+  (It has been fixed for some Python versions.)
+
+  ### Patches
+  Patched in version 8.0 by removing support for `try/except*` clauses
+
+  ### Workarounds
+  There is no workaround.
+
+  ### References
+  none
 aliases:
 - CVE-2025-22153
 - GHSA-gmj9-h825-chq2
-summary: try/except* clauses could allow bypass RestrictedPython via type confusion bug in the CPython interpreter
-details: "### Impact\nVia a type confusion bug in the CPython interpreter when using `try/except*` RestrictedPython could be bypassed.\n\nWe believe this should be fixed upstream in Python itself until that we remove support for `try/except*` from RestrictedPython.\n(It has been fixed for some Python versions.)\n\n### Patches\nPatched in version 8.0 by removing support for `try/except*` clauses\n\n### Workarounds\nThere is no workaround.\n\n### References\nnone\n"
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:L
-affected:
-- package:
-    ecosystem: PyPI
-    name: restrictedpython
-    purl: pkg:pypi/restrictedpython
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '6.0'
-    - fixed: '8.0'
+modified: '2026-07-07T17:25:17.745402Z'
+published: '2026-07-07T14:34:49.069993Z'
 references:
 - type: WEB
   url: https://github.com/zopefoundation/RestrictedPython/security/advisories/GHSA-gmj9-h825-chq2
@@ -32,3 +34,29 @@ references:
   url: https://pypi.org/project/restrictedpython
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-gmj9-h825-chq2
+affected:
+- package:
+    name: restrictedpython
+    ecosystem: PyPI
+    purl: pkg:pypi/restrictedpython
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '6.0'
+    - fixed: '8.0'
+  versions:
+  - '6.0'
+  - '6.1'
+  - '6.2'
+  - '7.0'
+  - 7.0a1.dev0
+  - 7.0a1.dev1
+  - 7.0a2.dev0
+  - '7.1'
+  - '7.2'
+  - 7.2a1.dev0
+  - '7.3'
+  - '7.4'
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:L

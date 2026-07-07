@@ -1,24 +1,13 @@
 id: PYSEC-0000-djangocms-attributes-field-GHSA-vxcv-4xvf-pc22
-modified: '2026-07-07T14:34:45.355042Z'
-published: '2026-07-07T14:34:45.355042Z'
+summary: django CMS Attributes Field Cross-site Scripting
+details: 'Improper Neutralization of Input During Web Page Generation (XSS or ''Cross-site
+  Scripting'') vulnerability in django CMS Association django CMS Attributes Fields
+  allows Stored XSS.This issue affects django CMS Attributes Fields: before 4.0.'
 aliases:
 - CVE-2024-11406
 - GHSA-vxcv-4xvf-pc22
-summary: django CMS Attributes Field Cross-site Scripting
-details: "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in django CMS Association django CMS Attributes Fields allows Stored XSS.This issue affects django CMS Attributes Fields: before 4.0."
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:L/A:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: djangocms-attributes-field
-    purl: pkg:pypi/djangocms-attributes-field
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 4.0.0
+modified: '2026-07-07T17:24:02.312330Z'
+published: '2026-07-07T14:34:45.355042Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-11406
@@ -40,3 +29,35 @@ references:
   url: https://pypi.org/project/djangocms-attributes-field
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-vxcv-4xvf-pc22
+affected:
+- package:
+    name: djangocms-attributes-field
+    ecosystem: PyPI
+    purl: pkg:pypi/djangocms-attributes-field
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 4.0.0
+  versions:
+  - 0.0.1
+  - 0.0.2
+  - 0.0.3
+  - 0.0.4
+  - 0.0.5
+  - 0.0.6
+  - 0.1.0
+  - 0.1.1
+  - 0.1.2
+  - 0.2.0
+  - 0.3.0
+  - 0.4.0
+  - 1.0.0
+  - 1.1.0
+  - 1.2.0
+  - 2.0.0
+  - 2.1.0
+  - 3.0.0
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:L/A:N

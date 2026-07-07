@@ -1,26 +1,12 @@
 id: PYSEC-0000-sqlitedict-GHSA-g4r7-86gm-pgqc
-modified: '2026-07-07T14:34:41.960486Z'
-published: '2026-07-07T14:34:41.960486Z'
+summary: sqlitedict insecure deserialization vulnerability
+details: Insecure deserialization in sqlitedict up to v2.1.0 allows attackers to execute
+  arbitrary code.
 aliases:
 - CVE-2024-35515
 - GHSA-g4r7-86gm-pgqc
-summary: sqlitedict insecure deserialization vulnerability
-details: Insecure deserialization in sqlitedict up to v2.1.0 allows attackers to execute arbitrary code.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
-- type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: sqlitedict
-    purl: pkg:pypi/sqlitedict
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - last_affected: 2.1.0
+modified: '2026-07-07T17:25:25.656996Z'
+published: '2026-07-07T14:34:41.960486Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-35515
@@ -36,3 +22,40 @@ references:
   url: https://pypi.org/project/sqlitedict
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-g4r7-86gm-pgqc
+affected:
+- package:
+    name: sqlitedict
+    ecosystem: PyPI
+    purl: pkg:pypi/sqlitedict
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 2.1.0
+  versions:
+  - '1.0'
+  - 1.0.1
+  - 1.0.2
+  - 1.0.3
+  - 1.0.4
+  - 1.0.5
+  - 1.0.6
+  - 1.0.7
+  - 1.0.8
+  - 1.0.9
+  - 1.1.0
+  - 1.2.0
+  - 1.3.0
+  - 1.4.0
+  - 1.4.1
+  - 1.4.2
+  - 1.5.0
+  - 1.6.0
+  - 1.7.0
+  - 2.0.0
+  - 2.1.0
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N

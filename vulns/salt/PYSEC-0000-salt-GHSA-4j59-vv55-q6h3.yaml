@@ -1,26 +1,14 @@
 id: PYSEC-0000-salt-GHSA-4j59-vv55-q6h3
-modified: '2026-07-07T16:02:54.928384Z'
-published: '2026-07-07T16:02:54.928384Z'
+summary: Salt's salt.auth.pki module does not properly authenticate callers
+details: The salt.auth.pki module does not properly authenticate callers. The "password"
+  field contains a public certificate which is validated against a CA certificate
+  by the module. This is not pki authentication, as the caller does not need access
+  to the corresponding private key for the authentication attempt to be accepted.
 aliases:
 - CVE-2024-38825
 - GHSA-4j59-vv55-q6h3
-summary: Salt's salt.auth.pki module does not properly authenticate callers
-details: The salt.auth.pki module does not properly authenticate callers. The "password" field contains a public certificate which is validated against a CA certificate by the module. This is not pki authentication, as the caller does not need access to the corresponding private key for the authentication attempt to be accepted.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: salt
-    purl: pkg:pypi/salt
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: 3006.0rc1
-    - fixed: '3006.12'
-    - introduced: 3007.0rc1
-    - fixed: '3007.4'
+modified: '2026-07-07T17:25:20.524736Z'
+published: '2026-07-07T16:02:54.928384Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-38825
@@ -38,3 +26,39 @@ references:
   url: https://pypi.org/project/salt
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-4j59-vv55-q6h3
+affected:
+- package:
+    name: salt
+    ecosystem: PyPI
+    purl: pkg:pypi/salt
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 3006.0rc1
+    - fixed: '3006.12'
+    - introduced: 3007.0rc1
+    - fixed: '3007.4'
+  versions:
+  - '3006.0'
+  - 3006.0rc1
+  - 3006.0rc2
+  - 3006.0rc3
+  - '3006.1'
+  - '3006.10'
+  - '3006.11'
+  - '3006.2'
+  - '3006.3'
+  - '3006.4'
+  - '3006.5'
+  - '3006.6'
+  - '3006.7'
+  - '3006.8'
+  - '3006.9'
+  - '3007.0'
+  - 3007.0rc1
+  - '3007.1'
+  - '3007.2'
+  - '3007.3'
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N

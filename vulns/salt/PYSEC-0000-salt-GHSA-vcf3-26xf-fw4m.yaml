@@ -1,28 +1,14 @@
 id: PYSEC-0000-salt-GHSA-vcf3-26xf-fw4m
-modified: '2026-07-07T16:03:21.156662Z'
-published: '2026-07-07T16:03:21.156662Z'
+summary: Salt Authentication Protocol Version Downgrade Allows Minion Impersonation
+details: Salt contains an authentication protocol version downgrade weakness that
+  can allow a malicious minion to bypass newer authentication/security features by
+  using an older request payload format, enabling minion impersonation and circumventing
+  protections introduced in response to prior issues.
 aliases:
 - CVE-2025-62349
 - GHSA-vcf3-26xf-fw4m
-summary: Salt Authentication Protocol Version Downgrade Allows Minion Impersonation
-details: Salt contains an authentication protocol version downgrade weakness that can allow a malicious minion to bypass newer authentication/security features by using an older request payload format, enabling minion impersonation and circumventing protections introduced in response to prior issues.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:L
-- type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: salt
-    purl: pkg:pypi/salt
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '3006.12'
-    - fixed: '3006.17'
-    - introduced: '3007.4'
-    - fixed: '3007.9'
+modified: '2026-07-07T17:25:21.300231Z'
+published: '2026-07-07T16:03:21.156662Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2025-62349
@@ -40,3 +26,31 @@ references:
   url: https://pypi.org/project/salt
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-vcf3-26xf-fw4m
+affected:
+- package:
+    name: salt
+    ecosystem: PyPI
+    purl: pkg:pypi/salt
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '3006.12'
+    - fixed: '3006.17'
+    - introduced: '3007.4'
+    - fixed: '3007.9'
+  versions:
+  - '3006.12'
+  - '3006.13'
+  - '3006.14'
+  - '3006.15'
+  - '3006.16'
+  - '3007.4'
+  - '3007.5'
+  - '3007.6'
+  - '3007.7'
+  - '3007.8'
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:L
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N

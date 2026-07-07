@@ -1,24 +1,15 @@
 id: PYSEC-0000-apache-superset-GHSA-5cx2-vq3h-x52c
-modified: '2026-07-07T11:45:18.615610Z'
-published: '2026-07-07T11:45:18.615610Z'
+summary: Apache superset missing check for default SECRET_KEY
+details: Session Validation attacks in Apache Superset versions up to and including
+  2.0.1. Installations that have not altered the default configured SECRET_KEY according
+  to installation instructions allow for an attacker to authenticate and access unauthorized
+  resources. This does not affect Superset administrators who have changed the default
+  value for SECRET_KEY config.
 aliases:
 - CVE-2023-27524
 - GHSA-5cx2-vq3h-x52c
-summary: Apache superset missing check for default SECRET_KEY
-details: Session Validation attacks in Apache Superset versions up to and including 2.0.1. Installations that have not altered the default configured SECRET_KEY according to installation instructions allow for an attacker to authenticate and access unauthorized resources. This does not affect Superset administrators who have changed the default value for SECRET_KEY config.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L/E:H
-affected:
-- package:
-    ecosystem: PyPI
-    name: apache-superset
-    purl: pkg:pypi/apache-superset
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 2.1.0
+modified: '2026-07-07T17:23:44.037688Z'
+published: '2026-07-07T11:45:18.615610Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2023-27524
@@ -42,3 +33,43 @@ references:
   url: https://pypi.org/project/apache-superset
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-5cx2-vq3h-x52c
+affected:
+- package:
+    name: apache-superset
+    ecosystem: PyPI
+    purl: pkg:pypi/apache-superset
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.1.0
+  versions:
+  - 0.34.0
+  - 0.34.1
+  - 0.35.1
+  - 0.35.2
+  - 0.36.0
+  - 0.37.0
+  - 0.37.1
+  - 0.37.2
+  - 0.38.0
+  - 0.38.1
+  - 1.0.0
+  - 1.0.1
+  - 1.1.0
+  - 1.2.0
+  - 1.3.0
+  - 1.3.1
+  - 1.3.2
+  - 1.4.0
+  - 1.4.1
+  - 1.4.2
+  - 1.5.0
+  - 1.5.1
+  - 1.5.2
+  - 1.5.3
+  - 2.0.0
+  - 2.0.1
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L/E:H

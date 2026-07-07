@@ -1,24 +1,15 @@
 id: PYSEC-0000-quivr-core-GHSA-m76r-xqqj-mqmv
-modified: '2026-07-07T14:34:57.804467Z'
-published: '2026-07-07T14:34:57.804467Z'
+summary: Quivr unauthenticated Denial of Service (DoS) via Multipart Boundary
+details: A Denial of Service (DoS) vulnerability in the file upload feature of stangirard/quivr
+  v0.0.298 allows unauthenticated attackers to cause excessive resource consumption
+  by appending characters to the end of a multipart boundary in an HTTP request. This
+  leads to the server continuously processing each character, rendering the service
+  unavailable and impacting all users.
 aliases:
 - CVE-2024-9229
 - GHSA-m76r-xqqj-mqmv
-summary: Quivr unauthenticated Denial of Service (DoS) via Multipart Boundary
-details: A Denial of Service (DoS) vulnerability in the file upload feature of stangirard/quivr v0.0.298 allows unauthenticated attackers to cause excessive resource consumption by appending characters to the end of a multipart boundary in an HTTP request. This leads to the server continuously processing each character, rendering the service unavailable and impacting all users.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-affected:
-- package:
-    ecosystem: PyPI
-    name: quivr-core
-    purl: pkg:pypi/quivr-core
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - last_affected: 0.0.14
+modified: '2026-07-07T17:25:15.703183Z'
+published: '2026-07-07T14:34:57.804467Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-9229
@@ -32,3 +23,30 @@ references:
   url: https://pypi.org/project/quivr-core
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-m76r-xqqj-mqmv
+affected:
+- package:
+    name: quivr-core
+    ecosystem: PyPI
+    purl: pkg:pypi/quivr-core
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 0.0.14
+  versions:
+  - 0.0.10
+  - 0.0.11
+  - 0.0.12
+  - 0.0.13
+  - 0.0.14
+  - 0.0.2
+  - 0.0.3
+  - 0.0.4
+  - 0.0.5
+  - 0.0.6
+  - 0.0.7
+  - 0.0.8
+  - 0.0.9
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

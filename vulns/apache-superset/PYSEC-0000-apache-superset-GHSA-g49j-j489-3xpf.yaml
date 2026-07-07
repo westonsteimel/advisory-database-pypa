@@ -1,26 +1,14 @@
 id: PYSEC-0000-apache-superset-GHSA-g49j-j489-3xpf
-modified: '2026-07-07T11:45:29.133260Z'
-published: '2026-07-07T11:45:29.133260Z'
+summary: Apache Superset incorrect write permissions vulnerability
+details: |-
+  An authenticated Gamma user has the ability to create a dashboard and add charts to it, this user would automatically become one of the owners of the charts allowing him to incorrectly have write permissions to these charts.This issue affects Apache Superset: before 2.1.3, from 3.0.0 before 3.0.2.
+
+  Users are recommended to upgrade to version 3.0.2 or 2.1.3, which fixes the issue.
 aliases:
 - CVE-2023-49734
 - GHSA-g49j-j489-3xpf
-summary: Apache Superset incorrect write permissions vulnerability
-details: "An authenticated Gamma user has the ability to create a dashboard and add charts to it, this user would automatically become one of the owners of the charts allowing him to incorrectly have write permissions to these charts.This issue affects Apache Superset: before 2.1.3, from 3.0.0 before 3.0.2.\n\nUsers are recommended to upgrade to version 3.0.2 or 2.1.3, which fixes the issue."
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: apache-superset
-    purl: pkg:pypi/apache-superset
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 2.1.3
-    - introduced: 3.0.0
-    - fixed: 3.0.2
+modified: '2026-07-07T17:23:45.417342Z'
+published: '2026-07-07T11:45:29.133260Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2023-49734
@@ -40,3 +28,53 @@ references:
   url: https://pypi.org/project/apache-superset
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-g49j-j489-3xpf
+affected:
+- package:
+    name: apache-superset
+    ecosystem: PyPI
+    purl: pkg:pypi/apache-superset
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.1.3
+    - introduced: 3.0.0
+    - fixed: 3.0.2
+  versions:
+  - 0.34.0
+  - 0.34.1
+  - 0.35.1
+  - 0.35.2
+  - 0.36.0
+  - 0.37.0
+  - 0.37.1
+  - 0.37.2
+  - 0.38.0
+  - 0.38.1
+  - 1.0.0
+  - 1.0.1
+  - 1.1.0
+  - 1.2.0
+  - 1.3.0
+  - 1.3.1
+  - 1.3.2
+  - 1.4.0
+  - 1.4.1
+  - 1.4.2
+  - 1.5.0
+  - 1.5.1
+  - 1.5.2
+  - 1.5.3
+  - 2.0.0
+  - 2.0.1
+  - 2.1.0
+  - 2.1.1
+  - 2.1.1rc1
+  - 2.1.1rc2
+  - 2.1.1rc3
+  - 2.1.2
+  - 3.0.0
+  - 3.0.1
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N

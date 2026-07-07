@@ -1,28 +1,15 @@
 id: PYSEC-0000-grpcio-GHSA-p25m-jpj4-qcrr
-modified: '2026-07-07T11:45:24.303647Z'
-published: '2026-07-07T11:45:24.303647Z'
+summary: Denial of Service Vulnerability in gRPC TCP Server (Posix-compatible platforms)
+details: "Lack of error handling in the TCP server in Google's gRPC starting version\
+  \ 1.23 on posix-compatible platforms (ex. Linux) allows an attacker to cause a denial\
+  \ of service by initiating a significant number of connections with the server.\
+  \ Note that gRPC C++ Python, and Ruby are affected, but gRPC Java, and Go are NOT\
+  \ affected.\_"
 aliases:
 - CVE-2023-4785
 - GHSA-p25m-jpj4-qcrr
-summary: Denial of Service Vulnerability in gRPC TCP Server (Posix-compatible platforms)
-details: Lack of error handling in the TCP server in Google's gRPC starting version 1.23 on posix-compatible platforms (ex. Linux) allows an attacker to cause a denial of service by initiating a significant number of connections with the server. Note that gRPC C++ Python, and Ruby are affected, but gRPC Java, and Go are NOT affected. 
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-affected:
-- package:
-    ecosystem: PyPI
-    name: grpcio
-    purl: pkg:pypi/grpcio
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: 1.55.0
-    - fixed: 1.55.3
-    - introduced: 1.54.0
-    - fixed: 1.54.3
-    - introduced: 1.53.0
-    - fixed: 1.53.2
+modified: '2026-07-07T17:24:16.717243Z'
+published: '2026-07-07T11:45:24.303647Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2023-4785
@@ -52,3 +39,26 @@ references:
   url: https://pypi.org/project/grpcio
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-p25m-jpj4-qcrr
+affected:
+- package:
+    name: grpcio
+    ecosystem: PyPI
+    purl: pkg:pypi/grpcio
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 1.55.0
+    - fixed: 1.55.3
+    - introduced: 1.54.0
+    - fixed: 1.54.3
+    - introduced: 1.53.0
+    - fixed: 1.53.2
+  versions:
+  - 1.53.0
+  - 1.53.1
+  - 1.54.0
+  - 1.54.2
+  - 1.55.0
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

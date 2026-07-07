@@ -1,24 +1,14 @@
 id: PYSEC-0000-hdwallet-GHSA-mrfv-m5wm-5w6w
-modified: '2026-07-07T16:03:14.550291Z'
-published: '2026-07-07T16:03:14.550291Z'
+summary: libsodium has Incomplete List of Disallowed Inputs
+details: |-
+  libsodium before ad3004e, in atypical use cases involving certain custom cryptography or untrusted data to crypto_core_ed25519_is_valid_point, mishandles checks for whether an elliptic curve point is valid because it sometimes allows points that aren't in the main cryptographic group.
+
+  This advisoory lists packages in the GitHub Advisory Database's [supported ecosystems](https://github.com/github/advisory-database?tab=readme-ov-file#supported-ecosystems) that are affected by this vulnerability due to a vulnerable dependency.
 aliases:
 - CVE-2025-69277
 - GHSA-mrfv-m5wm-5w6w
-summary: libsodium has Incomplete List of Disallowed Inputs
-details: "libsodium before ad3004e, in atypical use cases involving certain custom cryptography or untrusted data to crypto_core_ed25519_is_valid_point, mishandles checks for whether an elliptic curve point is valid because it sometimes allows points that aren't in the main cryptographic group.\n\nThis advisoory lists packages in the GitHub Advisory Database's [supported ecosystems](https://github.com/github/advisory-database?tab=readme-ov-file#supported-ecosystems) that are affected by this vulnerability due to a vulnerable dependency."
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: hdwallet
-    purl: pkg:pypi/hdwallet
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 3.6.1
+modified: '2026-07-07T17:24:18.327376Z'
+published: '2026-07-07T16:03:14.550291Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2025-69277
@@ -52,3 +42,49 @@ references:
   url: https://pypi.org/project/hdwallet
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-mrfv-m5wm-5w6w
+affected:
+- package:
+    name: hdwallet
+    ecosystem: PyPI
+    purl: pkg:pypi/hdwallet
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 3.6.1
+  versions:
+  - 0.1.0
+  - 0.1.0a1
+  - 0.1.1
+  - 0.2.0
+  - 1.0.0
+  - 1.0.1
+  - 1.1.0
+  - 1.1.1
+  - 1.2.0
+  - 1.3.0
+  - 1.3.1
+  - 1.3.2
+  - 2.0.0
+  - 2.0.0a1
+  - 2.0.1
+  - 2.1.0
+  - 2.1.1
+  - 2.1.2
+  - 2.2.0
+  - 2.2.1
+  - 3.0.0
+  - 3.0.1
+  - 3.1.0
+  - 3.1.0b1
+  - 3.1.0b2
+  - 3.2.0
+  - 3.2.1
+  - 3.2.3
+  - 3.3.0
+  - 3.4.0
+  - 3.5.1
+  - 3.6.0
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N

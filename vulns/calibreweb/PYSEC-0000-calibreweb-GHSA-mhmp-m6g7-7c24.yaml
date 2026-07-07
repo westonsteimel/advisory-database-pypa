@@ -1,24 +1,12 @@
 id: PYSEC-0000-calibreweb-GHSA-mhmp-m6g7-7c24
-modified: '2026-07-07T11:45:18.357530Z'
-published: '2026-07-07T11:45:18.357530Z'
+summary: Weak Password Requirements in calibreweb
+details: Weak Password Requirements in GitHub repository janeczku/calibre-web prior
+  to 0.6.20.
 aliases:
 - CVE-2023-2106
 - GHSA-mhmp-m6g7-7c24
-summary: Weak Password Requirements in calibreweb
-details: Weak Password Requirements in GitHub repository janeczku/calibre-web prior to 0.6.20.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L
-affected:
-- package:
-    ecosystem: PyPI
-    name: calibreweb
-    purl: pkg:pypi/calibreweb
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 0.6.20
+modified: '2026-07-07T17:23:52.884295Z'
+published: '2026-07-07T11:45:18.357530Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2023-2106
@@ -32,3 +20,25 @@ references:
   url: https://pypi.org/project/calibreweb
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-mhmp-m6g7-7c24
+affected:
+- package:
+    name: calibreweb
+    ecosystem: PyPI
+    purl: pkg:pypi/calibreweb
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 0.6.20
+  versions:
+  - 0.6.12
+  - 0.6.13
+  - 0.6.14
+  - 0.6.15
+  - 0.6.16
+  - 0.6.17
+  - 0.6.18
+  - 0.6.19
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L

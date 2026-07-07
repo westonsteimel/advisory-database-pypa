@@ -1,24 +1,13 @@
 id: PYSEC-0000-basicsr-GHSA-86w8-vhw6-q9qq
-modified: '2026-07-07T14:34:50.644260Z'
-published: '2026-07-07T14:34:50.644260Z'
+summary: XPixelGroup BasicSR Command Injection
+details: XPixelGroup BasicSR through 1.4.2 might locally allow code execution in contrived
+  situations where "scontrol show hostname" is executed in the presence of a crafted
+  SLURM_NODELIST environment variable.
 aliases:
 - CVE-2024-27763
 - GHSA-86w8-vhw6-q9qq
-summary: XPixelGroup BasicSR Command Injection
-details: XPixelGroup BasicSR through 1.4.2 might locally allow code execution in contrived situations where "scontrol show hostname" is executed in the presence of a crafted SLURM_NODELIST environment variable.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L
-affected:
-- package:
-    ecosystem: PyPI
-    name: basicsr
-    purl: pkg:pypi/basicsr
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - last_affected: 1.4.2
+modified: '2026-07-07T17:23:49.633447Z'
+published: '2026-07-07T14:34:50.644260Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-27763
@@ -32,3 +21,43 @@ references:
   url: https://pypi.org/project/basicsr
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-86w8-vhw6-q9qq
+affected:
+- package:
+    name: basicsr
+    ecosystem: PyPI
+    purl: pkg:pypi/basicsr
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 1.4.2
+  versions:
+  - 1.3.1
+  - 1.3.2
+  - 1.3.3
+  - 1.3.3.1
+  - 1.3.3.10
+  - 1.3.3.11
+  - 1.3.3.3
+  - 1.3.3.4
+  - 1.3.3.5
+  - 1.3.3.6
+  - 1.3.3.7
+  - 1.3.3.8
+  - 1.3.3.9
+  - 1.3.4.0
+  - 1.3.4.1
+  - 1.3.4.2
+  - 1.3.4.3
+  - 1.3.4.4
+  - 1.3.4.6
+  - 1.3.4.7
+  - 1.3.4.8
+  - 1.3.4.9
+  - 1.3.5
+  - 1.4.0
+  - 1.4.1
+  - 1.4.2
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L

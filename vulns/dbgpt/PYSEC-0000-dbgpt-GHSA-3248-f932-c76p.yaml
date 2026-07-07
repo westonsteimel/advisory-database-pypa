@@ -1,24 +1,16 @@
 id: PYSEC-0000-dbgpt-GHSA-3248-f932-c76p
-modified: '2026-07-07T14:34:52.110006Z'
-published: '2026-07-07T14:34:52.110006Z'
+summary: DB-GPT vulnerable to Cross-Site Request Forgery
+details: In version 0.6.0 of eosphoros-ai/db-gpt, the `uvicorn` app created by `dbgpt_server`
+  uses an overly permissive instance of `CORSMiddleware` which sets the `Access-Control-Allow-Origin`
+  to `*` for all requests. This configuration makes all endpoints exposed by the server
+  vulnerable to Cross-Site Request Forgery (CSRF). An attacker can exploit this vulnerability
+  to interact with any endpoints of the instance, even if the instance is not publicly
+  exposed to the network.
 aliases:
 - CVE-2024-10906
 - GHSA-3248-f932-c76p
-summary: DB-GPT vulnerable to Cross-Site Request Forgery
-details: In version 0.6.0 of eosphoros-ai/db-gpt, the `uvicorn` app created by `dbgpt_server` uses an overly permissive instance of `CORSMiddleware` which sets the `Access-Control-Allow-Origin` to `*` for all requests. This configuration makes all endpoints exposed by the server vulnerable to Cross-Site Request Forgery (CSRF). An attacker can exploit this vulnerability to interact with any endpoints of the instance, even if the instance is not publicly exposed to the network.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:L
-affected:
-- package:
-    ecosystem: PyPI
-    name: dbgpt
-    purl: pkg:pypi/dbgpt
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - last_affected: 0.6.0
+modified: '2026-07-07T17:23:59.553483Z'
+published: '2026-07-07T14:34:52.110006Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-10906
@@ -32,3 +24,37 @@ references:
   url: https://pypi.org/project/dbgpt
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-3248-f932-c76p
+affected:
+- package:
+    name: dbgpt
+    ecosystem: PyPI
+    purl: pkg:pypi/dbgpt
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 0.6.0
+  versions:
+  - 0.4.7
+  - 0.5.0
+  - 0.5.1
+  - 0.5.10
+  - 0.5.1rc0
+  - 0.5.2
+  - 0.5.2rc0
+  - 0.5.3
+  - 0.5.3rc0
+  - 0.5.4
+  - 0.5.4rc0
+  - 0.5.5
+  - 0.5.5rc0
+  - 0.5.6
+  - 0.5.6rc0
+  - 0.5.7
+  - 0.5.7rc0
+  - 0.5.8
+  - 0.5.9
+  - 0.5.9rc0
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:L

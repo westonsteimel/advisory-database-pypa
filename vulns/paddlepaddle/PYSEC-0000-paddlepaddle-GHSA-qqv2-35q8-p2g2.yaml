@@ -1,24 +1,12 @@
 id: PYSEC-0000-paddlepaddle-GHSA-qqv2-35q8-p2g2
-modified: '2026-07-07T11:45:34.575359Z'
-published: '2026-07-07T11:45:34.575359Z'
+summary: 'PaddlePaddle command injection in paddle.utils.download._wget_download '
+details: Command injection in paddle.utils.download._wget_download (bypass filter)
+  in paddlepaddle/paddle 2.6.0
 aliases:
 - CVE-2024-0815
 - GHSA-qqv2-35q8-p2g2
-summary: 'PaddlePaddle command injection in paddle.utils.download._wget_download '
-details: Command injection in paddle.utils.download._wget_download (bypass filter) in paddlepaddle/paddle 2.6.0
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
-affected:
-- package:
-    ecosystem: PyPI
-    name: paddlepaddle
-    purl: pkg:pypi/paddlepaddle
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 3.0.0-beta0
+modified: '2026-07-07T17:24:59.278951Z'
+published: '2026-07-07T11:45:34.575359Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-0815
@@ -32,3 +20,19 @@ references:
   url: https://pypi.org/project/paddlepaddle
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-qqv2-35q8-p2g2
+affected:
+- package:
+    name: paddlepaddle
+    ecosystem: PyPI
+    purl: pkg:pypi/paddlepaddle
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 3.0.0-beta0
+  versions:
+  - 1.8.5
+  - 2.6.2
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H
