@@ -1,12 +1,12 @@
-id: PYSEC-0000-tiktoken-mcp.yaml
-modified: 2026-07-07T16:26:46Z
-published: 2026-07-07T16:26:46Z
-summary: Malicious code in tiktoken-mcp (PyPI)
+id: PYSEC-2026-1069
+published: "2026-07-07T16:00:54Z"
+modified: "2026-07-07T16:00:54Z"
 aliases:
-- MAL-2026-5326
+- MAL-2026-5317
+summary: Malicious code in instructor-mcp (PyPI)
 details: |
   Part of the "Hades" wave of the Shai-Hulud supply-chain campaign. On 2026-06-08,
-  malicious phantom releases of tiktoken-mcp were published to PyPI using stolen
+  malicious phantom releases of instructor-mcp were published to PyPI using stolen
   credentials. The package executes a bundled JavaScript payload (via the Bun
   runtime) on import that harvests and exfiltrates credentials and attempts
   self-propagation. This entry is a summary; behavior may not be fully
@@ -14,15 +14,15 @@ details: |
   indicators of compromise.
 affected:
 - package:
-    name: tiktoken-mcp
+    name: instructor-mcp
     ecosystem: PyPI
-    purl: pkg:pypi/tiktoken-mcp
+    purl: pkg:pypi/instructor-mcp
   versions:
-  - 0.13.1
-  - 0.13.2
+  - 1.15.2
+  - 1.15.3
 references:
 - type: EVIDENCE
-  url: https://inspector.pypi.io/project/tiktoken-mcp/0.13.2/packages/5c/58/895febe9c7cc34d3e4d64699ec40ac0b378392db3cfda3c93b7af27da95d/tiktoken_mcp-0.13.2-py3-none-any.whl/tiktoken-setup.pth
+  url: https://inspector.pypi.io/project/instructor-mcp/1.15.3/packages/0e/e2/1f6d4c8dba9e185be98499dceeecc90fd1e5f94dcbb020dee1d883391461/instructor_mcp-1.15.3-py3-none-any.whl/instructor_mcp-setup.pth
 - type: ARTICLE
   url: https://www.endorlabs.com/learn/shai-hulud-hades-wave-hits-six-pypi-bioinformatics-packages
 - type: ARTICLE
