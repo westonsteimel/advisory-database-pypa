@@ -1,26 +1,9 @@
-id: PYSEC-0000-CVE-2026-49297
-details: "Apache Airflow's Google provider operators `GCSToSFTPOperator` and `GCSTimeSpanFileTransformOperator`\
-  \ joined GCS object names returned by the bucket listing API directly to a destination\
-  \ filesystem path without normalisation or containment check. A user with write\
-  \ access to the source GCS bucket (typically a different trust principal than the\
-  \ DAG author \u2014 partner uploads, ingest-only service accounts, public-data buckets)\
-  \ could create an object whose name contains `..` segments and cause the DAG run\
-  \ to write the downloaded blob outside the configured destination (the SFTP `destination_path`\
-  \ for `GCSToSFTPOperator`; the worker-local temp directory for `GCSTimeSpanFileTransformOperator`),\
-  \ enabling overwrite of arbitrary files on the SFTP server or the worker host. Affects\
-  \ deployments that ingest from buckets writable by less-trusted principals. Users\
-  \ are advised to upgrade to `apache-airflow-providers-google` 22.2.1 or later."
+id: PYSEC-2026-2084
+published: "2026-07-06T11:16:30.207Z"
+modified: "2026-07-09T10:35:30.987125Z"
 aliases:
 - CVE-2026-49297
-modified: '2026-07-09T10:35:30.987125Z'
-published: '2026-07-06T11:16:30.207Z'
-references:
-- type: ADVISORY
-  url: http://www.openwall.com/lists/oss-security/2026/07/04/8
-- type: ADVISORY
-  url: https://lists.apache.org/thread/cb5nvoxsj1q7rv878cyqgtg150w0zglq?users@airflow.apache.org
-- type: FIX
-  url: https://github.com/apache/airflow/pull/67667
+details: Apache Airflow's Google provider operators `GCSToSFTPOperator` and `GCSTimeSpanFileTransformOperator` joined GCS object names returned by the bucket listing API directly to a destination filesystem path without normalisation or containment check. A user with write access to the source GCS bucket (typically a different trust principal than the DAG author — partner uploads, ingest-only service accounts, public-data buckets) could create an object whose name contains `..` segments and cause the DAG run to write the downloaded blob outside the configured destination (the SFTP `destination_path` for `GCSToSFTPOperator`; the worker-local temp directory for `GCSTimeSpanFileTransformOperator`), enabling overwrite of arbitrary files on the SFTP server or the worker host. Affects deployments that ingest from buckets writable by less-trusted principals. Users are advised to upgrade to `apache-airflow-providers-google` 22.2.1 or later.
 affected:
 - package:
     name: apache-airflow-providers-google
@@ -29,7 +12,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 22.2.1
   versions:
   - 1.0.0
@@ -246,6 +229,13 @@ affected:
   - 9.0.0rc1
   - 9.0.0rc2
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: http://www.openwall.com/lists/oss-security/2026/07/04/8
+- type: ADVISORY
+  url: https://lists.apache.org/thread/cb5nvoxsj1q7rv878cyqgtg150w0zglq?users@airflow.apache.org
+- type: FIX
+  url: https://github.com/apache/airflow/pull/67667
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H

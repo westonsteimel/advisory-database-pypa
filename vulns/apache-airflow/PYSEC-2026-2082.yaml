@@ -1,25 +1,9 @@
-id: PYSEC-0000-CVE-2026-33264
-details: 'A bug in `BaseSerialization.deserialize()` allowed unrestricted `import_string()`
-  of attacker-controlled class paths when the Scheduler / API Server loaded a serialized
-  DAG: a DAG author could embed a malicious trigger into a DAG to gain remote code
-  execution on the API Server / Scheduler process, crossing the Airflow security boundary
-  that DAG-author code must never execute in those processes. Users are advised to
-  upgrade to `apache-airflow` 3.3.0 or later. As a defense-in-depth mitigation, deployments
-  where DAG-author trust is limited can restrict the `[core] allowed_deserialization_classes`
-  config to a narrow allowlist.'
+id: PYSEC-2026-2082
+published: "2026-07-07T10:16:40.443Z"
+modified: "2026-07-09T10:35:31.607691Z"
 aliases:
 - CVE-2026-33264
-modified: '2026-07-09T10:35:31.607691Z'
-published: '2026-07-07T10:16:40.443Z'
-references:
-- type: ADVISORY
-  url: http://www.openwall.com/lists/oss-security/2026/07/07/1
-- type: ADVISORY
-  url: https://lists.apache.org/thread/otvdw8qt2y7xy2n5nq9xby9ky4rf5ltj
-- type: FIX
-  url: https://github.com/apache/airflow/pull/66002
-- type: FIX
-  url: https://github.com/apache/airflow/pull/68528
+details: "A bug in `BaseSerialization.deserialize()` allowed unrestricted `import_string()` of attacker-controlled class paths when the Scheduler / API Server loaded a serialized DAG: a DAG author could embed a malicious trigger into a DAG to gain remote code execution on the API Server / Scheduler process, crossing the Airflow security boundary that DAG-author code must never execute in those processes. Users are advised to upgrade to `apache-airflow` 3.3.0 or later. As a defense-in-depth mitigation, deployments where DAG-author trust is limited can restrict the `[core] allowed_deserialization_classes` config to a narrow allowlist."
 affected:
 - package:
     name: apache-airflow
@@ -28,7 +12,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 3.3.0
   versions:
   - 1.10.0
@@ -326,6 +310,15 @@ affected:
   - 3.3.0rc1
   - 3.3.0rc2
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: http://www.openwall.com/lists/oss-security/2026/07/07/1
+- type: ADVISORY
+  url: https://lists.apache.org/thread/otvdw8qt2y7xy2n5nq9xby9ky4rf5ltj
+- type: FIX
+  url: https://github.com/apache/airflow/pull/66002
+- type: FIX
+  url: https://github.com/apache/airflow/pull/68528
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
