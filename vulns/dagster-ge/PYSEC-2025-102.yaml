@@ -1,14 +1,29 @@
+id: PYSEC-2025-102
+details: Local File Inclusion in dagster._grpc.impl.get_notebook_data in Dagster 1.10.14
+  allows attackers with access to the gRPC server to read arbitrary files by supplying
+  path traversal sequences in the notebook_path field of ExternalNotebookData requests,
+  bypassing the intended extension-based check.
+aliases:
+- CVE-2025-51481
+modified: '2026-07-09T16:51:49.990331Z'
+published: '2025-07-22T17:15:33.543Z'
+references:
+- type: REPORT
+  url: https://github.com/dagster-io/dagster/pull/30002
+- type: PACKAGE
+  url: https://github.com/dagster-io/dagster
+- type: EVIDENCE
+  url: https://www.gecko.security/blog/cve-2025-51481
 affected:
-- ecosystem_specific: {}
-  package:
-    ecosystem: PyPI
+- package:
     name: dagster-ge
+    ecosystem: PyPI
     purl: pkg:pypi/dagster-ge
   ranges:
-  - events:
+  - type: ECOSYSTEM
+    events:
     - introduced: '0'
     - last_affected: 1.10.14
-    type: ECOSYSTEM
   versions:
   - 0.10.0
   - 0.10.0rc0
@@ -648,22 +663,8 @@ affected:
   - 0.29.10
   - 0.29.11
   - 0.29.12
-aliases:
-- CVE-2025-51481
-details: Local File Inclusion in dagster._grpc.impl.get_notebook_data in Dagster 1.10.14
-  allows attackers with access to the gRPC server to read arbitrary files by supplying
-  path traversal sequences in the notebook_path field of ExternalNotebookData requests,
-  bypassing the intended extension-based check.
-id: PYSEC-2025-102
-modified: '2026-07-02T16:38:31.076371Z'
-published: '2025-07-22T17:15:33.543Z'
-references:
-- type: REPORT
-  url: https://github.com/dagster-io/dagster/pull/30002
-- type: PACKAGE
-  url: https://github.com/dagster-io/dagster
-- type: EVIDENCE
-  url: https://www.gecko.security/blog/cve-2025-51481
+  - 0.29.13
+  ecosystem_specific: {}
 severity:
-- score: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L
-  type: CVSS_V3
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L
