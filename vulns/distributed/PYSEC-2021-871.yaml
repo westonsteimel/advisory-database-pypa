@@ -9,7 +9,8 @@ details: An issue was discovered in the Dask distributed package before 2021.10.
 aliases:
 - CVE-2021-42343
 - GHSA-hwqr-f3v9-hwxr
-modified: '2022-07-14T05:11:51.739830Z'
+- GHSA-j8fq-86c5-5v2r
+modified: '2026-07-09T14:40:00Z'
 published: '2021-10-26T11:15:00Z'
 references:
 - type: WEB
@@ -18,6 +19,10 @@ references:
   url: https://github.com/dask/dask/tags
 - type: ADVISORY
   url: https://github.com/dask/distributed/security/advisories/GHSA-hwqr-f3v9-hwxr
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j8fq-86c5-5v2r
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hwqr-f3v9-hwxr
 affected:
 - package:
     name: distributed

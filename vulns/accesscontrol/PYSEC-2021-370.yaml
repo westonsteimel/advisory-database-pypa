@@ -31,14 +31,11 @@ affected:
   - "5.1"
 references:
 - type: ADVISORY
-  url: https://github.com/zopefoundation/AccessControl/security/advisories/GHSA-qcx9-j53g-ccgf
-- type: ADVISORY
   url: https://github.com/zopefoundation/Zope/security/advisories/GHSA-g4gq-j4p2-j8fr
 - type: FIX
   url: https://github.com/zopefoundation/Zope/commit/f72a18dda8e9bf2aedb46168761668464a4be988
 aliases:
 - CVE-2021-32811
-- GHSA-qcx9-j53g-ccgf
 - GHSA-g4gq-j4p2-j8fr
-modified: "2021-10-12T02:55:32.357329Z"
+modified: "2026-07-09T14:40:00Z"
 published: "2021-08-02T22:15:00Z"

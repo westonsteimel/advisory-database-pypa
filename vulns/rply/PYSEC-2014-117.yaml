@@ -1,9 +1,11 @@
 id: PYSEC-2014-117
 published: "2014-01-28T00:55:04.037Z"
-modified: "2026-04-29T01:13:23.040Z"
+modified: "2026-07-09T16:19:00Z"
+withdrawn: "2026-07-09T16:19:00Z"
 aliases:
 - CVE-2014-1604
-details: The parser cache functionality in parsergenerator.py in RPLY (aka python-rply) before 0.7.1 allows local users to spoof cache data by pre-creating a temporary rply-*.json file with a predictable name.
+details: Withdrawn as duplicate of PYSEC-2014-17.
+  The parser cache functionality in parsergenerator.py in RPLY (aka python-rply) before 0.7.1 allows local users to spoof cache data by pre-creating a temporary rply-*.json file with a predictable name.
 affected:
 - package:
     name: rply

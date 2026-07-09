@@ -1,5 +1,6 @@
 id: PYSEC-2021-872
-details: An issue was discovered in the Dask distributed package before 2021.10.0
+details: Withdrawn as duplicate of PYSEC-2021-871.
+  An issue was discovered in the Dask distributed package before 2021.10.0
   for Python. Single machine Dask clusters started with dask.distributed.LocalCluster
   or dask.distributed.Client (which defaults to using LocalCluster) would mistakenly
   configure their respective Dask workers to listen on external interfaces (typically
@@ -10,8 +11,9 @@ aliases:
 - CVE-2021-42343
 - GHSA-hwqr-f3v9-hwxr
 - GHSA-j8fq-86c5-5v2r
-modified: '2023-05-25T05:07:00Z'
+modified: '2026-07-09T14:40:00Z'
 published: '2021-10-26T11:15:00Z'
+withdrawn: '2026-07-09T14:40:00Z'
 references:
 - type: WEB
   url: https://docs.dask.org/en/latest/changelog.html
@@ -21,6 +23,8 @@ references:
   url: https://github.com/dask/distributed/security/advisories/GHSA-hwqr-f3v9-hwxr
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-j8fq-86c5-5v2r
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-hwqr-f3v9-hwxr
 affected:
 - package:
     name: distributed

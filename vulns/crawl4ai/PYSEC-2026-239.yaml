@@ -1,9 +1,9 @@
 id: PYSEC-2026-239
 published: "2026-06-21T14:16:24.980Z"
-modified: "2026-06-27T10:28:15.161844Z"
+modified: "2026-07-09T14:40:00Z"
 aliases:
 - CVE-2026-56265
-- GHSA-365w-hqf6-vxfg
+- GHSA-8qrg-7j2f-rf2h
 details: Crawl4AI before 0.8.7 contains an authentication bypass vulnerability due to a hardcoded default JWT signing key in the Docker API server. Attackers who know the default key can forge valid authentication tokens for any user, bypassing authentication and gaining full access to protected functionality.
 affected:
 - package:
@@ -83,7 +83,7 @@ affected:
   ecosystem_specific: {}
 references:
 - type: ADVISORY
-  url: https://github.com/unclecode/crawl4ai/security/advisories/GHSA-365w-hqf6-vxfg
+  url: https://github.com/advisories/GHSA-8qrg-7j2f-rf2h
 - type: ADVISORY
   url: https://www.vulncheck.com/advisories/crawl4ai-authentication-bypass-via-hardcoded-jwt-signing-key
 - type: PACKAGE

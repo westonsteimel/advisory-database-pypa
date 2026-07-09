@@ -59,14 +59,16 @@ affected:
   - 4.0.1
 aliases:
 - CVE-2024-6221
-details: A vulnerability in corydolphin/flask-cors version 4.0.1 allows the `Access-Control-Allow-Private-Network`
+details: Withdrawn as duplicate of PYSEC-2024-71.
+  A vulnerability in corydolphin/flask-cors version 4.0.1 allows the `Access-Control-Allow-Private-Network`
   CORS header to be set to true by default. This behavior can expose private network
   resources to unauthorized external access, leading to significant security risks
   such as data breaches, unauthorized access to sensitive information, and potential
   network intrusions.
 id: PYSEC-2024-260
-modified: '2026-05-21T14:54:28.848845Z'
+modified: '2026-07-09T14:57:00Z'
 published: '2024-08-18T19:15:04.730Z'
+withdrawn: '2026-07-09T14:57:00Z'
 references:
 - type: FIX
   url: https://github.com/corydolphin/flask-cors/commit/03aa3f8e2256437f7bad96422a747b98ab5e31bf

@@ -1,7 +1,7 @@
 affected:
 - package:
     ecosystem: PyPI
-    name: Plone
+    name: plone
     purl: pkg:pypi/plone
   ranges:
   - events:

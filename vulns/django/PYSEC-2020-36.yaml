@@ -64,25 +64,29 @@ affected:
   - 3.0.3
 references:
 - type: WEB
-  url: https://groups.google.com/forum/#!topic/django-announce/fLUh_pOaKrY
-- type: ARTICLE
-  url: https://www.djangoproject.com/weblog/2020/mar/04/security-releases/
+  url: https://groups.google.com/forum/#%21topic/django-announce/fLUh_pOaKrY
 - type: WEB
-  url: https://docs.djangoproject.com/en/3.0/releases/security/
+  url: https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/4A2AP4T7RKPBCLTI2NNQG3T6MINDUUMZ/
 - type: WEB
-  url: https://usn.ubuntu.com/4296-1/
+  url: https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UZMN2NKAGTFE3YKMNM2JVJG7R2W7LLHY/
 - type: ADVISORY
-  url: https://security.netapp.com/advisory/ntap-20200327-0004/
+  url: https://lists.debian.org/debian-lts-announce/2022/05/msg00035.html
 - type: ADVISORY
   url: https://security.gentoo.org/glsa/202004-17
 - type: ADVISORY
+  url: https://security.netapp.com/advisory/ntap-20200327-0004/
+- type: ADVISORY
+  url: https://usn.ubuntu.com/4296-1/
+- type: ADVISORY
   url: https://www.debian.org/security/2020/dsa-4705
-- type: WEB
-  url: https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/4A2AP4T7RKPBCLTI2NNQG3T6MINDUUMZ/
+- type: FIX
+  url: https://docs.djangoproject.com/en/3.0/releases/security/
+- type: FIX
+  url: https://www.djangoproject.com/weblog/2020/mar/04/security-releases/
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-3gh2-xw74-jmcw
 aliases:
 - CVE-2020-9402
 - GHSA-3gh2-xw74-jmcw
-modified: '2020-07-14T17:28:00Z'
+modified: '2026-07-09T14:49:00Z'
 published: '2020-03-05T15:15:00Z'
