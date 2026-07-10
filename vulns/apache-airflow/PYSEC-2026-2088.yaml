@@ -1,4 +1,8 @@
-id: PYSEC-0000-CVE-2026-49487
+id: PYSEC-2026-2088
+published: "2026-07-07T10:16:41.723Z"
+modified: "2026-07-10T10:08:11.186734Z"
+aliases:
+- CVE-2026-49487
 details: |-
   In Apache Airflow before 3.3.0, the REST API task-instance detail and list
   endpoints returned a deferred task's trigger kwargs without masking. When a
@@ -7,17 +11,6 @@ details: |-
   that DAG could read that secret in clear text while the task was deferred.
   Users should upgrade to apache-airflow 3.3.0 or later, which masks sensitive
   values in trigger kwargs returned by the API.
-aliases:
-- CVE-2026-49487
-modified: '2026-07-10T10:08:11.186734Z'
-published: '2026-07-07T10:16:41.723Z'
-references:
-- type: ADVISORY
-  url: http://www.openwall.com/lists/oss-security/2026/07/07/6
-- type: ADVISORY
-  url: https://lists.apache.org/thread/qlw6pozlzlfhkvmbgqsbjlq6vj4v0pc4
-- type: REPORT
-  url: https://github.com/apache/airflow/pull/67868
 affected:
 - package:
     name: apache-airflow
@@ -26,7 +19,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 3.3.0
   versions:
   - 1.10.0
@@ -324,6 +317,13 @@ affected:
   - 3.3.0rc1
   - 3.3.0rc2
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: http://www.openwall.com/lists/oss-security/2026/07/07/6
+- type: ADVISORY
+  url: https://lists.apache.org/thread/qlw6pozlzlfhkvmbgqsbjlq6vj4v0pc4
+- type: REPORT
+  url: https://github.com/apache/airflow/pull/67868
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N

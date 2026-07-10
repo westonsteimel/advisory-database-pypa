@@ -1,27 +1,9 @@
-id: PYSEC-0000-CVE-2026-48891
-details: A bug in Apache Airflow's `/ui/dependencies` scheduling graph endpoint applied
-  the caller's readable-Dag filter to the top-level serialized Dag key but still emitted
-  referenced Dag IDs through the `dep.source` and `dep.target` fields of trigger /
-  sensor dependency entries. An authenticated UI user with read permission on some
-  Dags could enumerate the identifiers of other Dags they were not authorized to read
-  by inspecting the dependency graph for trigger / sensor references. Affects deployments
-  that rely on per-Dag read scoping to keep Dag identifiers private across teams.
-  This is a residual gap in the fix for CVE-2026-28563, which filtered the top-level
-  Dag key but did not propagate the filter into the trigger / sensor dep-source /
-  dep-target fields. Users who already upgraded for CVE-2026-28563 should additionally
-  upgrade to `apache-airflow` 3.3.0 or later to cover the residual trigger / sensor
-  dependency leak.
+id: PYSEC-2026-2087
+published: "2026-07-07T10:16:41.480Z"
+modified: "2026-07-10T10:08:11.092714Z"
 aliases:
-- CVE-2026-48891
-modified: '2026-07-10T10:08:10.972832Z'
-published: '2026-07-07T10:16:41.373Z'
-references:
-- type: ADVISORY
-  url: https://lists.apache.org/thread/wzc8nflg94rq6w8f5tvtlo0o3g4wjrfl
-- type: ADVISORY
-  url: https://www.cve.org/CVERecord?id=CVE-2026-28563
-- type: REPORT
-  url: https://github.com/apache/airflow/pull/67627
+- CVE-2026-48892
+details: The Config API in Apache Airflow surfaced per-key secrets-backend overrides (environment variables like `AIRFLOW__SECRETS__BACKEND_KWARG__SECRET_ID` and `AIRFLOW__WORKERS__SECRETS_BACKEND_KWARG__SECRET_ID`) as synthetic config options whose option names were not in `sensitive_config_values`, so the masker did not redact them. An authenticated UI/API user with Config read permission could retrieve plaintext secrets-backend credentials (Vault `role_id` / `secret_id`, etc.) from the Config API output. Affects deployments that configure secrets backends via per-key environment overrides. Users are advised to upgrade to `apache-airflow` 3.3.0 or later.
 affected:
 - package:
     name: apache-airflow
@@ -30,7 +12,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 3.3.0
   versions:
   - 1.10.0
@@ -328,6 +310,13 @@ affected:
   - 3.3.0rc1
   - 3.3.0rc2
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: http://www.openwall.com/lists/oss-security/2026/07/07/4
+- type: ADVISORY
+  url: https://lists.apache.org/thread/pq5yy40079h6tzh3fxvw28dd8dbk72hk
+- type: REPORT
+  url: https://github.com/apache/airflow/pull/67622
 severity:
 - type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
