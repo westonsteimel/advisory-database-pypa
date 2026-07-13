@@ -1,24 +1,24 @@
 id: PYSEC-0000-openchatbi-GHSA-vmwq-8g8c-jm79
-modified: '2026-07-13T14:36:40.268691Z'
-published: '2026-07-13T14:36:40.268691Z'
+summary: OpenChatBI has a Path Traversal Vulnerability in save_report Tool
+details: "### Impact\nThe `save_report` tool in `openchatbi/tool/save_report.py` suffers\
+  \ from a critical path traversal vulnerability due to insufficient input sanitization\
+  \ of the `file_format` parameter. \n\nThe function only removes leading dots of\
+  \ `file_format` using `file_format.lstrip(\".\")` but allows path traversal sequences\
+  \ like `/../../` to pass through unchanged. When the filename is constructed via\
+  \ string concatenation in \n\n    f\"{timestamp}_{clean_title}.{file_format}\"\n\
+  \nmalicious path sequences are preserved, enabling attackers to write files outside\
+  \ the designated report directory. \n\nAn attacker can manipulate the LLM to call\
+  \ the tool with a specific `file_format` to overwrite critical system files like\
+  \ `__init__.py`, potentially leading to remote code execution.\n\n\n### Patches\n\
+  - Affected versions:\n<=0.2.1\n- Patched versions:\n0.2.2 (includes fix from PR\
+  \ #12: https://github.com/zhongyu09/openchatbi/pull/12)\n\n### Workarounds\nNo\n\
+  \n### References\n- Issue #10: https://github.com/zhongyu09/openchatbi/issues/10\n\
+  - PR #12: https://github.com/zhongyu09/openchatbi/pull/12"
 aliases:
 - CVE-2026-28795
 - GHSA-vmwq-8g8c-jm79
-summary: OpenChatBI has a Path Traversal Vulnerability in save_report Tool
-details: "### Impact\nThe `save_report` tool in `openchatbi/tool/save_report.py` suffers from a critical path traversal vulnerability due to insufficient input sanitization of the `file_format` parameter. \n\nThe function only removes leading dots of `file_format` using `file_format.lstrip(\".\")` but allows path traversal sequences like `/../../` to pass through unchanged. When the filename is constructed via string concatenation in \n\n    f\"{timestamp}_{clean_title}.{file_format}\"\n\nmalicious path sequences are preserved, enabling attackers to write files outside the designated report directory. \n\nAn attacker can manipulate the LLM to call the tool with a specific `file_format` to overwrite critical system files like `__init__.py`, potentially leading to remote code execution.\n\n\n### Patches\n- Affected versions:\n<=0.2.1\n- Patched versions:\n0.2.2 (includes fix from PR #12: https://github.com/zhongyu09/openchatbi/pull/12)\n\n### Workarounds\nNo\n\n### References\n- Issue #10: https://github.com/zhongyu09/openchatbi/issues/10\n- PR #12: https://github.com/zhongyu09/openchatbi/pull/12"
-severity:
-- type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: openchatbi
-    purl: pkg:pypi/openchatbi
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 0.2.2
+modified: '2026-07-13T16:05:19.342523Z'
+published: '2026-07-13T14:36:40.268691Z'
 references:
 - type: WEB
   url: https://github.com/zhongyu09/openchatbi/security/advisories/GHSA-vmwq-8g8c-jm79
@@ -36,3 +36,22 @@ references:
   url: https://pypi.org/project/openchatbi
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-vmwq-8g8c-jm79
+affected:
+- package:
+    name: openchatbi
+    ecosystem: PyPI
+    purl: pkg:pypi/openchatbi
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 0.2.2
+  versions:
+  - 0.0.1
+  - 0.1.0
+  - 0.1.1
+  - 0.2.0
+  - 0.2.1
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N

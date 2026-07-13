@@ -1,24 +1,13 @@
 id: PYSEC-0000-neutron-GHSA-qh2x-hpf9-cf2g
-modified: '2026-07-09T16:49:45.565035Z'
-published: '2026-07-09T16:49:45.565035Z'
+summary: OpenStack Keystone and other components vulnerable to Improper Certificate
+  Validation
+details: HTTPSConnections in OpenStack Keystone 2013, OpenStack Compute 2013.1, and
+  possibly other OpenStack components, fail to validate server-side SSL certificates.
 aliases:
 - CVE-2013-2255
 - GHSA-qh2x-hpf9-cf2g
-summary: OpenStack Keystone and other components vulnerable to Improper Certificate Validation
-details: HTTPSConnections in OpenStack Keystone 2013, OpenStack Compute 2013.1, and possibly other OpenStack components, fail to validate server-side SSL certificates.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: neutron
-    purl: pkg:pypi/neutron
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 7.0.0a0
+modified: '2026-07-13T16:05:02.285308Z'
+published: '2026-07-09T16:49:45.565035Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2013-2255
@@ -48,3 +37,18 @@ references:
   url: https://pypi.org/project/neutron
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-qh2x-hpf9-cf2g
+affected:
+- package:
+    name: neutron
+    ecosystem: PyPI
+    purl: pkg:pypi/neutron
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 7.0.0a0
+  versions:
+  - '0.0'
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N

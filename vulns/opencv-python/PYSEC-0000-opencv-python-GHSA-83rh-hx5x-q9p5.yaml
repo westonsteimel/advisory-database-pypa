@@ -1,24 +1,12 @@
 id: PYSEC-0000-opencv-python-GHSA-83rh-hx5x-q9p5
-modified: '2026-07-09T16:49:35.523177Z'
-published: '2026-07-09T16:49:35.523177Z'
+summary: Out-of-bounds Read in OpenCV
+details: In OpenCV 3.3.1 (corresponding with OpenCV-Python 3.3.1.11), a heap-based
+  buffer over-read exists in the function cv::HdrDecoder::checkSignature in modules/imgcodecs/src/grfmt_hdr.cpp.
 aliases:
 - CVE-2017-18009
 - GHSA-83rh-hx5x-q9p5
-summary: Out-of-bounds Read in OpenCV
-details: In OpenCV 3.3.1 (corresponding with OpenCV-Python 3.3.1.11), a heap-based buffer over-read exists in the function cv::HdrDecoder::checkSignature in modules/imgcodecs/src/grfmt_hdr.cpp.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-affected:
-- package:
-    ecosystem: PyPI
-    name: opencv-python
-    purl: pkg:pypi/opencv-python
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 3.4.1.15
+modified: '2026-07-13T16:05:23.239801Z'
+published: '2026-07-09T16:49:35.523177Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2017-18009
@@ -34,3 +22,18 @@ references:
   url: https://pypi.org/project/opencv-python
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-83rh-hx5x-q9p5
+affected:
+- package:
+    name: opencv-python
+    ecosystem: PyPI
+    purl: pkg:pypi/opencv-python
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 3.4.1.15
+  versions:
+  - 3.4.0.14
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H

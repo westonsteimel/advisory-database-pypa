@@ -1,26 +1,14 @@
 id: PYSEC-0000-web2py-GHSA-rf8c-3f5p-xv45
-modified: '2026-07-13T14:36:34.584653Z'
-published: '2026-07-13T14:36:34.584653Z'
+summary: web2py has an Open Redirect Vulnerability
+details: web2py versions 2.27.1-stable+timestamp.2023.11.16.08.03.57 and prior contain
+  an Open Redirect vulnerability. If this vulnerability is exploited, the user may
+  be redirected to an arbitrary website when accessing a specially crafted URL. As
+  a result, the user may become a victim of a phishing attack.
 aliases:
 - CVE-2026-25198
 - GHSA-rf8c-3f5p-xv45
-summary: web2py has an Open Redirect Vulnerability
-details: web2py versions 2.27.1-stable+timestamp.2023.11.16.08.03.57 and prior contain an Open Redirect vulnerability. If this vulnerability is exploited, the user may be redirected to an arbitrary website when accessing a specially crafted URL. As a result, the user may become a victim of a phishing attack.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N
-- type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: web2py
-    purl: pkg:pypi/web2py
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 3.1.1
+modified: '2026-07-13T16:07:30.284961Z'
+published: '2026-07-13T14:36:34.584653Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2026-25198
@@ -38,3 +26,22 @@ references:
   url: https://pypi.org/project/web2py
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-rf8c-3f5p-xv45
+affected:
+- package:
+    name: web2py
+    ecosystem: PyPI
+    purl: pkg:pypi/web2py
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 3.1.1
+  versions:
+  - 1.96.4
+  - 1.98.2
+  - 2.1.1
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N

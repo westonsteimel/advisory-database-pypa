@@ -1,26 +1,16 @@
 id: PYSEC-0000-jupyter-notebook-GHSA-hhx8-cr55-qcxx
-modified: '2026-07-09T16:49:45.846184Z'
-published: '2026-07-09T16:49:45.846184Z'
+summary: Improper Neutralization of Input During Web Page Generation in Jupyter Notebook
+details: An XSSI (cross-site inclusion) vulnerability in Jupyter Notebook before 5.7.6
+  allows inclusion of resources on malicious pages when visited by users who are authenticated
+  with a Jupyter server. Access to the content of resources has been demonstrated
+  with Internet Explorer through capturing of error messages, though not reproduced
+  with other browsers. This occurs because Internet Explorer's error messages can
+  include the content of any invalid JavaScript that was encountered.
 aliases:
 - CVE-2019-9644
 - GHSA-hhx8-cr55-qcxx
-summary: Improper Neutralization of Input During Web Page Generation in Jupyter Notebook
-details: An XSSI (cross-site inclusion) vulnerability in Jupyter Notebook before 5.7.6 allows inclusion of resources on malicious pages when visited by users who are authenticated with a Jupyter server. Access to the content of resources has been demonstrated with Internet Explorer through capturing of error messages, though not reproduced with other browsers. This occurs because Internet Explorer's error messages can include the content of any invalid JavaScript that was encountered.
-severity:
-- type: CVSS_V3
-  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
-- type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N
-affected:
-- package:
-    ecosystem: PyPI
-    name: jupyter-notebook
-    purl: pkg:pypi/jupyter-notebook
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: '0'
-    - fixed: 5.7.6
+modified: '2026-07-13T16:04:22.389775Z'
+published: '2026-07-09T16:49:45.846184Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2019-9644
@@ -38,3 +28,20 @@ references:
   url: https://pypi.org/project/jupyter-notebook
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-hhx8-cr55-qcxx
+affected:
+- package:
+    name: jupyter-notebook
+    ecosystem: PyPI
+    purl: pkg:pypi/jupyter-notebook
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 5.7.6
+  versions:
+  - 4.0.0.dev
+severity:
+- type: CVSS_V3
+  score: CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N
