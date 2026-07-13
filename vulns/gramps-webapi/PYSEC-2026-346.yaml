@@ -57,8 +57,6 @@ affected:
   - 3.8.0
   - 3.9.0
   - 3.9.1
-  database_specific:
-    last_known_affected_version_range: <= 3.11.0
 references:
 - type: WEB
   url: https://github.com/gramps-project/gramps-web-api/security/advisories/GHSA-m5gr-86j6-99jp

@@ -1,0 +1,34 @@
+id: PYSEC-0000-bbot-GHSA-m54h-vhf9-3w3m
+modified: '2026-07-13T15:46:20.695226Z'
+published: '2026-07-13T15:46:20.695226Z'
+aliases:
+- CVE-2026-12568
+- GHSA-m54h-vhf9-3w3m
+summary: 'BBOT: Arbitrary File Write in postman_download Module'
+details: The `postman_download` module uses the workspace `name` field from the Postman API to construct the local directory path without sanitization. If a malicious workspace has a name containing path traversal characters, pathlib resolves the path outside the intended output directory, allowing an attacker to write arbitrary files to the user's system.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: bbot
+    purl: pkg:pypi/bbot
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 2.1.0
+    - fixed: 2.8.6
+references:
+- type: WEB
+  url: https://github.com/blacklanternsecurity/bbot/security/advisories/GHSA-m54h-vhf9-3w3m
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-12568
+- type: WEB
+  url: https://github.com/blacklanternsecurity/bbot/commit/36bc20818
+- type: PACKAGE
+  url: https://github.com/blacklanternsecurity/bbot
+- type: PACKAGE
+  url: https://pypi.org/project/bbot
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m54h-vhf9-3w3m

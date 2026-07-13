@@ -1,0 +1,34 @@
+id: PYSEC-0000-bbot-GHSA-3mp7-vp6j-2mxx
+modified: '2026-07-13T15:46:20.588778Z'
+published: '2026-07-13T15:46:20.588778Z'
+aliases:
+- CVE-2026-12566
+- GHSA-3mp7-vp6j-2mxx
+summary: 'BBOT: Server-Side Request Forgery (SSRF) in docker_pull module via WWW-Authenticate realm parsing'
+details: The `docker_pull` module uses the `realm` parameter from a Docker registry's `WWW-Authenticate` response header as the authentication endpoint without validation. An attacker in a man-in-the-middle position between bbot and a Docker registry could modify this header to redirect the authentication request to an arbitrary endpoint, potentially leaking authentication tokens.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: bbot
+    purl: pkg:pypi/bbot
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 2.0.0
+    - fixed: 2.8.5
+references:
+- type: WEB
+  url: https://github.com/blacklanternsecurity/bbot/security/advisories/GHSA-3mp7-vp6j-2mxx
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-12566
+- type: WEB
+  url: https://github.com/blacklanternsecurity/bbot/commit/c2f4bc0f4
+- type: PACKAGE
+  url: https://github.com/blacklanternsecurity/bbot
+- type: PACKAGE
+  url: https://pypi.org/project/bbot
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3mp7-vp6j-2mxx

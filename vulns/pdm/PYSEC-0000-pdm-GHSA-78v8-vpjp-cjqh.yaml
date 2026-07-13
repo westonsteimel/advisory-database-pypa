@@ -1,0 +1,36 @@
+id: PYSEC-0000-pdm-GHSA-78v8-vpjp-cjqh
+modified: '2026-07-13T15:46:16.093778Z'
+published: '2026-07-13T15:46:16.093778Z'
+aliases:
+- CVE-2026-47764
+- GHSA-78v8-vpjp-cjqh
+summary: PDM  wheel installation leads to Path Traversal via overridden write_to_fs
+details: 'InstallDestination.write_to_fs() in src/pdm/installers/installers.py overrides the base class to add symlink/hardlink support but replaces the safe _path_with_destdir() (which validates via Path.resolve() + is_relative_to()) with a bare os.path.join() that performs no path validation. A malicious wheel with traversal entries can write arbitrary files. Same class as Poetry CVE-2026-34591. Fix ready at: https://github.com/pdm-project/pdm/pull/3787.'
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: pdm
+    purl: pkg:pypi/pdm
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.27.0
+references:
+- type: WEB
+  url: https://github.com/pdm-project/pdm/security/advisories/GHSA-78v8-vpjp-cjqh
+- type: WEB
+  url: https://github.com/pdm-project/pdm/pull/3787
+- type: PACKAGE
+  url: https://github.com/pdm-project/pdm
+- type: WEB
+  url: https://github.com/pdm-project/pdm/releases/tag/2.27.0
+- type: PACKAGE
+  url: https://pypi.org/project/pdm
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-78v8-vpjp-cjqh
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-47764

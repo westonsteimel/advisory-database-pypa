@@ -7,13 +7,6 @@ affected:
   - events:
     - introduced: '0'
     - fixed: 1.6.4
-    type: ECOSYSTEM
-- package:
-    ecosystem: PyPI
-    name: moin
-    purl: pkg:pypi/moin
-  ranges:
-  - events:
     - introduced: 1.7.0
     - fixed: 1.7.1
     type: ECOSYSTEM

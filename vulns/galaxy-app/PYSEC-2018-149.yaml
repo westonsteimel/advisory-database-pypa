@@ -7,13 +7,6 @@ affected:
   - events:
     - introduced: '0'
     - fixed: 14.10.1
-    type: ECOSYSTEM
-- package:
-    ecosystem: PyPI
-    name: galaxy-app
-    purl: pkg:pypi/galaxy-app
-  ranges:
-  - events:
     - introduced: '15.0'
     - fixed: '15.01'
     type: ECOSYSTEM

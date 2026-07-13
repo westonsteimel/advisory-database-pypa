@@ -1,0 +1,32 @@
+id: PYSEC-0000-weasyprint-GHSA-jhhc-3hcp-qhm5
+modified: '2026-07-13T15:46:28.116294Z'
+published: '2026-07-13T15:46:28.116294Z'
+aliases:
+- CVE-2026-49452
+- GHSA-jhhc-3hcp-qhm5
+summary: WeasyPrint has CSS Injection via Presentational Hints
+details: "### Summary\nA CSS injection issue exists in WeasyPrint when HTML presentational hints are enabled. Unescaped attribute values are embedded into CSS, allowing injection of arbitrary CSS declarations. This affects applications processing untrusted HTML input.\n\n### Details\nFile: weasyprint/css/__init__.py\n\nThe `background` attribute is used to construct CSS:\n\nbackground-image:url({element.get(\"background\")})\n\nThis string is parsed by `tinycss2.parse_blocks_contents()`.\n\nBecause the value is not escaped, additional CSS declarations can be injected.\n\n### PoC\n<body background=\"x);background-image:url(http://169.254.169.254/latest/meta-data/)\">\n\n### Impact\n- CSS injection\n- Server-side requests via injected `url()`\n- Limited to cases where `presentational_hints=True`\n\n### Suggested Fix\n- Escape attribute values before embedding into CSS\n- Restrict allowed values for presentational hints\n[VULN-05_css_injection_presentational_hints.md](https://github.com/user-attachments/files/26370718/VULN-05_css_injection_presentational_hints.md)"
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: weasyprint
+    purl: pkg:pypi/weasyprint
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: '68.1'
+references:
+- type: WEB
+  url: https://github.com/Kozea/WeasyPrint/security/advisories/GHSA-jhhc-3hcp-qhm5
+- type: PACKAGE
+  url: https://github.com/Kozea/WeasyPrint
+- type: PACKAGE
+  url: https://pypi.org/project/weasyprint
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jhhc-3hcp-qhm5
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-49452

@@ -70,3 +70,4 @@ packages:
 - krb5    # Most likely not the python package.
 - hyperledger # Most likely not the python package.
 - steam # The python steam package is unlikely to be the target package of a vulnerability
+- plane # Probably refers to https://github.com/makeplane/plane/ which is a private python package rather than https://pypi.org/projects/plane

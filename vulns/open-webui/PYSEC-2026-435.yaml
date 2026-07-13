@@ -168,8 +168,6 @@ affected:
   - 0.8.7
   - 0.8.8
   - 0.8.9
-  database_specific:
-    last_known_affected_version_range: <= 0.8.12
 references:
 - type: WEB
   url: https://github.com/open-webui/open-webui/security/advisories/GHSA-2r4p-jpmg-48f4

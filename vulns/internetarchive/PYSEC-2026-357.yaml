@@ -152,8 +152,6 @@ affected:
   - 5.4.0
   - 5.4.1
   - 5.5.0
-  database_specific:
-    last_known_affected_version_range: <= 5.5.0
 references:
 - type: WEB
   url: https://github.com/jjjake/internetarchive/security/advisories/GHSA-wx3r-v6h7-frjp

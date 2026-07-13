@@ -26,8 +26,6 @@ affected:
   - 2.3.0
   - 3.0.0
   - 3.0.1
-  database_specific:
-    last_known_affected_version_range: <= 3.0.1
 references:
 - type: WEB
   url: https://github.com/startreedata/mcp-pinot/security/advisories/GHSA-73cv-556c-w3g6

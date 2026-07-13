@@ -1,0 +1,34 @@
+id: PYSEC-0000-bugsink-GHSA-5x67-j5xg-c5gj
+modified: '2026-07-13T15:46:15.452959Z'
+published: '2026-07-13T15:46:15.452959Z'
+aliases:
+- CVE-2026-53954
+- GHSA-5x67-j5xg-c5gj
+summary: 'Bugsink: DOS using large numbers of event tags'
+details: "### Summary\n\nIn affected versions, Bugsink stores every tag supplied with an incoming event. An event with an unusually large number\nof custom (i.e. supplied by an attacker) tags can therefore make ingestion spend more time than intended writing tag rows.\n\nBugsink uses a single-writer database architecture. That keeps the implementation simple, but it also means one\nexpensive write transaction can delay other event digestion while it is running. In this case, it makes ingestion of\nother events wait until the transaction that writes the tags finishes, which effectively causes a temporary denial of\nservice for other events.\n\n### Impact\n\nSubmitting such an event requires a valid project DSN. DSNs are sometimes visible in client-side applications, so they\nshould not be treated as a strong security boundary, but the issue is still limited to ingestion for a Bugsink instance\nthat accepts the event.\n\nThe impact is availability-only. The issue does not expose stored data, modify existing events, or allow code execution.\n\n### Mitigation\n\nUpdate to version 2.2.2, which caps the number of tags stored for a single event. The default cap is 100 tags and can\nbe changed with `MAX_EVENT_TAGS`."
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
+affected:
+- package:
+    ecosystem: PyPI
+    name: bugsink
+    purl: pkg:pypi/bugsink
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.2.2
+references:
+- type: WEB
+  url: https://github.com/bugsink/bugsink/security/advisories/GHSA-5x67-j5xg-c5gj
+- type: PACKAGE
+  url: https://github.com/bugsink/bugsink
+- type: WEB
+  url: https://github.com/bugsink/bugsink/releases/tag/2.2.2
+- type: PACKAGE
+  url: https://pypi.org/project/bugsink
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5x67-j5xg-c5gj
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-53954

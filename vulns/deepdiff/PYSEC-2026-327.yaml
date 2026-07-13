@@ -55,8 +55,6 @@ affected:
   - 8.4.2
   - 8.5.0
   - 8.6.0
-  database_specific:
-    last_known_affected_version_range: <= 8.6.0
 references:
 - type: WEB
   url: https://github.com/seperman/deepdiff/security/advisories/GHSA-mw26-5g2v-hqw3

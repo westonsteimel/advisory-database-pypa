@@ -85,8 +85,6 @@ affected:
   - 2.3.0.dev20240623
   - 2.3.1
   - 2.3.2
-  database_specific:
-    last_known_affected_version_range: <= 2.3.1
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-5980

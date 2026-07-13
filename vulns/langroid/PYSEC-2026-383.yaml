@@ -532,8 +532,6 @@ affected:
   - 0.9.3
   - 0.9.4
   - 0.9.5
-  database_specific:
-    last_known_affected_version_range: <= 0.59.31
 references:
 - type: WEB
   url: https://github.com/langroid/langroid/security/advisories/GHSA-jqq5-wc57-f8hj

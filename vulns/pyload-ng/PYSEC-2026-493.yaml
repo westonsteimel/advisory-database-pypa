@@ -111,8 +111,6 @@ affected:
   - 0.5.0b3.dev87
   - 0.5.0b3.dev88
   - 0.5.0b3.dev89
-  database_specific:
-    last_known_affected_version_range: <= 0.5.0b3.dev89
 references:
 - type: WEB
   url: https://github.com/pyload/pyload/security/advisories/GHSA-48rp-jc79-2264

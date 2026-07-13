@@ -486,8 +486,6 @@ affected:
   - 1.5.88
   - 1.5.89
   - 1.5.9
-  database_specific:
-    last_known_affected_version_range: <= 1.5.89
 references:
 - type: WEB
   url: https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-6vh2-h83c-9294

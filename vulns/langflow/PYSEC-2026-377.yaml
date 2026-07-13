@@ -310,8 +310,6 @@ affected:
   - 1.8.3
   - 1.8.3rc0
   - 1.8.4
-  database_specific:
-    last_known_affected_version_range: <= 1.8.4
 references:
 - type: WEB
   url: https://github.com/langflow-ai/langflow/security/advisories/GHSA-9whx-c884-c68q

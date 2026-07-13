@@ -1,0 +1,38 @@
+id: PYSEC-0000-pypdf-GHSA-9m86-7pmv-2852
+modified: '2026-07-13T14:36:40.337454Z'
+published: '2026-07-13T14:36:40.337454Z'
+aliases:
+- CVE-2026-28804
+- GHSA-9m86-7pmv-2852
+summary: pypdf vulnerable to inefficient decoding of ASCIIHexDecode streams
+details: "### Impact\nAn attacker who uses this vulnerability can craft a PDF which leads to long runtimes. This requires accessing a stream which uses the `/ASCIIHexDecode` filter.\n\n### Patches\nThis has been fixed in [pypdf==6.7.5](https://github.com/py-pdf/pypdf/releases/tag/6.7.5).\n\n### Workarounds\nIf you cannot upgrade yet, consider applying the changes from PR [#3666](https://github.com/py-pdf/pypdf/pull/3666)."
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: pypdf
+    purl: pkg:pypi/pypdf
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 6.7.5
+references:
+- type: WEB
+  url: https://github.com/py-pdf/pypdf/security/advisories/GHSA-9m86-7pmv-2852
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-28804
+- type: WEB
+  url: https://github.com/py-pdf/pypdf/pull/3666
+- type: WEB
+  url: https://github.com/py-pdf/pypdf/commit/648c627d2657447dfb1773412af05a0a5103b98f
+- type: PACKAGE
+  url: https://github.com/py-pdf/pypdf
+- type: WEB
+  url: https://github.com/py-pdf/pypdf/releases/tag/6.7.5
+- type: PACKAGE
+  url: https://pypi.org/project/pypdf
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9m86-7pmv-2852

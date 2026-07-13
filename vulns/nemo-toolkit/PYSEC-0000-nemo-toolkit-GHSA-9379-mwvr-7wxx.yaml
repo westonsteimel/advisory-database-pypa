@@ -1,0 +1,34 @@
+id: PYSEC-0000-nemo-toolkit-GHSA-9379-mwvr-7wxx
+modified: '2026-07-13T14:36:36.267924Z'
+published: '2026-07-13T14:36:36.267924Z'
+aliases:
+- CVE-2025-33245
+- GHSA-9379-mwvr-7wxx
+summary: NVIDIA NeMo Framework contains a vulnerability where malicious data could cause remote code execution
+details: NVIDIA NeMo Framework contains a vulnerability where malicious data could cause remote code execution. A successful exploit of this vulnerability might lead to code execution, escalation of privileges, information disclosure, and data tampering.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: nemo-toolkit
+    purl: pkg:pypi/nemo-toolkit
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.6.1
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2025-33245
+- type: PACKAGE
+  url: https://github.com/NVIDIA-NeMo/NeMo
+- type: WEB
+  url: https://nvidia.custhelp.com/app/answers/detail/a_id/5762
+- type: WEB
+  url: https://www.cve.org/CVERecord?id=CVE-2025-33245
+- type: PACKAGE
+  url: https://pypi.org/project/nemo-toolkit
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-9379-mwvr-7wxx

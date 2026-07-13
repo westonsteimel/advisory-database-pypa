@@ -184,8 +184,6 @@ affected:
   - 1.0.97
   - 1.0.98
   - 1.0.99
-  database_specific:
-    last_known_affected_version_range: <= 1.0.108
 references:
 - type: WEB
   url: https://github.com/pipeboard-co/meta-ads-mcp/security/advisories/GHSA-9gw6-46qc-99vr

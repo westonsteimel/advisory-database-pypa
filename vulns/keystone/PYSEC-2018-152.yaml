@@ -6,23 +6,7 @@ affected:
   ranges:
   - events:
     - introduced: 9.0.0
-    - last_affected: 9.3.0
-    type: ECOSYSTEM
-- package:
-    ecosystem: PyPI
-    name: keystone
-    purl: pkg:pypi/keystone
-  ranges:
-  - events:
-    - introduced: 10.0.0
     - fixed: 10.0.2
-    type: ECOSYSTEM
-- package:
-    ecosystem: PyPI
-    name: keystone
-    purl: pkg:pypi/keystone
-  ranges:
-  - events:
     - introduced: 11.0.0
     - fixed: 11.0.1
     type: ECOSYSTEM

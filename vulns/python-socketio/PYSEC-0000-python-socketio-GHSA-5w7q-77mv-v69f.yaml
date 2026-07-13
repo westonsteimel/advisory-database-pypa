@@ -1,0 +1,32 @@
+id: PYSEC-0000-python-socketio-GHSA-5w7q-77mv-v69f
+modified: '2026-07-13T15:46:24.787391Z'
+published: '2026-07-13T15:46:24.787391Z'
+aliases:
+- CVE-2026-48804
+- GHSA-5w7q-77mv-v69f
+summary: 'python-socketio: Binary attachment accumulation can cause denial of service'
+details: "### Impact\nThe python-socketio server stores binary `EVENT` and `ACK` messages in memory while it waits to receive their binary attachments. Once all the attachments are received, these messages are then processed. An attacker can submit a binary message and intentionally omit sending one or more of its attachments to cause the message along with the partial list of received attachments to stay in memory for a long time.\n\n### Patches\nVersion 5.16.2 takes the following measures to address this issue:\n- Binary packets are only accepted from authenticated clients.\n- When a client disconnects, the server checks if there is a partial binary message being held for the client and deletes it."
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: python-socketio
+    purl: pkg:pypi/python-socketio
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 5.16.2
+references:
+- type: WEB
+  url: https://github.com/miguelgrinberg/python-socketio/security/advisories/GHSA-5w7q-77mv-v69f
+- type: PACKAGE
+  url: https://github.com/miguelgrinberg/python-socketio
+- type: PACKAGE
+  url: https://pypi.org/project/python-socketio
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-5w7q-77mv-v69f
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-48804

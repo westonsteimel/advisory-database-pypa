@@ -97,8 +97,6 @@ affected:
   - 0.45.8
   - 0.45.8.1
   - 0.45.9
-  database_specific:
-    last_known_affected_version_range: <= 0.45.20
 references:
 - type: WEB
   url: https://github.com/dgtlmoon/changedetection.io/security/advisories/GHSA-4r7v-whpg-8rx3

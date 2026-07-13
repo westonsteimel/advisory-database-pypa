@@ -65,8 +65,6 @@ affected:
   - 4.5.65
   - 4.5.67
   - 4.5.68
-  database_specific:
-    last_known_affected_version_range: <= 4.5.68
 references:
 - type: WEB
   url: https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-9gm9-c8mq-vq7m

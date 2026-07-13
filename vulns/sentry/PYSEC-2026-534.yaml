@@ -44,8 +44,6 @@ affected:
   - 23.6.2
   - 23.7.0
   - 23.7.1
-  database_specific:
-    last_known_affected_version_range: <= 26.4.0
 references:
 - type: WEB
   url: https://github.com/getsentry/sentry/security/advisories/GHSA-rcmw-7mc7-3rj7

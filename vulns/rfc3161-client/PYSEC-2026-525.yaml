@@ -26,8 +26,6 @@ affected:
   - 1.0.0
   - 1.0.1
   - 1.0.2
-  database_specific:
-    last_known_affected_version_range: <= 1.0.2
 references:
 - type: WEB
   url: https://github.com/trailofbits/rfc3161-client/security/advisories/GHSA-6qhv-4h7r-2g9m

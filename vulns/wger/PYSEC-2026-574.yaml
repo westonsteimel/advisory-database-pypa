@@ -31,8 +31,6 @@ affected:
   - "1.9"
   - "2.0"
   - "2.1"
-  database_specific:
-    last_known_affected_version_range: <= 2.5
 references:
 - type: WEB
   url: https://github.com/wger-project/wger/security/advisories/GHSA-mhc8-p3jx-84mm

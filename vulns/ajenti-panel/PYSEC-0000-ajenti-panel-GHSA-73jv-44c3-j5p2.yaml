@@ -1,0 +1,34 @@
+id: PYSEC-0000-ajenti-panel-GHSA-73jv-44c3-j5p2
+modified: '2026-07-13T14:36:47.165876Z'
+published: '2026-07-13T14:36:47.165876Z'
+aliases:
+- CVE-2026-35175
+- GHSA-73jv-44c3-j5p2
+summary: Ajenti has an authorization bypass during custom package installation
+details: "### Impact\n\nAn authenticated user (using the `auth_users` plugin authentication method) could install a custom package even if this user is not superuser.\n\n### Patches\n\nThis is fixed in the version 2.2.15. Users should upgrade to this version as soon as possible."
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:L/SC:L/SI:L/SA:L
+affected:
+- package:
+    ecosystem: PyPI
+    name: ajenti-panel
+    purl: pkg:pypi/ajenti-panel
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.2.15
+references:
+- type: WEB
+  url: https://github.com/ajenti/ajenti/security/advisories/GHSA-73jv-44c3-j5p2
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-35175
+- type: PACKAGE
+  url: https://github.com/ajenti/ajenti
+- type: WEB
+  url: https://github.com/ajenti/ajenti/releases/tag/v2.2.15
+- type: PACKAGE
+  url: https://pypi.org/project/ajenti-panel
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-73jv-44c3-j5p2

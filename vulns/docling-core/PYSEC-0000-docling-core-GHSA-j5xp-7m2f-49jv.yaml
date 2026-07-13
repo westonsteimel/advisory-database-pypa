@@ -1,0 +1,34 @@
+id: PYSEC-0000-docling-core-GHSA-j5xp-7m2f-49jv
+modified: '2026-07-13T15:46:14.500928Z'
+published: '2026-07-13T15:46:14.500928Z'
+aliases:
+- CVE-2026-44019
+- GHSA-j5xp-7m2f-49jv
+summary: 'Docling Core: Insufficient validation of image reference URIs'
+details: "### Impact\nIn versions `>= 2.5.0, < 2.74.1`, `docling-core`  could allow local `file://` image references and accepted inline `data:` content without a decoded-size limit.\n\nIn applications that accept untrusted image references, this may allow access to local files readable by the process or excessive memory use from large inline payloads.\n\n### Patches\nPatched in `docling-core` `2.74.1`.\nThe fix blocks local file URIs by default and adds a size limit for decoded inline image data.\n\nUsers should upgrade to:\n- `docling-core` `>= 2.74.1`\n\n### Workarounds\nIf upgrading is not immediately possible:\n- reject `file:` and `data:` image references from untrusted input\n- allow only approved local or remote image sources\n- apply input size and memory limits to processing workers\n\n### References\n- Fix release: [`v2.74.1`](https://github.com/docling-project/docling-core/releases/tag/v2.74.1)"
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: docling-core
+    purl: pkg:pypi/docling-core
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 2.5.0
+    - fixed: 2.74.1
+references:
+- type: WEB
+  url: https://github.com/docling-project/docling-core/security/advisories/GHSA-j5xp-7m2f-49jv
+- type: PACKAGE
+  url: https://github.com/docling-project/docling-core
+- type: WEB
+  url: https://github.com/docling-project/docling-core/releases/tag/v2.74.1
+- type: PACKAGE
+  url: https://pypi.org/project/docling-core
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-j5xp-7m2f-49jv
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-44019

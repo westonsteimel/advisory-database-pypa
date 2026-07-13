@@ -749,8 +749,6 @@ affected:
   - 4.6.38
   - 4.6.39
   - 4.6.9
-  database_specific:
-    last_known_affected_version_range: <= 4.6.39
 references:
 - type: WEB
   url: https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-vg22-4gmj-prxw

@@ -59,8 +59,6 @@ affected:
   - 0.1.6
   - 0.1.7
   - 0.1.8
-  database_specific:
-    last_known_affected_version_range: <= 0.1.44
 references:
 - type: WEB
   url: https://github.com/browser-use/browser-use/security/advisories/GHSA-x39x-9qw5-ghrf

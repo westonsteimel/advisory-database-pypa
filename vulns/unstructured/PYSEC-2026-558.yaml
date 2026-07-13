@@ -210,8 +210,6 @@ affected:
   - 0.9.1
   - 0.9.2
   - 0.9.3
-  database_specific:
-    last_known_affected_version_range: <= 0.18.17
 references:
 - type: WEB
   url: https://github.com/Unstructured-IO/unstructured/security/advisories/GHSA-gm8q-m8mv-jj5m

@@ -60,8 +60,6 @@ affected:
   - 0.21.0
   - 0.22.0
   - 0.9.9
-  database_specific:
-    last_known_affected_version_range: <= 0.22.0
 references:
 - type: WEB
   url: https://github.com/collerek/ormar/security/advisories/GHSA-xxh2-68g9-8jqr

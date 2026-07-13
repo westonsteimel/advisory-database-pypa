@@ -101,8 +101,6 @@ affected:
   - 6.0.1
   - 7.0.0
   - 7.0.1
-  database_specific:
-    last_known_affected_version_range: <= 7.0.1
 references:
 - type: WEB
   url: https://github.com/codingjoe/django-s3file/security/advisories/GHSA-67qg-7284-2277

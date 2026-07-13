@@ -1,0 +1,42 @@
+id: PYSEC-0000-aider-chat-GHSA-7w7m-v5vp-w699
+modified: '2026-07-13T15:35:22.548218Z'
+published: '2026-07-13T15:35:22.548218Z'
+aliases:
+- CVE-2026-10175
+- GHSA-7w7m-v5vp-w699
+summary: Aider is vulnerable to Code Injection via editor_coder.run function
+details: A security flaw has been discovered in Aider-AI Aider 0.86.3.dev. Affected by this vulnerability is the function editor_coder.run of the file auth.py of the component Architect Mode. Performing a manipulation results in code injection. Remote exploitation of the attack is possible. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P
+affected:
+- package:
+    ecosystem: PyPI
+    name: aider-chat
+    purl: pkg:pypi/aider-chat
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 0.86.2
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-10175
+- type: WEB
+  url: https://github.com/Aider-AI/aider/issues/5058
+- type: PACKAGE
+  url: https://github.com/Aider-AI/aider
+- type: WEB
+  url: https://vuldb.com/cve/CVE-2026-10175
+- type: WEB
+  url: https://vuldb.com/submit/819909
+- type: WEB
+  url: https://vuldb.com/vuln/367456
+- type: WEB
+  url: https://vuldb.com/vuln/367456/cti
+- type: PACKAGE
+  url: https://pypi.org/project/aider-chat
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-7w7m-v5vp-w699

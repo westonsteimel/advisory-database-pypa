@@ -81,8 +81,6 @@ affected:
   - 0.8.0
   - 0.8.5
   - 0.8.6
-  database_specific:
-    last_known_affected_version_range: <= 0.8.6
 references:
 - type: WEB
   url: https://github.com/unclecode/crawl4ai/security/advisories/GHSA-qxjp-w3pj-48m7

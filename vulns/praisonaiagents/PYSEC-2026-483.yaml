@@ -585,8 +585,6 @@ affected:
   - 1.6.7
   - 1.6.8
   - 1.6.9
-  database_specific:
-    last_known_affected_version_range: <= 1.6.39
 references:
 - type: WEB
   url: https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4mr5-g6f9-cfrh

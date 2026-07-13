@@ -1,0 +1,42 @@
+id: PYSEC-0000-astrbot-GHSA-r6vm-4xwg-w69h
+modified: '2026-07-13T15:35:22.659837Z'
+published: '2026-07-13T15:35:22.659837Z'
+aliases:
+- CVE-2026-10212
+- GHSA-r6vm-4xwg-w69h
+summary: "AstrBot: Manipulation of astr_main_agent's session_id parameter leads to authorization bypass"
+details: A vulnerability was identified in AstrBotDevs AstrBot 4.24.2. This affects the function astr_main_agent of the file astrbot/core/astr_main_agent.py. Such manipulation of the argument session_id leads to authorization bypass. It is possible to launch the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P
+affected:
+- package:
+    ecosystem: PyPI
+    name: astrbot
+    purl: pkg:pypi/astrbot
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - last_affected: 4.24.2
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-10212
+- type: WEB
+  url: https://gist.github.com/YLChen-007/91a7f955143099e1747424707dfad0f9
+- type: WEB
+  url: https://github.com/AstrBotDevs/AstrBot
+- type: WEB
+  url: https://vuldb.com/cve/CVE-2026-10212
+- type: WEB
+  url: https://vuldb.com/submit/821923
+- type: WEB
+  url: https://vuldb.com/vuln/367491
+- type: WEB
+  url: https://vuldb.com/vuln/367491/cti
+- type: PACKAGE
+  url: https://pypi.org/project/astrbot
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-r6vm-4xwg-w69h

@@ -1,0 +1,36 @@
+id: PYSEC-0000-pypdf-GHSA-wjqc-6w8f-h24c
+modified: '2026-07-13T15:46:17.422603Z'
+published: '2026-07-13T15:46:17.422603Z'
+aliases:
+- CVE-2026-48735
+- GHSA-wjqc-6w8f-h24c
+summary: 'pypdf: Manipulated XMP metadata streams can exhaust RAM'
+details: "### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing large XMP metadata, possibly with lots of unnecessary elements.\n\n### Patches\nThis has been fixed in [pypdf==6.12.1](https://github.com/py-pdf/pypdf/releases/tag/6.12.1).\n\n### Workarounds\nIf you cannot upgrade yet, consider applying the changes from PR [#3796](https://github.com/py-pdf/pypdf/pull/3796)."
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: pypdf
+    purl: pkg:pypi/pypdf
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 6.12.1
+references:
+- type: WEB
+  url: https://github.com/py-pdf/pypdf/security/advisories/GHSA-wjqc-6w8f-h24c
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-48735
+- type: WEB
+  url: https://github.com/py-pdf/pypdf/pull/3796
+- type: PACKAGE
+  url: https://github.com/py-pdf/pypdf
+- type: WEB
+  url: https://github.com/py-pdf/pypdf/releases/tag/6.12.1
+- type: PACKAGE
+  url: https://pypi.org/project/pypdf
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wjqc-6w8f-h24c

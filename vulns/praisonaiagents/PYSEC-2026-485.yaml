@@ -537,8 +537,6 @@ affected:
   - 1.5.97
   - 1.5.98
   - 1.5.99
-  database_specific:
-    last_known_affected_version_range: <= 1.5.139
 references:
 - type: WEB
   url: https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-8x8f-54wf-vv92

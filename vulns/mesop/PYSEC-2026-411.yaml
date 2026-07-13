@@ -109,8 +109,6 @@ affected:
   - 1.2.1rc1
   - 1.2.2
   - 1.2.2rc1
-  database_specific:
-    last_known_affected_version_range: <= 1.2.2
 references:
 - type: WEB
   url: https://github.com/mesop-dev/mesop/security/advisories/GHSA-8qvf-mr4w-9x2c

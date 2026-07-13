@@ -1,0 +1,38 @@
+id: PYSEC-0000-plone-app-theming-GHSA-wq6x-g685-w5f2
+modified: '2026-07-09T16:49:32.756420Z'
+published: '2026-07-09T16:49:32.756420Z'
+aliases:
+- CVE-2020-28734
+- GHSA-wq6x-g685-w5f2
+summary: Improper Restriction of XML External Entity Reference in Plone
+details: Plone before 5.2.3 allows XXE attacks via a feature that is explicitly only available to the Manager role.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: plone-app-theming
+    purl: pkg:pypi/plone-app-theming
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 4.1.6
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2020-28734
+- type: WEB
+  url: https://github.com/plone/Products.CMFPlone/issues/3209
+- type: WEB
+  url: https://dist.plone.org/release/5.2.3/RELEASE-NOTES.txt
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wq6x-g685-w5f2
+- type: WEB
+  url: https://github.com/pypa/advisory-database/tree/main/vulns/plone/PYSEC-2020-246.yaml
+- type: WEB
+  url: https://www.misakikata.com/codes/plone/python-en.html
+- type: PACKAGE
+  url: https://pypi.org/project/plone-app-theming

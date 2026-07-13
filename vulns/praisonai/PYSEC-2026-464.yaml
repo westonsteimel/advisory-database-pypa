@@ -117,8 +117,6 @@ affected:
   - 1.0.6
   - 1.0.8
   - 1.0.9
-  database_specific:
-    last_known_affected_version_range: <= 1.5.112
 references:
 - type: WEB
   url: https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-693f-pf34-72c5

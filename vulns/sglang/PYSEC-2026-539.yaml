@@ -159,8 +159,6 @@ affected:
   - 0.5.8
   - 0.5.8.post1
   - 0.5.9
-  database_specific:
-    last_known_affected_version_range: <= 0.5.9
 references:
 - type: WEB
   url: https://github.com/sgl-project/sglang/security/advisories/GHSA-3cp7-c6q2-94xr

@@ -1,0 +1,34 @@
+id: PYSEC-0000-apache-superset-GHSA-3m2g-v7jf-7fxc
+modified: '2026-07-13T14:36:37.969328Z'
+published: '2026-07-13T14:36:37.969328Z'
+aliases:
+- CVE-2026-23982
+- GHSA-3m2g-v7jf-7fxc
+summary: 'Apache Superset Improper Authorization allows low-privileged users to bypass access controls '
+details: "An Improper Authorization vulnerability exists in Apache Superset that allows a low-privileged user to bypass data access controls. When creating a dataset, Superset enforces permission checks to prevent users from querying unauthorized data. However, an authenticated attacker with permissions to write datasets and read charts can bypass these checks by overwriting the SQL query of an existing dataset.\n\nThis issue affects Apache Superset: before 6.0.0.\n\nUsers are recommended to upgrade to version 6.0.0, which fixes the issue."
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: apache-superset
+    purl: pkg:pypi/apache-superset
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 6.0.0
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-23982
+- type: PACKAGE
+  url: https://github.com/apache/superset
+- type: WEB
+  url: https://lists.apache.org/thread/9lvbzwkw4rxgdvbpfvnnnfcll92v75fp
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2026/02/24/6
+- type: PACKAGE
+  url: https://pypi.org/project/apache-superset
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3m2g-v7jf-7fxc

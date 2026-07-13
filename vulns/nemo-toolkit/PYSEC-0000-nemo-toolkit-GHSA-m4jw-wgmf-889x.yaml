@@ -1,0 +1,34 @@
+id: PYSEC-0000-nemo-toolkit-GHSA-m4jw-wgmf-889x
+modified: '2026-07-13T14:36:44.629509Z'
+published: '2026-07-13T14:36:44.629509Z'
+aliases:
+- CVE-2026-24157
+- GHSA-m4jw-wgmf-889x
+summary: NVIDIA NeMo Framework contains an RCE vulnerability in checkpoint loading
+details: NVIDIA NeMo Framework contains a vulnerability in checkpoint loading where an attacker could cause remote code execution. A successful exploit of this vulnerability might lead to code execution, escalation of privileges, information disclosure and data tampering.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+affected:
+- package:
+    ecosystem: PyPI
+    name: nemo-toolkit
+    purl: pkg:pypi/nemo-toolkit
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 2.6.2
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-24157
+- type: PACKAGE
+  url: https://github.com/NVIDIA-NeMo/NeMo
+- type: WEB
+  url: https://nvidia.custhelp.com/app/answers/detail/a_id/5800
+- type: WEB
+  url: https://www.cve.org/CVERecord?id=CVE-2026-24157
+- type: PACKAGE
+  url: https://pypi.org/project/nemo-toolkit
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-m4jw-wgmf-889x

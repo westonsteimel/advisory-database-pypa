@@ -1,0 +1,42 @@
+id: PYSEC-0000-ironic-python-agent-GHSA-54w4-233h-x86g
+modified: '2026-07-13T15:15:38.280049Z'
+published: '2026-07-13T15:15:38.280049Z'
+aliases:
+- CVE-2026-42997
+- GHSA-54w4-233h-x86g
+summary: OpenStack Ironic has an Incorrect Resource Transfer Between Spheres
+details: An issue was discovered in idrac in OpenStack Ironic before 35.0.1. During import, a user invoking molds can request authorization to be sent to a remote endpoint. The credential forwarded is a time-limited Keystone token (which provides access to all OpenStack services Ironic is authorized for); or basic credentials configured for molds storage. The fixed versions are 26.1.6, 29.0.5, 32.0.1, and 35.0.1.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: ironic-python-agent
+    purl: pkg:pypi/ironic-python-agent
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 26.1.6
+    - introduced: 27.0.0
+    - fixed: 29.0.5
+    - introduced: 30.0.0
+    - fixed: 32.0.1
+    - introduced: 33.0.0
+    - fixed: 35.0.1
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-42997
+- type: PACKAGE
+  url: https://github.com/openstack/ironic-python-agent
+- type: WEB
+  url: https://security.openstack.org/ossa/OSSA-2026-010.html
+- type: WEB
+  url: https://www.openwall.com/lists/oss-security/2026/05/05/10
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2026/05/05/10
+- type: PACKAGE
+  url: https://pypi.org/project/ironic-python-agent
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-54w4-233h-x86g

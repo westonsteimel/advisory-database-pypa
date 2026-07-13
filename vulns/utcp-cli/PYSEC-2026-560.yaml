@@ -22,8 +22,6 @@ affected:
   - 1.0.2
   - 1.1.0
   - 1.1.1
-  database_specific:
-    last_known_affected_version_range: <= 1.1.1
 references:
 - type: WEB
   url: https://github.com/universal-tool-calling-protocol/python-utcp/security/advisories/GHSA-33p6-5jxp-p3x4

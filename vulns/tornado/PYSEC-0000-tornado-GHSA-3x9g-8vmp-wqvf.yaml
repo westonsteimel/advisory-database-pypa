@@ -1,0 +1,32 @@
+id: PYSEC-0000-tornado-GHSA-3x9g-8vmp-wqvf
+modified: '2026-07-13T15:46:17.169568Z'
+published: '2026-07-13T15:46:17.169568Z'
+aliases:
+- CVE-2026-49853
+- GHSA-3x9g-8vmp-wqvf
+summary: 'Tornado: Authorization header forwarded across cross-origin redirects in SimpleAsyncHTTPClient'
+details: "## Summary\n\nWhen SimpleAsyncHTTPClient follows a 3xx redirect, it shallow-copies the original HTTPRequest, rewrites the URL, decrements max_redirects, and removes only the Host header. It does not clear Authorization, auth_username, auth_password, or auth_mode when the redirect target changes origin.\n\nAs a result, credentials intended for one origin can be forwarded to a different origin when follow_redirects=True, which is the default.\n\nBeginning in Tornado 6.5.6, `SimpleAsyncHTTPClient` matches the default behavior of `libcurl` (and therefore `CurlAsyncHTTPClient`): When a redirect changes the scheme, host, or port of the url, the `Authorization` and `Cookie` headers will be removed when following the redirect."
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: tornado
+    purl: pkg:pypi/tornado
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 6.5.6
+references:
+- type: WEB
+  url: https://github.com/tornadoweb/tornado/security/advisories/GHSA-3x9g-8vmp-wqvf
+- type: PACKAGE
+  url: https://github.com/tornadoweb/tornado
+- type: PACKAGE
+  url: https://pypi.org/project/tornado
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-3x9g-8vmp-wqvf
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-49853
