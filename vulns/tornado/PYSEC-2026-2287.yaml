@@ -4,6 +4,7 @@ modified: "2026-07-13T05:52:14.116892Z"
 aliases:
 - CVE-2026-35536
 - GHSA-78cv-mqj4-43f7
+- GHSA-fqwm-6jpj-5wxc
 details: In Tornado before 6.5.5, cookie attribute injection could occur because the domain, path, and samesite arguments to .RequestHandler.set_cookie were not checked for crafted characters.
 affected:
 - package:
@@ -102,6 +103,8 @@ references:
   url: https://github.com/tornadoweb/tornado/releases/tag/v6.5.5
 - type: ADVISORY
   url: https://github.com/tornadoweb/tornado/security/advisories/GHSA-78cv-mqj4-43f7
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-fqwm-6jpj-5wxc
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N

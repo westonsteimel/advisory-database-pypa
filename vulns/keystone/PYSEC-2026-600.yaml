@@ -3,6 +3,7 @@ published: "2026-05-28T19:16:37.630Z"
 modified: "2026-07-02T12:26:32.954749Z"
 aliases:
 - CVE-2026-42999
+- GHSA-2r23-2g6v-2m5f
 details: An issue was discovered in OpenStack Keystone before 29.0.2. The Keystone RBAC policy enforcer in enforce_call unconditionally merges the raw JSON request body into the policy enforcement dictionary via policy_dict.update(json_input.copy()), overwriting trusted target data that was previously set from database lookups. Because flask.request.get_json is called with force=True, this works regardless of Content-Type or HTTP method. Any authenticated user can inject arbitrary policy target attributes (e.g., user_id, project_id) into the request body to bypass RBAC checks and perform unauthorized operations on resources belonging to other users or projects. This was introduced in commit 5ea59f52 (Rocky/14.0.0).
 affected:
 - package:
@@ -85,6 +86,8 @@ references:
   url: https://bugs.launchpad.net/keystone/+bug/2148398
 - type: FIX
   url: https://security.openstack.org/ossa/OSSA-2026-015.html
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2r23-2g6v-2m5f
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H

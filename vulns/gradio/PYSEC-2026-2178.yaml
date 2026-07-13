@@ -3,6 +3,7 @@ published: "2026-05-27T15:16:31.020Z"
 modified: "2026-07-13T05:48:57.727051Z"
 aliases:
 - CVE-2026-48545
+- GHSA-7hp7-4p35-3cx2
 details: Gradio before version 6.15.0 contains a cookie injection vulnerability that allows remote attackers to perform cross-Space session fixation by exploiting a shared module-level HTTP client used across all users in the reverse proxy endpoint. Attackers controlling any HF Space can return a parent-domain cookie that the shared client stores and automatically replays into all subsequent proxy requests to other legitimate Spaces, affecting all users of the same Gradio deployment.
 affected:
 - package:
@@ -688,6 +689,8 @@ references:
   url: https://github.com/gradio-app/gradio/commit/feb7237d01f359d2ad4ee42d00344e61692b3b39
 - type: FIX
   url: https://github.com/gradio-app/gradio/pull/13384
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-7hp7-4p35-3cx2
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N

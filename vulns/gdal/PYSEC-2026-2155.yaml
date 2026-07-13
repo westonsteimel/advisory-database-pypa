@@ -3,6 +3,7 @@ published: "2026-05-07T20:16:45.343Z"
 modified: "2026-07-13T05:48:52.031383Z"
 aliases:
 - CVE-2026-8087
+- GHSA-h9rh-5ffh-h669
 details: A security flaw has been discovered in OSGeo gdal up to 3.13.0dev-4. Impacted is the function GDnentries of the file frmts/hdf4/hdf-eos/GDapi.c. Performing a manipulation of the argument DataFieldName results in heap-based buffer overflow. The attack must be initiated from a local position. The exploit has been released to the public and may be used for attacks. Upgrading to version 3.13.0RC1 is recommended to address this issue. The patch is named 184f77dbcc74118c062c05e464c88161d3c37b9b. You should upgrade the affected component.
 affected:
 - package:
@@ -127,6 +128,8 @@ references:
   url: https://github.com/biniamf/pocs/tree/main/gdal-gdinqfields_bof
 - type: EVIDENCE
   url: https://vuldb.com/submit/808039
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-h9rh-5ffh-h669
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H

@@ -3,6 +3,7 @@ published: "2026-05-25T10:16:15.087Z"
 modified: "2026-05-28T10:28:11.000211Z"
 aliases:
 - CVE-2026-45361
+- GHSA-g9v5-gjwf-9rwx
 details: Apache Airflow providers-google's `ComputeEngineSSHHook` disables SSH host-key verification by default, exposing SSH traffic between an Airflow worker and a Compute Engine VM to in-path network attackers who can intercept or modify the session. Users are advised to upgrade to `apache-airflow-providers-google` 22.0.0 or later.
 affected:
 - package:
@@ -230,6 +231,8 @@ references:
   url: https://lists.apache.org/thread/3lpj7ppwxp7jtp81rnxk75xvln7qd7h2
 - type: FIX
   url: https://github.com/apache/airflow/pull/66746
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-g9v5-gjwf-9rwx
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
