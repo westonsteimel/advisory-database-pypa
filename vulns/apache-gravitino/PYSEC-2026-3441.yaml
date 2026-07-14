@@ -1,19 +1,9 @@
-id: PYSEC-0000-CVE-2026-41041
-details: |-
-  URL path injection via unencoded user-supplied identifiers vulnerability in Apache Gravitino.
-
-  This issue affects Apache Gravitino: from 1.0.0 before 1.2.1.
-
-  Users are recommended to upgrade to version 1.2.1, which fixes the issue.
+id: PYSEC-2026-3441
+published: "2026-07-13T10:16:28.803Z"
+modified: "2026-07-14T09:57:32.233093Z"
 aliases:
 - CVE-2026-41041
-modified: '2026-07-14T09:57:32.233093Z'
-published: '2026-07-13T10:16:28.803Z'
-references:
-- type: ADVISORY
-  url: http://www.openwall.com/lists/oss-security/2026/07/13/1
-- type: ADVISORY
-  url: https://lists.apache.org/thread/4dnwg1qzb2yns1fkfmq0z45vmwyzytgz
+details: "URL path injection via unencoded user-supplied identifiers vulnerability in Apache Gravitino.\n\nThis issue affects Apache Gravitino: from 1.0.0 before 1.2.1.\n\nUsers are recommended to upgrade to version 1.2.1, which fixes the issue."
 affected:
 - package:
     name: apache-gravitino
@@ -54,6 +44,11 @@ affected:
   - 1.2.1rc1
   - 1.2.1rc2
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: http://www.openwall.com/lists/oss-security/2026/07/13/1
+- type: ADVISORY
+  url: https://lists.apache.org/thread/4dnwg1qzb2yns1fkfmq0z45vmwyzytgz
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
