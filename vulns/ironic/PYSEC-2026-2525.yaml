@@ -1,11 +1,28 @@
 id: PYSEC-2026-2525
-published: "2026-07-13T15:02:54.772558Z"
-modified: "2026-07-13T16:04:20.883894Z"
+summary: OpenStack Ironic is Vulnerable to Inclusion of Functionality from Untrusted
+  Control Sphere
+details: OpenStack Ironic before 35.0.1 allows ipmitool execution in a non-default
+  configuration that has a console interface.
 aliases:
 - CVE-2026-42510
 - GHSA-wqpv-c3pp-3m58
-summary: OpenStack Ironic is Vulnerable to Inclusion of Functionality from Untrusted Control Sphere
-details: OpenStack Ironic before 35.0.1 allows ipmitool execution in a non-default configuration that has a console interface.
+modified: '2026-07-20T12:29:13.408790Z'
+published: '2026-07-13T15:02:54.772558Z'
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-42510
+- type: WEB
+  url: https://bugs.launchpad.net/ironic/+bug/2148331
+- type: PACKAGE
+  url: https://github.com/openstack/ironic
+- type: WEB
+  url: https://security.openstack.org/ossa/OSSA-2026-008.html
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2026/04/30/1
+- type: PACKAGE
+  url: https://pypi.org/project/ironic
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-wqpv-c3pp-3m58
 affected:
 - package:
     name: ironic
@@ -14,10 +31,10 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: "0"
+    - introduced: '0'
     - fixed: 35.0.1
   versions:
-  - "0.0"
+  - '0.0'
   - 10.1.10
   - 10.1.7
   - 10.1.8
@@ -129,21 +146,7 @@ affected:
   - 35.0.0
   - 9.1.6
   - 9.1.7
-references:
-- type: ADVISORY
-  url: https://nvd.nist.gov/vuln/detail/CVE-2026-42510
-- type: WEB
-  url: https://bugs.launchpad.net/ironic/+bug/2148331
-- type: PACKAGE
-  url: https://github.com/openstack/ironic
-- type: WEB
-  url: https://security.openstack.org/ossa/OSSA-2026-008.html
-- type: WEB
-  url: http://www.openwall.com/lists/oss-security/2026/04/30/1
-- type: PACKAGE
-  url: https://pypi.org/project/ironic
-- type: ADVISORY
-  url: https://github.com/advisories/GHSA-wqpv-c3pp-3m58
+  - 29.0.6
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H
