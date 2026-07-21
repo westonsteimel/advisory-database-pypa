@@ -9,7 +9,7 @@ details: 'A race-condition flaw was discovered in openstack-neutron before 7.2.0
 aliases:
 - CVE-2017-7543
 - GHSA-hvxr-2fvv-c3wq
-modified: '2026-07-16T08:49:28.784482Z'
+modified: '2026-07-21T08:40:34.960792Z'
 published: '2026-07-02T14:13:22.484803Z'
 references:
 - type: ADVISORY
@@ -239,6 +239,7 @@ affected:
   - 28.0.0.0rc2
   - 28.0.1
   - 29.0.0.0b1
+  - 26.0.5
 severity:
 - type: CVSS_V3
   score: CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N

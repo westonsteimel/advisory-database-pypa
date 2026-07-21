@@ -7,7 +7,7 @@ details: OpenStack Neutron before 2014.2.4 (juno) and 2015.1.x before 2015.1.1 (
 aliases:
 - CVE-2015-3221
 - GHSA-wf44-4mgj-rwvx
-modified: '2026-07-16T08:49:29.505665Z'
+modified: '2026-07-21T08:40:35.834445Z'
 published: '2026-07-06T08:03:23.909736Z'
 references:
 - type: ADVISORY
@@ -230,3 +230,4 @@ affected:
   - 28.0.0.0rc2
   - 28.0.1
   - 29.0.0.0b1
+  - 26.0.5
