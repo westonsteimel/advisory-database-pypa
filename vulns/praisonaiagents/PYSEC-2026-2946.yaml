@@ -72,7 +72,7 @@ details: "## Summary\n\nThe approval system in PraisonAI Agents caches tool appr
 aliases:
 - CVE-2026-56074
 - GHSA-ffp3-3562-8cv3
-modified: '2026-07-20T11:42:04.924462Z'
+modified: '2026-07-21T01:06:40.875166Z'
 published: '2026-07-13T14:36:52.273166Z'
 references:
 - type: WEB
@@ -781,6 +781,7 @@ affected:
   - 1.6.155
   - 1.6.156
   - 1.6.157
+  - 1.6.158
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N
