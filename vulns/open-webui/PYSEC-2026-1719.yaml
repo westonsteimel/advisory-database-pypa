@@ -1,6 +1,7 @@
 id: PYSEC-2026-1719
 published: "2026-07-07T14:34:55.041866Z"
-modified: "2026-07-07T17:24:53.721901Z"
+modified: "2026-07-22T19:11:48Z"
+withdrawn: "2026-07-22T19:11:48Z"
 aliases:
 - CVE-2024-7033
 - GHSA-3p9q-7w63-3f8q
