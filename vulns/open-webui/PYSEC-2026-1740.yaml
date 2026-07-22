@@ -1,6 +1,7 @@
 id: PYSEC-2026-1740
 published: "2026-07-07T14:34:54.677321Z"
-modified: "2026-07-07T17:24:55.043223Z"
+modified: "2026-07-22T19:11:48Z"
+withdrawn: "2026-07-22T19:11:48Z"
 aliases:
 - CVE-2024-7039
 - GHSA-pqwr-phvv-v49f
