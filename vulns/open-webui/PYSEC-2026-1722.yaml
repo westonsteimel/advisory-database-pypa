@@ -1,21 +1,12 @@
 id: PYSEC-2026-1722
-published: "2026-07-07T14:34:38.600149Z"
-modified: "2026-07-22T21:05:51Z"
+summary: Open WebUI Stored Cross-Site Scripting Vulnerability
+details: Attackers can craft a malicious prompt that coerces the language model into
+  executing arbitrary JavaScript in the context of the web page.
 aliases:
 - CVE-2024-6706
 - GHSA-5jp3-wp5v-5363
-summary: Open WebUI Stored Cross-Site Scripting Vulnerability
-details: Attackers can craft a malicious prompt that coerces the language model into executing arbitrary JavaScript in the context of the web page.
-affected:
-- package:
-    name: open-webui
-    ecosystem: PyPI
-    purl: pkg:pypi/open-webui
-  ranges:
-  - type: ECOSYSTEM
-    events:
-    - introduced: "0"
-    - fixed: 0.3.14
+modified: '2026-07-23T09:44:32.466114Z'
+published: '2026-07-07T14:34:38.600149Z'
 references:
 - type: ADVISORY
   url: https://nvd.nist.gov/vuln/detail/CVE-2024-6706
@@ -27,6 +18,38 @@ references:
   url: https://pypi.org/project/open-webui
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-5jp3-wp5v-5363
+affected:
+- package:
+    name: open-webui
+    ecosystem: PyPI
+    purl: pkg:pypi/open-webui
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 0.3.14
+  versions:
+  - 0.1.124
+  - 0.1.125
+  - 0.2.0
+  - 0.2.1
+  - 0.2.2
+  - 0.2.3
+  - 0.2.4
+  - 0.2.5
+  - 0.3.0
+  - 0.3.1
+  - 0.3.10
+  - 0.3.12
+  - 0.3.13
+  - 0.3.2
+  - 0.3.3
+  - 0.3.4
+  - 0.3.5
+  - 0.3.6
+  - 0.3.7
+  - 0.3.8
+  - 0.3.9
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
