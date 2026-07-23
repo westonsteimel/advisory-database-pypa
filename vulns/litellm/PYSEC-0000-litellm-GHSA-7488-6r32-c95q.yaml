@@ -1,0 +1,38 @@
+id: PYSEC-0000-litellm-GHSA-7488-6r32-c95q
+modified: '2026-07-23T11:41:48.668599Z'
+published: '2026-07-23T11:41:48.668599Z'
+aliases:
+- CVE-2026-59822
+- GHSA-7488-6r32-c95q
+summary: 'LiteLLM: MCP Authentication Bypass via OAuth2 Passthrough Fallback'
+details: "### Impact\n\nLiteLLM's MCP Streamable HTTP endpoint could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token.\n\nThe MCP auth handler supported OAuth2 passthrough for upstream MCP servers, but the fallback path could replace failed LiteLLM key validation with an empty `UserAPIKeyAuth()` object. This allowed requests with a fabricated `Authorization` header to reach MCP tooling without a valid LiteLLM key.\n\nAn attacker could use this to list and call configured MCP tools and access connected services exposed through MCP.\n\n### Patches\n\nThe issue is fixed in `1.84.0`.\n\nWe recommend upgrading to `1.84.0` or later.\n\n### Workarounds\n\nIf upgrading is not immediately possible, disable MCP routes or block access to `/mcp/` and related MCP endpoints at your reverse proxy or API gateway.\n\n### References\n\n* [v1.84.0](https://github.com/BerriAI/litellm/releases/tag/v1.84.0)"
+severity:
+- type: CVSS_V4
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: litellm
+    purl: pkg:pypi/litellm
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: '0'
+    - fixed: 1.84.0
+references:
+- type: WEB
+  url: https://github.com/BerriAI/litellm/security/advisories/GHSA-7488-6r32-c95q
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-59822
+- type: WEB
+  url: https://github.com/BerriAI/litellm/pull/26463
+- type: WEB
+  url: https://github.com/BerriAI/litellm/commit/73869f0faf7d11ee21adcb5f91b8c33a340b6c2c
+- type: PACKAGE
+  url: https://github.com/BerriAI/litellm
+- type: WEB
+  url: https://github.com/BerriAI/litellm/releases/tag/v1.84.0
+- type: PACKAGE
+  url: https://pypi.org/project/litellm
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-7488-6r32-c95q

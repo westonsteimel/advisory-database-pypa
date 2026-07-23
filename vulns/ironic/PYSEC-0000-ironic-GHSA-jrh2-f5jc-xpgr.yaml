@@ -1,0 +1,44 @@
+id: PYSEC-0000-ironic-GHSA-jrh2-f5jc-xpgr
+modified: '2026-07-23T11:41:37.984855Z'
+published: '2026-07-23T11:41:37.984855Z'
+aliases:
+- CVE-2026-46447
+- GHSA-jrh2-f5jc-xpgr
+summary: OpenStack Ironic allows Boot Script Injection
+details: OpenStack Ironic through 35.0.x allows Boot Script Injection.
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:N/I:H/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: ironic
+    purl: pkg:pypi/ironic
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 17.0.0
+    - fixed: 26.1.7
+    - introduced: 27.0.0
+    - fixed: 29.0.6
+    - introduced: 30.0.0
+    - fixed: 32.0.2
+    - introduced: 33.0.0
+    - fixed: 35.0.2
+references:
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-46447
+- type: WEB
+  url: https://bugs.launchpad.net/ironic/+bug/2150624
+- type: PACKAGE
+  url: https://github.com/openstack/ironic
+- type: WEB
+  url: https://security.openstack.org/ossa/OSSA-2026-017.html
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2026/06/03/11
+- type: WEB
+  url: http://www.openwall.com/lists/oss-security/2026/06/15/9
+- type: PACKAGE
+  url: https://pypi.org/project/ironic
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-jrh2-f5jc-xpgr

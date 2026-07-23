@@ -3,6 +3,7 @@ published: "2026-06-04T12:16:24.620Z"
 modified: "2026-06-15T19:36:32.619147Z"
 aliases:
 - CVE-2026-10804
+- GHSA-vqwp-45wm-r9r5
 details: A vulnerability has been found in Streamlit up to 1.53.0. Impacted is an unknown function in the library lib/streamlit/runtime/caching/hashing.py of the component Palette Handler. Such manipulation leads to use of weak hash. Local access is required to approach this attack. The attack requires a high level of complexity. The exploitability is considered difficult. The exploit has been disclosed to the public and may be used. The pull request to fix this issue awaits acceptance.
 affected:
 - package:
@@ -289,6 +290,8 @@ references:
   url: https://github.com/streamlit/streamlit/issues/14622
 - type: FIX
   url: https://github.com/streamlit/streamlit/pull/14635
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-vqwp-45wm-r9r5
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
