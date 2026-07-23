@@ -21,6 +21,8 @@ references:
   url: https://pypi.org/project/open-webui
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-frv8-gffc-37px
+- type: FIX
+  url: https://github.com/open-webui/open-webui/commit/e7ff4768f8ffe1924b4576381c9e45e8a64350e4
 affected:
 - package:
     name: open-webui

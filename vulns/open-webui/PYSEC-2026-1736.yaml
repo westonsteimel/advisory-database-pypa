@@ -21,6 +21,8 @@ references:
   url: https://pypi.org/project/open-webui
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-j274-m559-cj4j
+- type: FIX
+  url: https://github.com/open-webui/open-webui/commit/0da0e12096cc771ce4359c163e03c5a754d95c5e
 affected:
 - package:
     name: open-webui
