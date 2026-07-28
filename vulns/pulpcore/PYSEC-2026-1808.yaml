@@ -12,7 +12,7 @@ details: A flaw was found in the Pulp package. When a role-based access control 
 aliases:
 - CVE-2024-7143
 - GHSA-9m5j-4xx9-44j9
-modified: '2026-07-20T17:39:38.502790Z'
+modified: '2026-07-28T20:40:50.149371Z'
 published: '2026-07-07T14:34:38.535044Z'
 references:
 - type: ADVISORY
@@ -534,6 +534,7 @@ affected:
   - 3.49.64
   - 3.49.65
   - 3.49.66
+  - 3.49.67
 severity:
 - type: CVSS_V3
   score: CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:L
