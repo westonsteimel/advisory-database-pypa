@@ -118,7 +118,7 @@ $ curl -X POST -d \
 ```
 
 This data has also been integrated into the
-[PyPI JSON API](https://warehouse.pypa.io/api-reference/json.html#known-vulnerabilities).
+[PyPI JSON API](https://docs.pypi.org/api/json/#known-vulnerabilities).
 
 ## Code of Conduct
 
