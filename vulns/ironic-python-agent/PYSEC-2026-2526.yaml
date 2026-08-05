@@ -8,7 +8,7 @@ details: An issue was discovered in idrac in OpenStack Ironic before 35.0.1. Dur
 aliases:
 - CVE-2026-42997
 - GHSA-54w4-233h-x86g
-modified: '2026-07-20T13:16:06.101606Z'
+modified: '2026-08-05T16:12:57.273259Z'
 published: '2026-07-13T15:15:38.280049Z'
 references:
 - type: ADVISORY
@@ -165,6 +165,7 @@ affected:
   - 9.8.0
   - 9.9.0
   - 10.2.3
+  - 12.0.0
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N
