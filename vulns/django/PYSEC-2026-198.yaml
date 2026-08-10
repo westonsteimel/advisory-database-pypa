@@ -3,6 +3,7 @@ published: "2026-06-03T14:16:44.983Z"
 modified: "2026-06-06T09:31:27.147158Z"
 aliases:
 - CVE-2026-48587
+- GHSA-923m-gv2p-w5qp
 details: |-
   An issue was discovered in Django 5.2 before 5.2.15 and 6.0 before 6.0.6.
   `django.utils.cache.has_vary_header()` in Django does not strip leading or trailing whitespace from `Vary` response header values before comparison, which allows remote attackers to read cached responses via requests to URLs whose responses contain whitespace-padded Vary header values.
@@ -50,6 +51,8 @@ references:
   url: https://docs.djangoproject.com/en/dev/releases/security/
 - type: FIX
   url: https://www.djangoproject.com/weblog/2026/jun/03/security-releases/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-923m-gv2p-w5qp
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N

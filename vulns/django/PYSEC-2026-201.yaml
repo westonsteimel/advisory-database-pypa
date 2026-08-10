@@ -3,6 +3,7 @@ published: "2026-06-03T14:16:47.650Z"
 modified: "2026-06-06T09:31:27.759745Z"
 aliases:
 - CVE-2026-8404
+- GHSA-8cjm-8mp7-r2xf
 details: |-
   An issue was discovered in Django 5.2 before 5.2.15 and 6.0 before 6.0.6.
   `django.middleware.cache.UpdateCacheMiddleware` in Django does not match `Cache-Control` response directives case-insensitively, which allows remote attackers to read responses that were incorrectly cached because their `Cache-Control` directives used uppercase or mixed-case values.
@@ -50,6 +51,8 @@ references:
   url: https://docs.djangoproject.com/en/dev/releases/security/
 - type: FIX
   url: https://www.djangoproject.com/weblog/2026/jun/03/security-releases/
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-8cjm-8mp7-r2xf
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
