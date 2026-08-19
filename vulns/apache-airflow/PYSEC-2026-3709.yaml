@@ -1,26 +1,9 @@
-id: PYSEC-0000-CVE-2026-68968
-details: Apache Airflow's Backfill API authorized a request against a Dag id supplied
-  by the caller whenever the `backfill_id` path segment failed to parse. The authorization
-  dependency parsed it with `int()` while the route handler parsed it as pydantic's
-  `NonNegativeInt`, which accepts values `int()` rejects (`1.0` coerces to `1`); FastAPI
-  resolves dependencies before endpoint validation, so the two acted on different
-  Dags. An authenticated user holding edit permission on any single Dag could therefore
-  read, pause and cancel backfills belonging to any other Dag, including moving another
-  Dag's queued runs to `failed`. No non-default configuration is required and backfill
-  ids are sequential, so finding a target is trivial. Users are advised to upgrade
-  to apache-airflow 3.3.1 or later, which parses the backfill id with the same type
-  the routes declare.
+id: PYSEC-2026-3709
+published: "2026-08-12T16:17:15.223Z"
+modified: "2026-08-19T13:09:03.207169Z"
 aliases:
-- CVE-2026-68968
-modified: '2026-08-19T13:09:03.278008Z'
-published: '2026-08-12T16:17:19.607Z'
-references:
-- type: FIX
-  url: https://github.com/apache/airflow/pull/70889
-- type: ARTICLE
-  url: http://www.openwall.com/lists/oss-security/2026/08/12/12
-- type: ARTICLE
-  url: https://lists.apache.org/thread/f9zmw6xs5b4syhwzbl6fsxm4kf2632ol
+- CVE-2026-68076
+details: Apache Airflow's environment-variable secrets backend resolved a team-scoped Connection or Variable from the wrong team's scope. The guard meant to prevent this only ran when no team scope was supplied, and its pattern could not match a team name containing an underscore, which team names are allowed to contain. When the guard did not apply, the lookup fell through to an unconditional global read that resolved the stored `AIRFLOW_CONN__<TEAM>___<ID>` variable regardless of which team asked. In multi-team mode an authenticated user of one team could therefore have `POST /api/v2/connections/test` resolve another team's Connection and authenticate outward with that team's credentials; the endpoint uses the credentials rather than returning them. Exploitation requires `[core] multi_team` enabled, `[core] test_connection` set to `Enabled` (it ships `Disabled`), team-scoped secrets provisioned as environment variables in the API-server process, and knowledge of the encoded identifier. Redirecting the test at an attacker-controlled host is separately blocked. Users are advised to upgrade to apache-airflow 3.3.1 or later.
 affected:
 - package:
     name: apache-airflow
@@ -29,7 +12,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 3.3.1
   versions:
   - 1.10.0
@@ -330,6 +313,15 @@ affected:
   - 3.3.1rc1
   - 3.3.1rc2
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: http://www.openwall.com/lists/oss-security/2026/08/12/11
+- type: ADVISORY
+  url: https://lists.apache.org/thread/v4mc51dgmrc1t82mhzsngsgzo2gxsf2l
+- type: FIX
+  url: https://github.com/apache/airflow/pull/70736
+- type: FIX
+  url: https://github.com/apache/airflow/pull/70902
 severity:
 - type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L
