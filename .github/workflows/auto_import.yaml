@@ -21,7 +21,7 @@ jobs:
           wget https://storage.googleapis.com/cve-osv-conversion/nvd/nvdcve-2.0-$year.json;
         done
     - run: |
-        go install github.com/google/osv/vulnfeeds/cmd/pypi@master
+        go install github.com/google/osv.dev/vulnfeeds/cmd/pypi@master
         for nvdfile in nvdcve-2.0-*.json; do
           pypi -false_positives triage/false_positives.yaml \
                -nvd_json $nvdfile \
@@ -36,6 +36,6 @@ jobs:
         git add vulns
         git diff --cached
       env:
-        GONOPROXY: github.com/google/osv
+        GONOPROXY: github.com/google/osv.dev
     - run: git diff --cached --quiet || git commit -m 'Auto import'
     - run: git push
