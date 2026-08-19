@@ -13,7 +13,6 @@ affected:
   - type: ECOSYSTEM
     events:
     - introduced: "0"
-    - fixed: 2022.6.15
   versions:
   - 1.8.0
   - 1.8.0.post1
