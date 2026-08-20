@@ -1,19 +1,9 @@
-id: PYSEC-0000-CVE-2026-14966
-details: BBOT's unarchive module rejects archives containing symlink entries before
-  extraction, but for zip and 7z archives it failed to detect symlinks whose listing
-  carries a DOS-attribute prefix before the unix mode, as produced by legacy versions
-  of p7zip. Such an archive, downloaded and extracted during a scan (for example via
-  filedownload), bypassed the guard and caused an attacker-controlled symlink to be
-  written into the extraction directory. The effect is limited to planting the symlink
-  (its target is not written through), and only hosts using such a legacy p7zip build
-  are affected; current mainline 7-Zip is not.
+id: PYSEC-2026-3719
+published: "2026-07-08T16:16:27.237Z"
+modified: "2026-08-20T11:24:26.193694Z"
 aliases:
 - CVE-2026-14966
-modified: '2026-08-20T11:24:26.193694Z'
-published: '2026-07-08T16:16:27.237Z'
-references:
-- type: FIX
-  url: https://github.com/blacklanternsecurity/bbot/commit/a3f1a2292e2b0a553827c6175b761abe28807735
+details: BBOT's unarchive module rejects archives containing symlink entries before extraction, but for zip and 7z archives it failed to detect symlinks whose listing carries a DOS-attribute prefix before the unix mode, as produced by legacy versions of p7zip. Such an archive, downloaded and extracted during a scan (for example via filedownload), bypassed the guard and caused an attacker-controlled symlink to be written into the extraction directory. The effect is limited to planting the symlink (its target is not written through), and only hosts using such a legacy p7zip build are affected; current mainline 7-Zip is not.
 affected:
 - package:
     name: bbot
@@ -246,6 +236,9 @@ affected:
   - 2.8.5
   - 2.8.6
   ecosystem_specific: {}
+references:
+- type: FIX
+  url: https://github.com/blacklanternsecurity/bbot/commit/a3f1a2292e2b0a553827c6175b761abe28807735
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N
