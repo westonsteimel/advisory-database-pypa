@@ -1,29 +1,10 @@
-id: PYSEC-0000-CVE-2026-59151
-details: Prowler is a cloud security platform. Prior to 5.30.3, Prowler's SAML authentication
-  flow trusted the email domain asserted in a SAMLResponse when deciding which tenant
-  should receive the final token, and the ACS finish logic in api/src/backend/api/v1/views.py
-  recalculated the tenant from user.email instead of binding token issuance to the
-  validated SAML configuration. An authenticated attacker with a controlled SAML IdP
-  could complete a valid SAML flow for an attacker-controlled domain while asserting
-  an email address from another configured domain, causing a SAMLToken and tenant-scoped
-  JWT to be issued for the wrong tenant and enabling cross-tenant account takeover.
-  This issue is fixed in version 5.30.3.
+id: PYSEC-2026-3725
+published: "2026-07-10T19:17:26.780Z"
+modified: "2026-08-27T23:45:38.224652Z"
 aliases:
 - CVE-2026-59151
 - GHSA-h8m9-jgf8-vwvp
-modified: '2026-08-27T23:45:38.224652Z'
-published: '2026-07-10T19:17:26.780Z'
-references:
-- type: ADVISORY
-  url: https://github.com/prowler-cloud/prowler/releases/tag/5.30.3
-- type: REPORT
-  url: https://github.com/prowler-cloud/prowler/pull/11650
-- type: FIX
-  url: https://github.com/prowler-cloud/prowler/commit/bf3b5c2ba713e533014927141b64948c82c8f32e
-- type: FIX
-  url: https://github.com/prowler-cloud/prowler/commit/f5ff30ad175bd2edf02cd28872653c1cda5867b7
-- type: EVIDENCE
-  url: https://github.com/prowler-cloud/prowler/security/advisories/GHSA-h8m9-jgf8-vwvp
+details: Prowler is a cloud security platform. Prior to 5.30.3, Prowler's SAML authentication flow trusted the email domain asserted in a SAMLResponse when deciding which tenant should receive the final token, and the ACS finish logic in api/src/backend/api/v1/views.py recalculated the tenant from user.email instead of binding token issuance to the validated SAML configuration. An authenticated attacker with a controlled SAML IdP could complete a valid SAML flow for an attacker-controlled domain while asserting an email address from another configured domain, causing a SAMLToken and tenant-scoped JWT to be issued for the wrong tenant and enabling cross-tenant account takeover. This issue is fixed in version 5.30.3.
 affected:
 - package:
     name: prowler-cloud
@@ -32,7 +13,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 5.30.3
   versions:
   - 0.0.0rc1
@@ -227,6 +208,17 @@ affected:
   - 5.9.1
   - 5.9.2
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://github.com/prowler-cloud/prowler/releases/tag/5.30.3
+- type: REPORT
+  url: https://github.com/prowler-cloud/prowler/pull/11650
+- type: FIX
+  url: https://github.com/prowler-cloud/prowler/commit/bf3b5c2ba713e533014927141b64948c82c8f32e
+- type: FIX
+  url: https://github.com/prowler-cloud/prowler/commit/f5ff30ad175bd2edf02cd28872653c1cda5867b7
+- type: EVIDENCE
+  url: https://github.com/prowler-cloud/prowler/security/advisories/GHSA-h8m9-jgf8-vwvp
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N
