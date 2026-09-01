@@ -1,19 +1,10 @@
-id: PYSEC-0000-CVE-2026-79674
-details: NLTK versions before 3.10.3 contain a path sandbox bypass vulnerability in
-  corpus-reader constructors that allows attackers to read files outside the intended
-  data root. Attackers can supply arbitrary corpus root paths to LinThesaurusCorpusReader
-  and PanLexLiteCorpusReader constructors to access filesystem content and SQLite
-  databases outside the pathsec sandbox boundary.
+id: PYSEC-2026-3736
+published: "2026-08-25T16:17:27.873Z"
+modified: "2026-09-01T08:54:52.127188Z"
 aliases:
 - CVE-2026-79674
 - GHSA-3gq4-3j92-5w49
-modified: '2026-09-01T08:54:52.127188Z'
-published: '2026-08-25T16:17:27.873Z'
-references:
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/nltk-path-traversal-via-corpus-reader-constructors
-- type: EVIDENCE
-  url: https://github.com/nltk/nltk/security/advisories/GHSA-3gq4-3j92-5w49
+details: NLTK versions before 3.10.3 contain a path sandbox bypass vulnerability in corpus-reader constructors that allows attackers to read files outside the intended data root. Attackers can supply arbitrary corpus root paths to LinThesaurusCorpusReader and PanLexLiteCorpusReader constructors to access filesystem content and SQLite databases outside the pathsec sandbox boundary.
 affected:
 - package:
     name: nltk
@@ -22,11 +13,11 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 3.10.3
   versions:
-  - '0.8'
-  - '0.9'
+  - "0.8"
+  - "0.9"
   - 0.9.3
   - 0.9.4
   - 0.9.5
@@ -57,26 +48,26 @@ affected:
   - 3.0.3
   - 3.0.4
   - 3.0.5
-  - '3.1'
+  - "3.1"
   - 3.10.0
   - 3.10.1
   - 3.10.2
-  - '3.2'
+  - "3.2"
   - 3.2.1
   - 3.2.2
   - 3.2.3
   - 3.2.4
   - 3.2.5
-  - '3.3'
-  - '3.4'
+  - "3.3"
+  - "3.4"
   - 3.4.1
   - 3.4.2
   - 3.4.3
   - 3.4.4
   - 3.4.5
-  - '3.5'
+  - "3.5"
   - 3.5b1
-  - '3.6'
+  - "3.6"
   - 3.6.1
   - 3.6.2
   - 3.6.3
@@ -84,16 +75,21 @@ affected:
   - 3.6.5
   - 3.6.6
   - 3.6.7
-  - '3.7'
-  - '3.8'
+  - "3.7"
+  - "3.8"
   - 3.8.1
-  - '3.9'
+  - "3.9"
   - 3.9.1
   - 3.9.2
   - 3.9.3
   - 3.9.4
   - 3.9b1
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/nltk-path-traversal-via-corpus-reader-constructors
+- type: EVIDENCE
+  url: https://github.com/nltk/nltk/security/advisories/GHSA-3gq4-3j92-5w49
 severity:
 - type: CVSS_V4
   score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
