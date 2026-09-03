@@ -1,19 +1,10 @@
-id: PYSEC-0000-CVE-2026-78677
-details: GitPython before 3.1.59 omits --separate-git-dir from unsafe_git_clone_options,
-  allowing attackers to create arbitrary git directories outside the intended clone
-  destination. Attackers can pass a separate_git_dir parameter to Repo.clone_from()
-  or Repo.clone() to redirect repository metadata to an attacker-controlled filesystem
-  path, enabling arbitrary directory creation and potential hook execution.
+id: PYSEC-2026-3785
+published: "2026-08-25T02:16:51.887Z"
+modified: "2026-09-03T10:37:09.902252Z"
 aliases:
-- CVE-2026-78677
-- GHSA-8mcc-hrx5-hvxc
-modified: '2026-09-03T10:37:10.022458Z'
-published: '2026-08-25T02:16:52.173Z'
-references:
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/gitpython-before-path-traversal-via-separate-git-dir
-- type: EVIDENCE
-  url: https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-8mcc-hrx5-hvxc
+- CVE-2026-78675
+- GHSA-7833-fr7j-v32q
+details: GitPython before 3.1.59 fails to disable merge_includes when parsing .gitmodules, allowing attackers to disclose local file content by including arbitrary file paths via [include] directives. Attackers can craft a malicious .gitmodules file with include directives pointing to sensitive files; when repo.submodules is accessed, GitConfigParser raises MissingSectionHeaderError embedding the target file's first line verbatim in the exception message.
 affected:
 - package:
     name: gitpython
@@ -22,7 +13,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 3.1.59
   versions:
   - 0.1.7
@@ -137,6 +128,11 @@ affected:
   - 3.1.8
   - 3.1.9
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/gitpython-before-local-file-content-disclosure-via-gitmodules
+- type: EVIDENCE
+  url: https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-7833-fr7j-v32q
 severity:
-- type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+- type: CVSS_V3
+  score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H

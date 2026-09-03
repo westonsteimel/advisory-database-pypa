@@ -1,18 +1,10 @@
-id: PYSEC-0000-CVE-2026-81688
-details: openssl_encrypt versions before 1.4.9 store an unkeyed SHA-256 hash of the
-  plaintext in the cleartext file header metadata. Attackers can read this hash without
-  the password to confirm guessed plaintexts offline or fingerprint identical plaintexts
-  across separately-encrypted files.
+id: PYSEC-2026-3800
+published: "2026-08-27T17:21:01.877Z"
+modified: "2026-09-03T10:37:18.423821Z"
 aliases:
-- CVE-2026-81688
-- GHSA-7c3q-gp4v-q29q
-modified: '2026-09-03T10:37:18.128700Z'
-published: '2026-08-27T17:20:58.553Z'
-references:
-- type: ADVISORY
-  url: https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-7c3q-gp4v-q29q
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/openssl-encrypt-before-1.4.9-plaintext-confirmation-oracle-via-sha-256
+- CVE-2026-81716
+- GHSA-vr4h-5xqv-xxxf
+details: "openssl_encrypt (pip: openssl-encrypt) versions before 1.4.9 contain a path traversal flaw in PluginSandbox._is_safe_path, which authorized file access using a bare string-prefix match. A sandboxed plugin without the READ_FILES permission could read or write another plugin's directory that merely shares a name prefix (e.g., .../plugins/foobar matching allowed .../plugins/foo), breaking per-plugin isolation within the same user. Fixed by matching each allowed directory exactly or with a trailing path separator."
 affected:
 - package:
     name: openssl-encrypt
@@ -21,7 +13,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 1.4.9
   versions:
   - 0.2.2
@@ -78,6 +70,11 @@ affected:
   - 1.4.7
   - 1.4.8
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-vr4h-5xqv-xxxf
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/openssl-encrypt-before-1.4.9-plugin-sandbox-path-traversal
 severity:
 - type: CVSS_V4
   score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X

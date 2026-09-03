@@ -1,20 +1,10 @@
-id: PYSEC-0000-CVE-2026-76222
-details: GitPython before 3.1.58 fails to validate submodule names from .gitmodules
-  files, allowing attackers to create Git repositories at arbitrary filesystem paths
-  outside the intended clone directory. Attackers can craft malicious repositories
-  with traversal sequences in submodule names that GitPython processes during submodule
-  initialization, creating attacker-controlled Git repositories at escaped filesystem
-  locations.
+id: PYSEC-2026-3784
+published: "2026-08-19T14:17:48.603Z"
+modified: "2026-09-03T10:37:09.840278Z"
 aliases:
 - CVE-2026-76222
 - GHSA-hmq2-w58f-27jc
-modified: '2026-09-03T10:37:09.840278Z'
-published: '2026-08-19T14:17:48.603Z'
-references:
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/gitpython-before-path-traversal-via-gitmodules-submodule-name
-- type: EVIDENCE
-  url: https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-hmq2-w58f-27jc
+details: GitPython before 3.1.58 fails to validate submodule names from .gitmodules files, allowing attackers to create Git repositories at arbitrary filesystem paths outside the intended clone directory. Attackers can craft malicious repositories with traversal sequences in submodule names that GitPython processes during submodule initialization, creating attacker-controlled Git repositories at escaped filesystem locations.
 affected:
 - package:
     name: gitpython
@@ -23,7 +13,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 3.1.58
   versions:
   - 0.1.7
@@ -137,6 +127,11 @@ affected:
   - 3.1.8
   - 3.1.9
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/gitpython-before-path-traversal-via-gitmodules-submodule-name
+- type: EVIDENCE
+  url: https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-hmq2-w58f-27jc
 severity:
 - type: CVSS_V4
   score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:H/VA:L/SC:N/SI:H/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X

@@ -1,20 +1,10 @@
-id: PYSEC-0000-CVE-2026-81683
-details: openssl_encrypt (pip package openssl-encrypt) versions 1.4.8 and earlier
-  store an mTLS client private key in cleartext within a world-readable (0644) SharedPreferences
-  file via the desktop GUI's Settings screen 'combined certificate and private key'
-  PEM field. A local attacker with file system access can read the exposed private
-  key. Version 1.4.9 writes the PEM to a dedicated 0600 file, keeps only its path
-  in SharedPreferences, and migrates/scrubs existing cleartext values.
+id: PYSEC-2026-3792
+published: "2026-08-27T17:20:57.810Z"
+modified: "2026-09-03T10:37:17.944158Z"
 aliases:
 - CVE-2026-81683
 - GHSA-r8gw-6hfj-98jw
-modified: '2026-09-03T10:37:17.944158Z'
-published: '2026-08-27T17:20:57.810Z'
-references:
-- type: ADVISORY
-  url: https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-r8gw-6hfj-98jw
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/openssl-encrypt-before-1.4.9-plaintext-private-key-storage
+details: openssl_encrypt (pip package openssl-encrypt) versions 1.4.8 and earlier store an mTLS client private key in cleartext within a world-readable (0644) SharedPreferences file via the desktop GUI's Settings screen 'combined certificate and private key' PEM field. A local attacker with file system access can read the exposed private key. Version 1.4.9 writes the PEM to a dedicated 0600 file, keeps only its path in SharedPreferences, and migrates/scrubs existing cleartext values.
 affected:
 - package:
     name: openssl-encrypt
@@ -23,7 +13,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 1.4.9
   versions:
   - 0.2.2
@@ -80,6 +70,11 @@ affected:
   - 1.4.7
   - 1.4.8
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-r8gw-6hfj-98jw
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/openssl-encrypt-before-1.4.9-plaintext-private-key-storage
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
