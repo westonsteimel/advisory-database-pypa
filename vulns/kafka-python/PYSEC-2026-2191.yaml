@@ -3,6 +3,7 @@ published: "2026-06-10T22:16:55.503Z"
 modified: "2026-07-13T05:49:18.525020Z"
 aliases:
 - CVE-2026-10143
+- GHSA-2jcm-hq8r-84wx
 details: kafka-python prior to 2.3.2 contains a denial-of-service vulnerability in SCRAM authentication handling that allows a malicious or machine-in-the-middle broker to freeze the client event loop by supplying an excessively large iteration count. In scram.py, ScramClient.process_server_first_message() passes the broker-controlled SCRAM iteration count directly to hashlib.pbkdf2_hmac() without validation, blocking producer sends, consumer polls, admin operations, and heartbeats, which can cause consumer group eviction and repeated reconnect failures.
 affected:
 - package:
@@ -105,6 +106,8 @@ references:
   url: https://github.com/dpkp/kafka-python/pull/3026
 - type: FIX
   url: https://www.vulncheck.com/advisories/kafka-python-prior-to-dos-via-scram-iteration-count-in-scram-py
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-2jcm-hq8r-84wx
 severity:
 - type: CVSS_V4
   score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X

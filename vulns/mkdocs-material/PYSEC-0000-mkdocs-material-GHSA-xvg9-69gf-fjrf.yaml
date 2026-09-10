@@ -1,0 +1,36 @@
+id: PYSEC-0000-mkdocs-material-GHSA-xvg9-69gf-fjrf
+modified: '2026-09-10T09:44:59.923933Z'
+published: '2026-09-10T09:44:59.923933Z'
+aliases:
+- CVE-2026-73295
+- GHSA-xvg9-69gf-fjrf
+summary: 'Material for MkDocs: DOM XSS in search suggestions via query parameter'
+details: "### Impact\n\nMaterial for MkDocs 7.2.0 through 9.7.6 contains a DOM-based cross-site scripting vulnerability in the optional `search.suggest` feature. A crafted `q` URL parameter could execute JavaScript in the documentation site's origin after user interaction.\n\n### Patches\n\nThe issue is fixed in Material for MkDocs 9.7.7. Users should upgrade to 9.7.7 or later.\n\n### Workarounds\n\nSites unable to upgrade should disable the `search.suggest` feature."
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+affected:
+- package:
+    ecosystem: PyPI
+    name: mkdocs-material
+    purl: pkg:pypi/mkdocs-material
+  ranges:
+  - type: ECOSYSTEM
+    events:
+    - introduced: 7.2.0
+    - fixed: 9.7.7
+references:
+- type: WEB
+  url: https://github.com/squidfunk/mkdocs-material/security/advisories/GHSA-xvg9-69gf-fjrf
+- type: ADVISORY
+  url: https://nvd.nist.gov/vuln/detail/CVE-2026-73295
+- type: WEB
+  url: https://github.com/squidfunk/mkdocs-material/commit/52fb6be8aafe326419f34dc94d3211e7bbfbfb25
+- type: PACKAGE
+  url: https://github.com/squidfunk/mkdocs-material
+- type: WEB
+  url: https://github.com/squidfunk/mkdocs-material/releases/tag/9.7.7
+- type: PACKAGE
+  url: https://pypi.org/project/mkdocs-material
+- type: ADVISORY
+  url: https://github.com/advisories/GHSA-xvg9-69gf-fjrf
