@@ -1,4 +1,9 @@
-id: PYSEC-0000-lightning-CVE-2022-0845
+id: PYSEC-2026-3969
+published: "2026-09-10T16:42:38.429529Z"
+modified: "2026-09-10T16:42:38.429529Z"
+aliases:
+- CVE-2022-0845
+- GHSA-r5qj-cvf9-p85h
 details: Code Injection in GitHub repository pytorchlightning/pytorch-lightning prior to 1.6.0.
 affected:
 - package:
@@ -153,8 +158,3 @@ references:
   url: https://github.com/pytorchlightning/pytorch-lightning/commit/8b7a12c52e52a06408e9231647839ddb4665e8ae
 - type: ADVISORY
   url: https://github.com/advisories/GHSA-r5qj-cvf9-p85h
-aliases:
-- CVE-2022-0845
-- GHSA-r5qj-cvf9-p85h
-modified: "2026-09-10T16:42:38.429529Z"
-published: "2026-09-10T16:42:38.429529Z"
