@@ -1,19 +1,10 @@
-id: PYSEC-0000-CVE-2026-81704
-details: openssl_encrypt versions before 1.4.9 contain a weak key derivation vulnerability
-  in the D-Bus CryptoService.EncryptFile handler that uses unstretched SHA-256 instead
-  of Argon2id. Attackers can perform offline password guessing against encrypted files
-  roughly six to seven orders of magnitude faster than documented protection by exploiting
-  the missing key stretching and hash rounds.
+id: PYSEC-2026-3959
+published: "2026-08-27T17:20:58.697Z"
+modified: "2026-09-10T12:38:49.042058Z"
 aliases:
-- CVE-2026-81704
-- GHSA-v9r6-grch-fxw7
-modified: '2026-09-10T12:38:49.279159Z'
-published: '2026-08-27T17:21:00.993Z'
-references:
-- type: ADVISORY
-  url: https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-v9r6-grch-fxw7
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/openssl-encrypt-before-1.4.9-weak-key-derivation-via-d-bus
+- CVE-2026-81689
+- GHSA-3v63-778v-3mvp
+details: openssl_encrypt versions before 1.4.9 derive the remote-pepper wrap key using unsalted HKDF-SHA256 or bare SHA-256 of the password, allowing identical keys across all users and files. Attackers with access to wrapped pepper blobs can precompute a single dictionary table and perform fleet-wide offline password guessing at hardware speed to recover user passwords.
 affected:
 - package:
     name: openssl-encrypt
@@ -22,7 +13,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 1.4.9
   versions:
   - 0.2.2
@@ -79,6 +70,11 @@ affected:
   - 1.4.7
   - 1.4.8
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-3v63-778v-3mvp
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/openssl-encrypt-before-1.4.9-weak-pepper-key-derivation
 severity:
 - type: CVSS_V4
   score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X

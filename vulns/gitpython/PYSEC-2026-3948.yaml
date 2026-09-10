@@ -1,20 +1,10 @@
-id: PYSEC-0000-CVE-2026-67324
-details: GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value>
-  (the short form of --upload-pack=<value>) when enforcing its default unsafe-option
-  gate. When an application passes attacker-influenced clone options into Repo.clone_from(...,
-  multi_options=..., allow_unsafe_options=False), an attacker can supply -u<helper>
-  to bypass the gate that blocks --upload-pack/-u, causing Git to execute the specified
-  helper command during clone. Fixed in 3.1.51.
+id: PYSEC-2026-3948
+published: "2026-08-13T12:17:26.913Z"
+modified: "2026-09-10T12:38:39.468772Z"
 aliases:
-- CVE-2026-67324
-- GHSA-v396-v7q4-x2qj
-modified: '2026-09-10T12:38:39.405193Z'
-published: '2026-08-01T13:17:02.770Z'
-references:
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/gitpython-authentication-bypass-via-joined-short-options
-- type: EVIDENCE
-  url: https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-v396-v7q4-x2qj
+- CVE-2026-73619
+- GHSA-539m-9xh6-q6rr
+details: GitPython before 3.1.57 contains an incomplete denylist in the unsafe_git_archive_options guard that omits --add-file and --add-virtual-file options. Attackers can supply these options to Repo.archive() to read arbitrary files from the filesystem and include them in the returned archive.
 affected:
 - package:
     name: gitpython
@@ -23,8 +13,8 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
-    - fixed: 3.1.50
+    - introduced: "0"
+    - fixed: 3.1.57
   versions:
   - 0.1.7
   - 0.2.0-beta1
@@ -124,11 +114,23 @@ affected:
   - 3.1.48
   - 3.1.49
   - 3.1.5
+  - 3.1.50
+  - 3.1.51
+  - 3.1.52
+  - 3.1.53
+  - 3.1.54
+  - 3.1.55
+  - 3.1.56
   - 3.1.6
   - 3.1.7
   - 3.1.8
   - 3.1.9
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/gitpython-before-arbitrary-file-read-via-repo-archive
+- type: EVIDENCE
+  url: https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-539m-9xh6-q6rr
 severity:
 - type: CVSS_V4
-  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  score: CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X

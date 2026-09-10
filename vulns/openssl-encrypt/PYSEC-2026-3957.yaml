@@ -1,19 +1,10 @@
-id: PYSEC-0000-CVE-2026-81680
-details: openssl_encrypt versions before 1.4.9 fail to authenticate recovery-slot
-  presence in envelope-format encrypted files, allowing attackers to remove recovery
-  slots without re-encrypting the payload. Attackers can modify the file header to
-  delete recovery-slot fields and bypass authentication, silently removing recovery
-  paths the owner deliberately added.
+id: PYSEC-2026-3957
+published: "2026-08-27T17:20:57.300Z"
+modified: "2026-09-10T12:38:48.927488Z"
 aliases:
 - CVE-2026-81680
 - GHSA-grhj-cpmg-f5mx
-modified: '2026-09-10T12:38:48.927488Z'
-published: '2026-08-27T17:20:57.300Z'
-references:
-- type: ADVISORY
-  url: https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-grhj-cpmg-f5mx
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/openssl-encrypt-before-1.4.9-authentication-bypass-via-recovery-slot-removal
+details: openssl_encrypt versions before 1.4.9 fail to authenticate recovery-slot presence in envelope-format encrypted files, allowing attackers to remove recovery slots without re-encrypting the payload. Attackers can modify the file header to delete recovery-slot fields and bypass authentication, silently removing recovery paths the owner deliberately added.
 affected:
 - package:
     name: openssl-encrypt
@@ -22,7 +13,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 1.4.9
   versions:
   - 0.2.2
@@ -79,6 +70,11 @@ affected:
   - 1.4.7
   - 1.4.8
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://github.com/jahlives/openssl_encrypt/security/advisories/GHSA-grhj-cpmg-f5mx
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/openssl-encrypt-before-1.4.9-authentication-bypass-via-recovery-slot-removal
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
