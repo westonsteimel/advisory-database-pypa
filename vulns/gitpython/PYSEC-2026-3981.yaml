@@ -1,19 +1,10 @@
-id: PYSEC-0000-CVE-2026-69097
-details: GitPython before 3.1.53 fails to properly escape section names in git config
-  files, allowing attackers to inject arbitrary configuration directives through malicious
-  submodule names. Attackers can inject core.sshCommand or other dangerous config
-  keys into the victim's .git/config via create_submodule or clone_from operations,
-  achieving remote code execution when git performs ssh operations.
+id: PYSEC-2026-3981
+published: "2026-08-03T14:16:30.677Z"
+modified: "2026-09-17T08:35:35.789583Z"
 aliases:
 - CVE-2026-69097
 - GHSA-3rp5-jjmw-4wv2
-modified: '2026-09-17T08:35:35.789583Z'
-published: '2026-08-03T14:16:30.677Z'
-references:
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/gitpython-before-config-injection-via-submodule-names
-- type: EVIDENCE
-  url: https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-3rp5-jjmw-4wv2
+details: GitPython before 3.1.53 fails to properly escape section names in git config files, allowing attackers to inject arbitrary configuration directives through malicious submodule names. Attackers can inject core.sshCommand or other dangerous config keys into the victim's .git/config via create_submodule or clone_from operations, achieving remote code execution when git performs ssh operations.
 affected:
 - package:
     name: gitpython
@@ -22,7 +13,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 3.1.53
   versions:
   - 0.1.7
@@ -131,6 +122,11 @@ affected:
   - 3.1.8
   - 3.1.9
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/gitpython-before-config-injection-via-submodule-names
+- type: EVIDENCE
+  url: https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-3rp5-jjmw-4wv2
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H

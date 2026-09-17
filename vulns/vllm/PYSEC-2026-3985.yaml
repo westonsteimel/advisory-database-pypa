@@ -1,19 +1,10 @@
-id: PYSEC-0000-CVE-2026-90553
-details: vLLM before 0.28.0 contains a remote code execution vulnerability in the
-  LlavaOnevision2 processor loader that ignores the trust_remote_code parameter when
-  loading remote processor classes. Attackers can craft a malicious model with arbitrary
-  code in processing_llava_onevision2.py that executes with vLLM process authority
-  even when trust_remote_code is set to False.
+id: PYSEC-2026-3985
+published: "2026-09-12T13:16:53.887Z"
+modified: "2026-09-17T08:35:58.695483Z"
 aliases:
 - CVE-2026-90553
 - GHSA-3c86-2m5g-59q7
-modified: '2026-09-17T08:35:58.695483Z'
-published: '2026-09-12T13:16:53.887Z'
-references:
-- type: ADVISORY
-  url: https://github.com/vllm-project/vllm/security/advisories/GHSA-3c86-2m5g-59q7
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/vllm-before-0.28.0-remote-code-execution-via-llavaonevision2-processor
+details: vLLM before 0.28.0 contains a remote code execution vulnerability in the LlavaOnevision2 processor loader that ignores the trust_remote_code parameter when loading remote processor classes. Attackers can craft a malicious model with arbitrary code in processing_llava_onevision2.py that executes with vLLM process authority even when trust_remote_code is set to False.
 affected:
 - package:
     name: vllm
@@ -22,7 +13,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 0.28.0
   versions:
   - 0.0.1
@@ -121,6 +112,11 @@ affected:
   - 0.9.1
   - 0.9.2
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://github.com/vllm-project/vllm/security/advisories/GHSA-3c86-2m5g-59q7
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/vllm-before-0.28.0-remote-code-execution-via-llavaonevision2-processor
 severity:
 - type: CVSS_V4
   score: CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
