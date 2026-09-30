@@ -1,0 +1,52 @@
+id: PYSEC-0000-local-operator-edit-file-read
+summary: Arbitrary file read via workspace confinement bypass in local-operator /v1/chat/agents/{id}/edit
+details: |+
+  The `/v1/chat/agents/{agent_id}/edit` endpoint in local-operator versions before 0.47.5 resolves the caller-supplied `file_path` with `expanduser().resolve()` and reads it without checking that it lies inside the agent's workspace. An unauthenticated client with network access to the API can supply an absolute path or a path containing traversal sequences and obtain the contents of any file readable by the server process, which are placed in the model prompt and returned in the response.
+
+  Version 0.47.5 resolves server-side reads within the agent's configured workspace and rejects canonical paths outside it (including symlink and junction escapes) before any model call, adds an optional `file_content` request field so clients can submit a buffer without host path resolution, and binds `lop serve` to 127.0.0.1 by default.
+
+affected:
+- package:
+    name: local-operator
+    ecosystem: PyPI
+    purl: pkg:pypi/local-operator
+  ranges:
+  - type: GIT
+    repo: https://github.com/damianvtran/local-operator
+    events:
+    - introduced: "0"
+    - fixed: 29fc4c68a3ed1d238b8abf6b6a6136a3361416a5
+  - type: ECOSYSTEM
+    events:
+    - introduced: "0"
+    - fixed: 0.47.5
+  ecosystem_specific:
+    imports:
+    - attribute: edit_file_with_agent
+      modules:
+      - local_operator.server.routes.chat
+severity:
+- type: CVSS_V3
+  score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+references:
+- type: ADVISORY
+  url: https://github.com/damianvtran/local-operator/security/advisories/GHSA-3xjw-9qpc-53mh
+- type: FIX
+  url: https://github.com/damianvtran/local-operator/pull/643
+- type: FIX
+  url: https://github.com/damianvtran/local-operator/commit/29fc4c68a3ed1d238b8abf6b6a6136a3361416a5
+- type: WEB
+  url: https://github.com/damianvtran/local-operator/releases/tag/v0.47.5
+- type: PACKAGE
+  url: https://pypi.org/project/local-operator/
+aliases:
+- GHSA-3xjw-9qpc-53mh
+credits:
+- type: REPORTER
+  name: mhdgning131
+database_specific:
+  cwe_ids:
+  - CWE-22
+  - CWE-200
+published: "2026-09-05T07:44:09Z"
+modified: "2026-09-19T15:40:00Z"
