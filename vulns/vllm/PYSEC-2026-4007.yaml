@@ -1,21 +1,9 @@
-id: PYSEC-0000-CVE-2026-78684
-details: vLLM before 0.27.0 fails to properly classify DeepStream as a GPU backend
-  and omits pixel-limit enforcement in its decode path. Unauthenticated attackers
-  can activate DeepStream at request time to initialize the process-wide GPU decode
-  pool and submit video that bypasses resource controls, causing partial denial of
-  service for concurrent requests.
+id: PYSEC-2026-4007
+published: "2026-09-21T22:17:01.433Z"
+modified: "2026-09-30T08:46:30.286769Z"
 aliases:
-- CVE-2026-78684
-- GHSA-cqm8-jxg6-fqfq
-modified: '2026-09-30T08:46:30.042461Z'
-published: '2026-08-25T12:16:27.387Z'
-references:
-- type: ADVISORY
-  url: https://github.com/vllm-project/vllm/security/advisories/GHSA-cqm8-jxg6-fqfq
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/vllm-before-denial-of-service-via-deepstream-backend
-- type: FIX
-  url: https://github.com/vllm-project/vllm/commit/e23b19309b8705b21c3b3ff4129c9974ba15a419
+- CVE-2026-94625
+details: vLLM through 0.29.0 contains a resource exhaustion vulnerability in MooncakeConnector where rejected prefill requests create ownerless transfer placeholders that are never reclaimed. Attackers can send rejected requests to exhaust sender task pools, causing valid requests to be delayed by up to 480 seconds while health checks continue returning success.
 affected:
 - package:
     name: vllm
@@ -24,8 +12,8 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
-    - fixed: 0.27.0
+    - introduced: "0"
+    - fixed: 0.30.0
   versions:
   - 0.0.1
   - 0.1.0
@@ -76,6 +64,10 @@ affected:
   - 0.25.0
   - 0.25.1
   - 0.26.0
+  - 0.27.0
+  - 0.27.1
+  - 0.28.0
+  - 0.29.0
   - 0.3.0
   - 0.3.1
   - 0.3.2
@@ -121,6 +113,15 @@ affected:
   - 0.9.1
   - 0.9.2
   ecosystem_specific: {}
+references:
+- type: WEB
+  url: "https://github.com/vllm-project/vllm/blob/v0.29.0/vllm/distributed/kv_transfer/kv_connector/v1/mooncake/mooncake_connector.py#L1234-L1242"
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/vllm-through-0.29.0-resource-exhaustion-via-ownerless-mooncake-transfer-placeholders
+- type: FIX
+  url: https://github.com/vllm-project/vllm/pull/51236
+- type: PACKAGE
+  url: https://github.com/vllm-project/vllm
 severity:
 - type: CVSS_V4
   score: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
