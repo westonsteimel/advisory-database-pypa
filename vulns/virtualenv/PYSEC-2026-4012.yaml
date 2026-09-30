@@ -1,50 +1,11 @@
-id: PYSEC-0000-virtualenv-GHSA-p58f-9548-mpm2
-summary: virtualenv bash and fish activation scripts execute commands embedded in
-  paths
-details: |
-  The generated `activate` (bash/zsh) and `activate.fish` scripts interpolate a
-  `shlex.quote`-ed value into a position that quotes it a second time. The extra
-  quotes terminate the quoted run early and leave part of the value parsed as
-  shell code, so a path containing shell metacharacters runs commands when a user
-  sources the activation script.
-
-  `activate` is affected through the virtual environment's own path, on the branch
-  that reports a relocated environment (`Virtual environment directory
-  __VIRTUAL_ENV__ does not exist!`). For a destination named `x'$(id)'y`,
-  `shlex.quote` emits `'x'"'"'$(id)'"'"'y'`; the inner `"` closes the enclosing
-  double quote and `$(id)` is left unquoted. This branch runs whenever the
-  recorded path is absent, which is the normal case for a virtual environment
-  copied or distributed to another machine.
-
-  `activate.fish` is affected through the interpreter's Tcl/Tk library paths
-  (`set -gx TCL_LIBRARY '__TCL_LIBRARY__'`). The rendered line becomes
-  `''/tcl/(cmd)/lib''`, and fish expands the `(cmd)` left between the adjacent
-  quoted runs. The same doubling splits a path containing a space into two list
-  elements, corrupting `TCL_LIBRARY` and `TK_LIBRARY`.
-
-  This is the same defect class as GHSA-x78j-v8h9-3j2q, which covered
-  `activate.bat`.
-
-  Fixed in 21.7.13 by moving the placeholders outside the surrounding quotes, so
-  each value keeps only the quoting `shlex.quote` applied.
+id: PYSEC-2026-4012
+published: "2026-09-17T16:42:47Z"
+modified: "2026-09-30T16:13:20.447448Z"
 aliases:
-- CVE-2026-102925
-- GHSA-p58f-9548-mpm2
-modified: '2026-09-30T16:13:20.520407Z'
-published: '2026-09-18T04:37:14Z'
-references:
-- type: WEB
-  url: https://github.com/pypa/virtualenv/security/advisories/GHSA-p58f-9548-mpm2
-- type: WEB
-  url: https://github.com/pypa/virtualenv/pull/3252
-- type: FIX
-  url: https://github.com/pypa/virtualenv/commit/4d5a105ec2a2723b8c7f4571bb68f4f71d01e3f6
-- type: WEB
-  url: https://github.com/pypa/virtualenv/releases/tag/21.7.13
-- type: PACKAGE
-  url: https://github.com/pypa/virtualenv
-- type: PACKAGE
-  url: https://pypi.org/project/virtualenv
+- CVE-2026-102938
+- GHSA-9h9j-4vrj-gf7g
+summary: virtualenv writes prompt values into pyvenv.cfg without sanitizing line boundaries, allowing configuration injection
+details: "`pyvenv.cfg` is a line-based format with no escape syntax. `PyEnvCfg.write()`\nwrote values verbatim, while `PyEnvCfg._read_values()` parses the file with\n`str.splitlines()`. A value containing a line boundary therefore became\nadditional configuration lines, and because reading is last-wins, the injected\nkeys replaced any key written earlier in the file.\n\nThe `prompt` value is the reachable input: it is set by `--prompt`, by the\n`VIRTUALENV_PROMPT` environment variable, or from the config file, and\n`write()` emits `prompt` before `home`. A crafted prompt can therefore set\n`home` in the generated `pyvenv.cfg`. `home` is what tooling reads to locate\nthe base interpreter, so a consumer that trusts it can be pointed elsewhere.\n`implementation`, `version_info`, `version`, `executable`, `command` and\n`virtualenv` are also written before `prompt` and can be replaced the same\nway.\n\nThis requires the prompt to come from somewhere other than the person running\nthe command, for example a CI job templating a branch name into it, tooling\nderiving an environment name from user-supplied data, or an inherited\n`VIRTUALENV_PROMPT`.\n\nThe boundary set is the one `str.splitlines()` recognizes, which is wider than\n`\\n`: `\\r`, `\\v`, `\\f`, the file, group and record separators, `U+0085`,\n`U+2028` and `U+2029` were all written through unchanged and all split the\nline when read back.\n\nFixed in 21.7.11: `PyEnvCfg.write()` now collapses those boundaries to spaces\nas it serializes each line, so it cannot emit a structurally invalid file\nregardless of what a caller places in `content`.\n"
 affected:
 - package:
     name: virtualenv
@@ -53,35 +14,35 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
-    - fixed: 21.7.13
+    - introduced: "0"
+    - fixed: 21.7.11
   versions:
-  - '0.8'
+  - "0.8"
   - 0.8.1
   - 0.8.2
   - 0.8.3
   - 0.8.4
-  - '0.9'
+  - "0.9"
   - 0.9.1
   - 0.9.2
-  - '1.0'
-  - '1.1'
-  - '1.10'
+  - "1.0"
+  - "1.1"
+  - "1.10"
   - 1.10.1
-  - '1.11'
+  - "1.11"
   - 1.11.1
   - 1.11.2
   - 1.11.3
   - 1.11.4
   - 1.11.5
   - 1.11.6
-  - '1.2'
-  - '1.3'
+  - "1.2"
+  - "1.3"
   - 1.3.1
   - 1.3.2
   - 1.3.3
   - 1.3.4
-  - '1.4'
+  - "1.4"
   - 1.4.1
   - 1.4.2
   - 1.4.3
@@ -92,27 +53,27 @@ affected:
   - 1.4.8
   - 1.4.9
   - 1.4rc1
-  - '1.5'
+  - "1.5"
   - 1.5.1
   - 1.5.2
-  - '1.6'
+  - "1.6"
   - 1.6.1
   - 1.6.2
   - 1.6.3
   - 1.6.4
-  - '1.7'
+  - "1.7"
   - 1.7.1
   - 1.7.1.1
   - 1.7.1.2
   - 1.7.2
-  - '1.8'
+  - "1.8"
   - 1.8.1
   - 1.8.2
   - 1.8.3
   - 1.8.4
-  - '1.9'
+  - "1.9"
   - 1.9.1
-  - '12.0'
+  - "12.0"
   - 12.0.1
   - 12.0.2
   - 12.0.4
@@ -328,8 +289,6 @@ affected:
   - 21.7.0
   - 21.7.1
   - 21.7.10
-  - 21.7.11
-  - 21.7.12
   - 21.7.2
   - 21.7.3
   - 21.7.4
@@ -338,9 +297,19 @@ affected:
   - 21.7.7
   - 21.7.8
   - 21.7.9
-severity:
-- type: CVSS_V3
-  score: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+references:
+- type: WEB
+  url: https://github.com/pypa/virtualenv/security/advisories/GHSA-9h9j-4vrj-gf7g
+- type: WEB
+  url: https://github.com/pypa/virtualenv/pull/3247
+- type: FIX
+  url: https://github.com/pypa/virtualenv/commit/a30f995461043acb6cacbf3a890951563ccf7140
+- type: WEB
+  url: https://github.com/pypa/virtualenv/releases/tag/21.7.11
+- type: PACKAGE
+  url: https://github.com/pypa/virtualenv
+- type: PACKAGE
+  url: https://pypi.org/project/virtualenv
 credits:
-- name: "Bern\xE1t G\xE1bor"
+- name: Bernát Gábor
   type: FINDER
