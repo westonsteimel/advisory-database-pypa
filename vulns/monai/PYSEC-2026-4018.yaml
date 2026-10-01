@@ -1,18 +1,10 @@
-id: PYSEC-0000-CVE-2026-100843
-details: MONAI versions before 1.6.0 contain a remote code execution vulnerability
-  in the algo_from_pickle() function due to unsafe pickle.loads() deserialization
-  in monai/auto3dseg/utils.py. Attackers can craft malicious pickle files that execute
-  arbitrary system commands when deserialized by the vulnerable function.
+id: PYSEC-2026-4018
+published: "2026-09-27T02:17:22.853Z"
+modified: "2026-10-01T08:46:46.320645Z"
 aliases:
 - CVE-2026-100843
 - GHSA-qxq5-qhx6-94qw
-modified: '2026-10-01T08:46:46.320645Z'
-published: '2026-09-27T02:17:22.853Z'
-references:
-- type: ADVISORY
-  url: https://www.vulncheck.com/advisories/monai-before-1.6.0-remote-code-execution-via-algo-from-pickle
-- type: EVIDENCE
-  url: https://github.com/Project-MONAI/MONAI/security/advisories/GHSA-qxq5-qhx6-94qw
+details: MONAI versions before 1.6.0 contain a remote code execution vulnerability in the algo_from_pickle() function due to unsafe pickle.loads() deserialization in monai/auto3dseg/utils.py. Attackers can craft malicious pickle files that execute arbitrary system commands when deserialized by the vulnerable function.
 affected:
 - package:
     name: monai
@@ -21,7 +13,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 1.6.0
   versions:
   - 0.0.1
@@ -68,6 +60,11 @@ affected:
   - 1.5.2
   - 1.5.2rc1
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://www.vulncheck.com/advisories/monai-before-1.6.0-remote-code-execution-via-algo-from-pickle
+- type: EVIDENCE
+  url: https://github.com/Project-MONAI/MONAI/security/advisories/GHSA-qxq5-qhx6-94qw
 severity:
 - type: CVSS_V4
   score: CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
