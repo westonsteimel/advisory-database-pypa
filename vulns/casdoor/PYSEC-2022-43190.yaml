@@ -1,13 +1,9 @@
-id: PYSEC-0000-CVE-2022-38638
-details: Casdoor v1.97.3 was discovered to contain an arbitrary file write vulnerability
-  via the fullFilePath parameter at /api/upload-resource.
+id: PYSEC-2022-43190
+published: "2022-09-09T20:15:11.340Z"
+modified: "2026-10-04T09:41:52.895870Z"
 aliases:
 - CVE-2022-38638
-modified: '2026-10-04T09:41:52.895870Z'
-published: '2022-09-09T20:15:11.340Z'
-references:
-- type: FIX
-  url: https://github.com/casdoor/casdoor/issues/1035
+details: Casdoor v1.97.3 was discovered to contain an arbitrary file write vulnerability via the fullFilePath parameter at /api/upload-resource.
 affected:
 - package:
     name: casdoor
@@ -16,7 +12,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - last_affected: 1.97.3
   versions:
   - 1.0.0
@@ -81,6 +77,9 @@ affected:
   - 1.8.0
   - 1.9.0
   ecosystem_specific: {}
+references:
+- type: FIX
+  url: https://github.com/casdoor/casdoor/issues/1035
 severity:
 - type: CVSS_V3
   score: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H
