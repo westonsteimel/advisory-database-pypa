@@ -1,6 +1,7 @@
 id: PYSEC-2026-2132
 published: "2026-04-30T14:16:36.433Z"
-modified: "2026-07-13T05:48:17.365892Z"
+modified: "2026-10-07T01:44:46Z"
+withdrawn: "2026-10-07T01:44:46Z"
 aliases:
 - CVE-2026-7246
 - GHSA-47fr-3ffg-hgmw
