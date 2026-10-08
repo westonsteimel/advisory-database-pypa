@@ -1,26 +1,10 @@
-id: PYSEC-0000-CVE-2026-105757
-details: vLLM is an inference and serving engine for large language models. Prior
-  to 0.30.0, structured-output request failures can escape request-scoped validation
-  and reach the EngineCore fatal-error path. A per-request backend mismatch can re-raise
-  a grammar compilation exception, padding produced by the ngram_gpu speculative-decoding
-  mode can pass a negative token to guidance validation, and the Rust frontend can
-  admit empty structured-output values that the Python frontend rejects, allowing
-  ordinary constrained-generation requests to terminate the shared engine. This issue
-  is fixed in version 0.30.0.
+id: PYSEC-2026-4198
+published: "2026-10-05T23:17:02.167Z"
+modified: "2026-10-08T09:43:24.663438Z"
 aliases:
-- CVE-2026-105757
-- GHSA-85xf-c7hm-whqw
-modified: '2026-10-08T09:43:24.725362Z'
-published: '2026-10-05T23:17:02.467Z'
-references:
-- type: ADVISORY
-  url: https://github.com/vllm-project/vllm/releases/tag/v0.30.0
-- type: ADVISORY
-  url: https://github.com/vllm-project/vllm/security/advisories/GHSA-85xf-c7hm-whqw
-- type: FIX
-  url: https://github.com/vllm-project/vllm/commit/c55e15a44ec4127832d4a86928a356fdd9e68dbd
-- type: FIX
-  url: https://github.com/vllm-project/vllm/pull/51450
+- CVE-2026-105755
+- GHSA-2phq-3phc-84px
+details: vLLM is an inference and serving engine for large language models. Prior to 0.30.0, flash late-interaction scoring at the /score and /rerank endpoints derives each worker's query_key value from the caller-controlled X-Request-Id header. A concurrent request that reuses a victim's identifier can overwrite the cached query embedding so the victim's documents are scored against the attacker's query, and shared use counters can also cause a late-interaction cache-miss error. This issue is fixed in version 0.30.0.
 affected:
 - package:
     name: vllm
@@ -29,7 +13,7 @@ affected:
   ranges:
   - type: ECOSYSTEM
     events:
-    - introduced: '0'
+    - introduced: "0"
     - fixed: 0.30.0
   versions:
   - 0.0.1
@@ -130,6 +114,15 @@ affected:
   - 0.9.1
   - 0.9.2
   ecosystem_specific: {}
+references:
+- type: ADVISORY
+  url: https://github.com/vllm-project/vllm/releases/tag/v0.30.0
+- type: ADVISORY
+  url: https://github.com/vllm-project/vllm/security/advisories/GHSA-2phq-3phc-84px
+- type: FIX
+  url: https://github.com/vllm-project/vllm/commit/ee17d0d869203ef9a35ad73358a4987bba14b1fc
+- type: FIX
+  url: https://github.com/vllm-project/vllm/pull/51445
 severity:
 - type: CVSS_V3
-  score: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+  score: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:L
