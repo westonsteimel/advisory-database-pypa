@@ -12,7 +12,7 @@ affected:
   - type: GIT
     repo: https://github.com/urllib3/urllib3
     events:
-    - introduced: "0"
+    - introduced: 5b047b645f5f93900d5e2fc31230848c25eb1f5f
     - fixed: 2d4a3fee6de2fa45eb82169361918f759269b4ec
   - type: ECOSYSTEM
     events:
@@ -40,5 +40,5 @@ references:
 aliases:
 - CVE-2021-33503
 - GHSA-q2q7-5pp4-w6pg
-modified: "2021-07-02T18:56:20.858344Z"
+modified: "2026-10-09T04:53:09Z"
 published: "2021-06-29T11:15:00Z"
